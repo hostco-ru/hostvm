@@ -1,6 +1,6 @@
 site_name: Платорма виртуализации ХОСТ
 pages:
 - О проекте: about.md
-- Рзработчики: developer.md
+- Разработчик: developer.md
 - Технические характеристики: datasheet.md
 theme: readthedocs
