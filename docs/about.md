@@ -2,7 +2,7 @@
 
 Сайт проекта:
 
-[https://reestr.minsvyaz.ru/reestr/126983/](https://reestr.minsvyaz.ru/reestr/126983/)
+[https://reestr.hostco.ru/host](https://reestr.hostco.ru/host)
 
 Проект в Едином реестре российских программ для электронных вычислительных машин и баз данных:
 

@@ -3,4 +3,5 @@ pages:
 - О проекте: about.md
 - Разработчик: developer.md
 - Технические характеристики: datasheet.md
+- Руководство по установке: installation-guide.md
 theme: readthedocs
