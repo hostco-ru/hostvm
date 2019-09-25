@@ -1,0 +1,6 @@
+site_name: Платформа виртуализации ХОСТ
+pages:
+- О проекте: about.md
+- Разработчик: developer.md
+- Технические характеристики: datasheet.md
+theme: readthedocs
