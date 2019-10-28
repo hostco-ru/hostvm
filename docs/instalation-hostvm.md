@@ -1,6 +1,20 @@
 ### Подготовка сервера к развертыванию
 
-С помощью putty под пользователем root подключитесь к свежеустановленному серверу
+Убедитесь, что требования описанные в описанные на странице [Системные требования](requirements.md) выполняются
+
+С помощью [putty](https://www.putty.org) под пользователем root подключитесь к свежеустановленному серверу
+
+Перед началом работы рекомендуем выполнить следующие действия c Putty, чтобы включить запись вывода на экран в файл:
+
+1. Сохраните имя сервера 
+![Картинка][hostvm-install-2]
+
+2. перейдите во вкладку Журнал, выберете `Весь вывод`, укажите путь до файла логов в следующем виде: `C:\path\to\log\hostname-&H-&Y&M&D-&T.log `. Часть `&H-&Y&M&D-&T` указывает, что файл с логом будет создаваться для каждой сессии и автоматически указывать время и дату ее начала
+![Картинка][hostvm-install-3]
+
+3. перейдите во вкладку Сеанс, нажмите кнопку `Сохранить`, нажмите клавишу `Enter` чтобы запустить сессию
+![Картинка][hostvm-install-4]
+
 Установите пакеты wget, zip, unzip, ansible
 ```
 yum install wget zip unzip ansible -y
@@ -23,7 +37,9 @@ localhost | SUCCESS => {
 
 ```
 
-Загрузите zip-архив с портала, разместите его в папке /root/
+Загрузите zip-архив с портала, разместите его в папке `/root/`. Передать файл с рабочего места с ОС Windows на сервер можно используя утилите [WinSCP](https://winscp.net). Доступна в [наборе дистрибьютивов][hostvm-public-link] для развертывания решения.
+
+![Картинка][hostvm-install-1]
 
 ```
 [root@host1 ~]# ls -l
@@ -57,6 +73,76 @@ cp: overwrite ‘/etc/ansible/ansible.cfg’? cp: overwrite ‘/etc/ansible/host
 ```
 
 ### Заполнение формы для установки значений переменных
+
+#### Сбор данных для заполнения формы
+
+Перед началом работы рекомендуется заполнить следующую таблицу:
+
+| Название  | Как узнать  | Значение |
+|:------------- |:---------------:|:-------------:|
+| ip для engine         |   -                          |               |
+| ip сервера            | ip addr                      |               |
+| ip шлюза по умолчанию | ip route                     |               |
+| ip dns-сервера        |   -                          |               |
+| домен установки       |   -                          |               |
+| hostname сервера      |   -                          |               |
+| название интерфейса   |   ip addr                    |               |
+| guid на который выполняем установку | multipath -ll  |               |
+
+Командой `ip addr` получаем ip-адрес сервера, название интерфейса:
+```
+[root@host1 ~]# ip addr
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host
+       valid_lft forever preferred_lft forever
+2: enp3s0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc mq state UP group default qlen 1000
+    link/ether 00:17:a4:77:00:0c brd ff:ff:ff:ff:ff:ff
+    inet 10.1.140.14/25 brd 10.1.140.127 scope global noprefixroute enp3s0
+       valid_lft forever preferred_lft forever
+    inet6 fe80::b50a:7c22:2229:b169/64 scope link noprefixroute
+       valid_lft forever preferred_lft forever
+3: enp7s0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc mq state UP group default qlen 1000
+    link/ether 00:17:a4:77:00:0e brd ff:ff:ff:ff:ff:ff
+
+``` 
+По данному выводу видно, что ip-адрес сервера - `10.1.140.14`, название интерфейса - `enp3s0`
+
+Командой `ip route` узнаем ip шлюза по умолчанию:
+```
+[root@host1 ~]# ip route
+default via 10.1.140.1 dev enp3s0 proto static metric 100
+10.1.140.0/25 dev enp3s0 proto kernel scope link src 10.1.140.14 metric 100
+```
+По данному выводу видно, что ip шлюза по умолчанию - `10.1.140.1`,
+
+Командой `multipath -ll` определим 
+```
+[root@testname1 ~]#  multipath -ll
+36001438009b0222800007000033f0000 dm-0 HP      ,HSV340
+size=56G features='1 queue_if_no_path' hwhandler='0' wp=rw
+|-+- policy='service-time 0' prio=50 status=active
+| |- 1:0:2:1 sde 8:64  active ready running
+| `- 2:0:2:1 sdf 8:80  active ready running
+`-+- policy='service-time 0' prio=10 status=enabled
+  |- 1:0:1:1 sdc 8:32  active ready running
+  `- 2:0:1:1 sdd 8:48  active ready running
+3600508b400099f8e0002e000036a0000 dm-3 HP      ,HSV300
+size=250G features='1 queue_if_no_path' hwhandler='0' wp=rw
+|-+- policy='service-time 0' prio=50 status=active
+| |- 1:0:3:1 sdg 8:96  active ready running
+| `- 2:0:0:1 sdb 8:16  active ready running
+`-+- policy='service-time 0' prio=10 status=enabled
+  |- 1:0:0:1 sda 8:0   active ready running
+  `- 2:0:3:1 sdh 8:112 active ready running
+```
+По данному выводу видно, что используется 2 внешних диска, один на 56G, второй на 250G. Первый используется как системный. Использовать системный диск как хранилише виртуальных машин нельзя, по этому выбираем второй диск. guid-диска - `3600508b400099f8e0002e000036a0000`
+
+
+
+#### Запуск программы-помощника IP-wizard 
 
 Запустите `IP-wizard.sh` для того чтобы подготовить файлы переменных к работе. Следуйте указаниями программы.
 ```
@@ -218,9 +304,9 @@ localhost                  : ok=9    changed=2    unreachable=0    failed=0    s
 [root@host1 ~]#
 ``` 
 
-После того как предыдущая команда будет выполнена появится файл `/root/script-hosted-engine-deploy | tee -a script-hosted-engine-deploy.log`. Необходимо запустить его на выполнение: 
+После того как предыдущая команда будет выполнена появится файл `/root/script-hosted-engine-deploy | tee -a /root/script-hosted-engine-deploy.log`. Необходимо запустить его на выполнение: 
 ```
-/root/script-hosted-engine-deploy | tee -a script-hosted-engine-deploy.log
+/root/script-hosted-engine-deploy | tee -a /root/script-hosted-engine-deploy.log
 
 ```
 
@@ -242,4 +328,27 @@ The following luns have been found on the requested target:
           Please specify the size of the VM disk in GiB: [51]:
 ```
 
-После завершения установки в браузере перейдите по адресу *engine.mydomain.ru*
+После завершения установки в браузере перейдите по адресу *https://engine.mydomain.ru*
+
+
+### Если что-то пошло не так
+
+Схема установки hostvm и самостоятельного решения проблем представлена на рисунке ниже
+![Картинка][hostvm-install-troubleshooting-scheme]
+
+1. Проверить корректность данных, которые были введены в IP-wizard. Если были использованы некоректные данные, то выполните команду `ansible-playbook /etc/ansible/clean-node.yml` и начните сначала
+2. Если на этапе `/root/script-hosted-engine-deploy | tee -a /root/script-hosted-engine-deploy.log` появилась ошибка, то выполните команду `ansible-playbook /etc/ansible/clean-node.yml` и начните сначала
+3. Если на этапе `ansible-playbook /etc/ansible/make-prepare.yml` появилась ошибка, повторите выполнение данной команды
+4. Если на этапе `ansible-playbook /etc/ansible/make-ovirt.yml` появилась ошибка, повторите выполнение данной команды
+5. Если после завершения установки вам не открывается страница в браузере с адресом https://engine.mydomain.ru, то
+  1. Проверьте, что ip для engine, указанный в таблице в начале установки отвечает на команду ping
+  2. Проверьте, что имя `engine.mydomain.ru` разрешается вашим dns-сервером.
+
+Если устранить проблему не удалось, обратитесь в [техническую поддержку][hostco.ru]. К обращению приложите лог вывода вашей консоли, который был настроен в начале установки и файл `/root/script-hosted-engine-deploy.log`
+
+[hostvm-install-1]: ./images/hostvm-install-1.jpg
+[hostvm-install-2]: ./images/hostvm-install-2.jpg
+[hostvm-install-3]: ./images/hostvm-install-3.jpg
+[hostvm-install-4]: ./images/hostvm-install-4.jpg
+[hostvm-install-troubleshooting-scheme]: ./images/troubleshooting-scheme.jpg
+[hostvm-public-link]: https://cloud.hostco.ru/s/w7n8nDKXY7FbyKg
