@@ -1,21 +1,29 @@
 ### Подготовка сервера к развертыванию
 
-Убедитесь, что требования описанные в описанные на странице [Системные требования](requirements.md) выполняются
+#### Подготовка putty к работе
 
-С помощью [putty](https://www.putty.org) под пользователем root подключитесь к свежеустановленному серверу
+Убедитесь, что требования, описанные на странице [Системные требования](requirements.md) выполняются.
 
-Перед началом работы рекомендуем выполнить следующие действия c Putty, чтобы включить запись вывода на экран в файл:
+С помощью [PuTTY](https://www.putty.org) под пользователем root подключитесь к свежеустановленному серверу.
 
-1. Сохраните имя сервера 
+Непонятен смысл предложения в целом+необходимо поменять местами первую и вторую части сложносочененного предложения:
+Перед началом работы рекомендуется настроить логирование сессии putty. Для этого нужно выполнить следующие действия
+
+1. Сохраните имя сервера: 
+
 ![Картинка][hostvm-install-2]
 
-2. перейдите во вкладку Журнал, выберете `Весь вывод`, укажите путь до файла логов в следующем виде: `C:\path\to\log\hostname-&H-&Y&M&D-&T.log `. Часть `&H-&Y&M&D-&T` указывает, что файл с логом будет создаваться для каждой сессии и автоматически указывать время и дату ее начала
+1. Перейдите на вкладку Журнал (мы можем добавить ссылку на страницу с этой вкладкой?), выберите `Весь вывод`, укажите путь до файла логов в следующем виде: `C:\path\to\log\hostname-&H-&Y&M&D-&T.log `. Часть `&H-&Y&M&D-&T` указывает, что файл с логом будет создаваться для каждой сессии и автоматически указывать время и дату ее начала:
+
 ![Картинка][hostvm-install-3]
 
-3. перейдите во вкладку Сеанс, нажмите кнопку `Сохранить`, нажмите клавишу `Enter` чтобы запустить сессию
+1. Перейдите на вкладку Сеанс, нажмите кнопку `Сохранить`, нажмите клавишу `Enter` чтобы запустить сессию:
+
 ![Картинка][hostvm-install-4]
 
-Установите пакеты wget, zip, unzip, ansible
+#### Установка необходимых пакетов
+
+1. Установите пакеты wget, zip, unzip, ansible: (здесь в целом не очень понятно как устнавливать - отдельно на комп, или в какой вкладке, или автоматически предложит установить??)
 ```
 yum install wget zip unzip ansible -y
 ...
@@ -25,8 +33,7 @@ Installed:
 Complete!
 
 ```
-Проверьте, что ansible установлен:
-
+1. Проверьте, что ansible установлен:
 ```
 ansible -m ping localhost
 
@@ -37,7 +44,9 @@ localhost | SUCCESS => {
 
 ```
 
-Загрузите zip-архив с портала, разместите его в папке `/root/`. Передать файл с рабочего места с ОС Windows на сервер можно используя утилите [WinSCP](https://winscp.net). Доступна в [наборе дистрибьютивов][hostvm-public-link] для развертывания решения.
+1. Загрузите zip-архив `hostvm.zip` с [портала][hostvm-public-link], разместите его в папке `/root/`. 
+
+Для передачи файла на сервер с рабочего места, где установлена ОС Windows, необходимо использовать утилиту [WinSCP](https://winscp.net), которая доступна в [наборе дистрибьютивов для развертывания решения][hostvm-public-link].
 
 ![Картинка][hostvm-install-1]
 
@@ -50,11 +59,12 @@ localhost | SUCCESS => {
 /root
 
 ```
-Распакуйте архив
+
+1. Разархивируйте папку:
 ```
 unzip hostvm.zip -d /root/
 ```
-проверьте состав файлов
+1. Проверьте состав файлов:
 ```
 [root@host1 ~]# ls -l
 total 72
@@ -64,7 +74,7 @@ drwxr-xr-x. 6 root root   268 Oct 22 10:42 ansible
 -rw-r--r--. 1 root root  5115 Oct 21 16:18 IP-wizard.sh
 ```
 
-Скопируйте содержимое папки `ansible` в папку `/etc/ansible`
+1. Скопируйте содержимое папки `ansible` в папку `/etc/ansible`:
 ```
 [root@host1 ~]# yes | cp -rpf /root/ansible/* /etc/ansible/
 cp: overwrite ‘/etc/ansible/ansible.cfg’? cp: overwrite ‘/etc/ansible/hosts’? [root@host1 ~]#
@@ -76,7 +86,7 @@ cp: overwrite ‘/etc/ansible/ansible.cfg’? cp: overwrite ‘/etc/ansible/host
 
 #### Сбор данных для заполнения формы
 
-Перед началом работы рекомендуется заполнить следующую таблицу:
+Перед началом работы рекомендуется заполнить последний столбец следующей таблицы (*способ сбора данных для таблице описан ниже по тексту)*: 
 
 | Название  | Как узнать  | Значение |
 |:------------- |:---------------:|:-------------:|
@@ -89,7 +99,9 @@ cp: overwrite ‘/etc/ansible/ansible.cfg’? cp: overwrite ‘/etc/ansible/host
 | название интерфейса   |   ip addr                    |               |
 | guid на который выполняем установку | multipath -ll  |               |
 
-Командой `ip addr` получаем ip-адрес сервера, название интерфейса:
+Для получения ip-адреса сервера и название интерфейса выполните команду `ip addr` :
+
+Согласно примеру ниже видно, что ip-адрес сервера - `10.1.140.14`, название интерфейса - `enp3s0`.
 ```
 [root@host1 ~]# ip addr
 1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
@@ -108,17 +120,21 @@ cp: overwrite ‘/etc/ansible/ansible.cfg’? cp: overwrite ‘/etc/ansible/host
     link/ether 00:17:a4:77:00:0e brd ff:ff:ff:ff:ff:ff
 
 ``` 
-По данному выводу видно, что ip-адрес сервера - `10.1.140.14`, название интерфейса - `enp3s0`
 
-Командой `ip route` узнаем ip шлюза по умолчанию:
+Для получения ip-адреса шлюза выполните команду `ip route`.
+
+Согласно примеру ниже видно, что ip шлюза по умолчанию - `10.1.140.1`
+
 ```
 [root@host1 ~]# ip route
 default via 10.1.140.1 dev enp3s0 proto static metric 100
 10.1.140.0/25 dev enp3s0 proto kernel scope link src 10.1.140.14 metric 100
 ```
-По данному выводу видно, что ip шлюза по умолчанию - `10.1.140.1`,
 
-Командой `multipath -ll` определим 
+Для получения guid диска  выполните команду `multipath -ll` 
+
+Согласно примеру ниже видно, что используется 2 внешних диска, один на 56G, второй на 250G. Первый используется как системный. Использовать системный диск как хранилише виртуальных машин нельзя, по этому выбираем второй диск. guid-диска - `3600508b400099f8e0002e000036a0000`
+
 ```
 [root@testname1 ~]#  multipath -ll
 36001438009b0222800007000033f0000 dm-0 HP      ,HSV340
@@ -138,13 +154,10 @@ size=250G features='1 queue_if_no_path' hwhandler='0' wp=rw
   |- 1:0:0:1 sda 8:0   active ready running
   `- 2:0:3:1 sdh 8:112 active ready running
 ```
-По данному выводу видно, что используется 2 внешних диска, один на 56G, второй на 250G. Первый используется как системный. Использовать системный диск как хранилише виртуальных машин нельзя, по этому выбираем второй диск. guid-диска - `3600508b400099f8e0002e000036a0000`
-
-
 
 #### Запуск программы-помощника IP-wizard 
 
-Запустите `IP-wizard.sh` для того чтобы подготовить файлы переменных к работе. Следуйте указаниями программы.
+Запустите `IP-wizard.sh`, чтобы подготовить файлы переменных к работе. Следуйте указаниями инструкции в программе:
 ```
 [root@host1 ~]# sh IP-wizard.sh
 
@@ -209,7 +222,7 @@ nic_for_ovirtmgmt_bridge: enp2s0f0
 
 ### Установка виртуализации
 
-Выполните команду `ansible-playbook /etc/ansible/make-prepare.yml` для того, чтобы подготовить /etc/hosts и диск с указанным guid к работе. **Сервер будет перезагружен!**
+Выполните команду `ansible-playbook /etc/ansible/make-prepare.yml`, чтобы подготовить к работе /etc/hosts и диск с указанным guid. *Сервер будет перезагружен!*
 ```
 [root@host1 ~]# ansible-playbook /etc/ansible/make-prepare.yml
 [DEPRECATION WARNING]: The use of 'include' for tasks has been deprecated. Use 'import_tasks' for static inclusions or 'include_tasks' for dynamic inclusions. This feature will be removed in a future release. Deprecation warnings can be
@@ -250,7 +263,6 @@ TASK [reboot] ****************************************************************
 ```
 
 Запустите установку необходимых пакетов виртуализации командой `ansible-playbook /etc/ansible/make-ovirt.yml`. На ее выполнение уйдет чуть больше часа. 
-
 
 ```
 [root@host1 ~]# ansible-playbook /etc/ansible/make-ovirt.yml
@@ -304,13 +316,16 @@ localhost                  : ok=9    changed=2    unreachable=0    failed=0    s
 [root@host1 ~]#
 ``` 
 
-После того как предыдущая команда будет выполнена появится файл `/root/script-hosted-engine-deploy | tee -a /root/script-hosted-engine-deploy.log`. Необходимо запустить его на выполнение: 
+Сформированный файл `/root/script-hosted-engine-deploy` содержит инструкции, необходимые для развертывания виртуализации
+Запустите его на исполнение командой `/root/script-hosted-engine-deploy | tee -a /root/script-hosted-engine-deploy.log`: 
 ```
 /root/script-hosted-engine-deploy | tee -a /root/script-hosted-engine-deploy.log
 
 ```
 
-В конце установки необходимо ответить на пару вопрос . Выберете диск, на котором должно быть хранилише виртуальных машин и размер диска управляющей виртуальной машины (рекомендуемый размер 51GiB)
+Ответьте на вопросы по завершению установки:
+- выберете диск, на котором должно быть хранилише виртуальных машин;
+- выберете размер диска управляющей виртуальной машины (рекомендуемый размер 51GiB).
 
 ```
 The following luns have been found on the requested target:
@@ -328,23 +343,23 @@ The following luns have been found on the requested target:
           Please specify the size of the VM disk in GiB: [51]:
 ```
 
-После завершения установки в браузере перейдите по адресу *https://engine.mydomain.ru*
-
+Перейдите по адресу *https://engine.mydomain.ru* по завершению развертываниея виртуализации.
 
 ### Если что-то пошло не так
 
-Схема установки hostvm и самостоятельного решения проблем представлена на рисунке ниже
-![Картинка][hostvm-install-troubleshooting-scheme]
-
-1. Проверить корректность данных, которые были введены в IP-wizard. Если были использованы некоректные данные, то выполните команду `ansible-playbook /etc/ansible/clean-node.yml` и начните сначала
+1. Проверить корректность данных, которые были введены в IP-wizard. При обнаружении ошибки выполните команду `ansible-playbook /etc/ansible/clean-node.yml` и начните сначала.
 2. Если на этапе `/root/script-hosted-engine-deploy | tee -a /root/script-hosted-engine-deploy.log` появилась ошибка, то выполните команду `ansible-playbook /etc/ansible/clean-node.yml` и начните сначала
 3. Если на этапе `ansible-playbook /etc/ansible/make-prepare.yml` появилась ошибка, повторите выполнение данной команды
 4. Если на этапе `ansible-playbook /etc/ansible/make-ovirt.yml` появилась ошибка, повторите выполнение данной команды
 5. Если после завершения установки вам не открывается страница в браузере с адресом https://engine.mydomain.ru, то
-  1. Проверьте, что ip для engine, указанный в таблице в начале установки отвечает на команду ping
-  2. Проверьте, что имя `engine.mydomain.ru` разрешается вашим dns-сервером.
+    1. Проверьте, что ip для engine, указанный в таблице в начале установки отвечает на команду ping
+    2. Проверьте, что имя `engine.mydomain.ru` разрешается вашим dns-сервером.
 
-Если устранить проблему не удалось, обратитесь в [техническую поддержку][hostco.ru]. К обращению приложите лог вывода вашей консоли, который был настроен в начале установки и файл `/root/script-hosted-engine-deploy.log`
+Схема установки hostvm и самостоятельного решения проблем представлена на рисунке ниже:
+
+![Картинка][hostvm-install-troubleshooting-scheme]
+
+Если устранить проблему не удалось, обратитесь в [техническую поддержку](hostco.ru) используя [инструкцию][hostvm-public-TS-instruction] К обращению приложите лог вывода вашей консоли, который был настроен в начале установки и файл `/root/script-hosted-engine-deploy.log`.
 
 [hostvm-install-1]: ./images/hostvm-install-1.jpg
 [hostvm-install-2]: ./images/hostvm-install-2.jpg
@@ -352,3 +367,4 @@ The following luns have been found on the requested target:
 [hostvm-install-4]: ./images/hostvm-install-4.jpg
 [hostvm-install-troubleshooting-scheme]: ./images/troubleshooting-scheme.jpg
 [hostvm-public-link]: https://cloud.hostco.ru/s/w7n8nDKXY7FbyKg
+[hostvm-public-TS-instruction]: https://cloud.hostco.ru/s/w7n8nDKXY7FbyKg
