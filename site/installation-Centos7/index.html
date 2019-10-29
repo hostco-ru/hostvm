@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>Установка Centos7 - Платформа виртуализации ХОСТ</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../css/highlight.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "\u0423\u0441\u0442\u0430\u043d\u043e\u0432\u043a\u0430 Centos7";
+    var mkdocs_page_input_path = "installation-Centos7.md";
+    var mkdocs_page_url = "/installation-Centos7/";
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js"></script>
+  <script src="../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../js/highlight.pack.js"></script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../about/" class="icon icon-home"> Платформа виртуализации ХОСТ</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../about/">О проекте</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../developer/">Разработчик</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../datasheet/">Технические характеристики</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../installation-guide/">Руководство по установке</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../requirements/">Системные требования</a>
+	    </li>
+          
+            <li class="toctree-l1 current">
+		
+    <a class="current" href="./">Установка Centos7</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l2"><a href="#centos7">Установка Centos7</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l3" href="#_1">Перед установкой</a></li>
+        
+            <li><a class="toctree-l3" href="#_2">Процесс установки</a></li>
+        
+            <li><a class="toctree-l3" href="#_3">После установки</a></li>
+        
+        </ul>
+    
+
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../instalation-hostvm/">Установка виртуализации</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../after-install/">Действия после установки виртуализации</a>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../about/">Платформа виртуализации ХОСТ</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../about/">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Установка Centos7</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h2 id="centos7">Установка Centos7</h2>
+<h3 id="_1">Перед установкой</h3>
+<p>Перед установкой подготовьте на вашей схд системный лун и лун для хранения виртуальных машин. 
+Выполните мапинг сервера к выделенным ему лунам(vdisk'ам) по инструкциям от производителя вашего серверного оборудования.
+В случае использования системного луна, подключенного по FC, настройте bootFromSan по инструкциям от производителя вашего серверного оборудования.
+Подключите iso-образ к серверу, запустите сервер.</p>
+<h3 id="_2">Процесс установки</h3>
+<p>При загрузке откроется меню выбора действия. За 60 секунд выберите <em>Install Centos 7</em>. Если за 60 секунд после загрузки не вырать данный пункт, то начинается тестирование ресурсов сервера и только после этого начнется установка. Остановить тестирование ресурсов сервера возможно через нажатие клавиши <em>esc</em>.
+<img alt="Картинка" src="../images/centos7-install-0.jpg" /></p>
+<p>В открывшемся окне выберите английский язык (English), который будет использоваться в интерфейсе установшика. </p>
+<p><em>Выбранный язык не влияет на язык внутри самой операционной системы, которая устанавливается без графической оболочки.</em></p>
+<p>Скриншоты инструкции выполнены в интерфейсе с английским языком. Нажмите <em>Continue</em>.</p>
+<p><img alt="Картинка" src="../images/centos7-install-1.jpg" /></p>
+<p>Далее автоматически открывается меню настроек.</p>
+<p><img alt="Картинка" src="../images/centos7-install-2.jpg" /></p>
+<p>Перейдите в <em>DATE &amp; TIME</em>, укажите ваш часовой пояс, время и дату. Нажмите <em>Done</em>.</p>
+<p><img alt="Картинка" src="../images/centos7-install-3.jpg" /></p>
+<p>Перейдите в <em>NETWORK &amp; HOST NAME</em>. </p>
+<p><img alt="Картинка" src="../images/centos7-install-4.jpg" /></p>
+<p>Выберите интерфейс, нажмите кнопку <em>Configure...</em>. В открывшемся окне перейдите на вкладку <em>IPv4 Settings</em>, выберите <em>Method: Manual</em>, введите ip, маску, gw, DNS-сервер. Нажмите кнопку <em>Save</em>.</p>
+<p><img alt="Картинка" src="../images/centos7-install-5.jpg" /></p>
+<p>Переведите тригер возле названия подключения в положение <em>On</em>. В поле <em>Host name</em> введите имя сервера, нажмите кнопку <em>Apply</em>. Нажмите кнопку <em>Done</em>.</p>
+<p><img alt="Картинка" src="../images/centos7-install-6.jpg" /></p>
+<p>Перейдите в <em>Instalation Destination</em>. Выберете диск на который необходимо выполнить установку. Выберете радиокнопку <em>I will configure partitioning</em>. Нажмите <em>Done</em>.</p>
+<p><img alt="Картинка" src="../images/centos7-install-7.jpg" /></p>
+<p>Если диск не отображается, необходимо открыть дополнительное окно под кнопкой <em>Add a disk...</em>, поставить галочку напротив необходимого диска и нажать кнопку <em>Done</em>.</p>
+<p><img alt="Картинка" src="../images/centos7-install-8.jpg" /></p>
+<p>После выбора места установки автоматически открывается следующее меню. </p>
+<p><img alt="Картинка" src="../images/centos7-install-9-1.jpg" /></p>
+<p>Если диск уже использовался (имел таблицу разделов), то удалите их, как показано ниже.</p>
+<p><img alt="Картинка" src="../images/centos7-install-9-2.jpg" /></p>
+<p><img alt="Картинка" src="../images/centos7-install-9-3.jpg" /></p>
+<p>Когда на диске не останется существующих разделов, нажмите <em>Click here to create them automatically</em>.</p>
+<p><img alt="Картинка" src="../images/centos7-install-9-4.jpg" /></p>
+<p>Удалите <em>home</em>, как показано ниже.</p>
+<p><img alt="Картинка" src="../images/centos7-install-9-5.jpg" /></p>
+<p>Освободившееся место отдайте разделу <em>/</em>. Для этого выберете его, укажите в поле Desired Capacity его размер. Минимальный размер диска: 45GB. Измените фокус (выберете другой раздел), чтобы изменения отобразились на экране.</p>
+<p><img alt="Картинка" src="../images/centos7-install-9-6.jpg" /></p>
+<p>Нажмите <em>Done</em>.</p>
+<p><img alt="Картинка" src="../images/centos7-install-9.jpg" /></p>
+<p>Подтвердите действие кнопкой <em>Accept Changes</em>.</p>
+<p><img alt="Картинка" src="../images/centos7-install-10.jpg" /></p>
+<p>В стартовом меню нажмите кнопку <em>Begin Instalation</em>, чтобы начать установку. </p>
+<p><img alt="Картинка" src="../images/centos7-install-11.jpg" /></p>
+<p>В открывшемся окне выберете <em>Root Password</em>. Введите ваш пароль (рекомендуемый пароль <strong>engine</strong>). Дважды нажмите <em>Done</em>.</p>
+<p><img alt="Картинка" src="../images/centos7-install-12.jpg" /></p>
+<p><img alt="Картинка" src="../images/centos7-install-13.jpg" /></p>
+<p>Ожидайте окончания установки. После заверщения подтвердите перезагрузку нажатием на кнопку <em>Reboot</em>.</p>
+<p><img alt="Картинка" src="../images/centos7-install-14.jpg" /></p>
+<h3 id="_3">После установки</h3>
+<h4 id="_4">Проверить, что диск предназначенный для размещения виртуальных машин подключен</h4>
+<p>Командой <code>multipath -ll</code> выведете подключенные по FC устройства. Если диск нужного размера отсутствует, проверьте, что маппинг настроен верно, что на схд диск презентован серверу, что настройки диска и сервера на стороне схд выполненны верно. После этого выполните процедуру переобнаружения дисков:</p>
+<ol>
+<li>Узнайте количество host bus адаптеров, которые есть на сервере:</li>
+</ol>
+<pre><code># ls /sys/class/fc_host
+host0  host1
+</code></pre>
+
+<ol>
+<li>Запустите сканирование:</li>
+</ol>
+<pre><code>echo &quot;1&quot; &gt; /sys/class/fc_host/host0/issue_lip
+echo &quot;- - -&quot; &gt; /sys/class/scsi_host/host0/scan
+echo &quot;1&quot; &gt; /sys/class/fc_host/host1/issue_lip
+echo &quot;- - -&quot; &gt; /sys/class/scsi_host/host1/scan
+</code></pre>
+
+<p><code>host0</code> и <code>host2</code> замените на значения, полученные в предыдушем шаге
+3. Перезапустите службу multipathd</p>
+<pre><code>service multipathd restart
+</code></pre>
+
+<ol>
+<li>Проверьте, что необходимый диск стал доступен</li>
+</ol>
+<pre><code>multipath -ll
+</code></pre>
+
+<h4 id="_5">Проверить, что сетевые настройки выполнены верно</h4>
+<p>Убедитесь, что внешняя сеть доступна для сервера с помощью команды <code>ping -c 4 &lt;ip-адрес&gt;</code></p>
+<pre><code>[root@testname1 ~]# ping -c 4 8.8.4.4
+PING 8.8.4.4 (8.8.4.4) 56(84) bytes of data.
+64 bytes from 8.8.4.4: icmp_seq=1 ttl=43 time=46.8 ms
+64 bytes from 8.8.4.4: icmp_seq=2 ttl=43 time=46.6 ms
+64 bytes from 8.8.4.4: icmp_seq=3 ttl=43 time=46.6 ms
+64 bytes from 8.8.4.4: icmp_seq=4 ttl=43 time=47.0 ms
+
+--- 8.8.4.4 ping statistics ---
+4 packets transmitted, 4 received, 0% packet loss, time 3004ms
+rtt min/avg/max/mdev = 46.648/46.796/47.018/0.153 ms
+</code></pre>
+
+<p>Убедитесь, что имена внешней сети разрешаются:</p>
+<pre><code>[root@testname1 ~]# ping -c 4 yandex.ru
+PING yandex.ru (5.255.255.70) 56(84) bytes of data.
+64 bytes from yandex.ru (5.255.255.70): icmp_seq=1 ttl=52 time=31.2 ms
+64 bytes from yandex.ru (5.255.255.70): icmp_seq=2 ttl=52 time=31.1 ms
+64 bytes from yandex.ru (5.255.255.70): icmp_seq=3 ttl=52 time=31.1 ms
+64 bytes from yandex.ru (5.255.255.70): icmp_seq=4 ttl=52 time=33.0 ms
+
+--- yandex.ru ping statistics ---
+4 packets transmitted, 4 received, 0% packet loss, time 3003ms
+rtt min/avg/max/mdev = 31.135/31.632/33.001/0.800 ms
+</code></pre>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../instalation-hostvm/" class="btn btn-neutral float-right" title="Установка виртуализации">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../requirements/" class="btn btn-neutral" title="Системные требования"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../requirements/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../instalation-hostvm/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme.js"></script>
+      <script src="../search/require.js"></script>
+      <script src="../search/search.js"></script>
+
+</body>
+</html>
