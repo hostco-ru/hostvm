@@ -4,5 +4,9 @@ pages:
 - Разработчик: developer.md
 - Технические характеристики: datasheet.md
 - Руководство по установке: installation-guide.md
+- Системные требования: requirements.md
+- Установка Centos7: installation-Centos7.md
+- Установка виртуализации: instalation-hostvm.md
+- Действия после установки виртуализации: after-install.md
 
 theme: readthedocs

@@ -2,22 +2,42 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
      <loc>/about/</loc>
-     <lastmod>2019-10-29</lastmod>
+     <lastmod>2019-10-30</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>/developer/</loc>
-     <lastmod>2019-10-29</lastmod>
+     <lastmod>2019-10-30</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>/datasheet/</loc>
-     <lastmod>2019-10-29</lastmod>
+     <lastmod>2019-10-30</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>/installation-guide/</loc>
-     <lastmod>2019-10-29</lastmod>
+     <lastmod>2019-10-30</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>/requirements/</loc>
+     <lastmod>2019-10-30</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>/installation-Centos7/</loc>
+     <lastmod>2019-10-30</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>/instalation-hostvm/</loc>
+     <lastmod>2019-10-30</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>/after-install/</loc>
+     <lastmod>2019-10-30</lastmod>
      <changefreq>daily</changefreq>
     </url>
 </urlset>

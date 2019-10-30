@@ -4,7 +4,7 @@
 
 Убедитесь, что требования, описанные на странице [Системные требования](requirements.md) выполняются.
 
-С помощью [PuTTY](https://www.putty.org) под пользователем root подключитесь к серверу.
+С помощью программы [PuTTY](https://www.putty.org), которая доступна в [наборе дистрибьютивов для развертывания решения][hostvm-public-link], под пользователем root подключитесь к серверу.
 
 Перед началом работы рекомендуется настроить логирование сессии putty. Для этого нужно выполнить следующие действия
 
@@ -16,6 +16,63 @@
 
 3. Перейдите на вкладку Сеанс, нажмите кнопку `Сохранить`, нажмите клавишу `Enter` чтобы запустить сессию:
   ![Картинка][hostvm-install-4]
+
+#### Проверить, что диск предназначенный для размещения виртуальных машин подключен
+
+Командой `multipath -ll` выведете подключенные по FC устройства. Если диск нужного размера отсутствует, проверьте, что маппинг настроен верно, что на схд диск презентован серверу, что настройки диска и сервера на стороне схд выполнены верно. После этого выполните процедуру переобнаружения дисков:
+
+1. Узнайте количество host bus адаптеров, которые есть на сервере:
+```
+# ls /sys/class/fc_host
+host0  host1
+```
+2. Запустите сканирование:
+```
+echo "1" > /sys/class/fc_host/host0/issue_lip
+echo "- - -" > /sys/class/scsi_host/host0/scan
+echo "1" > /sys/class/fc_host/host1/issue_lip
+echo "- - -" > /sys/class/scsi_host/host1/scan
+```
+`host0` и `host2` замените на значения, полученные в предыдущем шаге
+3. Перезапустите службу multipathd
+```
+service multipathd restart
+```
+4. Проверьте, что необходимый диск стал доступен
+```
+multipath -ll
+```
+
+#### Проверить, что сетевые настройки выполнены верно
+
+Убедитесь, что внешняя сеть доступна для сервера с помощью команды `ping -c 4 <ip-адрес>`
+```
+[root@testname1 ~]# ping -c 4 8.8.4.4
+PING 8.8.4.4 (8.8.4.4) 56(84) bytes of data.
+64 bytes from 8.8.4.4: icmp_seq=1 ttl=43 time=46.8 ms
+64 bytes from 8.8.4.4: icmp_seq=2 ttl=43 time=46.6 ms
+64 bytes from 8.8.4.4: icmp_seq=3 ttl=43 time=46.6 ms
+64 bytes from 8.8.4.4: icmp_seq=4 ttl=43 time=47.0 ms
+
+--- 8.8.4.4 ping statistics ---
+4 packets transmitted, 4 received, 0% packet loss, time 3004ms
+rtt min/avg/max/mdev = 46.648/46.796/47.018/0.153 ms
+```
+
+Убедитесь, что имена внешней сети разрешаются:
+```
+[root@testname1 ~]# ping -c 4 yandex.ru
+PING yandex.ru (5.255.255.70) 56(84) bytes of data.
+64 bytes from yandex.ru (5.255.255.70): icmp_seq=1 ttl=52 time=31.2 ms
+64 bytes from yandex.ru (5.255.255.70): icmp_seq=2 ttl=52 time=31.1 ms
+64 bytes from yandex.ru (5.255.255.70): icmp_seq=3 ttl=52 time=31.1 ms
+64 bytes from yandex.ru (5.255.255.70): icmp_seq=4 ttl=52 time=33.0 ms
+
+--- yandex.ru ping statistics ---
+4 packets transmitted, 4 received, 0% packet loss, time 3003ms
+rtt min/avg/max/mdev = 31.135/31.632/33.001/0.800 ms
+```
+
 
 #### Установка необходимых пакетов
 

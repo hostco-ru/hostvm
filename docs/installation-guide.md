@@ -1,6 +1,6 @@
 # Руководство по установке
 
-## [Системные требования](Requirements.md)
+## [Системные требования](requirements.md)
 
 ## [Установка Centos7](installation-Centos7.md)
 
