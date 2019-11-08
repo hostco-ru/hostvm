@@ -1,4 +1,4 @@
-### Подготовка сервера к развертыванию на диски схд
+### Подготовка сервера к развертыванию на локальных дисках
 
 #### Подготовка putty к работе
 
@@ -19,28 +19,22 @@
 
 #### Проверить, что диск предназначенный для размещения виртуальных машин подключен
 
-Командой `multipath -ll` выведете подключенные по FC устройства. Если диск нужного размера отсутствует, проверьте, что маппинг настроен верно, что на схд диск презентован серверу, что настройки диска и сервера на стороне схд выполнены верно. После этого выполните процедуру переобнаружения дисков:
+Командой `cat /etc/fstab` выведите на экран список используемых в системе устройств хранения. В качестве точки монтирования мы использовали директорию `/data`. 
+```
+[root@host1 ~]# cat /etc/fstab
 
-1. Узнайте количество host bus адаптеров, которые есть на сервере:
-```
-# ls /sys/class/fc_host
-host0  host1
-```
-2. Запустите сканирование:
-```
-echo "1" > /sys/class/fc_host/host0/issue_lip
-echo "- - -" > /sys/class/scsi_host/host0/scan
-echo "1" > /sys/class/fc_host/host1/issue_lip
-echo "- - -" > /sys/class/scsi_host/host1/scan
-```
-`host0` и `host2` замените на значения, полученные в предыдущем шаге
-3. Перезапустите службу multipathd
-```
-service multipathd restart
-```
-4. Проверьте, что необходимый диск стал доступен
-```
-multipath -ll
+#
+# /etc/fstab
+# Created by anaconda on Fri Nov  1 09:31:43 2019
+#
+# Accessible filesystems, by reference, are maintained under '/dev/disk'
+# See man pages fstab(5), findfs(8), mount(8) and/or blkid(8) for more info
+#
+/dev/mapper/centos_host1-root /                       xfs     defaults        0 0
+UUID=2412661b-df41-46c7-ad31-b5b696dfc218 /boot                   xfs     defaults        0 0
+/dev/mapper/centos_host1-data /data                   xfs     defaults        0 0
+/dev/mapper/centos_host1-swap swap                    swap    defaults        0 0
+
 ```
 
 #### Проверить, что сетевые настройки выполнены верно
@@ -96,7 +90,7 @@ localhost | SUCCESS => {
 }
 
 ```
-3. Загрузите zip-архив `hostvm.zip` с [портала][hostvm-public-link], разместите его в папке `/root/`. 
+3. Загрузите zip-архив `hostvm-gluster.zip` с [портала][hostvm-public-link], разместите его в папке `/root/`. 
   Для передачи файла на сервер с рабочего места, где установлена ОС Windows, необходимо использовать утилиту [WinSCP](https://winscp.net), которая доступна в [наборе дистрибьютивов для развертывания решения][hostvm-public-link].
   ![Картинка][hostvm-install-1]
 ```
@@ -108,7 +102,6 @@ localhost | SUCCESS => {
 /root
 
 ```
-
 4. Разархивируйте папку:
 ```
 unzip hostvm.zip -d /root/
@@ -122,7 +115,6 @@ drwxr-xr-x. 6 root root   268 Oct 22 10:42 ansible
 -rw-r--r--. 1 root root 57619 Oct 22 11:18 hostvm.zip
 -rw-r--r--. 1 root root  5115 Oct 21 16:18 IP-wizard.sh
 ```
-
 6. Скопируйте содержимое папки `ansible` в папку `/etc/ansible`:
 ```
 [root@host1 ~]# yes | cp -rpf /root/ansible/* /etc/ansible/
@@ -146,7 +138,9 @@ cp: overwrite ‘/etc/ansible/ansible.cfg’? cp: overwrite ‘/etc/ansible/host
 | домен установки       |   -                          |               |
 | hostname сервера      |   -                          |               |
 | название интерфейса   |   ip addr                    |               |
-| guid на который выполняем установку | multipath -ll  |               |
+|предпочтительный gluster-hostname | - | |
+|предпочтительное название тома gluster | - | |
+|директорию для размещения тома gluster | - | |
 
 Для получения ip-адреса сервера и название интерфейса выполните команду `ip addr` :
 
@@ -180,35 +174,21 @@ default via 10.1.140.1 dev enp3s0 proto static metric 100
 10.1.140.0/25 dev enp3s0 proto kernel scope link src 10.1.140.14 metric 100
 ```
 
-Для получения guid диска выполните команду `multipath -ll` 
+Для параметры связанные с glusterfs могут быть выбраны значения по умолчанию:
 
-Согласно примеру ниже видно, что используется 2 внешних диска, один на 56G, второй на 250G. Первый используется как системный. Использовать системный диск как хранилище виртуальных машин нельзя, по этому выбираем второй диск. guid-диска - `3600508b400099f8e0002e000036a0000`
+| Название  | Значение по умолчанию |
+|:------------- |:---------------:|
+|предпочтительный gluster-hostname | glusternode1 |
+|предпочтительное название тома gluster | hosted-engine |
+|директорию для размещения тома gluster | /data/gluster/hosted_engine |
 
-```
-[root@testname1 ~]#  multipath -ll
-36001438009b0222800007000033f0000 dm-0 HP      ,HSV340
-size=56G features='1 queue_if_no_path' hwhandler='0' wp=rw
-|-+- policy='service-time 0' prio=50 status=active
-| |- 1:0:2:1 sde 8:64  active ready running
-| `- 2:0:2:1 sdf 8:80  active ready running
-`-+- policy='service-time 0' prio=10 status=enabled
-  |- 1:0:1:1 sdc 8:32  active ready running
-  `- 2:0:1:1 sdd 8:48  active ready running
-3600508b400099f8e0002e000036a0000 dm-3 HP      ,HSV300
-size=250G features='1 queue_if_no_path' hwhandler='0' wp=rw
-|-+- policy='service-time 0' prio=50 status=active
-| |- 1:0:3:1 sdg 8:96  active ready running
-| `- 2:0:0:1 sdb 8:16  active ready running
-`-+- policy='service-time 0' prio=10 status=enabled
-  |- 1:0:0:1 sda 8:0   active ready running
-  `- 2:0:3:1 sdh 8:112 active ready running
-```
+Обратите внимание, что рекомендуется использовать отдельный раздел для размещения тома glusterfs, который имеет точку монтирования в директории */data*
 
 #### Запуск программы-помощника IP-wizard 
 
 Запустите `IP-wizard.sh`, чтобы подготовить файлы переменных к работе. Следуйте указаниями инструкции в программе:
 ```
-[root@host1 ~]# sh IP-wizard.sh
+sh IP-wizard.sh 
 
 Добро пожаловать в программу-помощник IP-wizard Группы компаний ХОСТ!
 Мы попросим ответить на несколько вопросов и сформируем нужные файлы конфигурации Ansible.
@@ -216,6 +196,7 @@ size=250G features='1 queue_if_no_path' hwhandler='0' wp=rw
 Внимание! Программа изменит файлы в папках /etc/ansible/group_vars и /etc/ansible/host_vars!
 
 Нажмите ENTER для продолжения или ^C для выхода из программы!
+Для принятия значений по-умолчанию просто нажимайте ENTER. ;)
 
 Укажите ваш Домен: mydomain.ru
 Домен: mydomain.ru
@@ -223,47 +204,62 @@ size=250G features='1 queue_if_no_path' hwhandler='0' wp=rw
 Укажите кластерный IP адрес oVirt Engine: 10.1.140.15
 Engine: 10.1.140.15
 
-Укажите guid для луна, на котором будут размещены виртуальные машины (имеет вид 3600508b400099f8e0002e000036a0000, можно посмотреть командой multipath -l : 3600508b400099f8e0002e000036a0000
-guid: 3600508b400099f8e0002e000036a0000
-
-Укажите IP адрес первого сервера  : 10.1.140.13
+Укажите IP адрес первого сервера : 10.1.140.13
 nodeip1: 10.1.140.13
 
-Укажите шлюз (gateway) сети первого сервера : 10.1.140.1
+Укажите шлюз (gateway) сети первого сервера: 10.1.140.1
 Public LAN gateway: 10.1.140.1
 
-Укажите hostname первого сервера (без домена) : host1
-hostname первого сервера: host1
+Укажите hostname первого сервера (без домена): myhost1
+hostname первого сервера: myhost1
 
-Укажите hostname имя интерфейса первого сервера (Например, enp2s0f0. Можно посмотреть командой ip addr) : enp2s0f0
+На сервере будет развернута нода glusterfs.
+Укажите предпочтительный gluster-hostname первого сервера (без домена)(glusternode1): glust1
+gluster-hostname первого сервера: glust1
+
+В среде виртуализации для размещения управляющей машины engine будет создан домен хранения hosted-engine
+Укажите предпочтительное название тома gluster (hosted-engine): 
+Имя тома gluster для домена хранения hosted-engine: hosted-engine
+
+Укажите директорию для размещения тома gluster hosted-engineОбратите внимание, что для установки на разделе выбранного расположения директории должно быть свободно минимум 61ГБ
+(/data/gluster/hosted_engine): 
+Директория для glusterfs : /data/gluster/hosted_engine
+
+Укажите hostname имя интерфейса первого сервера (Например enp2s0f0. Можно посмотреть командой ip addr): enp2s0f0
 имя интерфейса первого сервера: enp2s0f0
 
 
 Укажите ваш DNS сервер: 10.1.64.248
 DNS: 10.1.64.248
-Начинаю модификацию файлов...
 
+Начинаю модификацию файлов...
 dns_root: 10.1.64.248
 Изменен файл /etc/ansible/group_vars/all.
 
-ansible_connection: ssh
-ansible_ssh_user: root
+Генерируем /etc/ansible/group_vars/nodes...
+ansible_connection: ssh 
+ansible_ssh_user: root 
 ansible_ssh_pass: engine
 ansible_ssh_common_args: '-o StrictHostKeyChecking=no'
 ovirt_engine_ip: 10.1.140.15
 ovirt_engine_fqdn: 'engine.mydomain.ru'
 ovirt_engine_domain: 'mydomain.ru'
 ovirt_engine_password: 'engine'
-guid_for_store: 3600508b400099f8e0002e000036a0000
 Изменен файл /etc/ansible/group_vars/nodes.
 
 Генерируем /etc/ansible/host_vars/host1...
-hostname: host1.mydomain.ru
-shothostname: host1
+hostname: myhost1.mydomain.ru
+shothostname: myhost1
 ip: 10.1.140.13
 ip_gateway: 10.1.140.1
 nic_for_ovirtmgmt_bridge: enp2s0f0
+gluster_hostname: glust1
 Изменен файл /etc/ansible/host_vars/host1.
+
+Генерируем /etc/ansible/group_vars/gluster...
+gluster_dir_for_hosted_engine: /data/gluster/hosted_engine/brick1
+gluster_hosted_engine_volume_name: hosted-engine
+Изменен файл /etc/ansible/group_vars/gluster.
 
 [root@host1 ~]#
 
@@ -271,44 +267,14 @@ nic_for_ovirtmgmt_bridge: enp2s0f0
 
 ### Установка виртуализации
 
-Выполните команду `ansible-playbook /etc/ansible/make-prepare.yml`, чтобы подготовить к работе /etc/hosts и диск с указанным guid. *Сервер будет перезагружен!*
+Выполните команду `ansible-playbook /etc/ansible/make-prepare.yml`, чтобы подготовить к работе /etc/hosts. 
 ```
 [root@host1 ~]# ansible-playbook /etc/ansible/make-prepare.yml
-[DEPRECATION WARNING]: The use of 'include' for tasks has been deprecated. Use 'import_tasks' for static inclusions or 'include_tasks' for dynamic inclusions. This feature will be removed in a future release. Deprecation warnings can be
- disabled by setting deprecation_warnings=False in ansible.cfg.
-[DEPRECATION WARNING]: include is kept for backwards compatibility but usage is discouraged. The module documentation details page may explain more about this rationale.. This feature will be removed in a future release. Deprecation
-warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+```
 
-PLAY [Ensure that dns and /etc/hosts was configured] ****************************************************************************************************************************************************************************************
-
-TASK [Gathering Facts] **********************************************************************************************************************************************************************************************************************
-ok: [localhost]
-
-TASK [set-net : Push resolv.conf] ***********************************************************************************************************************************************************************************************************
-changed: [localhost]
-
-TASK [set-net : Push hosts] *****************************************************************************************************************************************************************************************************************
-changed: [localhost]
-
-PLAY [Ensure that disk with guide {{ guid_for_store }} are ready] ***************************************************************************************************************************************************************************
-
-TASK [Gathering Facts] **********************************************************************************************************************************************************************************************************************
-ok: [localhost]
-
-TASK [set-disk : run dd and clean the Lun] **************************************************************************************************************************************************************************************************
-fatal: [localhost]: FAILED! => {"changed": true, "cmd": "dd if=/dev/zero of=/dev/mapper/3600508b400099f8e0002e000036a0000 bs=1M", "delta": "0:00:12.366169", "end": "2019-10-22 11:58:59.287969", "msg": "non-zero return code", "rc": 1, "start": "2019-10-22 11:58:46.921800", "stderr": "dd: error writing ‘/dev/mapper/3600508b400099f8e0002e000036a0000’: No space left on device\n24049+0 records in\n24048+0 records out\n25216602112 bytes (25 GB) copied, 10.1213 s, 2.5 GB/s", "stderr_lines": ["dd: error writing ‘/dev/mapper/3600508b400099f8e0002e000036a0000’: No space left on device", "24049+0 records in", "24048+0 records out", "25216602112 bytes (25 GB) copied, 10.1213 s, 2.5 GB/s"], "stdout": "", "stdout_lines": []}
-        to retry, use: --limit @/etc/ansible/make-prepare.retry
-
-TASK [multipath-add-blacklist : Configure MultiPath configuration] **************************************************************************************************************************
-changed: [localhost]
-TASK [multipath-add-blacklist : restart multipathd] *****************************************************************************************************************************************
-changed: [localhost]
-PLAY [ovirt-master] *************************************************************************************************************************************************************************
-
-TASK [Gathering Facts] **********************************************************************************************************************************************************************
-ok: [localhost]
-TASK [reboot] ****************************************************************
-
+Выполните команду `ansible-playbook /etc/ansible/make-gluster-storages.yml`, чтобы подготовить к работе glusterfs. 
+```
+[root@host1 ~]# ansible-playbook /etc/ansible/make-gluster-storages.yml
 ```
 
 Запустите установку необходимых пакетов виртуализации командой `ansible-playbook /etc/ansible/make-ovirt.yml`. На ее выполнение уйдет чуть больше часа. 
@@ -348,9 +314,6 @@ ok: [localhost] => (item=[u'expect'])
 TASK [ovirt-master : Ensure that script-hosted-engine-deploy is pushed] *********************************************************************************************************************************************************************
 changed: [localhost]
 
-TASK [ovirt-master : Ensure that script getFCLun.py is pushed] ******************************************************************************************************************************************************************************
-changed: [localhost]
-
 TASK [ovirt-master : Check hosted-deploy status] ********************************************************************************************************************************************************************************************
 ok: [localhost]
 
@@ -372,26 +335,6 @@ localhost                  : ok=9    changed=2    unreachable=0    failed=0    s
 
 ```
 
-Ответьте на вопросы по завершению установки:
-- выберете диск, на котором должно быть хранилище виртуальных машин;
-- выберете размер диска управляющей виртуальной машины (рекомендуемый размер 51GiB).
-
-```
-The following luns have been found on the requested target:
-              [1]          36001438009b0222800007000033f0000              56GiB    HP          HSV340
-                             status: used, paths: 4 active
-        
-              [2]          36001438009b022280000700003a30000             550GiB  HP          HSV340
-                             status: used, paths: 4 active
-        
-              [3]          3600508b400099f8e0002e000036a0000              250GiB  HP          HSV300
-                             status: used, paths: 4 active
-        
-          Please select the destination LUN (1, 2, 3) [1]: 
-          ...
-          Please specify the size of the VM disk in GiB: [51]:
-```
-
 После завершения развертывания виртуализации откройте браузер и перейдите по адресу *https://engine.mydomain.ru*, чтобы попасть в панель управления.
 
 ### Если что-то пошло не так
@@ -399,8 +342,9 @@ The following luns have been found on the requested target:
 1. Проверить корректность данных, которые были введены в IP-wizard. При обнаружении ошибки выполните команду `ansible-playbook /etc/ansible/clean-node.yml` и начните сначала.
 2. Если на этапе `/root/script-hosted-engine-deploy | tee -a /root/script-hosted-engine-deploy.log` появилась ошибка, то выполните команду `ansible-playbook /etc/ansible/clean-node.yml` и начните сначала
 3. Если на этапе `ansible-playbook /etc/ansible/make-prepare.yml` появилась ошибка, повторите выполнение данной команды
-4. Если на этапе `ansible-playbook /etc/ansible/make-ovirt.yml` появилась ошибка, повторите выполнение данной команды
-5. Если после завершения установки вам не открывается страница в браузере с адресом https://engine.mydomain.ru, то
+4. Если на этапе `ansible-playbook /etc/ansible/make-gluster-storages.yml` появилась ошибка, повторите выполнение данной команды
+5. Если на этапе `ansible-playbook /etc/ansible/make-ovirt.yml` появилась ошибка, повторите выполнение данной команды
+6. Если после завершения установки вам не открывается страница в браузере с адресом https://engine.mydomain.ru, то
     1. Проверьте, что ip для engine, указанный в таблице в начале установки отвечает на команду ping
     2. Проверьте, что имя `engine.mydomain.ru` разрешается вашим dns-сервером.
 
@@ -414,6 +358,6 @@ The following luns have been found on the requested target:
 [hostvm-install-2]: ./images/hostvm-install-2.jpg
 [hostvm-install-3]: ./images/hostvm-install-3.jpg
 [hostvm-install-4]: ./images/hostvm-install-4.jpg
-[hostvm-install-troubleshooting-scheme]: ./images/troubleshooting-scheme.jpg
+[hostvm-install-troubleshooting-scheme]: ./images/troubleshooting-scheme-on-local-disks.jpg
 [hostvm-public-link]: https://reestr.hostco.ru/downloads
 [hostvm-public-TS-instruction]: https://reestr.hostco.ru/downloads
