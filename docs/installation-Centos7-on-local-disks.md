@@ -116,4 +116,6 @@
 [image14]: ./images/centos7-install-13.jpg
 [image15]: ./images/centos7-install-14.jpg
 
+[image16]: ./images/centos7-install-15.jpg
+
 [hostvm-public-link]: https://reestr.hostco.ru/downloads
