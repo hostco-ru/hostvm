@@ -14,3 +14,5 @@
 ### [Установка виртуализации на диски схд](instalation-hostvm.md)
 
 ## [Действия после установки виртуализации](after-install.md)
+
+## [Установка Kaspersky Security для виртуальных сред 5.х Легкий агент на oVirt](installation-KSC.md)
