@@ -92,19 +92,19 @@ localhost | SUCCESS => {
 ```
 3. Загрузите zip-архив `hostvm-gluster.zip` с [портала][hostvm-public-link], разместите его в папке `/root/`. 
   Для передачи файла на сервер с рабочего места, где установлена ОС Windows, необходимо использовать утилиту [WinSCP](https://winscp.net), которая доступна в [наборе дистрибьютивов для развертывания решения][hostvm-public-link].
-  ![Картинка][hostvm-install-1]
+  ![Картинка][hostvm-install-1-1]
 ```
 [root@host1 ~]# ls -l
 
 -rw-------. 1 root root  1744 Oct 21 16:52 anaconda-ks.cfg
--rw-r--r--. 1 root root 57619 Oct 22 11:18 hostvm.zip
+-rw-r--r--. 1 root root 57619 Oct 22 11:18 hostvm-gluster.zip
 [root@host1 ~]# pwd
 /root
 
 ```
 4. Разархивируйте папку:
 ```
-unzip hostvm.zip -d /root/
+unzip hostvm-gluster.zip -d /root/
 ```
 5. Проверьте состав файлов:
 ```
@@ -112,7 +112,7 @@ unzip hostvm.zip -d /root/
 total 72
 -rw-------. 1 root root  1744 Oct 21 16:52 anaconda-ks.cfg
 drwxr-xr-x. 6 root root   268 Oct 22 10:42 ansible
--rw-r--r--. 1 root root 57619 Oct 22 11:18 hostvm.zip
+-rw-r--r--. 1 root root 57619 Oct 22 11:18 hostvm-gluster.zip
 -rw-r--r--. 1 root root  5115 Oct 21 16:18 IP-wizard.sh
 ```
 6. Скопируйте содержимое папки `ansible` в папку `/etc/ansible`:
@@ -144,7 +144,7 @@ cp: overwrite ‘/etc/ansible/ansible.cfg’? cp: overwrite ‘/etc/ansible/host
 
 Для получения ip-адреса сервера и название интерфейса выполните команду `ip addr` :
 
-Согласно примеру ниже видно, что ip-адрес сервера - `10.1.140.14`, название интерфейса - `enp3s0`.
+Согласно примеру ниже видно, что ip-адрес сервера - `10.1.140.13`, название интерфейса - `enp3s0`.
 ```
 [root@host1 ~]# ip addr
 1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
@@ -155,7 +155,7 @@ cp: overwrite ‘/etc/ansible/ansible.cfg’? cp: overwrite ‘/etc/ansible/host
        valid_lft forever preferred_lft forever
 2: enp3s0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc mq state UP group default qlen 1000
     link/ether 00:17:a4:77:00:0c brd ff:ff:ff:ff:ff:ff
-    inet 10.1.140.14/25 brd 10.1.140.127 scope global noprefixroute enp3s0
+    inet 10.1.140.13/25 brd 10.1.140.127 scope global noprefixroute enp3s0
        valid_lft forever preferred_lft forever
     inet6 fe80::b50a:7c22:2229:b169/64 scope link noprefixroute
        valid_lft forever preferred_lft forever
@@ -171,7 +171,7 @@ cp: overwrite ‘/etc/ansible/ansible.cfg’? cp: overwrite ‘/etc/ansible/host
 ```
 [root@host1 ~]# ip route
 default via 10.1.140.1 dev enp3s0 proto static metric 100
-10.1.140.0/25 dev enp3s0 proto kernel scope link src 10.1.140.14 metric 100
+10.1.140.0/25 dev enp3s0 proto kernel scope link src 10.1.140.13 metric 100
 ```
 
 Для параметры связанные с glusterfs могут быть выбраны значения по умолчанию:
@@ -354,7 +354,7 @@ localhost                  : ok=9    changed=2    unreachable=0    failed=0    s
 
 Если устранить проблему не удалось, обратитесь в [техническую поддержку](hostco.ru) используя [инструкцию][hostvm-public-TS-instruction] К обращению приложите лог вывода вашей консоли, который был настроен в начале установки и файл `/root/script-hosted-engine-deploy.log`.
 
-[hostvm-install-1]: ./images/hostvm-install-1.jpg
+[hostvm-install-1-1]: ./images/hostvm-install-1-1.jpg
 [hostvm-install-2]: ./images/hostvm-install-2.jpg
 [hostvm-install-3]: ./images/hostvm-install-3.jpg
 [hostvm-install-4]: ./images/hostvm-install-4.jpg
