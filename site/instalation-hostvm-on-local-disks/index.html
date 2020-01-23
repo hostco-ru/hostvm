@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>Instalation hostvm on local disks - Платформа виртуализации ХОСТ</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Instalation hostvm on local disks";
+    var mkdocs_page_input_path = "instalation-hostvm-on-local-disks.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> Платформа виртуализации ХОСТ</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../about/">О проекте</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../developer/">Разработчик</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../datasheet/">Технические характеристики</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../installation-guide/">Руководство по установке</a>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">Платформа виртуализации ХОСТ</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Instalation hostvm on local disks</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h3 id="_1">Подготовка сервера к развертыванию на локальных дисках</h3>
+<h4 id="putty">Подготовка putty к работе</h4>
+<p>Убедитесь, что требования, описанные на странице <a href="../requirements/">Системные требования</a> выполняются.</p>
+<p>С помощью программы <a href="https://www.putty.org">PuTTY</a>, которая доступна в <a href="https://reestr.hostco.ru/downloads">наборе дистрибьютивов для развертывания решения</a>, под пользователем root подключитесь к серверу.</p>
+<p>Перед началом работы рекомендуется настроить логирование сессии putty. Для этого нужно выполнить следующие действия</p>
+<ol>
+<li>
+<p>Сохраните имя сервера:
+  <img alt="Картинка" src="../images/hostvm-install-2.jpg" /></p>
+</li>
+<li>
+<p>Перейдите на вкладку Журнал (мы можем добавить ссылку на страницу с этой вкладкой?), выберите <code>Весь вывод</code>, укажите путь до файла логов в следующем виде: <code>C:\path\to\log\hostname-&amp;H-&amp;Y&amp;M&amp;D-&amp;T.log</code>. Часть <code>&amp;H-&amp;Y&amp;M&amp;D-&amp;T</code> указывает, что файл с логом будет создаваться для каждой сессии и автоматически указывать время и дату ее начала:<br />
+<img alt="Картинка" src="../images/hostvm-install-3.jpg" /></p>
+</li>
+<li>
+<p>Перейдите на вкладку Сеанс, нажмите кнопку <code>Сохранить</code>, нажмите клавишу <code>Enter</code> чтобы запустить сессию:
+  <img alt="Картинка" src="../images/hostvm-install-4.jpg" /></p>
+</li>
+</ol>
+<h4 id="_2">Проверить, что диск предназначенный для размещения виртуальных машин подключен</h4>
+<p>Командой <code>cat /etc/fstab</code> выведите на экран список используемых в системе устройств хранения. В качестве точки монтирования мы использовали директорию <code>/data</code>. </p>
+<pre><code>[root@host1 ~]# cat /etc/fstab
+
+#
+# /etc/fstab
+# Created by anaconda on Fri Nov  1 09:31:43 2019
+#
+# Accessible filesystems, by reference, are maintained under '/dev/disk'
+# See man pages fstab(5), findfs(8), mount(8) and/or blkid(8) for more info
+#
+/dev/mapper/centos_host1-root /                       xfs     defaults        0 0
+UUID=2412661b-df41-46c7-ad31-b5b696dfc218 /boot                   xfs     defaults        0 0
+/dev/mapper/centos_host1-data /data                   xfs     defaults        0 0
+/dev/mapper/centos_host1-swap swap                    swap    defaults        0 0
+
+</code></pre>
+
+<h4 id="_3">Проверить, что сетевые настройки выполнены верно</h4>
+<p>Убедитесь, что внешняя сеть доступна для сервера с помощью команды <code>ping -c 4 &lt;ip-адрес&gt;</code></p>
+<pre><code>[root@testname1 ~]# ping -c 4 8.8.4.4
+PING 8.8.4.4 (8.8.4.4) 56(84) bytes of data.
+64 bytes from 8.8.4.4: icmp_seq=1 ttl=43 time=46.8 ms
+64 bytes from 8.8.4.4: icmp_seq=2 ttl=43 time=46.6 ms
+64 bytes from 8.8.4.4: icmp_seq=3 ttl=43 time=46.6 ms
+64 bytes from 8.8.4.4: icmp_seq=4 ttl=43 time=47.0 ms
+
+--- 8.8.4.4 ping statistics ---
+4 packets transmitted, 4 received, 0% packet loss, time 3004ms
+rtt min/avg/max/mdev = 46.648/46.796/47.018/0.153 ms
+</code></pre>
+
+<p>Убедитесь, что имена внешней сети разрешаются:</p>
+<pre><code>[root@testname1 ~]# ping -c 4 yandex.ru
+PING yandex.ru (5.255.255.70) 56(84) bytes of data.
+64 bytes from yandex.ru (5.255.255.70): icmp_seq=1 ttl=52 time=31.2 ms
+64 bytes from yandex.ru (5.255.255.70): icmp_seq=2 ttl=52 time=31.1 ms
+64 bytes from yandex.ru (5.255.255.70): icmp_seq=3 ttl=52 time=31.1 ms
+64 bytes from yandex.ru (5.255.255.70): icmp_seq=4 ttl=52 time=33.0 ms
+
+--- yandex.ru ping statistics ---
+4 packets transmitted, 4 received, 0% packet loss, time 3003ms
+rtt min/avg/max/mdev = 31.135/31.632/33.001/0.800 ms
+</code></pre>
+
+<h4 id="_4">Установка необходимых пакетов</h4>
+<ol>
+<li>Установите пакеты wget, zip, unzip, ansible:</li>
+</ol>
+<pre><code>yum install wget zip unzip ansible -y
+...
+Installed:
+  unzip.x86_64 0:6.0-20.el7  wget.x86_64 0:1.14-18.el7_6.1  zip.x86_64 0:3.0-11.el7   ansible-2.4.2.0-2.el7.noarch
+
+Complete!
+
+</code></pre>
+
+<ol>
+<li>Проверьте, что ansible установлен:</li>
+</ol>
+<pre><code>ansible -m ping localhost
+
+localhost | SUCCESS =&gt; {
+    &quot;changed&quot;: false,
+    &quot;ping&quot;: &quot;pong&quot;
+}
+
+</code></pre>
+
+<ol>
+<li>Загрузите zip-архив <code>hostvm-gluster.zip</code> с <a href="https://reestr.hostco.ru/downloads">портала</a>, разместите его в папке <code>/root/</code>. 
+  Для передачи файла на сервер с рабочего места, где установлена ОС Windows, необходимо использовать утилиту <a href="https://winscp.net">WinSCP</a>, которая доступна в <a href="https://reestr.hostco.ru/downloads">наборе дистрибьютивов для развертывания решения</a>.
+  <img alt="Картинка" src="../images/hostvm-install-1-1.jpg" /></li>
+</ol>
+<pre><code>[root@host1 ~]# ls -l
+
+-rw-------. 1 root root  1744 Oct 21 16:52 anaconda-ks.cfg
+-rw-r--r--. 1 root root 57619 Oct 22 11:18 hostvm-gluster.zip
+[root@host1 ~]# pwd
+/root
+
+</code></pre>
+
+<ol>
+<li>Разархивируйте папку:</li>
+</ol>
+<pre><code>unzip hostvm-gluster.zip -d /root/
+</code></pre>
+
+<ol>
+<li>Проверьте состав файлов:</li>
+</ol>
+<pre><code>[root@host1 ~]# ls -l
+total 72
+-rw-------. 1 root root  1744 Oct 21 16:52 anaconda-ks.cfg
+drwxr-xr-x. 6 root root   268 Oct 22 10:42 ansible
+-rw-r--r--. 1 root root 57619 Oct 22 11:18 hostvm-gluster.zip
+-rw-r--r--. 1 root root  5115 Oct 21 16:18 IP-wizard.sh
+</code></pre>
+
+<ol>
+<li>Скопируйте содержимое папки <code>ansible</code> в папку <code>/etc/ansible</code>:</li>
+</ol>
+<pre><code>[root@host1 ~]# yes | cp -rpf /root/ansible/* /etc/ansible/
+cp: overwrite ‘/etc/ansible/ansible.cfg’? cp: overwrite ‘/etc/ansible/hosts’? [root@host1 ~]#
+[root@host1 ~]#
+
+</code></pre>
+
+<h3 id="_5">Заполнение формы для установки значений переменных</h3>
+<h4 id="_6">Сбор данных для заполнения формы</h4>
+<p>Перед началом работы рекомендуется заполнить последний столбец следующей таблицы (<em>способ сбора данных для таблице описан ниже по тексту)</em>: </p>
+<table>
+<thead>
+<tr>
+<th align="left">Название</th>
+<th align="center">Как узнать</th>
+<th align="center">Значение</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">ip для engine</td>
+<td align="center">-</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="left">ip сервера</td>
+<td align="center">ip addr</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="left">ip шлюза по умолчанию</td>
+<td align="center">ip route</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="left">ip dns-сервера</td>
+<td align="center">-</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="left">домен установки</td>
+<td align="center">-</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="left">hostname сервера</td>
+<td align="center">-</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="left">название интерфейса</td>
+<td align="center">ip addr</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="left">предпочтительный gluster-hostname</td>
+<td align="center">-</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="left">предпочтительное название тома gluster</td>
+<td align="center">-</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="left">директорию для размещения тома gluster</td>
+<td align="center">-</td>
+<td align="center"></td>
+</tr>
+</tbody>
+</table>
+<p>Для получения ip-адреса сервера и название интерфейса выполните команду <code>ip addr</code> :</p>
+<p>Согласно примеру ниже видно, что ip-адрес сервера - <code>10.1.140.13</code>, название интерфейса - <code>enp3s0</code>.</p>
+<pre><code>[root@host1 ~]# ip addr
+1: lo: &lt;LOOPBACK,UP,LOWER_UP&gt; mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host
+       valid_lft forever preferred_lft forever
+2: enp3s0: &lt;BROADCAST,MULTICAST,UP,LOWER_UP&gt; mtu 1500 qdisc mq state UP group default qlen 1000
+    link/ether 00:17:a4:77:00:0c brd ff:ff:ff:ff:ff:ff
+    inet 10.1.140.13/25 brd 10.1.140.127 scope global noprefixroute enp3s0
+       valid_lft forever preferred_lft forever
+    inet6 fe80::b50a:7c22:2229:b169/64 scope link noprefixroute
+       valid_lft forever preferred_lft forever
+3: enp7s0: &lt;BROADCAST,MULTICAST,UP,LOWER_UP&gt; mtu 1500 qdisc mq state UP group default qlen 1000
+    link/ether 00:17:a4:77:00:0e brd ff:ff:ff:ff:ff:ff
+
+</code></pre>
+
+<p>Для получения ip-адреса шлюза выполните команду <code>ip route</code>.</p>
+<p>Согласно примеру ниже видно, что ip шлюза по умолчанию - <code>10.1.140.1</code></p>
+<pre><code>[root@host1 ~]# ip route
+default via 10.1.140.1 dev enp3s0 proto static metric 100
+10.1.140.0/25 dev enp3s0 proto kernel scope link src 10.1.140.13 metric 100
+</code></pre>
+
+<p>Для параметры связанные с glusterfs могут быть выбраны значения по умолчанию:</p>
+<table>
+<thead>
+<tr>
+<th align="left">Название</th>
+<th align="center">Значение по умолчанию</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">предпочтительный gluster-hostname</td>
+<td align="center">glusternode1</td>
+</tr>
+<tr>
+<td align="left">предпочтительное название тома gluster</td>
+<td align="center">hosted-engine</td>
+</tr>
+<tr>
+<td align="left">директорию для размещения тома gluster</td>
+<td align="center">/data/gluster/hosted_engine</td>
+</tr>
+</tbody>
+</table>
+<p>Обратите внимание, что рекомендуется использовать отдельный раздел для размещения тома glusterfs, который имеет точку монтирования в директории <em>/data</em></p>
+<h4 id="-ip-wizard">Запуск программы-помощника IP-wizard</h4>
+<p>Запустите <code>IP-wizard.sh</code>, чтобы подготовить файлы переменных к работе. Следуйте указаниями инструкции в программе:</p>
+<pre><code>sh IP-wizard.sh 
+
+Добро пожаловать в программу-помощник IP-wizard Группы компаний ХОСТ!
+Мы попросим ответить на несколько вопросов и сформируем нужные файлы конфигурации Ansible.
+
+Внимание! Программа изменит файлы в папках /etc/ansible/group_vars и /etc/ansible/host_vars!
+
+Нажмите ENTER для продолжения или ^C для выхода из программы!
+Для принятия значений по-умолчанию просто нажимайте ENTER. ;)
+
+Укажите ваш Домен: mydomain.ru
+Домен: mydomain.ru
+
+Укажите кластерный IP адрес oVirt Engine: 10.1.140.15
+Engine: 10.1.140.15
+
+Укажите IP адрес первого сервера : 10.1.140.13
+nodeip1: 10.1.140.13
+
+Укажите шлюз (gateway) сети первого сервера: 10.1.140.1
+Public LAN gateway: 10.1.140.1
+
+Укажите hostname первого сервера (без домена): myhost1
+hostname первого сервера: myhost1
+
+На сервере будет развернута нода glusterfs.
+Укажите предпочтительный gluster-hostname первого сервера (без домена)(glusternode1): glust1
+gluster-hostname первого сервера: glust1
+
+В среде виртуализации для размещения управляющей машины engine будет создан домен хранения hosted-engine
+Укажите предпочтительное название тома gluster (hosted-engine): 
+Имя тома gluster для домена хранения hosted-engine: hosted-engine
+
+Укажите директорию для размещения тома gluster hosted-engineОбратите внимание, что для установки на разделе выбранного расположения директории должно быть свободно минимум 61ГБ
+(/data/gluster/hosted_engine): 
+Директория для glusterfs : /data/gluster/hosted_engine
+
+Укажите hostname имя интерфейса первого сервера (Например enp2s0f0. Можно посмотреть командой ip addr): enp2s0f0
+имя интерфейса первого сервера: enp2s0f0
+
+
+Укажите ваш DNS сервер: 10.1.64.248
+DNS: 10.1.64.248
+
+Начинаю модификацию файлов...
+dns_root: 10.1.64.248
+Изменен файл /etc/ansible/group_vars/all.
+
+Генерируем /etc/ansible/group_vars/nodes...
+ansible_connection: ssh 
+ansible_ssh_user: root 
+ansible_ssh_pass: engine
+ansible_ssh_common_args: '-o StrictHostKeyChecking=no'
+ovirt_engine_ip: 10.1.140.15
+ovirt_engine_fqdn: 'engine.mydomain.ru'
+ovirt_engine_domain: 'mydomain.ru'
+ovirt_engine_password: 'engine'
+Изменен файл /etc/ansible/group_vars/nodes.
+
+Генерируем /etc/ansible/host_vars/host1...
+hostname: myhost1.mydomain.ru
+shothostname: myhost1
+ip: 10.1.140.13
+ip_gateway: 10.1.140.1
+nic_for_ovirtmgmt_bridge: enp2s0f0
+gluster_hostname: glust1
+Изменен файл /etc/ansible/host_vars/host1.
+
+Генерируем /etc/ansible/group_vars/gluster...
+gluster_dir_for_hosted_engine: /data/gluster/hosted_engine/brick1
+gluster_hosted_engine_volume_name: hosted-engine
+Изменен файл /etc/ansible/group_vars/gluster.
+
+[root@host1 ~]#
+
+</code></pre>
+
+<h3 id="_7">Установка виртуализации</h3>
+<p>Выполните команду <code>ansible-playbook /etc/ansible/make-prepare.yml</code>, чтобы подготовить к работе /etc/hosts. </p>
+<pre><code>[root@host1 ~]# ansible-playbook /etc/ansible/make-prepare.yml
+</code></pre>
+
+<p>Выполните команду <code>ansible-playbook /etc/ansible/make-gluster-storages.yml</code>, чтобы подготовить к работе glusterfs. </p>
+<pre><code>[root@host1 ~]# ansible-playbook /etc/ansible/make-gluster-storages.yml
+</code></pre>
+
+<p>Запустите установку необходимых пакетов виртуализации командой <code>ansible-playbook /etc/ansible/make-ovirt.yml</code>. На ее выполнение уйдет чуть больше часа. </p>
+<pre><code>[root@host1 ~]# ansible-playbook /etc/ansible/make-ovirt.yml
+[DEPRECATION WARNING]: The TRANSFORM_INVALID_GROUP_CHARS settings is set to allow bad characters in group names by default, this will change, but still be user configurable on deprecation. This feature will be removed in version 2.10.
+Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+ [WARNING]: Invalid characters were found in group names but not replaced, use -vvvv to see details
+
+
+PLAY [ovirt-master] *************************************************************************************************************************************************************************************************************************
+
+TASK [Gathering Facts] **********************************************************************************************************************************************************************************************************************
+ok: [localhost]
+
+TASK [ovirt-master : Ensure that ovirt-release43.rpm is installed] **************************************************************************************************************************************************************************
+[DEPRECATION WARNING]: Invoking &quot;yum&quot; only once while using a loop via squash_actions is deprecated. Instead of using a loop to supply multiple items and specifying `name: &quot;{{ item }}&quot;`, please use `name:
+['http://resources.ovirt.org/pub/yum-repo/ovirt-release4
+ok: [localhost] =&gt; (item=[u'http://resources.ovirt.org/pub/yum-repo/ovirt-release43.rpm'])
+3.rpm']` and remove the loop. This feature will be removed in version 2.11. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+TASK [ovirt-master : Ensure that ovirt-hosted-engine-setup is installed. !A very long time. Wait!] ******************************************************************************************************************************************
+[DEPRECATION WARNING]: Invoking &quot;yum&quot; only once while using a loop via squash_actions is deprecated. Instead of using a loop to supply multiple items and specifying `name: &quot;{{ item }}&quot;`, please use `name: ['ovirt-hosted-engine-
+setup-2.3.12-1.el7.noarch']` and remove the loop. This feature will be removed in version 2.11. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+ok: [localhost] =&gt; (item=[u'ovirt-hosted-engine-setup-2.3.12-1.el7.noarch'])
+
+TASK [ovirt-master : Ensure that ovirt-engine-appliance is installed. !A very long time. Wait!] *********************************************************************************************************************************************
+[DEPRECATION WARNING]: Invoking &quot;yum&quot; only once while using a loop via squash_actions is deprecated. Instead of using a loop to supply multiple items and specifying `name: &quot;{{ item }}&quot;`, please use `name: ['ovirt-engine-
+appliance-4.3-20190926.1.el7.x86_64']` and remove the loop. This feature will be removed in version 2.11. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+ok: [localhost] =&gt; (item=[u'ovirt-engine-appliance-4.3-20190926.1.el7.x86_64'])
+
+TASK [ovirt-master : Ensure that expect is installed] ***************************************************************************************************************************************************************************************
+[DEPRECATION WARNING]: Invoking &quot;yum&quot; only once while using a loop via squash_actions is deprecated. Instead of using a loop to supply multiple items and specifying `name: &quot;{{ item }}&quot;`, please use `name: ['expect']` and remove the
+loop. This feature will be removed in version 2.11. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+ok: [localhost] =&gt; (item=[u'expect'])
+
+TASK [ovirt-master : Ensure that script-hosted-engine-deploy is pushed] *********************************************************************************************************************************************************************
+changed: [localhost]
+
+TASK [ovirt-master : Check hosted-deploy status] ********************************************************************************************************************************************************************************************
+ok: [localhost]
+
+TASK [ovirt-master : debug] *****************************************************************************************************************************************************************************************************************
+ok: [localhost] =&gt; {
+    &quot;msg&quot;: &quot;You must run deploy first&quot;
+}
+
+PLAY RECAP **********************************************************************************************************************************************************************************************************************************
+localhost                  : ok=9    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0
+
+[root@host1 ~]#
+</code></pre>
+
+<p>Сформированный файл <code>/root/script-hosted-engine-deploy</code> содержит инструкции, необходимые для развертывания виртуализации
+Запустите его на исполнение командой <code>/root/script-hosted-engine-deploy | tee -a /root/script-hosted-engine-deploy.log</code>: </p>
+<pre><code>/root/script-hosted-engine-deploy | tee -a /root/script-hosted-engine-deploy.log
+
+</code></pre>
+
+<p>После завершения развертывания виртуализации откройте браузер и перейдите по адресу <em>https://engine.mydomain.ru</em>, чтобы попасть в панель управления.</p>
+<h3 id="-">Если что-то пошло не так</h3>
+<ol>
+<li>Проверить корректность данных, которые были введены в IP-wizard. При обнаружении ошибки выполните команду <code>ansible-playbook /etc/ansible/clean-node.yml</code> и начните сначала.</li>
+<li>Если на этапе <code>/root/script-hosted-engine-deploy | tee -a /root/script-hosted-engine-deploy.log</code> появилась ошибка, то выполните команду <code>ansible-playbook /etc/ansible/clean-node.yml</code> и начните сначала</li>
+<li>Если на этапе <code>ansible-playbook /etc/ansible/make-prepare.yml</code> появилась ошибка, повторите выполнение данной команды</li>
+<li>Если на этапе <code>ansible-playbook /etc/ansible/make-gluster-storages.yml</code> появилась ошибка, повторите выполнение данной команды</li>
+<li>Если на этапе <code>ansible-playbook /etc/ansible/make-ovirt.yml</code> появилась ошибка, повторите выполнение данной команды</li>
+<li>Если после завершения установки вам не открывается страница в браузере с адресом https://engine.mydomain.ru, то<ol>
+<li>Проверьте, что ip для engine, указанный в таблице в начале установки отвечает на команду ping</li>
+<li>Проверьте, что имя <code>engine.mydomain.ru</code> разрешается вашим dns-сервером.</li>
+</ol>
+</li>
+</ol>
+<p>Схема установки hostvm и самостоятельного решения проблем представлена на рисунке ниже:</p>
+<p><img alt="Картинка" src="../images/troubleshooting-scheme-on-local-disks.jpg" /></p>
+<p>Если устранить проблему не удалось, обратитесь в <a href="hostco.ru">техническую поддержку</a> используя <a href="https://reestr.hostco.ru/downloads">инструкцию</a> К обращению приложите лог вывода вашей консоли, который был настроен в начале установки и файл <code>/root/script-hosted-engine-deploy.log</code>.</p>
+              
+            </div>
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+      
+    </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
+
+</body>
+</html>
