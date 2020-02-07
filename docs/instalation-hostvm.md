@@ -76,12 +76,12 @@ rtt min/avg/max/mdev = 31.135/31.632/33.001/0.800 ms
 
 #### Установка необходимых пакетов
 
-1. Установите пакеты wget, zip, unzip, ansible (ansible должен быть версии 2.8 - т.к. версия 2.9 содержит баг (не исправлен на 07.02.2020) мешающий установке ovirt):
+1. Установите пакеты wget, zip, unzip, ansible (ansible должен быть версии <2.9 - т.к. версия 2.9 содержит баг (не исправлен на 07.02.2020) мешающий установке витуализации):
 ```
-yum install wget zip unzip ansible-2.8.5-1.el7.noarch -y
+yum install wget zip unzip ansible-2.4.2.0 -y
 ...
 Installed:
-  unzip.x86_64 0:6.0-20.el7  wget.x86_64 0:1.14-18.el7_6.1  zip.x86_64 0:3.0-11.el7   ansible-2.8.5-1.el7.noarch
+  unzip.x86_64 0:6.0-20.el7  wget.x86_64 0:1.14-18.el7_6.1  zip.x86_64 0:3.0-11.el7   ansible.2.4.2.0-2.el7
 
 Complete!
 
