@@ -403,6 +403,7 @@ The following luns have been found on the requested target:
 5. Если после завершения установки вам не открывается страница в браузере с адресом https://engine.mydomain.ru, то
     1. Проверьте, что ip для engine, указанный в таблице в начале установки отвечает на команду ping
     2. Проверьте, что имя `engine.mydomain.ru` разрешается вашим dns-сервером.
+6. Если на этапе установки engine `/root/script-hosted-engine-deploy | tee -a /root/script-hosted-engine-deploy.log` установка зависает на этапе `Engine VM domain: [rtc.local]rtc.local Enter root password that will be used for the engine appliance: engine`, то подключитесь к консоли сервера не по SSH, а с помощью ipmi(iLO, iDRAC, etc.) и повторно запустите скрипт установки engine.
 
 Схема установки hostvm и самостоятельного решения проблем представлена на рисунке ниже:
 

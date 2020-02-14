@@ -166,12 +166,12 @@ rtt min/avg/max/mdev = 31.135/31.632/33.001/0.800 ms
 
 <h4 id="_4">Установка необходимых пакетов</h4>
 <ol>
-<li>Установите пакеты wget, zip, unzip, ansible:</li>
+<li>Установите пакеты wget, zip, unzip, ansible (ansible должен быть версии &lt;2.9 - т.к. версия 2.9 содержит баг (не исправлен на 07.02.2020) мешающий установке виртуализации):</li>
 </ol>
-<pre><code>yum install wget zip unzip ansible -y
+<pre><code>yum install wget zip unzip ansible-2.4.2.0 -y
 ...
 Installed:
-  unzip.x86_64 0:6.0-20.el7  wget.x86_64 0:1.14-18.el7_6.1  zip.x86_64 0:3.0-11.el7   ansible-2.4.2.0-2.el7.noarch
+  unzip.x86_64 0:6.0-20.el7  wget.x86_64 0:1.14-18.el7_6.1  zip.x86_64 0:3.0-11.el7   ansible.2.4.2.0-2.el7
 
 Complete!
 
@@ -500,6 +500,7 @@ localhost                  : ok=9    changed=2    unreachable=0    failed=0    s
 <li>Проверьте, что имя <code>engine.mydomain.ru</code> разрешается вашим dns-сервером.</li>
 </ol>
 </li>
+<li>Если на этапе установки engine <code>/root/script-hosted-engine-deploy | tee -a /root/script-hosted-engine-deploy.log</code> установка зависает на этапе <code>Engine VM domain: [rtc.local]rtc.local Enter root password that will be used for the engine appliance: engine</code>, то подключитесь к консоли сервера не по SSH, а с помощью ipmi(iLO, iDRAC, etc.) и повторно запустите скрипт установки engine.</li>
 </ol>
 <p>Схема установки hostvm и самостоятельного решения проблем представлена на рисунке ниже:</p>
 <p><img alt="Картинка" src="../images/troubleshooting-scheme-on-local-disks.jpg" /></p>
