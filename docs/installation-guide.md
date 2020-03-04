@@ -17,4 +17,4 @@
 
 ## [Установка Kaspersky Security для виртуальных сред 5.х Легкий агент на oVirt](installation-KSC.md)
 
-## [Установка Accord KVM] (installation-AccordKVM.md)
+## [Установка Accord KVM](installation-AccordKVM.md)
