@@ -3,29 +3,31 @@
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  
-  <link rel="shortcut icon" href="../img/favicon.ico">
   <title>Руководство по установке - Платформа виртуализации ХОСТ</title>
+  
+
+  <link rel="shortcut icon" href="../img/favicon.ico">
+
+  
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
-  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  <link rel="stylesheet" href="../css/highlight.css">
+
   
   <script>
     // Current page data
-    var mkdocs_page_name = "\u0420\u0443\u043a\u043e\u0432\u043e\u0434\u0441\u0442\u0432\u043e \u043f\u043e \u0443\u0441\u0442\u0430\u043d\u043e\u0432\u043a\u0435";
-    var mkdocs_page_input_path = "installation-guide.md";
-    var mkdocs_page_url = null;
+    var mkdocs_page_name = "Руководство по установке";
   </script>
   
-  <script src="../js/jquery-2.1.1.min.js" defer></script>
-  <script src="../js/modernizr-2.8.3.min.js" defer></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-  <script>hljs.initHighlightingOnLoad();</script> 
+  <script src="../js/jquery-2.1.1.min.js"></script>
+  <script src="../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../js/highlight.pack.js"></script>
+  <script src="../js/theme.js"></script> 
+
   
 </head>
 
@@ -36,74 +38,77 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> Платформа виртуализации ХОСТ</a>
+        <a href="../about/" class="icon icon-home"> Платформа виртуализации ХОСТ</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+    <input type="text" name="q" placeholder="Search docs" />
   </form>
 </div>
       </div>
 
       <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-	<ul class="current">
-	  
+        <ul class="current">
           
-            <li class="toctree-l1">
-		
-    <a class="" href="../about/">О проекте</a>
-	    </li>
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../about/">О проекте</a>
+        
+    </li>
+<li>
           
-            <li class="toctree-l1">
-		
-    <a class="" href="../developer/">Разработчик</a>
-	    </li>
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../developer/">Разработчик</a>
+        
+    </li>
+<li>
           
-            <li class="toctree-l1">
-		
-    <a class="" href="../datasheet/">Технические характеристики</a>
-	    </li>
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../datasheet/">Технические характеристики</a>
+        
+    </li>
+<li>
           
-            <li class="toctree-l1 current">
-		
-    <a class="current" href="./">Руководство по установке</a>
-    <ul class="subnav">
+            <li>
+    <li class="toctree-l1 current">
+        <a class="current" href="./">Руководство по установке</a>
+        
+            <ul>
             
-    <li class="toctree-l2"><a href="#_1">Системные требования</a></li>
-    
-
-    <li class="toctree-l2"><a href="#_2">Установка на локальные диски сервера</a></li>
-    
-        <ul>
+                <li class="toctree-l3"><a href="#_1">Системные требования</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#_2">Установка на локальные диски сервера</a></li>
+                
+                    <li><a class="toctree-l4" href="#centos7">Установка Centos7 на локальные диски</a></li>
+                
+                    <li><a class="toctree-l4" href="#_3">Установка виртуализации на локальные диски</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#fiber-channel">Установка на диски схд, подключенные через fiber channel</a></li>
+                
+                    <li><a class="toctree-l4" href="#centos7_1">Установка Centos7 на диски схд</a></li>
+                
+                    <li><a class="toctree-l4" href="#_4">Установка виртуализации на диски схд</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#_5">Действия после установки виртуализации</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#kaspersky-security-5-ovirt">Установка Kaspersky Security для виртуальных сред 5.х Легкий агент на oVirt</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#accord-kvm">Установка Accord KVM</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#hostvm-vdi-appliance">Развертывание HOSTVM VDI Appliance</a></li>
+                
+            
+            </ul>
         
-            <li><a class="toctree-l3" href="#centos7">Установка Centos7 на локальные диски</a></li>
-        
-            <li><a class="toctree-l3" href="#_3">Установка виртуализации на локальные диски</a></li>
-        
-        </ul>
-    
-
-    <li class="toctree-l2"><a href="#fiber-channel">Установка на диски схд, подключенные через fiber channel</a></li>
-    
-        <ul>
-        
-            <li><a class="toctree-l3" href="#centos7_1">Установка Centos7 на диски схд</a></li>
-        
-            <li><a class="toctree-l3" href="#_4">Установка виртуализации на диски схд</a></li>
-        
-        </ul>
-    
-
-    <li class="toctree-l2"><a href="#_5">Действия после установки виртуализации</a></li>
-    
-
-    <li class="toctree-l2"><a href="#kaspersky-security-5-ovirt">Установка Kaspersky Security для виртуальных сред 5.х Легкий агент на oVirt</a></li>
-    
-
-    <li class="toctree-l2"><a href="#accord-kvm-installation-accordkvmmd">[Установка Accord KVM] (installation-AccordKVM.md)</a></li>
-    
-
-    </ul>
-	    </li>
+    </li>
+<li>
           
         </ul>
       </div>
@@ -115,7 +120,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">Платформа виртуализации ХОСТ</a>
+        <a href="../about/">Платформа виртуализации ХОСТ</a>
       </nav>
 
       
@@ -123,7 +128,7 @@
         <div class="rst-content">
           <div role="navigation" aria-label="breadcrumbs navigation">
   <ul class="wy-breadcrumbs">
-    <li><a href="..">Docs</a> &raquo;</li>
+    <li><a href="../about/">Docs</a> &raquo;</li>
     
       
     
@@ -137,16 +142,17 @@
           <div role="main">
             <div class="section">
               
-                <h2 id="_1"><a href="../requirements/">Системные требования</a></h2>
+                <h2 id="_1"><a href="requirements.md">Системные требования</a></h2>
 <h2 id="_2">Установка на локальные диски сервера</h2>
-<h3 id="centos7"><a href="../installation-Centos7-on-local-disks/">Установка Centos7 на локальные диски</a></h3>
-<h3 id="_3"><a href="../instalation-hostvm-on-local-disks/">Установка виртуализации на локальные диски</a></h3>
+<h3 id="centos7"><a href="installation-Centos7-on-local-disks.md">Установка Centos7 на локальные диски</a></h3>
+<h3 id="_3"><a href="instalation-hostvm-on-local-disks.md">Установка виртуализации на локальные диски</a></h3>
 <h2 id="fiber-channel">Установка на диски схд, подключенные через fiber channel</h2>
-<h3 id="centos7_1"><a href="../installation-Centos7/">Установка Centos7 на диски схд</a></h3>
-<h3 id="_4"><a href="../instalation-hostvm/">Установка виртуализации на диски схд</a></h3>
-<h2 id="_5"><a href="../after-install/">Действия после установки виртуализации</a></h2>
-<h2 id="kaspersky-security-5-ovirt"><a href="../installation-KSC/">Установка Kaspersky Security для виртуальных сред 5.х Легкий агент на oVirt</a></h2>
-<h2 id="accord-kvm-installation-accordkvmmd">[Установка Accord KVM] (installation-AccordKVM.md)</h2>
+<h3 id="centos7_1"><a href="installation-Centos7.md">Установка Centos7 на диски схд</a></h3>
+<h3 id="_4"><a href="instalation-hostvm.md">Установка виртуализации на диски схд</a></h3>
+<h2 id="_5"><a href="after-install.md">Действия после установки виртуализации</a></h2>
+<h2 id="kaspersky-security-5-ovirt"><a href="installation-KSC.md">Установка Kaspersky Security для виртуальных сред 5.х Легкий агент на oVirt</a></h2>
+<h2 id="accord-kvm"><a href="installation-AccordKVM.md">Установка Accord KVM</a></h2>
+<h2 id="hostvm-vdi-appliance"><a href="installation-UDS-appliance.md">Развертывание HOSTVM VDI Appliance</a></h2>
               
             </div>
           </div>
@@ -169,7 +175,7 @@
 
   Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
 </footer>
-      
+	  
         </div>
       </div>
 
@@ -177,7 +183,7 @@
 
   </div>
 
-  <div class="rst-versions" role="note" style="cursor: pointer">
+<div class="rst-versions" role="note" style="cursor: pointer">
     <span class="rst-current-version" data-toggle="rst-current-version">
       
       
@@ -186,9 +192,6 @@
       
     </span>
 </div>
-    <script>var base_url = '..';</script>
-    <script src="../js/theme.js" defer></script>
-      <script src="../search/main.js" defer></script>
 
 </body>
 </html>
