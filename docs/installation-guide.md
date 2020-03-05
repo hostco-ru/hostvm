@@ -21,6 +21,8 @@
 
 ### [Действия после установки виртуализации](after-install.md)
 
+### [Конвертация виртуальной машины с ОС AltLinux из Vmware в HOSTVM](vmware_convert_altlinux.md)
+
 # Установка дополнительного ПО
 
 ### [Установка Kaspersky Security для виртуальных сред 5.х Легкий агент на HOSTVM](installation-KSC.md)
