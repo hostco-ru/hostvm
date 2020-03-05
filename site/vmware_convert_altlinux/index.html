@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>Конвертация виртуальной машины с ОС AltLinux из Vmware в HOSTVM - Платформа виртуализации ХОСТ</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "\u041a\u043e\u043d\u0432\u0435\u0440\u0442\u0430\u0446\u0438\u044f \u0432\u0438\u0440\u0442\u0443\u0430\u043b\u044c\u043d\u043e\u0439 \u043c\u0430\u0448\u0438\u043d\u044b \u0441 \u041e\u0421 AltLinux \u0438\u0437 Vmware \u0432 HOSTVM";
+    var mkdocs_page_input_path = "vmware_convert_altlinux.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> Платформа виртуализации ХОСТ</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../about/">О проекте</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../developer/">Разработчик</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../datasheet/">Технические характеристики</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../installation-guide/">Руководство по установке</a>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">Платформа виртуализации ХОСТ</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Конвертация виртуальной машины с ОС AltLinux из Vmware в HOSTVM</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="altlinux-vmware-hostvm">Конвертация виртуальной машины с ОС AltLinux из Vmware в HOSTVM</h1>
+<h2 id="_1">Подготовка ВМ к конвертации</h2>
+<p>1 Установить гостевые утилиты:</p>
+<p><code>apt-get install ovirt-guest-agent</code></p>
+<p>2 Добавить модули virtio в конфигурационный файл <code>/etc/initrd.mk</code>:</p>
+<p><code>MODULES_ADD += virtio_blk virtio_scsi virtio_pci</code></p>
+<p><code>MODULES_PRELOAD += virtio_blk virtio_scsi virtio_pci</code></p>
+<p>3 Сгенерировать новый initramfs:</p>
+<p><code>make-initrd</code></p>
+<h2 id="_2">Экспорт</h2>
+<p>1 Экспортировать ВМ из Vmware:</p>
+<p>File - Export - Export OVF Template</p>
+<p>Format: Single file (OVA)</p>
+<h2 id="_3">Подготовка гипервизора к импорту ВМ</h2>
+<p>1 Установить скрипт конвертации на хост HOSTVM, с которого будет выполняться импорт ВМ:</p>
+<p><code>yum install perl perl-XML-Writer perl-Sys-Guestfs</code></p>
+<p><code>wget https://cloud.hostco.ru/s/LeLbsfFaJqsW5oJ/download -O import-to-ovirt.pl</code></p>
+<p><code>chmod u+x import-to-ovirt.pl</code></p>
+<h2 id="_4">Импорт ВМ</h2>
+<p>1 Скопировать на ранее подготовленный хост OVA файл с ВМ, распаковать:</p>
+<p><code>tar -xvf &lt;VMNAME&gt;.ova</code></p>
+<p>2 Если диски разбиты на части, вида <code>vmName-disk1.vmdk.000000000*</code>, склеить каждый из таких дисков командой:</p>
+<p><code>cat vmName-disk1.vmdk.* &gt; vmName-disk1.vmdk</code></p>
+<p>3 Сконвертировать ВМ и загрузить в HOSTVM командами:</p>
+<p><code>export LIBGUESTFS_BACKEND=direct</code></p>
+<p><code>import-to-ovirt.pl --memory &lt;MB&gt; --name &lt;VMNAME&gt; --vcpus &lt;VCPU&gt; --vmtype &lt;TYPE&gt; &lt;disk1name&gt;.vmdk &lt;disk2name&gt;.vmdk &lt;path_to_export_domain&gt;</code></p>
+<p>где:</p>
+<p><code>&lt;MB&gt;</code> - количество оперативной памяти в Мб</p>
+<p><code>&lt;VMNAME&gt;</code> - желаемое имя ВМ в HOSTVM</p>
+<p><code>&lt;VCPU_count&gt;</code> - количество VCPU для ВМ</p>
+<p><code>&lt;TYPE&gt;</code> - одно из двух значений: Server или Desktop</p>
+<p><code>&lt;disk1name&gt;.vmdk &lt;disk2name&gt;.vmdk</code> – путь до диска ВМ, если их несколько – указываются через пробел</p>
+<p><code>&lt;path_to_export_domain&gt;</code> - путь к экспорт-домену HOSTVM, в виде server:/path/to/esd </p>
+<p>(посмотреть путь можно в engine GUI - Storage - Domains - выбрать export домен - Manage domain - путь будет указан в поле Path)</p>
+<p>либо указать путь до точки монтирования в виде <code>/mount/point</code>, если он уже примонтирован на хосте</p>
+<p>4 Импортировать ВМ в data домен через GUI:</p>
+<p>engine GUI - Compute - Virtual machines - нажать 3 точки в меню - Import - выбрать нужный дата центр, source=export domain - нажать Load - переместить нужную ВМ в Virtual machines to import - Next - выбрать параметры импорта и нажать OK</p>
+<h2 id="_5">Версии ПО, на которых проводилось тестирование</h2>
+<ul>
+<li>Alt Server 8.2</li>
+<li>VMware Vcenter 6.0</li>
+<li>oVirt 4.2</li>
+</ul>
+              
+            </div>
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+      
+    </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
+
+</body>
+</html>
