@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>О проекте - Платформа виртуализации ХОСТ</title>
+  <title>Connect uds vdi - Платформа виртуализации ХОСТ</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -17,8 +17,8 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "\u041e \u043f\u0440\u043e\u0435\u043a\u0442\u0435";
-    var mkdocs_page_input_path = "about.md";
+    var mkdocs_page_name = "Connect uds vdi";
+    var mkdocs_page_input_path = "connect-uds-vdi.md";
     var mkdocs_page_url = null;
   </script>
   
@@ -48,12 +48,9 @@
 	<ul class="current">
 	  
           
-            <li class="toctree-l1 current">
+            <li class="toctree-l1">
 		
-    <a class="current" href="./">О проекте</a>
-    <ul class="subnav">
-            
-    </ul>
+    <a class="" href="../about/">О проекте</a>
 	    </li>
           
             <li class="toctree-l1">
@@ -93,7 +90,7 @@
     
       
     
-    <li>О проекте</li>
+    <li>Connect uds vdi</li>
     <li class="wy-breadcrumbs-aside">
       
     </li>
@@ -103,22 +100,63 @@
           <div role="main">
             <div class="section">
               
-                <p>Платформа ХОСТ для виртуализации серверов, рабочих столов и приложений</p>
-<p>Сайт проекта:</p>
-<p><a href="https://reestr.hostco.ru/host">https://reestr.hostco.ru/host</a></p>
-<p>Проект в Едином реестре российских программ для электронных вычислительных машин и баз данных:</p>
-<p><a href="https://reestr.minsvyaz.ru/reestr/126983/">https://reestr.minsvyaz.ru/reestr/126983/</a></p>
+                <h2 id="_1">Общие данные</h2>
+<p>Компонент платформы виртуализции HOTSVM VDI предназначен для виртуализации рабочего стола пользователя. </p>
+<p>С помощью специализированного ПО на рабочем месте пользователь может удаленно подключиться в систему, получая доступ ко всем программам, приложениям и данным.</p>
+<h2 id="_2">Инструкция по подключению</h2>
+<h3 id="_3">Подготовка к работе</h3>
+<p>Скачайте дистрибутивы и установите следующее ПО:</p>
+<p><strong>Virt-Viewer</strong></p>
+<ul>
+<li>
+<p><a href="https://cloud.hostco.ru/s/xGm6XMcWB9iaPCo">для 32-разрядной ОС</a></p>
+</li>
+<li>
+<p><a href="https://cloud.hostco.ru/s/ErRSswPLWMTzpWz">для 64-разрядной ОС</a></p>
+</li>
+</ul>
+<p><strong>Usb-Dk</strong></p>
+<ul>
+<li>
+<p><a href="https://cloud.hostco.ru/s/TtjLn7pB2xgZXmS">для 32-разрядной ОС</a></p>
+</li>
+<li>
+<p><a href="https://cloud.hostco.ru/s/KHDLzewkKioYLYo">для 64-разрядной ОС</a></p>
+</li>
+</ul>
+<p><strong><a href="https://cloud.hostco.ru/s/samC2QXdGaxgQFN">UDS Plugin</a></strong></p>
+<h3 id="_4">Вход в систему</h3>
+<p>Для входа в систему выполните следующие шаги:
+1. Откройте в браузере адрес VDI-портала;
+2. В открывшуюся форму введите логин и пароль предоставленный в письме с приглашением на тестирование.</p>
+<p><img alt="карт" src="../images/vdi-1.png" /></p>
+<p><strong>Рис.1 Форма для авторизации</strong></p>
+<ol>
+<li>Выберите нужную ОС и нажмите на иконку для открытия сессии.</li>
+</ol>
+<p><img alt="карт" src="../images/vdi-2.png" /></p>
+<p><strong>Рис.2 Перечень ОС</strong></p>
+<p>Если после открытия сессии потребуется ввод логина и пароля для входа в операционную систему, используйте следующие данные:
+* логин: user;
+* пароль: vdiuser.</p>
+<p><img alt="карт" src="../images/vdi-3.png" /></p>
+<p><strong>Рис.3 Вход в систему</strong></p>
+<p>Если необходимо подключить в сессию USB-устройство с локальной машины, выполните следующие шаги:
+1. В окне с открытой сессией выберите пункт меню: Файл → USB Device Selection;</p>
+<p><img alt="карт" src="../images/vdi-4.png" /></p>
+<p><strong>Рис.4 Окно с открытой сессией</strong></p>
+<ol>
+<li>Отметьте нужное устройство в появившемся списке;</li>
+</ol>
+<p><img alt="карт" src="../images/vdi-5.png" /></p>
+<p><strong>Рис.5 Выбор USB-устройства</strong></p>
+<ol>
+<li>Закройте список и дождитесь подключения устройства в сессию.</li>
+</ol>
               
             </div>
           </div>
           <footer>
-  
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-      
-        <a href="../developer/" class="btn btn-neutral float-right" title="Разработчик">Next <span class="icon icon-circle-arrow-right"></span></a>
-      
-      
-    </div>
   
 
   <hr/>
@@ -142,8 +180,6 @@
     <span class="rst-current-version" data-toggle="rst-current-version">
       
       
-      
-        <span style="margin-left: 15px"><a href="../developer/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>
