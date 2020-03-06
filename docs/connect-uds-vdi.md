@@ -11,12 +11,12 @@
 Скачайте дистрибутивы и установите следующее ПО:
 
 **Virt-Viewer**
-* [для 32-разрядной ОС](https://cloud.hostco.ru/s/xGm6XMcWB9iaPCo)
-* [для 64-разрядной ОС](https://cloud.hostco.ru/s/ErRSswPLWMTzpWz)
+[для 32-разрядной ОС](https://cloud.hostco.ru/s/xGm6XMcWB9iaPCo)
+[для 64-разрядной ОС](https://cloud.hostco.ru/s/ErRSswPLWMTzpWz)
 
-**Usb-Dk;**
-* [для 32-разрядной ОС](https://cloud.hostco.ru/s/TtjLn7pB2xgZXmS)
-* [для 64-разрядной ОС](https://cloud.hostco.ru/s/KHDLzewkKioYLYo)
+**Usb-Dk**
+[для 32-разрядной ОС](https://cloud.hostco.ru/s/TtjLn7pB2xgZXmS)
+[для 64-разрядной ОС](https://cloud.hostco.ru/s/KHDLzewkKioYLYo)
 
 **[UDS Plugin](https://cloud.hostco.ru/s/samC2QXdGaxgQFN)**
 
