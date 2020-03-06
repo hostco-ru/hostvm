@@ -35,3 +35,4 @@
 
 ### [Руководство администратора VDI Appliance](config-UDS-appliance.md)
 
+### [Руководство пользователя HOST VDI](connect-uds-vdi.md)
