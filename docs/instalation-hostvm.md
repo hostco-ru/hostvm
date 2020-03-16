@@ -76,9 +76,9 @@ rtt min/avg/max/mdev = 31.135/31.632/33.001/0.800 ms
 
 #### Установка необходимых пакетов
 
-1. Установите пакеты wget, zip, unzip, ansible (ansible должен быть версии <2.9 - т.к. версия 2.9 содержит баг (не исправлен на 07.02.2020) мешающий установке витуализации):
+1. Установите пакеты wget, zip, unzip, ansible:
 ```
-yum install wget zip unzip ansible-2.4.2.0 -y
+yum install wget zip unzip ansible -y
 ...
 Installed:
   unzip.x86_64 0:6.0-20.el7  wget.x86_64 0:1.14-18.el7_6.1  zip.x86_64 0:3.0-11.el7   ansible.2.4.2.0-2.el7
@@ -222,6 +222,7 @@ size=250G features='1 queue_if_no_path' hwhandler='0' wp=rw
 
 Укажите кластерный IP адрес oVirt Engine: 10.1.140.15
 Engine: 10.1.140.15
+
 
 Укажите guid для луна, на котором будут размещены виртуальные машины (имеет вид 3600508b400099f8e0002e000036a0000, можно посмотреть командой multipath -l : 3600508b400099f8e0002e000036a0000
 guid: 3600508b400099f8e0002e000036a0000

@@ -69,9 +69,9 @@ rtt min/avg/max/mdev = 31.135/31.632/33.001/0.800 ms
 
 #### Установка необходимых пакетов
 
-1. Установите пакеты wget, zip, unzip, ansible (ansible должен быть версии <2.9 - т.к. версия 2.9 содержит баг (не исправлен на 07.02.2020) мешающий установке виртуализации):
+1. Установите пакеты wget, zip, unzip, ansible:
 ```
-yum install wget zip unzip ansible-2.4.2.0 -y
+yum install wget zip unzip ansible -y
 ...
 Installed:
   unzip.x86_64 0:6.0-20.el7  wget.x86_64 0:1.14-18.el7_6.1  zip.x86_64 0:3.0-11.el7   ansible.2.4.2.0-2.el7
@@ -203,10 +203,16 @@ sh IP-wizard.sh
 Укажите кластерный IP адрес oVirt Engine: 10.1.140.15
 Engine: 10.1.140.15
 
-Укажите IP адрес первого сервера : 10.1.140.13
+Укажите маску сети для кластерного IP адреса oVirt Engine(в виде числа: 24, 25 и т.д. (т.е. /24 /25 т.д.)): 25
+EngineMask: 24
+
+Укажите DNS имя для консоли управления(oVirt Engine)(без домена) : engine-test
+hostname консоли управления: engine-test
+
+Укажите доступный клиентам IP адрес текущего сервера  : 10.1.140.13
 nodeip1: 10.1.140.13
 
-Укажите шлюз (gateway) сети первого сервера: 10.1.140.1
+Укажите шлюз (gateway) сети текущего сервера : 10.1.140.1
 Public LAN gateway: 10.1.140.1
 
 Укажите hostname первого сервера (без домена): myhost1
@@ -241,7 +247,7 @@ ansible_ssh_user: root
 ansible_ssh_pass: engine
 ansible_ssh_common_args: '-o StrictHostKeyChecking=no'
 ovirt_engine_ip: 10.1.140.15
-ovirt_engine_fqdn: 'engine.mydomain.ru'
+ovirt_engine_fqdn: 'engine-test.mydomain.ru'
 ovirt_engine_domain: 'mydomain.ru'
 ovirt_engine_password: 'engine'
 Изменен файл /etc/ansible/group_vars/nodes.
@@ -259,6 +265,9 @@ gluster_hostname: glust1
 gluster_dir_for_hosted_engine: /data/gluster/hosted_engine/brick1
 gluster_hosted_engine_volume_name: hosted-engine
 Изменен файл /etc/ansible/group_vars/gluster.
+
+Правим файл ответов для hosted-engine...
+Файл ответов обновлен.
 
 [root@host1 ~]#
 
