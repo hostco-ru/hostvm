@@ -43,93 +43,41 @@ service multipathd restart
 multipath -ll
 ```
 
-#### Проверить, что сетевые настройки выполнены верно
+#### Загрузка и выполнение подготовительного скрипта `initial.sh`
 
-Убедитесь, что внешняя сеть доступна для сервера с помощью команды `ping -c 4 <ip-адрес>`
+С помощью команды `curl` выполните загрузку файла `initial.sh` с репозитория repo.hostco.ru
 ```
-[root@testname1 ~]# ping -c 4 8.8.4.4
-PING 8.8.4.4 (8.8.4.4) 56(84) bytes of data.
-64 bytes from 8.8.4.4: icmp_seq=1 ttl=43 time=46.8 ms
-64 bytes from 8.8.4.4: icmp_seq=2 ttl=43 time=46.6 ms
-64 bytes from 8.8.4.4: icmp_seq=3 ttl=43 time=46.6 ms
-64 bytes from 8.8.4.4: icmp_seq=4 ttl=43 time=47.0 ms
-
---- 8.8.4.4 ping statistics ---
-4 packets transmitted, 4 received, 0% packet loss, time 3004ms
-rtt min/avg/max/mdev = 46.648/46.796/47.018/0.153 ms
+[root@host1 ~]# curl -o /root/initial.sh https://repo.hostco.ru/hostvm/initial.sh
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100  1192  100  1192    0     0   7791      0 --:--:-- --:--:-- --:--:--  7842
 ```
 
-Убедитесь, что имена внешней сети разрешаются:
+Cделайте файл `initial.sh` исполняемым
 ```
-[root@testname1 ~]# ping -c 4 yandex.ru
-PING yandex.ru (5.255.255.70) 56(84) bytes of data.
-64 bytes from yandex.ru (5.255.255.70): icmp_seq=1 ttl=52 time=31.2 ms
-64 bytes from yandex.ru (5.255.255.70): icmp_seq=2 ttl=52 time=31.1 ms
-64 bytes from yandex.ru (5.255.255.70): icmp_seq=3 ttl=52 time=31.1 ms
-64 bytes from yandex.ru (5.255.255.70): icmp_seq=4 ttl=52 time=33.0 ms
-
---- yandex.ru ping statistics ---
-4 packets transmitted, 4 received, 0% packet loss, time 3003ms
-rtt min/avg/max/mdev = 31.135/31.632/33.001/0.800 ms
-```
-
-
-#### Установка необходимых пакетов
-
-1. Установите пакеты wget, zip, unzip, ansible:
-```
-yum install wget zip unzip ansible -y
-...
-Installed:
-  unzip.x86_64 0:6.0-20.el7  wget.x86_64 0:1.14-18.el7_6.1  zip.x86_64 0:3.0-11.el7   ansible.2.4.2.0-2.el7
-
-Complete!
-
-```
-2. Проверьте, что ansible установлен:
-```
-ansible -m ping localhost
-
-localhost | SUCCESS => {
-    "changed": false,
-    "ping": "pong"
-}
-
-```
-3. Загрузите zip-архив `hostvm.zip` с [портала][hostvm-public-link], разместите его в папке `/root/`. 
-  Для передачи файла на сервер с рабочего места, где установлена ОС Windows, необходимо использовать утилиту [WinSCP](https://winscp.net), которая доступна в [наборе дистрибьютивов для развертывания решения][hostvm-public-link].
-  ![Картинка][hostvm-install-1]
-```
-[root@host1 ~]# ls -l
-
--rw-------. 1 root root  1744 Oct 21 16:52 anaconda-ks.cfg
--rw-r--r--. 1 root root 57619 Oct 22 11:18 hostvm.zip
-[root@host1 ~]# pwd
-/root
-
+[root@host1 ~]# chmod +x initial.sh 
+[root@host1 ~]# ls 
+anaconda-ks.cfg  initial.sh  original-ks.cfg
+[root@host1 ~]# ls -la
+total 40
+dr-xr-x---.  2 root root  155 Apr  7 09:31 .
+dr-xr-xr-x. 18 root root  255 Apr  7 08:36 ..
+-rw-r--r--.  1 root root   18 Dec 29  2013 .bash_logout
+-rw-r--r--.  1 root root  176 Dec 29  2013 .bash_profile
+-rw-r--r--.  1 root root  176 Dec 29  2013 .bashrc
+-rw-r--r--.  1 root root  100 Dec 29  2013 .cshrc
+-rw-r--r--.  1 root root  129 Dec 29  2013 .tcshrc
+-rw-------.  1 root root 5570 Jun  1  2019 anaconda-ks.cfg
+-rwxr-xr-x.  1 root root  169 Apr  7 09:32 initial.sh
+-rw-------.  1 root root 5300 Jun  1  2019 original-ks.cfg
+[root@host1 ~]# 
 ```
 
-4. Разархивируйте папку:
+ Выполните скрипт `initial.sh`
 ```
-unzip hostvm.zip -d /root/
+[root@host1 ~]# sh initial.sh
 ```
-5. Проверьте состав файлов:
-```
-[root@host1 ~]# ls -l
-total 72
--rw-------. 1 root root  1744 Oct 21 16:52 anaconda-ks.cfg
-drwxr-xr-x. 6 root root   268 Oct 22 10:42 ansible
--rw-r--r--. 1 root root 57619 Oct 22 11:18 hostvm.zip
--rw-r--r--. 1 root root  5115 Oct 21 16:18 IP-wizard.sh
-```
-
-6. Скопируйте содержимое папки `ansible` в папку `/etc/ansible`:
-```
-[root@host1 ~]# yes | cp -rpf /root/ansible/* /etc/ansible/
-cp: overwrite ‘/etc/ansible/ansible.cfg’? cp: overwrite ‘/etc/ansible/hosts’? [root@host1 ~]#
-[root@host1 ~]#
-
-```
+По итогу выполнения скрипта, в директории /root/ будет создан лог-файл `initial_log_текущая-дата.log`
 
 ### Заполнение формы для установки значений переменных
 
