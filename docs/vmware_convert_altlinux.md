@@ -1,4 +1,3 @@
-
 # Конвертация виртуальной машины с ОС AltLinux из Vmware в HOSTVM
 
 ## Подготовка ВМ к конвертации
@@ -16,13 +15,15 @@
 3 Сгенерировать новый initramfs:
 
 `make-initrd`
+
 ## Экспорт
 
 1 Экспортировать ВМ из Vmware:
 
 File - Export - Export OVF Template
 
-Format: Single file (OVA)
+Format: Single file \(OVA\)
+
 ## Подготовка гипервизора к импорту ВМ
 
 1 Установить скрипт конвертации на хост HOSTVM, с которого будет выполняться импорт ВМ:
@@ -32,6 +33,7 @@ Format: Single file (OVA)
 `wget https://cloud.hostco.ru/s/LeLbsfFaJqsW5oJ/download -O import-to-ovirt.pl`
 
 `chmod u+x import-to-ovirt.pl`
+
 ## Импорт ВМ
 
 1 Скопировать на ранее подготовленный хост OVA файл с ВМ, распаковать:
@@ -60,9 +62,9 @@ Format: Single file (OVA)
 
 `<disk1name>.vmdk <disk2name>.vmdk` – путь до диска ВМ, если их несколько – указываются через пробел
 
-`<path_to_export_domain>` - путь к экспорт-домену HOSTVM, в виде server:/path/to/esd 
+`<path_to_export_domain>` - путь к экспорт-домену HOSTVM, в виде server:/path/to/esd
 
-(посмотреть путь можно в engine GUI - Storage - Domains - выбрать export домен - Manage domain - путь будет указан в поле Path)
+\(посмотреть путь можно в engine GUI - Storage - Domains - выбрать export домен - Manage domain - путь будет указан в поле Path\)
 
 либо указать путь до точки монтирования в виде `/mount/point`, если он уже примонтирован на хосте
 
@@ -75,3 +77,4 @@ engine GUI - Compute - Virtual machines - нажать 3 точки в меню 
 * Alt Server 8.2
 * VMware Vcenter 6.0
 * oVirt 4.2
+

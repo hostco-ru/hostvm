@@ -1,0 +1,21 @@
+# Table of contents
+
+* [Initial page](README.md)
+* [Платформа HOSTVM для виртуализации серверов, рабочих столов и приложений](docs/README.md)
+  * [Системные требования](docs/requirements.md)
+  * [installation-guide](docs/installation-guide.md)
+  * [Развертывание VDI Appliance на систему управления виртуализацией HOSTVM](docs/installation-uds-appliance.md)
+  * [Установка Accord KVM](docs/installation-accordkvm.md)
+  * [datasheet](docs/datasheet.md)
+  * [instalation-hostvm](docs/instalation-hostvm.md)
+  * [Установка Kaspersky Security для виртуальных сред 5.х Легкий агент на систему управления виртуализац](docs/installation-ksc.md)
+  * [connect-uds-vdi](docs/connect-uds-vdi.md)
+  * [about](docs/about.md)
+  * [instalation-hostvm-on-local-disks](docs/instalation-hostvm-on-local-disks.md)
+  * [Дествия после установки виртуализации](docs/after-install.md)
+  * [Группа Компаний ХОСТ](docs/developer.md)
+  * [Конвертация виртуальной машины с ОС AltLinux из Vmware в HOSTVM](docs/vmware_convert_altlinux.md)
+  * [Руководство администратора VDI Appliance](docs/config-uds-appliance.md)
+  * [Установка Centos7 на диски схд](docs/installation-centos7.md)
+  * [Установка Centos7 на локальные диски.](docs/installation-centos7-on-local-disks.md)
+

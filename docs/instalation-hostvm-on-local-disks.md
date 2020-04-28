@@ -1,26 +1,24 @@
-### Подготовка сервера к развертыванию на локальных дисках
+# instalation-hostvm-on-local-disks
 
-#### Подготовка putty к работе
+## Подготовка сервера к развертыванию на локальных дисках
+
+### Подготовка putty к работе
 
 Убедитесь, что требования, описанные на странице [Системные требования](requirements.md) выполняются.
 
-С помощью программы [PuTTY](https://www.putty.org), которая доступна в [наборе дистрибьютивов для развертывания решения][hostvm-public-link], под пользователем root подключитесь к серверу.
+С помощью программы [PuTTY](https://www.putty.org), которая доступна в [наборе дистрибьютивов для развертывания решения](https://reestr.hostco.ru/downloads), под пользователем root подключитесь к серверу.
 
 Перед началом работы рекомендуется настроить логирование сессии putty. Для этого нужно выполнить следующие действия
 
-1. Сохраните имя сервера:
-  ![Картинка][hostvm-install-2]
+1. Сохраните имя сервера: ![](../.gitbook/assets/hostvm-install-2.jpg)
+2. Перейдите на вкладку Журнал \(мы можем добавить ссылку на страницу с этой вкладкой?\), выберите `Весь вывод`, укажите путь до файла логов в следующем виде: `C:\path\to\log\hostname-&H-&Y&M&D-&T.log`. Часть `&H-&Y&M&D-&T` указывает, что файл с логом будет создаваться для каждой сессии и автоматически указывать время и дату ее начала: ![](../.gitbook/assets/hostvm-install-3.jpg)
+3. Перейдите на вкладку Сеанс, нажмите кнопку `Сохранить`, нажмите клавишу `Enter` чтобы запустить сессию: ![](../.gitbook/assets/hostvm-install-4.jpg)
 
-2. Перейдите на вкладку Журнал (мы можем добавить ссылку на страницу с этой вкладкой?), выберите `Весь вывод`, укажите путь до файла логов в следующем виде: `C:\path\to\log\hostname-&H-&Y&M&D-&T.log `. Часть `&H-&Y&M&D-&T` указывает, что файл с логом будет создаваться для каждой сессии и автоматически указывать время и дату ее начала:  
-![Картинка][hostvm-install-3]
+### Проверить, что диск предназначенный для размещения виртуальных машин подключен
 
-3. Перейдите на вкладку Сеанс, нажмите кнопку `Сохранить`, нажмите клавишу `Enter` чтобы запустить сессию:
-  ![Картинка][hostvm-install-4]
+Командой `cat /etc/fstab` выведите на экран список используемых в системе устройств хранения. В качестве точки монтирования мы использовали директорию `/data`.
 
-#### Проверить, что диск предназначенный для размещения виртуальных машин подключен
-
-Командой `cat /etc/fstab` выведите на экран список используемых в системе устройств хранения. В качестве точки монтирования мы использовали директорию `/data`. 
-```
+```text
 [root@host1 ~]# cat /etc/fstab
 
 #
@@ -34,13 +32,13 @@
 UUID=2412661b-df41-46c7-ad31-b5b696dfc218 /boot                   xfs     defaults        0 0
 /dev/mapper/centos_host1-data /data                   xfs     defaults        0 0
 /dev/mapper/centos_host1-swap swap                    swap    defaults        0 0
-
 ```
 
-#### Загрузка и выполнение подготовительного скрипта `initial.sh`
+### Загрузка и выполнение подготовительного скрипта `initial.sh`
 
 С помощью команды `curl` выполните загрузку файла `initial.sh` с репозитория repo.hostco.ru
-```
+
+```text
 [root@host1 ~]# curl -o /root/initial.sh https://repo.hostco.ru/hostvm/initial.sh
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed
@@ -48,7 +46,8 @@ UUID=2412661b-df41-46c7-ad31-b5b696dfc218 /boot                   xfs     defaul
 ```
 
 Cделайте файл `initial.sh` исполняемым
-```
+
+```text
 [root@host1 ~]# chmod +x initial.sh 
 [root@host1 ~]# ls 
 anaconda-ks.cfg  initial.sh  original-ks.cfg
@@ -64,38 +63,41 @@ dr-xr-xr-x. 18 root root  255 Apr  7 08:36 ..
 -rw-------.  1 root root 5570 Jun  1  2019 anaconda-ks.cfg
 -rwxr-xr-x.  1 root root  169 Apr  7 09:32 initial.sh
 -rw-------.  1 root root 5300 Jun  1  2019 original-ks.cfg
-[root@host1 ~]# 
+[root@host1 ~]#
 ```
 
- Выполните скрипт `initial.sh`
-```
+Выполните скрипт `initial.sh`
+
+```text
 [root@host1 ~]# sh initial.sh
 ```
+
 По итогу выполнения скрипта, в директории /root/ будет создан лог-файл `initial_log_текущая-дата.log`
 
-### Заполнение формы для установки значений переменных
+## Заполнение формы для установки значений переменных
 
-#### Сбор данных для заполнения формы
+### Сбор данных для заполнения формы
 
-Перед началом работы рекомендуется заполнить последний столбец следующей таблицы (*способ сбора данных для таблице описан ниже по тексту)*: 
+Перед началом работы рекомендуется заполнить последний столбец следующей таблицы \(_способ сбора данных для таблице описан ниже по тексту\)_:
 
-| Название  | Как узнать  | Значение |
-|:------------- |:---------------:|:-------------:|
-| ip для engine         |   -                          |               |
-| ip сервера            | ip addr                      |               |
-| ip шлюза по умолчанию | ip route                     |               |
-| ip dns-сервера        |   -                          |               |
-| домен установки       |   -                          |               |
-| hostname сервера      |   -                          |               |
-| название интерфейса   |   ip addr                    |               |
-|предпочтительный gluster-hostname | - | |
-|предпочтительное название тома gluster | - | |
-|директорию для размещения тома gluster | - | |
+| Название | Как узнать | Значение |
+| :--- | :---: | :---: |
+| ip для engine | - |  |
+| ip сервера | ip addr |  |
+| ip шлюза по умолчанию | ip route |  |
+| ip dns-сервера | - |  |
+| домен установки | - |  |
+| hostname сервера | - |  |
+| название интерфейса | ip addr |  |
+| предпочтительный gluster-hostname | - |  |
+| предпочтительное название тома gluster | - |  |
+| директорию для размещения тома gluster | - |  |
 
 Для получения ip-адреса сервера и название интерфейса выполните команду `ip addr` :
 
 Согласно примеру ниже видно, что ip-адрес сервера - `10.1.140.13`, название интерфейса - `enp3s0`.
-```
+
+```text
 [root@host1 ~]# ip addr
 1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
     link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
@@ -111,14 +113,13 @@ dr-xr-xr-x. 18 root root  255 Apr  7 08:36 ..
        valid_lft forever preferred_lft forever
 3: enp7s0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc mq state UP group default qlen 1000
     link/ether 00:17:a4:77:00:0e brd ff:ff:ff:ff:ff:ff
-
-``` 
+```
 
 Для получения ip-адреса шлюза выполните команду `ip route`.
 
 Согласно примеру ниже видно, что ip шлюза по умолчанию - `10.1.140.1`
 
-```
+```text
 [root@host1 ~]# ip route
 default via 10.1.140.1 dev enp3s0 proto static metric 100
 10.1.140.0/25 dev enp3s0 proto kernel scope link src 10.1.140.13 metric 100
@@ -126,18 +127,19 @@ default via 10.1.140.1 dev enp3s0 proto static metric 100
 
 Для параметры связанные с glusterfs могут быть выбраны значения по умолчанию:
 
-| Название  | Значение по умолчанию |
-|:------------- |:---------------:|
-|предпочтительный gluster-hostname | glusternode1 |
-|предпочтительное название тома gluster | hosted-engine |
-|директорию для размещения тома gluster | /data/gluster/hosted_engine |
+| Название | Значение по умолчанию |
+| :--- | :---: |
+| предпочтительный gluster-hostname | glusternode1 |
+| предпочтительное название тома gluster | hosted-engine |
+| директорию для размещения тома gluster | /data/gluster/hosted\_engine |
 
-Обратите внимание, что рекомендуется использовать отдельный раздел для размещения тома glusterfs, который имеет точку монтирования в директории */data*
+Обратите внимание, что рекомендуется использовать отдельный раздел для размещения тома glusterfs, который имеет точку монтирования в директории _/data_
 
-#### Запуск программы-помощника IP-wizard 
+### Запуск программы-помощника IP-wizard
 
 Запустите `IP-wizard.sh`, чтобы подготовить файлы переменных к работе. Следуйте указаниями инструкции в программе:
-```
+
+```text
 sh IP-wizard.sh 
 
 Добро пожаловать в программу-помощник IP-wizard Группы компаний ХОСТ!
@@ -221,24 +223,25 @@ gluster_hosted_engine_volume_name: hosted-engine
 Файл ответов обновлен.
 
 [root@host1 ~]#
-
 ```
 
-### Установка виртуализации
+## Установка виртуализации
 
-Выполните команду `ansible-playbook /etc/ansible/make-prepare.yml`, чтобы подготовить к работе /etc/hosts. 
-```
+Выполните команду `ansible-playbook /etc/ansible/make-prepare.yml`, чтобы подготовить к работе /etc/hosts.
+
+```text
 [root@host1 ~]# ansible-playbook /etc/ansible/make-prepare.yml
 ```
 
-Выполните команду `ansible-playbook /etc/ansible/make-gluster-storages.yml`, чтобы подготовить к работе glusterfs. 
-```
+Выполните команду `ansible-playbook /etc/ansible/make-gluster-storages.yml`, чтобы подготовить к работе glusterfs.
+
+```text
 [root@host1 ~]# ansible-playbook /etc/ansible/make-gluster-storages.yml
 ```
 
-Запустите установку необходимых пакетов виртуализации командой `ansible-playbook /etc/ansible/make-ovirt.yml`. На ее выполнение уйдет чуть больше часа. 
+Запустите установку необходимых пакетов виртуализации командой `ansible-playbook /etc/ansible/make-ovirt.yml`. На ее выполнение уйдет чуть больше часа.
 
-```
+```text
 [root@host1 ~]# ansible-playbook /etc/ansible/make-ovirt.yml
 [DEPRECATION WARNING]: The TRANSFORM_INVALID_GROUP_CHARS settings is set to allow bad characters in group names by default, this will change, but still be user configurable on deprecation. This feature will be removed in version 2.10.
 Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
@@ -285,39 +288,31 @@ PLAY RECAP *********************************************************************
 localhost                  : ok=9    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0
 
 [root@host1 ~]#
-``` 
-
-Сформированный файл `/root/script-hosted-engine-deploy` содержит инструкции, необходимые для развертывания виртуализации
-Запустите его на исполнение командой `/root/script-hosted-engine-deploy | tee -a /root/script-hosted-engine-deploy.log`: 
 ```
+
+Сформированный файл `/root/script-hosted-engine-deploy` содержит инструкции, необходимые для развертывания виртуализации Запустите его на исполнение командой `/root/script-hosted-engine-deploy | tee -a /root/script-hosted-engine-deploy.log`:
+
+```text
 /root/script-hosted-engine-deploy | tee -a /root/script-hosted-engine-deploy.log
-
 ```
 
-После завершения развертывания виртуализации откройте браузер и перейдите по адресу *https://engine.mydomain.ru*, чтобы попасть в панель управления (Адрес может отличаться, если Вы задали другое DNS имя консоли управления).
+После завершения развертывания виртуализации откройте браузер и перейдите по адресу [https://engine.mydomain.ru](https://engine.mydomain.ru), чтобы попасть в панель управления \(Адрес может отличаться, если Вы задали другое DNS имя консоли управления\).
 
-### Если что-то пошло не так
+## Если что-то пошло не так
 
 1. Проверить корректность данных, которые были введены в IP-wizard. При обнаружении ошибки выполните команду `ansible-playbook /etc/ansible/clean-node.yml` и начните сначала.
 2. Если на этапе `/root/script-hosted-engine-deploy | tee -a /root/script-hosted-engine-deploy.log` появилась ошибка, то выполните команду `ansible-playbook /etc/ansible/clean-node.yml` и начните сначала
 3. Если на этапе `ansible-playbook /etc/ansible/make-prepare.yml` появилась ошибка, повторите выполнение данной команды
 4. Если на этапе `ansible-playbook /etc/ansible/make-gluster-storages.yml` появилась ошибка, повторите выполнение данной команды
 5. Если на этапе `ansible-playbook /etc/ansible/make-ovirt.yml` появилась ошибка, повторите выполнение данной команды
-6. Если после завершения установки вам не открывается страница в браузере с адресом https://engine.mydomain.ru, то
-    1. Проверьте, что ip для engine, указанный в таблице в начале установки отвечает на команду ping
-    2. Проверьте, что имя `engine.mydomain.ru` разрешается вашим dns-сервером.
-7. Если на этапе установки engine `/root/script-hosted-engine-deploy | tee -a /root/script-hosted-engine-deploy.log` установка зависает на этапе `Engine VM domain: [rtc.local]rtc.local Enter root password that will be used for the engine appliance: engine`, то подключитесь к консоли сервера не по SSH, а с помощью ipmi(iLO, iDRAC, etc.) и повторно запустите скрипт установки engine.
+6. Если после завершения установки вам не открывается страница в браузере с адресом [https://engine.mydomain.ru](https://engine.mydomain.ru), то
+   1. Проверьте, что ip для engine, указанный в таблице в начале установки отвечает на команду ping
+   2. Проверьте, что имя `engine.mydomain.ru` разрешается вашим dns-сервером.
+7. Если на этапе установки engine `/root/script-hosted-engine-deploy | tee -a /root/script-hosted-engine-deploy.log` установка зависает на этапе `Engine VM domain: [rtc.local]rtc.local Enter root password that will be used for the engine appliance: engine`, то подключитесь к консоли сервера не по SSH, а с помощью ipmi\(iLO, iDRAC, etc.\) и повторно запустите скрипт установки engine.
 
 Схема установки hostvm и самостоятельного решения проблем представлена на рисунке ниже:
 
-![Картинка][hostvm-install-troubleshooting-scheme]
+![](../.gitbook/assets/troubleshooting-scheme-on-local-disks.jpg)
 
-Если устранить проблему не удалось, обратитесь в [техническую поддержку](hostco.ru) используя [инструкцию][hostvm-public-TS-instruction] К обращению приложите лог вывода вашей консоли, который был настроен в начале установки и файл `/root/script-hosted-engine-deploy.log`.
+Если устранить проблему не удалось, обратитесь в [техническую поддержку](https://github.com/hostco-ru/hostvm/tree/1e76c2e8efd1596a96107b99841d3e81adefe102/docs/hostco.ru) используя [инструкцию](https://reestr.hostco.ru/downloads) К обращению приложите лог вывода вашей консоли, который был настроен в начале установки и файл `/root/script-hosted-engine-deploy.log`.
 
-[hostvm-install-1-1]: ./images/hostvm-install-1-1.jpg
-[hostvm-install-2]: ./images/hostvm-install-2.jpg
-[hostvm-install-3]: ./images/hostvm-install-3.jpg
-[hostvm-install-4]: ./images/hostvm-install-4.jpg
-[hostvm-install-troubleshooting-scheme]: ./images/troubleshooting-scheme-on-local-disks.jpg
-[hostvm-public-link]: https://reestr.hostco.ru/downloads
-[hostvm-public-TS-instruction]: https://reestr.hostco.ru/downloads

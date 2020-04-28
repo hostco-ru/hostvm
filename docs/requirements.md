@@ -1,28 +1,29 @@
-## Системные требования
+# Системные требования
 
-### Системные требования для сервера виртуализации:
+## Системные требования для сервера виртуализации:
 
-#### Требования к  CPU
+### Требования к  CPU
 
 Используемый процессор должен поддерживать технологию AMD-V or Intel VT. Аппаратная виртуализация на сервере должна быть включена.
 
 Следующие модели CPU поддерживаются:
 
 * AMD
-	- Opteron G4
-	- Opteron G5
+  * Opteron G4
+  * Opteron G5
 * Intel
-	- Nehalem
-	- Westmere
-	- Sandybridge
-	- Haswell
-	- Haswell-noTSX
-	- Broadwell
-	- Broadwell-noTSX
-	- Skylake (client)
-	- Skylake (server)
+  * Nehalem
+  * Westmere
+  * Sandybridge
+  * Haswell
+  * Haswell-noTSX
+  * Broadwell
+  * Broadwell-noTSX
+  * Skylake \(client\)
+  * Skylake \(server\)
 * IBM POWER8
 
-### Системные требования к дисковой подсистеме
+## Системные требования к дисковой подсистеме
 
 Дисковая подсистема должна обеспечивать минимум 50GB дисковой памяти только для хранения виртуальных машин.
+
