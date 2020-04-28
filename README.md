@@ -1,3 +1,2 @@
-[![Documentation Status](https://readthedocs.org/projects/hostvm/badge/?version=latest)](https://hostvm.readthedocs.io/ru/latest/?badge=latest)
+# Initial page
 
-HOST VM documentation page
