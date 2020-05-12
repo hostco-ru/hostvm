@@ -8,12 +8,12 @@
   * [Установка Centos7 на диски СХД](installation-guide/installation-centos7.md)
   * [Установка Centos7 на диски СХД](installation-guide/instalation-hostvm.md)
   * [Дествия после установки виртуализации](installation-guide/after-install.md)
-  * [Конвертация виртуальной машины с ОС AltLinux из Vmware в HOSTVM](installation-guide/vmware_convert_altlinux.md)
-  * [Установка Kaspersky Security для виртуальных сред 5.х Легкий агент на систему управления виртуализац](installation-guide/installation-ksc.md)
+  * [Конвертация виртуальной машины с ОС AltLinux из VMware в HOSTVM](installation-guide/vmware_convert_altlinux.md)
+  * [Установка Kaspersky Security для виртуальных сред 5.х](installation-guide/installation-ksc.md)
   * [Установка Accord KVM](installation-guide/installation-accordkvm.md)
-  * [Развертывание VDI Appliance на систему управления виртуализацией HOSTVM](installation-guide/installation-uds-appliance.md)
+  * [Развертывание VDI Appliance](installation-guide/installation-uds-appliance.md)
   * [Руководство администратора VDI Appliance](installation-guide/config-uds-appliance.md)
-  * [connect-uds-vdi](installation-guide/connect-uds-vdi.md)
+  * [Руководство пользователя HOST VDI](installation-guide/connect-uds-vdi.md)
   * [datasheet](installation-guide/datasheet.md)
 
 ## О Компании
