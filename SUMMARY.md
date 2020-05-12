@@ -2,6 +2,7 @@
 
 * [HOSTVM](README.md)
 * [Руководство по установке и настройке](installation-guide/README.md)
+  * [Описание HOSTVM](installation-guide/datasheet.md)
   * [Системные требования](installation-guide/requirements.md)
   * [Установка Centos7 на локальные диски](installation-guide/installation-centos7-on-local-disks.md)
   * [Установка виртуализации на локальные диски](installation-guide/instalation-hostvm-on-local-disks.md)
@@ -14,7 +15,6 @@
   * [Развертывание VDI Appliance](installation-guide/installation-uds-appliance.md)
   * [Руководство администратора VDI Appliance](installation-guide/config-uds-appliance.md)
   * [Руководство пользователя HOST VDI](installation-guide/connect-uds-vdi.md)
-  * [Описание HOSTVM](installation-guide/datasheet.md)
 
 ## О Компании
 
