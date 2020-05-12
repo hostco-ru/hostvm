@@ -7,7 +7,7 @@
   * [Установка Centos7 на локальные диски](installation-guide/installation-centos7-on-local-disks.md)
   * [Установка виртуализации на локальные диски](installation-guide/instalation-hostvm-on-local-disks.md)
   * [Установка Centos7 на диски СХД](installation-guide/installation-centos7.md)
-  * [Установка Centos7 на диски СХД](installation-guide/instalation-hostvm.md)
+  * [Установка виртуализации на диски СХД](installation-guide/instalation-hostvm.md)
   * [Дествия после установки виртуализации](installation-guide/after-install.md)
   * [Конвертация виртуальной машины с ОС AltLinux из VMware в HOSTVM](installation-guide/vmware_convert_altlinux.md)
   * [Установка Kaspersky Security для виртуальных сред 5.х](installation-guide/installation-ksc.md)
