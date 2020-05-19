@@ -74,7 +74,7 @@ curl -x <[protocol://][user:password@]proxyhost[:port]> url
 -x http://user:password@Your-Ip-Here:Port url
 ```
 
-Например, сначала устанавливаем переменные для прокси
+Например, сначала устанавливаем переменные для прокси и затем используем CURL
 
 ```text
 export http_proxy=http://foo:bar@1.1.1.1:3128/
