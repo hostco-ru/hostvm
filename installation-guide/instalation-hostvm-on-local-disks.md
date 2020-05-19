@@ -42,6 +42,48 @@ UUID=2412661b-df41-46c7-ad31-b5b696dfc218 /boot                   xfs     defaul
 /dev/mapper/centos_host1-swap swap                    swap    defaults        0 0
 ```
 
+### Настройка прокси \(если используется\)
+
+Если в данной сети доступ во вне доступен только через прокси, то следует выполнить следующие настройки:
+
+1. В файле /etc/yum.conf, для загрузки пакетов через прокси добавляем строки
+
+```text
+proxy=http://proxyhost:8080
+proxy_username=proxyname
+proxy_password=proxypass
+```
+
+   2. Экспортировать глобальные переменные прокси для работы CURL
+
+```text
+## http прокси с именем и паролем 
+export http_proxy=http://user:password@your-proxy-ip-address:port/
+
+## HTTPS версия ##
+export https_proxy=https://your-ip-address:port/
+export https_proxy=https://user:password@your-proxy-ip-address:port/
+```
+
+Кроме этого существует опция -x для команды curl что бы указать прокси сервер
+
+```text
+curl -x <[protocol://][user:password@]proxyhost[:port]> url
+--proxy <[protocol://][user:password@]proxyhost[:port]> url
+--proxy http://user:password@Your-Ip-Here:Port url
+-x http://user:password@Your-Ip-Here:Port url
+```
+
+Например, сначала устанавливаем переменные для прокси
+
+```text
+export http_proxy=http://foo:bar@1.1.1.1:3128/
+export https_proxy=$http_proxy
+## Use curl command ##
+curl -I www.system-admins.ru
+curl -v -I www.system-admins.ru
+```
+
 ### Загрузка и выполнение подготовительного скрипта `initial.sh`
 
 С помощью команды `curl` выполните загрузку файла `initial.sh` с репозитория repo.hostco.ru
