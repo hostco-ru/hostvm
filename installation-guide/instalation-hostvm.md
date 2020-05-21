@@ -79,23 +79,13 @@ export https_proxy=https://your-ip-address:port/
 export https_proxy=https://user:password@your-proxy-ip-address:port/
 ```
 
-Кроме этого существует опция -x для команды curl что бы указать прокси сервер
-
-```text
-curl -x <[protocol://][user:password@]proxyhost[:port]> url
---proxy <[protocol://][user:password@]proxyhost[:port]> url
---proxy http://user:password@Your-Ip-Here:Port url
--x http://user:password@Your-Ip-Here:Port url
-```
-
-Например, сначала устанавливаем переменные для прокси и затем используем CURL
+На примере, сначала устанавливаем переменные для прокси и затем используем CURL
 
 ```text
 export http_proxy=http://foo:bar@1.1.1.1:3128/
 export https_proxy=$http_proxy
 ## Use curl command ##
 curl -I www.system-admins.ru
-curl -v -I www.system-admins.ru
 ```
 
 ### Загрузка и выполнение подготовительного скрипта `initial.sh`
