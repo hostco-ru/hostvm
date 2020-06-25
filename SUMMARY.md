@@ -3,7 +3,7 @@
 * [HOSTVM](README.md)
 * [Руководство по установке и настройке](installation-guide/README.md)
   * [О платформе](installation-guide/datasheet.md)
-  * [Системные требования](installation-guide/requirements.md)
+  * [Требования к системе](installation-guide/requirements.md)
   * [Установка Centos7 на локальные диски](installation-guide/installation-centos7-on-local-disks.md)
   * [Установка виртуализации на локальные диски](installation-guide/instalation-hostvm-on-local-disks.md)
   * [Установка Centos7 на диски СХД](installation-guide/installation-centos7.md)

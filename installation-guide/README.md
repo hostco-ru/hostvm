@@ -2,9 +2,9 @@
 
 ## Установка системы виртуализации HOSTVM
 
-#### [Описание HOSTVM](datasheet.md)
+#### [О платформе](https://app.gitbook.com/@hostvms/s/hostvm/~/drafts/-MAeGLSnxdwnfWGuHmfB/installation-guide/datasheet)
 
-#### [Системные требования](requirements.md)
+#### [Требования к системе](https://app.gitbook.com/@hostvms/s/hostvm/~/drafts/-MAeGLSnxdwnfWGuHmfB/installation-guide/requirements)
 
 ### Установка на локальные диски сервера
 
