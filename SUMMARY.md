@@ -15,6 +15,7 @@
   * [Развертывание VDI Appliance](installation-guide/installation-uds-appliance.md)
   * [Руководство администратора VDI Appliance](installation-guide/config-uds-appliance.md)
   * [Руководство пользователя HOST VDI](installation-guide/connect-uds-vdi.md)
+  * [Настройка USB-загрузчика для клиентских устройств](installation-guide/usb-boot-device-configuration.md)
 
 ## О Компании
 
