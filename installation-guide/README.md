@@ -34,5 +34,5 @@
 
 #### [Руководство пользователя HOST VDI](connect-uds-vdi.md)
 
-#### \*\*\*\*[Настройка USB-загрузчика для клиентских устройств](usb-boot-device-configuration.md)
+#### [Настройка USB-загрузчика для клиентских устройств](usb-boot-device-configuration.md)
 
