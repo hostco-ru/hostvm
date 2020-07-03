@@ -29,5 +29,5 @@
 
 ## О Компании
 
-* [Группа Компаний ХОСТ](o-kompanii/developer.md)
+* [Команда разработчиков HOSTVM](o-kompanii/developer.md)
 
