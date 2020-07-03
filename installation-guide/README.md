@@ -28,11 +28,11 @@
 
 #### [Установка Accord KVM](installation-accordkvm.md)
 
-#### [Развертывание VDI Appliance](hostvm-vdi-ova-install.md)
+#### [Развертывание VDI Appliance](../hostvm-vdi/hostvm-vdi-ova-install.md)
 
-#### [Руководство администратора VDI Appliance](install-hostvm-vdi-appliance.md)
+#### [Руководство администратора VDI Appliance](../hostvm-vdi/install-hostvm-vdi-appliance.md)
 
-#### [Руководство пользователя HOST VDI](hostvm-vdi-user-manual.md)
+#### [Руководство пользователя HOST VDI](../hostvm-vdi/hostvm-vdi-user-manual.md)
 
-#### [Настройка USB-загрузчика для клиентских устройств](usb-boot-device-configuration.md)
+#### [Настройка USB-загрузчика для клиентских устройств](../hostvm-vdi/usb-boot-device-configuration.md)
 
