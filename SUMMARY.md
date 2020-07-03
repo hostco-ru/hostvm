@@ -14,7 +14,7 @@
   * [Установка Kaspersky Security для виртуальных сред 5.х](installation-guide/installation-ksc.md)
   * [Установка Accord KVM](installation-guide/installation-accordkvm.md)
   * [Установка HOSTVM VDI Appliance](installation-guide/installation-uds-appliance.md)
-  * [Руководство администратора HOSTVM VDI Appliance](installation-guide/config-uds-appliance.md)
+  * [Руководство администратора HOSTVM VDI Appliance](installation-guide/install-hostvm-vdi-appliance.md)
   * [Руководство пользователя HOSTVM VDI](installation-guide/connect-uds-vdi.md)
   * [Настройка USB-загрузчика для клиентских устройств](installation-guide/usb-boot-device-configuration.md)
 

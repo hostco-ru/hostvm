@@ -30,7 +30,7 @@
 
 #### [Развертывание VDI Appliance](installation-uds-appliance.md)
 
-#### [Руководство администратора VDI Appliance](config-uds-appliance.md)
+#### [Руководство администратора VDI Appliance](install-hostvm-vdi-appliance.md)
 
 #### [Руководство пользователя HOST VDI](connect-uds-vdi.md)
 
