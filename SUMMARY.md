@@ -21,10 +21,11 @@
 
 ## HOSTVM VDI
 
-* [Установка HOSTVM VDI Appliance](hostvm-vdi/hostvm-vdi-ova-install.md)
-* [Руководство администратора HOSTVM VDI Appliance](hostvm-vdi/install-hostvm-vdi-appliance.md)
-* [Руководство пользователя HOSTVM VDI](hostvm-vdi/hostvm-vdi-user-manual.md)
-* [Настройка USB-загрузчика для клиентских устройств](hostvm-vdi/usb-boot-device-configuration.md)
+* [Руководство по установке и настройке](hostvm-vdi/hostvm-vdi-installation-guide/README.md)
+  * [Настройка USB-загрузчика для клиентских устройств](hostvm-vdi/hostvm-vdi-installation-guide/usb-boot-device-configuration.md)
+  * [Руководство пользователя HOSTVM VDI](hostvm-vdi/hostvm-vdi-installation-guide/hostvm-vdi-user-manual.md)
+  * [Руководство администратора HOSTVM VDI Appliance](hostvm-vdi/hostvm-vdi-installation-guide/install-hostvm-vdi-appliance.md)
+  * [Установка HOSTVM VDI Appliance](hostvm-vdi/hostvm-vdi-installation-guide/hostvm-vdi-ova-install.md)
 
 ## О Компании
 
