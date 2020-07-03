@@ -6,6 +6,8 @@
 
 #### [Требования к системе](https://app.gitbook.com/@hostvms/s/hostvm/~/drafts/-MAeGLSnxdwnfWGuHmfB/installation-guide/requirements)
 
+[**Установка с ISO-образа HOSTVM**](https://hostvm.gitbook.io/hostvm/hostvm/installation-guide/hostvm-iso-install)\*\*\*\*
+
 ### Установка на локальные диски сервера
 
 #### [Установка Centos7 на локальные диски](installation-centos7-on-local-disks.md)
