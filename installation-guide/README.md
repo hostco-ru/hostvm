@@ -32,7 +32,7 @@
 
 #### [Руководство администратора VDI Appliance](install-hostvm-vdi-appliance.md)
 
-#### [Руководство пользователя HOST VDI](connect-uds-vdi.md)
+#### [Руководство пользователя HOST VDI](hostvm-vdi-user-manual.md)
 
 #### [Настройка USB-загрузчика для клиентских устройств](usb-boot-device-configuration.md)
 

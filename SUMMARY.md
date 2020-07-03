@@ -4,7 +4,7 @@
 * [Руководство по установке и настройке](installation-guide/README.md)
   * [О платформе](installation-guide/datasheet.md)
   * [Требования к системе](installation-guide/requirements.md)
-  * [Установка с ISO-образа HOSTVM](installation-guide/ustanovka-s-iso-obraza-hostvm.md)
+  * [Установка с ISO-образа HOSTVM](installation-guide/hostvm-iso-install.md)
   * [Установка Centos7 на локальные диски](installation-guide/installation-centos7-on-local-disks.md)
   * [Установка виртуализации на локальные диски](installation-guide/instalation-hostvm-on-local-disks.md)
   * [Установка Centos7 на диски СХД](installation-guide/installation-centos7.md)
@@ -15,7 +15,7 @@
   * [Установка Accord KVM](installation-guide/installation-accordkvm.md)
   * [Установка HOSTVM VDI Appliance](installation-guide/installation-uds-appliance.md)
   * [Руководство администратора HOSTVM VDI Appliance](installation-guide/install-hostvm-vdi-appliance.md)
-  * [Руководство пользователя HOSTVM VDI](installation-guide/connect-uds-vdi.md)
+  * [Руководство пользователя HOSTVM VDI](installation-guide/hostvm-vdi-user-manual.md)
   * [Настройка USB-загрузчика для клиентских устройств](installation-guide/usb-boot-device-configuration.md)
 
 ## О Компании
