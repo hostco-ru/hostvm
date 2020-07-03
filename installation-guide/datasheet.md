@@ -36,5 +36,7 @@ description: >-
 
 ## Подробнее
 
-Дополнительные сведения о платформе можно найти по адресу: [https://reestr.hostco.ru/host](https://reestr.hostco.ru/host)
+Дополнительные сведения о платформе можно найти по адресу:
+
+[https://pvhostvm.ru](https://pvhostvm.ru)
 
