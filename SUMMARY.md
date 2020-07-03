@@ -13,7 +13,7 @@
   * [Конвертация виртуальной машины с ОС AltLinux из VMware в HOSTVM](installation-guide/vmware_convert_altlinux.md)
   * [Установка Kaspersky Security для виртуальных сред 5.х](installation-guide/installation-ksc.md)
   * [Установка Accord KVM](installation-guide/installation-accordkvm.md)
-  * [Установка HOSTVM VDI Appliance](installation-guide/installation-uds-appliance.md)
+  * [Установка HOSTVM VDI Appliance](installation-guide/hostvm-vdi-ova-install.md)
   * [Руководство администратора HOSTVM VDI Appliance](installation-guide/install-hostvm-vdi-appliance.md)
   * [Руководство пользователя HOSTVM VDI](installation-guide/hostvm-vdi-user-manual.md)
   * [Настройка USB-загрузчика для клиентских устройств](installation-guide/usb-boot-device-configuration.md)

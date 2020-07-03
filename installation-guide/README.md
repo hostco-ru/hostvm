@@ -28,7 +28,7 @@
 
 #### [Установка Accord KVM](installation-accordkvm.md)
 
-#### [Развертывание VDI Appliance](installation-uds-appliance.md)
+#### [Развертывание VDI Appliance](hostvm-vdi-ova-install.md)
 
 #### [Руководство администратора VDI Appliance](install-hostvm-vdi-appliance.md)
 
