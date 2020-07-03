@@ -1,4 +1,4 @@
-# Развертывание VDI Appliance
+# Установка HOSTVM VDI Appliance
 
 ## Общие данные
 
