@@ -106,5 +106,5 @@ _`dpkg -i udsactor_2.2.0_all.deb`_
 
 Нажатие Test parameters должно проходить успешно.
 
-![UDS Enterprise- Preparing Templates Xubuntu XRDP UDS Actor - PDF ...](cid:image001.jpg@01D661C7.EC29D900)
+![](../../.gitbook/assets/image%20%2826%29.png)
 
