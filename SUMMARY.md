@@ -22,6 +22,7 @@
 ## HOSTVM VDI
 
 * [Руководство по установке и настройке](hostvm-vdi/hostvm-vdi-installation-guide/README.md)
+  * [Подготовка мастер-образа для публикации в HOSTVM VDI](hostvm-vdi/hostvm-vdi-installation-guide/podgotovka-master-obraza-dlya-publikacii-v-hostvm-vdi.md)
   * [Установка HOSTVM VDI Appliance](hostvm-vdi/hostvm-vdi-installation-guide/hostvm-vdi-ova-install.md)
   * [Руководство пользователя HOSTVM VDI](hostvm-vdi/hostvm-vdi-installation-guide/hostvm-vdi-user-manual.md)
   * [Руководство администратора HOSTVM VDI Appliance](hostvm-vdi/hostvm-vdi-installation-guide/install-hostvm-vdi-appliance.md)
