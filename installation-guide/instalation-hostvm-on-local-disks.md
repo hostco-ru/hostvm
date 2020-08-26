@@ -12,34 +12,34 @@
 
 1. Сохраните имя сервера:
 
-![](../.gitbook/assets/hostvm-install-2.jpg)
+![](../.gitbook/assets/screenshot_31.png)
 
-2. Перейдите на вкладку Журнал \(мы можем добавить ссылку на страницу с этой вкладкой?\), выберите `Весь вывод`, укажите путь до файла логов в следующем виде: `C:\path\to\log\hostname-&H-&Y&M&D-&T.log`. Часть `&H-&Y&M&D-&T` указывает, что файл с логом будет создаваться для каждой сессии и автоматически указывать время и дату ее начала:
+2. Перейдите на вкладку Журнал, выберите `Весь вывод`, укажите путь до файла логов в следующем виде: `C:\path\to\log\hostname-&H-&Y&M&D-&T.log`. Часть `&H-&Y&M&D-&T` указывает, что файл с логом будет создаваться для каждой сессии и автоматически указывать время и дату ее начала:
 
-![](../.gitbook/assets/hostvm-install-3.jpg)
+![](../.gitbook/assets/screenshot_32.png)
 
 3. Перейдите на вкладку Сеанс, нажмите кнопку `Сохранить`, нажмите клавишу `Enter` чтобы запустить сессию:
 
-![](../.gitbook/assets/hostvm-install-4.jpg)
+![](../.gitbook/assets/screenshot_33.png)
 
 ### Проверить, что диск предназначенный для размещения виртуальных машин подключен
 
 Командой `cat /etc/fstab` выведите на экран список используемых в системе устройств хранения. В качестве точки монтирования мы использовали директорию `/data`.
 
 ```text
-[root@host1 ~]# cat /etc/fstab
-
+[root@virt2 ~]# cat /etc/fstab
 #
 # /etc/fstab
-# Created by anaconda on Fri Nov  1 09:31:43 2019
+# Created by anaconda on Wed Aug 26 13:30:05 2020
 #
 # Accessible filesystems, by reference, are maintained under '/dev/disk'
 # See man pages fstab(5), findfs(8), mount(8) and/or blkid(8) for more info
 #
-/dev/mapper/centos_host1-root /                       xfs     defaults        0 0
-UUID=2412661b-df41-46c7-ad31-b5b696dfc218 /boot                   xfs     defaults        0 0
-/dev/mapper/centos_host1-data /data                   xfs     defaults        0 0
-/dev/mapper/centos_host1-swap swap                    swap    defaults        0 0
+/dev/hn_virt2/ovirt-node-ng-4.3.9-0.20200319.0+1 / ext4 defaults,discard 1 1
+UUID=4dfc5afd-299a-40fa-94bb-f65820e77325 /boot                   ext4    defaul                                                                                ts        1 2
+/dev/mapper/hn_virt2-data /data                   ext4    defaults        1 2
+/dev/mapper/hn_virt2-var /var ext4 defaults,discard 1 2
+/dev/mapper/hn_virt2-swap swap                    swap    defaults        0 0
 ```
 
 ### Настройка прокси \(если используется\)
@@ -74,42 +74,10 @@ export https_proxy=$http_proxy
 curl -I www.system-admins.ru
 ```
 
-### Загрузка и выполнение подготовительного скрипта `initial.sh`
-
-С помощью команды `curl` выполните загрузку файла `initial.sh` с репозитория repo.hostco.ru
-
-```text
-[root@host1 ~]# curl -o /root/initial.sh https://repo.hostco.ru/hostvm/initial.sh
-  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
-                                 Dload  Upload   Total   Spent    Left  Speed
-100  1192  100  1192    0     0   7791      0 --:--:-- --:--:-- --:--:--  7842
-```
-
-Cделайте файл `initial.sh` исполняемым
-
-```text
-[root@host1 ~]# chmod +x initial.sh 
-[root@host1 ~]# ls 
-anaconda-ks.cfg  initial.sh  original-ks.cfg
-[root@host1 ~]# ls -la
-total 40
-dr-xr-x---.  2 root root  155 Apr  7 09:31 .
-dr-xr-xr-x. 18 root root  255 Apr  7 08:36 ..
--rw-r--r--.  1 root root   18 Dec 29  2013 .bash_logout
--rw-r--r--.  1 root root  176 Dec 29  2013 .bash_profile
--rw-r--r--.  1 root root  176 Dec 29  2013 .bashrc
--rw-r--r--.  1 root root  100 Dec 29  2013 .cshrc
--rw-r--r--.  1 root root  129 Dec 29  2013 .tcshrc
--rw-------.  1 root root 5570 Jun  1  2019 anaconda-ks.cfg
--rwxr-xr-x.  1 root root  169 Apr  7 09:32 initial.sh
--rw-------.  1 root root 5300 Jun  1  2019 original-ks.cfg
-[root@host1 ~]#
-```
-
 Выполните скрипт `initial.sh`
 
 ```text
-[root@host1 ~]# sh initial.sh
+[root@virt2 ~]# sh initial.sh
 ```
 
 По итогу выполнения скрипта, в директории /root/ будет создан лог-файл `initial_log_текущая-дата.log`
@@ -135,34 +103,41 @@ dr-xr-xr-x. 18 root root  255 Apr  7 08:36 ..
 
 Для получения ip-адреса сервера и название интерфейса выполните команду `ip addr` :
 
-Согласно примеру ниже видно, что ip-адрес сервера - `10.1.140.13`, название интерфейса - `enp3s0`.
+Согласно примеру ниже видно, что ip-адрес сервера - `10.1.158.140`, название интерфейса - `eno1`.
 
 ```text
-[root@host1 ~]# ip addr
-1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+[root@virt2 ~]# ip a
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group defaul                                                                                t qlen 1000
     link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
     inet 127.0.0.1/8 scope host lo
        valid_lft forever preferred_lft forever
     inet6 ::1/128 scope host
        valid_lft forever preferred_lft forever
-2: enp3s0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc mq state UP group default qlen 1000
-    link/ether 00:17:a4:77:00:0c brd ff:ff:ff:ff:ff:ff
-    inet 10.1.140.13/25 brd 10.1.140.127 scope global noprefixroute enp3s0
+2: enp8s0f0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc mq state UP group                                                                                 default qlen 1000
+    link/ether 5c:f3:fc:11:42:90 brd ff:ff:ff:ff:ff:ff
+3: eno1: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc mq state UP group defa                                                                                ult qlen 1000
+    link/ether 5c:f3:fc:11:42:91 brd ff:ff:ff:ff:ff:ff
+    inet 10.1.158.140/24 brd 10.1.158.255 scope global noprefixroute eno1
        valid_lft forever preferred_lft forever
-    inet6 fe80::b50a:7c22:2229:b169/64 scope link noprefixroute
+    inet6 fe80::e54:1202:33cf:5a8a/64 scope link noprefixroute
        valid_lft forever preferred_lft forever
-3: enp7s0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc mq state UP group default qlen 1000
-    link/ether 00:17:a4:77:00:0e brd ff:ff:ff:ff:ff:ff
+4: enp0s29u1u1u5: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast st                                                                                ate UNKNOWN group default qlen 1000
+    link/ether 5e:f3:fc:15:16:bb brd ff:ff:ff:ff:ff:ff
+    inet 169.254.95.120/24 brd 169.254.95.255 scope link noprefixroute dynamic e                                                                                np0s29u1u1u5
+       valid_lft 346sec preferred_lft 346sec
+    inet6 fe80::42ed:eae9:47ac:6b89/64 scope link noprefixroute
+       valid_lft forever preferred_lft forever
 ```
 
 Для получения ip-адреса шлюза выполните команду `ip route`.
 
-Согласно примеру ниже видно, что ip шлюза по умолчанию - `10.1.140.1`
+Согласно примеру ниже видно, что ip шлюза по умолчанию - `10.1.158.1`
 
 ```text
-[root@host1 ~]# ip route
-default via 10.1.140.1 dev enp3s0 proto static metric 100
-10.1.140.0/25 dev enp3s0 proto kernel scope link src 10.1.140.13 metric 100
+[root@virt2 ~]# ip route
+default via 10.1.158.1 dev eno1 proto static metric 100
+10.1.158.0/24 dev eno1 proto kernel scope link src 10.1.158.140 metric 100
+169.254.95.0/24 dev enp0s29u1u1u5 proto kernel scope link src 169.254.95.120 metric 101
 ```
 
 Для параметры связанные с glusterfs могут быть выбраны значения по умолчанию:
@@ -180,7 +155,7 @@ default via 10.1.140.1 dev enp3s0 proto static metric 100
 Запустите `IP-wizard.sh`, чтобы подготовить файлы переменных к работе. Следуйте указаниями инструкции в программе:
 
 ```text
-sh IP-wizard.sh 
+[root@virt2 ~]# sh IP-wizard.sh
 
 Добро пожаловать в программу-помощник IP-wizard Группы компаний ХОСТ!
 Мы попросим ответить на несколько вопросов и сформируем нужные файлы конфигурации Ansible.
@@ -193,65 +168,67 @@ sh IP-wizard.sh
 Укажите ваш Домен: mydomain.ru
 Домен: mydomain.ru
 
-Укажите кластерный IP адрес oVirt Engine: 10.1.140.15
-Engine: 10.1.140.15
+Укажите кластерный IP адрес oVirt Engine: 10.1.158.141
+Engine: 10.1.158.141
 
-Укажите маску сети для кластерного IP адреса oVirt Engine(в виде числа: 24, 25 и т.д. (т.е. /24 /25 т.д.)): 25
+
+Укажите маску сети для кластерного IP адреса oVirt Engine(в виде числа: 24, 25 и т.д. (т.е. /24 /25 т.д.)): 24
 EngineMask: 24
 
-Укажите DNS имя для консоли управления(oVirt Engine)(без домена) : engine-test
-hostname консоли управления: engine-test
+Укажите DNS имя для консоли управления(oVirt Engine)(без домена) : engine
+hostname консоли управления: engine
 
-Укажите доступный клиентам IP адрес текущего сервера  : 10.1.140.13
-nodeip1: 10.1.140.13
+Укажите доступный клиентам IP адрес текущего сервера  : 10.1.158.140
+nodeip1: 10.1.158.140
 
-Укажите шлюз (gateway) сети текущего сервера : 10.1.140.1
-Public LAN gateway: 10.1.140.1
+Укажите шлюз (gateway) сети текущего сервера : 10.1.158.1
+Public LAN gateway: 10.1.158.1
 
-Укажите hostname первого сервера (без домена): myhost1
-hostname первого сервера: myhost1
+Укажите hostname текущего хоста (без домена) : virt2
+hostname текущего сервера: virt2
 
 На сервере будет развернута нода glusterfs.
-Укажите предпочтительный gluster-hostname первого сервера (без домена)(glusternode1): glust1
-gluster-hostname первого сервера: glust1
+Укажите предпочтительный gluster-hostname первого сервера (без домена) (glusternode1):
+gluster-hostname первого сервера: glusternode1
 
 В среде виртуализации для размещения управляющей машины engine будет создан домен хранения hosted-engine
-Укажите предпочтительное название тома gluster (hosted-engine): 
+Укажите предпочтительное название тома gluster  (hosted-engine):
 Имя тома gluster для домена хранения hosted-engine: hosted-engine
 
-Укажите директорию для размещения тома gluster hosted-engineОбратите внимание, что для установки на разделе выбранного расположения директории должно быть свободно минимум 61ГБ
-(/data/gluster/hosted_engine): 
+Укажите директорию для размещения тома gluster hosted-engine
+Обратите внимание, что для установки на разделе выбранного расположения директории должно быть свободно минимум 61ГБ
+(/data/gluster/hosted_engine):
 Директория для glusterfs : /data/gluster/hosted_engine
 
-Укажите hostname имя интерфейса первого сервера (Например enp2s0f0. Можно посмотреть командой ip addr): enp2s0f0
-имя интерфейса первого сервера: enp2s0f0
+Укажите hostname имя интерфейса первого сервера (Например enp2s0f0. Можно посмотреть командой ip addr) : eno1
+имя интерфейса первого сервера: eno1
 
 
-Укажите ваш DNS сервер: 10.1.64.248
-DNS: 10.1.64.248
-
+Укажите ваш DNS сервер : 10.1.64.254
+DNS: 10.1.64.254
 Начинаю модификацию файлов...
-dns_root: 10.1.64.248
+
+dns_root: 10.1.64.254
 Изменен файл /etc/ansible/group_vars/all.
 
 Генерируем /etc/ansible/group_vars/nodes...
-ansible_connection: ssh 
-ansible_ssh_user: root 
+ansible_connection: ssh
+ansible_ssh_user: root
 ansible_ssh_pass: engine
 ansible_ssh_common_args: '-o StrictHostKeyChecking=no'
-ovirt_engine_ip: 10.1.140.15
-ovirt_engine_fqdn: 'engine-test.mydomain.ru'
+ovirt_engine_ip: 10.1.158.141
+ovirt_engine_fqdn: 'engine.mydomain.ru'
 ovirt_engine_domain: 'mydomain.ru'
 ovirt_engine_password: 'engine'
 Изменен файл /etc/ansible/group_vars/nodes.
 
 Генерируем /etc/ansible/host_vars/host1...
-hostname: myhost1.mydomain.ru
-shothostname: myhost1
-ip: 10.1.140.13
-ip_gateway: 10.1.140.1
-nic_for_ovirtmgmt_bridge: enp2s0f0
-gluster_hostname: glust1
+hostname: virt2.mydomain.ru
+shothostname: virt2
+ip: 10.1.158.140
+ip_gateway: 10.1.158.1
+nic_for_ovirtmgmt_bridge: eno1
+gluster_hostname: glusternode1
 Изменен файл /etc/ansible/host_vars/host1.
 
 Генерируем /etc/ansible/group_vars/gluster...
@@ -261,8 +238,8 @@ gluster_hosted_engine_volume_name: hosted-engine
 
 Правим файл ответов для hosted-engine...
 Файл ответов обновлен.
+[root@virt2 ~]#
 
-[root@host1 ~]#
 ```
 
 ## Установка виртуализации
@@ -270,19 +247,19 @@ gluster_hosted_engine_volume_name: hosted-engine
 Выполните команду `ansible-playbook /etc/ansible/make-prepare.yml`, чтобы подготовить к работе /etc/hosts.
 
 ```text
-[root@host1 ~]# ansible-playbook /etc/ansible/make-prepare.yml
+[root@virt2 ~]# ansible-playbook /etc/ansible/make-prepare.yml
 ```
 
 Выполните команду `ansible-playbook /etc/ansible/make-gluster-storages.yml`, чтобы подготовить к работе glusterfs.
 
 ```text
-[root@host1 ~]# ansible-playbook /etc/ansible/make-gluster-storages.yml
+[root@virt2 ~]# ansible-playbook /etc/ansible/make-gluster-storages.yml
 ```
 
 Запустите установку необходимых пакетов виртуализации командой `ansible-playbook /etc/ansible/make-ovirt.yml`. На ее выполнение уйдет чуть больше часа.
 
 ```text
-[root@host1 ~]# ansible-playbook /etc/ansible/make-ovirt.yml
+[root@virt2 ~]# ansible-playbook /etc/ansible/make-ovirt.yml
 [DEPRECATION WARNING]: The TRANSFORM_INVALID_GROUP_CHARS settings is set to allow bad characters in group names by default, this will change, but still be user configurable on deprecation. This feature will be removed in version 2.10.
 Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
  [WARNING]: Invalid characters were found in group names but not replaced, use -vvvv to see details
@@ -327,7 +304,7 @@ ok: [localhost] => {
 PLAY RECAP **********************************************************************************************************************************************************************************************************************************
 localhost                  : ok=9    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0
 
-[root@host1 ~]#
+[root@virt2 ~]#
 ```
 
 Сформированный файл `/root/script-hosted-engine-deploy` содержит инструкции, необходимые для развертывания виртуализации Запустите его на исполнение командой `/root/script-hosted-engine-deploy | tee -a /root/script-hosted-engine-deploy.log`:
