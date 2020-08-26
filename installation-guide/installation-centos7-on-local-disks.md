@@ -1,10 +1,10 @@
-# Установка Centos7 на локальные диски
+# Установка HOSTVM Node на локальные диски
 
 ## Перед установкой
 
 Перед установкой подготовьте диски вашего сервера: соберите диски в raid-группы используя инструкции вендора вашего оборудования.
 
-Для установки необходимо использовать iso-образ [Centos7](https://www.centos.org), который доступна в [наборе дистрибьютивов для развертывания решения](https://reestr.hostco.ru/downloads)
+Для установки необходимо использовать iso-образ HOSTVM Node, который доступна в [наборе дистрибутивов для развертывания решения](https://reestr.hostco.ru/downloads)
 
 Подключите полученный iso-образ к серверу, запустите сервер.
 
@@ -12,9 +12,9 @@
 
 При загрузке откроется меню выбора действия. За 60 секунд выберите _Install Centos 7_. Если за 60 секунд после загрузки не выбрать данный пункт, то начинается тестирование ресурсов сервера и только после этого начнется установка. Остановить тестирование ресурсов сервера возможно через нажатие клавиши _esc_. 
 
-![](../.gitbook/assets/centos7-install-0.jpg)
+![](../.gitbook/assets/screenshot_2.png)
 
-В случае если загрузка установщика зависнет, то нужно повторно загрузиться с установочного диска и в стартовом меню действий выбрать пункт «Troubleshooting», затем “Install CentOS 7 in basic graphics mode” для запуска установки с сиспользованием псевдографического интерфейса.
+В случае если загрузка установщика зависнет, то нужно повторно загрузиться с установочного диска и в стартовом меню действий выбрать пункт «Troubleshooting», затем “Install CentOS 7 in basic graphics mode” для запуска установки с с использованием псевдографического интерфейса.
 
 В открывшемся окне выберите английский язык \(English\), который будет использоваться в интерфейсе установщика.
 
@@ -22,45 +22,45 @@ _Выбранный язык не влияет на язык внутри сам
 
 Скриншоты инструкции выполнены в интерфейсе с английским языком. Нажмите _Continue_.
 
-![](../.gitbook/assets/centos7-install-1.jpg)
+![](../.gitbook/assets/screenshot_3.png)
 
 Далее автоматически открывается меню настроек.
 
-![](../.gitbook/assets/centos7-install-2.jpg)
+![](../.gitbook/assets/screenshot_4.png)
 
 Перейдите в _DATE & TIME_, укажите ваш часовой пояс, время и дату. Нажмите _Done_.
 
-![](../.gitbook/assets/centos7-install-3.jpg)
+![](../.gitbook/assets/screenshot_5.png)
 
 Перейдите в _NETWORK & HOST NAME_.
 
-![](../.gitbook/assets/centos7-install-4.jpg)
+![](../.gitbook/assets/screenshot_6.png)
 
 Выберите интерфейс, нажмите кнопку _Configure..._. В открывшемся окне перейдите на вкладку _IPv4 Settings_, выберите _Method: Manual_, введите ip, маску, gw, DNS-сервер. Нажмите кнопку _Save_.
 
-![](../.gitbook/assets/centos7-install-5.jpg)
+![](../.gitbook/assets/screenshot_8.png)
 
 Переведите тригер возле названия подключения в положение _On_. В поле _Host name_ введите имя сервера, нажмите кнопку _Apply_. Нажмите кнопку _Done_.
 
-![](../.gitbook/assets/centos7-install-6.jpg)
+![](../.gitbook/assets/screenshot_9.png)
 
 Перейдите в _Instalation Destination_. Выберете диск на который необходимо выполнить установку. Выберете радиокнопку _I will configure partitioning_. Нажмите _Done_.
 
-![](../.gitbook/assets/centos7-install-7.jpg)
+![](../.gitbook/assets/screenshot_10.png)
 
 После выбора места установки автоматически открывается следующее меню.
 
-![](../.gitbook/assets/centos7-install-9-1.jpg)
+![](../.gitbook/assets/screenshot_11.png)
 
 Если диск уже использовался \(имел таблицу разделов\), то удалите их, как показано ниже.
 
-![](../.gitbook/assets/centos7-install-9-2.jpg)
+![](../.gitbook/assets/screenshot_15.png)
 
-![](../.gitbook/assets/centos7-install-9-3.jpg)
+![](../.gitbook/assets/screenshot_12.png)
 
 Когда на диске не останется существующих разделов, нажмите _Click here to create them automatically_.
 
-![](../.gitbook/assets/centos7-install-9-4.jpg)
+![](../.gitbook/assets/screenshot_16.png)
 
 Удалите _home_, как показано ниже.
 

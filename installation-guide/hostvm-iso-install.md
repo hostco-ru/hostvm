@@ -10,5 +10,5 @@
 
 ## Видео-инструкция по установке
 
-[https://cloud.hostco.ru/s/NQmfRZdKspEFDjg](https://cloud.hostco.ru/s/NQmfRZdKspEFDjg)
+[https://cloud.hostco.ru/s/YRW2PNdSoZQdTii](https://cloud.hostco.ru/s/YRW2PNdSoZQdTii)
 
