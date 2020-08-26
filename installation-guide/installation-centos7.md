@@ -42,11 +42,11 @@ _Выбранный язык не влияет на язык внутри сам
 
 Переведите тригер возле названия подключения в положение _On_. В поле _Host name_ введите имя сервера, нажмите кнопку _Apply_. Нажмите кнопку _Done_.
 
-![](../.gitbook/assets/screenshot_5%20%281%29.png)
+![](../.gitbook/assets/screenshot_5%20%282%29.png)
 
 Перейдите в _Instalation Destination_. Выберете диск на который необходимо выполнить установку. Выберете радиокнопку _I will configure partitioning_. Нажмите _Done_.
 
-![](../.gitbook/assets/screenshot_6%20%281%29.png)
+![](../.gitbook/assets/screenshot_6%20%282%29.png)
 
 Если диск не отображается, необходимо открыть дополнительное окно под кнопкой _Add a disk..._, поставить галочку напротив необходимого диска и нажать кнопку _Done_.
 
@@ -62,37 +62,41 @@ _Выбранный язык не влияет на язык внутри сам
 
 ![](../.gitbook/assets/centos7-install-9-3.jpg)
 
-Когда на диске не останется существующих разделов, нажмите _Click here to create them automatically_.
+Когда на диске не останется существующих разделов Из выпадающего меню выберите _LVM Thin Provisioning._ Нажмите _Click here to create them automatically_.
 
-![](../.gitbook/assets/centos7-install-9-4.jpg)
+![](../.gitbook/assets/screenshot_1%20%281%29.png)
 
 Удалите _home_, как показано ниже.
 
-![](../.gitbook/assets/centos7-install-9-5.jpg)
+![](../.gitbook/assets/screenshot_2%20%282%29.png)
 
 Освободившееся место отдайте разделу _/_. Для этого выберете его, укажите в поле Desired Capacity его размер. Минимальный размер диска: 45GB. Измените фокус \(выберете другой раздел\), чтобы изменения отобразились на экране.
 
-![](../.gitbook/assets/centos7-install-9-6.jpg)
+![](../.gitbook/assets/screenshot_3%20%281%29.png)
+
+Добавьте раздел /var. Присвойте ему не менее 15GB свободного места
+
+![](../.gitbook/assets/screenshot_4%20%282%29.png)
 
 Нажмите _Done_.
 
-![](../.gitbook/assets/centos7-install-9.jpg)
+![](../.gitbook/assets/screenshot_6%20%281%29.png)
 
 Подтвердите действие кнопкой _Accept Changes_.
 
-![](../.gitbook/assets/centos7-install-10.jpg)
+![](../.gitbook/assets/screenshot_7.png)
 
 В стартовом меню нажмите кнопку _Begin Instalation_, чтобы начать установку.
 
-![](../.gitbook/assets/centos7-install-11.jpg)
+![](../.gitbook/assets/screenshot_9%20%281%29.png)
 
 В открывшемся окне выберете _Root Password_. Введите ваш пароль \(рекомендуемый пароль **engine**\). Дважды нажмите _Done_.
 
-![](../.gitbook/assets/centos7-install-12.jpg)
+![](../.gitbook/assets/screenshot_27.png)
 
-![](../.gitbook/assets/centos7-install-13.jpg)
+![](../.gitbook/assets/screenshot_28.png)
 
 Ожидайте окончания установки. После завершения подтвердите перезагрузку нажатием на кнопку _Reboot_.
 
-![](../.gitbook/assets/centos7-install-14.jpg)
+![](../.gitbook/assets/screenshot_30.png)
 
