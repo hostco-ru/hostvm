@@ -95,9 +95,9 @@ nano /etc/exports
 
 Перейдите в `Storage -> Domains -> New Domain`. Выберете `Domain Function`, `Storage Type` как показано на картинке ниже. В поле `Export Part` введите адрес вашей nfs-share в формате `ip-адрес:/путь/до/папки` . Нажмите `OK`.
 
-![](../.gitbook/assets/post-install-iso-stor-1.jpg)
+![](../.gitbook/assets/screenshot_1%20%282%29.png)
 
-![](../.gitbook/assets/post-install-iso-stor-2.jpg)
+![](../.gitbook/assets/screenshot_2%20%284%29.png)
 
 Убедитесь, что iso-домен активен
 
@@ -144,7 +144,7 @@ drwxr-xr-x. 3 vdsm kvm       50 Oct 28 19:18 ..
 
 ## Добавление хостов
 
-Для того, чтобы подготовить второй и последующие серверы к работе на них необходимо установить ОС Centos7. Инструкция по установки приведена на странице [Установка Centos7](installation-centos7.md).
+Для того, чтобы подготовить второй и последующие серверы к работе на них необходимо установить ОС HOSTVM Node. Инструкция по установки приведена на странице [Установка HOSTVM Node на диски СХД](https://hostvm.gitbook.io/hostvm/hostvm/installation-guide/instalation-hostvm-on-local-disks).
 
 После установки ОС, подключитесь к серверу с помощью [PuTTY](https://www.putty.org) под пользователем root. Добавьте необходимые репозитории командой с помощью команды `yum install -y http://resources.ovirt.org/pub/yum-repo/ovirt-release43.rpm`
 
