@@ -10,7 +10,17 @@
 
 ## Видео-инструкция по установке
 
-[https://cloud.hostco.ru/s/YRW2PNdSoZQdTii](https://cloud.hostco.ru/s/YRW2PNdSoZQdTii)
+{% embed url="https://cloud.hostco.ru/s/YRW2PNdSoZQdTii" %}
+
+01:07 - Перезагрузка и монтирование образа операционной системы
+
+04:09 - Инсталляция образа
+
+54:00 - Установка пакетов виртуализации
+
+01:39:06 - Добавление записи в файл hosts
+
+01:40:31 - Авторизация в HOSTVM Engine
 
 ## Процесс установки
 
