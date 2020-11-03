@@ -95,13 +95,13 @@ nano /etc/exports
 
 Перейдите в `Storage -> Domains -> New Domain`. Выберете `Domain Function`, `Storage Type` как показано на картинке ниже. В поле `Export Part` введите адрес вашей nfs-share в формате `ip-адрес:/путь/до/папки` . Нажмите `OK`.
 
-![](../.gitbook/assets/screenshot_1%20%282%29.png)
+![](../../.gitbook/assets/screenshot_1%20%282%29.png)
 
-![](../.gitbook/assets/screenshot_2%20%284%29.png)
+![](../../.gitbook/assets/screenshot_2%20%284%29.png)
 
 Убедитесь, что iso-домен активен
 
-![](../.gitbook/assets/post-install-iso-stor-3.jpg)
+![](../../.gitbook/assets/post-install-iso-stor-3.jpg)
 
 ### Загрузка iso-образов
 
@@ -111,11 +111,11 @@ nano /etc/exports
 
 Domain-ID из примера ниже - `3ac03f75-bb87-4399-ae7e-2a166bdfffe9` , `/путь к папке iso-домена` в предыдущем шаге обозначили как `/nfs/iso-stor` значит iso-образ загрузим в папку `/nfs/iso-stor/3ac03f75-bb87-4399-ae7e-2a166bdfffe9/images/11111111-1111-1111-1111-111111111111/`
 
-![](../.gitbook/assets/post-install-iso-upload-1.jpg)
+![](../../.gitbook/assets/post-install-iso-upload-1.jpg)
 
 Для передачи файла на сервер с рабочего места, где установлена ОС Windows, необходимо использовать утилиту [WinSCP](https://winscp.net), которая доступна в [наборе дистрибутивов для развертывания решения](https://github.com/hostco-ru/hostvm/tree/1e76c2e8efd1596a96107b99841d3e81adefe102/docs/hostvm-public-link]/README.md).
 
-![](../.gitbook/assets/post-install-iso-upload-2.jpg)
+![](../../.gitbook/assets/post-install-iso-upload-2.jpg)
 
 После загрузки файлов в указанную папку, необходимо изменить владельца файла.
 
@@ -140,11 +140,11 @@ drwxr-xr-x. 3 vdsm kvm       50 Oct 28 19:18 ..
 
 Перейдите в панель управления и убедитесь, то iso-образ доступен
 
-![](../.gitbook/assets/post-install-iso-upload-3.jpg)
+![](../../.gitbook/assets/post-install-iso-upload-3.jpg)
 
 ## Добавление хостов
 
-Для того, чтобы подготовить второй и последующие серверы к работе на них необходимо установить ОС HOSTVM Node. Инструкция по установки приведена на странице [Установка HOSTVM Node на диски СХД.](installation-hostvm.md)
+Для того, чтобы подготовить второй и последующие серверы к работе на них необходимо установить ОС HOSTVM Node. Инструкция по установки приведена на странице [Установка HOSTVM Node на диски СХД.]()
 
 После установки ОС, подключитесь к серверу с помощью [PuTTY](https://www.putty.org) под пользователем root. Добавьте необходимые репозитории командой с помощью команды `yum install -y http://resources.ovirt.org/pub/yum-repo/ovirt-release43.rpm`
 
@@ -202,15 +202,15 @@ rtt min/avg/max/mdev = 0.200/0.224/0.250/0.025 ms
 
 Откройте панель управления, перейдите в `Compute -> Hosts`, нажмите кнопку `New`
 
-![](../.gitbook/assets/screenshot_4%20%283%29.png)
+![](../../.gitbook/assets/screenshot_4%20%283%29.png)
 
 В открывшемся окне заполните поля `Name`, `Hostname`\(достаточно указать ip-адрес\), `Password` от учетной записи root. Нажмите `Ок`
 
-![](../.gitbook/assets/post-install-host-2.jpg)
+![](../../.gitbook/assets/post-install-host-2.jpg)
 
 После завершения установки, оба хосте будут доступны для работы
 
-![](../.gitbook/assets/post-install-host-3.jpg)
+![](../../.gitbook/assets/post-install-host-3.jpg)
 
 ## Настройка рабочего места пользователя
 
