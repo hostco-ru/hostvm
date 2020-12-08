@@ -13,6 +13,9 @@
   * [Конвертация виртуальной машины с ОС AltLinux из VMware в HOSTVM](hostvm/installation-guide/vmware_convert_altlinux.md)
   * [Установка Kaspersky Security для виртуальных сред 5.х](hostvm/installation-guide/installation-ksc.md)
   * [Установка Accord KVM](hostvm/installation-guide/installation-accordkvm.md)
+  * [Обновление на версию 4.4](hostvm/installation-guide/obnovlenie-na-versiyu-4.4/README.md)
+    * [Обновление Hosted Engine](hostvm/installation-guide/obnovlenie-na-versiyu-4.4/obnovlenie-hosted-engine.md)
+    * [Обновление HOSTVM Node](hostvm/installation-guide/obnovlenie-na-versiyu-4.4/obnovlenie-hostvm-node.md)
 
 ## HOSTVM VDI
 
