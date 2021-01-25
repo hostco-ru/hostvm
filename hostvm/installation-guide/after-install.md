@@ -113,7 +113,7 @@ Domain-ID из примера ниже - `3ac03f75-bb87-4399-ae7e-2a166bdfffe9` 
 
 ![](../../.gitbook/assets/post-install-iso-upload-1.jpg)
 
-Для передачи файла на сервер с рабочего места, где установлена ОС Windows, необходимо использовать утилиту [WinSCP](https://winscp.net), которая доступна в [наборе дистрибутивов для развертывания решения](https://github.com/hostco-ru/hostvm/tree/1e76c2e8efd1596a96107b99841d3e81adefe102/docs/hostvm-public-link]/README.md).
+Для передачи файла на сервер с рабочего места, где установлена ОС Windows, необходимо использовать утилиту [WinSCP](https://winscp.net), которая доступна [в наборе дистрибутивов для развертывания решения](https://lk.pvhostvm.ru/Download).
 
 ![](../../.gitbook/assets/post-install-iso-upload-2.jpg)
 
@@ -144,7 +144,7 @@ drwxr-xr-x. 3 vdsm kvm       50 Oct 28 19:18 ..
 
 ## Добавление хостов
 
-Для того, чтобы подготовить второй и последующие серверы к работе на них необходимо установить ОС HOSTVM Node. Инструкция по установки приведена на странице [Установка HOSTVM Node на диски СХД.]() или странице "[Установка HOSTVM Node на локальные диски](https://hostvm.gitbook.io/hostvm/hostvm/installation-guide/installation-hostvm-on-local-disks)"
+Для того, чтобы подготовить второй и последующие серверы к работе на них необходимо установить ОС HOSTVM Node. Инструкция по установки приведена на странице [Установка HOSTVM Node на диски СХД](https://kb.pvhostvm.ru/hostvm/installation-guide/installation-hostvm). или странице "[Установка HOSTVM Node на локальные диски](https://hostvm.gitbook.io/hostvm/hostvm/installation-guide/installation-hostvm-on-local-disks)"
 
 После установки ОС, подключитесь к серверу с помощью [PuTTY](https://www.putty.org) под пользователем root. Добавьте необходимые репозитории командой с помощью команды `yum install -y http://resources.ovirt.org/pub/yum-repo/ovirt-release43.rpm`
 
