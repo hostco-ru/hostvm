@@ -16,7 +16,7 @@
 * сетевой адаптер: 1 Гбит. 1;
 * БД: Microsoft SQL Server 2008 R2 Express \([https://www.microsoft.com/ru-ru/download/details.aspx?id=30438](https://www.microsoft.com/ru-ru/download/details.aspx?id=30438)\).
 
-  **Установка компонентов легкого агента на KSC**
+### **Установка компонентов легкого агента на KSC**
 
 Для установки компонентов необходимо:
 
