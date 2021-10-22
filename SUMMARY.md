@@ -7,6 +7,7 @@
 * [Руководство по установке и настройке](hostvm/installation-guide/README.md)
   * [О платформе](hostvm/installation-guide/datasheet.md)
   * [Требования к системе](hostvm/installation-guide/requirements.md)
+  * [Установка HOSTVM через GUI](hostvm/installation-guide/ustanovka-hostvm-cherez-gui.md)
   * [Установка HOSTVM Node на локальные диски](hostvm/installation-guide/installation-hostvm-on-local-disks.md)
   * [Установка HOSTVM Node на диски СХД (glusterfs)](hostvm/installation-guide/installation-hostvm.md)
   * [Установка консоли (веб-интерфейса, HostedEngine) управления на СХД](hostvm/installation-guide/ustanovka-konsoli-veb-interfeisa-hostedengine-upravleniya-na-skhd.md)
