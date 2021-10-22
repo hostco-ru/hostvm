@@ -20,7 +20,7 @@ virt-v2v -i disk /path/to/disk.vhdx -o rhv -of qcow2 -os /path/to/export_domain
 
 Данный способ подходит для машин с несколькими дисками, либо неподдерживаемыми утилитой virt-v2v.
 
-Требуется предварительная установка драйверов virtio. Конфигурация машины задается опциями скрипта import-to-ovirt.pl (скрипт доступен для загрузки в личном кабинете HOSTVM) или в HOSTVM engine webUI при загрузке из export домена.
+Требуется предварительная установка драйверов virtio. Конфигурация машины задается опциями скрипта import-to-ovirt.pl (скрипт доступен для загрузки в личном кабинете HOSTVM) или в HOSTVM Manager WebUI при загрузке из export домена.
 
 Пример команды для конвертации диска:
 
@@ -35,9 +35,11 @@ export LIBGUESTFS_BACKEND=direct
 ./import-to-ovirt.pl /path/to/disk.qcow2 /path/to/export_domain
 ```
 
-### Конвертация проблемных дисков с помощью ПО Starwind <a href="user-content-konvertaciya-problemnykh-diskov-s-pomoshyu-po-starwind" id="user-content-konvertaciya-problemnykh-diskov-s-pomoshyu-po-starwind"></a>
+### Конвертация дисков с помощью StarWind V2V Converter <a href="user-content-konvertaciya-problemnykh-diskov-s-pomoshyu-po-starwind" id="user-content-konvertaciya-problemnykh-diskov-s-pomoshyu-po-starwind"></a>
 
-Данный способ подходит для дисков машин, которые не конвертируются вышеуказанными способами. Требуется отдельная Windows машина с установленным ПО Starwind.
+Данный способ конвертации также поддерживается для импорта виртуальных машин в HOSTVM.&#x20;
+
+Потребуется отдельная Windows машина с установленным ПО StarWind V2V Converter.
 
 Порядок действий:
 
@@ -47,7 +49,7 @@ export LIBGUESTFS_BACKEND=direct
 * Выбрать формат результирующего диска qcow2, далее снова выбрать local file и указать место сохранения результирующего диска;
 * Выгрузить получившийся qcow2 диск.
 
-Загрузка в Export домен HOSTVM производится с помощью скрипта import-to-ovirt:
+Загрузка в Export домен HOSTVM производится с помощью скрипта import-to-ovirt (скрипт доступен для загрузки в личном кабинете HOSTVM):
 
 ```
 export LIBGUESTFS_BACKEND=direct
