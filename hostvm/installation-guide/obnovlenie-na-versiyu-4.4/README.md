@@ -2,5 +2,4 @@
 
 1\) [Обновление ВМ Hosted Engine](obnovlenie-hosted-engine.md)
 
-2\) [Обновление хостов](obnovlenie-hostvm-node.md) 
-
+2\) [Обновление хостов](obnovlenie-hostvm-node.md)&#x20;

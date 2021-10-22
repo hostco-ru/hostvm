@@ -8,10 +8,11 @@
   * [О платформе](hostvm/installation-guide/datasheet.md)
   * [Требования к системе](hostvm/installation-guide/requirements.md)
   * [Установка HOSTVM Node на локальные диски](hostvm/installation-guide/installation-hostvm-on-local-disks.md)
-  * [Установка HOSTVM Node на диски СХД \(glusterfs\)](hostvm/installation-guide/installation-hostvm.md)
-  * [Установка консоли \(веб-интерфейса, HostedEngine\) управления на СХД](hostvm/installation-guide/ustanovka-konsoli-veb-interfeisa-hostedengine-upravleniya-na-skhd.md)
+  * [Установка HOSTVM Node на диски СХД (glusterfs)](hostvm/installation-guide/installation-hostvm.md)
+  * [Установка консоли (веб-интерфейса, HostedEngine) управления на СХД](hostvm/installation-guide/ustanovka-konsoli-veb-interfeisa-hostedengine-upravleniya-na-skhd.md)
   * [Действия после установки виртуализации](hostvm/installation-guide/after-install.md)
-  * [Конвертация виртуальной машины с ОС AltLinux из VMware в HOSTVM](hostvm/installation-guide/vmware_convert_altlinux.md)
+  * [Конвертация виртуальной машины с ОС AltLinux из VMware в HOSTVM](hostvm/installation-guide/vmware\_convert\_altlinux.md)
+  * [Конвертация виртуальных машин из Microsoft Hyper-V](hostvm/installation-guide/konvertaciya-virtualnykh-mashin-iz-microsoft-hyper-v.md)
   * [Установка Kaspersky Security для виртуальных сред 5.х](hostvm/installation-guide/installation-ksc.md)
   * [Установка Accord KVM](hostvm/installation-guide/installation-accordkvm.md)
   * [Обновление на версию 4.4](hostvm/installation-guide/obnovlenie-na-versiyu-4.4/README.md)
@@ -31,4 +32,3 @@
 ## О Компании
 
 * [Команда разработчиков HOSTVM](o-kompanii/developer.md)
-

@@ -13,9 +13,9 @@
 
 ### Импорт виртуальной машины
 
-Скачать образ машины UDS-Tuneler-2.2.zip из каталога загрузок HOSTVM. 
+Скачать образ машины UDS-Tuneler-2.2.zip из каталога загрузок HOSTVM.&#x20;
 
-Загрузить данный файл на один из хостов виртуализации к HOSTVM с помощью scp или других средств. 
+Загрузить данный файл на один из хостов виртуализации к HOSTVM с помощью scp или других средств.&#x20;
 
 Распаковывать и подготовить к импорту, загрузить в export домен платформы виртуализации:
 
@@ -29,9 +29,9 @@ virt-v2v -i disk /home/UDS-Tuneler-2.2.raw -o rhv -os /export/domain/mount/point
 
 Точку монтирования домена можно посмотреть через веб-интерфейс платформы виртуализации:
 
- `GUI>Storage>Domains>выбрать export домен>Manage domain>путь будет указан в поле Path`
+&#x20;`GUI>Storage>Domains>выбрать export домен>Manage domain>путь будет указан в поле Path`
 
-Импортировать через `GUI>compute>virtual machines>import`, в качестве источника выбрать export domain. При импорте необходимо добавить сеть \(перейти на вкладку **Network Interfaces** и указать нужную сеть для данной ВМ\).
+Импортировать через `GUI>compute>virtual machines>import`, в качестве источника выбрать export domain. При импорте необходимо добавить сеть (перейти на вкладку **Network Interfaces** и указать нужную сеть для данной ВМ).
 
 ### Настройка
 
@@ -48,7 +48,7 @@ update-ca-certificates
 
 Дальнейший процесс установки проходит в графическом режиме, необходимо указать следующие параметры:
 
-```text
+```
 Network configuration:
 hostname: имя машины туннелера
 domain: домен машины
@@ -77,9 +77,9 @@ broker server url: ссылка на веб-интерфейс машины HOST
 
 ### Импорт виртуальной машины
 
-Скачать образ машины UDS-Tunnel-qcow2.3.0.0.zip из каталога загрузок HOSTVM. 
+Скачать образ машины UDS-Tunnel-qcow2.3.0.0.zip из каталога загрузок HOSTVM.&#x20;
 
-Загрузить данный файл на один из хостов виртуализации к HOSTVM с помощью scp или других средств. 
+Загрузить данный файл на один из хостов виртуализации к HOSTVM с помощью scp или других средств.&#x20;
 
 Распаковывать и подготовить к импорту, загрузить в export домен платформы виртуализации:
 
@@ -92,9 +92,9 @@ virt-v2v -i disk /home/UDS-Tuneler-3.0.raw -o rhv -os /export/domain/mount/point
 
 Точку монтирования домена можно посмотреть через веб-интерфейс платформы виртуализации:
 
- `GUI>Storage>Domains>выбрать export домен>Manage domain>путь будет указан в поле Path`
+&#x20;`GUI>Storage>Domains>выбрать export домен>Manage domain>путь будет указан в поле Path`
 
-Импортировать через `GUI>compute>virtual machines>import`, в качестве источника выбрать export domain. При импорте необходимо добавить сеть \(перейти на вкладку **Network Interfaces** и указать нужную сеть для данной ВМ\).
+Импортировать через `GUI>compute>virtual machines>import`, в качестве источника выбрать export domain. При импорте необходимо добавить сеть (перейти на вкладку **Network Interfaces** и указать нужную сеть для данной ВМ).
 
 ### Настройка
 
@@ -102,7 +102,7 @@ virt-v2v -i disk /home/UDS-Tuneler-3.0.raw -o rhv -os /export/domain/mount/point
 
 После подключения отредактировать раскладку в `/etc/default/keyboard`:
 
-```text
+```
     XKBLAYOUT="us"
 ```
 
@@ -110,11 +110,11 @@ virt-v2v -i disk /home/UDS-Tuneler-3.0.raw -o rhv -os /export/domain/mount/point
 
 `setupcon`
 
-Настроить сеть, если нет dhcp \(без сети конфигуратор не запустится\). Пример настройки:
+Настроить сеть, если нет dhcp (без сети конфигуратор не запустится). Пример настройки:
 
 `/etc/network/interfaces`
 
-```text
+```
     allow-hotplug eth0
     iface eth0 inet static
     address 10.1.1.2
@@ -143,4 +143,3 @@ update-ca-certificates
 ### Настройка транспорта Spice tunnel в панели управления HOSTVM VDI
 
 При настройке транспорта Spice tunnel в панели управления HOSTVM VDI, в качестве tunnel server указывается `имя_машины_туннелера:443`
-

@@ -3,13 +3,12 @@
 Для создания загрузочного USB-диска для работы с VDI платформы виртуализации HOSTVM потребуется:
 
 1. USB-диск размером не менее 8 ГБ
-2. образ системы, доступен для загрузки по ссылке:
+2.  образ системы, доступен для загрузки по ссылке:
 
-   [https://drive.google.com/uc?id=1Y843DVHER9ASl9dtychOAMrei9mm9nFT&export=download](https://drive.google.com/uc?id=1Y843DVHER9ASl9dtychOAMrei9mm9nFT&export=download)
+    [https://drive.google.com/uc?id=1Y843DVHER9ASl9dtychOAMrei9mm9nFT\&export=download](https://drive.google.com/uc?id=1Y843DVHER9ASl9dtychOAMrei9mm9nFT\&export=download)
+3.  ПО для записи образа (rufus), скачать по ссылке
 
-3. ПО для записи образа \(rufus\), скачать по ссылке
-
-   [https://rufus.ie/downloads/](https://rufus.ie/downloads/) 
+    [https://rufus.ie/downloads/](https://rufus.ie/downloads/)&#x20;
 
 После загрузки образа и запуска ПО для записи образа нужно выполнить следующие действия:
 
@@ -17,7 +16,6 @@
 2. указать путь к образу
 3. нажать Start
 
-![](../../.gitbook/assets/rufus%20%281%29.png)
+![](<../../.gitbook/assets/rufus (1).png>)
 
 После завершения записи USB-диск будет готов к использования в качестве загрузочного устройства.
-

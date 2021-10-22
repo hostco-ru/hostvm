@@ -12,63 +12,63 @@
 
 При загрузке откроется меню выбора действия. За 60 секунд выберите _Install HOSTVM Node 4.3.9_. Если за 60 секунд после загрузки не выбрать данный пункт, то начинается тестирование ресурсов сервера и только после этого начнется установка. Остановить тестирование ресурсов сервера возможно через нажатие клавиши _esc_.
 
-![](../../.gitbook/assets/screenshot_2.png)
+![](../../.gitbook/assets/Screenshot\_2.png)
 
 В случае если загрузка установщика зависнет, то нужно повторно загрузиться с установочного диска и в стартовом меню действий выбрать пункт «Troubleshooting», затем “Install HOSTVM Node 4.3.9 in basic graphics mode” для запуска установки с с использованием псевдографического интерфейса.
 
-В открывшемся окне выберите английский язык \(English\), который будет использоваться в интерфейсе установщика.
+В открывшемся окне выберите английский язык (English), который будет использоваться в интерфейсе установщика.
 
 _Выбранный язык не влияет на язык внутри самой операционной системы, которая устанавливается без графической оболочки._
 
 Скриншоты инструкции выполнены в интерфейсе с английским языком. Нажмите _Continue_.
 
-![](../../.gitbook/assets/screenshot_3.png)
+![](../../.gitbook/assets/Screenshot\_3.png)
 
 Далее автоматически открывается меню настроек.
 
-![](../../.gitbook/assets/screenshot_4.png)
+![](../../.gitbook/assets/Screenshot\_4.png)
 
 Перейдите в _DATE & TIME_, укажите ваш часовой пояс, время и дату. Нажмите _Done_.
 
-![](../../.gitbook/assets/screenshot_5.png)
+![](../../.gitbook/assets/Screenshot\_5.png)
 
-**ВАЖНО!: Для корректной установки, необходимо, чтобы серверу, на этапе установки, был задан корректный IPv4 адрес, который имеет доступ в интернет \(для доступа к репозиториям\). Также должен быть указан корректный DNS сервер.**
+**ВАЖНО!: Для корректной установки, необходимо, чтобы серверу, на этапе установки, был задан корректный IPv4 адрес, который имеет доступ в интернет (для доступа к репозиториям). Также должен быть указан корректный DNS сервер.**
 
 Перейдите в _NETWORK & HOST NAME_.
 
-![](../../.gitbook/assets/screenshot_6.png)
+![](../../.gitbook/assets/Screenshot\_6.png)
 
 Выберите интерфейс, нажмите кнопку _Configure..._. В открывшемся окне перейдите на вкладку _IPv4 Settings_, выберите _Method: Manual_, введите ip, маску, gw, DNS-сервер. Нажмите кнопку _Save_.
 
-![](../../.gitbook/assets/screenshot_8.png)
+![](../../.gitbook/assets/Screenshot\_8.png)
 
 Переведите тригер возле названия подключения в положение _On_. В поле _Host name_ введите имя сервера, нажмите кнопку _Apply_. Нажмите кнопку _Done_.
 
-![](../../.gitbook/assets/screenshot_9.png)
+![](../../.gitbook/assets/Screenshot\_9.png)
 
 Перейдите в _Instalation Destination_. Выберете диск на который необходимо выполнить установку. Выберете радиокнопку _I will configure partitioning_. Нажмите _Done_.
 
-![](../../.gitbook/assets/screenshot_10.png)
+![](../../.gitbook/assets/Screenshot\_10.png)
 
 После выбора места установки автоматически открывается следующее меню.
 
-![](../../.gitbook/assets/screenshot_11.png)
+![](../../.gitbook/assets/Screenshot\_11.png)
 
-Если диск уже использовался \(имел таблицу разделов\), то удалите их, как показано ниже.
+Если диск уже использовался (имел таблицу разделов), то удалите их, как показано ниже.
 
-![](../../.gitbook/assets/screenshot_15.png)
+![](../../.gitbook/assets/Screenshot\_15.png)
 
-![](../../.gitbook/assets/screenshot_12.png)
+![](../../.gitbook/assets/Screenshot\_12.png)
 
 Когда на диске не останется существующих разделов Из выпадающего меню выберите _LVM Thin Provisioning._ Нажмите _Click here to create them automatically_.
 
-![](../../.gitbook/assets/screenshot_18.png)
+![](../../.gitbook/assets/Screenshot\_18.png)
 
 Удалите _home_, как показано ниже.
 
-![](../../.gitbook/assets/screenshot_19.png)
+![](../../.gitbook/assets/Screenshot\_19.png)
 
-Для работы гипервизору необходимо минимум 45GB на системном диске. Для разворачивания виртуальной машины HOSTVM Engine необходим выделенный раздел для домена хранения, размер раздела необходимо задать согласно [системным требованиям](requirements.md#sistemnye-trebovaniya-dlya-virtualnoi-mashiny-engine-upravlenie-sistemoi-virtualizacii).   
+Для работы гипервизору необходимо минимум 45GB на системном диске. Для разворачивания виртуальной машины HOSTVM Engine необходим выделенный раздел для домена хранения, размер раздела необходимо задать согласно [системным требованиям](requirements.md#sistemnye-trebovaniya-dlya-virtualnoi-mashiny-engine-upravlenie-sistemoi-virtualizacii). \
 Если необходимо, измените поле _Desired Capacity_ раздела _/_, чтобы изменить размер системного раздела. Не менее 15GB необходимо для раздела /var.
 
 На освободившемся после удаления _home_ месте, создайте новый раздел с точкой монтирования в _/data_.
@@ -79,27 +79,27 @@ _Выбранный язык не влияет на язык внутри сам
 
 Создайте раздел /var.
 
-![](../../.gitbook/assets/screenshot_22.png)
+![](../../.gitbook/assets/Screenshot\_22.png)
 
-![&#x41C;&#x438;&#x43D;&#x438;&#x43C;&#x430;&#x43B;&#x44C;&#x43D;&#x430;&#x44F; &#x440;&#x430;&#x437;&#x43C;&#x435;&#x442;&#x43A;&#x430; &#x434;&#x43B;&#x44F; &#x443;&#x441;&#x442;&#x430;&#x43D;&#x43E;&#x432;&#x43A;&#x438; &#x43D;&#x430; &#x43B;&#x43E;&#x43A;&#x430;&#x43B;&#x44C;&#x43D;&#x44B;&#x435; &#x434;&#x438;&#x441;&#x43A;&#x438;](../../.gitbook/assets/screenshot_23.png)
+![Минимальная разметка для установки на локальные диски](../../.gitbook/assets/Screenshot\_23.png)
 
 Подтвердите действие кнопкой _Accept Changes_.
 
-![](../../.gitbook/assets/screenshot_24.png)
+![](../../.gitbook/assets/Screenshot\_24.png)
 
 В стартовом меню нажмите кнопку _Begin Instalation_, чтобы начать установку.
 
-В открывшемся окне выберете _Root Password_. Введите ваш пароль \(рекомендуемый пароль **engine**\). Дважды нажмите _Done_.
+В открывшемся окне выберете _Root Password_. Введите ваш пароль (рекомендуемый пароль **engine**). Дважды нажмите _Done_.
 
-![](../../.gitbook/assets/screenshot_25.png)
+![](../../.gitbook/assets/Screenshot\_25.png)
 
-![](../../.gitbook/assets/screenshot_27.png)
+![](../../.gitbook/assets/Screenshot\_27.png)
 
-![](../../.gitbook/assets/screenshot_28.png)
+![](../../.gitbook/assets/Screenshot\_28.png)
 
 Если на этом этапе возникнет ошибка с postinstall скриптом, то это означает, что:
 
-![](../../.gitbook/assets/image%20%2829%29.png)
+![](<../../.gitbook/assets/image (29).png>)
 
 1\) Сервер не имеет доступа в интернет и не смог скачать установочные скрипты из репозитория
 
@@ -107,11 +107,11 @@ _Выбранный язык не влияет на язык внутри сам
 
 3\) ISO образ для установки скачан давно, и некоторые пути в скриптах установки изменились - нужно скачать ISO заново и выполнить установку с него.
 
-Альтернативно, можно выполнить данный скрипт вручную из ОС \(смотри раздел - [прокси и репозиторий](https://kb.pvhostvm.ru/installation-guide/installation-hostvm-on-local-disks#nastroika-proksi-esli-ispolzuetsya-i-repozitoriya)\).
+Альтернативно, можно выполнить данный скрипт вручную из ОС (смотри раздел - [прокси и репозиторий](https://kb.pvhostvm.ru/installation-guide/installation-hostvm-on-local-disks#nastroika-proksi-esli-ispolzuetsya-i-repozitoriya)).
 
 Ожидайте окончания установки. После завершения подтвердите перезагрузку нажатием на кнопку _Reboot_.
 
-![](../../.gitbook/assets/screenshot_30.png)
+![](../../.gitbook/assets/Screenshot\_30.png)
 
 ## Подготовка сервера к развертыванию на локальных дисках
 
@@ -125,21 +125,21 @@ _Выбранный язык не влияет на язык внутри сам
 
 1. Сохраните имя сервера:
 
-![](../../.gitbook/assets/screenshot_31.png)
+![](../../.gitbook/assets/Screenshot\_31.png)
 
 1. Перейдите на вкладку Журнал, выберите `Весь вывод`, укажите путь до файла логов в следующем виде: `C:\path\to\log\hostname-&H-&Y&M&D-&T.log`. Часть `&H-&Y&M&D-&T` указывает, что файл с логом будет создаваться для каждой сессии и автоматически указывать время и дату ее начала:
 
-![](../../.gitbook/assets/screenshot_32.png)
+![](../../.gitbook/assets/Screenshot\_32.png)
 
 1. Перейдите на вкладку Сеанс, нажмите кнопку `Сохранить`, нажмите клавишу `Enter` чтобы запустить сессию:
 
-![](../../.gitbook/assets/screenshot_33.png)
+![](../../.gitbook/assets/Screenshot\_33.png)
 
 ### Проверить, что диск предназначенный для размещения виртуальных машин подключен
 
 Командой `cat /etc/fstab` выведите на экран список используемых в системе устройств хранения. В качестве точки монтирования мы использовали директорию `/data`.
 
-```text
+```
 [root@virt2 ~]# cat /etc/fstab
 #
 # /etc/fstab
@@ -155,13 +155,13 @@ UUID=4dfc5afd-299a-40fa-94bb-f65820e77325 /boot                   ext4    defaul
 /dev/mapper/hn_virt2-swap swap                    swap    defaults        0 0
 ```
 
-### Настройка прокси \(если используется\) и репозитория
+### Настройка прокси (если используется) и репозитория
 
 Если в данной сети доступ во вне доступен только через прокси, то следует выполнить следующие настройки:
 
 1. В файле /etc/yum.conf, для загрузки пакетов через прокси добавляем строки
 
-```text
+```
 proxy=http://proxyhost:8080
 proxy_username=proxyname
 proxy_password=proxypass
@@ -169,7 +169,7 @@ proxy_password=proxypass
 
 1. Экспортировать глобальные переменные прокси для работы CURL
 
-```text
+```
 ## http прокси с именем и паролем 
 export http_proxy=http://user:password@your-proxy-ip-address:port/
 
@@ -180,7 +180,7 @@ export https_proxy=https://user:password@your-proxy-ip-address:port/
 
 На примере, сначала устанавливаем переменные для прокси и затем используем CURL
 
-```text
+```
 export http_proxy=http://foo:bar@1.1.1.1:3128/
 export https_proxy=$http_proxy
 ## Use curl command ##
@@ -189,7 +189,7 @@ curl -I www.system-admins.ru
 
 Если на этапе установки возникала проблема с postinstall скриптом, то необходимо выполнить скрипт `initial.sh`
 
-```text
+```
 [root@virt2 ~]# sh initial.sh
 ```
 
@@ -199,26 +199,26 @@ curl -I www.system-admins.ru
 
 ### Сбор данных для заполнения формы
 
-Перед началом работы рекомендуется заполнить последний столбец следующей таблицы \(_способ сбора данных для таблице описан ниже по тексту\)_:
+Перед началом работы рекомендуется заполнить последний столбец следующей таблицы (_способ сбора данных для таблице описан ниже по тексту)_:
 
-| Название | Как узнать | Значение |
-| :--- | :---: | :---: |
-| ip для engine | - |  |
-| ip сервера | ip addr |  |
-| ip шлюза по умолчанию | ip route |  |
-| ip dns-сервера | - |  |
-| домен установки | - |  |
-| hostname сервера | - |  |
-| название интерфейса | ip addr |  |
-| предпочтительный gluster-hostname | - |  |
-| предпочтительное название тома gluster | - |  |
-| директорию для размещения тома gluster | - |  |
+| Название                               | Как узнать | Значение |
+| -------------------------------------- | :--------: | :------: |
+| ip для engine                          |      -     |          |
+| ip сервера                             |   ip addr  |          |
+| ip шлюза по умолчанию                  |  ip route  |          |
+| ip dns-сервера                         |      -     |          |
+| домен установки                        |      -     |          |
+| hostname сервера                       |      -     |          |
+| название интерфейса                    |   ip addr  |          |
+| предпочтительный gluster-hostname      |      -     |          |
+| предпочтительное название тома gluster |      -     |          |
+| директорию для размещения тома gluster |      -     |          |
 
 Для получения ip-адреса сервера и название интерфейса выполните команду `ip addr` :
 
 Согласно примеру ниже видно, что ip-адрес сервера - `10.1.158.140`, название интерфейса - `eno1`.
 
-```text
+```
 [root@virt2 ~]# ip a
 1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group defaul                                                                                t qlen 1000
     link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
@@ -246,7 +246,7 @@ curl -I www.system-admins.ru
 
 Согласно примеру ниже видно, что ip шлюза по умолчанию - `10.1.158.1`
 
-```text
+```
 [root@virt2 ~]# ip route
 default via 10.1.158.1 dev eno1 proto static metric 100
 10.1.158.0/24 dev eno1 proto kernel scope link src 10.1.158.140 metric 100
@@ -255,10 +255,10 @@ default via 10.1.158.1 dev eno1 proto static metric 100
 
 Для параметры связанные с glusterfs могут быть выбраны значения по умолчанию:
 
-| Название | Значение по умолчанию |
-| :--- | :---: |
-| предпочтительный gluster-hostname | glusternode1 |
-| предпочтительное название тома gluster | hosted-engine |
+| Название                               |     Значение по умолчанию    |
+| -------------------------------------- | :--------------------------: |
+| предпочтительный gluster-hostname      |         glusternode1         |
+| предпочтительное название тома gluster |         hosted-engine        |
 | директорию для размещения тома gluster | /data/gluster/hosted\_engine |
 
 Обратите внимание, что рекомендуется использовать отдельный раздел для размещения тома glusterfs, который имеет точку монтирования в директории _/data_
@@ -267,7 +267,7 @@ default via 10.1.158.1 dev eno1 proto static metric 100
 
 Запустите `IP-wizard.sh`, чтобы подготовить файлы переменных к работе. Следуйте указаниями инструкции в программе:
 
-```text
+```
 [root@virt2 ~]# sh IP-wizard.sh
 
 Добро пожаловать в программу-помощник IP-wizard Группы компаний ХОСТ!
@@ -359,19 +359,19 @@ gluster_hosted_engine_volume_name: hosted-engine
 
 Выполните команду `ansible-playbook /etc/ansible/make-prepare.yml`, чтобы подготовить к работе /etc/hosts.
 
-```text
+```
 [root@virt2 ~]# ansible-playbook /etc/ansible/make-prepare.yml
 ```
 
 Выполните команду `ansible-playbook /etc/ansible/make-gluster-storages.yml`, чтобы подготовить к работе glusterfs.
 
-```text
+```
 [root@virt2 ~]# ansible-playbook /etc/ansible/make-gluster-storages.yml
 ```
 
 Запустите установку необходимых пакетов виртуализации командой `ansible-playbook /etc/ansible/make-ovirt.yml`. На ее выполнение уйдет чуть больше часа.
 
-```text
+```
 [root@virt2 ~]# ansible-playbook /etc/ansible/make-ovirt.yml
 [DEPRECATION WARNING]: The TRANSFORM_INVALID_GROUP_CHARS settings is set to allow bad characters in group names by default, this will change, but still be user configurable on deprecation. This feature will be removed in version 2.10.
 Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
@@ -422,11 +422,11 @@ localhost                  : ok=9    changed=2    unreachable=0    failed=0    s
 
 Сформированный файл `/root/script-hosted-engine-deploy` содержит инструкции, необходимые для развертывания виртуализации Запустите его на исполнение командой `/root/script-hosted-engine-deploy | tee -a /root/script-hosted-engine-deploy.log`:
 
-```text
+```
 /root/script-hosted-engine-deploy | tee -a /root/script-hosted-engine-deploy.log
 ```
 
-После завершения развертывания виртуализации откройте браузер и перейдите по адресу [https://engine.mydomain.ru](https://engine.mydomain.ru), чтобы попасть в панель управления \(Адрес может отличаться, если Вы задали другое DNS имя консоли управления\).
+После завершения развертывания виртуализации откройте браузер и перейдите по адресу [https://engine.mydomain.ru](https://engine.mydomain.ru), чтобы попасть в панель управления (Адрес может отличаться, если Вы задали другое DNS имя консоли управления).
 
 ## Если что-то пошло не так
 
@@ -438,11 +438,10 @@ localhost                  : ok=9    changed=2    unreachable=0    failed=0    s
 6. Если после завершения установки вам не открывается страница в браузере с адресом [https://engine.mydomain.ru](https://engine.mydomain.ru), то
    1. Проверьте, что ip для engine, указанный в таблице в начале установки отвечает на команду ping
    2. Проверьте, что имя `engine.mydomain.ru` разрешается вашим dns-сервером.
-7. Если на этапе установки engine `/root/script-hosted-engine-deploy | tee -a /root/script-hosted-engine-deploy.log` установка зависает на этапе `Engine VM domain: [rtc.local]rtc.local Enter root password that will be used for the engine appliance: engine`, то подключитесь к консоли сервера не по SSH, а с помощью ipmi\(iLO, iDRAC, etc.\) и повторно запустите скрипт установки engine.
+7. Если на этапе установки engine `/root/script-hosted-engine-deploy | tee -a /root/script-hosted-engine-deploy.log` установка зависает на этапе `Engine VM domain: [rtc.local]rtc.local Enter root password that will be used for the engine appliance: engine`, то подключитесь к консоли сервера не по SSH, а с помощью ipmi(iLO, iDRAC, etc.) и повторно запустите скрипт установки engine.
 
 Схема установки hostvm и самостоятельного решения проблем представлена на рисунке ниже:
 
 ![](../../.gitbook/assets/troubleshooting-scheme-on-local-disks.jpg)
 
-Если устранить проблему не удалось, обратитесь в [техническую поддержку](https://lk.pvhostvm.ru/) используя [инструкцию](https://lk.pvhostvm.ru/) К обращению приложите лог вывода вашей консоли, который был настроен в начале установки и файл `/root/script-hosted-engine-deploy.log`.
-
+Если устранить проблему не удалось, обратитесь в [техническую поддержку](https://lk.pvhostvm.ru) используя [инструкцию](https://lk.pvhostvm.ru) К обращению приложите лог вывода вашей консоли, который был настроен в начале установки и файл `/root/script-hosted-engine-deploy.log`.

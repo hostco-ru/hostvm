@@ -2,9 +2,9 @@
 
 **Для обновления Self Hosted Engine необходимо соблюсти следующие условия:**
 
-* Обновлять Engine 4.3 -&gt; 4.4 можно только на хосте с ОС CentOS 8.x \(HOSTVM Node 4.4.x\)
-* С хоста, на котором будет проводиться обновление, необходимо смигрировать  все ВМ на другие хосты кластера 
-* Подготовить дополнительный Storage Domain размером минимум 70 Гб, для размещения ВМ Hosted Engine 4.4 \(при восстановлении конфигурации потребуется указать Storage Domain, отличный от того, что использовался на версии 4.3\)
+* Обновлять Engine 4.3 -> 4.4 можно только на хосте с ОС CentOS 8.x (HOSTVM Node 4.4.x)
+* С хоста, на котором будет проводиться обновление, необходимо смигрировать  все ВМ на другие хосты кластера&#x20;
+* Подготовить дополнительный Storage Domain размером минимум 70 Гб, для размещения ВМ Hosted Engine 4.4 (при восстановлении конфигурации потребуется указать Storage Domain, отличный от того, что использовался на версии 4.3)
 * На время обновления отключить fencing на хостах, через портал администрирования:
 
 `Compute -> Clusters -> Выделить нужный кластер -> Edit -> Fencing policy -> Снять галку Enable fencing`
@@ -59,7 +59,7 @@
 
 Пропущенные вопросы оставить по умолчанию:
 
-```text
+```
           Continuing will configure this host for serving as hypervisor and will create a local VM with a running engine.
           The provided engine backup file will be restored there,
           it's strongly recommended to run this tool on an host that wasn't part of the environment going to be restored.
@@ -71,19 +71,19 @@
           Are you sure you want to continue? (Yes, No)[Yes]: Yes
 ```
 
-```text
+```
 [ INFO  ] Bridge ovirtmgmt already created
           Please indicate the gateway IP address [10.1.158.1]: 10.1.158.1
 ```
 
-```text
+```
 [ INFO  ] TASK [ovirt.hosted_engine_setup : Validate selected bridge interface if management bridge does not exist]
 [ INFO  ] skipping: [localhost]
           Please indicate a nic to set ovirtmgmt bridge on: (enp8s0f0) [enp8s0f0]: enp8s0f0
       Please specify which way the network connectivity should be checked (ping, dns, tcp, none) [dns]: ping
 ```
 
-```text
+```
 --== VM CONFIGURATION ==--
 
           Please enter the name of the datacenter where you want to deploy this hosted-engine host. Please note that if you are restoring a backup that contains info about other hosted-engine hosts,
@@ -124,9 +124,9 @@ Please provide a comma-separated list (max 3) of IP addresses of domain name ser
 domain.ru
 ```
 
-В процессе установки инсталлятор задаст вопрос, какой тип хранилища использовать \(в данном случае NFS\), а так же попросит указать расположение хранилища и размер диска Engine VM \(указать 60 ГБ минимум для работы механизма минорных обновлений\):
+В процессе установки инсталлятор задаст вопрос, какой тип хранилища использовать (в данном случае NFS), а так же попросит указать расположение хранилища и размер диска Engine VM (указать 60 ГБ минимум для работы механизма минорных обновлений):
 
-```text
+```
 Please specify the storage you would like to use (glusterfs, iscsi, fc, nfs)[nfs]: nfs
 Please specify the nfs version you would like to use (auto, v3, v4, v4_0, v4_1, v4_2)[auto]: 
           Please specify the full shared storage connection path to use (example: host:/path): t-dis-nf
@@ -144,4 +144,3 @@ s.hostco.ru:/data/nfs_4
 14\) Зайти на портал администрирования, проверить что кластер доступен и работает
 
 > Если инсталляция происходит на стенде, где нет настроенного DNS, а используется файл hosts, необходимо зайти в консоль ВМ Hosted Engine и настроить файл /etc/hosts, чтобы хосты в кластере стали доступны
-

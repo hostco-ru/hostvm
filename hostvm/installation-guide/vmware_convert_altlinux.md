@@ -22,7 +22,7 @@
 
 File - Export - Export OVF Template
 
-Format: Single file \(OVA\)
+Format: Single file (OVA)
 
 ## Подготовка гипервизора к импорту ВМ
 
@@ -64,7 +64,7 @@ Format: Single file \(OVA\)
 
 `<path_to_export_domain>` - путь к экспорт-домену HOSTVM, в виде server:/path/to/esd
 
-\(посмотреть путь можно в engine GUI - Storage - Domains - выбрать export домен - Manage domain - путь будет указан в поле Path\)
+(посмотреть путь можно в engine GUI - Storage - Domains - выбрать export домен - Manage domain - путь будет указан в поле Path)
 
 либо указать путь до точки монтирования в виде `/mount/point`, если он уже примонтирован на хосте
 
@@ -77,4 +77,3 @@ engine GUI - Compute - Virtual machines - нажать 3 точки в меню 
 * Alt Server 8.2
 * VMware Vcenter 6.0
 * oVirt 4.2
-

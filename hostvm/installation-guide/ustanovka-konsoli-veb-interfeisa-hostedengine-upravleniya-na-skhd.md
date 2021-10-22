@@ -1,10 +1,10 @@
-# Установка консоли \(веб-интерфейса, HostedEngine\) управления на СХД
+# Установка консоли (веб-интерфейса, HostedEngine) управления на СХД
 
 ## Перед установкой
 
-Подготовьте на вашей СХД LUN для размещения консоли управления виртуализацией \(Hosted Engine\), размер данного LUN должен соответствовать [системным требованиям](requirements.md#sistemnye-trebovaniya-dlya-virtualnoi-mashiny-engine-upravlenie-sistemoi-virtualizacii). 
+Подготовьте на вашей СХД LUN для размещения консоли управления виртуализацией (Hosted Engine), размер данного LUN должен соответствовать [системным требованиям](requirements.md#sistemnye-trebovaniya-dlya-virtualnoi-mashiny-engine-upravlenie-sistemoi-virtualizacii).&#x20;
 
-Выполните маппинг сервера к выделенному луну\(vdisk'ам\) по инструкциям от производителя вашего серверного оборудования. 
+Выполните маппинг сервера к выделенному луну(vdisk'ам) по инструкциям от производителя вашего серверного оборудования.&#x20;
 
 LUN должен быть пустым, при наличии на нем FS и данных - установка Hosted Engine завершится с ошибкой.
 
@@ -14,13 +14,13 @@ LUN должен быть пустым, при наличии на нем FS и 
 
 ## Процесс установки
 
-Процесс установки ОС гипервизора не отличается от статьи ["Установка HOSTVM Node на локальные диски"](https://hostvm.gitbook.io/hostvm/hostvm/installation-guide/installation-hostvm-on-local-disks#process-ustanovki). Различие только в выборе места размещения Hosted Engine в разделе ["Запуск программы-помощника IP-wizard"](https://hostvm.gitbook.io/hostvm/hostvm/installation-guide/installation-hostvm-on-local-disks#zapusk-programmy-pomoshnika-ip-wizard). 
+Процесс установки ОС гипервизора не отличается от статьи ["Установка HOSTVM Node на локальные диски"](https://hostvm.gitbook.io/hostvm/hostvm/installation-guide/installation-hostvm-on-local-disks#process-ustanovki). Различие только в выборе места размещения Hosted Engine в разделе ["Запуск программы-помощника IP-wizard"](https://hostvm.gitbook.io/hostvm/hostvm/installation-guide/installation-hostvm-on-local-disks#zapusk-programmy-pomoshnika-ip-wizard).&#x20;
 
 ### Запуск программы-помощника IP-wizard
 
 Запустите `IP-wizard.sh`, чтобы подготовить файлы переменных к работе. Следуйте указаниями инструкции в программе:
 
-```text
+```
 [root@virt2 ~]# sh IP-wizard.sh
 
 Добро пожаловать в программу-помощник IP-wizard Группы компаний ХОСТ!
@@ -122,13 +122,13 @@ gluster_hosted_engine_volume_name:
 
 Выполните команду `ansible-playbook /etc/ansible/make-prepare.yml`, чтобы подготовить к работе /etc/hosts.
 
-```text
+```
 [root@virt2 ~]# ansible-playbook /etc/ansible/make-prepare.yml
 ```
 
 Запустите установку необходимых пакетов виртуализации командой `ansible-playbook /etc/ansible/make-ovirt.yml`. На ее выполнение может уйти чуть больше часа.
 
-```text
+```
 [root@virt2 ~]# ansible-playbook /etc/ansible/make-ovirt.yml
 [DEPRECATION WARNING]: The TRANSFORM_INVALID_GROUP_CHARS settings is set to allow bad characters in group names by default, this will change, but still be user configurable on deprecation. This feature will be removed in version 2.10.
 Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
@@ -179,7 +179,7 @@ localhost                  : ok=9    changed=2    unreachable=0    failed=0    s
 
 Сформированный файл `/root/script-hosted-engine-deploy` содержит инструкции, необходимые для развертывания виртуализации Запустите его на исполнение командой `/root/script-hosted-engine-deploy | tee -a /root/script-hosted-engine-deploy.log`:
 
-```text
+```
 /root/script-hosted-engine-deploy | tee -a /root/script-hosted-engine-deploy.log
 ```
 
@@ -194,5 +194,4 @@ localhost                  : ok=9    changed=2    unreachable=0    failed=0    s
 5. Если после завершения установки вам не открывается страница в браузере с адресом [https://engine.mydomain.ru](https://engine.mydomain.ru), то
    1. Проверьте, что ip для engine, указанный в таблице в начале установки отвечает на команду ping
    2. Проверьте, что имя `engine.mydomain.ru` разрешается вашим dns-сервером.
-6. Если на этапе установки engine `/root/script-hosted-engine-deploy | tee -a /root/script-hosted-engine-deploy.log` установка зависает на этапе `Engine VM domain: [rtc.local]rtc.local Enter root password that will be used for the engine appliance: engine`, то подключитесь к консоли сервера не по SSH, а с помощью ipmi\(iLO, iDRAC, etc.\) и повторно запустите скрипт установки engine.
-
+6. Если на этапе установки engine `/root/script-hosted-engine-deploy | tee -a /root/script-hosted-engine-deploy.log` установка зависает на этапе `Engine VM domain: [rtc.local]rtc.local Enter root password that will be used for the engine appliance: engine`, то подключитесь к консоли сервера не по SSH, а с помощью ipmi(iLO, iDRAC, etc.) и повторно запустите скрипт установки engine.
