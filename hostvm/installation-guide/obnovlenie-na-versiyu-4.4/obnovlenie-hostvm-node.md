@@ -19,7 +19,7 @@
 
 4\) Перезапустить сервер и загрузиться с ISO-образа hostvm-node-ng-installer-4.4&#x20;
 
-5\) Выполнить установку согласно разделу "Процесс установки", на [локальные диски](../installation-hostvm-on-local-disks.md#process-ustanovki) либо [СХД](../installation-hostvm.md#process-ustanovki) (устанавливать hosted engine не требуется)&#x20;
+5\) Выполнить установку согласно разделу "Процесс установки", на [локальные диски](../ustanovka-hostvm-cherez-cli/installation-hostvm-on-local-disks.md#process-ustanovki) либо [СХД](../ustanovka-hostvm-cherez-cli/installation-hostvm.md#process-ustanovki) (устанавливать hosted engine не требуется)&#x20;
 
 6\) После успешной установки и перезапуска сервера на новой ОС, добавить хост в кластер через портал администрирования, указав hostname/IP-адрес:
 

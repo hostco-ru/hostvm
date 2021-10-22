@@ -26,7 +26,7 @@
 
 При загрузке откроется меню выбора действия. За 60 секунд выберите _Install HOSTVM Node_ Если за 60 секунд после загрузки не выбрать данный пункт, то начинается тестирование ресурсов сервера и только после этого начнется установка. Остановить тестирование ресурсов сервера возможно через нажатие клавиши _esc_.
 
-![](../../.gitbook/assets/Screenshot\_2.png)
+![](../../../.gitbook/assets/Screenshot\_2.png)
 
 В случае если загрузка установщика зависнет, то нужно повторно загрузиться с установочного диска и в стартовом меню действий выбрать пункт «Troubleshooting», затем “Install HOSTVM Node 4.3.9 in basic graphics mode” для запуска установки с использованием псевдографического интерфейса.
 
@@ -36,85 +36,85 @@ _Выбранный язык не влияет на язык внутри сам
 
 Скриншоты инструкции выполнены в интерфейсе с английским языком. Нажмите _Continue_.
 
-![](../../.gitbook/assets/Screenshot\_3.png)
+![](../../../.gitbook/assets/Screenshot\_3.png)
 
 Далее автоматически открывается меню настроек.
 
-![](../../.gitbook/assets/Screenshot\_4.png)
+![](../../../.gitbook/assets/Screenshot\_4.png)
 
 Перейдите в _DATE & TIME_, укажите ваш часовой пояс, время и дату. Нажмите _Done_.
 
-![](../../.gitbook/assets/Screenshot\_5.png)
+![](../../../.gitbook/assets/Screenshot\_5.png)
 
 **ВАЖНО!: Для корректной установки, необходимо, чтобы серверу, на этапе установки, был задан корректный IPv4 адрес, который имеет доступ в интернет (для доступа к репозиториям). Также должен быть указан корректный DNS сервер.**
 
 Перейдите в _NETWORK & HOST NAME_.
 
-![](../../.gitbook/assets/Screenshot\_1.png)
+![](../../../.gitbook/assets/Screenshot\_1.png)
 
 Выберите интерфейс, нажмите кнопку _Configure..._. В открывшемся окне перейдите на вкладку _IPv4 Settings_, выберите _Method: Manual_, введите ip, маску, gw, DNS-сервер. Нажмите кнопку _Save_.
 
-![](<../../.gitbook/assets/Screenshot\_2 (1).png>)
+![](<../../../.gitbook/assets/Screenshot\_2 (1).png>)
 
 Переведите тригер возле названия подключения в положение _On_. В поле _Host name_ введите имя сервера, нажмите кнопку _Apply_. Нажмите кнопку _Done_.
 
-![](<../../.gitbook/assets/Screenshot\_5 (1).png>)
+![](<../../../.gitbook/assets/Screenshot\_5 (1).png>)
 
 Перейдите в _Instalation Destination_. Выберете диск на который необходимо выполнить установку. Выберете радиокнопку _I will configure partitioning_. Нажмите _Done_.
 
-![](<../../.gitbook/assets/Screenshot\_6 (1).png>)
+![](<../../../.gitbook/assets/Screenshot\_6 (1).png>)
 
 Если диск не отображается, необходимо открыть дополнительное окно под кнопкой _Add a disk..._, поставить галочку напротив необходимого диска и нажать кнопку _Done_.
 
-![](<../../.gitbook/assets/Screenshot\_8 (1).png>)
+![](<../../../.gitbook/assets/Screenshot\_8 (1).png>)
 
 После выбора места установки автоматически открывается следующее меню.
 
-![](../../.gitbook/assets/centos7-install-9-1.jpg)
+![](../../../.gitbook/assets/centos7-install-9-1.jpg)
 
 Если диск уже использовался (имел таблицу разделов), то удалите их, как показано ниже.
 
-![](../../.gitbook/assets/centos7-install-9-2.jpg)
+![](../../../.gitbook/assets/centos7-install-9-2.jpg)
 
-![](../../.gitbook/assets/centos7-install-9-3.jpg)
+![](../../../.gitbook/assets/centos7-install-9-3.jpg)
 
 Когда на диске не останется существующих разделов Из выпадающего меню выберите _LVM Thin Provisioning._ Нажмите _Click here to create them automatically_.
 
-![](<../../.gitbook/assets/Screenshot\_1 (1).png>)
+![](<../../../.gitbook/assets/Screenshot\_1 (1).png>)
 
 Удалите _home_, как показано ниже.
 
-![](<../../.gitbook/assets/Screenshot\_2 (2).png>)
+![](<../../../.gitbook/assets/Screenshot\_2 (2).png>)
 
 Освободившееся место отдайте разделу _/_. Для этого выберете его, укажите в поле Desired Capacity его размер. Минимальный размер диска: 45GB. Измените фокус (выберете другой раздел), чтобы изменения отобразились на экране.
 
-![](<../../.gitbook/assets/Screenshot\_3 (1).png>)
+![](<../../../.gitbook/assets/Screenshot\_3 (1).png>)
 
 Добавьте раздел /var. Присвойте ему не менее 15GB свободного места
 
-![](<../../.gitbook/assets/Screenshot\_4 (2).png>)
+![](<../../../.gitbook/assets/Screenshot\_4 (2).png>)
 
 Нажмите _Done_.
 
-![](<../../.gitbook/assets/Screenshot\_6 (2).png>)
+![](<../../../.gitbook/assets/Screenshot\_6 (2).png>)
 
 Подтвердите действие кнопкой _Accept Changes_.
 
-![](../../.gitbook/assets/Screenshot\_7.png)
+![](../../../.gitbook/assets/Screenshot\_7.png)
 
 В стартовом меню нажмите кнопку _Begin Instalation_, чтобы начать установку.
 
-![](<../../.gitbook/assets/Screenshot\_9 (1).png>)
+![](<../../../.gitbook/assets/Screenshot\_9 (1).png>)
 
 В открывшемся окне выберете _Root Password_. Введите ваш пароль (рекомендуемый пароль **engine**). Дважды нажмите _Done_.
 
-![](../../.gitbook/assets/Screenshot\_27.png)
+![](../../../.gitbook/assets/Screenshot\_27.png)
 
-![](../../.gitbook/assets/Screenshot\_28.png)
+![](../../../.gitbook/assets/Screenshot\_28.png)
 
 Если на этом этапе возникнет ошибка с postinstall скриптом, то это означает, что:
 
-![](<../../.gitbook/assets/image (29).png>)
+![](<../../../.gitbook/assets/image (29).png>)
 
 1\) Сервер не имеет доступа в интернет и не смог скачать установочные скрипты из репозитория
 
@@ -126,13 +126,13 @@ _Выбранный язык не влияет на язык внутри сам
 
 Ожидайте окончания установки. После завершения подтвердите перезагрузку нажатием на кнопку _Reboot_.
 
-![](../../.gitbook/assets/Screenshot\_30.png)
+![](../../../.gitbook/assets/Screenshot\_30.png)
 
 ## Подготовка сервера к развертыванию на диски схд
 
 ### Подготовка putty к работе
 
-Убедитесь, что требования, описанные на странице [Системные требования](requirements.md) выполняются.
+Убедитесь, что требования, описанные на странице [Системные требования](../requirements.md) выполняются.
 
 С помощью программы [PuTTY](https://www.putty.org), которая доступна в [наборе дистрибутивов для развертывания решения](https://lk.pvhostvm.ru/Download), под пользователем root подключитесь к серверу.
 
@@ -140,15 +140,15 @@ _Выбранный язык не влияет на язык внутри сам
 
 1. Сохраните имя сервера:
 
-![](../../.gitbook/assets/hostvm-install-2.jpg)
+![](../../../.gitbook/assets/hostvm-install-2.jpg)
 
 1. Перейдите на вкладку Журнал (мы можем добавить ссылку на страницу с этой вкладкой?), выберите `Весь вывод`, укажите путь до файла логов в следующем виде: `C:\path\to\log\hostname-&H-&Y&M&D-&T.log`. Часть `&H-&Y&M&D-&T` указывает, что файл с логом будет создаваться для каждой сессии и автоматически указывать время и дату ее начала:
 
-![](../../.gitbook/assets/hostvm-install-3.jpg)
+![](../../../.gitbook/assets/hostvm-install-3.jpg)
 
 1. Перейдите на вкладку Сеанс, нажмите кнопку `Сохранить`, нажмите клавишу `Enter` чтобы запустить сессию:
 
-![](../../.gitbook/assets/hostvm-install-4.jpg)
+![](../../../.gitbook/assets/hostvm-install-4.jpg)
 
 ### Проверить, что диск предназначенный для размещения виртуальных машин подключен
 
@@ -448,6 +448,6 @@ localhost                  : ok=9    changed=2    unreachable=0    failed=0    s
 
 Схема установки hostvm и самостоятельного решения проблем представлена на рисунке ниже:
 
-![](../../.gitbook/assets/troubleshooting-scheme.jpg)
+![](../../../.gitbook/assets/troubleshooting-scheme.jpg)
 
 Если устранить проблему не удалось, обратитесь в [техническую поддержку](https://lk.pvhostvm.ru) используя [инструкцию](https://lk.pvhostvm.ru) К обращению приложите лог вывода вашей консоли, который был настроен в начале установки и файл `/root/script-hosted-engine-deploy.log`.

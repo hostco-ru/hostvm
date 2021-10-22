@@ -2,7 +2,7 @@
 
 ## Перед установкой
 
-Подготовьте на вашей СХД LUN для размещения консоли управления виртуализацией (Hosted Engine), размер данного LUN должен соответствовать [системным требованиям](requirements.md#sistemnye-trebovaniya-dlya-virtualnoi-mashiny-engine-upravlenie-sistemoi-virtualizacii).&#x20;
+Подготовьте на вашей СХД LUN для размещения консоли управления виртуализацией (Hosted Engine), размер данного LUN должен соответствовать [системным требованиям](../requirements.md#sistemnye-trebovaniya-dlya-virtualnoi-mashiny-engine-upravlenie-sistemoi-virtualizacii).&#x20;
 
 Выполните маппинг сервера к выделенному луну(vdisk'ам) по инструкциям от производителя вашего серверного оборудования.&#x20;
 
