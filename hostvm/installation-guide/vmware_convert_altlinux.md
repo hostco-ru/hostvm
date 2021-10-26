@@ -24,13 +24,13 @@ File - Export - Export OVF Template
 
 Format: Single file (OVA)
 
-## Подготовка гипервизора к импорту ВМ
+## Подготовка к импорту ВМ
 
-1 Установить скрипт конвертации на хост HOSTVM, с которого будет выполняться импорт ВМ:
+1\. Установить скрипт конвертации на хост HOSTVM, с которого будет выполняться импорт ВМ:
 
 `yum install perl perl-XML-Writer perl-Sys-Guestfs`
 
-`wget https://cloud.hostco.ru/s/LeLbsfFaJqsW5oJ/download -O import-to-ovirt.pl`
+2\. Загрузить сценарий конвертации import-to-ovirt.pl на хост HOSTVM, с которого будет выполняться импорт ВМ. Загрузка выполняется из личного кабинета [https://lk.pvhostvm.ru/](https://lk.pvhostvm.ru) Сценарий import-to-ovirt.pl  расположен в каталоге дистрибутивов в папке HOSTVM/VM Convert/
 
 `chmod u+x import-to-ovirt.pl`
 

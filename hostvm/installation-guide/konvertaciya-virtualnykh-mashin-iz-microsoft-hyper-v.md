@@ -16,11 +16,13 @@ virt-v2v -i disk /path/to/disk.vhdx -o rhv -of qcow2 -os /path/to/export_domain
 
 [Полное описание и перечень опций](https://libguestfs.org/virt-v2v.1.html)
 
-### Конвертация и импорт с помощью утилиты qemu-img и скрипта import <a href="user-content-konvertaciya-i-import-s-pomoshyu-utility-qemu-img-i-skripta-import-to-ovirt" id="user-content-konvertaciya-i-import-s-pomoshyu-utility-qemu-img-i-skripta-import-to-ovirt"></a>
+### Конвертация и импорт с помощью утилиты qemu-img и сценария import <a href="user-content-konvertaciya-i-import-s-pomoshyu-utility-qemu-img-i-skripta-import-to-ovirt" id="user-content-konvertaciya-i-import-s-pomoshyu-utility-qemu-img-i-skripta-import-to-ovirt"></a>
 
 Данный способ подходит для машин с несколькими дисками, либо неподдерживаемыми утилитой virt-v2v.
 
-Требуется предварительная установка драйверов virtio. Конфигурация машины задается опциями скрипта import-to-ovirt.pl (скрипт доступен для загрузки в личном кабинете HOSTVM) или в HOSTVM Manager WebUI при загрузке из export домена.
+Требуется предварительная установка драйверов virtio. Конфигурация машины задается опциями сценария import-to-ovirt.pl или в HOSTVM Manager WebUI при загрузке из export домена.
+
+Загрузить файл сценария конвертации import-to-ovirt.pl на хост HOSTVM, с которого будет выполняться импорт ВМ. Загрузка выполняется из личного кабинета [https://lk.pvhostvm.ru/](https://lk.pvhostvm.ru) Сценарий import-to-ovirt.pl  расположен в каталоге дистрибутивов в папке HOSTVM/VM Convert/
 
 Пример команды для конвертации диска:
 
@@ -49,7 +51,9 @@ export LIBGUESTFS_BACKEND=direct
 * Выбрать формат результирующего диска qcow2, далее снова выбрать local file и указать место сохранения результирующего диска;
 * Выгрузить получившийся qcow2 диск.
 
-Загрузка в Export домен HOSTVM производится с помощью скрипта import-to-ovirt (скрипт доступен для загрузки в личном кабинете HOSTVM):
+Загрузка в Export домен HOSTVM производится с помощью скрипта import-to-ovirt.pl Загрузить файл сценария конвертации import-to-ovirt.pl на хост HOSTVM, с которого будет выполняться импорт ВМ. Загрузка выполняется из личного кабинета [https://lk.pvhostvm.ru/](https://lk.pvhostvm.ru) Сценарий import-to-ovirt.pl  расположен в каталоге дистрибутивов в папке HOSTVM/VM Convert/
+
+
 
 ```
 export LIBGUESTFS_BACKEND=direct
