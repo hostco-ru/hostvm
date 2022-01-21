@@ -38,7 +38,11 @@ _Выбранный язык не влияет на язык внутри сам
 
 ![](<../../.gitbook/assets/network menu.png>)
 
-Выберите интерфейс, нажмите кнопку _Configure..._. В открывшемся окне перейдите на вкладку _IPv4 Settings_, выберите _Method: Manual_, введите ip, маску, gw, DNS-сервер. Нажмите кнопку _Save_.
+Выберите интерфейс, нажмите кнопку _Configure..._. В открывшемся окне перейдите на вкладку  General и отметьте пункт "Connect automatically with priority":
+
+![](../../.gitbook/assets/network\_general.png)
+
+Далее перейдите на вкладку _IPv4 Settings_, выберите _Method: Manual_, введите ip, маску, gw, DNS-сервер. Нажмите кнопку _Save_.
 
 ![](../../.gitbook/assets/network\_ipv4.png)
 
