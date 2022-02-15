@@ -12,7 +12,7 @@
 
 При загрузке откроется меню выбора действия. За 60 секунд выберите _Install HOSTVM Node 4.4.8_. Если за 60 секунд после загрузки не выбрать данный пункт, то начинается тестирование ресурсов сервера и только после этого начнется установка. Остановить тестирование ресурсов сервера возможно через нажатие клавиши _esc_.
 
-![](<../../.gitbook/assets/boot menu.png>)
+![](<../../../.gitbook/assets/boot menu.png>)
 
 В случае если загрузка установщика зависнет, то нужно повторно загрузиться с установочного диска и в стартовом меню действий выбрать пункт «Troubleshooting», затем “Install HOSTVM Node 4.4.8 in basic graphics mode” для запуска установки с с использованием псевдографического интерфейса.
 
@@ -22,96 +22,96 @@ _Выбранный язык не влияет на язык внутри сам
 
 Скриншоты инструкции выполнены в интерфейсе с английским языком. Нажмите _Continue_.
 
-![](<../../.gitbook/assets/welcome (1).png>)
+![](<../../../.gitbook/assets/welcome (1).png>)
 
 Далее автоматически открывается меню настроек.
 
-![](<../../.gitbook/assets/inst summary.png>)
+![](<../../../.gitbook/assets/inst summary.png>)
 
 Перейдите в _DATE & TIME_, укажите ваш часовой пояс, время и дату. Нажмите _Done_.
 
-![](../../.gitbook/assets/time.png)
+![](../../../.gitbook/assets/time.png)
 
 **ВАЖНО!: Для корректной установки, необходимо, чтобы серверу, на этапе установки, был задан корректный IPv4 адрес, который имеет доступ в интернет (для доступа к репозиториям). Также должен быть указан корректный DNS сервер.**
 
 &#x20;Перейдите в _NETWORK & HOST NAME_.
 
-![](<../../.gitbook/assets/network menu.png>)
+![](<../../../.gitbook/assets/network menu.png>)
 
 Выберите интерфейс, нажмите кнопку _Configure..._. В открывшемся окне перейдите на вкладку  General и отметьте пункт "Connect automatically with priority":
 
-![](../../.gitbook/assets/network\_general.png)
+![](../../../.gitbook/assets/network\_general.png)
 
 Далее перейдите на вкладку _IPv4 Settings_, выберите _Method: Manual_, введите ip, маску, gw, DNS-сервер. Нажмите кнопку _Save_.
 
-![](../../.gitbook/assets/network\_ipv4.png)
+![](../../../.gitbook/assets/network\_ipv4.png)
 
 Переведите тригер возле названия подключения в положение _On_. В поле _Host name_ введите имя сервера, нажмите кнопку _Apply_. Нажмите кнопку _Done_.
 
-![](../../.gitbook/assets/network\_ready.png)
+![](../../../.gitbook/assets/network\_ready.png)
 
 Перейдите в _Instalation Destination_. Выберите диск на который необходимо выполнить установку. Выберите радиокнопку _Custom_. Нажмите _Done_.
 
-![](<../../.gitbook/assets/installation destination.png>)
+![](<../../../.gitbook/assets/installation destination.png>)
 
 После выбора места установки автоматически открывается следующее меню.
 
-![](<../../.gitbook/assets/manual partitioning\_0.png>)
+![](<../../../.gitbook/assets/manual partitioning\_0.png>)
 
 Если диск уже использовался (имел таблицу разделов), то удалите их, как показано ниже.
 
-![](<../../.gitbook/assets/manual partitioning\_3.png>)
+![](<../../../.gitbook/assets/manual partitioning\_3.png>)
 
-![](<../../.gitbook/assets/manual partitioning\_4.png>)
+![](<../../../.gitbook/assets/manual partitioning\_4.png>)
 
 Когда на диске не останется существующих разделов Из выпадающего меню выберите _LVM Thin Provisioning._ Нажмите _Click here to create them automatically_.
 
-![](<../../.gitbook/assets/manual partitioning.png>)
+![](<../../../.gitbook/assets/manual partitioning.png>)
 
 Вы увидите, что на диске появилась предварительная разметка:
 
-![](<../../.gitbook/assets/manual partitioning\_1.png>)
+![](<../../../.gitbook/assets/manual partitioning\_1.png>)
 
 Удалите все пункты кроме /boot и /swap, как показано ниже.
 
-![](../../.gitbook/assets/1-—-копия.png)
+![](../../../.gitbook/assets/1-—-копия.png)
 
-Для работы гипервизору необходимо минимум 90GB на системном диске. Для разворачивания виртуальной машины HOSTVM Engine необходим выделенный раздел для домена хранения, размер раздела необходимо задать согласно [системным требованиям](requirements.md#sistemnye-trebovaniya-dlya-virtualnoi-mashiny-engine-upravlenie-sistemoi-virtualizacii). \
+Для работы гипервизору необходимо минимум 90GB на системном диске. Для разворачивания виртуальной машины HOSTVM Engine необходим выделенный раздел для домена хранения, размер раздела необходимо задать согласно [системным требованиям](../requirements.md#sistemnye-trebovaniya-dlya-virtualnoi-mashiny-engine-upravlenie-sistemoi-virtualizacii). \
 Если необходимо, измените поле _Desired Capacity_ раздела _/_, чтобы изменить размер системного раздела. Не менее 16GB необходимо для раздела /var.
 
 Далее создайте новый раздел с точкой монтирования в _/data:_
 
-![](<../../.gitbook/assets/3\_1 (1).png>)
+![](<../../../.gitbook/assets/3\_1 (1).png>)
 
 Нажмите _Done_.
 
 Создайте раздел /var:
 
-![](../../.gitbook/assets/4\_1.png)
+![](../../../.gitbook/assets/4\_1.png)
 
 Создайте раздел / (корневая файловая система):
 
-![](../../.gitbook/assets/5\_1.png)
+![](../../../.gitbook/assets/5\_1.png)
 
-![Минимальная разметка для установки на локальные диски](../../.gitbook/assets/7\_1.png)
+![Минимальная разметка для установки на локальные диски](../../../.gitbook/assets/7\_1.png)
 
 Подтвердите действие кнопкой _Accept Changes_.
 
-![](../../.gitbook/assets/6\_1.png)
+![](../../../.gitbook/assets/6\_1.png)
 
 ВАЖНО! Далее необходимо задать пароль для пользователя root, если этого не сделать, вход в систему будет невозможен! Для этого необходимо в стартовом меню перейти в _Root Password_:
 
-![](<../../.gitbook/assets/inst summary\_ready\_red\_arrow.png>)
+![](<../../../.gitbook/assets/inst summary\_ready\_red\_arrow.png>)
 
 Введите ваш пароль (рекомендуемый пароль **engine**). Дважды нажмите _Done_.
 
-![](../../.gitbook/assets/root.png)
+![](../../../.gitbook/assets/root.png)
 
 В стартовом меню нажмите кнопку _Begin Installation_, чтобы начать установку.
 
 Если на этом этапе возникнет ошибка с postinstall скриптом, то это означает, что:
 
-![](<../../.gitbook/assets/image (33) (1).png>)
+![](<../../../.gitbook/assets/image (33) (1).png>)
 
 1\) Сервер не имеет доступа в интернет и не смог скачать установочные скрипты из репозитория
 
@@ -123,13 +123,13 @@ _Выбранный язык не влияет на язык внутри сам
 
 Ожидайте окончания установки. После завершения подтвердите перезагрузку нажатием на кнопку _Reboot_.
 
-![](../../.gitbook/assets/complete.png)
+![](../../../.gitbook/assets/complete.png)
 
 ## Установка HOSTVM Manager на FC-диск
 
 После установки ISO-дистрибутива на сервер обратитесь по адресу, указанному в процессе установки на порт 9090 через браузер и зайдите под пользователем root.
 
-![](../../.gitbook/assets/4.4.8.PNG)
+![](../../../.gitbook/assets/4.4.8.PNG)
 
 Пример адреса: [https://192.168.0.5:9090](https://192.168.0.5:9090)
 
@@ -137,7 +137,7 @@ _Выбранный язык не влияет на язык внутри сам
 
 Напротив Hosted-engine нажмите кнопку _Start._
 
-![](../../.gitbook/assets/FC\_1.png)
+![](../../../.gitbook/assets/FC\_1.png)
 
 Внимание! FC-диск для организации хранилища виртуальных машин должен отвечать следующим требованиям:
 
@@ -149,7 +149,7 @@ _Выбранный язык не влияет на язык внутри сам
 
 Заполните форму. Виртуальная машина создается со статическим файлом с использованием файла hosts.
 
-![](../../.gitbook/assets/FC\_2.png)
+![](../../../.gitbook/assets/FC\_2.png)
 
 Значения задаваемых параметров:
 
@@ -178,27 +178,27 @@ _Выбранный язык не влияет на язык внутри сам
 
 Заполните следующую форму. Укажите пароль от веб-интерфейса будущей виртуальной машины. Заполните настройки отправки уведомлений e-mail при необходимости.
 
-![](../../.gitbook/assets/FC\_3.png)
+![](../../../.gitbook/assets/FC\_3.png)
 
 Создайте управляющую виртуальную машину (нажмите _Prepare VM_).
 
-![](../../.gitbook/assets/FC\_4.png)
+![](../../../.gitbook/assets/FC\_4.png)
 
 Подождите довольно продолжительное время, пока виртуальная машина не будет создана и настроена.
 
-![](../../.gitbook/assets/FC\_5.png)
+![](../../../.gitbook/assets/FC\_5.png)
 
 Выберете тип хранилища _Fibre Channel_ и укажите свободный LUN.
 
-![](../../.gitbook/assets/FC\_6.png)
+![](../../../.gitbook/assets/FC\_6.png)
 
 Подождите пока hosted-engine расположится в хранилище.
 
-![](../../.gitbook/assets/FC\_7.png)
+![](../../../.gitbook/assets/FC\_7.png)
 
 Поздравляем! Hosted-engine развернут.
 
-![](../../.gitbook/assets/FC\_8.png)
+![](../../../.gitbook/assets/FC\_8.png)
 
 ## Установка HOSTVM Manager на Gluster
 
@@ -216,39 +216,39 @@ ssh-copy-id root@flexnode1
 
 \*flexnode1 - FQDN хоста, на котором будет хранилище
 
-![](<../../.gitbook/assets/image (40).png>)
+![](<../../../.gitbook/assets/image (40).png>)
 
 Далее нужно создать раздел, для этого заходим в Хранилище (1) -> Создать раздел (2)
 
-![](<../../.gitbook/assets/image (33).png>)
+![](<../../../.gitbook/assets/image (33).png>)
 
 Задаем параметры, как на скриншоте ниже, определяем размер раздела (не меньше 70 GB)
 
-![](<../../.gitbook/assets/image (36).png>)
+![](<../../../.gitbook/assets/image (36).png>)
 
 Запоминаем, какой раздел был создан, в нашем случае /dev/sda3
 
-![](<../../.gitbook/assets/image (45).png>)
+![](<../../../.gitbook/assets/image (45).png>)
 
 Далее заходим в Virtualization -> Hosted Engine -> Hyperconverged
 
-![](<../../.gitbook/assets/image (35).png>)
+![](<../../../.gitbook/assets/image (35).png>)
 
 Выбираем Run Gluster Wizard For Single Node для установки хранилища на одной ноде
 
-![](<../../.gitbook/assets/image (42).png>)
+![](<../../../.gitbook/assets/image (42).png>)
 
 Вводим имя хоста, для которого генерировали ключи, жмем next
 
-![](<../../.gitbook/assets/image (32).png>)
+![](<../../../.gitbook/assets/image (32).png>)
 
 Оставляем как есть, жмем next
 
-![](<../../.gitbook/assets/image (44).png>)
+![](<../../../.gitbook/assets/image (44).png>)
 
 Оставляем как есть, жмем next
 
-![](<../../.gitbook/assets/image (34).png>)
+![](<../../../.gitbook/assets/image (34).png>)
 
 ·         Выбираем нужный тип RAID
 
@@ -256,25 +256,25 @@ ssh-copy-id root@flexnode1
 
 ·         Задаем размер LV Size (минимум 62 GB для engine), жмем next.
 
-![](<../../.gitbook/assets/image (37).png>)
+![](<../../../.gitbook/assets/image (37).png>)
 
 Нажимаем deploy
 
-![](<../../.gitbook/assets/image (38).png>)
+![](<../../../.gitbook/assets/image (38).png>)
 
 На DNS-сервере должны быть как минимум две записи типа A, содержащие в себе FQDN-имя сервера, а также имя виртуальной машины hosted-engine, которая будет установлена.
 
 Заполните форму. Виртуальная машина создается со статическим файлом с использованием файла hosts.
 
-![](<../../.gitbook/assets/image (31).png>)
+![](<../../../.gitbook/assets/image (31).png>)
 
 Заполните следующую форму. Укажите пароль от веб-интерфейса будущей виртуальной машины. Заполните настройки отправки уведомлений e-mail при необходимости.
 
-![](<../../.gitbook/assets/image (39).png>)
+![](<../../../.gitbook/assets/image (39).png>)
 
 Проверяем параметры, нажимаем Prepare VM
 
-![](<../../.gitbook/assets/image (43).png>)
+![](<../../../.gitbook/assets/image (43).png>)
 
 Выбираем Storage Type = Gluster
 
@@ -284,4 +284,4 @@ Storage Connection = flexnode1:/engine
 
 \*engine – местонахождение хранилища
 
-![](<../../.gitbook/assets/image (46).png>)
+![](<../../../.gitbook/assets/image (46).png>)
