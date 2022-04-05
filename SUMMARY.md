@@ -36,6 +36,11 @@
   * [Настройка USB-загрузчика для клиентских устройств](hostvm-vdi/hostvm-vdi-installation-guide/usb-boot-device-configuration.md)
   * [Установка HOSTVM VDI Tunneler](hostvm-vdi/hostvm-vdi-installation-guide/tunneler-appliance-deploy.md)
 
+## HOSTVM SDS
+
+* [Руководство по установке и настройке](hostvm-sds/guide/README.md)
+  * [Создание хранилища через CLI](hostvm-sds/guide/cli-new-storage.md)
+
 ## О Компании
 
 * [Команда разработчиков HOSTVM](o-kompanii/developer.md)
