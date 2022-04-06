@@ -1,4 +1,4 @@
-# Установка Tunneler appliance
+# Установка HOSTVM VDI Tunneler
 
 ## Развертывание HOSTVM VDI Tunneler версии 3.0
 
@@ -19,9 +19,8 @@
 
 ```bash
 unzip UDS-Tunnel-qcow2.3.0.0.zip
-qemu-img convert ./UDS-Tunnel-qcow2.3.0.0 -O raw ./UDS-Tuneler-3.0.raw
 export LIBGUESTFS_BACKEND=direct
-virt-v2v -i disk /home/UDS-Tuneler-3.0.raw -o rhv -os /export/domain/mount/point
+virt-v2v -i disk ./UDS-Tunnel-qcow2.3.0.0.qcow2 -o rhv -oa sparse -os server:/export/domain/mount/point
 ```
 
 Точку монтирования домена можно посмотреть через веб-интерфейс платформы виртуализации:
