@@ -12,7 +12,7 @@
 
 Создайте папку /data/nfs/iso-store
 
-·    \[root@testname1 \~]# mkdir -p /data/nfs/iso-store
+`root@testname1 ~]# mkdir -p /data/nfs/iso-store`
 
 Создайте пользователей, необходимых для работы с хранилищем.
 
