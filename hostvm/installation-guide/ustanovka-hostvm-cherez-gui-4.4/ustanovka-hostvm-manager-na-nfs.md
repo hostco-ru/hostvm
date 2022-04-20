@@ -10,7 +10,7 @@
 
 ### Настройка NFS-сервера
 
-Создайте папку /backups
+Создайте папку /data/nfs/iso-store
 
 ·    \[root@testname1 \~]# mkdir -p /data/nfs/iso-store
 
@@ -24,9 +24,9 @@
 
 Настройте права доступа на созданную папку
 
-·    \[root@testname1 \~]# chown -R 36:36 /data/nfs/iso-stor
+·    \[root@testname1 \~]# chown -R 36:36 /data/nfs/iso-store
 
-·    \[root@testname1 \~]# chmod 0755 /data/nfs/iso-stor
+·    \[root@testname1 \~]# chmod 0755 /data/nfs/iso-store
 
 Установим необходимые пакеты
 
@@ -64,7 +64,7 @@
 
 ·    \[root@testname1 \~]# exportfs
 
-·    /data/nfs/iso-stor 10.1.99.0/24
+·    /data/nfs/iso-store 10.1.99.0/24
 
 Если NFS-сервер сконфигурирован не на хосте виртуализации, необходимо добавить правила для файрволла&#x20;
 
