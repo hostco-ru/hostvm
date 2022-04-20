@@ -1,6 +1,6 @@
-# Установка HOSTVM через CLI
+# Установка HOSTVM через CLI (4.4, 4.3)
 
-1\) [installation-hostvm-on-local-disks.md](installation-hostvm-on-local-disks.md "mention")
+1\) [installation-hostvm-on-local-disks.md](installation-hostvm-on-local-disks.md "mention")s
 
 2\) [installation-hostvm.md](installation-hostvm.md "mention")
 
