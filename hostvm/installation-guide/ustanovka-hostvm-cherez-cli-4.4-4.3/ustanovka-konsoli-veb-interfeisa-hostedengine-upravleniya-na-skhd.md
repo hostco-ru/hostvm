@@ -18,6 +18,23 @@ LUN должен быть пустым, при наличии на нем FS и 
 
 Процесс установки ОС гипервизора не отличается от статьи ["Установка HOSTVM Node на локальные диски"](https://hostvm.gitbook.io/hostvm/hostvm/installation-guide/installation-hostvm-on-local-disks#process-ustanovki). Различие только в выборе места размещения Hosted Engine в разделе ["Запуск программы-помощника IP-wizard"](https://hostvm.gitbook.io/hostvm/hostvm/installation-guide/installation-hostvm-on-local-disks#zapusk-programmy-pomoshnika-ip-wizard).&#x20;
 
+### Настройка Multipath
+
+На хосте выполните следующие команды:
+
+```
+[root@virt2 ~]# mpathconf --enable
+[root@virt2 ~]# systemctl enable multipathd
+[root@virt2 ~]# systemctl start multipathd
+```
+
+Затем перезапустите хост и проверьте, что multipath активен и LUN'ы отображаются
+
+```
+[root@virt2 ~]# systemctl status multipathd
+[root@virt2 ~]# multipath -ll
+```
+
 ### Запуск программы-помощника IP-wizard
 
 Запустите `IP-wizard.sh`, чтобы подготовить файлы переменных к работе. Следуйте указаниями инструкции в программе:
