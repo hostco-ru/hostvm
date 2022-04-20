@@ -90,7 +90,7 @@ root@testname1 ~]# mkdir -p /data/nfs/iso-store
 [root@testname1 ~]# firewall-cmd --permanent --add-service=nfs
 [root@testname1 ~]# firewall-cmd --permanent --add-service=mountd
 [root@testname1 ~]# firewall-cmd --permanent --add-service=rpc-bind
-[root@testname1 ~]# firewall-cmd –reload
+[root@testname1 ~]# firewall-cmd --reload
 ```
 
 ### Установка HOSTVM Manager
