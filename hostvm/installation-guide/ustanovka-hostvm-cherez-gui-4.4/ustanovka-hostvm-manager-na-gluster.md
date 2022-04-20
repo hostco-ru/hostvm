@@ -8,9 +8,10 @@
 
 Перейдите на вкладку Терминал и поочередно введите команды:
 
-ssh-keygen
-
-ssh-copy-id root@flexnode1
+```
+root@testname1 ~]# ssh-keygen
+root@testname1 ~]# ssh-copy-id root@flexnode1
+```
 
 \*root - имя пользователя
 
