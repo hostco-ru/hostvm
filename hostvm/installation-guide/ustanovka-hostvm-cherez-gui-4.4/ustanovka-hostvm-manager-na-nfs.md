@@ -66,7 +66,7 @@
 
 ·    /data/nfs/iso-store 10.1.99.0/24
 
-Если NFS-сервер сконфигурирован не на хосте виртуализации, необходимо добавить правила для файрволла&#x20;
+Если NFS-сервер сконфигурирован не на хосте виртуализации, необходимо добавить правила для файрволла на хосте и на NFS-сервере.&#x20;
 
 ·    \[root@testname1 \~]# firewall-cmd --permanent --add-service=nfs
 
@@ -75,8 +75,6 @@
 ·    \[root@testname1 \~]# firewall-cmd --permanent --add-service=rpc-bind
 
 ·    \[root@testname1 \~]# firewall-cmd –reload
-
-На NFS-сервере нужно будет также добавить эти службы для файрволла
 
 ### Установка HOSTVM Manager
 
