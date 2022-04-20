@@ -44,7 +44,7 @@ ssh-copy-id root@flexnode1
 
 Оставляем как есть, жмем next
 
-![](<../../../.gitbook/assets/image (44).png>)
+![](<../../../.gitbook/assets/image (44) (1).png>)
 
 Оставляем как есть, жмем next
 
@@ -60,7 +60,7 @@ ssh-copy-id root@flexnode1
 
 Нажимаем deploy
 
-![](<../../../.gitbook/assets/image (38).png>)
+![](<../../../.gitbook/assets/image (38) (1).png>)
 
 На DNS-сервере должны быть как минимум две записи типа A, содержащие в себе FQDN-имя сервера, а также имя виртуальной машины hosted-engine, которая будет установлена.
 
@@ -70,7 +70,7 @@ ssh-copy-id root@flexnode1
 
 Заполните следующую форму. Укажите пароль от веб-интерфейса будущей виртуальной машины. Заполните настройки отправки уведомлений e-mail при необходимости.
 
-![](<../../../.gitbook/assets/image (39).png>)
+![](<../../../.gitbook/assets/image (39) (1).png>)
 
 Проверяем параметры, нажимаем Prepare VM
 
