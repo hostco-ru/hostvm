@@ -12,7 +12,7 @@
     * [Перед установкой](hostvm/installation-guide/ustanovka-hostvm-cherez-gui-4.4/pered-ustanovkoi.md)
     * [Процесс установки](hostvm/installation-guide/ustanovka-hostvm-cherez-gui-4.4/process-ustanovki.md)
     * [Установка HOSTVM Manager на FC-диск](hostvm/installation-guide/ustanovka-hostvm-cherez-gui-4.4/ustanovka-hostvm-manager-na-fc-disk.md)
-    * [Установка HOSTVM на NFS](hostvm/installation-guide/ustanovka-hostvm-cherez-gui-4.4/ustanovka-hostvm-na-nfs.md)
+    * [Установка HOSTVM Manager на NFS](hostvm/installation-guide/ustanovka-hostvm-cherez-gui-4.4/ustanovka-hostvm-manager-na-nfs.md)
     * [Установка HOSTVM Manager на Gluster](hostvm/installation-guide/ustanovka-hostvm-cherez-gui-4.4/ustanovka-hostvm-manager-na-gluster.md)
   * [Установка HOSTVM через CLI](hostvm/installation-guide/ustanovka-hostvm-cherez-cli/README.md)
     * [Установка HOSTVM Node на локальные диски](hostvm/installation-guide/ustanovka-hostvm-cherez-cli/installation-hostvm-on-local-disks.md)
