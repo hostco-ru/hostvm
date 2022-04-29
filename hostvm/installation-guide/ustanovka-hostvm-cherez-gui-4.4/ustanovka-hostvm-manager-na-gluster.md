@@ -29,7 +29,7 @@ root@testname1 ~]# ssh-copy-id root@flexnode1
 
 Запоминаем, какой раздел был создан, в нашем случае /dev/sda3
 
-![](<../../../.gitbook/assets/image (45).png>)
+![](<../../../.gitbook/assets/image (45) (1).png>)
 
 Далее заходим в Virtualization -> Hosted Engine -> Hyperconverged
 
@@ -37,7 +37,7 @@ root@testname1 ~]# ssh-copy-id root@flexnode1
 
 Выбираем Run Gluster Wizard For Single Node для установки хранилища на одной ноде
 
-![](<../../../.gitbook/assets/image (42).png>)
+![](<../../../.gitbook/assets/image (42) (1).png>)
 
 Вводим имя хоста, для которого генерировали ключи, жмем next
 
@@ -45,11 +45,11 @@ root@testname1 ~]# ssh-copy-id root@flexnode1
 
 Оставляем как есть, жмем next
 
-![](<../../../.gitbook/assets/image (44) (1).png>)
+![](<../../../.gitbook/assets/image (44) (1) (1).png>)
 
 Оставляем как есть, жмем next
 
-![](<../../../.gitbook/assets/image (34).png>)
+![](<../../../.gitbook/assets/image (34) (1).png>)
 
 ·         Выбираем нужный тип RAID
 
@@ -85,7 +85,7 @@ Storage Connection = flexnode1:/engine
 
 \*engine – местонахождение хранилища
 
-![](<../../../.gitbook/assets/image (46).png>)
+![](<../../../.gitbook/assets/image (46) (1).png>)
 
 ## Если что-то пошло не так
 
