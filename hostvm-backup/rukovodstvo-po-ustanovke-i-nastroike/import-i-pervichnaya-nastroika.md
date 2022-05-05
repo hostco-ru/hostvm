@@ -67,7 +67,7 @@ systemctl restart NetworkManager
 Для проверки SSL сертификата, система резервного копирования должна иметь доступ к СА-сертификату целевого HOSTVM Engine, этот сертификат можно загрузить со стартовой страницы Engine либо c помощью следующей команды:
 
 ```
-curl -k -o /etc/bareos/ovirt-ca.cert <https://engine.example.com/ovirt-engine/services/pki-resource?resource=ca-certificate&format=X509-PEM-CA>
+curl -k -o /etc/bareos/ovirt-ca.cert https://engine.example.com/ovirt-engine/services/pki-resource?resource=ca-certificate&format=X509-PEM-CA
 ```
 
 #### **5. Создание задач резервного копирования:**
@@ -105,6 +105,9 @@ FileSet {
 
 ```
 vi /etc/bareos/bareos-dir.d/job/testvm1_job.conf
+```
+
+```
 Job {
    Name = "testvm1_job"
    JobDefs = "DefaultJob"
