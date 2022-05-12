@@ -99,6 +99,8 @@ _Выбранный язык не влияет на язык внутри сам
 
 ![](../../../.gitbook/assets/Screenshot\_28.png)
 
+Пароль root по умолчанию для hostvm node версии 4.4: HostvmNode.
+
 Если на этом этапе возникнет ошибка с postinstall скриптом, то это означает, что:
 
 ![](<../../../.gitbook/assets/image (29).png>)
