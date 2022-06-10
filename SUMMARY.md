@@ -41,6 +41,7 @@
 
 * [Руководство по установке и настройке](hostvm-sds/guide/README.md)
   * [Создание хранилища через CLI](hostvm-sds/guide/cli-new-storage.md)
+  * [Расширение тома Hosted-engine до Replica 3](hostvm-sds/guide/rasshirenie-toma-hosted-engine-do-replica-3.md)
 
 ## HOSTVM Backup
 

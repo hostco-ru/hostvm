@@ -172,4 +172,4 @@ root@testname1 ~]# mkdir -p /data/nfs/iso-store
 
 ![](../../../.gitbook/assets/troubleshooting-scheme.jpg)
 
-Если устранить проблему не удалось, обратитесь в [техническую поддержку](https://lk.pvhostvm.ru) используя [инструкцию](https://lk.pvhostvm.ru) К обращению приложите лог вывода вашей консоли, который был настроен в начале установки и файл `/root/script-hosted-engine-deploy.log`.
+Если устранить проблему не удалось, обратитесь в [техническую поддержку](https://lk.pvhostvm.ru/) используя [инструкцию](https://lk.pvhostvm.ru/) К обращению приложите лог вывода вашей консоли, который был настроен в начале установки и файл `/root/script-hosted-engine-deploy.log`.
