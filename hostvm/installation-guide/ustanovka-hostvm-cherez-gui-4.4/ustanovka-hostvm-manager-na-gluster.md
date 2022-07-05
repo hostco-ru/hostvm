@@ -75,7 +75,7 @@ root@testname1 ~]# ssh-copy-id root@flexnode1
 
 Проверяем параметры, нажимаем Prepare VM
 
-![](<../../../.gitbook/assets/image (43).png>)
+![](<../../../.gitbook/assets/image (43) (1).png>)
 
 Выбираем Storage Type = Gluster
 
