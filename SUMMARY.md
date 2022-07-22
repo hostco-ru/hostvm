@@ -36,9 +36,9 @@
   * [Руководство пользователя HOSTVM VDI](hostvm-vdi/hostvm-vdi-installation-guide/hostvm-vdi-user-manual.md)
   * [Настройка USB-загрузчика для клиентских устройств](hostvm-vdi/hostvm-vdi-installation-guide/usb-boot-device-configuration.md)
   * [Обновление компонентов VDI](hostvm-vdi/hostvm-vdi-installation-guide/obnovlenie-komponentov-vdi.md)
-* [Подключение сервисов](hostvm-vdi/podklyuchenie-servisov/README.md)
-  * [Настройка подключений к терминальным серверам по протоколу x2Go](hostvm-vdi/podklyuchenie-servisov/nastroika-podklyuchenii-k-terminalnym-serveram-po-protokolu-x2go.md)
-  * [Настройка подключений к терминальным серверам по протоколу RemoteApp](hostvm-vdi/podklyuchenie-servisov/nastroika-podklyuchenii-k-terminalnym-serveram-po-protokolu-remoteapp.md)
+  * [Подключение сервисов](hostvm-vdi/hostvm-vdi-installation-guide/podklyuchenie-servisov/README.md)
+    * [Настройка подключений к терминальным серверам по протоколу x2Go](hostvm-vdi/hostvm-vdi-installation-guide/podklyuchenie-servisov/nastroika-podklyuchenii-k-terminalnym-serveram-po-protokolu-x2go.md)
+    * [Настройка подключений к терминальным серверам по протоколу RemoteApp](hostvm-vdi/hostvm-vdi-installation-guide/podklyuchenie-servisov/nastroika-podklyuchenii-k-terminalnym-serveram-po-protokolu-remoteapp.md)
 
 ## HOSTVM SDS
 
