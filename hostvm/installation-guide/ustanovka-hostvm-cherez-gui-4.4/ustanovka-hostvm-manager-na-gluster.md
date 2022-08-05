@@ -19,17 +19,17 @@ root@testname1 ~]# ssh-copy-id root@flexnode1
 
 ![](<../../../.gitbook/assets/image (40).png>)
 
-Далее нужно создать раздел, для этого заходим в Хранилище (1) -> Создать раздел (2)
+Далее нужно создать раздел, для этого заходим в Storage -> Create partition
 
-![](<../../../.gitbook/assets/image (33).png>)
+![](<../../../.gitbook/assets/image (3).png>)
 
-Задаем параметры, как на скриншоте ниже, определяем размер раздела (не меньше 70 GB)
+Задаем параметры, как на скриншоте ниже, определяем размер раздела (не меньше 70 GB). Type раздела выбираем No filesystem.
 
-![](<../../../.gitbook/assets/image (36).png>)
+![](<../../../.gitbook/assets/image (2).png>)
 
 Запоминаем, какой раздел был создан, в нашем случае /dev/sda3
 
-![](<../../../.gitbook/assets/image (45) (1).png>)
+![](../../../.gitbook/assets/image.png)
 
 Далее заходим в Virtualization -> Hosted Engine -> Hyperconverged
 
