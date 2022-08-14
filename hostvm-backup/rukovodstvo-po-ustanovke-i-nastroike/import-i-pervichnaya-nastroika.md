@@ -135,5 +135,5 @@ done
 На вопрос "OK to run? (yes/mod/no)" введите mod
 Select parameter to modify (1-14): 14
 Plugin Options:  python3:storage_domain=YOUR_STORAGE_DOMAIN:vm_name=testvm1restore (для клонирования ВМ)
-Plugin Options:  python3:storage_domain=YOUR_STORAGE_DOMAIN:vm_name=testvm1restore:override=yes (для перезаписи ВМ)
+Plugin Options:  python3:storage_domain=YOUR_STORAGE_DOMAIN:vm_name=testvm1restore:overwrite=yes (для перезаписи ВМ)
 ```
