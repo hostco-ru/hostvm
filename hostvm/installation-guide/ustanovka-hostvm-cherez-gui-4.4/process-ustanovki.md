@@ -77,6 +77,8 @@ _Выбранный язык не влияет на язык внутри сам
 
 Далее создайте новый раздел с точкой монтирования в _/data:_
 
+**Примечание:** В случае, если далее будет производиться [ustanovka-hostvm-manager-na-gluster.md](ustanovka-hostvm-manager-na-gluster.md "mention"), то создавать раздел _/data_ не нужно.
+
 ![](<../../../.gitbook/assets/3\_1 (1).png>)
 
 Нажмите _Done_.
