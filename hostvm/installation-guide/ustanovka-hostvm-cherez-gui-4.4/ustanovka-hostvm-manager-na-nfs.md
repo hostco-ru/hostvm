@@ -8,6 +8,9 @@ coverY: 0
 
 Пароль root по умолчанию для новой версии hostvm node: HostvmNode.
 
+Логин HOSTVM Manager по умолчанию: admin\
+Пароль HOSTVM Manager по умолчанию: engine
+
 Перейдите на вкладку Terminal
 
 ![](<../../../.gitbook/assets/image (38).png>)
@@ -155,6 +158,9 @@ root@testname1 ~]# mkdir -p /data/nfs/iso-store
 Поздравляем! Hosted-engine развернут.
 
 ![](../../../.gitbook/assets/FC\_8.png)
+
+Логин HOSTVM Manager по умолчанию: admin\
+Пароль HOSTVM Manager по умолчанию: engine
 
 ## Если что-то пошло не так
 

@@ -4,6 +4,9 @@
 
 Пароль root по умолчанию для новой версии hostvm node: HostvmNode.
 
+Логин HOSTVM Manager по умолчанию: admin\
+Пароль HOSTVM Manager по умолчанию: engine
+
 ![](../../../.gitbook/assets/4.4.8.PNG)
 
 Пример адреса: [https://192.168.0.5:9090](https://192.168.0.5:9090)
@@ -74,6 +77,9 @@
 Поздравляем! Hosted-engine развернут.
 
 ![](../../../.gitbook/assets/FC\_8.png)
+
+Логин HOSTVM Manager по умолчанию: admin\
+Пароль HOSTVM Manager по умолчанию: engine
 
 ## Если что-то пошло не так
 
