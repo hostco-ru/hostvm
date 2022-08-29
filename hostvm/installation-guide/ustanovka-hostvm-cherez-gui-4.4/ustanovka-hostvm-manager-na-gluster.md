@@ -23,7 +23,7 @@ root@testname1 ~]# ssh-copy-id root@flexnode1
 
 ![](<../../../.gitbook/assets/image (3).png>)
 
-Задаем параметры, как на скриншоте ниже, определяем размер раздела (не меньше 70 GB). Type раздела выбираем No filesystem.
+Задаем параметры, как на скриншоте ниже, определяем размер раздела (не меньше 90 GB). Type раздела выбираем No filesystem.
 
 ![](<../../../.gitbook/assets/image (2).png>)
 
@@ -47,17 +47,17 @@ root@testname1 ~]# ssh-copy-id root@flexnode1
 
 ![](<../../../.gitbook/assets/image (44) (1) (1).png>)
 
-Оставляем как есть, жмем next
+Удаляем data(1) и vmstore(2), жмем next
 
-![](<../../../.gitbook/assets/image (34) (1).png>)
+<figure><img src="../../../.gitbook/assets/1.png" alt=""><figcaption></figcaption></figure>
 
 ·         Выбираем нужный тип RAID
 
 ·         В Device Name выбираем раздел, который был создан ранее (/dev/sda3)
 
-·         Задаем размер LV Size (минимум 62 GB для engine), жмем next.
+·         Задаем размер LV Size в соответствии с системными требованиями, жмем next.
 
-![](<../../../.gitbook/assets/image (37).png>)
+<figure><img src="../../../.gitbook/assets/3.png" alt=""><figcaption></figcaption></figure>
 
 Нажимаем deploy
 
