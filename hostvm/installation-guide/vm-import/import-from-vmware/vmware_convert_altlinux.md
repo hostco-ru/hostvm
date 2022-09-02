@@ -64,16 +64,10 @@ Format: Single file (OVA)
 
 `<path_to_export_domain>` - путь к экспорт-домену HOSTVM, в виде server:/path/to/esd
 
-(посмотреть путь можно в engine GUI - Storage - Domains - выбрать export домен - Manage domain - путь будет указан в поле Path)
+(посмотреть путь можно в `engine GUI - Storage - Domains - выбрать export домен - Manage domain` - путь будет указан в поле Path)
 
 либо указать путь до точки монтирования в виде `/mount/point`, если он уже примонтирован на хосте
 
 4 Импортировать ВМ в data домен через GUI:
 
-engine GUI - Compute - Virtual machines - нажать 3 точки в меню - Import - выбрать нужный дата центр, source=export domain - нажать Load - переместить нужную ВМ в Virtual machines to import - Next - выбрать параметры импорта и нажать OK
-
-## Версии ПО, на которых проводилось тестирование
-
-* Alt Server 8.2
-* VMware Vcenter 6.0
-* oVirt 4.2
+`engine GUI - Compute - Virtual machines` - нажать 3 точки в меню - Import - выбрать нужный дата центр, source=export domain - нажать Load - переместить нужную ВМ в Virtual machines to import - Next - выбрать параметры импорта и нажать OK
