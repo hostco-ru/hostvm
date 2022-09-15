@@ -1,14 +1,5 @@
 # Установка HOSTVM VDI Tunneler
 
-## Развертывание HOSTVM VDI Tunneler версии 3.0
-
-### Требования к конфигурации виртуальной машины
-
-* Hard drive: 10 GB
-* Memory: 2 G
-* CPU: 2 vCPU
-* Network: 1 vNIC
-
 ### Импорт виртуальной машины
 
 * Скачать образ машины `HOSTVM-VDI/hostvm-tunneler.tar.bz2` из каталога загрузок HOSTVM.

@@ -6,7 +6,7 @@
 
 * [Руководство по установке и настройке](hostvm/installation-guide/README.md)
   * [О платформе](hostvm/installation-guide/datasheet.md)
-  * [Требования к системе](hostvm/installation-guide/requirements.md)
+  * [Системные требования](hostvm/installation-guide/requirements.md)
   * [Установка HOSTVM через GUI 4.4](hostvm/installation-guide/ustanovka-hostvm-cherez-gui-4.4/README.md)
     * [Перед установкой](hostvm/installation-guide/ustanovka-hostvm-cherez-gui-4.4/pered-ustanovkoi.md)
     * [Процесс установки](hostvm/installation-guide/ustanovka-hostvm-cherez-gui-4.4/process-ustanovki.md)
@@ -32,6 +32,7 @@
 ## HOSTVM VDI
 
 * [Руководство по установке и настройке](hostvm-vdi/hostvm-vdi-installation-guide/README.md)
+  * [Системные требования](hostvm-vdi/hostvm-vdi-installation-guide/requirements.md)
   * [Установка HOSTVM VDI Broker](hostvm-vdi/hostvm-vdi-installation-guide/hostvm-vdi-ova-install.md)
   * [Установка HOSTVM VDI Tunneler](hostvm-vdi/hostvm-vdi-installation-guide/tunneler-appliance-deploy.md)
   * [Руководство администратора HOSTVM VDI](hostvm-vdi/hostvm-vdi-installation-guide/install-hostvm-vdi-appliance.md)
