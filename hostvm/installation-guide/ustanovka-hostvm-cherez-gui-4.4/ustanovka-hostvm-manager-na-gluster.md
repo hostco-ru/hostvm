@@ -29,7 +29,7 @@ root@testname1 ~]# ssh-copy-id root@flexnode1
 
 Запоминаем, какой раздел был создан, в нашем случае /dev/sda3
 
-![](../../../.gitbook/assets/image.png)
+![](<../../../.gitbook/assets/image (52).png>)
 
 Далее заходим в Virtualization -> Hosted Engine -> Hyperconverged
 
