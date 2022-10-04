@@ -36,14 +36,15 @@
   * [Системные требования](hostvm-vdi/hostvm-vdi-installation-guide/requirements.md)
   * [Установка HOSTVM VDI Broker](hostvm-vdi/hostvm-vdi-installation-guide/hostvm-vdi-ova-install.md)
   * [Установка HOSTVM VDI Tunneler](hostvm-vdi/hostvm-vdi-installation-guide/tunneler-appliance-deploy.md)
-  * [Руководство администратора HOSTVM VDI](hostvm-vdi/hostvm-vdi-installation-guide/install-hostvm-vdi-appliance.md)
-  * [Подготовка мастер-образа для публикации в HOSTVM VDI](hostvm-vdi/hostvm-vdi-installation-guide/podgotovka-master-obraza-dlya-publikacii-v-hostvm-vdi.md)
-  * [Руководство пользователя HOSTVM VDI](hostvm-vdi/hostvm-vdi-installation-guide/hostvm-vdi-user-manual.md)
   * [Настройка USB-загрузчика для клиентских устройств](hostvm-vdi/hostvm-vdi-installation-guide/usb-boot-device-configuration.md)
   * [Обновление компонентов VDI](hostvm-vdi/hostvm-vdi-installation-guide/obnovlenie-komponentov-vdi.md)
-  * [Подключение сервисов](hostvm-vdi/hostvm-vdi-installation-guide/podklyuchenie-servisov/README.md)
-    * [Настройка подключений к терминальным серверам по протоколу x2Go](hostvm-vdi/hostvm-vdi-installation-guide/podklyuchenie-servisov/nastroika-podklyuchenii-k-terminalnym-serveram-po-protokolu-x2go.md)
-    * [Настройка подключений к терминальным серверам по протоколу RemoteApp](hostvm-vdi/hostvm-vdi-installation-guide/podklyuchenie-servisov/nastroika-podklyuchenii-k-terminalnym-serveram-po-protokolu-remoteapp.md)
+* [Руководство администратора](hostvm-vdi/hostvm-vdi-admin-guide/README.md)
+  * [Подготовка мастер-образа для публикации](hostvm-vdi/hostvm-vdi-admin-guide/hostvm-vdi-base-image-preparation.md)
+  * [Подключение сервисов](hostvm-vdi/hostvm-vdi-admin-guide/podklyuchenie-servisov/README.md)
+    * [Настройка подключений к терминальным серверам по протоколу x2Go](hostvm-vdi/hostvm-vdi-admin-guide/podklyuchenie-servisov/nastroika-podklyuchenii-k-terminalnym-serveram-po-protokolu-x2go.md)
+    * [Настройка подключений к терминальным серверам по протоколу RemoteApp](hostvm-vdi/hostvm-vdi-admin-guide/podklyuchenie-servisov/nastroika-podklyuchenii-k-terminalnym-serveram-po-protokolu-remoteapp.md)
+  * [Установка и настройка выделенного сервера БД](hostvm-vdi/hostvm-vdi-admin-guide/vdi-db.md)
+* [Руководство пользователя](hostvm-vdi/hostvm-vdi-user-manual.md)
 
 ## HOSTVM SDS
 
