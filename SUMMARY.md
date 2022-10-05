@@ -44,6 +44,7 @@
     * [Настройка подключений к терминальным серверам по протоколу x2Go](hostvm-vdi/hostvm-vdi-admin-guide/podklyuchenie-servisov/nastroika-podklyuchenii-k-terminalnym-serveram-po-protokolu-x2go.md)
     * [Настройка подключений к терминальным серверам по протоколу RemoteApp](hostvm-vdi/hostvm-vdi-admin-guide/podklyuchenie-servisov/nastroika-podklyuchenii-k-terminalnym-serveram-po-protokolu-remoteapp.md)
   * [Установка и настройка выделенного сервера БД](hostvm-vdi/hostvm-vdi-admin-guide/vdi-db.md)
+  * [Настройка репликации БД между серверами](hostvm-vdi/hostvm-vdi-admin-guide/vdi-db-replication.md)
 * [Руководство пользователя](hostvm-vdi/hostvm-vdi-user-manual.md)
 
 ## HOSTVM SDS
