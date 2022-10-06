@@ -4,7 +4,11 @@
 
 Пароль root по умолчанию для новой версии hostvm node: HostvmNode.
 
-Пример адреса: https://192.168.0.5:9090
+Пример адреса: https://192.168.0.5:9090\
+\
+На DNS-сервере должны быть как минимум две записи типа A, содержащие в себе FQDN-имя сервера, а также имя виртуальной машины hosted-engine, которая будет установлена.\
+\
+Если на DNS-сервере отсутствуют записи, то их можно добавить вручную на ноде HOSTVM: [deistviya-pri-ustanovke-hostvm-pri-otsutstvii-zapisei-v-dns.md](../deistviya-pri-ustanovke-hostvm-pri-otsutstvii-zapisei-v-dns.md "mention")
 
 Перейдите на вкладку Терминал и поочередно введите команды:
 

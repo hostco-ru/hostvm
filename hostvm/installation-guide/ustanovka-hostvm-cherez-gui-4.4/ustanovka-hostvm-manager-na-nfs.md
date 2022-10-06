@@ -98,6 +98,10 @@ root@testname1 ~]# mkdir -p /data/nfs/iso-store
 
 ### Установка HOSTVM Manager
 
+На DNS-сервере должны быть как минимум две записи типа A, содержащие в себе FQDN-имя сервера, а также имя виртуальной машины hosted-engine, которая будет установлена.\
+\
+Если на DNS-сервере отсутствуют записи, то их можно добавить вручную на ноде HOSTVM: [deistviya-pri-ustanovke-hostvm-pri-otsutstvii-zapisei-v-dns.md](../deistviya-pri-ustanovke-hostvm-pri-otsutstvii-zapisei-v-dns.md "mention")
+
 Перейдите на вкладку _Apps->Virtualization->Hosted Engine._
 
 Напротив Hosted-engine нажмите кнопку _Start._
