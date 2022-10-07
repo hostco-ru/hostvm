@@ -29,7 +29,7 @@ root@testname1 ~]# ssh-copy-id root@flexnode1
 
 Задаем параметры, как на скриншоте ниже, определяем размер раздела (не меньше 90 GB). Type раздела выбираем No filesystem.
 
-![](<../../../.gitbook/assets/image (2).png>)
+![](<../../../.gitbook/assets/image (2) (2).png>)
 
 Запоминаем, какой раздел был создан, в нашем случае /dev/sda3
 
