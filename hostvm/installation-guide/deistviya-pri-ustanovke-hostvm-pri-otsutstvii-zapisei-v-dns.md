@@ -13,7 +13,7 @@
 \
 и добавьте в конец файла записи вида:
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (54).png" alt=""><figcaption></figcaption></figure>
 
 10.1.99.61 - IP-адрес ноды
 

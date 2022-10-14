@@ -97,17 +97,11 @@ _Выбранный язык не влияет на язык внутри сам
 
 ![](../../../.gitbook/assets/6\_1.png)
 
-ВАЖНО! Далее необходимо задать пароль для пользователя root, если этого не сделать, вход в систему будет невозможен! Для этого необходимо в стартовом меню перейти в _Root Password_:
-
-![](<../../../.gitbook/assets/inst summary\_ready\_red\_arrow.png>)
-
-Введите ваш пароль (рекомендуемый пароль **engine**). Дважды нажмите _Done_.&#x20;
-
-Пароль root по умолчанию для новой версии hostvm node: HostvmNode.
-
-![](../../../.gitbook/assets/root.png)
-
 В стартовом меню нажмите кнопку _Begin Installation_, чтобы начать установку.
+
+**ВАЖНО!: пароль root по умолчанию: HostvmNode**
+
+<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
 Если на этом этапе возникнет ошибка с postinstall скриптом, то это означает, что:
 
