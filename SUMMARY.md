@@ -45,6 +45,8 @@
     * [Настройка подключений к терминальным серверам по протоколу RemoteApp](hostvm-vdi/hostvm-vdi-admin-guide/podklyuchenie-servisov/nastroika-podklyuchenii-k-terminalnym-serveram-po-protokolu-remoteapp.md)
   * [Установка и настройка выделенного сервера БД](hostvm-vdi/hostvm-vdi-admin-guide/vdi-db.md)
   * [Настройка репликации БД между серверами](hostvm-vdi/hostvm-vdi-admin-guide/vdi-db-replication.md)
+  * [Установка HOSTVM  VDI Actor для Astra Linux](hostvm-vdi/hostvm-vdi-admin-guide/ustanovka-hostvm-vdi-actor-dlya-astra-linux.md)
+  * [Ввод Linked Clone в домен при создании для Astra Linux](hostvm-vdi/hostvm-vdi-admin-guide/vvod-linked-clone-v-domen-pri-sozdanii-dlya-astra-linux.md)
 * [Руководство пользователя](hostvm-vdi/hostvm-vdi-user-manual.md)
 
 ## HOSTVM SDS
