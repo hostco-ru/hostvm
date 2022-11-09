@@ -7,7 +7,7 @@
 
 #### **Процесс обновления**
 
-1\) Скачать iso-образ hostvm-node-ng-installer-4.4 из [каталога загрузок](https://reestr.hostco.ru/downloads)
+1\) Скачать iso-образ hostvm-node-ng-installer-4.4 из [Личного кабинета](https://lk.pvhostvm.ru/)
 
 2\) Мигрировать с обновляемого хоста все ВМ на другие хосты кластера
 
@@ -19,13 +19,13 @@
 
 4\) Перезапустить сервер и загрузиться с ISO-образа hostvm-node-ng-installer-4.4&#x20;
 
-5\) Выполнить установку согласно разделу "Процесс установки", на [локальные диски](../ustanovka-hostvm-cherez-cli-4.4-4.3/installation-hostvm-on-local-disks.md#process-ustanovki) либо [СХД](../ustanovka-hostvm-cherez-cli-4.4-4.3/installation-hostvm.md#process-ustanovki) (устанавливать hosted engine не требуется)&#x20;
+5\) Выполнить установку согласно разделу "Процесс установки", на [локальные диски](../ustanovka-hostvm-cherez-cli-4.4-4.3/installation-hostvm-on-local-disks.md#process-ustanovki) либо [СХД](../ustanovka-hostvm-cherez-cli-4.4-4.3/installation-hostvm.md#process-ustanovki) (устанавливать Hosted HOSTVM Manager не требуется)&#x20;
 
 6\) После успешной установки и перезапуска сервера на новой ОС, добавить хост в кластер через портал администрирования, указав hostname/IP-адрес:
 
 `Compute -> Hosts -> New`
 
-> Если требуется что бы хост мог обслуживать ВМ Hosted Engine, при добавлении в кластер также необходимо на вкладке Hosted Engine выбрать из списка Action: Deploy&#x20;
+> Если требуется что бы хост мог обслуживать ВМ Hosted HOSTVM Manager, при добавлении в кластер также необходимо на вкладке Hosted HOSTVM Manager выбрать из списка Action: Deploy&#x20;
 
 7\) Дождаться добавления и активации хоста в кластере&#x20;
 

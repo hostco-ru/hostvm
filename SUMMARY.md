@@ -25,13 +25,13 @@
     * [Предварительная установка драйверов](hostvm/installation-guide/vm-import/drivers-preinstallation.md)
   * [Установка Kaspersky Security для виртуальных сред 5.х](hostvm/installation-guide/installation-ksc.md)
   * [Установка Accord KVM](hostvm/installation-guide/installation-accordkvm.md)
-  * [Обновление на версию 4.4](hostvm/installation-guide/obnovlenie-na-versiyu-4.4/README.md)
-    * [Обновление Hosted Engine](hostvm/installation-guide/obnovlenie-na-versiyu-4.4/obnovlenie-hosted-engine.md)
-    * [Обновление HOSTVM Node](hostvm/installation-guide/obnovlenie-na-versiyu-4.4/obnovlenie-hostvm-node.md)
   * [Обновление на версию 4.4.10](hostvm/installation-guide/obnovlenie-na-versiyu-4.4.10/README.md)
     * [Перечень изменений версии 4.4.10](hostvm/installation-guide/obnovlenie-na-versiyu-4.4.10/perechen-izmenenii-versii-4.4.10.md)
-    * [Обновление Hosted Engine](hostvm/installation-guide/obnovlenie-na-versiyu-4.4.10/obnovlenie-hosted-engine.md)
+    * [Обновление Hosted HOSTVM Manager](hostvm/installation-guide/obnovlenie-na-versiyu-4.4.10/obnovlenie-hosted-hostvm-manager.md)
     * [Обновление HOSTVM Node](hostvm/installation-guide/obnovlenie-na-versiyu-4.4.10/obnovlenie-hostvm-node.md)
+  * [Обновление на версию 4.4](hostvm/installation-guide/obnovlenie-na-versiyu-4.4/README.md)
+    * [Обновление Hosted HOSTVM Manager](hostvm/installation-guide/obnovlenie-na-versiyu-4.4/obnovlenie-hosted-engine.md)
+    * [Обновление HOSTVM Node](hostvm/installation-guide/obnovlenie-na-versiyu-4.4/obnovlenie-hostvm-node.md)
   * [Действия при установке HOSTVM при отсутствии записей в DNS](hostvm/installation-guide/deistviya-pri-ustanovke-hostvm-pri-otsutstvii-zapisei-v-dns.md)
 
 ## HOSTVM VDI

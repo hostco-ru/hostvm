@@ -1,5 +1,5 @@
 # Обновление на версию 4.4
 
-1\) [Обновление ВМ Hosted Engine](obnovlenie-hosted-engine.md)
+1\) [obnovlenie-hosted-engine.md](obnovlenie-hosted-engine.md "mention")
 
-2\) [Обновление хостов](obnovlenie-hostvm-node.md)&#x20;
+2\) [obnovlenie-hostvm-node.md](obnovlenie-hostvm-node.md "mention")
