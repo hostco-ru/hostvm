@@ -84,7 +84,8 @@ sudo apt install -y xscreensaver
 
 **Загрузить пакет udsactor на хост:**
 
-[Согласно документации](https://kb.pvhostvm.ru/hostvm-vdi/hostvm-vdi-admin-guide/hostvm-vdi-base-image-preparation)
+Загрузить актуальный пакет актора с расширением .deb на хост. Пакет доступен для загрузки в веб-интерфейсе брокера HOSTVM VDI из-под учетной записи с правами администратора. \
+Более подробно процесс получения пакета отражен в разделе [VDI Actor](https://kb.pvhostvm.ru/hostvm-vdi/hostvm-vdi-admin-guide/hostvm-vdi-base-image-preparation).
 
 **Установить пакет udsactor на хост:**
 
