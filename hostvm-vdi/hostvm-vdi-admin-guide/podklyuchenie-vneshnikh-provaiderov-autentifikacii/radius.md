@@ -2,7 +2,7 @@
 
 Этот внешний аутентификатор позволяет предоставлять доступ к виртуальным рабочим столам и приложениям пользователям и группам пользователей, принадлежащим к аутентификатору протокола RADIUS.
 
-<figure><img src="../../../.gitbook/assets/1_radius_auth.jpg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/1_radius_new_auth.jpg" alt=""><figcaption></figcaption></figure>
 
 Для работы требуется настройка следующих минимальных параметров «Radius Authenticator»:
 
@@ -44,8 +44,8 @@ _**VDIServer/uds/page/login/label**_
 
 * Display:
 
-Visible: Если отключен, аутентификатор не будет отображён как доступный на портале HOSTVM VDI.
+**Visible:** Если отключен, аутентификатор не будет отображён как доступный на портале HOSTVM VDI.
 
 <figure><img src="../../../.gitbook/assets/4_radius_new_auth.jpg" alt=""><figcaption></figcaption></figure>
 
-Нажав на кнопку «Test», вы можете проверить успешность соединения.
+Нажав на кнопку **«Test»**, вы можете проверить успешность соединения.
