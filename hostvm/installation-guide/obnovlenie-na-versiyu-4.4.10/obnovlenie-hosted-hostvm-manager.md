@@ -51,7 +51,7 @@
 
 > `hosted-engine --vm-shutdown`
 
-12\) Подключиться по SSH к хосту с Hostvm Node 4.4.10, запустить процесс развертывания Hosted Engine 4.4.10, с восстановлением конфигурации из резервной копии:
+12\) Подключиться по SSH к хосту с Hostvm Node 4.4.10, запустить процесс развертывания Hosted HOSTVM Manager 4.4.10, с восстановлением конфигурации из резервной копии:
 
 `hosted-engine --deploy --restore-from-file=backup.bck`
 
