@@ -4,19 +4,19 @@
 
 Создать файл скрипта postconfig.sh с содержанием:
 
-```
+```bash
 sudo astra-ad-sssd-client -d 'нужный_домен' -u 'логин_доменной_уч'  -p 'пароль_доменной_уч' -y ; sudo reboot -h now
 ```
 
 Добавить разрешение на запуск созданному файлу, например:
 
-```
+```bash
 chmod +x /home/astra/postconfig.sh
 ```
 
 В Actor Configuration Tool на вкладке Advanced указать:
 
-```
+```bash
 sh /путь/к_файлу.sh
 ```
 
