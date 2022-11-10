@@ -52,7 +52,8 @@ sudo ln -s /usr/lib/x86_64-linux-gnu/libxcb-util.so.0 /usr/lib/x86_64-linux-gnu/
 
 <summary>Рекомендуемый способ без использования Debian репозиториев</summary>
 
-Загрузить пакеты xscreensaver, xscreensaver-data из [личного кабинета](https://lk.pvhostvm.ru/Download) на виртуальную машину по следующему пути:
+Загрузить пакеты xscreensaver, xscreensaver-data из [личного кабинета](https://lk.pvhostvm.ru/Download) на виртуальную машину.\
+Найти нужные пакеты можно по следующему пути:
 
 `Каталог загрузок/Дистрибутивы/HOSTVM VDI/Actor dependencies/Astra Linux 1.6`
 
