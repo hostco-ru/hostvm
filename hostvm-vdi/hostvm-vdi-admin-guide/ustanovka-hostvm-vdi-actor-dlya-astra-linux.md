@@ -58,13 +58,15 @@ sudo ln -s /usr/lib/x86_64-linux-gnu/libxcb-util.so.0 /usr/lib/x86_64-linux-gnu/
 
 или
 
-`Каталог загрузок/Дистрибутивы/HOSTVM VDI/Actor dependencies/Astra Linux 1.7`, соотвественно.
+`Каталог загрузок/Дистрибутивы/HOSTVM VDI/Actor dependencies/Astra Linux 1.7`, соответственно.
 
 Выдать пользователю \_apt права на загруженные пакеты:
 
 ```bash
 sudo chown _apt xscreensaver_5.*amd64.deb ; sudo chown _apt xscreensaver-data_5*amd64.deb 
 ```
+
+Произвести установку, с удовлетворением зависимостей из репозиториев Astra Linux:
 
 ```bash
 sudo apt install -y ./xscreensaver-data_5*amd64.deb ; sudo apt install -y ./xscreensaver_5*amd64.deb
