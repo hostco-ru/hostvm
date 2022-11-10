@@ -42,6 +42,7 @@
   * [Установка HOSTVM VDI Tunneler](hostvm-vdi/hostvm-vdi-installation-guide/tunneler-appliance-deploy.md)
   * [Настройка USB-загрузчика для клиентских устройств](hostvm-vdi/hostvm-vdi-installation-guide/usb-boot-device-configuration.md)
   * [Обновление компонентов VDI](hostvm-vdi/hostvm-vdi-installation-guide/obnovlenie-komponentov-vdi.md)
+  * [Изменения и исправления](hostvm-vdi/hostvm-vdi-installation-guide/izmeneniya-i-ispravleniya.md)
 * [Руководство администратора](hostvm-vdi/hostvm-vdi-admin-guide/README.md)
   * [Подготовка мастер-образа для публикации](hostvm-vdi/hostvm-vdi-admin-guide/hostvm-vdi-base-image-preparation.md)
   * [Подключение сервисов](hostvm-vdi/hostvm-vdi-admin-guide/podklyuchenie-servisov/README.md)
