@@ -11,7 +11,7 @@ sudo astra-ad-sssd-client -d 'нужный_домен' -u 'логин_домен
 Добавить разрешение на запуск созданному файлу, например:
 
 ```bash
-chmod +x /home/astra/postconfig.sh
+sudo chmod +x /home/astra/postconfig.sh
 ```
 
 В Actor Configuration Tool на вкладке Advanced указать:
