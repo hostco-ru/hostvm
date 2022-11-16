@@ -2,7 +2,7 @@
 
 **Все действия выполняются в ОС золотого образа.**
 
-Создать файл скрипта postconfig.sh с содержанием:
+Создать файл скрипта postinstall.sh с содержанием:
 
 ```bash
 sudo astra-ad-sssd-client -d 'нужный_домен' -u 'логин_доменной_уч'  -p 'пароль_доменной_уч' -y ; sudo reboot -h now
@@ -11,13 +11,13 @@ sudo astra-ad-sssd-client -d 'нужный_домен' -u 'логин_домен
 Добавить разрешение на запуск созданному файлу, например:
 
 ```bash
-sudo chmod +x /home/astra/postconfig.sh
+sudo chmod +x /home/astra/postinstall.sh
 ```
 
 В Actor Configuration Tool на вкладке Advanced указать:
 
 ```bash
-sh /путь/к_файлу.sh
+sh /путь/postinstall.sh
 ```
 
 Например:\
