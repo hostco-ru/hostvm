@@ -8,6 +8,7 @@
   * [О платформе](hostvm/installation-guide/datasheet.md)
   * [Системные требования](hostvm/installation-guide/requirements.md)
   * [Базовые условия для развертывания платформы виртуализации HOSTVM](hostvm/installation-guide/bazovye-usloviya-dlya-razvertyvaniya-platformy-virtualizacii-hostvm.md)
+  * [Видео-инструкции по установке HOSTVM](hostvm/installation-guide/video-instrukcii-po-ustanovke-hostvm.md)
   * [Установка HOSTVM через GUI 4.4](hostvm/installation-guide/ustanovka-hostvm-cherez-gui-4.4/README.md)
     * [Перед установкой](hostvm/installation-guide/ustanovka-hostvm-cherez-gui-4.4/pered-ustanovkoi.md)
     * [Процесс установки](hostvm/installation-guide/ustanovka-hostvm-cherez-gui-4.4/process-ustanovki.md)
