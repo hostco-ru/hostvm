@@ -23,7 +23,7 @@ sh /путь/postinstall.sh
 Например:\
 
 
-<figure><img src="../../../.gitbook/assets/image (75).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (53).png" alt=""><figcaption></figcaption></figure>
 
 Применить новую конфигурацию нажав **Register with UDS**.
 

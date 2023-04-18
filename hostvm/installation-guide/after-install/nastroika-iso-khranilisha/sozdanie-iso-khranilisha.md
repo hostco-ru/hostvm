@@ -6,8 +6,8 @@
 
 <figure><img src="../../../../.gitbook/assets/Screenshot_1.png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/Screenshot_2.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Screenshot_2 (1).png" alt=""><figcaption></figcaption></figure>
 
 Убедитесь, что ISO-домен активен.
 
-<figure><img src="../../../../.gitbook/assets/post-install-iso-stor-3.jpg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/post-install-iso-stor-3 (1).jpg" alt=""><figcaption></figcaption></figure>

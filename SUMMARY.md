@@ -142,6 +142,20 @@
     * [Развертывание ВМ из шаблона](hostvm/rukovodstvo-po-administrirovaniyu/shablony-i-klonirovanie/razvertyvanie-vm-iz-shablona.md)
   * [Снапшоты](hostvm/rukovodstvo-po-administrirovaniyu/snapshoty/README.md)
     * [Создание снапшотов](hostvm/rukovodstvo-po-administrirovaniyu/snapshoty/sozdanie-snapshotov.md)
+    * [Откат изменений](hostvm/rukovodstvo-po-administrirovaniyu/snapshoty/otkat-izmenenii.md)
+    * [Клонирование ВМ из снапшота](hostvm/rukovodstvo-po-administrirovaniyu/snapshoty/klonirovanie-vm-iz-snapshota.md)
+    * [Удаление снапшота](hostvm/rukovodstvo-po-administrirovaniyu/snapshoty/udalenie-snapshota.md)
+  * [Высокая доступность](hostvm/rukovodstvo-po-administrirovaniyu/vysokaya-dostupnost/README.md)
+    * [Требования к платформе](hostvm/rukovodstvo-po-administrirovaniyu/vysokaya-dostupnost/trebovaniya-k-platforme/README.md)
+      * [Общие требования](hostvm/rukovodstvo-po-administrirovaniyu/vysokaya-dostupnost/trebovaniya-k-platforme/obshie-trebovaniya.md)
+      * [Требования к хранилищам данных](hostvm/rukovodstvo-po-administrirovaniyu/vysokaya-dostupnost/trebovaniya-k-platforme/trebovaniya-k-khranilisham-dannykh.md)
+      * [Сетевые требования](hostvm/rukovodstvo-po-administrirovaniyu/vysokaya-dostupnost/trebovaniya-k-platforme/setevye-trebovaniya.md)
+      * [Требования к хостам](hostvm/rukovodstvo-po-administrirovaniyu/vysokaya-dostupnost/trebovaniya-k-platforme/trebovaniya-k-khostam.md)
+    * [Хосты виртуализации](hostvm/rukovodstvo-po-administrirovaniyu/vysokaya-dostupnost/khosty-virtualizacii/README.md)
+      * [Изоляция хостов для обеспечения целостности ВМ](hostvm/rukovodstvo-po-administrirovaniyu/vysokaya-dostupnost/khosty-virtualizacii/izolyaciya-khostov-dlya-obespecheniya-celostnosti-vm.md)
+      * [Настройка агента изоляции хоста](hostvm/rukovodstvo-po-administrirovaniyu/vysokaya-dostupnost/khosty-virtualizacii/nastroika-agenta-izolyacii-khosta.md)
+    * [ВМ](hostvm/rukovodstvo-po-administrirovaniyu/vysokaya-dostupnost/vm.md)
+    * [HOSTVM Manager](hostvm/rukovodstvo-po-administrirovaniyu/vysokaya-dostupnost/hostvm-manager.md)
 
 ## HOSTVM VDI
 

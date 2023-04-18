@@ -13,7 +13,7 @@ coverY: 0
 
 Перейдите на вкладку Terminal
 
-![](<../../../.gitbook/assets/image (56).png>)
+![](<../../../.gitbook/assets/image (38).png>)
 
 ### Настройка NFS-сервера
 
@@ -153,7 +153,7 @@ root@testname1 ~]# mkdir -p /data/nfs/iso-store
 
 Выберете тип хранилища NFS и укажите путь экспорта.
 
-![](<../../../.gitbook/assets/image (67).png>)
+![](<../../../.gitbook/assets/image (39).png>)
 
 Подождите пока hosted-engine расположится в хранилище.
 

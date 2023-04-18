@@ -6,11 +6,11 @@
 
 Domain-ID из примера ниже - `3ac03f75-bb87-4399-ae7e-2a166bdfffe9` , `/путь к папке iso-домена` в предыдущем шаге обозначили как `/nfs/iso-stor` значит iso-образ загрузим в папку `/nfs/iso-stor/3ac03f75-bb87-4399-ae7e-2a166bdfffe9/images/11111111-1111-1111-1111-111111111111/`
 
-<figure><img src="../../../../.gitbook/assets/post-install-iso-upload-1.jpg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/post-install-iso-upload-1 (1).jpg" alt=""><figcaption></figcaption></figure>
 
 Для передачи файла на сервер с рабочего места, где установлена ОС Windows, необходимо использовать утилиту [WinSCP](https://winscp.net), которая доступна [в наборе дистрибутивов для развертывания решения](https://lk.pvhostvm.ru/Download).
 
-<figure><img src="../../../../.gitbook/assets/post-install-iso-upload-2.jpg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/post-install-iso-upload-2 (1).jpg" alt=""><figcaption></figcaption></figure>
 
 После загрузки файлов в указанную папку, необходимо изменить владельца файла.
 

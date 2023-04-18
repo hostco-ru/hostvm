@@ -12,11 +12,11 @@ _Выбранный язык не влияет на язык внутри сам
 
 Скриншоты инструкции выполнены в интерфейсе с английским языком. Нажмите _Continue_.
 
-![](../../../.gitbook/assets/welcome.png)
+![](<../../../.gitbook/assets/welcome (1).png>)
 
 Далее автоматически открывается меню настроек.
 
-![](<../../../.gitbook/assets/image (17).png>)
+![](<../../../.gitbook/assets/image (43).png>)
 
 **ВАЖНО!: пароль root по умолчанию: HostvmNode**
 
@@ -103,11 +103,11 @@ _Выбранный язык не влияет на язык внутри сам
 
 **ВАЖНО!: пароль root по умолчанию: HostvmNode**
 
-<figure><img src="../../../.gitbook/assets/image (85).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Если на этом этапе возникнет ошибка с postinstall скриптом, то это означает, что:
 
-![](<../../../.gitbook/assets/image (19).png>)
+![](<../../../.gitbook/assets/image (33) (1).png>)
 
 1\) Сервер не имеет доступа в интернет и не смог скачать установочные скрипты из репозитория
 
