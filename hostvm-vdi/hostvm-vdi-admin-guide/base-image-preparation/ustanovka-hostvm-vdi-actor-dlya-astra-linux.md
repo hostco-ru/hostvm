@@ -1,4 +1,4 @@
-# Установка HOSTVM  VDI Actor для Astra Linux
+# Установка HOSTVM VDI Actor для Astra Linux
 
 
 
@@ -7,6 +7,16 @@
 ```bash
 echo 'deb http://download.astralinux.ru/astra/stable/1.7_x86-64/repository-base/ 1.7_x86-64 main contrib non-free' | sudo tee -a /etc/apt/sources.list
 ```
+
+<details>
+
+<summary>Альтернативный репозиторий</summary>
+
+```bash
+echo 'deb http://dl.astralinux.ru/astra/stable/1.7_x86-64/repository-base/ 1.7_x86-64 main contrib non-free' | sudo tee -a /etc/apt/sources.li
+```
+
+</details>
 
 **Настройка виртуального окружения:**
 

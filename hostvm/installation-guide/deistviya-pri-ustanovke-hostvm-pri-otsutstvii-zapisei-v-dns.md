@@ -4,7 +4,7 @@
 
 Перейдите на вкладку Terminal
 
-![](<../../.gitbook/assets/image (38).png>)
+![](<../../.gitbook/assets/image (56).png>)
 
 Откройте файл /etc/hosts:
 
@@ -13,7 +13,7 @@
 \
 и добавьте в конец файла записи вида:
 
-<figure><img src="../../.gitbook/assets/image (54).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (72).png" alt=""><figcaption></figcaption></figure>
 
 10.1.99.61 - IP-адрес ноды
 

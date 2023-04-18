@@ -12,4 +12,4 @@
 
 Количество хостов и ВМ отображаются в строке кластера в соответствующих колонках Host Count и VM Count в разделе портала Compute->Clusters.
 
-<figure><img src="../../../../.gitbook/assets/16.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Кластеры.png" alt=""><figcaption></figcaption></figure>

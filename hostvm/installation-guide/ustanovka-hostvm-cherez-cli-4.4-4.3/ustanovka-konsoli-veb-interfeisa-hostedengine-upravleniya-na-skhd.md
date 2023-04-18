@@ -204,6 +204,17 @@ localhost                  : ok=9    changed=2    unreachable=0    failed=0    s
 
 После завершения развертывания виртуализации откройте браузер и перейдите по адресу, который вы указали в пункте скрипта "DNS имя для oVirt Engine", чтобы попасть в панель управления.
 
+**Примечание:** для HOSTVM Manager версии 4.3 необходимо дополнительно доустановить набор брендирования и локализации HOSTVM.
+
+1. Загрузите архив HOSTVM-localocalization-branding.zip из каталога загрузок HOSTVM.
+2. Подключитесь к виртуальной машине Engine и загрузите на неё архив в любое удобное расположение.
+3. Распакуйте архив, перейдите в папку hostvm-localocalization-branding/branding/, и запустите файл makeHostvmBranding.sh:
+
+```
+cd hostvm-localocalization-branding/branding/
+sh makeHostvmBranding.sh
+```
+
 ## Если что-то пошло не так
 
 1. Проверить корректность данных, которые были введены в IP-wizard. При обнаружении ошибки выполните команду `ansible-playbook /etc/ansible/clean-node.yml` и начните сначала.

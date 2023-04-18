@@ -8,9 +8,16 @@
 
 Пример использования утилиты, для конвертации и загрузки в Export домен HOSTVM:
 
-```bash
-virt-v2v -i ova /path/to/vm.ova -o rhv -of qcow2 -os /path/to/export_domain
-```
+поместите Virtual Appliance на хост виртуализации и выполните команду
+
+<pre class="language-bash"><code class="lang-bash"><strong>LIBGUESTFS_BACKEND=direct virt-v2v -i ova /path/to/vm.ova -o rhv -of qcow2 -os /path/to/export_domain
+</strong></code></pre>
+
+где:
+
+/path/to/vm.ova - полный путь к файлу Virtual Appliance
+
+/path/to/export\_domain - путь к экспорт-домену HOSTVM, в виде server:/path/to/esd
 
 [Полное описание и перечень опций](https://libguestfs.org/virt-v2v.1.html)
 

@@ -5,7 +5,7 @@
 Создать файл скрипта postinstall.sh с содержанием:
 
 ```bash
-sudo astra-ad-sssd-client -d 'нужный_домен' -u 'логин_доменной_уч'  -p 'пароль_доменной_уч' -y ; sudo reboot -h now
+sudo astra-ad-sssd-client -d 'нужный_домен' -u 'логин_доменной_уч'  -p 'пароль_доменной_уч' -y; sudo rm -f /путь/postinstall.sh; sudo reboot
 ```
 
 Добавить разрешение на запуск созданному файлу, например:
@@ -23,7 +23,7 @@ sh /путь/postinstall.sh
 Например:\
 
 
-<figure><img src="../../../.gitbook/assets/image (53).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (75).png" alt=""><figcaption></figcaption></figure>
 
 Применить новую конфигурацию нажав **Register with UDS**.
 
