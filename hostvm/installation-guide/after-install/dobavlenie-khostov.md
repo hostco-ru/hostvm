@@ -58,7 +58,7 @@ rtt min/avg/max/mdev = 0.200/0.224/0.250/0.025 ms
 
 Откройте панель управления, перейдите в `Compute -> Hosts`, нажмите кнопку `New`
 
-<figure><img src="../../../.gitbook/assets/Screenshot_4 (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Screenshot_4 (4).png" alt=""><figcaption></figcaption></figure>
 
 В открывшемся окне заполните поля `Name`, `Hostname`(достаточно указать ip-адрес), `Password` от учетной записи root.&#x20;
 
@@ -66,17 +66,17 @@ rtt min/avg/max/mdev = 0.200/0.224/0.250/0.025 ms
 
 Чтобы добавить возможность запуска виртуальной машины Hosted engine, при добавлении хоста на вкладке Hosted Engine выберите Deploy из выпадающего списка:
 
-<figure><img src="../../../.gitbook/assets/he-deploy.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/he-deploy (1).png" alt=""><figcaption></figcaption></figure>
 
 Для обеспечения высокой доступности рекомендуется иметь хотя бы 2 таких хоста. Обычный хост виртуализации не имеет возможности запускать виртуальную машину Hosted engine.
 
 После завершения установки, оба хоста будут доступны для работы:
 
-<figure><img src="../../../.gitbook/assets/post-install-host-3.jpg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/post-install-host-3 (1).jpg" alt=""><figcaption></figcaption></figure>
 
 Если же на этом этапе возникла ошибка, то необходимо зайти в параметры хоста, нажав на его имя, перейти в вкладку Events и посмотреть, на каком этапе прервалась установка ПО виртуализации на хост.
 
-<figure><img src="../../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
 Также, более подробно причину ошибки можно рассмотреть в логах хоста по пути /var/log/ovirt-hosted-engine-setup с актуальным временем создания.
 

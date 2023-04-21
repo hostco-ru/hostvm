@@ -35,4 +35,4 @@ drwxr-xr-x. 3 vdsm kvm       50 Oct 28 19:18 ..
 
 Перейдите в панель управления и убедитесь, то ISO-образ доступен.
 
-<figure><img src="../../../../.gitbook/assets/post-install-iso-upload-3.jpg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/post-install-iso-upload-3 (1).jpg" alt=""><figcaption></figcaption></figure>

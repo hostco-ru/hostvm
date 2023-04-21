@@ -29,7 +29,7 @@ _Загрузить его можно, перейдя на соответств�
 \
 
 
-<figure><img src="../.gitbook/assets/image (4).png" alt=""><figcaption><p>карт</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (56).png" alt=""><figcaption><p>карт</p></figcaption></figure>
 
 **Рис.1 Раздел UDS Client**
 
@@ -38,13 +38,13 @@ _Загрузить его можно, перейдя на соответств�
 Для входа в систему выполните следующие шаги: 1. Откройте в браузере адрес VDI-портала; 2. В открывшуюся форму введите логин, пароль и предоставленный аутентификатор.\
 
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption><p>карт</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (57).png" alt=""><figcaption><p>карт</p></figcaption></figure>
 
 **Рис.2 Форма для авторизации**
 
 1.  Выберите нужный сервис и нажмите на иконку для открытия сессии.
 
-    <figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 **Рис.3 Перечень сервисов**
 
