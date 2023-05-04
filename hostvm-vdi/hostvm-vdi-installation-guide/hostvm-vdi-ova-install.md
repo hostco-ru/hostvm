@@ -101,3 +101,15 @@ reboot
 * Для перехода к администрированию системы выберите в меню пользователя пункт «Dashboard» ("Панель управления").
 * Перейдите в раздел `Инструменты - Конфигурация - Security`, задайте новый пароль встроенной административной учетной записи в параметре `rootPass`, нажмите "Сохранить".
 * Выполните настройку системы согласно [руководству администратора](../hostvm-vdi-admin-guide/).
+
+**Известные ошибки при импорте**
+
+Если при попытке подключения консолью появляется сообщение "Connected to graphic server":
+
+<figure><img src="../../.gitbook/assets/photo_2023-04-26_17-00-54.jpg" alt=""><figcaption><p>Ошибка "Connected to graphic server"</p></figcaption></figure>
+
+в качестве решения необходимо проверить значение свойства Chipset/Firmware Type.\
+(Compute -> Virtual Machines -> Выбрать нужную ВМ -> Edit -> System). \
+Если значение отлично от "Q35 Chipset with BIOS", необходимо привести его к этому состоянию:
+
+<figure><img src="../../.gitbook/assets/example.jpg" alt=""><figcaption><p>Q35 Chipset with BIOS</p></figcaption></figure>

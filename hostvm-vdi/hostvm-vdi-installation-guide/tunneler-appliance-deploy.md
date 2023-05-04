@@ -186,3 +186,16 @@ root@hostvm-gw35:~#
 При настройке туннелированных подключений (транспортов) в панели управления брокера HOSTVM VDI, в качестве параметра tunnel server на вкладке Tunnel настроек транспорта указывайте адрес настроенной ВМ туннелера в формате `адрес:порт`, где адрес - IP или FQDN туннелера, порт - порт подключения, по умолчанию 443.
 
 ![](<../../.gitbook/assets/image (46).png>)
+
+**Известные ошибки при импорте**
+
+Если при попытке подключения консолью появляется сообщение "Connected to graphic server":
+
+<figure><img src="../../.gitbook/assets/photo_2023-04-26_17-00-54.jpg" alt=""><figcaption><p>Ошибка "Connected to graphic server"</p></figcaption></figure>
+
+в качестве решения необходимо проверить значение свойства Chipset/Firmware Type.\
+(Compute -> Virtual Machines -> Выбрать нужную ВМ -> Edit -> System). \
+Если значение отлично от "Q35 Chipset with BIOS", необходимо привести его к этому состоянию:\
+
+
+<figure><img src="../../.gitbook/assets/example.jpg" alt=""><figcaption><p>Q35 Chipset with BIOS</p></figcaption></figure>
