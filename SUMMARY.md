@@ -156,6 +156,7 @@
       * [Настройка агента изоляции хоста](hostvm/rukovodstvo-po-administrirovaniyu/vysokaya-dostupnost/khosty-virtualizacii/nastroika-agenta-izolyacii-khosta.md)
     * [ВМ](hostvm/rukovodstvo-po-administrirovaniyu/vysokaya-dostupnost/vm.md)
     * [HOSTVM Manager](hostvm/rukovodstvo-po-administrirovaniyu/vysokaya-dostupnost/hostvm-manager.md)
+  * [Часто задаваемые вопросы](hostvm/rukovodstvo-po-administrirovaniyu/chasto-zadavaemye-voprosy.md)
 
 ## HOSTVM VDI
 

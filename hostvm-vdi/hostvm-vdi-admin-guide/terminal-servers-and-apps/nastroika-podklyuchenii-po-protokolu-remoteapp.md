@@ -39,7 +39,7 @@
 
 * пользовательские параметры (Custom parameters) – параметр Alias (псевдоним) свойств опубликованного приложения в формате: /app:"||алиас приложения". Данный параметр необходимо указывать для корректной работы транспорта при использовании rdp-клиента xfreerdp.
 
-<figure><img src="../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (2).png" alt=""><figcaption></figcaption></figure>
 
 ![](../../../.gitbook/assets/vdi\_rds\_4.jpg)
 
