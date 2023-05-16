@@ -168,7 +168,6 @@
   * [Установка и настройка балансировщика HAProxy](hostvm-vdi/hostvm-vdi-installation-guide/haproxy.md)
   * [Обновление компонентов VDI](hostvm-vdi/hostvm-vdi-installation-guide/obnovlenie-komponentov-vdi.md)
   * [Обновление конфигурации из двух экземпляров брокера VDI со встроенной БД (с репликацией)](hostvm-vdi/hostvm-vdi-installation-guide/obnovlenie-konfiguracii-iz-dvukh-ekzemplyarov-brokera-vdi-so-vstroennoi-bd-s-replikaciei.md)
-  * [Восстановление работы HOSTVM VDI в случае сбоя](hostvm-vdi/hostvm-vdi-installation-guide/vosstanovlenie-raboty-hostvm-vdi-v-sluchae-sboya.md)
   * [Изменения и исправления](hostvm-vdi/hostvm-vdi-installation-guide/changelog.md)
 * [Руководство администратора](hostvm-vdi/hostvm-vdi-admin-guide/README.md)
   * [Подготовка  базового образа для публикации](hostvm-vdi/hostvm-vdi-admin-guide/base-image-preparation/README.md)
@@ -186,6 +185,7 @@
     * [Настройка подключений по протоколу x2Go](hostvm-vdi/hostvm-vdi-admin-guide/terminal-servers-and-apps/nastroika-podklyuchenii-po-protokolu-x2go.md)
     * [Настройка подключений по протоколу RemoteApp](hostvm-vdi/hostvm-vdi-admin-guide/terminal-servers-and-apps/nastroika-podklyuchenii-po-protokolu-remoteapp.md)
   * [Настройка репликации БД между серверами](hostvm-vdi/hostvm-vdi-admin-guide/vdi-db-replication.md)
+  * [Восстановление работы HOSTVM VDI в случае сбоя](hostvm-vdi/hostvm-vdi-admin-guide/vosstanovlenie-raboty-hostvm-vdi-v-sluchae-sboya.md)
 * [Руководство пользователя](hostvm-vdi/hostvm-vdi-user-manual.md)
 
 ## HOSTVM SDS
