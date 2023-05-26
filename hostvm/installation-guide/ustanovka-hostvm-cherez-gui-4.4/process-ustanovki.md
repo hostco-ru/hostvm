@@ -103,7 +103,7 @@ _Выбранный язык не влияет на язык внутри сам
 
 **ВАЖНО!: пароль root по умолчанию: HostvmNode**
 
-<figure><img src="../../../.gitbook/assets/image (1) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 Если на этом этапе возникнет ошибка с postinstall скриптом, то это означает, что:
 
