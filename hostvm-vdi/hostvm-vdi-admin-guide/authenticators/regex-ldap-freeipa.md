@@ -2,7 +2,7 @@
 
 Этот внешний аутентификатор позволяет пользователям и группам пользователей, принадлежащим к большинству LDAP-based аутентификаторов, получать доступ к виртуальным рабочим столам или приложениям.
 
-<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -58,6 +58,6 @@
 
 * Вкладка «Экран/Дисплей» (Опционально)&#x20;
 
-<figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (3).png" alt=""><figcaption></figcaption></figure>
 
 Видимый (Visible) - Если этот параметр отключен, аутентификатор не будет отображаться как доступный на странице портала HOSTVM VDI;
