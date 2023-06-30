@@ -193,6 +193,7 @@
     * [Настройка подключений по протоколу RemoteApp](hostvm-vdi/hostvm-vdi-admin-guide/terminal-servers-and-apps/nastroika-podklyuchenii-po-protokolu-remoteapp.md)
   * [Настройка репликации БД между серверами](hostvm-vdi/hostvm-vdi-admin-guide/vdi-db-replication.md)
   * [Восстановление работы HOSTVM VDI в случае сбоя](hostvm-vdi/hostvm-vdi-admin-guide/vosstanovlenie-raboty-hostvm-vdi-v-sluchae-sboya.md)
+  * [Часто задаваемые вопросы](hostvm-vdi/hostvm-vdi-admin-guide/chasto-zadavaemye-voprosy.md)
 * [Руководство пользователя](hostvm-vdi/hostvm-vdi-user-manual.md)
 
 ## HOSTVM SDS
