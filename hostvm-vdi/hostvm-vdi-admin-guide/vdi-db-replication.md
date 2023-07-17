@@ -2,6 +2,8 @@
 
 Данное руководство описывает процесс создания отказоустойчивой конфигурации из двух экземпляров брокера VDI и встроенной БД с репликацией master - slave. Его можно использовать как для развертывания новой установки, так и для подключения второго сервера к уже имеющейся.
 
+Данная инструкция подходит как для репликации БД в appliance брокера, так и внешней БД, подключенной к нему.
+
 ## Настройка первого сервера (Master)
 
 Перед настройкой реплики остановить сервисы брокера:
@@ -10,7 +12,7 @@
 systemctl stop apache2 uds
 ```
 
-Отредактировать `/etc/mysql/mariadb.conf.d/50-server.cnf`
+На сервере master БД отредактировать `/etc/mysql/mariadb.conf.d/50-server.cnf`
 
 В параметре `bind-address` указать IP адрес первого брокера:
 
@@ -25,7 +27,7 @@ server-id = 1
 log_bin = /var/log/mysql/mysql-bin.log
 ```
 
-Перезапустить сервис:
+Перезапустить сервис на сервере БД:
 
 ```bash
 systemctl restart mariadb
@@ -48,7 +50,7 @@ UPDATE mysql.user SET Host='%' WHERE Host='localhost' AND User='udsdbadm';
 FLUSH PRIVILEGES;
 ```
 
-Создать резервную копию БД:
+Создать резервную копию БД **(обязательно!**):
 
 ```bash
 mysqldump -u root --single-transaction --master-data udsdb > backup.sql
@@ -64,7 +66,7 @@ systemctl start apache2 uds
 
 ### Подключение брокера к БД master сервера
 
-Остановить сервисы брокера
+Остановить сервисы брокера:
 
 ```bash
 systemctl stop apache2 uds
@@ -88,7 +90,7 @@ systemctl start apache2 uds
 
 ### Настройка репликации
 
-Отредактировать `/etc/mysql/mariadb.conf.d/50-server.cnf`
+На сервере slave БД отредактировать `/etc/mysql/mariadb.conf.d/50-server.cnf`
 
 В параметре `bind-address` указать IP адрес второго брокера
 
@@ -103,11 +105,11 @@ server-id = 2
 log_bin /var/log/mysql/mysql-bin.log
 ```
 
-Перезапустить сервис
+Перезапустить сервис на сервере slave БД
 
 `systemctl restart mariadb`
 
-Скопировать на сервер и развернуть дамп базы с первого сервера.
+Скопировать на сервер и развернуть дамп базы с первого сервера **(обязательно!)**.
 
 ```bash
 cat backup.sql | /usr/bin/mysql -u root udsdb
