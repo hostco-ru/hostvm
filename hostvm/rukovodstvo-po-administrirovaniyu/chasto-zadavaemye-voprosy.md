@@ -1,11 +1,11 @@
 # Часто задаваемые вопросы
 
-{% content-ref url="chasto-zadavaemye-voprosy/ustanovka-obrazov-hostvm-na-udalennye-server.md" %}
-[ustanovka-obrazov-hostvm-na-udalennye-server.md](chasto-zadavaemye-voprosy/ustanovka-obrazov-hostvm-na-udalennye-server.md)
+{% content-ref url="chasto-zadavaemye-voprosy/ustanovka-obrazov-hostvm-na-udalennyi-server.md" %}
+[ustanovka-obrazov-hostvm-na-udalennyi-server.md](chasto-zadavaemye-voprosy/ustanovka-obrazov-hostvm-na-udalennyi-server.md)
 {% endcontent-ref %}
 
-{% content-ref url="chasto-zadavaemye-voprosy/kak-ustranit-zavisshie-zadaniya-vm-diski-i-shablony.md" %}
-[kak-ustranit-zavisshie-zadaniya-vm-diski-i-shablony.md](chasto-zadavaemye-voprosy/kak-ustranit-zavisshie-zadaniya-vm-diski-i-shablony.md)
+{% content-ref url="chasto-zadavaemye-voprosy/kak-ustranit-zavisshie-zadaniya-vm-diski-i-prochee.md" %}
+[kak-ustranit-zavisshie-zadaniya-vm-diski-i-prochee.md](chasto-zadavaemye-voprosy/kak-ustranit-zavisshie-zadaniya-vm-diski-i-prochee.md)
 {% endcontent-ref %}
 
 {% content-ref url="chasto-zadavaemye-voprosy/podklyuchenie-shared-diskov.md" %}
