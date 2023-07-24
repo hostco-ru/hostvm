@@ -156,7 +156,13 @@
       * [Настройка агента изоляции хоста](hostvm/rukovodstvo-po-administrirovaniyu/vysokaya-dostupnost/khosty-virtualizacii/nastroika-agenta-izolyacii-khosta.md)
     * [ВМ](hostvm/rukovodstvo-po-administrirovaniyu/vysokaya-dostupnost/vm.md)
     * [HOSTVM Manager](hostvm/rukovodstvo-po-administrirovaniyu/vysokaya-dostupnost/hostvm-manager.md)
-  * [Часто задаваемые вопросы](hostvm/rukovodstvo-po-administrirovaniyu/chasto-zadavaemye-voprosy.md)
+  * [Часто задаваемые вопросы](hostvm/rukovodstvo-po-administrirovaniyu/chasto-zadavaemye-voprosy/README.md)
+    * [Установка образов HOSTVM на удаленные сервер](hostvm/rukovodstvo-po-administrirovaniyu/chasto-zadavaemye-voprosy/ustanovka-obrazov-hostvm-na-udalennye-server.md)
+    * [Как устранить зависшие задания, ВМ, диски и прочее?](hostvm/rukovodstvo-po-administrirovaniyu/chasto-zadavaemye-voprosy/kak-ustranit-zavisshie-zadaniya-vm-diski-i-prochee.md)
+    * [Подключение shared-дисков](hostvm/rukovodstvo-po-administrirovaniyu/chasto-zadavaemye-voprosy/podklyuchenie-shared-diskov.md)
+    * [Как удалить NonResponsive-хост из кластера?](hostvm/rukovodstvo-po-administrirovaniyu/chasto-zadavaemye-voprosy/kak-udalit-nonresponsive-khost-iz-klastera.md)
+    * [Как исправить ошибку: "The 'value' parameter must be a string"?](hostvm/rukovodstvo-po-administrirovaniyu/chasto-zadavaemye-voprosy/kak-ispravit-oshibku-the-value-parameter-must-be-a-string.md)
+    * [Как выбрать новый Master Storage Domain?](hostvm/rukovodstvo-po-administrirovaniyu/chasto-zadavaemye-voprosy/kak-vybrat-novyi-master-storage-domain.md)
 
 ## HOSTVM VDI
 
