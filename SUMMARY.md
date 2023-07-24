@@ -156,7 +156,7 @@
       * [Настройка агента изоляции хоста](hostvm/rukovodstvo-po-administrirovaniyu/vysokaya-dostupnost/khosty-virtualizacii/nastroika-agenta-izolyacii-khosta.md)
     * [ВМ](hostvm/rukovodstvo-po-administrirovaniyu/vysokaya-dostupnost/vm.md)
     * [HOSTVM Manager](hostvm/rukovodstvo-po-administrirovaniyu/vysokaya-dostupnost/hostvm-manager.md)
-  * [Часто задаваемые вопросы](hostvm/rukovodstvo-po-administrirovaniyu/chasto-zadavaemye-voprosy/README.md)
+  * [Часто задаваемые вопросы](hostvm/rukovodstvo-po-administrirovaniyu/chasto-zadavaemye-voprosy.md)
     * [Установка образов HOSTVM на удаленные сервер](hostvm/rukovodstvo-po-administrirovaniyu/chasto-zadavaemye-voprosy/ustanovka-obrazov-hostvm-na-udalennye-server.md)
     * [Как устранить зависшие задания, ВМ, диски и прочее?](hostvm/rukovodstvo-po-administrirovaniyu/chasto-zadavaemye-voprosy/kak-ustranit-zavisshie-zadaniya-vm-diski-i-prochee.md)
     * [Подключение shared-дисков](hostvm/rukovodstvo-po-administrirovaniyu/chasto-zadavaemye-voprosy/podklyuchenie-shared-diskov.md)
