@@ -163,6 +163,7 @@
     * [Как удалить NonResponsive-хост из кластера?](hostvm/rukovodstvo-po-administrirovaniyu/chasto-zadavaemye-voprosy/kak-udalit-nonresponsive-khost-iz-klastera.md)
     * [Как исправить ошибку: "The 'value' parameter must be a string"?](hostvm/rukovodstvo-po-administrirovaniyu/chasto-zadavaemye-voprosy/kak-ispravit-oshibku-the-value-parameter-must-be-a-string.md)
     * [Как выбрать новый Master Storage Domain?](hostvm/rukovodstvo-po-administrirovaniyu/chasto-zadavaemye-voprosy/kak-vybrat-novyi-master-storage-domain.md)
+    * [Как перегенерировать SSL-сертификаты на Hosted Engine и хостах?](hostvm/rukovodstvo-po-administrirovaniyu/chasto-zadavaemye-voprosy/kak-peregenerirovat-ssl-sertifikaty-na-hosted-engine-i-khostakh.md)
 
 ## HOSTVM VDI
 
