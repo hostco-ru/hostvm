@@ -23,3 +23,11 @@
 {% content-ref url="chasto-zadavaemye-voprosy/kak-vybrat-novyi-master-storage-domain.md" %}
 [kak-vybrat-novyi-master-storage-domain.md](chasto-zadavaemye-voprosy/kak-vybrat-novyi-master-storage-domain.md)
 {% endcontent-ref %}
+
+{% content-ref url="chasto-zadavaemye-voprosy/kak-peregenerirovat-ssl-sertifikaty-na-hosted-engine-i-khostakh.md" %}
+[kak-peregenerirovat-ssl-sertifikaty-na-hosted-engine-i-khostakh.md](chasto-zadavaemye-voprosy/kak-peregenerirovat-ssl-sertifikaty-na-hosted-engine-i-khostakh.md)
+{% endcontent-ref %}
+
+{% content-ref url="chasto-zadavaemye-voprosy/informaciya-o-sovmestimosti-hostvm-s-iscsi.md" %}
+[informaciya-o-sovmestimosti-hostvm-s-iscsi.md](chasto-zadavaemye-voprosy/informaciya-o-sovmestimosti-hostvm-s-iscsi.md)
+{% endcontent-ref %}

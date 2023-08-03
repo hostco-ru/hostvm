@@ -164,6 +164,7 @@
     * [Как исправить ошибку: "The 'value' parameter must be a string"?](hostvm/rukovodstvo-po-administrirovaniyu/chasto-zadavaemye-voprosy/kak-ispravit-oshibku-the-value-parameter-must-be-a-string.md)
     * [Как выбрать новый Master Storage Domain?](hostvm/rukovodstvo-po-administrirovaniyu/chasto-zadavaemye-voprosy/kak-vybrat-novyi-master-storage-domain.md)
     * [Как перегенерировать SSL-сертификаты на Hosted Engine и хостах?](hostvm/rukovodstvo-po-administrirovaniyu/chasto-zadavaemye-voprosy/kak-peregenerirovat-ssl-sertifikaty-na-hosted-engine-i-khostakh.md)
+    * [Информация о совместимости HOSTVM с iSCSI](hostvm/rukovodstvo-po-administrirovaniyu/chasto-zadavaemye-voprosy/informaciya-o-sovmestimosti-hostvm-s-iscsi.md)
 
 ## HOSTVM VDI
 
