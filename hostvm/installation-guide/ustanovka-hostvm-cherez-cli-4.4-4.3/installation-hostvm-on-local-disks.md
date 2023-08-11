@@ -209,18 +209,7 @@ curl -I www.system-admins.ru
 
 Перед началом работы рекомендуется заполнить последний столбец следующей таблицы (_способ сбора данных для таблице описан ниже по тексту)_:
 
-| Название                               | Как узнать | Значение |
-| -------------------------------------- | :--------: | :------: |
-| ip для engine                          |      -     |          |
-| ip сервера                             |   ip addr  |          |
-| ip шлюза по умолчанию                  |  ip route  |          |
-| ip dns-сервера                         |      -     |          |
-| домен установки                        |      -     |          |
-| hostname сервера                       |      -     |          |
-| название интерфейса                    |   ip addr  |          |
-| предпочтительный gluster-hostname      |      -     |          |
-| предпочтительное название тома gluster |      -     |          |
-| директорию для размещения тома gluster |      -     |          |
+<table data-header-hidden><thead><tr><th width="262.3333333333333">Название</th><th align="center">Как узнать</th><th align="center">Значение</th></tr></thead><tbody><tr><td>Название</td><td align="center">Как узнать</td><td align="center">Значение</td></tr><tr><td>ip для engine</td><td align="center">-</td><td align="center"></td></tr><tr><td>ip сервера</td><td align="center">ip addr</td><td align="center"></td></tr><tr><td>ip шлюза по умолчанию</td><td align="center">ip route</td><td align="center"></td></tr><tr><td>ip dns-сервера</td><td align="center">-</td><td align="center"></td></tr><tr><td>домен установки</td><td align="center">-</td><td align="center"></td></tr><tr><td>hostname сервера</td><td align="center">-</td><td align="center"></td></tr><tr><td>название интерфейса</td><td align="center">ip addr</td><td align="center"></td></tr><tr><td>предпочтительный gluster-hostname</td><td align="center">-</td><td align="center"></td></tr><tr><td>предпочтительное название тома gluster</td><td align="center">-</td><td align="center"></td></tr><tr><td>директорию для размещения тома gluster</td><td align="center">-</td><td align="center"></td></tr></tbody></table>
 
 Для получения ip-адреса сервера и название интерфейса выполните команду `ip addr` :
 
