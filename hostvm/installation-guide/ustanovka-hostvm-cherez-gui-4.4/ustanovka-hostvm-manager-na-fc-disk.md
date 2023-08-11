@@ -85,18 +85,10 @@
 
 ## Если что-то пошло не так
 
-1. Проверить корректность данных, которые были введены в IP-wizard. При обнаружении ошибки выполните команду `ansible-playbook /etc/ansible/clean-node.yml` и начните сначала.
-2. Если на этапе `/root/script-hosted-engine-deploy | tee -a /root/script-hosted-engine-deploy.log` появилась ошибка, то выполните команду `ansible-playbook /etc/ansible/clean-node.yml` и начните сначала
-3. Если на этапе `ansible-playbook /etc/ansible/make-prepare.yml` появилась ошибка, повторите выполнение данной команды
-4. Если на этапе `ansible-playbook /etc/ansible/make-gluster-storages.yml` появилась ошибка, повторите выполнение данной команды
-5. Если на этапе `ansible-playbook /etc/ansible/make-ovirt.yml` появилась ошибка, повторите выполнение данной команды
-6. Если после завершения установки вам не открывается страница в браузере с адресом [https://engine.mydomain.ru](https://engine.mydomain.ru), то
-   1. Проверьте, что ip для engine, указанный в таблице в начале установки отвечает на команду ping
-   2. Проверьте, что имя `engine.mydomain.ru` разрешается вашим dns-сервером.
-7. Если на этапе установки engine `/root/script-hosted-engine-deploy | tee -a /root/script-hosted-engine-deploy.log` установка зависает на этапе `Engine VM domain: [rtc.local]rtc.local Enter root password that will be used for the engine appliance: engine`, то подключитесь к консоли сервера не по SSH, а с помощью ipmi(iLO, iDRAC, etc.) и повторно запустите скрипт установки engine.
+1. Проверьте корректность вводимых данных в сценарии развёртывания. При обнаружении ошибок выполните команду `/usr/sbin/ovirt-hosted-engine-cleanup`, очистите хранилище и начните сначала.
+2. Если после завершения установки не открывается страница в браузере с адресом `https://engine.mydomain.ru`, то
 
-Схема установки hostvm и самостоятельного решения проблем представлена на рисунке ниже:
+* проверьте, что Ip для управляющей машины, указанный в таблице в начале установки, отвечает на команду `ping`;
+* проверьте, что имя engine.mydomain.ru разрешается вашим dns-сервером.
 
-![](../../../.gitbook/assets/troubleshooting-scheme.jpg)
-
-Если устранить проблему не удалось, обратитесь в [техническую поддержку](https://lk.pvhostvm.ru/) используя [инструкцию](https://lk.pvhostvm.ru/) К обращению приложите лог вывода вашей консоли, который был настроен в начале установки и файл `/root/script-hosted-engine-deploy.log`.
+Если устранить проблему не удалось, обратитесь в [техническую поддержку](https://lk.pvhostvm.ru/) используя [инструкцию](https://lk.pvhostvm.ru/) К обращению приложите логи установки, которые находятся в директории `/var/log/ovirt-hosted-engine-setup`.
