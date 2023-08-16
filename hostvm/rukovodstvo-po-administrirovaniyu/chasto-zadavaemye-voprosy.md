@@ -31,3 +31,7 @@
 {% content-ref url="chasto-zadavaemye-voprosy/informaciya-o-sovmestimosti-hostvm-s-iscsi.md" %}
 [informaciya-o-sovmestimosti-hostvm-s-iscsi.md](chasto-zadavaemye-voprosy/informaciya-o-sovmestimosti-hostvm-s-iscsi.md)
 {% endcontent-ref %}
+
+{% content-ref url="chasto-zadavaemye-voprosy/vklyuchenie-promiscuous-mode-dlya-seti-gipervizora-dlya-vlozhennoi-virtualizacii.md" %}
+[vklyuchenie-promiscuous-mode-dlya-seti-gipervizora-dlya-vlozhennoi-virtualizacii.md](chasto-zadavaemye-voprosy/vklyuchenie-promiscuous-mode-dlya-seti-gipervizora-dlya-vlozhennoi-virtualizacii.md)
+{% endcontent-ref %}

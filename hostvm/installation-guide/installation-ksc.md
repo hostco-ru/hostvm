@@ -156,3 +156,9 @@ timedatectl set-timezone Asia/Yekaterinburg
 10. Внесите имя машины в DNS либо в локальный файл `/etc/hosts` на SVM (т.к. имя машины KSC должно разрешаться в IP-адрес при обращении к нему с SVM);
 11. Отключите брандмауэр на машине KSC;
 12. Настройте и примените политику для SVM, а также укажите в ней подключение к серверу интеграции.
+
+В случае возникновения проблем с получением IP у виртуальной машины SVM, попробуйте включить Promiscuous mode на гипервизоре для сети, в которую устанавливается SVM.
+
+{% content-ref url="../rukovodstvo-po-administrirovaniyu/chasto-zadavaemye-voprosy/vklyuchenie-promiscuous-mode-dlya-seti-gipervizora-dlya-vlozhennoi-virtualizacii.md" %}
+[vklyuchenie-promiscuous-mode-dlya-seti-gipervizora-dlya-vlozhennoi-virtualizacii.md](../rukovodstvo-po-administrirovaniyu/chasto-zadavaemye-voprosy/vklyuchenie-promiscuous-mode-dlya-seti-gipervizora-dlya-vlozhennoi-virtualizacii.md)
+{% endcontent-ref %}
