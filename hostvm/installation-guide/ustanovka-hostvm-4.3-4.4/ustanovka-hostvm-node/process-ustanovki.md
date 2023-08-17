@@ -2,7 +2,7 @@
 
 При загрузке откроется меню выбора действия. За 60 секунд выберите _Install HOSTVM Node 4.4.8_. Если за 60 секунд после загрузки не выбрать данный пункт, то начинается тестирование ресурсов сервера и только после этого начнется установка. Остановить тестирование ресурсов сервера возможно через нажатие клавиши _esc_.
 
-![](<../../../.gitbook/assets/boot menu.png>)
+![](<../../../../.gitbook/assets/boot menu.png>)
 
 В случае если загрузка установщика зависнет, то нужно повторно загрузиться с установочного диска и в стартовом меню действий выбрать пункт «Troubleshooting», затем “Install HOSTVM Node 4.4.8 in basic graphics mode” для запуска установки с с использованием псевдографического интерфейса.
 
@@ -12,102 +12,102 @@ _Выбранный язык не влияет на язык внутри сам
 
 Скриншоты инструкции выполнены в интерфейсе с английским языком. Нажмите _Continue_.
 
-![](<../../../.gitbook/assets/welcome (1).png>)
+![](<../../../../.gitbook/assets/welcome (1).png>)
 
 Далее автоматически открывается меню настроек.
 
-![](<../../../.gitbook/assets/image (43).png>)
+![](<../../../../.gitbook/assets/image (43).png>)
 
 **ВАЖНО!: пароль root по умолчанию: HostvmNode**
 
 Перейдите в _DATE & TIME_, укажите ваш часовой пояс, время и дату. Нажмите _Done_.
 
-![](../../../.gitbook/assets/time.png)
+![](../../../../.gitbook/assets/time.png)
 
 **ВАЖНО!: Для корректной установки, необходимо, чтобы серверу, на этапе установки, был задан корректный IPv4 адрес, который имеет доступ в интернет (для доступа к репозиториям). Также должен быть указан корректный DNS сервер, и необходимо задать корректное имя хоста, отличное от localhost.localdomain, во избежание возможных ошибок во время установки HOSTVM Manager.**
 
 &#x20;Перейдите в _NETWORK & HOST NAME_.
 
-![](<../../../.gitbook/assets/network menu.png>)
+![](<../../../../.gitbook/assets/network menu.png>)
 
 Выберите интерфейс, нажмите кнопку _Configure..._. В открывшемся окне перейдите на вкладку  General и отметьте пункт "Connect automatically with priority":
 
-![](../../../.gitbook/assets/network\_general.png)
+![](../../../../.gitbook/assets/network\_general.png)
 
 Далее перейдите на вкладку _IPv4 Settings_, выберите _Method: Manual_, введите ip, маску, gw, DNS-сервер. Нажмите кнопку _Save_.
 
-![](../../../.gitbook/assets/network\_ipv4.png)
+![](../../../../.gitbook/assets/network\_ipv4.png)
 
 Переведите тригер возле названия подключения в положение _On_. В поле _Host name_ введите имя сервера, нажмите кнопку _Apply_. Нажмите кнопку _Done_.
 
-![](../../../.gitbook/assets/network\_ready.png)
+![](../../../../.gitbook/assets/network\_ready.png)
 
 Перейдите в _Instalation Destination_. Выберите диск на который необходимо выполнить установку. Выберите радиокнопку _Custom_. Нажмите _Done_.
 
 **Примечание:** Если в списке доступных устройств не отображаются диски - убедитесь, что данные диски не содержат разделов с неподдерживаемыми Centos 8 файловыми системами.
 
-![](<../../../.gitbook/assets/installation destination.png>)
+![](<../../../../.gitbook/assets/installation destination.png>)
 
 После выбора места установки автоматически открывается следующее меню.
 
-![](<../../../.gitbook/assets/manual partitioning\_0.png>)
+![](<../../../../.gitbook/assets/manual partitioning\_0.png>)
 
 Если диск уже использовался (имел таблицу разделов), то удалите их, как показано ниже.
 
-![](<../../../.gitbook/assets/manual partitioning\_3.png>)
+![](<../../../../.gitbook/assets/manual partitioning\_3.png>)
 
-![](<../../../.gitbook/assets/manual partitioning\_4.png>)
+![](<../../../../.gitbook/assets/manual partitioning\_4.png>)
 
 Когда на диске не останется существующих разделов Из выпадающего меню выберите _LVM Thin Provisioning._ Нажмите _Click here to create them automatically_.
 
-![](<../../../.gitbook/assets/manual partitioning.png>)
+![](<../../../../.gitbook/assets/manual partitioning.png>)
 
 Вы увидите, что на диске появилась предварительная разметка:
 
-![](<../../../.gitbook/assets/manual partitioning\_1.png>)
+![](<../../../../.gitbook/assets/manual partitioning\_1.png>)
 
 Удалите все пункты кроме /boot и /swap, как показано ниже.
 
-![](../../../.gitbook/assets/1-—-копия.png)
+![](../../../../.gitbook/assets/1-—-копия.png)
 
-Для разворачивания виртуальной машины HOSTVM Engine необходим выделенный раздел для домена хранения, размер раздела необходимо задать согласно [системным требованиям](../requirements.md#sistemnye-trebovaniya-dlya-virtualnoi-mashiny-engine-upravlenie-sistemoi-virtualizacii). \
+Для разворачивания виртуальной машины HOSTVM Engine необходим выделенный раздел для домена хранения, размер раздела необходимо задать согласно [системным требованиям](../../requirements.md#sistemnye-trebovaniya-dlya-virtualnoi-mashiny-engine-upravlenie-sistemoi-virtualizacii). \
 Если необходимо, измените поле _Desired Capacity_ раздела _/_, чтобы изменить размер системного раздела. Не менее 16GB необходимо для раздела /var.
 
 **Примечание:** В случае, если установка производится в системе с включенным режимом UEFI, при разметке необходимо задать дополнительную точку монтирования вида /boot/efi размером в 1 GB.
 
 Далее создайте новый раздел с точкой монтирования в _/data:_
 
-**Примечание:** В случае, если далее будет производиться [ustanovka-hostvm-manager-na-gluster.md](../ustanovka-hostvm-cherez-gui-4.4/ustanovka-hostvm-manager-na-gluster.md "mention"), то создавать раздел _/data_ не нужно.
+**Примечание:** В случае, если далее будет производиться [ustanovka-hostvm-manager-na-gluster.md](../ustanovka-hostvm-manager-gui/ustanovka-hostvm-manager-na-gluster.md "mention"), то создавать раздел _/data_ не нужно.
 
-![](<../../../.gitbook/assets/3\_1 (1).png>)
+![](<../../../../.gitbook/assets/3\_1 (1).png>)
 
 Нажмите _Done_.
 
 Создайте раздел /var:
 
-![](../../../.gitbook/assets/4\_1.png)
+![](../../../../.gitbook/assets/4\_1.png)
 
 Создайте раздел / (корневая файловая система):
 
-![](../../../.gitbook/assets/5\_1.png)
+![](../../../../.gitbook/assets/5\_1.png)
 
-![Минимальная разметка для установки на локальные диски](../../../.gitbook/assets/7\_1.png)
+![Минимальная разметка для установки на локальные диски](../../../../.gitbook/assets/7\_1.png)
 
 **Примечание:** оставшееся свободное место вы можете распределить по своему усмотрению либо увеличив необходимые вам разделы, либо создав отдельный раздел через Web-интерфейс HOSTVM Node после установки.
 
 Подтвердите действие кнопкой _Accept Changes_.
 
-![](../../../.gitbook/assets/6\_1.png)
+![](../../../../.gitbook/assets/6\_1.png)
 
 В стартовом меню нажмите кнопку _Begin Installation_, чтобы начать установку.
 
 **ВАЖНО!: пароль root по умолчанию: HostvmNode**
 
-<figure><img src="../../../.gitbook/assets/image (1) (2) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1) (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 Если на этом этапе возникнет ошибка с postinstall скриптом, то это означает, что:
 
-![](<../../../.gitbook/assets/image (33) (1).png>)
+![](<../../../../.gitbook/assets/image (33) (1).png>)
 
 1\) Сервер не имеет доступа в интернет и не смог скачать установочные скрипты из репозитория
 
@@ -119,5 +119,5 @@ _Выбранный язык не влияет на язык внутри сам
 
 Ожидайте окончания установки. После завершения подтвердите перезагрузку нажатием на кнопку _Reboot_.
 
-![](../../../.gitbook/assets/complete.png)
+![](../../../../.gitbook/assets/complete.png)
 

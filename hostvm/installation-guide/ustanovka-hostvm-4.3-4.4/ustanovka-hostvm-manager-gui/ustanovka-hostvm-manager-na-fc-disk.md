@@ -7,7 +7,7 @@
 Логин HOSTVM Manager по умолчанию: admin\
 Пароль HOSTVM Manager по умолчанию: engine
 
-![](../../../.gitbook/assets/4.4.8.PNG)
+![](../../../../.gitbook/assets/4.4.8.PNG)
 
 Пример адреса: [https://192.168.0.5:9090](https://192.168.0.5:9090)
 
@@ -15,7 +15,7 @@
 
 Напротив Hosted-engine нажмите кнопку _Start._
 
-![](../../../.gitbook/assets/FC\_1.png)
+![](../../../../.gitbook/assets/FC\_1.png)
 
 Внимание! FC-диск для организации хранилища виртуальных машин должен отвечать следующим требованиям:
 
@@ -25,11 +25,11 @@
 
 На DNS-сервере должны быть как минимум две записи типа A, содержащие в себе FQDN-имя сервера, а также имя виртуальной машины hosted-engine, которая будет установлена.\
 \
-Если на DNS-сервере отсутствуют записи, то их можно добавить вручную на ноде HOSTVM: [deistviya-pri-ustanovke-hostvm-pri-otsutstvii-zapisei-v-dns.md](../deistviya-pri-ustanovke-hostvm-pri-otsutstvii-zapisei-v-dns.md "mention")
+Если на DNS-сервере отсутствуют записи, то их можно добавить вручную на ноде HOSTVM: [deistviya-pri-ustanovke-hostvm-pri-otsutstvii-zapisei-v-dns.md](../../deistviya-pri-ustanovke-hostvm-pri-otsutstvii-zapisei-v-dns.md "mention")
 
 Заполните форму. Виртуальная машина создается со статическим файлом с использованием файла hosts.
 
-![](../../../.gitbook/assets/FC\_2.png)
+![](../../../../.gitbook/assets/FC\_2.png)
 
 Значения задаваемых параметров:
 
@@ -58,27 +58,27 @@
 
 Заполните следующую форму. Укажите пароль от веб-интерфейса будущей виртуальной машины. Заполните настройки отправки уведомлений e-mail при необходимости.
 
-![](../../../.gitbook/assets/FC\_3.png)
+![](../../../../.gitbook/assets/FC\_3.png)
 
 Создайте управляющую виртуальную машину (нажмите _Prepare VM_).
 
-![](../../../.gitbook/assets/FC\_4.png)
+![](../../../../.gitbook/assets/FC\_4.png)
 
 Подождите довольно продолжительное время, пока виртуальная машина не будет создана и настроена.
 
-![](../../../.gitbook/assets/FC\_5.png)
+![](../../../../.gitbook/assets/FC\_5.png)
 
 Выберете тип хранилища _Fibre Channel_ и укажите свободный LUN.
 
-![](../../../.gitbook/assets/FC\_6.png)
+![](../../../../.gitbook/assets/FC\_6.png)
 
 Подождите пока hosted-engine расположится в хранилище.
 
-![](../../../.gitbook/assets/FC\_7.png)
+![](../../../../.gitbook/assets/FC\_7.png)
 
 Поздравляем! Hosted-engine развернут.
 
-![](../../../.gitbook/assets/FC\_8.png)
+![](../../../../.gitbook/assets/FC\_8.png)
 
 Логин HOSTVM Manager по умолчанию: admin\
 Пароль HOSTVM Manager по умолчанию: engine
