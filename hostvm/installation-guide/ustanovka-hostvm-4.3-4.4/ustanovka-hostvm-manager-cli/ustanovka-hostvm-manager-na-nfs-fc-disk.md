@@ -1,6 +1,6 @@
 # Установка HOSTVM Manager на NFS/FC-диск
 
-После установки ISO-дистрибутива на сервер обратитесь по адресу, указанному в процессе установки на порт 9090 через браузер и зайдите под пользователем root. Альтернативно можно подключиться через [putty](pered-ustanovkoi/podgotovka-putty-k-rabote.md).
+После установки ISO-дистрибутива на сервер обратитесь по адресу, указанному в процессе установки на порт 9090 через браузер и зайдите под пользователем root. Альтернативно можно подключиться через [putty](../pered-ustanovkoi-hostvm-manager/podgotovka-putty-k-rabote.md).
 
 Пароль root по умолчанию для новой версии hostvm node: HostvmNode.
 
@@ -10,6 +10,22 @@
 Перейдите на вкладку Terminal
 
 <figure><img src="https://lh3.googleusercontent.com/aS0UIZsE4MnRoYxprLNjasmrS5yKerpB90G54U_HwieKqDBdSsvQGsy6iGJ9JOkIYevWu8HUH3qu0HI8pLn4yRuqpFYt8ZzEDJnFlkYL3AnXX92d9tnK6E2JvdA01DTlfNTdfINiqFjeV6jzoiVdT1k" alt=""><figcaption></figcaption></figure>
+
+На DNS-сервере должны быть как минимум две записи типа A, содержащие в себе FQDN-имя сервера, а также имя виртуальной машины hosted-engine, которая будет установлена.\
+\
+Если на DNS-сервере отсутствуют записи, то их можно добавить вручную на ноде HOSTVM: [deistviya-pri-ustanovke-hostvm-pri-otsutstvii-zapisei-v-dns.md](../../deistviya-pri-ustanovke-hostvm-pri-otsutstvii-zapisei-v-dns.md "mention")
+
+{% hint style="warning" %}
+**В случае установки на FC**, диск для организации хранилища виртуальных машин должен отвечать следующим требованиям:
+
+* объем диска – не менее 80 Gb;
+* диск должен быть пустым и не содержать в себе какой-либо файловой системы;
+* диск не может быть примонтирован к текущей файловой системе.
+{% endhint %}
+
+{% hint style="warning" %}
+**В случае установки на NFS, о**бъём NFS-хранилища должен быть не менее 80 Гб.
+{% endhint %}
 
 Запустите команду hosted-engine --deploy, установочный скрипт соберет информацию о вашем оборудовании и использует ее для конфигурации хоста и менеджера виртуализации.
 

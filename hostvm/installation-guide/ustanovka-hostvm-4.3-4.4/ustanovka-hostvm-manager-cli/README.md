@@ -1,7 +1,9 @@
-# Установка HOSTVM через CLI (4.4, 4.3)
+# Установка HOSTVM Manager CLI
 
-1\) [installation-hostvm-on-local-disks.md](installation-hostvm-on-local-disks.md "mention")
+{% content-ref url="ustanovka-hostvm-manager-na-nfs-fc-disk.md" %}
+[ustanovka-hostvm-manager-na-nfs-fc-disk.md](ustanovka-hostvm-manager-na-nfs-fc-disk.md)
+{% endcontent-ref %}
 
-2\) [installation-hostvm.md](installation-hostvm.md "mention")
-
-3\) [ustanovka-konsoli-veb-interfeisa-hostedengine-upravleniya-na-skhd.md](ustanovka-konsoli-veb-interfeisa-hostedengine-upravleniya-na-skhd.md "mention")
+{% content-ref url="ustanovka-hostvm-manager-na-gluster.md" %}
+[ustanovka-hostvm-manager-na-gluster.md](ustanovka-hostvm-manager-na-gluster.md)
+{% endcontent-ref %}

@@ -77,7 +77,7 @@ _Выбранный язык не влияет на язык внутри сам
 
 Далее создайте новый раздел с точкой монтирования в _/data:_
 
-**Примечание:** В случае, если далее будет производиться [ustanovka-hostvm-manager-na-gluster.md](../ustanovka-hostvm-manager-gui/ustanovka-hostvm-manager-na-gluster.md "mention"), то создавать раздел _/data_ не нужно.
+**Примечание:** В случае, если далее будет производиться [ustanovka-hostvm-manager-na-gluster.md](../ustanovka-hostvm-manager-4.4.8-gui/ustanovka-hostvm-manager-na-gluster.md "mention"), то создавать раздел _/data_ не нужно.
 
 ![](<../../../../.gitbook/assets/3\_1 (1).png>)
 
@@ -115,9 +115,8 @@ _Выбранный язык не влияет на язык внутри сам
 
 3\) ISO образ для установки скачан давно, и некоторые пути в скриптах установки изменились - нужно скачать ISO заново и выполнить установку с него.
 
-Альтернативно, можно выполнить данный скрипт вручную из ОС (смотри раздел - [прокси и репозиторий](https://kb.pvhostvm.ru/installation-guide/installation-hostvm-on-local-disks#nastroika-proksi-esli-ispolzuetsya-i-repozitoriya)).
+Альтернативно, можно выполнить данный скрипт вручную из ОС (смотри раздел - [прокси и репозиторий](../pered-ustanovkoi-hostvm-manager/nastroika-proksi-esli-ispolzuetsya-i-repozitoriya.md)).
 
 Ожидайте окончания установки. После завершения подтвердите перезагрузку нажатием на кнопку _Reboot_.
 
 ![](../../../../.gitbook/assets/complete.png)
-
