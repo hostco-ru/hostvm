@@ -65,11 +65,11 @@ sudo ln -s /usr/lib/x86_64-linux-gnu/libxcb-util.so.0 /usr/lib/x86_64-linux-gnu/
 Загрузить пакеты xscreensaver, xscreensaver-data из [личного кабинета](https://lk.pvhostvm.ru/Download) на виртуальную машину.\
 Найти нужные пакеты можно по следующему пути:
 
-`Каталог загрузок/Дистрибутивы/HOSTVM VDI/Actor dependencies/Astra Linux 1.6`
+`Каталог загрузок/Дистрибутивы/HOSTVM VDI/Misc/Actor dependencies/Astra Linux 1.6`
 
 или
 
-`Каталог загрузок/Дистрибутивы/HOSTVM VDI/Actor dependencies/Astra Linux 1.7`, соответственно.
+`Каталог загрузок/Дистрибутивы/HOSTVM VDI/Misc/Actor dependencies/Astra Linux 1.7`, соответственно.
 
 Выдать пользователю \_apt права на загруженные пакеты:
 
