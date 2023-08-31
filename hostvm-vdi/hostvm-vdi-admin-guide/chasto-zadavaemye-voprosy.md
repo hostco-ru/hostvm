@@ -18,6 +18,12 @@ tar xvf hostvm-vdi.ova
 qemu-img convert -f qcow2 c9bfb5c7-edc0-4596-adca-f63cca42b4c9 -O vmdk hostvm-vdi.vmdk
 ```
 
+После выполнения команды вы получите файл vmdk для VMware Workstation. Получившийся vmdk необходимо еще раз конвертировать на хосте esxi:&#x20;
+
+```
+vmkfstools -i source.vmdk -d zeroedthick converted_source.vmdk  
+```
+
 Поскольку xml-файл с настройками машины не импортируется, необходимо выставить их вручную в настройках ВМ после импорта.
 
 {% hint style="warning" %}
