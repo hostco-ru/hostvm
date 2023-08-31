@@ -173,6 +173,7 @@
     * [Как перегенерировать SSL-сертификаты на Hosted Engine и хостах?](hostvm/rukovodstvo-po-administrirovaniyu/chasto-zadavaemye-voprosy/kak-peregenerirovat-ssl-sertifikaty-na-hosted-engine-i-khostakh.md)
     * [Информация о совместимости HOSTVM с iSCSI](hostvm/rukovodstvo-po-administrirovaniyu/chasto-zadavaemye-voprosy/informaciya-o-sovmestimosti-hostvm-s-iscsi.md)
     * [Включение promiscuous mode для сети гипервизора для вложенной виртуализации](hostvm/rukovodstvo-po-administrirovaniyu/chasto-zadavaemye-voprosy/vklyuchenie-promiscuous-mode-dlya-seti-gipervizora-dlya-vlozhennoi-virtualizacii.md)
+    * [Восстановление пароля виртуальной машины менеджера виртуализации HOSTVM](hostvm/rukovodstvo-po-administrirovaniyu/chasto-zadavaemye-voprosy/vosstanovlenie-parolya-virtualnoi-mashiny-menedzhera-virtualizacii-hostvm.md)
 
 ## HOSTVM VDI
 
