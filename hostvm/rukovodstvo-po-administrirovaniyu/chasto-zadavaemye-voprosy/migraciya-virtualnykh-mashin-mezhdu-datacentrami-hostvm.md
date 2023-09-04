@@ -40,7 +40,7 @@
 
 После добавления домена активируйте его:
 
-`Data Centers -> datacenter -> domain -> activate`
+`Data Centers -> выбираете datacenter -> domain -> activate`
 
 <figure><img src="../../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
 
