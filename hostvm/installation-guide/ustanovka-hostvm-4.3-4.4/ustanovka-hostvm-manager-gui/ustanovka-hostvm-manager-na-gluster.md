@@ -25,7 +25,7 @@ root@testname1 ~]# ssh-copy-id root@flexnode1
 
 Далее нужно создать раздел, для этого заходим в Storage -> Create partition
 
-![](<../../../../.gitbook/assets/image (3) (1).png>)
+![](<../../../../.gitbook/assets/image (3) (1) (1).png>)
 
 Задаем параметры, как на скриншоте ниже, определяем размер раздела (не меньше 90 GB). Type раздела выбираем No filesystem.
 
