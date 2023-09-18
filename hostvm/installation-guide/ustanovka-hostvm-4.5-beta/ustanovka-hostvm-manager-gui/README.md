@@ -1,0 +1,2 @@
+# Установка HOSTVM Manager GUI
+
