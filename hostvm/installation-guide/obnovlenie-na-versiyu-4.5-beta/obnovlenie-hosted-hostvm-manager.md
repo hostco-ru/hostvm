@@ -59,7 +59,7 @@
 
 **Пример ответов на вопросы инсталлятора**
 
-Настройка [Keycloak](../ustanovka-keycloak-hostvm-4.5.md) осуществляется после обновления HOSTVM Manager и всех хостов в кластере до версии 4.5.\*
+Настройка [Keycloak](../ustanovka-hostvm-4.5-beta/ustanovka-keycloak.md) осуществляется после обновления HOSTVM Manager и всех хостов в кластере до версии 4.5.\*
 
 ```
 * Please note * : Keycloak is now deprecating AAA/JDBC authentication module.
