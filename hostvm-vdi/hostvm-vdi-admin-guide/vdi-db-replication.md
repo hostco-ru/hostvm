@@ -176,11 +176,37 @@ systemctl start vdi.service vdiweb.service
     ```bash
     cat backup.sql | /usr/bin/mysql -u root udsdb
     ```
+
+<!---->
+
 *   Получить параметры `MASTER_LOG_FILE` и `MASTER_LOG_POS` из дампа:
 
     ```bash
     head -n22 backup.sql | tail -1
     ```
+
+    Пример вывода предыдущей команды:
+
+    `CHANGE MASTER TO MASTER_LOG_FILE='mysql-bin.000001', MASTER_LOG_POS=236295;`
+*   Зайти в MYSQL с привилегиями root
+
+    `mysql -p`
+*   Остановить все операции на сервере
+
+    `STOP SLAVE;`
+*   Настроить репликацию с первым (_**10.0.0.1**_) брокером
+
+    `CHANGE MASTER TO MASTER_HOST='10.0.0.1', MASTER_USER='replica', MASTER_PASSWORD='password', MASTER_LOG_FILE='mysql-bin.000001', MASTER_LOG_POS=236295;`
+
+    Где `10.0.0.1` - адрес первого (_**10.0.0.1**_) брокера, `replica` -настроенный ранее пользователь для репликации, `password` - его пароль, `myslq-bin.000001` и `236295` - параметры журнала, полученные ранее.
+*   Запустить сервер:
+
+    `START SLAVE;`
+*   Проверить параметры репликации:
+
+    `SHOW SLAVE STATUS\G`
+
+    В выводе должен быть корректный адрес первого (_**10.0.0.1**_)  сервера `Master_Host: 10.0.0.1` и значение параметров `Slave_IO_Running` и `Slave_SQL_Running` равное `Yes`
 
 
 
