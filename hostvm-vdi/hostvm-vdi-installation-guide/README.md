@@ -38,21 +38,11 @@
 
 Для импорта и настройки воспользуйтесь [инструкцией](https://kb.pvhostvm.ru/hostvm-vdi/hostvm-vdi-installation-guide/haproxy).
 
-### Алгоритм развертывания HOSTVM VDI на примере отказоустойчивой инфраструктуры на одной площадке
-
-Данный сценарий предполагает дублирование всех ключевых компонентов инфраструктуры VDI для обеспечения работы в случае выхода из строя части оборудования на одной площадке:\
-\
-\- Импортировать две виртуальные машины сервера БД HOSTVM VDI  согласно [инструкции](vdi-db/).\
-\- Настроить active/passive репликацию на внешних серверах БД согласно [инструкции](../hostvm-vdi-admin-guide/vdi-db-replication.md).\
-\- Импортировать две виртуальные машины брокера HOSTVM VDI согласно [инструкции](hostvm-vdi-ova-install.md).\
-\- Переключить брокеры HOSTVM VDI  на активную внешнюю базу данных согласно [инструкции](vdi-db/nastroika-brokera-vdi-dlya-ispolzovaniya-vydelennogo-servera-bd.md).\
-\- Импортировать две виртуальные машины шлюза HOSTVM VDI согласно [инструкции](tunneler-appliance-deploy.md).\
-\- Импортировать две виртуальные машины балансировщика HOSTVM VDI  согласно [инструкции](haproxy.md).&#x20;
-
 ### Дальнейшая настройка
 
 Для дальнейшей настройки системы обратитесь к [руководству администратора](https://kb.pvhostvm.ru/hostvm-vdi/hostvm-vdi-admin-guide).
 
 ### Перечень изменений
 
-С перечнем изменений и исправлений вы можете ознакомиться в [статье](https://kb.pvhostvm.ru/hostvm-vdi/hostvm-vdi-installation-guide/changelog).
+С перечнем изменений и исправлений вы можете ознакомиться в [статье](https://kb.pvhostvm.ru/hostvm-vdi/hostvm-vdi-installation-guide/changelog).\
+\

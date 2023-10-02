@@ -201,6 +201,7 @@
   * [Установка и настройка балансировщика HAProxy](hostvm-vdi/hostvm-vdi-installation-guide/haproxy.md)
   * [Обновление компонентов VDI](hostvm-vdi/hostvm-vdi-installation-guide/obnovlenie-komponentov-vdi.md)
   * [Обновление конфигурации из двух экземпляров брокера VDI со встроенной БД (с репликацией)](hostvm-vdi/hostvm-vdi-installation-guide/obnovlenie-konfiguracii-iz-dvukh-ekzemplyarov-brokera-vdi-so-vstroennoi-bd-s-replikaciei.md)
+  * [Алгоритм развертывания HOSTVM VDI на примере отказоустойчивой инфраструктуры на одной площадке](hostvm-vdi/hostvm-vdi-installation-guide/algoritm-razvertyvaniya-hostvm-vdi-na-primere-otkazoustoichivoi-infrastruktury-na-odnoi-ploshadke.md)
   * [Изменения и исправления](hostvm-vdi/hostvm-vdi-installation-guide/changelog.md)
 * [Руководство администратора](hostvm-vdi/hostvm-vdi-admin-guide/README.md)
   * [Подготовка  базового образа для публикации](hostvm-vdi/hostvm-vdi-admin-guide/base-image-preparation/README.md)

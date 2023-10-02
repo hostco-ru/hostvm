@@ -1,20 +1,28 @@
 # Настройка репликации БД между серверами
 
-Данное руководство описывает процесс создания отказоустойчивой конфигурации из двух экземпляров брокера VDI и встроенной БД с репликацией master - slave. Его можно использовать как для развертывания новой установки, так и для подключения второго сервера к уже имеющейся.
+Данное руководство описывает процесс создания отказоустойчивой конфигурации из двух экземпляров брокера VDI и БД с репликацией master - slave. Его можно использовать как для развертывания новой установки, так и для подключения второго сервера к уже имеющейся.
 
-Данная инструкция подходит как для репликации БД в appliance брокера, так и внешней БД, подключенной к нему.
+Данная инструкция подходит как для репликации встроенной БД в appliance брокера, так и внешней БД, подключенной к нему.
 
 ## Настройка первого сервера (Master)
 
 Перед настройкой реплики остановить сервисы брокера:
 
+{% code title="Брокер версии 3.0" %}
 ```bash
 systemctl stop apache2 uds
 ```
+{% endcode %}
+
+{% code title="Брокер версии >= 3.5" %}
+```
+systemctl stop vdi.service vdiweb.service
+```
+{% endcode %}
 
 На сервере master БД отредактировать `/etc/mysql/mariadb.conf.d/50-server.cnf`
 
-В параметре `bind-address` указать IP адрес первого брокера:
+В параметре `bind-address` указать IP адрес первого брокера или внешней базы данных, если используется:
 
 ```
 bind-address = 10.0.0.1
@@ -27,7 +35,7 @@ server-id = 1
 log_bin = /var/log/mysql/mysql-bin.log
 ```
 
-Перезапустить сервис на сервере БД:
+Перезапустить сервис на сервере  с БД:
 
 ```bash
 systemctl restart mariadb
@@ -58,9 +66,17 @@ mysqldump -u root --single-transaction --master-data udsdb > backup.sql
 
 Запустить сервисы брокера:
 
+{% code title="Брокер версии 3.0" %}
 ```bash
 systemctl start apache2 uds
 ```
+{% endcode %}
+
+{% code title="Брокер версии >= 3.5" %}
+```
+systemctl start vdi.service vdiweb.service
+```
+{% endcode %}
 
 ## Настройка второго сервера (Slave)
 
@@ -68,31 +84,39 @@ systemctl start apache2 uds
 
 Остановить сервисы брокера:
 
+{% code title="Брокер версии 3.0" %}
 ```bash
 systemctl stop apache2 uds
 ```
+{% endcode %}
 
-Отредактировать `/var/server/server/settings.py` второго брокера, задать имя/адрес БД от первого сервера:
-
-```python
-DATABASES = {
-...
-        'HOST': '10.0.0.1'
-...
-}
+{% code title="Брокер версии >= 3.5" %}
 ```
+systemctl stop vdi.service vdiweb.service
+```
+{% endcode %}
+
+Скопировать файл `/var/server/server/settings.py` с первого  брокера:
 
 Запустить сервисы брокера:
 
+{% code title="Брокер версии 3.0" %}
 ```bash
 systemctl start apache2 uds
 ```
+{% endcode %}
+
+{% code title="Брокер версии >= 3.5" %}
+```
+systemctl stop vdi.service vdiweb.service
+```
+{% endcode %}
 
 ### Настройка репликации
 
 На сервере slave БД отредактировать `/etc/mysql/mariadb.conf.d/50-server.cnf`
 
-В параметре `bind-address` указать IP адрес второго брокера
+В параметре `bind-address` указать IP адрес второго сервера БД
 
 ```
 bind-address = 10.0.0.2
@@ -137,7 +161,7 @@ head -n22 backup.sql | tail -1
 
 `CHANGE MASTER TO MASTER_HOST='10.0.0.1', MASTER_USER='replica', MASTER_PASSWORD='password', MASTER_LOG_FILE='mysql-bin.000001', MASTER_LOG_POS=236295;`
 
-Где `10.0.0.1` - адрес первого брокера, `replica` -настроенный ранее пользователь для репликации, `password` - его пароль, `myslq-bin.000001` и `236295` - параметры журнала, полученные ранее.
+Где `10.0.0.1` - адрес первого сервера БД, `replica` -настроенный ранее пользователь для репликации, `password` - его пароль, `myslq-bin.000001` и `236295` - параметры журнала, полученные ранее.
 
 Запустить сервер:
 
@@ -147,4 +171,4 @@ head -n22 backup.sql | tail -1
 
 `SHOW SLAVE STATUS\G`
 
-В выводе должен быть корректный адрес первой ноды `Master_Host: 10.0.0.1` и значение параметров `Slave_IO_Running` и `Slave_SQL_Running` равное `Yes`
+В выводе должен быть корректный адрес первого сервера `Master_Host: 10.0.0.1` и значение параметров `Slave_IO_Running` и `Slave_SQL_Running` равное `Yes`
