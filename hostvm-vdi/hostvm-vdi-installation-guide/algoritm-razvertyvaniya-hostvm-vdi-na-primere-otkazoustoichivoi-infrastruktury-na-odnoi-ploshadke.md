@@ -11,8 +11,7 @@ description: >-
 \- Импортировать две виртуальные машины сервера БД HOSTVM VDI  согласно [инструкции](vdi-db/).\
 \- Настроить active/passive репликацию на внешних серверах БД согласно [инструкции](../hostvm-vdi-admin-guide/vdi-db-replication.md).\
 \- Импортировать две виртуальные машины брокера HOSTVM VDI согласно [инструкции](hostvm-vdi-ova-install.md).\
-\- Переключить брокеры HOSTVM VDI  на активную внешнюю базу данных согласно [инструкции](vdi-db/nastroika-brokera-vdi-dlya-ispolzovaniya-vydelennogo-servera-bd.md).
-
+\- Переключить брокеры HOSTVM VDI  на активную внешнюю базу данных согласно [инструкции](vdi-db/nastroika-brokera-vdi-dlya-ispolzovaniya-vydelennogo-servera-bd.md).\
 \- Импортировать две виртуальные машины балансировщика HOSTVM VDI  согласно [инструкции](haproxy.md).\
 \- Импортировать две виртуальные машины шлюза HOSTVM VDI согласно [инструкции](tunneler-appliance-deploy.md). \
 При настройке шлюза в качестве адреса брокеров и адреса в транспорте - указывать созданные на прошлом шаге VIP.\
