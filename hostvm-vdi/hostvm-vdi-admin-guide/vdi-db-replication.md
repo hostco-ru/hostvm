@@ -96,7 +96,7 @@ systemctl stop vdi.service vdiweb.service
 ```
 {% endcode %}
 
-Скопировать файл `/var/server/server/settings.py` с первого  брокера:
+Скопировать файл `/var/server/server/settings.py` с первого  брокера и заменить по тому же пути на втором.
 
 Запустить сервисы брокера:
 
