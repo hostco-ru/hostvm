@@ -65,6 +65,7 @@
   * [Обновление на версию 4.5 (beta)](hostvm/installation-guide/obnovlenie-na-versiyu-4.5-beta/README.md)
     * [Обновление Hosted HOSTVM Manager](hostvm/installation-guide/obnovlenie-na-versiyu-4.5-beta/obnovlenie-hosted-hostvm-manager.md)
     * [Обновление HOSTVM Node](hostvm/installation-guide/obnovlenie-na-versiyu-4.5-beta/obnovlenie-hostvm-node.md)
+    * [Перечень изменений версии 4.5.4](hostvm/installation-guide/obnovlenie-na-versiyu-4.5-beta/perechen-izmenenii-versii-4.5.4.md)
   * [Обновление на версию 4.4](hostvm/installation-guide/obnovlenie-na-versiyu-4.4/README.md)
     * [Обновление Hosted HOSTVM Manager](hostvm/installation-guide/obnovlenie-na-versiyu-4.4/obnovlenie-hosted-engine.md)
     * [Обновление HOSTVM Node](hostvm/installation-guide/obnovlenie-na-versiyu-4.4/obnovlenie-hostvm-node.md)
