@@ -207,6 +207,7 @@
     * [3.6 Beta](hostvm-vdi/hostvm-vdi-installation-guide/changelog/3.6-beta.md)
     * [3.5](hostvm-vdi/hostvm-vdi-installation-guide/changelog/3.5.md)
     * [3.0](hostvm-vdi/hostvm-vdi-installation-guide/changelog/3.0.md)
+  * [Часто задаваемые вопросы](hostvm-vdi/hostvm-vdi-installation-guide/faq.md)
 * [Руководство администратора](hostvm-vdi/hostvm-vdi-admin-guide/README.md)
   * [Подготовка  базового образа для публикации](hostvm-vdi/hostvm-vdi-admin-guide/base-image-preparation/README.md)
     * [Установка HOSTVM VDI Actor для Astra Linux](hostvm-vdi/hostvm-vdi-admin-guide/base-image-preparation/ustanovka-hostvm-vdi-actor-dlya-astra-linux.md)
@@ -231,7 +232,6 @@
     * [Настройка подключений по протоколу RemoteApp](hostvm-vdi/hostvm-vdi-admin-guide/terminal-servers-and-apps/nastroika-podklyuchenii-po-protokolu-remoteapp.md)
   * [Настройка репликации БД между серверами](hostvm-vdi/hostvm-vdi-admin-guide/vdi-db-replication.md)
   * [Восстановление работы HOSTVM VDI в случае сбоя](hostvm-vdi/hostvm-vdi-admin-guide/vosstanovlenie-raboty-hostvm-vdi-v-sluchae-sboya.md)
-  * [Часто задаваемые вопросы](hostvm-vdi/hostvm-vdi-admin-guide/chasto-zadavaemye-voprosy.md)
   * [Настройка мета-пулов сервисов](hostvm-vdi/hostvm-vdi-admin-guide/nastroika-meta-pulov-servisov.md)
 * [Руководство пользователя](hostvm-vdi/hostvm-vdi-user-manual.md)
 

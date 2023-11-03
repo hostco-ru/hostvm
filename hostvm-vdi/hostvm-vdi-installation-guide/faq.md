@@ -1,5 +1,17 @@
 # Часто задаваемые вопросы
 
+### **Известные ошибки при импорте**
+
+Если при попытке подключения консолью появляется сообщение "Connected to graphic server":
+
+<figure><img src="../../.gitbook/assets/photo_2023-04-26_17-00-54.jpg" alt=""><figcaption><p>Ошибка "Connected to graphic server"</p></figcaption></figure>
+
+в качестве решения необходимо проверить значение свойства Chipset/Firmware Type.\
+(Compute -> Virtual Machines -> Выбрать нужную ВМ -> Edit -> System).\
+Если значение отлично от "Q35 Chipset with BIOS", необходимо привести его к этому состоянию:
+
+<figure><img src="../../.gitbook/assets/example.jpg" alt=""><figcaption><p>Q35 Chipset with BIOS</p></figcaption></figure>
+
 ### Импорт апплаенса в VMware
 
 Формат апплаенсов HOSTVM VDI не поддерживается со стороны VMware.
