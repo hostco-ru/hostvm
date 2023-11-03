@@ -199,6 +199,7 @@
   * [Установка HOSTVM VDI Tunneler](hostvm-vdi/hostvm-vdi-installation-guide/tunneler-appliance-deploy.md)
   * [Установка и настройка выделенного сервера БД](hostvm-vdi/hostvm-vdi-installation-guide/vdi-db/README.md)
     * [Настройка брокера VDI для использования выделенного сервера БД](hostvm-vdi/hostvm-vdi-installation-guide/vdi-db/nastroika-brokera-vdi-dlya-ispolzovaniya-vydelennogo-servera-bd.md)
+    * [Настройка СУБД PostgreSQL](hostvm-vdi/hostvm-vdi-installation-guide/vdi-db/postgresql.md)
   * [Установка и настройка балансировщика HAProxy](hostvm-vdi/hostvm-vdi-installation-guide/haproxy.md)
   * [Обновление компонентов VDI](hostvm-vdi/hostvm-vdi-installation-guide/obnovlenie-komponentov-vdi.md)
   * [Обновление конфигурации из двух экземпляров брокера VDI со встроенной БД (с репликацией)](hostvm-vdi/hostvm-vdi-installation-guide/obnovlenie-konfiguracii-iz-dvukh-ekzemplyarov-brokera-vdi-so-vstroennoi-bd-s-replikaciei.md)
