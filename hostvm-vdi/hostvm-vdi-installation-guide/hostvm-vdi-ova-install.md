@@ -49,6 +49,54 @@ reboot
 * Перейдите в раздел `Инструменты - Конфигурация - Security`, задайте новый пароль встроенной административной учетной записи в параметре `rootPass`, нажмите "Сохранить".
 * Выполните настройку системы согласно [руководству администратора](../hostvm-vdi-admin-guide/).
 
+### Настройка SSL сертификатов <a href="#ssl-certificates" id="ssl-certificates"></a>
+
+По умолчанию брокер HOSTVM VDI поставляется с самоподписанным сертификатом, его использование предполагается для тестовых сред, в остальных случаях рекомендуется установка действительных сертификатов, используемых в конечной инфраструктуре.
+
+Для замены сертификатов воспользуйтесь данной инструкцией.
+
+#### Версия брокера 3.5 и выше <a href="#ssl-certificates-35" id="ssl-certificates-35"></a>
+
+Скопируйте файлы сертификата на брокер в директорию `/etc/certs`.
+
+Отредактируйте файл с настройками SSL `/etc/nginx/snippets/vdi-ssl-params.conf`, в директивах `ssl_certificate` и `ssl_certificate_key` укажите новые имена файлов сертификата:
+
+```
+ssl_certificate /etc/certs/server.pem; #открытая часть
+ssl_certificate_key /etc/certs/key.pem; #приватный ключ
+```
+
+Чтобы проверить новую конфигурацию, выполните команду `nginx -t`, вывод команды в случае прохождения проверки:
+
+```shell-session
+# nginx -t
+nginx: the configuration file /etc/nginx/nginx.conf syntax is ok
+nginx: configuration file /etc/nginx/nginx.conf test is successful
+```
+
+Чтобы применить новые настройки, выполните команду:
+
+```shell-session
+# systemctl reload nginx
+```
+
+#### Версия брокера 3.0 <a href="#ssl-certificates-30" id="ssl-certificates-30"></a>
+
+Скопируйте файлы сертификата на брокер.
+
+Отредактируйте конфигурационный файл `/etc/apache2/sites-available/default-ssl.conf`, в значения параметров `SSLCertificateFile` и `SSLCertificateKeyFile` запишите путь к открытой части сертификата и приватному ключу соответственно:
+
+```
+    SSLCertificateFile    /etc/ssl/certs/ssl-cert-snakeoil.pem
+    SSLCertificateKeyFile /etc/ssl/private/ssl-cert-snakeoil.key
+```
+
+Для применения изменений выполните команду:
+
+```shell-session
+# systemctl reload apache2
+```
+
 ### Настройка для работы с СУБД PostgreSQL (версия 3.6 beta)
 
 По умолчанию для хранения данных брокера используется СУБД MariaDB (MySQL). Начиная с версии 3.6, дополнительно появилась поддержка СУБД PostgreSQL.
