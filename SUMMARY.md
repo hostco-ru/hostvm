@@ -195,7 +195,8 @@
 
 * [Руководство по установке и настройке](hostvm-vdi/hostvm-vdi-installation-guide/README.md)
   * [Системные требования](hostvm-vdi/hostvm-vdi-installation-guide/requirements.md)
-  * [Установка HOSTVM VDI Broker](hostvm-vdi/hostvm-vdi-installation-guide/hostvm-vdi-ova-install.md)
+  * [Установка HOSTVM VDI Broker](hostvm-vdi/hostvm-vdi-installation-guide/hostvm-vdi-ova-install/README.md)
+    * [Настройка мультидоменного доступа](hostvm-vdi/hostvm-vdi-installation-guide/hostvm-vdi-ova-install/multidomain-access.md)
   * [Установка HOSTVM VDI Tunneler](hostvm-vdi/hostvm-vdi-installation-guide/tunneler-appliance-deploy.md)
   * [Установка и настройка выделенного сервера БД](hostvm-vdi/hostvm-vdi-installation-guide/vdi-db/README.md)
     * [Настройка брокера VDI для использования выделенного сервера БД](hostvm-vdi/hostvm-vdi-installation-guide/vdi-db/nastroika-brokera-vdi-dlya-ispolzovaniya-vydelennogo-servera-bd.md)
