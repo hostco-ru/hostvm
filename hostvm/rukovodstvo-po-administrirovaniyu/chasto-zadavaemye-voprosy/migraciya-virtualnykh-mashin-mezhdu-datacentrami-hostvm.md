@@ -8,13 +8,13 @@
 
 Для создания домена экспорта можно использовать nfs-share, с процедурой ее создания можно ознакомиться в главе [Подготовка NFS share](../../installation-guide/ustanovka-hostvm-4.3-4.4/ustanovka-hostvm-manager-cli/pered-ustanovkoi/podgotovka-nfs-share.md)
 
-<figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 2\) Перенос виртуальных машин в домен экспорта из datacenter1:
 
 `Compute -> Virtual Machines -> выбирате ВМ -> ⋮ -> Export to Export Domain`
 
-<figure><img src="../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 3\) Отсоединение домена экспорта от датацентра1:
 

@@ -2,23 +2,23 @@
 
 ## Подготовка ВМ к конвертации
 
-1 Установить гостевые утилиты:
+1\. Установить гостевые утилиты:
 
 `apt-get install ovirt-guest-agent`
 
-2 Добавить модули virtio в конфигурационный файл `/etc/initrd.mk`:
+2\. Добавить модули virtio в конфигурационный файл `/etc/initrd.mk`:
 
 `MODULES_ADD += virtio_blk virtio_scsi virtio_pci`
 
 `MODULES_PRELOAD += virtio_blk virtio_scsi virtio_pci`
 
-3 Сгенерировать новый initramfs:
+3\. Сгенерировать новый initramfs:
 
 `make-initrd`
 
 ## Экспорт
 
-1 Экспортировать ВМ из Vmware:
+1\. Экспортировать ВМ из Vmware:
 
 File - Export - Export OVF Template
 
@@ -30,7 +30,7 @@ Format: Single file (OVA)
 
 `yum install perl perl-XML-Writer perl-Sys-Guestfs`
 
-2\. Загрузить сценарий конвертации import-to-ovirt.pl на хост HOSTVM, с которого будет выполняться импорт ВМ. Загрузка выполняется из личного кабинета [https://lk.pvhostvm.ru/](https://lk.pvhostvm.ru/) Сценарий import-to-ovirt.pl  расположен в каталоге дистрибутивов в папке HOSTVM/VM Convert/
+2\. Загрузить сценарий конвертации import-to-hostvm.pl на хост HOSTVM, с которого будет выполняться импорт ВМ. Загрузка выполняется из личного кабинета [https://lk.pvhostvm.ru/](https://lk.pvhostvm.ru/) Сценарий import-to-hostvm.pl  расположен в каталоге дистрибутивов в папке HOSTVM/Misc/VM Convert/
 
 `chmod u+x import-to-hostvm.pl`
 
@@ -70,4 +70,6 @@ Format: Single file (OVA)
 
 4 Импортировать ВМ в data домен через GUI:
 
-`engine GUI - Compute - Virtual machines` - нажать 3 точки в меню - Import - выбрать нужный дата центр, source=export domain - нажать Load - переместить нужную ВМ в Virtual machines to import - Next - выбрать параметры импорта и нажать OK
+`HOSTVM Manager GUI - Compute - Virtual machines` - нажать 3 точки в меню - Import - выбрать нужный дата центр, source=export domain - нажать Load - переместить нужную ВМ в Virtual machines to import - Next - выбрать параметры импорта и нажать OK
+
+\
