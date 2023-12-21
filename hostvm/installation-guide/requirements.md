@@ -13,7 +13,7 @@
 | :--------: | :--------------: | :--------: |
 | Opteron G4 |      Nehalem     | IBM POWER8 |
 | Opteron G5 |     Westmere     |            |
-|            |    Sandybridge   |            |
+|    EPYC    |    Sandybridge   |            |
 |            |      Haswell     |            |
 |            |   Haswell-noTSX  |            |
 |            |     Broadwell    |            |
