@@ -52,7 +52,7 @@ reboot
 
 В этом документе описана базовая настройка сервиса. Рекомендуется просмотреть остальные предварительно настроенные параметры и изменить их в зависимости от потребностей инфраструктуры.
 
-#### Настройка HAProxy
+#### Настройка HAProxy 3.0
 
 Для настройки сервиса внесите изменения в файл конфигурации `/etc/haproxy/haproxy.cfg`.
 
@@ -112,6 +112,80 @@ backend broker-backend
 backend tunnel-backend-ssl
         mode tcp
         balance source
+        server tunserv1 10.1.2.3:443 check
+        server tunserv2 10.1.2.4:443 check
+```
+
+Правило внутреннего доступа к HOSTVM VDI Tunneler для соединений HTML5. Необходимо указать IP-адреса наших машин HOSTVM VDI Tunneler (порт прослушивания туннельного сервера для соединений HTML5 – 10443).
+
+```
+backend tunnel-backend-guacamole
+        mode tcp
+        balance source
+        server tunguac1 10.1.2.3:10443 check
+        server tunguac2 10.1.2.4:10443 check
+```
+
+#### Настройка HAProxy 3.5
+
+Для настройки сервиса внесите изменения в файл конфигурации `/etc/haproxy/haproxy.cfg`.
+
+Правило внешнего доступа к серверу HOSTVM VDI Broker в режиме http. Порт 80:
+
+```
+frontend http-in
+        bind *:80
+        mode http
+        reqadd X-Forwarded-Proto:\ http
+        default_backend broker-backend
+```
+
+Правило внешнего доступа к серверу HOSTVM VDI Broker в режиме https (следует указать путь ранее сгенерированного сертификата .pem). Порт 443. Сервер предварительно настроен на использование самоподписанного сертификата, расположенного в `/etc/ssl/private/haproxy.pem`:
+
+```
+frontend https-in
+        bind *:443 ssl crt /etc/ssl/private/haproxy.pem
+        mode http
+        reqadd X-Forwarded-Proto:\ http
+        default_backend broker-backend
+```
+
+Правило внешнего доступа к HOSTVM VDI Tunneler в режиме TCP на порт 1443 (туннельные соединения). В случае использования другого порта правило необходимо изменить (этот порт указывается на вкладке «Tunnel» соответствующего туннельного транспорта в панели администрирования брокера).
+
+```
+frontend tunnel-in
+        bind *:1443
+        mode tcp
+        option tcplog
+        default_backend tunnel-backend-ssl
+```
+
+Правило внешнего доступа к HOSTVM VDI Tunneler в режиме TCP через порт 10443 (соединения HTML5). В случае использования другого порта правило необходимо изменить (этот порт указывается на вкладке «Tunnel» соответствующего HTML5 транспорта в панели администрирования брокера).
+
+```
+frontend tunnel-in-guacamole    # HTML5
+        bind *:10443
+        mode tcp
+        option tcplog
+        default_backend tunnel-backend-guacamole
+```
+
+Правило внутреннего доступа к HOSTVM VDI брокерам. Нужно указать их IP адреса (порты прослушивания 80 или 443).
+
+```
+backend broker-backend
+        balance roundrobin
+        option http-keep-alive
+        server broker1 10.1.2.1:80 check
+        server broker2 10.1.2.2:80 check
+```
+
+Правило внутреннего доступа к HOSTVM VDI Tunneler для туннельных подключений. Необходимо указать IP-адреса машин HOSTVM VDI Tunneler (порт прослушивания туннельного сервера для туннельных соединений – 443).
+
+```
+backend tunnel-backend-ssl
+        mode tcp
+        balance roundrobin
         server tunserv1 10.1.2.3:443 check
         server tunserv2 10.1.2.4:443 check
 ```
