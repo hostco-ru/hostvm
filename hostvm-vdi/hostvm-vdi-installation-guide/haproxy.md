@@ -62,7 +62,7 @@ reboot
 frontend http-in
         bind *:80
         mode http
-        http-request set-header X-Forwarded-Proto http
+        reqadd X-Forwarded-Proto:\ http
         default_backend broker-backend
 ```
 
@@ -72,7 +72,7 @@ frontend http-in
 frontend https-in
         bind *:443 ssl crt /etc/ssl/private/haproxy.pem
         mode http
-        http-request set-header X-Forwarded-Proto https
+        reqadd X-Forwarded-Proto:\ http
         default_backend broker-backend
 ```
 
@@ -136,7 +136,7 @@ backend tunnel-backend-guacamole
 frontend http-in
         bind *:80
         mode http
-        reqadd X-Forwarded-Proto:\ http
+        http-request.set-header X-Forwarded-Proto http
         default_backend broker-backend
 ```
 
@@ -146,7 +146,7 @@ frontend http-in
 frontend https-in
         bind *:443 ssl crt /etc/ssl/private/haproxy.pem
         mode http
-        reqadd X-Forwarded-Proto:\ http
+        http-request.set-header X-Forwarded-Proto https
         default_backend broker-backend
 ```
 
