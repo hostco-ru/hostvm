@@ -245,6 +245,21 @@
   * [Настройка мета-пулов сервисов](hostvm-vdi/hostvm-vdi-admin-guide/nastroika-meta-pulov-servisov.md)
 * [Руководство пользователя](hostvm-vdi/hostvm-vdi-user-manual.md)
 
+## HOSTVM XRM
+
+* [Описание функциональных характеристик](hostvm-xrm/opisanie-funkcionalnykh-kharakteristik.md)
+* [Системные требования](hostvm-xrm/sistemnye-trebovaniya.md)
+* [История версий](hostvm-xrm/istoriya-versii.md)
+* [XRM версии 1.2.1](hostvm-xrm/xrm-versii-1.2.1/README.md)
+  * [Руководство по установке и настройке](hostvm-xrm/xrm-versii-1.2.1/rukovodstvo-po-ustanovke-i-nastroike/README.md)
+    * [Установка HOSTVM XRM](hostvm-xrm/xrm-versii-1.2.1/rukovodstvo-po-ustanovke-i-nastroike/ustanovka-hostvm-xrm.md)
+    * [Руководство администратора (модуль xrm\_ovirt)](hostvm-xrm/xrm-versii-1.2.1/rukovodstvo-po-ustanovke-i-nastroike/rukovodstvo-administratora-modul-xrm\_ovirt/README.md)
+      * [Начальная настройка](hostvm-xrm/xrm-versii-1.2.1/rukovodstvo-po-ustanovke-i-nastroike/rukovodstvo-administratora-modul-xrm\_ovirt/nachalnaya-nastroika.md)
+      * [Создание и запуск планов восстановления](hostvm-xrm/xrm-versii-1.2.1/rukovodstvo-po-ustanovke-i-nastroike/rukovodstvo-administratora-modul-xrm\_ovirt/sozdanie-i-zapusk-planov-vosstanovleniya.md)
+      * [Руководство по внедрению в среде oVirt](hostvm-xrm/xrm-versii-1.2.1/rukovodstvo-po-ustanovke-i-nastroike/rukovodstvo-administratora-modul-xrm\_ovirt/rukovodstvo-po-vnedreniyu-v-srede-ovirt.md)
+    * [Установка/изменение пароля администратора](hostvm-xrm/xrm-versii-1.2.1/rukovodstvo-po-ustanovke-i-nastroike/ustanovka-izmenenie-parolya-administratora.md)
+  * [Руководство пользователя](hostvm-xrm/xrm-versii-1.2.1/rukovodstvo-polzovatelya.md)
+
 ## HOSTVM SDS
 
 * [Руководство по установке и настройке](hostvm-sds/guide/README.md)
@@ -259,17 +274,3 @@
 ## О Компании
 
 * [Команда разработчиков HOSTVM](o-kompanii/developer.md)
-
-## HOSTVM XRM
-
-* [Описание функциональных характеристик](hostvm-xrm/opisanie-funkcionalnykh-kharakteristik.md)
-* [Системные требования](hostvm-xrm/sistemnye-trebovaniya.md)
-* [История версий](hostvm-xrm/istoriya-versii.md)
-* [XRM версии 1.2.1](hostvm-xrm/xrm-versii-1.2.1/README.md)
-  * [Руководство по установке и настройке](hostvm-xrm/xrm-versii-1.2.1/rukovodstvo-po-ustanovke-i-nastroike/README.md)
-    * [Руководство администратора (модуль xrm\_ovirt)](hostvm-xrm/xrm-versii-1.2.1/rukovodstvo-po-ustanovke-i-nastroike/rukovodstvo-administratora-modul-xrm\_ovirt/README.md)
-      * [Начальная настройка](hostvm-xrm/xrm-versii-1.2.1/rukovodstvo-po-ustanovke-i-nastroike/rukovodstvo-administratora-modul-xrm\_ovirt/nachalnaya-nastroika.md)
-      * [Создание и запуск планов восстановления](hostvm-xrm/xrm-versii-1.2.1/rukovodstvo-po-ustanovke-i-nastroike/rukovodstvo-administratora-modul-xrm\_ovirt/sozdanie-i-zapusk-planov-vosstanovleniya.md)
-      * [Руководство по внедрению в среде oVirt](hostvm-xrm/xrm-versii-1.2.1/rukovodstvo-po-ustanovke-i-nastroike/rukovodstvo-administratora-modul-xrm\_ovirt/rukovodstvo-po-vnedreniyu-v-srede-ovirt.md)
-    * [Установка/изменение пароля администратора](hostvm-xrm/xrm-versii-1.2.1/rukovodstvo-po-ustanovke-i-nastroike/ustanovka-izmenenie-parolya-administratora.md)
-  * [Руководство пользователя](hostvm-xrm/xrm-versii-1.2.1/rukovodstvo-polzovatelya.md)
