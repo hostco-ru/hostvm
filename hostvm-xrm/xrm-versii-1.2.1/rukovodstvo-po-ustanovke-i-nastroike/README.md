@@ -8,8 +8,9 @@ XRM позволяет автоматизировать как простые с
 \
 [Руководство администратора](rukovodstvo-administratora-modul-xrm\_ovirt/)
 
+[Установка HOSTVM XRM](ustanovka-hostvm-xrm.md)
+
 [Установка/изменение пароля администратора](ustanovka-izmenenie-parolya-administratora.md)\
-\
 
 
 <figure><img src="../../../.gitbook/assets/xrm_amin.gif" alt=""><figcaption></figcaption></figure>
