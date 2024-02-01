@@ -10,7 +10,7 @@
 Для версии 4.5.\* образ hostvm-node-ng-installer используется для установки гипервизора (HOSTVM node), образ hostvm-node-ng-installer-local-repo используется для последующей установки HOSTVM Manager.\
 Гостевые инструменты находятся в директории Misc/Guest tools, ссылка на инструкцию по установке: [Установка гостевых агентов и драйверов в Windows\
 ](https://kb.pvhostvm.ru/hostvm/rukovodstvo-po-administrirovaniyu/vm/gostevye-agenty-hostvm-instrumenty-i-draivery/ustanovka-gostevykh-agentov-i-draiverov-v-windows)Сценарий импорта виртуальных машин находится в директории Misc/VM Convert\
-Для конвертации и импорта виртуальных машин из других сред виртуализации воспользуйтесь инструкцией: [Конвертация, импорт виртуальных машин\
-](https://kb.pvhostvm.ru/hostvm/installation-guide/vm-import)Для установки HOSTVM node и HOSTVM Manager воспользуйтесь [Руководством по установке и настройке\
+Для конвертации и импорта виртуальных машин из других сред виртуализации воспользуйтесь инструкцией: [Конвертация, импорт виртуальных машин](konvertaciya-import-virtualnykh-mashin/)\
+Для установки HOSTVM node и HOSTVM Manager воспользуйтесь [Руководством по установке и настройке\
 ](https://kb.pvhostvm.ru/hostvm/installation-guide)Для дальнейшей настройки системы обратитесь к [Руководству по администрированию\
 ](https://kb.pvhostvm.ru/hostvm/rukovodstvo-po-administrirovaniyu)

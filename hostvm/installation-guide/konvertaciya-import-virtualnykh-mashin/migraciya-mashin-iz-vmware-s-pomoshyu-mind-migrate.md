@@ -2,4 +2,4 @@
 
 При миграции большого количества машин из VMware можно воспользоваться внешним инструментом миграции MIND Migrate [https://mindsw.io/documents/](https://mindsw.io/documents/)
 
-[Видеоинструкция](https://youtu.be/MXy4HwmH8Kw?si=QujsOn6HcDgKTLWF)
+[Видеоинструкция](https://www.youtube.com/watch?v=IpWbCrsKiL0\&ab\_channel=MINDSoftware)
