@@ -6,4 +6,4 @@
 
 [Создание и запуск планов восстановления](sozdanie-i-zapusk-planov-vosstanovleniya.md)
 
-[Руководство по внедрению в среде oVirt](rukovodstvo-po-vnedreniyu-v-srede-ovirt.md)
+[Руководство по внедрению в среде oVirt](rukovodstvo-po-vnedreniyu-v-srede-hostvm.md)

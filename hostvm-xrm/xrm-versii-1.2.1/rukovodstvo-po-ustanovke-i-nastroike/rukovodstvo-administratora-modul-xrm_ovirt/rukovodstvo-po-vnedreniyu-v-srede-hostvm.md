@@ -4,7 +4,7 @@ description: >-
   виртуализацией с помощью модуля xrm_ovirt в составе X Recovery Manager (XRM).
 ---
 
-# Руководство по внедрению в среде oVirt
+# Руководство по внедрению в среде HOSTVM
 
 Система управления виртуализацией oVirt позволяет управлять полным спектром компонентов инфраструктуры виртуализации, таких как хосты, локальные и сетевые дисковые хранилища, логические сети, виртуальные машины и т.д.
 
@@ -101,7 +101,7 @@ uid=36(vdsm) gid=36(kvm) groups=36(kvm)
 
 ### Шаг 1. Настройка раздела "ПАРАМЕТРЫ" модуля xrm\_ovirt для создания, удаления и запуска плана восстановления.
 
-Войти в XRM используя[ руководство пользователя](https://kb.x-rm.ru/dokumentaciya/dokumentaciya/xrm-versiya-1.2/rukovodstvo-polzovatelya). На верхней панели в меню навигации выбрать **МОДУЛИ**, слева в разделе **INSTALLED** выбрать модуль **xrm\_ovirt**
+Войти в XRM используя[ ](https://kb.x-rm.ru/dokumentaciya/dokumentaciya/xrm-versiya-1.2/rukovodstvo-polzovatelya)[Руководство пользователя](../../rukovodstvo-polzovatelya.md). На верхней панели в меню навигации выбрать **МОДУЛИ**, слева в разделе **INSTALLED** выбрать модуль **xrm\_ovirt**
 
 <figure><img src="../../../../.gitbook/assets/XRM, секция CONFIG модуля xrm_ovirt.png" alt=""><figcaption><p>XRM, секция ПАРАМЕТРЫ модуля xrm_ovirt</p></figcaption></figure>
 
@@ -245,7 +245,7 @@ Cправа в секции **ПАРАМЕТРЫ** необходимо наст
 
 ### Шаг 2. Создание, удаление, и запуск планов восстановления.
 
-Войти в XRM используя[ руководство пользователя](https://kb.x-rm.ru/dokumentaciya/dokumentaciya/xrm-versiya-1.2/rukovodstvo-polzovatelya). На верхней панели в меню навигации выбрать **ДЕЙСТВИЯ**, слева разверните раздел **XRM\_OVIRT**.
+Войти в XRM используя[ ](https://kb.x-rm.ru/dokumentaciya/dokumentaciya/xrm-versiya-1.2/rukovodstvo-polzovatelya)[Руководство пользователя](../../rukovodstvo-polzovatelya.md). На верхней панели в меню навигации выбрать **ДЕЙСТВИЯ**, слева разверните раздел **XRM\_OVIRT**.
 
 XRM подключается к внешним системам с помощью расширяемого набора модулей, содержащих действия.
 
