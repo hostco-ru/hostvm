@@ -14,5 +14,5 @@
 
 
 
-Подробное пошаговое описание процесса развертывания доступно в разделе: [Руководство по внедрению в среде oVirt](https://kb.x-rm.ru/dokumentaciya/dokumentaciya/xrm-versiya-1.2.1/rukovodstvo-administratora-modul-xrm\_ovirt/rukovodstvo-po-vnedreniyu-v-srede-ovirt)
+Подробное пошаговое описание процесса развертывания доступно в разделе: [Руководство по внедрению в среде HOSTVM](rukovodstvo-po-vnedreniyu-v-srede-hostvm.md)
 {% endhint %}
