@@ -198,6 +198,7 @@
     * [Миграция виртуальных машин между датацентрами HOSTVM](hostvm/rukovodstvo-po-administrirovaniyu/chasto-zadavaemye-voprosy/migraciya-virtualnykh-mashin-mezhdu-datacentrami-hostvm.md)
     * [Как исправить ошибку:"No package ovirt-engine-appliance available"](hostvm/rukovodstvo-po-administrirovaniyu/chasto-zadavaemye-voprosy/kak-ispravit-oshibku-no-package-ovirt-engine-appliance-available.md)
     * [Перенос Hosted-Engine в другое хранилище](hostvm/rukovodstvo-po-administrirovaniyu/chasto-zadavaemye-voprosy/perenos-hosted-engine-v-drugoe-khranilishe.md)
+    * [Как обновить сертификаты с истекшим сроком действия](hostvm/rukovodstvo-po-administrirovaniyu/chasto-zadavaemye-voprosy/kak-obnovit-sertifikaty-s-istekshim-srokom-deistviya.md)
 
 ## HOSTVM VDI
 
