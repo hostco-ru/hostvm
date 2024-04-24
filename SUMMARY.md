@@ -207,7 +207,7 @@
   * [Установка HOSTVM VDI Broker](hostvm-vdi/hostvm-vdi-installation-guide/hostvm-vdi-ova-install/README.md)
     * [Пакетная установка брокера для РЕД ОС](hostvm-vdi/hostvm-vdi-installation-guide/hostvm-vdi-ova-install/paketnaya-ustanovka-brokera-dlya-red-os.md)
     * [Настройка мультидоменного доступа](hostvm-vdi/hostvm-vdi-installation-guide/hostvm-vdi-ova-install/multidomain-access.md)
-  * [Установка HOSTVM VDI Tunneler](hostvm-vdi/hostvm-vdi-installation-guide/tunneler-appliance-deploy/README.md)
+  * [Установка HOSTVM VDI Tunneler](hostvm-vdi/hostvm-vdi-installation-guide/tunneler-appliance-deploy.md)
     * [Пакетная установка туннелера для РЕД ОС](hostvm-vdi/hostvm-vdi-installation-guide/tunneler-appliance-deploy/paketnaya-ustanovka-tunnelera-dlya-red-os.md)
   * [Установка и настройка выделенного сервера БД](hostvm-vdi/hostvm-vdi-installation-guide/vdi-db/README.md)
     * [Настройка брокера VDI для использования выделенного сервера БД](hostvm-vdi/hostvm-vdi-installation-guide/vdi-db/nastroika-brokera-vdi-dlya-ispolzovaniya-vydelennogo-servera-bd.md)
