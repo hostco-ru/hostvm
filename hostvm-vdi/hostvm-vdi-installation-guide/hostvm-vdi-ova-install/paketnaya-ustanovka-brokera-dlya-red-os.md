@@ -25,7 +25,7 @@ sudo setenforce 0
 
 
 ```
-tar -xvf ./hostvm-vdi-36rpm.tar.bz2
+tar -xvf ./hostvm-vdi<номер версии>-<номер сборки>.rpm.tar.bz2
 ```
 
 Установить скачанный пакет:

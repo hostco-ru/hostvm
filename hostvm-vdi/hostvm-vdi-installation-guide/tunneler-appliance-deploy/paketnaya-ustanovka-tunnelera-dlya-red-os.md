@@ -22,7 +22,7 @@ sudo setenforce 0
 Скачать и разархивировать пакет из личного кабинета:
 
 ```
-tar -xvf ./hostvm-gw36rpm.tar.bz2
+tar -xvf ./hostvm-gw<номер версии>-<номер сборки>.rpm.tar.bz2
 ```
 
 \
