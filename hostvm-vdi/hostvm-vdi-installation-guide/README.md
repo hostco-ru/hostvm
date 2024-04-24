@@ -20,6 +20,8 @@
 
 Для импорта и настройки воспользуйтесь [инструкцией](https://kb.pvhostvm.ru/hostvm-vdi/hostvm-vdi-installation-guide/hostvm-vdi-ova-install).
 
+Для установки **HOSTVM VDI Брокер** в виде пакета для систем РЕД ОС версии 7.3.3 и выше воспользуйтесь данной [инструкцией](https://app.gitbook.com/o/qyOa69dAW4Q1miUwxjur/s/-M6-oafU4c2bTrhoNggH/\~/changes/371/hostvm-vdi/hostvm-vdi-installation-guide/hostvm-vdi-ova-install/paketnaya-ustanovka-brokera-dlya-red-os)
+
 ### Дополнительные компоненты <a href="#optional" id="optional"></a>
 
 **HOSTVM VDI Шлюз**: шлюз для предоставления защищенных подключений и HTML5 доступа к сервисам.
@@ -27,6 +29,8 @@
 Используйте данный компонент, если вам требуется обеспечить защищенный доступ пользователей к сервисам VDI из WAN, и/или возможность подключения через HTML5.
 
 Для импорта и настройки воспользуйтесь [инструкцией](https://kb.pvhostvm.ru/hostvm-vdi/hostvm-vdi-installation-guide/tunneler-appliance-deploy).
+
+Для установки **HOSTVM VDI Шлюз** в виде пакета для РЕД ОС версии 7.3.3 и выше воспользуйтесь следующей [инструкцией](https://app.gitbook.com/o/qyOa69dAW4Q1miUwxjur/s/-M6-oafU4c2bTrhoNggH/\~/changes/371/hostvm-vdi/hostvm-vdi-installation-guide/tunneler-appliance-deploy/paketnaya-ustanovka-tunnelera-dlya-red-os)
 
 **HOSTVM VDI Сервер БД**: сервер базы данных брокера подключений.
 
