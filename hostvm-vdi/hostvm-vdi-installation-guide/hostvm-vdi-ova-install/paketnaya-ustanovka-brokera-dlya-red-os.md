@@ -17,7 +17,7 @@ sudo sed -i 's/^SELINUX=.*/SELINUX=disabled/g' /etc/selinux/config
 sudo setenforce 0
 ```
 
-Скачать пакет из личного кабинета и разархивируйте его:\
+Скачать и разархивировать пакет из личного кабинета:\
 
 
 ```
