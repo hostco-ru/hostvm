@@ -233,7 +233,7 @@
   * [Управление методами аутентификации](hostvm-vdi/hostvm-vdi-admin-guide/authenticators/README.md)
     * [Внутренняя база данных (Internal Database)](hostvm-vdi/hostvm-vdi-admin-guide/authenticators/vnutrennyaya-baza-dannykh-internal-database.md)
     * [Active Directory](hostvm-vdi/hostvm-vdi-admin-guide/authenticators/active-directory.md)
-    * [Regex LDAP / FreeIPA](hostvm-vdi/hostvm-vdi-admin-guide/authenticators/regex-ldap-freeipa.md)
+    * [Regex LDAP / FreeIPA / Samba DC](hostvm-vdi/hostvm-vdi-admin-guide/authenticators/regex-ldap-freeipa-samba-dc.md)
     * [Radius](hostvm-vdi/hostvm-vdi-admin-guide/authenticators/radius.md)
     * [SAML](hostvm-vdi/hostvm-vdi-admin-guide/authenticators/saml.md)
   * [Настройка менеджеров ОС](hostvm-vdi/hostvm-vdi-admin-guide/os-managers.md)
