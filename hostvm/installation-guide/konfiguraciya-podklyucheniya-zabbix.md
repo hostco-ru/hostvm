@@ -2,42 +2,103 @@
 
 Для интеграции Zabbix с HOSTVM воспользуйтесь готовым шаблоном.
 
-Шаблон доступен для скачивания в личном кабинете.
+Архив доступен для скачивания в личном кабинете.
 
-### Установка Zabbix
+{% hint style="info" %}
+Примечание: необходима версия Zabbix 6 и выше
+{% endhint %}
 
-1\. Установите базовую конфигурацию Zabbix с помощью инструкции с сайта разработчика: [https://www.zabbix.com/ru/download?zabbix=6.2\&os\_distribution=ubuntu\&os\_version=22.04\&components=server\_frontend\_agent\&db=pgsql\&ws=nginx](https://www.zabbix.com/ru/download?zabbix=6.2\&os\_distribution=ubuntu\&os\_version=22.04\&components=server\_frontend\_agent\&db=pgsql\&ws=nginx)
+### Настройка Zabbix-сервера
 
-### Инструкция по конфигурации подключения
+1\. Установите базовую конфигурацию Zabbix-сервера с помощью инструкции с сайта разработчика:[ ](https://www.zabbix.com/ru/download?zabbix=6.2\&os\_distribution=ubuntu\&os\_version=22.04\&components=server\_frontend\_agent\&db=pgsql\&ws=nginx)[https://www.zabbix.com/ru/download?zabbix=6.0\&os\_distribution=centos\&os\_version=8\&components=server\_frontend\_agent\&db=mysql\&ws=nginx](https://www.zabbix.com/ru/download?zabbix=6.0\&os\_distribution=centos\&os\_version=8\&components=server\_frontend\_agent\&db=mysql\&ws=nginx)
 
-Зависимости на сервере ovirt engine: jq&#x20;
+2\. Авторизуйтесь через браузер по указанному в процессе установки адресу, используя Admin/zabbix в качестве логина/пароля
 
-```
-yum install jq
-```
+3\. Загрузите в Zabbix шаблон из ЛК hostvm\_zabbix\_template в раздел Configuration -> Templates -> Import
 
-1\. Установить zabbix-agent на ovirt engine
+4\. Добавьте хост в разделе Configuration -> Hosts -> Create Host.\
+При добавлении укажите имя хоста, адрес Zabbix-агента и присоедините импортированный шаблон.
 
-1.1. Задать permissive SE linux режим с командой:
+### Настройка Zabbix-агента
+
+1\. Установите базовую конфигурацию Zabbix-агента на HOSTVM Manager с помощью инструкции с сайта разработчика [https://www.zabbix.com/ru/download?zabbix=6.0\&os\_distribution=centos\&os\_version=8\&components=agent\&db=\&ws=](https://www.zabbix.com/ru/download?zabbix=6.0\&os\_distribution=centos\&os\_version=8\&components=agent\&db=\&ws=)
+
+2\. Задайте permissive SElinux режим командой:
 
 ```
 semanage permissive -a zabbix_agent_t
 ```
 
-1.2. Задать в конфигурации агента параметры server, hostname, timeout=30
+3\. Добавьте правила фаервола:
 
-1.3. Скопировать файл zbx-ovirt.conf на сервере ovengine в директорию nclude=/etc/zabbix/zabbix\_agentd.d/ (или другое место), подключить его в конфигурацию агента (Include=/etc/zabbix/zabbix\_agentd.d/\*.conf)
+```
+firewall-cmd --permanent --add-port=10050/tcp
+firewall-cmd --reload
+```
 
-1.4. Скопировать файл zbx-ovirt.sh на сервере ovengine в директорию /etc/zabbix/scripts (или другое место), указать правильный путь в конфигурации агента для UserParameter до данного скрипта
+4\. Загрузите архив на Менеджер виртуализации и распакуйте:
 
-1.5. В скрипте zbx-ovirt.sh задать URL для доступа к API, логин-пароль для подключения.
+```
+tar xvzf hostvm_zabbix_template.tar.gz
 
-2\. Установить права на файл zbx-ovirt.sh - 755
+```
 
-3\. Создать хост (ovengine) в zabbix
+5\. Создайте директорию scripts:
 
-4\. Присоединить шаблон 'Template oVirt Engine' к хосту (ovengine)
+```
+mkdir -p /etc/zabbix/scripts
+```
 
-Через 1 час в zabbix создадутся объекты ovirt - hosts, vms, storage domains (При необходимости, заходим в Discovery Rule и выполняем проверку вручную)
+6\. Скопируйте файл `zbx-hostvm.conf` в директорию `/etc/zabbix/zabbix_agent.d/zbx-hostvm.conf`:
 
-Примечание: в конфигурации сервера, timeout необходимо увеличить до 30 сек.
+```
+cp zbx-hostvm.conf /etc/zabbix/zabbix_agent.d/zbx-hostvm.conf
+```
+
+7\. Скопируйте файл zbx-hostvm.py в директорию /etc/zabbix/scripts/zbx-hostvm.py
+
+```
+cp zbx-hostvm.py /etc/zabbix/scripts/zbx-hostvm.py
+```
+
+8\. Установите необходимые права для файла zbx-hostvm.py:
+
+```
+chmod 0755 /etc/zabbix/scripts/zbx-hostvm.py
+
+```
+
+9\. Откройте файл `/etc/zabbix/zabbix_agentd.conf` и внесите изменения, пример изменяемых параметров:
+
+```
+Server = 10.1.99.30
+# IP-адрес Вашего Zabbix-сервера
+ServerActive = 10.1.99.30
+# IP-адрес Вашего Zabbix-сервера
+ListenPort = 10050
+# Порт, указанный на Zabbix-сервере при добавлении хоста, в случае, если порт другой, то необходимо добавить для него соответствующее правило фаервола (см. пункт 3)
+Hostname = hostvm-manager.pvhostvm.ru
+# FQDN Вашего хоста, должен быть аналогичен указанному на Zabbix-сервере
+Timeout=30
+Include=/etc/zabbix/zabbix_agentd.d/zbx-hostvm.conf 
+# В случае, если путь до конфигурационного файла другой, то его нужно изменить
+```
+
+10\. Откройте файл `/etc/zabbix/scripts/zbx-hostvm.py` и внесите изменения, указав параметры Вашей управляющей машины:
+
+```
+URL = 'https://hostvm-manager.pvhostvm.ru/ovirt-engine/api/'
+USERNAME = 'admin@internal'
+PASSWORD = 'HostvmManager'
+CA_FILE = '/opt/certificates/ca.crt'
+```
+
+11\. Перезагрузите агент:
+
+```
+systemctl restart zabbix-agent
+```
+
+После выполненных действий дождитесь появления объектов в панели управления Zabbix.
+
+\
