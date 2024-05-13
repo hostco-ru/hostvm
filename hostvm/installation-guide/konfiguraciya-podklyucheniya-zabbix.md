@@ -10,7 +10,7 @@
 
 ### Настройка Zabbix-сервера
 
-1\. Установите базовую конфигурацию Zabbix-сервера с помощью инструкции с сайта разработчика:[ ](https://www.zabbix.com/ru/download?zabbix=6.2\&os\_distribution=ubuntu\&os\_version=22.04\&components=server\_frontend\_agent\&db=pgsql\&ws=nginx)[https://www.zabbix.com/ru/download?zabbix=6.0\&os\_distribution=centos\&os\_version=8\&components=server\_frontend\_agent\&db=mysql\&ws=nginx](https://www.zabbix.com/ru/download?zabbix=6.0\&os\_distribution=centos\&os\_version=8\&components=server\_frontend\_agent\&db=mysql\&ws=nginx)
+1\. Установите базовую конфигурацию Zabbix-сервера с помощью [инструкции](https://www.zabbix.com/ru/download?zabbix=6.0\&os\_distribution=centos\&os\_version=8\&components=server\_frontend\_agent\&db=mysql\&ws=nginx) с сайта разработчика.
 
 2\. Авторизуйтесь через браузер по указанному в процессе установки адресу, используя Admin/zabbix в качестве логина/пароля
 
@@ -21,7 +21,7 @@
 
 ### Настройка Zabbix-агента
 
-1\. Установите базовую конфигурацию Zabbix-агента на HOSTVM Manager с помощью инструкции с сайта разработчика [https://www.zabbix.com/ru/download?zabbix=6.0\&os\_distribution=centos\&os\_version=8\&components=agent\&db=\&ws=](https://www.zabbix.com/ru/download?zabbix=6.0\&os\_distribution=centos\&os\_version=8\&components=agent\&db=\&ws=)
+1\. Установите базовую конфигурацию Zabbix-агента на HOSTVM Manager с помощью [инструкции](https://www.zabbix.com/ru/download?zabbix=6.0\&os\_distribution=centos\&os\_version=8\&components=agent\&db=\&ws=) с сайта разработчика.
 
 2\. Задайте permissive SElinux режим командой:
 
