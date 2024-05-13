@@ -2,7 +2,7 @@
 
 Для интеграции Zabbix с HOSTVM воспользуйтесь готовым шаблоном.
 
-Архив доступен для скачивания в личном кабинете.
+Архив доступен для скачивания в Личном Кабинете.
 
 {% hint style="info" %}
 Примечание: необходима версия Zabbix 6 и выше
@@ -40,7 +40,6 @@ firewall-cmd --reload
 
 ```
 tar xvzf hostvm_zabbix_template.tar.gz
-
 ```
 
 5\. Создайте директорию scripts:
@@ -65,7 +64,6 @@ cp zbx-hostvm.py /etc/zabbix/scripts/zbx-hostvm.py
 
 ```
 chmod 0755 /etc/zabbix/scripts/zbx-hostvm.py
-
 ```
 
 9\. Откройте файл `/etc/zabbix/zabbix_agentd.conf` и внесите изменения, пример изменяемых параметров:
