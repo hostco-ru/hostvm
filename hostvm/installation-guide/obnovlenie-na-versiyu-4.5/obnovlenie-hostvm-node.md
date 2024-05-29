@@ -19,7 +19,7 @@ Compute -> Hosts -> Выделить обновляемую ноду -> Remove
 
 4\) Перезапустить сервер и загрузиться с ISO-образа hostvm-node-ng-installer-4.5.\*
 
-5\) Выполнить установку согласно разделу [Процесс установки](../ustanovka-hostvm-4.5-beta/ustanovka-hostvm-node/process-ustanovki.md) (устанавливать Hosted HOSTVM Manager не требуется)
+5\) Выполнить установку согласно разделу [Процесс установки](../ustanovka-hostvm-4.5/ustanovka-hostvm-node/process-ustanovki.md) (устанавливать Hosted HOSTVM Manager не требуется)
 
 6\) После успешной установки и перезапуска сервера на новой ОС, добавить хост в кластер через портал администрирования, указав hostname/IP-адрес:
 
