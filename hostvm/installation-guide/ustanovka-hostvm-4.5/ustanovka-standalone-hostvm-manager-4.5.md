@@ -37,3 +37,7 @@
 `http://FQDN:80/ovirt-engine`
 
 `https://FQDN:443/ovirt-engine`
+
+{% hint style="info" %}
+Примечание: последующее добавление хостов в кластер должно производиться без опции deploy
+{% endhint %}
