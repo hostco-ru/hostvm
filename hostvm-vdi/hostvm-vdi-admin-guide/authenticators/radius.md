@@ -52,4 +52,4 @@ _**VDIServer/uds/page/login/label**_
 
 ## Настройка Indeed AM NPS RADIUS Extension
 
-Руководство по настройке:[https://support.indeed-company.ru/Knowledgebase/Article/View/nastroika-2fa-dlya-hostvm-vdi-po-protokolu-radius](https://support.indeed-company.ru/Knowledgebase/Article/View/nastroika-2fa-dlya-hostvm-vdi-po-protokolu-radius)
+Руководство по настройке: [https://support.indeed-company.ru/Knowledgebase/Article/View/nastroika-2fa-dlya-hostvm-vdi-po-protokolu-radius](https://support.indeed-company.ru/Knowledgebase/Article/View/nastroika-2fa-dlya-hostvm-vdi-po-protokolu-radius)
