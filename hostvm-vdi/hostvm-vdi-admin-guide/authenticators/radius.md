@@ -49,3 +49,7 @@ _**VDIServer/uds/page/login/label**_
 <figure><img src="../../../.gitbook/assets/4_radius_new_auth.jpg" alt=""><figcaption></figcaption></figure>
 
 Нажав на кнопку **«Test»**, вы можете проверить успешность соединения.
+
+## Настройка Indeed AM NPS RADIUS Extension
+
+Руководство по настройке:[https://support.indeed-company.ru/Knowledgebase/Article/View/nastroika-2fa-dlya-hostvm-vdi-po-protokolu-radius](https://support.indeed-company.ru/Knowledgebase/Article/View/nastroika-2fa-dlya-hostvm-vdi-po-protokolu-radius)
