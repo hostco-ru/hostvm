@@ -219,7 +219,7 @@
   * [Обновление конфигурации из двух экземпляров брокера VDI со встроенной БД (с репликацией)](hostvm-vdi/hostvm-vdi-installation-guide/obnovlenie-konfiguracii-iz-dvukh-ekzemplyarov-brokera-vdi-so-vstroennoi-bd-s-replikaciei.md)
   * [Алгоритм развертывания HOSTVM VDI на примере отказоустойчивой инфраструктуры на одной площадке](hostvm-vdi/hostvm-vdi-installation-guide/algoritm-razvertyvaniya-hostvm-vdi-na-primere-otkazoustoichivoi-infrastruktury-na-odnoi-ploshadke.md)
   * [Изменения и исправления](hostvm-vdi/hostvm-vdi-installation-guide/changelog/README.md)
-    * [3.6 Beta](hostvm-vdi/hostvm-vdi-installation-guide/changelog/3.6-beta.md)
+    * [3.6](hostvm-vdi/hostvm-vdi-installation-guide/changelog/3.6.md)
     * [3.5](hostvm-vdi/hostvm-vdi-installation-guide/changelog/3.5.md)
     * [3.0](hostvm-vdi/hostvm-vdi-installation-guide/changelog/3.0.md)
   * [Часто задаваемые вопросы](hostvm-vdi/hostvm-vdi-installation-guide/faq.md)
