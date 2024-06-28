@@ -250,6 +250,19 @@
   * [Восстановление работы HOSTVM VDI в случае сбоя](hostvm-vdi/hostvm-vdi-admin-guide/vosstanovlenie-raboty-hostvm-vdi-v-sluchae-sboya.md)
   * [Настройка мета-пулов сервисов](hostvm-vdi/hostvm-vdi-admin-guide/nastroika-meta-pulov-servisov.md)
 * [Руководство пользователя](hostvm-vdi/hostvm-vdi-user-manual.md)
+* [Руководство по REST API](hostvm-vdi/rest-api-guide/README.md)
+  * [Версия 3.5](hostvm-vdi/rest-api-guide/3.5/README.md)
+    * [Точка входа API](hostvm-vdi/rest-api-guide/3.5/api-entry-point.md)
+    * [Аутентификация](hostvm-vdi/rest-api-guide/3.5/authentication.md)
+    * [Сервис-провайдеры](hostvm-vdi/rest-api-guide/3.5/providers.md)
+    * [Аутентификаторы, группы и пользователи](hostvm-vdi/rest-api-guide/3.5/authenticators.md)
+    * [Менеджеры ОС](hostvm-vdi/rest-api-guide/3.5/os-managers.md)
+    * [Транспорты](hostvm-vdi/rest-api-guide/3.5/transports.md)
+    * [Сервис-пулы](hostvm-vdi/rest-api-guide/3.5/pools.md)
+    * [Разрешения объектов](hostvm-vdi/rest-api-guide/3.5/permissions.md)
+    * [Системные настройки](hostvm-vdi/rest-api-guide/3.5/system-configuration.md)
+    * [Пользователи и сервисы](hostvm-vdi/rest-api-guide/3.5/user-services.md)
+    * [Приложение](hostvm-vdi/rest-api-guide/3.5/appendix.md)
 
 ## HOSTVM XRM
 
