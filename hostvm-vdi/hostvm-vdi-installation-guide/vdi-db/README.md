@@ -112,7 +112,7 @@ cat backup.sql | /usr/bin/mysql -u root udsdb
 
 В случае, если брокер VDI уже развернуты, его настройка для дальнейшего использования выделенного сервера БД выполняется согласно соответствующей [инструкции](nastroika-brokera-vdi-dlya-ispolzovaniya-vydelennogo-servera-bd.md).
 
-### Настройка для работы с СУБД PostgreSQL (версия 3.6 beta) <a href="#postgresql" id="postgresql"></a>
+### Настройка для работы с СУБД PostgreSQL (версия 3.6) <a href="#postgresql" id="postgresql"></a>
 
 Приведенное выше руководство по установке и настройке виртуального апплаенса сервера БД описывает конфигурацию по умолчанию с использованием СУБД MariaDB (MySQL).&#x20;
 

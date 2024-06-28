@@ -97,7 +97,7 @@ nginx: configuration file /etc/nginx/nginx.conf test is successful
 # systemctl reload apache2
 ```
 
-### Настройка для работы с СУБД PostgreSQL (версия 3.6 beta)
+### Настройка для работы с СУБД PostgreSQL (версия 3.6)
 
 По умолчанию для хранения данных брокера используется СУБД MariaDB (MySQL). Начиная с версии 3.6, дополнительно появилась поддержка СУБД PostgreSQL.
 
