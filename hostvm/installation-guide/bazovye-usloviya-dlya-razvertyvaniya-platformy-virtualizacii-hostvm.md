@@ -8,7 +8,10 @@
 Для успешной установки HOSTVM Manager требуется выполнение следующих условий:
 
 * Должны быть настроены FQDN (fully qualified domain name) для HOSTVM Manager и для HOSTVM Node (гипервизор), созданы A-записи на DNS сервере. Если есть затруднения с использованием DNS-сервера, можно создавать записи на хостах и ВМ HOSTVM Manager следуя [https://kb.pvhostvm.ru/hostvm/installation-guide/deistviya-pri-ustanovke-hostvm-pri-otsutstvii-zapisei-v-dns](deistviya-pri-ustanovke-hostvm-pri-otsutstvii-zapisei-v-dns.md)
-* Установка HOSTVM Manager должна проводиться на сетевой интерфейс без bonding и VLAN (можно будет добавить после развертывания);
+
+{% hint style="danger" %}
+**Установка HOSTVM Manager должна проводиться на сетевой интерфейс без bonding и VLAN (можно будет добавить после развертывания);**
+{% endhint %}
 
 Примерный порядок действий со ссылками на соответствующие инструкции:
 
