@@ -32,6 +32,25 @@ layout:
 
 После завершения работы мастера на сервере будет развернут инстанс базы данных брокера VDI с именем `udsdb`, и создан пользователь PostgreSQL `udsdbadm` с правами доступа к этой базе, с заданным в процессе настройки паролем.
 
+Далее, в файле `/etc/postgresql/13/main/postgresql.conf` раскомментируйте строку:
+
+```
+listen_addresses = '*'
+```
+
+В файл `/etc/postgresql/13/main/pg_hba.conf` разрешите удаленные подключения к БД с брокера VDI, добавив запись с его адресом или подсетью (в примере `10.1.1.0/24`):
+
+```
+# IPv4 remote connections:
+host    all             all             10.1.1.0/24           md5
+```
+
+Для применения новой конфигурации перезапустите службу PostgreSQL:
+
+```shell-session
+# systemctl restart postgresql.service
+```
+
 ### Перенос базы данных <a href="#db-migration" id="db-migration"></a>
 
 В случае новой установки данный раздел настройки можно пропустить.
@@ -128,6 +147,15 @@ DATABASES = {
 ```shell-session
 # systemctl restart vdi.service vdiweb.service
 ```
+
+Для инициализации базы данных выполните:
+
+<pre class="language-shell-session"><code class="lang-shell-session"># systemctl stop vdi
+<strong># cd /var/server
+</strong># python3 manage.py migrate
+# python3 manage.py createcachetable
+# systemctl start vdi
+</code></pre>
 
 Убедитесь, что портал брокера VDI успешно открывается в браузере.
 
