@@ -244,6 +244,7 @@
     * [RemoteApp](hostvm-vdi/hostvm-vdi-admin-guide/transports/remoteapp.md)
     * [SPICE](hostvm-vdi/hostvm-vdi-admin-guide/transports/spice.md)
     * [Loudplay](hostvm-vdi/hostvm-vdi-admin-guide/transports/loudplay.md)
+    * [X2Go](hostvm-vdi/hostvm-vdi-admin-guide/transports/x2go.md)
   * [Настройка пула сервисов](hostvm-vdi/hostvm-vdi-admin-guide/service-pools.md)
   * [Терминальные серверы и приложения](hostvm-vdi/hostvm-vdi-admin-guide/terminal-servers-and-apps/README.md)
     * [Настройка подключений по протоколу x2Go](hostvm-vdi/hostvm-vdi-admin-guide/terminal-servers-and-apps/nastroika-podklyuchenii-po-protokolu-x2go.md)
