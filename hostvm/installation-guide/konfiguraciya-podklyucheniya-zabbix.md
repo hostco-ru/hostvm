@@ -48,10 +48,10 @@ tar xvzf hostvm_zabbix_template.tar.gz
 mkdir -p /etc/zabbix/scripts
 ```
 
-6\. Скопируйте файл `zbx-hostvm.conf` в директорию `/etc/zabbix/zabbix_agent.d/zbx-hostvm.conf`:
+6\. Скопируйте файл `zbx-hostvm.conf` в директорию `/etc/zabbix/zabbix_agentd.d/zbx-hostvm.conf`:
 
 ```
-cp zbx-hostvm.conf /etc/zabbix/zabbix_agent.d/zbx-hostvm.conf
+cp zbx-hostvm.conf /etc/zabbix/zabbix_agentd.d/zbx-hostvm.conf
 ```
 
 7\. Скопируйте файл zbx-hostvm.py в директорию /etc/zabbix/scripts/zbx-hostvm.py
