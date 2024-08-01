@@ -23,50 +23,56 @@
 
 1\. Установите базовую конфигурацию Zabbix-агента на HOSTVM Manager с помощью [инструкции](https://www.zabbix.com/ru/download?zabbix=6.0\&os\_distribution=centos\&os\_version=8\&components=agent\&db=\&ws=) с сайта разработчика.
 
-2\. Задайте permissive SElinux режим командой:
+2\. Установите необходимые для работы скрипта зависимости:
+
+```
+yum install python3-ovirt-engine-sdk4
+```
+
+3\. Задайте permissive SElinux режим командой:
 
 ```
 semanage permissive -a zabbix_agent_t
 ```
 
-3\. Добавьте правила фаервола:
+4\. Добавьте правила фаервола:
 
 ```
 firewall-cmd --permanent --add-port=10050/tcp
 firewall-cmd --reload
 ```
 
-4\. Загрузите архив на Менеджер виртуализации и распакуйте:
+5\. Загрузите архив на Менеджер виртуализации и распакуйте:
 
 ```
 tar xvzf hostvm_zabbix_template.tar.gz
 ```
 
-5\. Создайте директорию scripts:
+6\. Создайте директорию scripts:
 
 ```
 mkdir -p /etc/zabbix/scripts
 ```
 
-6\. Скопируйте файл `zbx-hostvm.conf` в директорию `/etc/zabbix/zabbix_agentd.d/zbx-hostvm.conf`:
+7\. Скопируйте файл `zbx-hostvm.conf` в директорию `/etc/zabbix/zabbix_agentd.d/zbx-hostvm.conf`:
 
 ```
 cp zbx-hostvm.conf /etc/zabbix/zabbix_agentd.d/zbx-hostvm.conf
 ```
 
-7\. Скопируйте файл zbx-hostvm.py в директорию /etc/zabbix/scripts/zbx-hostvm.py
+8\. Скопируйте файл zbx-hostvm.py в директорию /etc/zabbix/scripts/zbx-hostvm.py
 
 ```
 cp zbx-hostvm.py /etc/zabbix/scripts/zbx-hostvm.py
 ```
 
-8\. Установите необходимые права для файла zbx-hostvm.py:
+9\. Установите необходимые права для файла zbx-hostvm.py:
 
 ```
 chmod 0755 /etc/zabbix/scripts/zbx-hostvm.py
 ```
 
-9\. Откройте файл `/etc/zabbix/zabbix_agentd.conf` и внесите изменения, пример изменяемых параметров:
+10\. Откройте файл `/etc/zabbix/zabbix_agentd.conf` и внесите изменения, пример изменяемых параметров:
 
 ```
 Server = 10.1.99.30
@@ -82,7 +88,7 @@ Include=/etc/zabbix/zabbix_agentd.d/zbx-hostvm.conf
 # В случае, если путь до конфигурационного файла другой, то его нужно изменить
 ```
 
-10\. Откройте файл `/etc/zabbix/scripts/zbx-hostvm.py` и внесите изменения, указав параметры Вашей управляющей машины:
+11\. Откройте файл `/etc/zabbix/scripts/zbx-hostvm.py` и внесите изменения, указав параметры Вашей управляющей машины:
 
 ```
 URL = 'https://hostvm-manager.pvhostvm.ru/ovirt-engine/api/'
@@ -91,7 +97,7 @@ PASSWORD = 'HostvmManager'
 CA_FILE = '/opt/certificates/ca.crt'
 ```
 
-11\. Перезагрузите агент:
+12\. Перезагрузите агент:
 
 ```
 systemctl restart zabbix-agent
