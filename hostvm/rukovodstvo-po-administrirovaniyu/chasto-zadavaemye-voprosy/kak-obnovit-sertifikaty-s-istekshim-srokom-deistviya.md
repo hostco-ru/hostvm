@@ -21,15 +21,17 @@
 -config openssl.conf \
 -cert ca.pem \
 -keyfile private/ca.pem \
--days +"365" \
 -in /tmp/test_hostvm-test_vdsm.csr \
 -out /tmp/test_hostvm-test_vdsm.cer \
--startdate `(date --utc --date "now -1 days" +"%y%m%d%H%M%SZ")` \
--subj "/O=example.test/CN=hostvm-test.example.test\
+-startdate 20240613120000Z \
+-enddate 20260613120000Z \
+-subj "/O=example.test/CN=hostvm-test.example.test" \
 -utf8
 ```
 
 Имя субъекта в сертификате должно быть в формате `"/O=example.test/CN=hostvm-test.example.test"`, укажите ваши значения.
+
+Укажите Ваши значения -startdate и -enddate, указывающие начало и конец срока действия сертификата.
 
 Копируем новый сертификат с HOSTVM Manager на HOSTVM Node(hostvm-test) в /tmp.
 
