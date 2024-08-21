@@ -220,6 +220,7 @@
     * [Восстановление работы в случае сбоя](hostvm-vdi/hostvm-vdi-installation-guide/high-availability/crash-recovery.md)
   * [Обновление компонентов VDI](hostvm-vdi/hostvm-vdi-installation-guide/obnovlenie-komponentov-vdi.md)
   * [Обновление конфигурации из двух экземпляров брокера VDI со встроенной БД (с репликацией)](hostvm-vdi/hostvm-vdi-installation-guide/obnovlenie-konfiguracii-iz-dvukh-ekzemplyarov-brokera-vdi-so-vstroennoi-bd-s-replikaciei.md)
+  * [Конфигурация подключения Zabbix](hostvm-vdi/hostvm-vdi-installation-guide/konfiguraciya-podklyucheniya-zabbix.md)
   * [Изменения и исправления](hostvm-vdi/hostvm-vdi-installation-guide/changelog/README.md)
     * [3.6](hostvm-vdi/hostvm-vdi-installation-guide/changelog/3.6.md)
     * [3.5](hostvm-vdi/hostvm-vdi-installation-guide/changelog/3.5.md)
