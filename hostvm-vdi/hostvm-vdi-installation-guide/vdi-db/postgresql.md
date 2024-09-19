@@ -126,9 +126,8 @@ host    all             all             10.1.1.0/24           md5
 
 Отредактируйте файл настроек брокера `/var/server/server/settings.py`, в блок `DATABASES` внесите информацию:
 
-```
-DATABASES = {
-    'default': {
+<pre><code><strong>DATABASES = {
+</strong>    'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'OPTIONS': {
             'isolation_level': 'read committed',
@@ -140,7 +139,7 @@ DATABASES = {
         'PORT': '',                          # порт сервера БД, оставьте пустым при использовании порта по умолчанию
     }
 }
-```
+</code></pre>
 
 Перезапустите службы брокера VDI:
 
@@ -177,3 +176,42 @@ DATABASES = {
 # systemctl disable postgresql.service
 ```
 
+### Шифрования трафика между брокером VDI и СУБД
+
+В файл `/etc/postgresql/13/main/pg_hba.conf` внесите соответствующую запись с адресом или подсетью брокера(в примере `10.1.1.0/24`):
+
+```
+# IPv4 remote connections:
+hostssl    all             all             10.1.1.0/24           md5
+```
+
+Для применения новой конфигурации перезапустите службу PostgreSQL:
+
+```shell-session
+# systemctl restart postgresql.service
+```
+
+Отредактируйте файл настроек брокера `/var/server/server/settings.py`, в блок `DATABASES` в секции `OPTIONS` внесите  запись `'sslmode': 'require',`
+
+```
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'OPTIONS': {
+            'isolation_level': 'read committed',
+            'sslmode': 'require',
+        },
+        'NAME': 'udsdb',                     # имя БД, по умолчанию udsdb
+        'USER': 'udsdbadm',                  # имя пользователя БД, по умолчанию udsdbadm
+        'PASSWORD': 'password',              # пароль пользователя БД, как был задан в мастере установки сервера БД
+        'HOST': '10.1.1.1',                  # IP адрес сервера БД, например 10.1.1.1
+        'PORT': '',                          # порт сервера БД, оставьте пустым при использовании порта по умолчанию
+    }
+}
+```
+
+Перезапустите службы брокера VDI:
+
+```shell-session
+# systemctl restart vdi.service vdiweb.service
+```
