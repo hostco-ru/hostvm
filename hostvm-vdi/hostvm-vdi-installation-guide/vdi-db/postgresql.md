@@ -15,7 +15,7 @@ layout:
 # Настройка СУБД PostgreSQL
 
 {% hint style="info" %}
-Поддерживаемые версии PostgreSQL: 13, 15
+**Поддерживаемые версии PostgreSQL: 13, 15**
 {% endhint %}
 
 ### Мастер установки сервера БД <a href="#db-wizard" id="db-wizard"></a>
