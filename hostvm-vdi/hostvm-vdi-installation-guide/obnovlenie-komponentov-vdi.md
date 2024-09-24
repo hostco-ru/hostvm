@@ -40,70 +40,18 @@
 
 ## Обновление брокера VDI на РЕД ОС
 
-{% hint style="warning" %}
-Перед обновлением убедитесь в наличии другой учетной записи с правами администратора, встроенная учётная запись администратора root будет заблокирована. После обновления измените пароль учётной записи root для её разблокирования.
-{% endhint %}
+Обновление осуществляется путём установки пакета hostvm-vdi новой версии.
 
-Обновление проводится путём удаления пакета hostvm-vdi предыдущей версии и установки нового.
-
-Остановить сервисы брокера VDI:
+Скачать и разархивировать пакет из личного кабинета:
 
 ```
-# systemctl stop vdi.service vdiweb.service
+tar -xvf ./hostvm-vdi<номер версии>-<номер сборки>.rpm.tar.bz2
 ```
 
-Удалить пакет hostvm-vdi:
+Установить скачанный пакет:
 
 ```
-# rpm -e hostvm-vdi
-```
-
-Удалить следующие сертификаты:
-
-```
-/etc/certs/dhparam.pem
-/etc/certs/key.pem
-/etc/certs/server.pem
-```
-
-Удалить символическую ссылку `/etc/nginx/sites-enabled`:
-
-```
-# rm /etc/nginx/sites-enabled
-```
-
-Из файла `/etc/nginx/nginx.conf` удалить следующие строки:
-
-```
-include /etc/nginx/sites-enabled;
-ssl_protocols TLSv1 TLSv1.1 TLSv1.2 TLSv1.3;
-ssl_prefer_server_ciphers on;
-gzip on;
-```
-
-Произвести пакетную установку брокера VDI согласно [инструкции для РЕД ОС](hostvm-vdi-ova-install/paketnaya-ustanovka-brokera-dlya-red-os.md)
-
-В случае, если используется внешняя БД, отредактируйте файл настроек брокера `/var/server/server/settings.py`  и в блок `DATABASES`внесите информацию о сервере БД:
-
-<pre><code><strong>DATABASES = {
-</strong>    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'OPTIONS': {
-            'isolation_level': 'read committed',
-        },
-        'NAME': 'udsdb',                     # имя БД, по умолчанию udsdb
-        'USER': 'udsdbadm',                  # имя пользователя БД, по умолчанию udsdbadm
-        'PASSWORD': 'password',              # пароль пользователя БД, как был задан в мастере установки сервера БД
-        'HOST': '10.1.1.1',                  # IP адрес сервера БД, например 10.1.1.1
-        'PORT': '',                          # порт сервера БД, оставьте пустым при использовании порта по умолчанию
-    }
-}
-</code></pre>
-
-Перезапустите службы брокера VDI:
-
-```shell-session
-# systemctl restart vdi.service vdiweb.service
+sudo yum install ./hostvm-vdi<номер версии>x86_64.rpm
 ```
 
 ## HOSTVM VDI туннелер
