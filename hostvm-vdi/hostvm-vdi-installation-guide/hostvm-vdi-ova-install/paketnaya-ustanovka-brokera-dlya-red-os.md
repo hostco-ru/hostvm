@@ -6,12 +6,6 @@
 
 ## Подготовка системы <a href="#user-content-podgotovka-sistemy" id="user-content-podgotovka-sistemy"></a>
 
-Предварительно необходимо обновить пакеты в системе:
-
-```
-sudo yum upgrade
-```
-
 Отключить SELinux:
 
 ```
