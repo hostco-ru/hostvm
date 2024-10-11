@@ -64,14 +64,24 @@ systemctl restart mariadb
 
 ```
 DROP USER 'udsdbadm'@'localhost';
-CREATE USER 'udsdbadm'@'%' IDENTIFIED BY 'rom9nsNL';
+CREATE USER 'udsdbadm'@'%' IDENTIFIED BY 'password';
 ```
 
-Где 'rom9nsNL' – пароль по умолчанию для пользователя `udsdbadm`. При указании пароля отличного от стандартного необходимо внести соответствующие изменения в файл конфигурации брокера `/var/server/server/setting.py`, а также сменить пароль пользователю `udsdbadm` на новый на втором сервере (Slave).
+Где 'password' – пароль для пользователя `udsdbadm`. После пересоздания пользователя необходимо внести соответствующие изменения в файл конфигурации брокера `/var/server/server/setting.py`, а также сменить пароль пользователю `udsdbadm` на новый на втором сервере (Slave).
 
 ```
 GRANT ALL PRIVILEGES ON *.* TO 'udsdbadm'@'%';
 FLUSH PRIVILEGES;
+```
+
+* Внести изменения в файл конфигурации брокера `/var/server/server/setting.py` , указав новый пароль для пользователя `udsdbadm`:
+
+```
+DATABASES = {
+...
+        'PASSWORD': 'password'
+...
+}
 ```
 
 * Создать резервную копию БД **(обязательно!**):
@@ -227,10 +237,10 @@ systemctl restart mariadb
 
 ```
 DROP USER 'udsdbadm'@'localhost';
-CREATE USER 'udsdbadm'@'%' IDENTIFIED BY 'rom9nsNL';
+CREATE USER 'udsdbadm'@'%' IDENTIFIED BY 'password';
 ```
 
-Где 'rom9nsNL' – пароль по умолчанию для пользователя `udsdbadm`. При указании пароля отличного от стандартного необходимо внести соответствующие изменения в файл конфигурации брокера `/var/server/server/setting.py`, а также сменить пароль пользователю `udsdbadm` на новый на втором сервере (Slave).
+Где 'password' – пароль для пользователя `udsdbadm`. После пересоздания пользователя необходимо внести соответствующие изменения в файл конфигурации брокера `/var/server/server/setting.py`, а также сменить пароль пользователю `udsdbadm` на новый на втором сервере (Slave).
 
 ```
 GRANT ALL PRIVILEGES ON *.* TO 'udsdbadm'@'%';
@@ -261,12 +271,13 @@ systemctl stop vdi.service vdiweb.service
 ```
 {% endcode %}
 
-* Отредактировать файл `/var/server/server/settings.py`, указать в поле **`HOST`** адрес первого сервера БД (_**10.0.0.3**_):
+* Отредактировать файл `/var/server/server/settings.py`, указать в поле **`HOST`** адрес первого сервера БД (_**10.0.0.3**_), и пароль для пользователя `udsdbadm`:
 
 ```
 DATABASES = {
 ...
         'HOST': '10.0.0.3'
+        'PASSWORD': 'password'
 ...
 }
 ```
