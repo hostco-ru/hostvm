@@ -24,6 +24,7 @@ apt-get update && apt-get dist-upgrage
 apt-get install /<path>/<to>/<file>/hostvm-gw-<version>.rpm
 ```
 
+Для версии 3.6-alt3 и свежее шаг запуска postinst.sh не выполняется:\
 Запускаем скрипт для установки необходимых зависимостей и настройки системы:
 
 ```
