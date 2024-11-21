@@ -23,3 +23,9 @@
 * Вариант установки на FC-диск - [https://kb.pvhostvm.ru/hostvm/installation-guide/ustanovka-hostvm-cherez-gui-4.4/ustanovka-hostvm-manager-na-fc-disk](ustanovka-hostvm-4.3-4.4/ustanovka-hostvm-manager-4.4.8-gui/ustanovka-hostvm-manager-na-fc-disk.md)
 
 3\. Далее необходимо выполнить добавление хостов со стороны HOSTVM Manager по инструкции (см. раздел Добавление хостов): [https://kb.pvhostvm.ru/hostvm/installation-guide/after-install#dobavlenie-khostov](https://kb.pvhostvm.ru/hostvm/installation-guide/after-install#dobavlenie-khostov)
+
+4.При использовании тонких дисков, динамически использующих большое дисковое пространство, рекомендуется настройка системы мониторинга свободного места в доменах хранения. Ситуация, когда хранилище заполнено полностью, является не желательной и может привести к полной потере данных с этого хранилища.&#x20;
+
+Интеграция с Zabbix:  [Конфигурация подключения Zabbix](konfiguraciya-podklyucheniya-zabbix.md)
+
+При отсутствии специализированной системы мониторинга можно воспользоваться штатным средством ovirt-engine-notifier для организации оповещений по протоколу SMTP или SNMP: [Настройка уведомлений](../rukovodstvo-po-administrirovaniyu/nastroika-uvedomlenii/)
