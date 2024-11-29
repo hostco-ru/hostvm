@@ -8,19 +8,19 @@
 
 Для создания домена экспорта можно использовать nfs-share, с процедурой ее создания можно ознакомиться в главе [Подготовка NFS share](../../installation-guide/ustanovka-hostvm-4.3-4.4/ustanovka-hostvm-manager-cli/pered-ustanovkoi/podgotovka-nfs-share.md)
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 2\) Перенос виртуальных машин в домен экспорта из datacenter1:
 
 `Compute -> Virtual Machines -> выбирате ВМ -> ⋮ -> Export to Export Domain`
 
-<figure><img src="../../../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 3\) Отсоединение домена экспорта от датацентра1:
 
 `Data Centers -> выбираете data center -> выбираете Export Domain -> Maintenance -> Detach`
 
-<figure><img src="../../../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Далее `Storage -> domains -> выбираете export domain -> remove`
 
@@ -32,7 +32,7 @@
 
 <figure><img src="../../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
 
-4\) Подключение д_омена экспорта к датацентру2:_
+4\) Подключение &#x434;_&#x43E;мена экспорта к датацентру2:_
 
 `Storage -> Domains -> Import Domain`
 

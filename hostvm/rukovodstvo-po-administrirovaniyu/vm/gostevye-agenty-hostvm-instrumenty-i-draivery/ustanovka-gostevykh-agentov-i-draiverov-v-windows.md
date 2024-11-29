@@ -31,9 +31,9 @@
 ●       открыть командную строку с правами администратора;
 
 ●       ввести команду msiexec:\
-_D:\ msiexec /i "PATH\_TO\_MSI" /qn \[/l\*v "PATH\_TO\_LOG"]\[/norestart] ADDLOCAL=ALL_
+&#xNAN;_&#x44;:\ msiexec /i "PATH\_TO\_MSI" /qn \[/l\*v "PATH\_TO\_LOG"]\[/norestart] ADDLOCAL=ALL_
 
 Например, чтобы запустить установку без сохранения журнала, когда virtio-win-gt-x64.msi находится на диске D:\\, а затем немедленно перезапустить ВМ, необходимо ввести следующую команду:\
-_D:\ msiexec / i " virtio-win-gt-x64.msi "/ qn ADDLOCAL = ALL_
+&#xNAN;_&#x44;:\ msiexec / i " virtio-win-gt-x64.msi "/ qn ADDLOCAL = ALL_
 
 После завершения установки гостевые агенты и драйверы будут передавать информацию об утилизации ресурсов ВМ в HOSTVM Manager и позволят получать доступ к USB-устройствам, единому входу в ВМ и другим функциям. Гостевой агент работает как служба под названием oVirt Guest Service, которую можно настроить с помощью файла конфигурации ovirt-guest-agent.ini, расположенного по адресу: _C:\Program Files (x86)\oVirt Guest Tools_.

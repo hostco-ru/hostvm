@@ -1,8 +1,8 @@
-# Regex LDAP / FreeIPA
+# Regex LDAP / FreeIPA / Samba DC
 
 Этот внешний аутентификатор позволяет пользователям и группам пользователей, принадлежащим к большинству LDAP-based аутентификаторов, получать доступ к виртуальным рабочим столам или приложениям.
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -12,7 +12,7 @@
 
 * Вкладка «Основной»
 
-<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -38,7 +38,7 @@
 
 * Вкладка «LDAP информация»
 
-<figure><img src="../../../.gitbook/assets/image (3) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 База (Base) - Каталог поиска, в котором система будет находить группы и пользователей для проверки в системе;
 
