@@ -2,7 +2,7 @@
 
 Этот внешний аутентификатор позволяет пользователям и группам пользователей, принадлежащим к большинству LDAP-based аутентификаторов, получать доступ к виртуальным рабочим столам или приложениям.
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 
