@@ -224,8 +224,6 @@
     * [Настройка репликации БД между серверами](hostvm-vdi/hostvm-vdi-installation-guide/high-availability/vdi-db-replication.md)
     * [Восстановление работы в случае сбоя](hostvm-vdi/hostvm-vdi-installation-guide/high-availability/crash-recovery.md)
   * [Агент HOSTVM VDI](hostvm-vdi/hostvm-vdi-installation-guide/actor.md)
-  * [Клиент HOSTVM VDI](hostvm-vdi/hostvm-vdi-installation-guide/client/README.md)
-    * [Управление параметрами клиента FreeRDP](hostvm-vdi/hostvm-vdi-installation-guide/client/managing-freerdp-client.md)
   * [Обновление компонентов VDI](hostvm-vdi/hostvm-vdi-installation-guide/update-guide.md)
   * [Обновление конфигурации из двух экземпляров брокера VDI со встроенной БД (с репликацией)](hostvm-vdi/hostvm-vdi-installation-guide/obnovlenie-konfiguracii-iz-dvukh-ekzemplyarov-brokera-vdi-so-vstroennoi-bd-s-replikaciei.md)
   * [Конфигурация подключения Zabbix](hostvm-vdi/hostvm-vdi-installation-guide/konfiguraciya-podklyucheniya-zabbix.md)
