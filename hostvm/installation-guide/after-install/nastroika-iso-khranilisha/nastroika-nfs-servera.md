@@ -17,9 +17,20 @@ useradd vdsm -u 36 -g 36
 
 ```
 mkdir -p /nfs/iso-stor
-chown -R 36:36 /nfs/iso-stor
-chmod 0755 /nfs/iso-stor
 ```
+
+{% hint style="info" %}
+Если к созданной директории необходимо примонтировать устройство, то выполните следующую команду перед выполнением дальнейших действий:
+
+<pre><code><strong>mount /dev/&#x3C;имя устройства> /data/nfs/iso-storage
+</strong></code></pre>
+{% endhint %}
+
+<pre><code><strong>chown -R 36:36 /nfs/iso-stor
+</strong>chmod 0755 /nfs/iso-stor
+</code></pre>
+
+
 
 Установите необходимые пакеты, добавьте службы в автозагрузку и запустите:
 
@@ -28,6 +39,8 @@ yum install nfs-utils -y
 systemctl enable rpcbind nfs-server
 systemctl start rpcbind nfs-server
 ```
+
+
 
 Настройте файл конфигурации nfs-сервера. Для работы будем использовать текстовый редактор `nano`. Установите его командой:
 
@@ -64,7 +77,7 @@ nano /etc/exports
 Убедитесь, что ресурсы опубликованы:
 
 ```
-[root@testname1 ~]# exportfs
+exportfs
 /nfs/iso-stor   10.1.140.0/25
 ```
 
