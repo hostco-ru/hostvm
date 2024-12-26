@@ -26,8 +26,8 @@ sh IP-wizard.sh
 Нажмите ENTER для продолжения или ^C для выхода из программы!
 Для принятия значений по-умолчанию просто нажимайте ENTER. ;)
 
-Укажите ваш Домен: hostco.ru
-Домен: hostco.ru
+Укажите ваш Домен: mydomain.ru
+Домен: mydomain.ru
 
 Укажите DNS имя для oVirt Engine(консоли,веб-интерфейса управления)(без домена)[по умолчанию: engine]: engine-test
 DNS имя консоли(веб-интерфейса) управления: engine-test
@@ -192,7 +192,7 @@ sh makeHostvmBranding.sh
 3. Если на этапе `ansible-playbook /etc/ansible/make-prepare.yml` появилась ошибка, повторите выполнение данной команды
 4. Если на этапе `ansible-playbook /etc/ansible/make-gluster-storages.yml` появилась ошибка, повторите выполнение данной команды
 5. Если на этапе `ansible-playbook /etc/ansible/make-ovirt.yml` появилась ошибка, повторите выполнение данной команды
-6. Если после завершения установки вам не открывается страница в браузере с адресом [https://engine.mydomain.ru](https://engine.mydomain.ru), то
+6. Если после завершения установки вам не открывается страница в браузере с адресом [https://engine.](https://engine.mydomain.ru)[mydomain.ru](https://engine.mydomain.ru), то
    1. Проверьте, что ip для engine, указанный в таблице в начале установки отвечает на команду ping
    2. Проверьте, что имя `engine.mydomain.ru` разрешается вашим dns-сервером.
 7. Если на этапе установки engine `/root/script-hosted-engine-deploy | tee -a /root/script-hosted-engine-deploy.log` установка зависает на этапе `Engine VM domain: [rtc.local]rtc.local Enter root password that will be used for the engine appliance: engine`, то подключитесь к консоли сервера не по SSH, а с помощью ipmi(iLO, iDRAC, etc.) и повторно запустите скрипт установки engine.
