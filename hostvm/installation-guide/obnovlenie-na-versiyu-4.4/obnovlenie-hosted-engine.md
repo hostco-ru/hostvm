@@ -129,8 +129,7 @@ domain.ru
 ```
 Please specify the storage you would like to use (glusterfs, iscsi, fc, nfs)[nfs]: nfs
 Please specify the nfs version you would like to use (auto, v3, v4, v4_0, v4_1, v4_2)[auto]: 
-          Please specify the full shared storage connection path to use (example: host:/path): t-dis-nf
-s.hostco.ru:/data/nfs_4
+          Please specify the full shared storage connection path to use (example: host:/path): 10.1.158:140:/data/nfs_4
 
 ...
 
