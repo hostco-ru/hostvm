@@ -14,7 +14,7 @@ layout:
 
 # Настройка СУБД PostgreSQL
 
-{% hint style="info" %}
+{% hint style="warning" %}
 **Поддерживаемые версии PostgreSQL: 13, 15**
 {% endhint %}
 

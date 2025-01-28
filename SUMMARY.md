@@ -219,6 +219,7 @@
   * [Установка и настройка выделенного сервера БД](hostvm-vdi/hostvm-vdi-installation-guide/vdi-db/README.md)
     * [Настройка брокера VDI для использования выделенного сервера БД](hostvm-vdi/hostvm-vdi-installation-guide/vdi-db/broker-config.md)
     * [Настройка СУБД PostgreSQL](hostvm-vdi/hostvm-vdi-installation-guide/vdi-db/postgresql.md)
+    * [Миграция данных брокера VDI из СУБД PostgreSQL в СУБД MariaDB](hostvm-vdi/hostvm-vdi-installation-guide/vdi-db/db-migration.md)
   * [Конфигурация высокой доступности](hostvm-vdi/hostvm-vdi-installation-guide/high-availability/README.md)
     * [Установка и настройка балансировщика HAProxy](hostvm-vdi/hostvm-vdi-installation-guide/high-availability/haproxy.md)
     * [Настройка репликации БД между серверами](hostvm-vdi/hostvm-vdi-installation-guide/high-availability/vdi-db-replication.md)
