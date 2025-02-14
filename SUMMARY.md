@@ -242,6 +242,7 @@
   * [Настройка сервис-провайдеров](hostvm-vdi/hostvm-vdi-admin-guide/service-providers/README.md)
     * [Платформа виртуализации HOSTVM](hostvm-vdi/hostvm-vdi-admin-guide/service-providers/hostvm.md)
     * [Платформа RDS](hostvm-vdi/hostvm-vdi-admin-guide/service-providers/rds.md)
+    * [Провайдер OpenNebula](hostvm-vdi/hostvm-vdi-admin-guide/service-providers/opennebula.md)
   * [Управление методами аутентификации](hostvm-vdi/hostvm-vdi-admin-guide/authenticators/README.md)
     * [Внутренняя база данных (Internal Database)](hostvm-vdi/hostvm-vdi-admin-guide/authenticators/vnutrennyaya-baza-dannykh-internal-database.md)
     * [Active Directory](hostvm-vdi/hostvm-vdi-admin-guide/authenticators/active-directory.md)
