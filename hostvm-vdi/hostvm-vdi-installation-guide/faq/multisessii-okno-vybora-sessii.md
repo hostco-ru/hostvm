@@ -10,7 +10,7 @@
 
 <figure><img src="../../../.gitbook/assets/image (51).png" alt=""><figcaption><p>Публикация через HTML5 RemoteApp</p></figcaption></figure>
 
-#### Несколько приложений в одной HTML5  сессии
+#### Несколько приложений в одной HTML5 сессии
 
 Условие: установление значения "**Enabled/Not Configured**" политики "**Restrict Remote Desktop Services users to a single Remote Desktop Services session**".
 
@@ -33,5 +33,5 @@
 Решение находится на стадии тестирования, для получения информации о решении необходимо обратиться в техподдержку.
 
 {% hint style="danger" %}
-Решение применимо для Windows Server 2019 до сборки 17763.2931 (KB5015018) включительно.
+Решение применимо для Windows Server 2019 до сборки 17763.2931 (KB5015018) включительно. Для более новых версий решение закрывает только проблему "Несколько приложений в одной HTML5 сессии".
 {% endhint %}

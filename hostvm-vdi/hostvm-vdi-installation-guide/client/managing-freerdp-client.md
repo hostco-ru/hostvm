@@ -35,7 +35,7 @@ done
 /usr/bin/xfreerdp ${catchedArgs} /p:$(zenity --entry --title="Password input" --text="Введите пароль:" --hide-text)
 </code></pre>
 
-<figure><img src="../../../.gitbook/assets/image (34).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (34) (2).png" alt=""><figcaption></figcaption></figure>
 
 ### Исключение параметров для работы с xfreerdp3
 
