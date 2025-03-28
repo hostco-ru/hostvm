@@ -20,7 +20,7 @@ SELECT * FROM ( SELECT FROM_UNIXTIME(t1.stamp) AS Timestamp, t2.name AS ServiceP
 t1.owner_id = t2.id WHERE t1.event_type = 2 ORDER BY t1.stamp ) AS Report WHERE ServicePool = 'Notepad 1' AND ( Timestamp BETWEEN '2025-02-28 00:00:00' AND '2025-03-26 00:00:00' );
 ```
 
-`( Timestamp BETWEEN '2025-02-28 00:00:00' AND '2025-03-26 00:00:00' )` - желаемый временной промежуток, указанный в формате 'YYYY-MM-DD hh:mm:ss'.
+`( Timestamp BETWEEN '2025-02-28 00:00:00' AND '2025-03-26 00:00:00' )` - временной промежуток, указанный в формате 'YYYY-MM-DD hh:mm:ss'.
 
 `ServicePool = 'Notepad 1'` - имя сервис-пула, для которого необходимо получить данные.
 
