@@ -16,7 +16,7 @@ layout:
 
 > Данная статья написана для ALT Linux версии 10.02 и выше
 
-## Подготовка системы
+## Подготовка системы <a href="#preparation" id="preparation"></a>
 
 Перед установкой убедитесь в наличии записи сервера DNS в файле /etc/resolv.conf.
 
@@ -27,7 +27,7 @@ sudo apt-get update
 sudo apt-get dist-upgrade
 ```
 
-## Установка и настройка <a href="#user-content-ustanovka-rpm-paketa" id="user-content-ustanovka-rpm-paketa"></a>
+## Установка и настройка <a href="#install" id="install"></a>
 
 Скачайте из личного кабинета и установите пакет брокера:
 
@@ -35,13 +35,7 @@ sudo apt-get dist-upgrade
 sudo apt-get install ./hostvm-vdi-3.6-alt3.x86_64.rpm
 ```
 
-При использовании Альт Сервер 10.2 и выше выполните установку пакета:
-
-```bash
-sudo pip3 install paramiko
-```
-
-Для продолжения установки брокера необходимо остановить службу apache2, если она используется:
+Для продолжения установки брокера необходимо отключить службу apache2, если она используется:
 
 ```bash
 sudo systemctl disable --now httpd2

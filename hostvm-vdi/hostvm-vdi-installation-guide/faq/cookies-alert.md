@@ -1,10 +1,28 @@
-# Скрытие панели уведомления об использовании cookies
+---
+layout:
+  title:
+    visible: true
+  description:
+    visible: false
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+---
+
+# Скрытие уведомления об использовании cookies
 
 В случае, когда необходимо скрыть всплывающую панель с уведомлением о использовании cookie
 
 <figure><img src="../../../.gitbook/assets/image (42).png" alt=""><figcaption></figcaption></figure>
 
-Необходимо выполнить следующие действия:
+{% hint style="warning" %}
+Начиная с версии брокера `3.6 номер сборки 20250314` настройка отображения уведомления осуществляется через [соответствующие параметры конфигурации системы](../../hostvm-vdi-admin-guide/configuration.md#cookies).
+{% endhint %}
+
+Для предыдущих версий необходимо выполнить следующие действия.
 
 На каждом брокере, где необходимо внести изменения:
 

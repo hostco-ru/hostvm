@@ -22,7 +22,7 @@ layout:
 Требуемое базовое окружение: **Сервер с графическим интерфейсом** или **Рабочая станция** **с графическим интерфейсом**
 {% endhint %}
 
-## Подготовка системы <a href="#user-content-podgotovka-sistemy" id="user-content-podgotovka-sistemy"></a>
+## Подготовка системы <a href="#preparation" id="preparation"></a>
 
 Отключите SELinux:
 
@@ -37,7 +37,7 @@ sudo setenforce 0
 tar -xvf ./hostvm-vdi<номер версии>-<номер сборки>.rpm.tar.bz2
 ```
 
-## Установка и настройка
+## Установка и настройка <a href="#install" id="install"></a>
 
 Установите скачанный пакет:
 

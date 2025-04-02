@@ -1,0 +1,28 @@
+---
+layout:
+  title:
+    visible: true
+  description:
+    visible: false
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+---
+
+# Конфигурация
+
+## Настройка уведомления об использовании cookies <a href="#cookies" id="cookies"></a>
+
+В `Панели управления` откройте раздел `Инструменты / Конфигурация`, перейдите на вкладку `Custom`.
+
+Для настройки уведомления об использовании cookies на этой вкладке доступны следующие параметры:
+
+`Cookies consent enabled` - если включено (по умолчанию), уведомление будет отображаться;
+
+`Cookies consent text` - текст уведомления. Если пусто, будет использован текст по умолчанию.
+
+<figure><img src="../../.gitbook/assets/config-cookies.png" alt=""><figcaption></figcaption></figure>
+
