@@ -76,7 +76,7 @@ root@hostvm-gw:~# cp ca-cert-bundle.crt /usr/local/share/ca-certificates/
 root@hostvm-gw:~# update-ca-certificates
 ```
 
-#### Сертификат для HTML5 подключений
+#### Сертификат для HTML5 подключений <a href="#html5-certificate" id="html5-certificate"></a>
 
 По умолчанию при HTML5 подключениях используется предустановленный самоподписанный сертификат, для его замены воспользуйтесь данной инструкцией.
 
@@ -98,7 +98,7 @@ root@hostvm-gw:~# update-ca-certificates
 root@hostvm-gw:~# systemctl restart tomcat9
 ```
 
-### Мастер установки HOSTVM VDI Tunneler
+### Мастер установки HOSTVM VDI Tunneler <a href="#setup-wizard" id="setup-wizard"></a>
 
 Выполните команду `hostvm-setup` для запуски мастера установки.
 

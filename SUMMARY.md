@@ -224,6 +224,7 @@
     * [Установка и настройка балансировщика HAProxy](hostvm-vdi/hostvm-vdi-installation-guide/high-availability/haproxy.md)
     * [Настройка репликации БД между серверами](hostvm-vdi/hostvm-vdi-installation-guide/high-availability/vdi-db-replication.md)
     * [Восстановление работы в случае сбоя](hostvm-vdi/hostvm-vdi-installation-guide/high-availability/crash-recovery.md)
+    * [SSL сертификаты](hostvm-vdi/hostvm-vdi-installation-guide/high-availability/ssl-certificates.md)
   * [Агент HOSTVM VDI](hostvm-vdi/hostvm-vdi-installation-guide/actor/README.md)
     * [Установка на Astra Linux](hostvm-vdi/hostvm-vdi-admin-guide/base-image-preparation/ustanovka-hostvm-vdi-actor-dlya-astra-linux.md)
     * [Установка и настройка агента RDS](hostvm-vdi/hostvm-vdi-installation-guide/actor/rds-actor.md)
