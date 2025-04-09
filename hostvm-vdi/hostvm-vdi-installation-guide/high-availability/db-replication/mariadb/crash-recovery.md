@@ -14,7 +14,7 @@
 /var/server/server/settings.py 
 ```
 
-<figure><img src="../../../.gitbook/assets/host (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/host (1).png" alt=""><figcaption></figcaption></figure>
 
 Когда IP адрес или имя хоста новой базы данных будут изменены, необходимо перезапустить сервер. Данное действие должно быть выполнено на всех машинах VDI-серверов.
 
