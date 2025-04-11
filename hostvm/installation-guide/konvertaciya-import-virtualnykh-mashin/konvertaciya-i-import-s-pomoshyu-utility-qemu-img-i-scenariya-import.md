@@ -37,11 +37,9 @@
 
 `chmod u+x import-to-hostvm.pl`
 
-4\. Загрузить получившийся qcow2 в [Export домен](export-domain.md) HOSTVM:
+4\. Загрузить получившийся qcow2 в [Export домен](export-domen.md) HOSTVM:
 
 `export LIBGUESTFS_BACKEND=direct ./import-to-hostvm.pl /path/to/disk.qcow2 /path/to/export_domain`
-
-
 
 Пример использования сценария импорта доступен в статье [Конвертация виртуальной машины с ОС AltLinux из VMware в HOSTVM](konvertaciya-virtualnoi-mashiny-s-os-altlinux-iz-vmware-v-hostvm.md).
 

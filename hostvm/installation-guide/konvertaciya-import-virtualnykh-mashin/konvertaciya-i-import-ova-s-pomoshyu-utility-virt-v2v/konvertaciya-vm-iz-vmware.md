@@ -16,7 +16,7 @@ dnf install virtio-win
 
 ​Перед выполнением команды загрузите Virtual Appliance на хост виртуализации.
 
-Пример использования утилиты, для конвертации и загрузки в [Export домен](../export-domain.md) HOSTVM:
+Пример использования утилиты, для конвертации и загрузки в [Export домен](../export-domen.md) HOSTVM:
 
 `LIBGUESTFS_BACKEND=direct virt-v2v -i ova /path/to/vm.ova -o rhv -of qcow2 -os /path/to/export_domain`
 
@@ -27,5 +27,3 @@ dnf install virtio-win
 
 \
 ​[Полное описание и перечень опций](https://libguestfs.org/virt-v2v.1.html)​
-
-\
