@@ -15,7 +15,7 @@ dnf install virtio-win
 [Список поддерживаемых утилитой гостевых ОС](https://libguestfs.org/virt-v2v-support.1.html)
 
 Перед выполнением команды загрузите образ диска vhdx на хост виртуализации.\
-Пример использования утилиты, для конвертации и загрузки в Export домен HOSTVM:
+Пример использования утилиты, для конвертации и загрузки в [Export домен](../export-domain.md) HOSTVM:
 
 `virt-v2v -i disk /path/to/disk.vhdx -o rhv -of qcow2 -os /path/to/export_domain`
 

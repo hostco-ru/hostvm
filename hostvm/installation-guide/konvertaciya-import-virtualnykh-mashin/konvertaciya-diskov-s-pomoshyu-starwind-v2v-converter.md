@@ -12,7 +12,7 @@
 * Выбрать формат результирующего диска qcow2, далее снова выбрать local file и указать место сохранения результирующего диска;
 * Выгрузить получившийся qcow2 диск.
 
-Загрузка в Export домен HOSTVM производится с помощью скрипта import-to-hostvm.pl Загрузить файл сценария конвертации import-to-hostvm.pl на хост HOSTVM, с которого будет выполняться импорт ВМ. Загрузка выполняется из личного кабинета [https://lk.pvhostvm.ru/](https://lk.pvhostvm.ru/) Сценарий import-to-hostvm.pl  расположен в каталоге дистрибутивов в папке HOSTVM/Misc/VM Convert/
+Загрузка в [Export домен](export-domain.md) HOSTVM производится с помощью скрипта import-to-hostvm.pl Загрузить файл сценария конвертации import-to-hostvm.pl на хост HOSTVM, с которого будет выполняться импорт ВМ. Загрузка выполняется из личного кабинета [https://lk.pvhostvm.ru/](https://lk.pvhostvm.ru/) Сценарий import-to-hostvm.pl  расположен в каталоге дистрибутивов в папке HOSTVM/Misc/VM Convert/
 
 ```
 export LIBGUESTFS_BACKEND=direct

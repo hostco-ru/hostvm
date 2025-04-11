@@ -37,7 +37,7 @@
 
 `chmod u+x import-to-hostvm.pl`
 
-4\. Загрузить получившийся qcow2 в Export домен HOSTVM:
+4\. Загрузить получившийся qcow2 в [Export домен](export-domain.md) HOSTVM:
 
 `export LIBGUESTFS_BACKEND=direct ./import-to-hostvm.pl /path/to/disk.qcow2 /path/to/export_domain`
 

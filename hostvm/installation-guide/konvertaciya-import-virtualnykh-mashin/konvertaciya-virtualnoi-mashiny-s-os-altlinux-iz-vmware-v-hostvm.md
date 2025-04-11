@@ -62,7 +62,7 @@ Format: Single file (OVA)
 
 `<disk1name>.vmdk <disk2name>.vmdk` – путь до диска ВМ, если их несколько – указываются через пробел
 
-`<path_to_export_domain>` - путь к экспорт-домену HOSTVM, в виде server:/path/to/esd
+`<path_to_export_domain>` - путь к [экспорт-домену](export-domain.md) HOSTVM, в виде server:/path/to/esd
 
 (посмотреть путь можно в `engine GUI - Storage - Domains - выбрать export домен - Manage domain` - путь будет указан в поле Path)
 

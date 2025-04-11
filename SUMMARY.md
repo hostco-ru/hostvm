@@ -57,6 +57,7 @@
         * [Процедура установки для версии HOSTVM 4.3](hostvm/installation-guide/after-install/ustanovka-vm/ustanovka-windows-na-optimizirovannoe-dlya-virtio-oborudovanie/procedura-ustanovki-dlya-versii-hostvm-4.3.md)
         * [Процедура установки для версии HOSTVM 4.4](hostvm/installation-guide/after-install/ustanovka-vm/ustanovka-windows-na-optimizirovannoe-dlya-virtio-oborudovanie/procedura-ustanovki-dlya-versii-hostvm-4.4.md)
   * [Конвертация, импорт виртуальных машин](hostvm/installation-guide/konvertaciya-import-virtualnykh-mashin/README.md)
+    * [Export Domain](hostvm/installation-guide/konvertaciya-import-virtualnykh-mashin/export-domain.md)
     * [Конвертация и импорт OVA с помощью утилиты virt-v2v](hostvm/installation-guide/konvertaciya-import-virtualnykh-mashin/konvertaciya-i-import-ova-s-pomoshyu-utility-virt-v2v/README.md)
       * [Конвертация ВМ из VMware](hostvm/installation-guide/konvertaciya-import-virtualnykh-mashin/konvertaciya-i-import-ova-s-pomoshyu-utility-virt-v2v/konvertaciya-vm-iz-vmware.md)
       * [Конвертация ВМ из Microsoft Hyper-V](hostvm/installation-guide/konvertaciya-import-virtualnykh-mashin/konvertaciya-i-import-ova-s-pomoshyu-utility-virt-v2v/konvertaciya-vm-iz-microsoft-hyper-v.md)
