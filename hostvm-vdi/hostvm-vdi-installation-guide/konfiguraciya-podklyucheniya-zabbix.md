@@ -10,7 +10,7 @@
 
 #### Настройка Zabbix-сервера
 
-1\. Установите базовую конфигурацию Zabbix-сервера с помощью [инструкции](https://www.zabbix.com/ru/download?zabbix=6.0\&os\_distribution=centos\&os\_version=8\&components=server\_frontend\_agent\&db=mysql\&ws=nginx) с сайта разработчика.
+1\. Установите базовую конфигурацию Zabbix-сервера с помощью [инструкции](https://www.zabbix.com/ru/download?zabbix=6.0\&os_distribution=centos\&os_version=8\&components=server_frontend_agent\&db=mysql\&ws=nginx) с сайта разработчика.
 
 2\. Авторизуйтесь через браузер по указанному в процессе установки адресу, используя Admin/zabbix в качестве логина/пароля
 
@@ -21,7 +21,7 @@
 
 #### Настройка Zabbix-агента
 
-1\. Установите базовую конфигурацию Zabbix-агента на HOSTVM VDI Broker с помощью [инструкции](https://www.zabbix.com/ru/download?zabbix=6.0\&os\_distribution=debian\&os\_version=11\&components=agent\&db=\&ws=) с сайта разработчика.
+1\. Установите базовую конфигурацию Zabbix-агента на HOSTVM VDI Broker с помощью [инструкции](https://www.zabbix.com/ru/download?zabbix=6.0\&os_distribution=debian\&os_version=11\&components=agent\&db=\&ws=) с сайта разработчика.
 
 2\. Загрузите архив на машину брокера и распакуйте:
 
@@ -38,7 +38,7 @@ mkdir -p /etc/zabbix/scripts
 4\. Скопируйте файл `zbx-hostvm_vdi.conf` в директорию `/etc/zabbix/zabbix_agentd.d/`:
 
 ```
-cp hostvm_vdi_zabbix_tepmplate/zbx-hostvm_vdi.conf /etc/zabbix/zbx-hostvm_vdi.conf
+cp hostvm_vdi_zabbix_tepmplate/zbx-hostvm_vdi.conf /etc/zabbix/zabbix_agentd.d/zbx-hostvm_vdi.conf
 ```
 
 5\. Скопируйте файл `zbx-hostvm_vdi.py` в директорию `/etc/zabbix/scripts/`:
