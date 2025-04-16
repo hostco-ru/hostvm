@@ -328,11 +328,7 @@
   * [Создание хранилища через CLI](hostvm-sds/guide/cli-new-storage.md)
   * [Расширение тома Hosted-engine до Replica 3](hostvm-sds/guide/rasshirenie-toma-hosted-engine-do-replica-3.md)
 
-## HOSTVM Backup
-
-* [Руководство по установке и настройке](hostvm-backup/rukovodstvo-po-ustanovke-i-nastroike/README.md)
-  * [Импорт и первичная настройка](hostvm-backup/rukovodstvo-po-ustanovke-i-nastroike/import-i-pervichnaya-nastroika.md)
-
 ## О Компании
 
+* [О базе знаний HOSTVM](o-kompanii/o-baze-znanii-hostvm.md)
 * [Команда разработчиков HOSTVM](o-kompanii/developer.md)
