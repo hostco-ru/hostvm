@@ -24,4 +24,4 @@ _**Если диск прежде не создавался:**_
 
 Отметить чек-бокс **Sharable** (возможно только для **Preallocated** дисков)
 
-<figure><img src="../../../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4) (1) (1).png" alt=""><figcaption></figcaption></figure>

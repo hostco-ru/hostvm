@@ -264,6 +264,8 @@
     * [Платформа RDS](hostvm-vdi/hostvm-vdi-admin-guide/service-providers/rds.md)
     * [Провайдер OpenNebula](hostvm-vdi/hostvm-vdi-admin-guide/service-providers/opennebula.md)
     * [Провайдер RDS / Linux terminal](hostvm-vdi/hostvm-vdi-admin-guide/service-providers/rds-linux-terminal.md)
+    * [Провайдер Proxmox](hostvm-vdi/hostvm-vdi-admin-guide/service-providers/proxmox.md)
+    * [Провайдер машин со статическим IP](hostvm-vdi/hostvm-vdi-admin-guide/service-providers/static-ip.md)
   * [Управление методами аутентификации](hostvm-vdi/hostvm-vdi-admin-guide/authenticators/README.md)
     * [Внутренняя база данных (Internal Database)](hostvm-vdi/hostvm-vdi-admin-guide/authenticators/vnutrennyaya-baza-dannykh-internal-database.md)
     * [Active Directory](hostvm-vdi/hostvm-vdi-admin-guide/authenticators/active-directory.md)

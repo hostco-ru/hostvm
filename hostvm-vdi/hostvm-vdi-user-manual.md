@@ -77,12 +77,12 @@
 Для использования экранной клавиатуры:\
 1\. Сделайте клик в левом-верхнем углу окна, для отображения меню Windows
 
-<figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (3).png" alt=""><figcaption></figcaption></figure>
 
 2.  Выберите Экранную клавиатуру в разделе Специальных возможностей\
 
 
-    <figure><img src="../.gitbook/assets/image (1) (1) (3).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (1) (1) (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 3. Нажмите сочетание клавиш Alt+Tab на экранной клавиатуре для выбора свернутого приложения
