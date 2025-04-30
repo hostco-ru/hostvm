@@ -63,6 +63,15 @@ sh /var/local/local-repo/update*.sh | tee -a /root/hostvm-manager-update.log
 
 ### Пример ответов на вопросы инсталлятора
 
+{% hint style="warning" %}
+**Важно**
+
+**На данный вопрос инсталятора необходимо ответить "No":**
+
+<pre><code><strong>Do you want to abort Setup? (Yes, No) [Yes]: No
+</strong></code></pre>
+{% endhint %}
+
 ```
 Replying "No" will abort Setup. You can pass the option "--offline" to prevent installing or updating packages.
 Do you wish to update them now? (Yes, No) [Yes]: Yes
