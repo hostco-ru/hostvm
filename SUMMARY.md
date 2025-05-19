@@ -109,6 +109,9 @@
       * [Подготовка NFS хранилища](hostvm/rukovodstvo-po-administrirovaniyu/khranilishe-dannykh/podgotovka-i-podklyuchenie-nfs-khranilisha/podgotovka-nfs-khranilisha.md)
       * [Добавление NFS хранилища](hostvm/rukovodstvo-po-administrirovaniyu/khranilishe-dannykh/podgotovka-i-podklyuchenie-nfs-khranilisha/dobavlenie-nfs-khranilisha.md)
       * [Увеличение NFS хранилища](hostvm/rukovodstvo-po-administrirovaniyu/khranilishe-dannykh/podgotovka-i-podklyuchenie-nfs-khranilisha/uvelichenie-nfs-khranilisha.md)
+    * [Подготовка и создание GlusterFS хранилища](hostvm/rukovodstvo-po-administrirovaniyu/khranilishe-dannykh/podgotovka-i-sozdanie-glusterfs-khranilisha/README.md)
+      * [Создание хранилища через CLI](hostvm/rukovodstvo-po-administrirovaniyu/khranilishe-dannykh/podgotovka-i-sozdanie-glusterfs-khranilisha/sozdanie-khranilisha-cherez-cli.md)
+      * [Расширение тома до replica 3](hostvm/rukovodstvo-po-administrirovaniyu/khranilishe-dannykh/podgotovka-i-sozdanie-glusterfs-khranilisha/rasshirenie-toma-do-replica-3.md)
     * [Импорт хранилищ](hostvm/rukovodstvo-po-administrirovaniyu/khranilishe-dannykh/import-khranilish.md)
     * [Загрузка образов ISO](hostvm/rukovodstvo-po-administrirovaniyu/khranilishe-dannykh/zagruzka-obrazov-iso.md)
     * [Режим обслуживания](hostvm/rukovodstvo-po-administrirovaniyu/khranilishe-dannykh/rezhim-obsluzhivaniya.md)
@@ -324,12 +327,6 @@
         * [Руководство по внедрению в среде HOSTVM VDI](hostvm-xrm/xrm-versii-1.2.1/rukovodstvo-po-ustanovke-i-nastroike/rukovodstvo-administratora/modul-xrm_openuds/rukovodstvo-po-vnedreniyu-v-srede-hostvm-vdi.md)
     * [Установка/изменение пароля администратора](hostvm-xrm/xrm-versii-1.2.1/rukovodstvo-po-ustanovke-i-nastroike/ustanovka-izmenenie-parolya-administratora.md)
   * [Руководство пользователя](hostvm-xrm/xrm-versii-1.2.1/rukovodstvo-polzovatelya.md)
-
-## HOSTVM SDS
-
-* [Руководство по установке и настройке](hostvm-sds/guide/README.md)
-  * [Создание хранилища через CLI](hostvm-sds/guide/cli-new-storage.md)
-  * [Расширение тома Hosted-engine до Replica 3](hostvm-sds/guide/rasshirenie-toma-hosted-engine-do-replica-3.md)
 
 ## О Компании
 
