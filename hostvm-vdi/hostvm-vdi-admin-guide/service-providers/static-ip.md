@@ -26,7 +26,7 @@ layout:
 
 &#x20;Для настройки данного провайдера необходимым является только поле **Имя.**
 
-<figure><img src="../../../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (10) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Тэги** - поле для создания тэгов;
 

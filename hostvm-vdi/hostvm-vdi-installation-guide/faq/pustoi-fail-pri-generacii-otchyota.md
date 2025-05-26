@@ -24,7 +24,7 @@ t1.owner_id = t2.id WHERE t1.event_type = 2 ORDER BY t1.stamp ) AS Report WHERE 
 
 `ServicePool = 'Notepad 1'` - имя сервис-пула, для которого необходимо получить данные.
 
-<figure><img src="../../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 2. PostgreSQL
 
@@ -37,4 +37,4 @@ t1.owner_id = t2.id WHERE t1.event_type = 2 ORDER BY t1.stamp ) AS Report WHERE 
 
 `ServicePool = 'Windows10'` - имя сервис-пула, для которого необходимо получить данные.
 
-<figure><img src="../../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption></figcaption></figure>

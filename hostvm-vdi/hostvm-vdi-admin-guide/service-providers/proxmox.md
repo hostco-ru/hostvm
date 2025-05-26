@@ -56,7 +56,7 @@ layout:
 
 * связанный клон Proxmox (Linked Clone Proxmox) - для публикации виртуальных рабочих столов на основе "золотого" образа.
 
-<figure><img src="../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Связанный клон Proxmox <a href="#linked-clone" id="linked-clone"></a>
 

@@ -18,7 +18,7 @@ vi /etc/yum.repos.d/repo.pvhostvm.ru.repo
 
 и добавить строку `module_hotfixes=1` для указанных на скриншоте репозиториев:
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Установка Standalone HOSTVM Manager
 
