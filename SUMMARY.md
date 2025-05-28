@@ -296,6 +296,7 @@
   * [Настройка мета-пулов сервисов](hostvm-vdi/hostvm-vdi-admin-guide/meta-pools.md)
   * [Конфигурация](hostvm-vdi/hostvm-vdi-admin-guide/configuration.md)
   * [Инструменты](hostvm-vdi/hostvm-vdi-admin-guide/tools.md)
+  * [Отчёты](hostvm-vdi/hostvm-vdi-admin-guide/reports.md)
 * [Руководство пользователя](hostvm-vdi/hostvm-vdi-user-manual.md)
 * [Руководство по REST API](hostvm-vdi/rest-api-guide/README.md)
   * [Версия 3.5](hostvm-vdi/rest-api-guide/3.5/README.md)
