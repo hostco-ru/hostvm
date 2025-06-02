@@ -38,20 +38,20 @@ mkdir -p /etc/zabbix/scripts
 4\. Скопируйте файл `zbx-hostvm_vdi.conf` в директорию `/etc/zabbix/zabbix_agentd.d/`:
 
 ```
-cp hostvm_vdi_zabbix_tepmplate/zbx-hostvm_vdi.conf /etc/zabbix/zabbix_agentd.d/zbx-hostvm_vdi.conf
+cp hostvm_vdi_zabbix_template/zbx-hostvm_vdi.conf /etc/zabbix/zabbix_agentd.d/zbx-hostvm_vdi.conf
 ```
 
 5\. Скопируйте файлы `zbx-hostvm_vdi.py`  и `zbx-hostvm_db_check.py` в директорию `/etc/zabbix/scripts/`:
 
 ```
-cp hostvm_vdi_zabbix_tepmplate/zbx-hostvm_vdi.py /etc/zabbix/scripts/zbx-hostvm_vdi.py
-cp hostvm_vdi_zabbix_tepmplate/zbx-hostvm_db_check.py /etc/zabbix/scripts/zbx-hostvm_db_check.py
+cp hostvm_vdi_zabbix_template/zbx-hostvm_vdi.py /etc/zabbix/scripts/zbx-hostvm_vdi.py
+cp hostvm_vdi_zabbix_template/zbx-hostvm_db_check.py /etc/zabbix/scripts/zbx-hostvm_db_check.py
 ```
 
 6\. Скопируйте директорию `apiclient` в директорию `/etc/zabbix/scripts/`:
 
 ```
-cp -r hostvm_vdi_zabbix_tepmplate/apiclient /etc/zabbix/scripts/apiclient
+cp -r hostvm_vdi_zabbix_template/apiclient /etc/zabbix/scripts/apiclient
 ```
 
 7\. Установите необходимые права для файла `zbx-hostvm_vdi.py`:
@@ -123,13 +123,13 @@ mkdir -p /etc/zabbix/scripts
 4\. Скопируйте файл `zbx-hostvm_vdi_tunneler.conf` в директорию `/etc/zabbix/zabbix_agentd.d/`:
 
 ```
-cp hostvm_vdi_tunneler_zabbix_tepmplate/zbx-hostvm_vdi_tunneler.conf /etc/zabbix/zabbix_agentd.d/zbx-hostvm_vdi_tunneler.conf
+cp hostvm_vdi_tunneler_zabbix_template/zbx-hostvm_vdi_tunneler.conf /etc/zabbix/zabbix_agentd.d/zbx-hostvm_vdi_tunneler.conf
 ```
 
 5\. Скопируйте файл `zbx-hostvm_tun_check.py` в директорию `/etc/zabbix/scripts/`:
 
 ```
-cp hostvm_vdi_tunneler_zabbix_tepmplate/zbx-hostvm_tun_check.py /etc/zabbix/scripts/zbx-hostvm_tun_check.py
+cp hostvm_vdi_tunneler_zabbix_template/zbx-hostvm_tun_check.py /etc/zabbix/scripts/zbx-hostvm_tun_check.py
 ```
 
 6\. Установите необходимые права для файла `zbx-hostvm_tun_check.py`:
