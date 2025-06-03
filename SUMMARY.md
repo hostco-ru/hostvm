@@ -289,6 +289,7 @@
     * [X2Go](hostvm-vdi/hostvm-vdi-admin-guide/transports/x2go.md)
     * [RDS RemoteApp](hostvm-vdi/hostvm-vdi-admin-guide/transports/rds-remoteapp.md)
     * [HTML5 RDS](hostvm-vdi/hostvm-vdi-admin-guide/transports/html5-rds.md)
+  * [Настройка сетей доступа](hostvm-vdi/hostvm-vdi-admin-guide/networks.md)
   * [Настройка пула сервисов](hostvm-vdi/hostvm-vdi-admin-guide/service-pools.md)
   * [Терминальные серверы и приложения](hostvm-vdi/hostvm-vdi-admin-guide/terminal-servers-and-apps/README.md)
     * [Настройка подключений по протоколу x2Go](hostvm-vdi/hostvm-vdi-admin-guide/terminal-servers-and-apps/x2go.md)
