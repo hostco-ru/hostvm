@@ -209,6 +209,7 @@
     * [Как исправить ошибку:"No package ovirt-engine-appliance available"](hostvm/rukovodstvo-po-administrirovaniyu/chasto-zadavaemye-voprosy/kak-ispravit-oshibku-no-package-ovirt-engine-appliance-available.md)
     * [Перенос Hosted-Engine в другое хранилище](hostvm/rukovodstvo-po-administrirovaniyu/chasto-zadavaemye-voprosy/perenos-hosted-engine-v-drugoe-khranilishe.md)
     * [Как обновить сертификаты с истекшим сроком действия](hostvm/rukovodstvo-po-administrirovaniyu/chasto-zadavaemye-voprosy/kak-obnovit-sertifikaty-s-istekshim-srokom-deistviya.md)
+    * [Включение модуля TPM](hostvm/rukovodstvo-po-administrirovaniyu/chasto-zadavaemye-voprosy/vklyuchenie-modulya-tpm.md)
 
 ## HOSTVM VDI
 
@@ -260,7 +261,7 @@
       * [Проблема с запуском вложенных приложений](hostvm-vdi/hostvm-vdi-installation-guide/faq/remoteapp/nested-app-launch.md)
       * [Проблема с внеплановым закрытием](hostvm-vdi/hostvm-vdi-installation-guide/faq/remoteapp/app-crash.md)
 * [Руководство администратора](hostvm-vdi/hostvm-vdi-admin-guide/README.md)
-  * [Подготовка  базового образа для публикации](hostvm-vdi/hostvm-vdi-admin-guide/base-image-preparation/README.md)
+  * [Подготовка базового образа для публикации](hostvm-vdi/hostvm-vdi-admin-guide/base-image-preparation/README.md)
     * [Ввод тонких клонов в домен для Astra Linux](hostvm-vdi/hostvm-vdi-admin-guide/base-image-preparation/vvod-tonkikh-klonov-v-domen-dlya-astra-linux.md)
   * [Настройка сервис-провайдеров](hostvm-vdi/hostvm-vdi-admin-guide/service-providers/README.md)
     * [Платформа виртуализации HOSTVM](hostvm-vdi/hostvm-vdi-admin-guide/service-providers/hostvm.md)
