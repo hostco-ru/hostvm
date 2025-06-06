@@ -296,6 +296,7 @@
     * [Настройка подключений по протоколу x2Go](hostvm-vdi/hostvm-vdi-admin-guide/terminal-servers-and-apps/x2go.md)
     * [Настройка подключений по протоколу RemoteApp](hostvm-vdi/hostvm-vdi-admin-guide/terminal-servers-and-apps/remoteapp.md)
   * [Настройка мета-пулов сервисов](hostvm-vdi/hostvm-vdi-admin-guide/meta-pools.md)
+  * [Календари доступа и запланированные задачи](hostvm-vdi/hostvm-vdi-admin-guide/calendars.md)
   * [Конфигурация](hostvm-vdi/hostvm-vdi-admin-guide/configuration.md)
   * [Инструменты](hostvm-vdi/hostvm-vdi-admin-guide/tools.md)
   * [Отчёты](hostvm-vdi/hostvm-vdi-admin-guide/reports.md)
