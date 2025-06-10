@@ -6,7 +6,7 @@
 
 1\) Создание домена экспорта и подключение его к датацентру1:
 
-Для создания домена экспорта можно использовать nfs-share, с процедурой ее создания можно ознакомиться в главе [Подготовка NFS share](../../installation-guide/ustanovka-hostvm-4.3-4.4/ustanovka-hostvm-manager-cli/pered-ustanovkoi/podgotovka-nfs-share.md)
+Для создания домена экспорта можно использовать nfs-share, с процедурой ее создания можно ознакомиться в главе [Подготовка NFS share](../../installation-guide/ustanovka-hostvm-4.3-4.4/pered-ustanovkoi-hostvm-manager/podgotovka-nfs-share.md)
 
 <figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 

@@ -32,15 +32,15 @@ _Выбранный язык не влияет на язык внутри сам
 
 Выберите интерфейс, нажмите кнопку _Configure..._. В открывшемся окне перейдите на вкладку  General и отметьте пункт "Connect automatically with priority":
 
-![](../../../../.gitbook/assets/network\_general.png)
+![](../../../../.gitbook/assets/network_general.png)
 
 Далее перейдите на вкладку _IPv4 Settings_, выберите _Method: Manual_, введите ip, маску, gw, DNS-сервер. Нажмите кнопку _Save_.
 
-![](../../../../.gitbook/assets/network\_ipv4.png)
+![](../../../../.gitbook/assets/network_ipv4.png)
 
 Переведите тригер возле названия подключения в положение _On_. В поле _Host name_ введите имя сервера, нажмите кнопку _Apply_. Нажмите кнопку _Done_.
 
-![](../../../../.gitbook/assets/network\_ready.png)
+![](../../../../.gitbook/assets/network_ready.png)
 
 Перейдите в _Instalation Destination_. Выберите диск на который необходимо выполнить установку. Выберите радиокнопку _Custom_. Нажмите _Done_.
 
@@ -50,13 +50,13 @@ _Выбранный язык не влияет на язык внутри сам
 
 После выбора места установки автоматически открывается следующее меню.
 
-![](<../../../../.gitbook/assets/manual partitioning\_0.png>)
+![](<../../../../.gitbook/assets/manual partitioning_0.png>)
 
 Если диск уже использовался (имел таблицу разделов), то удалите их, как показано ниже.
 
-![](<../../../../.gitbook/assets/manual partitioning\_3.png>)
+![](<../../../../.gitbook/assets/manual partitioning_3.png>)
 
-![](<../../../../.gitbook/assets/manual partitioning\_4.png>)
+![](<../../../../.gitbook/assets/manual partitioning_4.png>)
 
 Когда на диске не останется существующих разделов Из выпадающего меню выберите _LVM Thin Provisioning._ Нажмите _Click here to create them automatically_.
 
@@ -64,7 +64,7 @@ _Выбранный язык не влияет на язык внутри сам
 
 Вы увидите, что на диске появилась предварительная разметка:
 
-![](<../../../../.gitbook/assets/manual partitioning\_1.png>)
+![](<../../../../.gitbook/assets/manual partitioning_1.png>)
 
 Удалите все пункты кроме /boot и /swap, как показано ниже.
 
@@ -77,27 +77,27 @@ _Выбранный язык не влияет на язык внутри сам
 
 Далее создайте новый раздел с точкой монтирования в _/data:_
 
-**Примечание:** В случае, если далее будет производиться [ustanovka-hostvm-manager-na-gluster.md](../ustanovka-hostvm-manager-gui/ustanovka-hostvm-manager-na-gluster.md "mention"), то создавать раздел _/data_ не нужно.
+**Примечание:** В случае, если далее будет производиться [ustanovka-hostvm-manager-na-gluster.md](../ustanovka-hostvm-manager-4.4.8-gui/ustanovka-hostvm-manager-na-gluster.md "mention"), то создавать раздел _/data_ не нужно.
 
-![](<../../../../.gitbook/assets/3\_1 (1).png>)
+![](<../../../../.gitbook/assets/3_1 (1).png>)
 
 Нажмите _Done_.
 
 Создайте раздел /var:
 
-![](../../../../.gitbook/assets/4\_1.png)
+![](../../../../.gitbook/assets/4_1.png)
 
 Создайте раздел / (корневая файловая система):
 
-![](../../../../.gitbook/assets/5\_1.png)
+![](../../../../.gitbook/assets/5_1.png)
 
-![Минимальная разметка для установки на локальные диски](../../../../.gitbook/assets/7\_1.png)
+![Минимальная разметка для установки на локальные диски](../../../../.gitbook/assets/7_1.png)
 
 **Примечание:** оставшееся свободное место вы можете распределить по своему усмотрению либо увеличив необходимые вам разделы, либо создав отдельный раздел через Web-интерфейс HOSTVM Node после установки.
 
 Подтвердите действие кнопкой _Accept Changes_.
 
-![](../../../../.gitbook/assets/6\_1.png)
+![](../../../../.gitbook/assets/6_1.png)
 
 В стартовом меню нажмите кнопку _Begin Installation_, чтобы начать установку.
 

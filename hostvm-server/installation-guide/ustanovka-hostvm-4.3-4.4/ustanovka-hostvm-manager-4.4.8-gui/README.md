@@ -8,6 +8,6 @@
 [ustanovka-hostvm-manager-na-nfs.md](ustanovka-hostvm-manager-na-nfs.md)
 {% endcontent-ref %}
 
-{% content-ref url="../ustanovka-hostvm-manager-gui/ustanovka-hostvm-manager-na-gluster.md" %}
-[ustanovka-hostvm-manager-na-gluster.md](../ustanovka-hostvm-manager-gui/ustanovka-hostvm-manager-na-gluster.md)
+{% content-ref url="ustanovka-hostvm-manager-na-gluster.md" %}
+[ustanovka-hostvm-manager-na-gluster.md](ustanovka-hostvm-manager-na-gluster.md)
 {% endcontent-ref %}
