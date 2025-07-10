@@ -210,6 +210,7 @@
     * [Перенос Hosted-Engine в другое хранилище](hostvm-server/rukovodstvo-po-administrirovaniyu/chasto-zadavaemye-voprosy/perenos-hosted-engine-v-drugoe-khranilishe.md)
     * [Как обновить сертификаты с истекшим сроком действия](hostvm-server/rukovodstvo-po-administrirovaniyu/chasto-zadavaemye-voprosy/kak-obnovit-sertifikaty-s-istekshim-srokom-deistviya.md)
     * [Включение модуля TPM](hostvm-server/rukovodstvo-po-administrirovaniyu/chasto-zadavaemye-voprosy/vklyuchenie-modulya-tpm.md)
+    * [Ограничения функциональности платформы при недоступности HOSTVM Manager](hostvm-server/rukovodstvo-po-administrirovaniyu/chasto-zadavaemye-voprosy/ogranicheniya-funkcionalnosti-platformy-pri-nedostupnosti-hostvm-manager.md)
   * [Решение типовых проблем](hostvm-server/rukovodstvo-po-administrirovaniyu/reshenie-tipovykh-problem/README.md)
     * [Заблокирован Storage Domain](hostvm-server/rukovodstvo-po-administrirovaniyu/reshenie-tipovykh-problem/zablokirovan-storage-domain.md)
 
