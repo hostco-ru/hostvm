@@ -213,6 +213,7 @@
     * [Ограничения функциональности платформы при недоступности HOSTVM Manager](hostvm-server/rukovodstvo-po-administrirovaniyu/chasto-zadavaemye-voprosy/ogranicheniya-funkcionalnosti-platformy-pri-nedostupnosti-hostvm-manager.md)
   * [Решение типовых проблем](hostvm-server/rukovodstvo-po-administrirovaniyu/reshenie-tipovykh-problem/README.md)
     * [Заблокирован Storage Domain](hostvm-server/rukovodstvo-po-administrirovaniyu/reshenie-tipovykh-problem/zablokirovan-storage-domain.md)
+    * [Действия при выходе из строя СХД с размещенным HOSTVM Manager](hostvm-server/rukovodstvo-po-administrirovaniyu/reshenie-tipovykh-problem/deistviya-pri-vykhode-iz-stroya-skhd-s-razmeshennym-hostvm-manager.md)
 
 ## HOSTVM VDI
 
