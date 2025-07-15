@@ -1,17 +1,3 @@
----
-layout:
-  title:
-    visible: true
-  description:
-    visible: false
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
----
-
 # Скрытие уведомления об использовании cookies
 
 В случае, когда необходимо скрыть всплывающую панель с уведомлением о использовании cookie

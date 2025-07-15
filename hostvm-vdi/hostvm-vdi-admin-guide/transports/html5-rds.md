@@ -1,17 +1,3 @@
----
-layout:
-  title:
-    visible: true
-  description:
-    visible: false
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
----
-
 # HTML5 RDS
 
 Транспорт «HTML5 RDS» позволяет пользователям получать доступ к виртуальным приложениям Windows, используя браузер с поддержкой HTML5.

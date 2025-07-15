@@ -1,20 +1,8 @@
----
-layout:
-  title:
-    visible: true
-  description:
-    visible: false
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
----
-
 # Установка на ALT Linux
 
-> Данная статья написана для ALT Linux версии 10.02 и выше
+## Системные требования <a href="#requirements" id="requirements"></a>
+
+* Операционная система ALT Linux версии 10.02 и выше
 
 ## Подготовка системы <a href="#preparation" id="preparation"></a>
 
@@ -22,44 +10,54 @@ layout:
 
 Обновите систему:
 
-```bash
-sudo apt-get update
-sudo apt-get dist-upgrade
+```shell-session
+# apt-get update
+# apt-get dist-upgrade
 ```
 
 ## Установка и настройка <a href="#install" id="install"></a>
 
 Скачайте из личного кабинета и установите пакет брокера:
 
-```bash
-sudo apt-get install ./hostvm-vdi-3.6-alt3.x86_64.rpm
+```shell-session
+# apt-get install ./hostvm-vdi-3.6-alt3.x86_64.rpm
 ```
 
 Для продолжения установки брокера необходимо отключить службу apache2, если она используется:
 
-```bash
-sudo systemctl disable --now httpd2
+```shell-session
+# systemctl disable --now httpd2
 ```
 
 {% hint style="info" %}
 При установке версии 3.6-alt2 и ниже запустите скрипт для установки необходимых зависимостей и настройки системы:\
 
 
-```bash
-sudo /usr/share/hostvm/postinst.sh
+```shell-session
+# /usr/share/hostvm/postinst.sh
 ```
 
 \
-Начиная с версии 3.6-3 данный шаг не требуется.
+Начиная с версии 3.6-alt3 данный шаг не требуется.
 {% endhint %}
 
-Запустите скрипт для инициализации брокера:
+{% hint style="info" %}
+Для дальнейшей установки версии 3.6-alt4 и ниже запустите скрипт для инициализации брокера:
 
-```
-sudo /usr/share/hostvm/broker-init.sh
+```shell-session
+# /usr/share/hostvm/broker-init.sh
 ```
 
 Следуйте указаниям установочного скрипта.
+{% endhint %}
+
+Для дальнейшей установки версии 3.6-alt5 и выше запустите мастер настройки брокера командой:
+
+```shell-session
+# hostvm-vdi setup
+```
+
+Выполните настройку следуя подсказкам мастера.
 
 Для доступа в веб-интерфейс управления брокера и дальнейшей настройки (включая изменение пароля встроенной учетной записи администратора) обратитесь к разделу:
 

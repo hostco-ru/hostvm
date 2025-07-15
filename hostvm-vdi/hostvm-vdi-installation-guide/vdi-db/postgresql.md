@@ -1,17 +1,3 @@
----
-layout:
-  title:
-    visible: true
-  description:
-    visible: false
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
----
-
 # Настройка СУБД PostgreSQL
 
 {% hint style="warning" %}
@@ -57,7 +43,9 @@ host    all             all             10.1.1.0/24           md5
 
 ### Перенос базы данных <a href="#db-migration" id="db-migration"></a>
 
+{% hint style="info" %}
 В случае новой установки данный раздел настройки можно пропустить.
+{% endhint %}
 
 Для переноса существующей базы данных PostgreSQL, уже развернутой в составе компонента HOSTVM VDI Брокер, на внешний сервер БД, выполните следующие команды.
 
@@ -127,6 +115,12 @@ host    all             all             10.1.1.0/24           md5
 ```
 
 ### Переключение брокера VDI на внешний сервер БД <a href="#broker-config" id="broker-config"></a>
+
+**Версия 3.6-20250704 и выше**
+
+Для настройки подключения к БД используйте [мастер установки HOSTVM VDI](../hostvm-vdi-ova-install/#setup-wizard).
+
+**Версия 3.6 до номера сборки 20250704**
 
 Отредактируйте файл настроек брокера `/var/server/server/settings.py`, в блок `DATABASES` внесите информацию:
 

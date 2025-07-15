@@ -1,17 +1,3 @@
----
-layout:
-  title:
-    visible: true
-  description:
-    visible: false
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
----
-
 # Установка HOSTVM VDI Tunneler
 
 ## Версия 3.5 и выше <a href="#id-3.5" id="id-3.5"></a>
@@ -99,6 +85,14 @@ root@hostvm-gw:~# systemctl restart tomcat9
 ```
 
 ### Мастер установки HOSTVM VDI Tunneler <a href="#setup-wizard" id="setup-wizard"></a>
+
+**Версия 3.6-20250702 и выше**
+
+Выполните команду `hostvm-vdi setup` для запуски мастера установки.
+
+В процессе установки будет сгенерирован самоподписанный сертификат для туннелера. Вы можете заменить его на собственный: [Сертификат для HTML5 подключений](tunneler-appliance-deploy.md#html5-certificate). При наличии сертификата в системе (например при настройке существующей инсталляции) вы сможете сохранить старый сертификат либо сгенерировать новый.
+
+**Версия 3.5 и 3.6 до номера сборки 20250702**
 
 Выполните команду `hostvm-setup` для запуски мастера установки.
 

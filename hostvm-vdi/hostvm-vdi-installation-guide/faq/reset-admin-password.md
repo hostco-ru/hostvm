@@ -1,17 +1,3 @@
----
-layout:
-  title:
-    visible: true
-  description:
-    visible: false
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
----
-
 # Сброс пароля администратора
 
 В случае утери пароля от встроенной учетной записи администратора веб-портала брокера HOSTVM VDI, для его сброса воспользуйтесь одним из способов, описанных в данной статье.

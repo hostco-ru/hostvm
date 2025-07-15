@@ -1,20 +1,10 @@
----
-layout:
-  title:
-    visible: true
-  description:
-    visible: false
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
----
-
 # Настройка брокера VDI для использования выделенного сервера БД
 
-### Версия 3.5 и выше <a href="#id-3.5" id="id-3.5"></a>
+### Версия 3.6-20250704 и выше <a href="#id-3.6" id="id-3.6"></a>
+
+Для настройки подключения к БД используйте [мастер установки HOSTVM VDI](../hostvm-vdi-ova-install/#setup-wizard).
+
+### Версия 3.5 и 3.6 до номера сборки 20250704 <a href="#id-3.5" id="id-3.5"></a>
 
 В консоли брокера VDI выполните команду `hostvm-vdi-setup` для запуски мастера установки.
 

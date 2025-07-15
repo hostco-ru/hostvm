@@ -1,17 +1,3 @@
----
-layout:
-  title:
-    visible: true
-  description:
-    visible: false
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
----
-
 # Конфигурация
 
 ## Настройка уведомления об использовании cookies <a href="#cookies" id="cookies"></a>

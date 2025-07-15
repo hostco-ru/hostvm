@@ -1,17 +1,3 @@
----
-layout:
-  title:
-    visible: true
-  description:
-    visible: false
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
----
-
 # Провайдер машин со статическим IP
 
 Данный тип сервис-провайдера позволяет предоставлять доступ к статичным машинам (как виртуальным так и физическим) с фиксированными IP-адресами, которые уже настроены и не создаются динамически.

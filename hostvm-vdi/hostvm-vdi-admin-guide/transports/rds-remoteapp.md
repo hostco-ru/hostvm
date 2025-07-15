@@ -1,17 +1,3 @@
----
-layout:
-  title:
-    visible: true
-  description:
-    visible: false
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
----
-
 # RDS RemoteApp
 
 Транспорт «RDS RemoteApp» позволяет пользователям получать доступ к виртуальным приложениям Windows.

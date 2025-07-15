@@ -1,17 +1,3 @@
----
-layout:
-  title:
-    visible: true
-  description:
-    visible: false
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
----
-
 # Конфигурация высокой доступности
 
 HOSTVM VDI поддерживает конфигурацию входящих в состав компонентов в режиме высокой доступности. Такой режим работы позволяет обеспечить доступность сервисов в случае отказа оборудования или одного из компонентов системы.

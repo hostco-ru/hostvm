@@ -1,18 +1,4 @@
----
-layout:
-  title:
-    visible: true
-  description:
-    visible: false
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
----
-
-# Подготовка  базового образа для публикации
+# Подготовка базового образа для публикации
 
 ### Подготовка Windows ВМ в качестве рабочих станций
 

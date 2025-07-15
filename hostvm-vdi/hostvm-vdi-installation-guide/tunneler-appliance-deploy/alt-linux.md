@@ -1,20 +1,8 @@
----
-layout:
-  title:
-    visible: true
-  description:
-    visible: false
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
----
-
 # Установка на ALT Linux
 
-Данная статья написана для ALT Linux версии 10.02 и выше
+## Системные требования <a href="#requirements" id="requirements"></a>
+
+* Операционная система ALT Linux версии 10.02 и выше
 
 ## Подготовка системы <a href="#preparation" id="preparation"></a>
 
@@ -24,10 +12,10 @@ layout:
 su -
 ```
 
-&#x20;Обновить индексы пакетов и систему:
+&#x20;Обновите индексы пакетов и систему:
 
-```
-apt-get update && apt-get dist-upgrade
+```shell-session
+# apt-get update && apt-get dist-upgrade
 ```
 
 ## **Установка и настройка** <a href="#install" id="install"></a>
@@ -65,6 +53,14 @@ apt-get update && apt-get dist-upgrade
 ```
 
 ### Мастер установки <a href="#setup-wizard" id="setup-wizard"></a>
+
+**Версия 3.6-5 и выше**
+
+Выполните команду `hostvm-vdi setup` для запуски мастера установки.
+
+В процессе установки будет сгенерирован самоподписанный сертификат для туннелера. Вы можете заменить его на собственный: [Сертификат для HTML5 подключений](../tunneler-appliance-deploy.md#html5-certificate). При наличии сертификата в системе (например при настройке существующей инсталляции) вы сможете сохранить старый сертификат либо сгенерировать новый.
+
+**Версия 3.6-4 и ниже**
 
 Выполните команду `hostvm-setup` для запуска мастера установки.
 
