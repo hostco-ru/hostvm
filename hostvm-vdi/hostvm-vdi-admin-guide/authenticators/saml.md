@@ -53,3 +53,7 @@ _**VDIServer/uds/page/login/label**_
 **Visible (Видимость):** Если отключено, аутентификатор не будет отображен как доступный на странице входа в VDI.
 
 <figure><img src="../../../.gitbook/assets/6_saml_new_auth.jpg" alt=""><figcaption></figcaption></figure>
+
+## Настройка Indeed Identity Provider (SAML)
+
+Руководство по настройке: [https://support.indeed-company.ru/Knowledgebase/Article/View/hostvm-vdi--plus--indeed-identity-provider-saml](https://support.indeed-company.ru/Knowledgebase/Article/View/hostvm-vdi--plus--indeed-identity-provider-saml)
