@@ -71,6 +71,7 @@
   * [Установка Accord KVM](hostvm-server/installation-guide/installation-accordkvm.md)
   * [Конфигурация подключения Zabbix](hostvm-server/installation-guide/konfiguraciya-podklyucheniya-zabbix.md)
   * [Обновление на версию 4.5](hostvm-server/installation-guide/obnovlenie-na-versiyu-4.5/README.md)
+    * [Обновление Standalone HOSTVM Manager через процедуру восстановления из бэкапа](hostvm-server/installation-guide/obnovlenie-na-versiyu-4.5/obnovlenie-standalone-hostvm-manager-cherez-proceduru-vosstanovleniya-iz-bekapa.md)
     * [Обновление Hosted HOSTVM Manager через процедуру восстановления из бэкапа](hostvm-server/installation-guide/obnovlenie-na-versiyu-4.5/obnovlenie-hosted-hostvm-manager-cherez-proceduru-vosstanovleniya-iz-bekapa.md)
     * [Обновление Hosted HOSTVM Manager через локальный репозиторий](hostvm-server/installation-guide/obnovlenie-na-versiyu-4.5/obnovlenie-hosted-hostvm-manager-cherez-lokalnyi-repozitorii.md)
     * [Обновление HOSTVM Node](hostvm-server/installation-guide/obnovlenie-na-versiyu-4.5/obnovlenie-hostvm-node.md)
