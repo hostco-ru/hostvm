@@ -213,6 +213,7 @@
     * [Как обновить сертификаты с истекшим сроком действия](hostvm-server/rukovodstvo-po-administrirovaniyu/chasto-zadavaemye-voprosy/kak-obnovit-sertifikaty-s-istekshim-srokom-deistviya.md)
     * [Включение модуля TPM](hostvm-server/rukovodstvo-po-administrirovaniyu/chasto-zadavaemye-voprosy/vklyuchenie-modulya-tpm.md)
     * [Ограничения функциональности платформы при недоступности HOSTVM Manager](hostvm-server/rukovodstvo-po-administrirovaniyu/chasto-zadavaemye-voprosy/ogranicheniya-funkcionalnosti-platformy-pri-nedostupnosti-hostvm-manager.md)
+    * [Предварительная установка драйверов](hostvm-server/rukovodstvo-po-administrirovaniyu/chasto-zadavaemye-voprosy/predvaritelnaya-ustanovka-draiverov.md)
   * [Решение типовых проблем](hostvm-server/rukovodstvo-po-administrirovaniyu/reshenie-tipovykh-problem/README.md)
     * [Сбой службы rngd.service](hostvm-server/rukovodstvo-po-administrirovaniyu/reshenie-tipovykh-problem/sboi-sluzhby-rngd.service.md)
     * [Заблокирован Storage Domain](hostvm-server/rukovodstvo-po-administrirovaniyu/reshenie-tipovykh-problem/zablokirovan-storage-domain.md)
