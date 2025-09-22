@@ -205,6 +205,7 @@
     * [Как выбрать новый Master Storage Domain?](hostvm-server/rukovodstvo-po-administrirovaniyu/chasto-zadavaemye-voprosy/kak-vybrat-novyi-master-storage-domain.md)
     * [Как перегенерировать SSL-сертификаты на Hosted HOSTVM Manager и хостах?](hostvm-server/rukovodstvo-po-administrirovaniyu/chasto-zadavaemye-voprosy/kak-peregenerirovat-ssl-sertifikaty-na-hosted-engine-i-khostakh.md)
     * [Как обновить сертификаты с истекшим сроком действия](hostvm-server/rukovodstvo-po-administrirovaniyu/chasto-zadavaemye-voprosy/kak-obnovit-sertifikaty-s-istekshim-srokom-deistviya.md)
+    * [Аварийное восстановление Hosted HOSTVM Manager и хостов с истекшими сертификатами](hostvm-server/rukovodstvo-po-administrirovaniyu/chasto-zadavaemye-voprosy/avariinoe-vosstanovlenie-hosted-hostvm-manager-i-khostov-s-istekshimi-sertifikatami.md)
     * [Обновления SSL-сертификатов для сервисов OVN на Hosted HOSTVM Manager](hostvm-server/rukovodstvo-po-administrirovaniyu/chasto-zadavaemye-voprosy/obnovleniya-ssl-sertifikatov-dlya-servisov-ovn-na-hosted-hostvm-manager.md)
     * [Информация о совместимости HOSTVM с iSCSI](hostvm-server/rukovodstvo-po-administrirovaniyu/chasto-zadavaemye-voprosy/informaciya-o-sovmestimosti-hostvm-s-iscsi.md)
     * [Включение promiscuous mode для сети гипервизора для вложенной виртуализации](hostvm-server/rukovodstvo-po-administrirovaniyu/chasto-zadavaemye-voprosy/vklyuchenie-promiscuous-mode-dlya-seti-gipervizora-dlya-vlozhennoi-virtualizacii.md)
