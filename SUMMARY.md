@@ -317,12 +317,13 @@
     * [Приложение](hostvm-vdi/rest-api-guide/3.5/appendix.md)
 * [Руководство по устранению проблем](hostvm-vdi/troubleshooting-guide/README.md)
   * [Часто задаваемые вопросы](hostvm-vdi/troubleshooting-guide/faq/README.md)
-    * [Ошибки при импорте](hostvm-vdi/troubleshooting-guide/faq/import-errors.md)
+    * [Аутентификация](hostvm-vdi/troubleshooting-guide/faq/authentication.md)
     * [Импорт апплаенса в VMware](hostvm-vdi/troubleshooting-guide/faq/import-vmware.md)
-    * [Скрытие уведомления об использовании cookies](hostvm-vdi/troubleshooting-guide/faq/cookies-alert.md)
-    * [SSL инспекция](hostvm-vdi/troubleshooting-guide/faq/ssl-inspection.md)
+    * [Ошибки при импорте](hostvm-vdi/troubleshooting-guide/faq/import-errors.md)
     * [Пустой файл при генерации отчёта](hostvm-vdi/troubleshooting-guide/faq/generate-report-empty-file.md)
     * [Сброс пароля администратора](hostvm-vdi/troubleshooting-guide/faq/reset-admin-password.md)
+    * [Скрытие уведомления об использовании cookies](hostvm-vdi/troubleshooting-guide/faq/cookies-alert.md)
+    * [Создание сервисов на основе полных клонов](hostvm-vdi/troubleshooting-guide/faq/full-clone-services.md)
     * [RemoteApp](hostvm-vdi/troubleshooting-guide/faq/remoteapp/README.md)
       * [Запрет запуска более чем одной копии приложения](hostvm-vdi/troubleshooting-guide/faq/remoteapp/app-session-restriction.md)
       * [Языковая панель в HTML5 сессии](hostvm-vdi/troubleshooting-guide/faq/remoteapp/html5-language-bar.md)
@@ -330,7 +331,7 @@
       * [Проблема с выпадающими списками](hostvm-vdi/troubleshooting-guide/faq/remoteapp/dropdown-list-problem.md)
       * [Проблема с запуском вложенных приложений](hostvm-vdi/troubleshooting-guide/faq/remoteapp/nested-app-launch.md)
       * [Проблема с внеплановым закрытием](hostvm-vdi/troubleshooting-guide/faq/remoteapp/app-crash.md)
-    * [Создание сервисов на основе полных клонов](hostvm-vdi/troubleshooting-guide/faq/full-clone-services.md)
+    * [SSL инспекция](hostvm-vdi/troubleshooting-guide/faq/ssl-inspection.md)
 
 ## HOSTVM XRM
 
