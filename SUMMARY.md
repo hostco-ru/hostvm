@@ -322,6 +322,7 @@
     * [Пользователи и сервисы](hostvm-vdi/rest-api-guide/3.5/user-services.md)
     * [Приложение](hostvm-vdi/rest-api-guide/3.5/appendix.md)
 * [Руководство по устранению проблем](hostvm-vdi/troubleshooting-guide/README.md)
+  * [Сбор диагностической информации](hostvm-vdi/troubleshooting-guide/collect-logs.md)
   * [Часто задаваемые вопросы](hostvm-vdi/troubleshooting-guide/faq/README.md)
     * [Аутентификация](hostvm-vdi/troubleshooting-guide/faq/authentication.md)
     * [Импорт апплаенса в VMware](hostvm-vdi/troubleshooting-guide/faq/import-vmware.md)
