@@ -29,7 +29,7 @@
 \
 
 
-<figure><img src="../.gitbook/assets/image (56).png" alt=""><figcaption><p>карт</p></figcaption></figure>
+<figure><img src="broken-reference" alt=""><figcaption><p>карт</p></figcaption></figure>
 
 **Рис.1 Раздел UDS Client**
 

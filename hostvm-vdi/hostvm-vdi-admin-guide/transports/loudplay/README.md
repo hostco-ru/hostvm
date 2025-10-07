@@ -156,7 +156,7 @@ _Монитор_: параметр, используемый в мультимо
 
 1. Зайти в брокер HOSTVM VDI, нажать кнопку для скачивания Клиента UDS.
 
-<figure><img src="../../../../.gitbook/assets/изображение (14).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/uds-client-link.png" alt=""><figcaption></figcaption></figure>
 
 2. Выбрать "Клиент Windows с поддержкой Loudplay".
 
