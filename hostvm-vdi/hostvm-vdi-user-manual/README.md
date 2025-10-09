@@ -2,7 +2,7 @@
 
 ## Общие данные
 
-Компонент платформы виртуализции HOTSVM VDI предназначен для виртуализации рабочего стола пользователя.
+Компонент платформы виртуализации HOSTVM VDI предназначен для виртуализации рабочего стола пользователя.
 
 С помощью специализированного ПО на рабочем месте пользователь может удаленно подключиться в систему, получая доступ ко всем программам, приложениям и данным.
 
@@ -29,7 +29,7 @@
 \
 
 
-<figure><img src="broken-reference" alt=""><figcaption><p>карт</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/uds-client-link.png" alt=""><figcaption></figcaption></figure>
 
 **Рис.1 Раздел UDS Client**
 
@@ -38,31 +38,31 @@
 Для входа в систему выполните следующие шаги: 1. Откройте в браузере адрес VDI-портала; 2. В открывшуюся форму введите логин, пароль и предоставленный аутентификатор.\
 
 
-<figure><img src="../.gitbook/assets/image (57).png" alt=""><figcaption><p>карт</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (57).png" alt=""><figcaption></figcaption></figure>
 
 **Рис.2 Форма для авторизации**
 
 1.  Выберите нужный сервис и нажмите на иконку для открытия сессии.
 
-    <figure><img src="../.gitbook/assets/image (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
 
 **Рис.3 Перечень сервисов**
 
 После открытия  сессии может потребовать еще раз ввести пароль
 
-<figure><img src="../.gitbook/assets/login.jpg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/login.jpg" alt=""><figcaption></figcaption></figure>
 
 **Рис.4 Вход в систему**
 
 Если необходимо подключить в сессию USB-устройство с локальной машины, выполните следующие шаги: 1. В окне с открытой сессией выберите пункт меню: Файл → USB Device Selection;
 
-<figure><img src="../.gitbook/assets/session.jpg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/session.jpg" alt=""><figcaption></figcaption></figure>
 
 **Рис.5 Окно с открытой сессией**
 
 1. Отметьте нужное устройство в появившемся списке;
 
-![карт](../.gitbook/assets/vdi-5.png)
+![](../../.gitbook/assets/vdi-5.png)
 
 **Рис.6 Выбор USB-устройства**
 
@@ -77,14 +77,15 @@
 Для использования экранной клавиатуры:\
 1\. Сделайте клик в левом-верхнем углу окна, для отображения меню Windows
 
-<figure><img src="../.gitbook/assets/image (1) (1) (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (3).png" alt=""><figcaption></figcaption></figure>
 
 2.  Выберите Экранную клавиатуру в разделе Специальных возможностей\
 
 
-    <figure><img src="../.gitbook/assets/image (1) (1) (3) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (1) (1) (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 3. Нажмите сочетание клавиш Alt+Tab на экранной клавиатуре для выбора свернутого приложения
 
-<figure><img src="../.gitbook/assets/image (34).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (34).png" alt=""><figcaption></figcaption></figure>
+
