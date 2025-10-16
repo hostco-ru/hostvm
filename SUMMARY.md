@@ -106,6 +106,7 @@
       * [Описание настроек хоста](hostvm-server/rukovodstvo-po-administrirovaniyu/vychislitelnaya-infrastruktura/khosty/opisanie-nastroek-khosta.md)
       * [Режим обслуживания](hostvm-server/rukovodstvo-po-administrirovaniyu/vychislitelnaya-infrastruktura/khosty/rezhim-obsluzhivaniya.md)
       * [Управление питанием](hostvm-server/rukovodstvo-po-administrirovaniyu/vychislitelnaya-infrastruktura/khosty/upravlenie-pitaniem.md)
+      * [Удаление из кластера](hostvm-server/rukovodstvo-po-administrirovaniyu/vychislitelnaya-infrastruktura/khosty/udalenie-iz-klastera.md)
   * [Хранилище данных](hostvm-server/rukovodstvo-po-administrirovaniyu/khranilishe-dannykh/README.md)
     * [Подготовка и подключение NFS хранилища](hostvm-server/rukovodstvo-po-administrirovaniyu/khranilishe-dannykh/podgotovka-i-podklyuchenie-nfs-khranilisha/README.md)
       * [Подготовка NFS хранилища](hostvm-server/rukovodstvo-po-administrirovaniyu/khranilishe-dannykh/podgotovka-i-podklyuchenie-nfs-khranilisha/podgotovka-nfs-khranilisha.md)
