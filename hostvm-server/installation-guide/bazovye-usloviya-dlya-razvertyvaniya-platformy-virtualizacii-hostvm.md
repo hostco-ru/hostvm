@@ -3,7 +3,11 @@
 Для развертывания платформы виртуализации HOSTVM требуется минимум:
 
 * два физических сервера при использовании внешнего хранилища;
-* три физических сервера при использовании локальных дисков серверов (гиперконвергенция/SDS) и минимум два сетевых интерфейса на каждом из серверов для разделения трафика.
+* три физических сервера при использовании локальных дисков серверов (гиперконвергенция) и минимум два сетевых интерфейса на каждом из серверов для разделения трафика.
+
+{% hint style="warning" %}
+Рекомендуем использовать решение гиперконвергенции исключительно для тестовых сред. Поддержка GlusterFS в рамках технической поддержки осуществляется в консультационном режиме. Возможности по решению критических инцидентов могут быть ограничены.&#x20;
+{% endhint %}
 
 Для успешной установки HOSTVM Manager требуется выполнение следующих условий:
 
@@ -19,8 +23,8 @@
 2. На один из хостов (сервер с платформой виртуализации) установить HOSTVM Manager (ВМ менеджера виртуализации) используя требуемый тип хранилища:
 
 * Вариант установки на NFS -[ https://kb.pvhostvm.ru/hostvm/installation-guide/ustanovka-hostvm-cherez-gui-4.4/ustanovka-hostvm-manager-na-nfs](ustanovka-hostvm-4.3-4.4/ustanovka-hostvm-manager-4.4.8-gui/ustanovka-hostvm-manager-na-nfs.md)
-* Вариант установки с использованием SDS - [https://kb.pvhostvm.ru/hostvm/installation-guide/ustanovka-hostvm-cherez-gui-4.4/ustanovka-hostvm-manager-na-gluster](ustanovka-hostvm-4.3-4.4/ustanovka-hostvm-manager-4.4.8-gui/ustanovka-hostvm-manager-na-gluster.md)
 * Вариант установки на FC-диск - [https://kb.pvhostvm.ru/hostvm/installation-guide/ustanovka-hostvm-cherez-gui-4.4/ustanovka-hostvm-manager-na-fc-disk](ustanovka-hostvm-4.3-4.4/ustanovka-hostvm-manager-4.4.8-gui/ustanovka-hostvm-manager-na-fc-disk.md)
+* Вариант установки с использованием гиперконвергенции (на базе GlusterFS) - [https://kb.pvhostvm.ru/hostvm/installation-guide/ustanovka-hostvm-cherez-gui-4.4/ustanovka-hostvm-manager-na-gluster](ustanovka-hostvm-4.3-4.4/ustanovka-hostvm-manager-4.4.8-gui/ustanovka-hostvm-manager-na-gluster.md)
 
 3\. Далее необходимо выполнить добавление хостов со стороны HOSTVM Manager по инструкции (см. раздел Добавление хостов): [https://kb.pvhostvm.ru/hostvm/installation-guide/after-install#dobavlenie-khostov](https://kb.pvhostvm.ru/hostvm/installation-guide/after-install#dobavlenie-khostov)
 
