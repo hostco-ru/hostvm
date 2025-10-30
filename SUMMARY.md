@@ -219,6 +219,7 @@
     * [Ограничения функциональности платформы при недоступности HOSTVM Manager](hostvm-server/rukovodstvo-po-administrirovaniyu/chasto-zadavaemye-voprosy/ogranicheniya-funkcionalnosti-platformy-pri-nedostupnosti-hostvm-manager.md)
     * [Предварительная установка драйверов](hostvm-server/rukovodstvo-po-administrirovaniyu/chasto-zadavaemye-voprosy/predvaritelnaya-ustanovka-draiverov.md)
     * [Изменение сетевых настроек](hostvm-server/rukovodstvo-po-administrirovaniyu/chasto-zadavaemye-voprosy/izmenenie-setevykh-nastroek.md)
+    * [Пример конфигурации email уведомлений о событиях](hostvm-server/rukovodstvo-po-administrirovaniyu/chasto-zadavaemye-voprosy/primer-konfiguracii-email-uvedomlenii-o-sobytiyakh.md)
   * [Решение типовых проблем](hostvm-server/rukovodstvo-po-administrirovaniyu/reshenie-tipovykh-problem/README.md)
     * [Сбой службы rngd.service](hostvm-server/rukovodstvo-po-administrirovaniyu/reshenie-tipovykh-problem/sboi-sluzhby-rngd.service.md)
     * [Заблокирован Storage Domain](hostvm-server/rukovodstvo-po-administrirovaniyu/reshenie-tipovykh-problem/zablokirovan-storage-domain.md)
