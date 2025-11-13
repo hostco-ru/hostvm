@@ -343,6 +343,7 @@
       * [Проблема с выпадающими списками](hostvm-vdi/troubleshooting-guide/faq/remoteapp/dropdown-list-problem.md)
       * [Проблема с запуском вложенных приложений](hostvm-vdi/troubleshooting-guide/faq/remoteapp/nested-app-launch.md)
       * [Проблема с внеплановым закрытием](hostvm-vdi/troubleshooting-guide/faq/remoteapp/app-crash.md)
+      * [Настройка Yandex ALB при проблемах отрисовки приложений](hostvm-vdi/troubleshooting-guide/faq/remoteapp/yandex-alb-remoteapp-config.md)
     * [SSL инспекция](hostvm-vdi/troubleshooting-guide/faq/ssl-inspection.md)
 
 ## HOSTVM XRM
