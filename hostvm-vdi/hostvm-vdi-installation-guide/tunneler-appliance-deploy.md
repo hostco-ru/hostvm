@@ -84,7 +84,7 @@ root@hostvm-gw:~# update-ca-certificates
 root@hostvm-gw:~# systemctl restart tomcat9
 ```
 
-### Мастер установки HOSTVM VDI Tunneler <a href="#setup-wizard" id="setup-wizard"></a>
+### Мастер установки <a href="#setup-wizard" id="setup-wizard"></a>
 
 **Версия 3.6-20250702 и выше**
 
@@ -241,7 +241,7 @@ root@hostvm-gw:~# update-ca-certificates
 root@hostvm-gw:~# systemctl restart tomcat9
 ```
 
-### Мастер установки HOSTVM VDI Tunneler
+### Мастер установки <a href="#setup-wizard-30" id="setup-wizard-30"></a>
 
 После настройки параметров сети и перезапуска машины, мастер установки будет доступен через браузер по адресу: `http://<ip_адрес_ВМ_туннелера>:9900`
 
