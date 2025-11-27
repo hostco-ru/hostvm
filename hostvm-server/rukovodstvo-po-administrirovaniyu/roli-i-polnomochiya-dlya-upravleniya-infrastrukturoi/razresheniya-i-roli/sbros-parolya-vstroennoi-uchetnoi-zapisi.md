@@ -23,6 +23,6 @@ user updated successfully
 Если вы слишком часто предпринимаете попытки войти в HOSTVM Manager под учетной записью admin с неправильным паролем, учетная запись может быть заблокирована. Можно разблокировать учетную запись от имени root на машине HOSTVM Manager, выполнив команду:
 
 ```
-# ovirt-aaa-jbdc-tool user unlock admin
+# ovirt-aaa-jdbc-tool user unlock admin
 update user admin... user updated successfully
 ```
