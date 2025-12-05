@@ -345,6 +345,7 @@
       * [Проблема с внеплановым закрытием](hostvm-vdi/troubleshooting-guide/faq/remoteapp/app-crash.md)
       * [Настройка Yandex ALB при проблемах отрисовки приложений](hostvm-vdi/troubleshooting-guide/faq/remoteapp/yandex-alb-remoteapp-config.md)
     * [SSL инспекция](hostvm-vdi/troubleshooting-guide/faq/ssl-inspection.md)
+    * [Подключение USB-накопителей в сеанс RDP](hostvm-vdi/troubleshooting-guide/faq/redirect-drives-in-rdp-session.md)
 
 ## HOSTVM XRM
 
