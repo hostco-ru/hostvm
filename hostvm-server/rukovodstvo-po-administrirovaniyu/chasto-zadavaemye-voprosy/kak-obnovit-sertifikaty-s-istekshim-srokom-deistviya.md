@@ -65,4 +65,4 @@
 
 Повторяем процедуру на остальных узлах с истёкшим сроком действия сертификатов. У созданных таким образом сертификатов будет отсутствовать subject alternative name, о чём может быть выдано предупреждение: Certificate of host hostvm-test.example.test is invalid. The certificate doesn't contain valid subject alternative name, please enroll new certificate for the host. Поэтому после восстановления доступа к web-интерфейсу необходимо выполнить обновление сертификатов согласно [инструкции](kak-peregenerirovat-ssl-sertifikaty-na-hosted-engine-i-khostakh.md)
 
-Выполняем обновление сертификатов управляющей машины, как описано в [статье](kak-peregenerirovat-ssl-sertifikaty-na-hosted-engine-i-khostakh.md)\
+Выполняем обновление сертификатов управляющей машины, как описано в [статье](kak-peregenerirovat-ssl-sertifikaty-na-hosted-engine-i-khostakh.md)<br>

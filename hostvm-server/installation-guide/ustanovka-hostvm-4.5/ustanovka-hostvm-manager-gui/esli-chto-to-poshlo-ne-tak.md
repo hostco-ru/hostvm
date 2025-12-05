@@ -16,4 +16,4 @@ systemctl restart systemd-udevd
 
 Если устранить проблему не удалось, обратитесь в[ техническую поддержку](https://lk.pvhostvm.ru/) используя[ инструкцию](https://lk.pvhostvm.ru/) К обращению приложите логи установки, которые находятся в директории `/var/log/ovirt-hosted-engine-setup`.
 
-\
+<br>

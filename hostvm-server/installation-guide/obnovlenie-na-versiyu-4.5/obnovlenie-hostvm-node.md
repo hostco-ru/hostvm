@@ -2,7 +2,7 @@
 
 **Требования для обновления**
 
-* Проверить что оборудование на обновляемом сервере поддерживается CentOS 8.x (HOSTVM Node 4.5.\*) ([список неподдерживаемого оборудования](https://access.redhat.com/documentation/en-us/red\_hat\_enterprise\_linux/8/html/considerations\_in\_adopting\_rhel\_8/hardware-enablement\_considerations-in-adopting-rhel-8#removed-adapters\_hardware-enablement));
+* Проверить что оборудование на обновляемом сервере поддерживается CentOS 8.x (HOSTVM Node 4.5.\*) ([список неподдерживаемого оборудования](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/html/considerations_in_adopting_rhel_8/hardware-enablement_considerations-in-adopting-rhel-8#removed-adapters_hardware-enablement));
 * Смигрировать все ВМ, запущенные на обновляемом сервере.
 
 **Процесс обновления**
@@ -31,4 +31,4 @@ Compute -> Hosts -> New
 
 8\) Установка закончена, при необходимости можно мигрировать ВМ обратно на обновленный хост
 
-\
+<br>

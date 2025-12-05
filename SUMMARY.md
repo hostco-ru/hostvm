@@ -229,7 +229,8 @@
 ## HOSTVM VDI
 
 * [Руководство по установке и настройке](hostvm-vdi/hostvm-vdi-installation-guide/README.md)
-  * [Системные требования](hostvm-vdi/hostvm-vdi-installation-guide/requirements.md)
+  * [Системные требования](hostvm-vdi/hostvm-vdi-installation-guide/requirements/README.md)
+    * [Список портов](hostvm-vdi/hostvm-vdi-installation-guide/requirements/port-list.md)
   * [Установка HOSTVM VDI Broker](hostvm-vdi/hostvm-vdi-installation-guide/hostvm-vdi-ova-install/README.md)
     * [Установка на РЕД ОС](hostvm-vdi/hostvm-vdi-installation-guide/hostvm-vdi-ova-install/red-os.md)
     * [Установка на ALT Linux](hostvm-vdi/hostvm-vdi-installation-guide/hostvm-vdi-ova-install/alt-linux.md)

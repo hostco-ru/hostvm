@@ -10,7 +10,7 @@
 
 ### Настройка Zabbix-сервера
 
-1\. Установите базовую конфигурацию Zabbix-сервера с помощью [инструкции](https://www.zabbix.com/ru/download?zabbix=6.0\&os\_distribution=centos\&os\_version=8\&components=server\_frontend\_agent\&db=mysql\&ws=nginx) с сайта разработчика.
+1\. Установите базовую конфигурацию Zabbix-сервера с помощью [инструкции](https://www.zabbix.com/ru/download?zabbix=6.0\&os_distribution=centos\&os_version=8\&components=server_frontend_agent\&db=mysql\&ws=nginx) с сайта разработчика.
 
 2\. Авторизуйтесь через браузер по указанному в процессе установки адресу, используя Admin/zabbix в качестве логина/пароля
 
@@ -21,7 +21,7 @@
 
 ### Настройка Zabbix-агента
 
-1\. Установите базовую конфигурацию Zabbix-агента на HOSTVM Manager с помощью [инструкции](https://www.zabbix.com/ru/download?zabbix=6.0\&os\_distribution=centos\&os\_version=8\&components=agent\&db=\&ws=) с сайта разработчика.
+1\. Установите базовую конфигурацию Zabbix-агента на HOSTVM Manager с помощью [инструкции](https://www.zabbix.com/ru/download?zabbix=6.0\&os_distribution=centos\&os_version=8\&components=agent\&db=\&ws=) с сайта разработчика.
 
 2\. Установите необходимые для работы скрипта зависимости:
 
@@ -105,4 +105,4 @@ systemctl restart zabbix-agent
 
 После выполненных действий дождитесь появления объектов в панели управления Zabbix.
 
-\
+<br>

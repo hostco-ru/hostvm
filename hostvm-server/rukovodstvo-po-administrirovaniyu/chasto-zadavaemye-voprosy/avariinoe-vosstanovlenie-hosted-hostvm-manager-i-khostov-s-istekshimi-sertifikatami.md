@@ -76,4 +76,4 @@ timedatectl set-ntp on
 systemctl restart vdsmd libvirtd
 ```
 
-Включите все остальные гипервизоры кластера и обновите сертификаты на них через административную панель используя инструкцию: [Обновление сертификатов хостов через панель администрирования](kak-peregenerirovat-ssl-sertifikaty-na-hosted-engine-i-khostakh.md#obnovlenie-sertifikatov-khostov-cherez-panel-administrirovaniya)\
+Включите все остальные гипервизоры кластера и обновите сертификаты на них через административную панель используя инструкцию: [Обновление сертификатов хостов через панель администрирования](kak-peregenerirovat-ssl-sertifikaty-na-hosted-engine-i-khostakh.md#obnovlenie-sertifikatov-khostov-cherez-panel-administrirovaniya)<br>

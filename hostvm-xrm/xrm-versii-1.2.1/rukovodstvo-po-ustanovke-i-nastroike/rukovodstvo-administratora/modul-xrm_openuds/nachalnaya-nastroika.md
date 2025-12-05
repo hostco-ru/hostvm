@@ -80,8 +80,7 @@ IP-адрес/FQDN резервного брокера.
 
 Имена сервис-пулов, которые необходимо восстановить, указываются через точку с запятой.
 
-Пример: Windows Static Multiple;Linux Static Multiple\
-
+Пример: Windows Static Multiple;Linux Static Multiple<br>
 
 **10\_ovirt\_secondary\_fqdn** &#x20;
 

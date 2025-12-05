@@ -1,4 +1,4 @@
-# Обновление Hosted HOSTVM Manager
+# Обновление Hosted HOSTVM Manager через процедуру восстановления из бэкапа
 
 **Для обновления Hosted HOSTVM Manager необходимо соблюсти следующие условия:**
 
@@ -153,4 +153,4 @@ Please specify the size of the VM disk in GiB: [51]: 60
 
 Если инсталляция происходит на стенде, где нет настроенного DNS, а используется файл hosts, необходимо зайти в консоль ВМ Hosted HOSTVM Manager и настроить файл /etc/hosts, чтобы хосты в кластере стали доступны
 
-\
+<br>

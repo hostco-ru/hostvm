@@ -207,16 +207,14 @@ Please provide the hostname of this host on the management network [hostname.exa
 Please specify the storage you would like to use (glusterfs, iscsi, fc, nfs)[nfs]:
 ```
 
-*   Для NFS выберите версию, адрес и путь подключения к хранилищу, а также параметры монтирования:\
-
+*   Для NFS выберите версию, адрес и путь подключения к хранилищу, а также параметры монтирования:<br>
 
     ```
     Please specify the nfs version you would like to use (auto, v3, v4, v4_1)[auto]:
     Please specify the full shared storage connection path to use (example: host:/path): storage.example.com:/hosted_engine/nfs
     If needed, specify additional mount options for the connection to the hosted-engine storage domain []:
     ```
-*   Для FC выберите LUN из списка автоматического обнаружения. LUN не должен содержать существующих данных.\
-
+*   Для FC выберите LUN из списка автоматического обнаружения. LUN не должен содержать существующих данных.<br>
 
     ```
     The following luns have been found on the requested target:
@@ -256,4 +254,4 @@ sh makeHostvmBranding.sh
 * проверьте, что Ip для управляющей машины, указанный в таблице в начале установки, отвечает на команду `ping`;
 * проверьте, что имя engine.mydomain.ru разрешается вашим dns-сервером.
 
-Если устранить проблему не удалось, обратитесь в [техническую поддержку](https://lk.pvhostvm.ru/) используя [инструкцию](https://lk.pvhostvm.ru/) К обращению приложите лог вывода вашей консоли, который был настроен в начале установки и файл `/root/script-hosted-engine-deploy.log`.\
+Если устранить проблему не удалось, обратитесь в [техническую поддержку](https://lk.pvhostvm.ru/) используя [инструкцию](https://lk.pvhostvm.ru/) К обращению приложите лог вывода вашей консоли, который был настроен в начале установки и файл `/root/script-hosted-engine-deploy.log`.<br>

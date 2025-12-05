@@ -16,8 +16,7 @@
 Если на DNS-сервере отсутствуют записи, то их можно добавить вручную на ноде HOSTVM: [**Действия при установке HOSTVM при отсутствии записей в DNS**](https://kb.pvhostvm.ru/hostvm/installation-guide/deistviya-pri-ustanovke-hostvm-pri-otsutstvii-zapisei-v-dns)
 
 {% hint style="warning" %}
-**В случае установки на FC**, диск для организации хранилища виртуальных машин должен отвечать следующим требованиям:\
-
+**В случае установки на FC**, диск для организации хранилища виртуальных машин должен отвечать следующим требованиям:<br>
 
 * объем диска – не менее 80 Gb;
 * диск должен быть пустым и не содержать в себе какой-либо файловой системы;
@@ -214,8 +213,7 @@ Please provide the hostname of this host on the management network [hostname.exa
 Please specify the storage you would like to use (glusterfs,iscsi, fc, nfs)[nfs]:
 ```
 
-*   Для NFS выберите версию, адрес и путь подключения к хранилищу, а также параметры монтирования:\
-
+*   Для NFS выберите версию, адрес и путь подключения к хранилищу, а также параметры монтирования:<br>
 
     ```
     Please specify the nfs version you would like to use (auto, v3, v4, v4_1)[auto]:
@@ -262,4 +260,4 @@ systemctl restart systemd-udevd
 
 Если устранить проблему не удалось, обратитесь в[ техническую поддержку](https://lk.pvhostvm.ru/) используя[ инструкцию](https://lk.pvhostvm.ru/) К обращению приложите логи установки, которые находятся в директории `/var/log/ovirt-hosted-engine-setup`.
 
-\
+<br>

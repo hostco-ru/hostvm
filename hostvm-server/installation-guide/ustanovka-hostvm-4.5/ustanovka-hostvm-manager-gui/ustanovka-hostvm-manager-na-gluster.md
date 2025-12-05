@@ -63,8 +63,7 @@ root@testname1 ~]# ssh-copy-id root@test-454
 
 ·         В Device Name выбираем раздел, который был создан ранее (/dev/sda3)
 
-·         Задаем размер LV Size в соответствии с системными требованиями, жмем next.\
-
+·         Задаем размер LV Size в соответствии с системными требованиями, жмем next.<br>
 
 <figure><img src="https://lh4.googleusercontent.com/xlrNB68xo718FzRkwEzFwtieWuq5uNBHZPwM0mKIrCnfkm7FdM3EyTQY0u1-kcfWEeH5DLIwmmlfI1gckv1jQR5j2stzu7wRQPfhRVzVX3cWR4N2tohCGiFEzzHW-i5C7WiHs5p6aSm4Jcc6Hr-b718" alt=""><figcaption></figcaption></figure>
 
@@ -107,7 +106,6 @@ Storage Connection = test-454:/engine
 
 <figure><img src="https://lh6.googleusercontent.com/9lGiAN2rID5sPwtGThjfH0JKbduNiNYf2JUI3frbd4xY-UB9wORHLfgA45seu-n8WzMIt1aPqGH84Y3houQ3Qr6vY0opcxDwYKN1Cb8RUKKwtxkonYrXYhsgzpssJfGn3IDUYz5gVnUb9fRY_lF6A_Q" alt=""><figcaption></figcaption></figure>
 
-\
-
+<br>
 
 <figure><img src="https://lh4.googleusercontent.com/exhaUZHjVNgjR6wU2BBUg5U6mq6gNpueu8HrxYJW95FmheE7fvuF9olz9k66BtmTMnCgpvIFHTTjyfXk3IAbTTEu15ig5lVOYYh2YGBxhpI1SCqy9Hnpx2wm5JsYQ6v8ZUByuEuDID6dc1EfxAYuLI0" alt=""><figcaption></figcaption></figure>

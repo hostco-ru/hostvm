@@ -72,4 +72,4 @@ Format: Single file (OVA)
 
 `HOSTVM Manager GUI - Compute - Virtual machines` - нажать 3 точки в меню - Import - выбрать нужный дата центр, source=export domain - нажать Load - переместить нужную ВМ в Virtual machines to import - Next - выбрать параметры импорта и нажать OK
 
-\
+<br>

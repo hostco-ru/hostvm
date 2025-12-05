@@ -95,4 +95,4 @@
 ### Перечень изменений
 
 С перечнем изменений и исправлений вы можете ознакомиться в [статье](https://kb.pvhostvm.ru/hostvm-vdi/hostvm-vdi-installation-guide/changelog).\
-\
+<br>

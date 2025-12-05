@@ -10,8 +10,7 @@ XRM позволяет автоматизировать как простые с
 
 [Установка HOSTVM XRM](ustanovka-hostvm-xrm.md)
 
-[Установка/изменение пароля администратора](ustanovka-izmenenie-parolya-administratora.md)\
-
+[Установка/изменение пароля администратора](ustanovka-izmenenie-parolya-administratora.md)<br>
 
 <figure><img src="../../../.gitbook/assets/xrm_amin.gif" alt=""><figcaption></figcaption></figure>
 

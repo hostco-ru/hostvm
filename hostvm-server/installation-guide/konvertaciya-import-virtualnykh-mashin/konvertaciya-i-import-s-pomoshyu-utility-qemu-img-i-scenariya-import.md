@@ -43,4 +43,4 @@
 
 Пример использования сценария импорта доступен в статье [Конвертация виртуальной машины с ОС AltLinux из VMware в HOSTVM](konvertaciya-virtualnoi-mashiny-s-os-altlinux-iz-vmware-v-hostvm.md).
 
-\
+<br>

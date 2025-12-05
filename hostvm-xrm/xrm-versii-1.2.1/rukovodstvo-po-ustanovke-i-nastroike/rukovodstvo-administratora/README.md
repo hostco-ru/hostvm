@@ -1,7 +1,6 @@
 # Руководство администратора
 
-[Модуль xrm\_ovirt](modul-xrm\_ovirt/)\
+[Модуль xrm\_ovirt](modul-xrm_ovirt/)<br>
 
-
-[Модуль xrm\_OpenUDS](modul-xrm\_openuds/)
+[Модуль xrm\_OpenUDS](modul-xrm_openuds/)
 
