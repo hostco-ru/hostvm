@@ -142,7 +142,7 @@ systemctl restart systemd-udevd
 ```
 
 Либо перезагрузите хост.\
-2\. Проверить корректность данных, которые были введены в IP-wizard. При обнаружении ошибки выполните команду ansible-playbook /etc/ansible/clean-node.yml и начните сначала.
+2\. Проверить корректность данных, которые были введены в IP-wizard. При обнаружении ошибки выполните команду `ansible-playbook /etc/ansible/clean-node.yml` и начните сначала.
 
 3.Если на этапе `/root/script-hosted-engine-deploy | tee -a /root/script-hosted-engine-deploy.log` появилась ошибка, то выполните команду `ansible-playbook /etc/ansible/clean-node.yml` и начните сначала
 

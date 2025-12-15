@@ -72,7 +72,7 @@
 3. Выполните сброс хоста
 
 ```
-# ansible-playbook /etc/ansible/clean-node.yml
+# /usr/sbin/ovirt-hosted-engine-cleanup
 ```
 
 4. Используйте оконный менеджер screen (или tmux), чтобы не потерять сессию в случае обрыва соединения:
