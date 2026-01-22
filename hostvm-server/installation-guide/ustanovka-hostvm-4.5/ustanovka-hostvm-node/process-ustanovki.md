@@ -16,15 +16,11 @@
 
 Далее автоматически открывается меню настроек.
 
-<figure><img src="https://lh6.googleusercontent.com/OINyTav9jNgP904JKtynOqqbKGbPqgYXo_HGjqLCbFeR6oxX5UsmZpD_45LQJn4-pKCjFhwGRcrR415HQPPuRPrDTlEROBYh2sp8qW7Hqv1iKkO6i4ykvibGTSY9i_bGjFSrdsks-gbrnsWQoatBWxs" alt=""><figcaption></figcaption></figure>
-
 **ВАЖНО!: пароль root по умолчанию: HostvmNode**
 
-Перейдите в DATE & TIME, укажите ваш часовой пояс, время и дату. Нажмите Done.
+<figure><img src="https://lh6.googleusercontent.com/OINyTav9jNgP904JKtynOqqbKGbPqgYXo_HGjqLCbFeR6oxX5UsmZpD_45LQJn4-pKCjFhwGRcrR415HQPPuRPrDTlEROBYh2sp8qW7Hqv1iKkO6i4ykvibGTSY9i_bGjFSrdsks-gbrnsWQoatBWxs" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="https://lh6.googleusercontent.com/wmcd-5dh3XFPxLpipBFKJqKMVxF-ESYbmEKeiA-mqV-B2ykOD6yOOHTD0lj0YYsz2Nuk04kjYA1zutmnIspCC_59BbGxYpuQgggiJVOP4Eb45YqTXOys_koQhqmKiFo3ByZP7Tx0m13SQUJ2xRUEdvs" alt=""><figcaption></figcaption></figure>
-
-**ВАЖНО!: Для корректной установки необходимо задать корректное имя хоста, отличное от localhost.localdomain, во избежание возможных ошибок во время установки HOSTVM Manager.**
+**ВАЖНО!: Для корректной установки необходимо задать правильное имя хоста, отличное от localhost.localdomain, во избежание возможных ошибок во время установки HOSTVM Manager.**
 
 Перейдите в NETWORK & HOST NAME.
 
@@ -41,6 +37,20 @@
 Переведите тригер возле названия подключения в положение On. В поле Host name введите имя сервера, нажмите кнопку Apply. Нажмите кнопку Done.
 
 <figure><img src="https://lh3.googleusercontent.com/ao5xZxso6Y9IfL23HDrFKmjTRBAUB6kW5BhwTPS_SThx1Ki8Q3r9-RtYWzQzxmaveH6vd4iJUopAjLeSsbll-J5wDK3HL9oRIkGpMuyAwgOqyR7AJ3YJEXu9-0t0jyx1JMlLoXcXFebx7XH2D9DeHlo" alt=""><figcaption></figcaption></figure>
+
+Перейдите в DATE & TIME и укажите ваш часовой пояс.
+
+**ВАЖНО!: Для корректной настройки NTP следует указывать и включать его после задания имени хоста и настройки сети.**
+
+Переведите триггер Network Time в положение On. Нажмите на значок шестерёнки справа.
+
+<figure><img src="../../../../.gitbook/assets/photo_2026-01-22_11-52-10.jpg" alt=""><figcaption></figcaption></figure>
+
+Добавьте или оставьте NTP-сервер по умолчанию.\
+Если напротив сервера в столбце Working установлена галочка, это означает, что сервер успешно синхронизировал время.\
+Нажмите OK для подтверждения, затем нажмите Done.
+
+<figure><img src="../../../../.gitbook/assets/photo_2026-01-22_11-43-40.jpg" alt=""><figcaption></figcaption></figure>
 
 Перейдите в Instalation Destination. Выберите диск на который необходимо выполнить установку. Выберите радиокнопку Custom. Нажмите Done.
 
