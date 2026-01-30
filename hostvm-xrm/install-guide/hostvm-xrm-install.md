@@ -45,7 +45,7 @@ reboot
 ### Доступ к веб-интерфейсу управления <a href="#accessing-web-interface" id="accessing-web-interface"></a>
 
 * Откройте веб-интерфейс HOSTVM XRM через браузер по адресу `https://<IP-адрес или имя машины>`, выполните вход в систему с помощью пары логин/пароль:  _xrmadmin/xrmadmin_
-* Выполните настройку системы согласно [Начальной настройке](rukovodstvo-administratora/modul-xrm\_ovirt/nachalnaya-nastroika.md) .
+* Выполните настройку системы согласно [Начальной настройке](../admin-guide/xrm-ovirt-module/initial-setup.md) .
 
 ### Настройка SSL сертификатов <a href="#ssl-certificates" id="ssl-certificates"></a>
 
