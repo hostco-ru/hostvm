@@ -9,17 +9,7 @@
 
 Перечень поддерживаемых моделей CPU:
 
-|   **AMD**  |       Intel      | IBM Power8 |
-| :--------: | :--------------: | :--------: |
-| Opteron G4 |      Nehalem     | IBM POWER8 |
-| Opteron G5 |     Westmere     |            |
-|    EPYC    |    Sandybridge   |            |
-|            |      Haswell     |            |
-|            |   Haswell-noTSX  |            |
-|            |     Broadwell    |            |
-|            |  Broadwell-noTSX |            |
-|            | Skylake (client) |            |
-|            | Skylake (server) |            |
+<table data-header-hidden><thead><tr><th width="249.33333333333331" align="center">AMD</th><th align="center">Intel</th><th align="center">IBM Power</th></tr></thead><tbody><tr><td align="center"><strong>AMD</strong></td><td align="center">Intel</td><td align="center">IBM POWER8</td></tr><tr><td align="center">Opteron G4</td><td align="center">Nehalem</td><td align="center">IBM POWER9</td></tr><tr><td align="center">Opteron G5</td><td align="center">Westmere</td><td align="center"></td></tr><tr><td align="center">EPYC</td><td align="center">Sandybridge</td><td align="center"></td></tr><tr><td align="center"></td><td align="center">Haswell</td><td align="center"></td></tr><tr><td align="center"></td><td align="center">Haswell-noTSX</td><td align="center"></td></tr><tr><td align="center"></td><td align="center">Broadwell</td><td align="center"></td></tr><tr><td align="center"></td><td align="center">Broadwell-noTSX</td><td align="center"></td></tr><tr><td align="center"></td><td align="center">Skylake (client)</td><td align="center"></td></tr><tr><td align="center"></td><td align="center">Skylake (server)</td><td align="center"></td></tr><tr><td align="center"></td><td align="center">Cascadelake</td><td align="center"></td></tr><tr><td align="center"></td><td align="center">Icelake</td><td align="center"></td></tr></tbody></table>
 
 ### Требования к дисковой подсистеме
 
