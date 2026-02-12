@@ -3,20 +3,6 @@ description: >-
   Данная инструкция описывает замену предустановленных самоподписанных
   сертификатов на действительные в компонентах HOSTVM VDI для конфигурации
   высокой доступности.
-layout:
-  width: default
-  title:
-    visible: true
-  description:
-    visible: true
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
-  metadata:
-    visible: true
 ---
 
 # SSL сертификаты
