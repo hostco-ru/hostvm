@@ -234,6 +234,7 @@
     * [Заблокирован Storage Domain](hostvm-server/rukovodstvo-po-administrirovaniyu/reshenie-tipovykh-problem/zablokirovan-storage-domain.md)
     * [Действия при выходе из строя СХД с размещенным HOSTVM Manager](hostvm-server/rukovodstvo-po-administrirovaniyu/reshenie-tipovykh-problem/deistviya-pri-vykhode-iz-stroya-skhd-s-razmeshennym-hostvm-manager.md)
     * [Образы не загружаются в домен](hostvm-server/rukovodstvo-po-administrirovaniyu/reshenie-tipovykh-problem/obrazy-ne-zagruzhayutsya-v-domen.md)
+    * [Внезапная перезагрузка ВМ с сообщением "Lost connection with qemu process"](hostvm-server/rukovodstvo-po-administrirovaniyu/reshenie-tipovykh-problem/vnezapnaya-perezagruzka-vm-s-soobsheniem-lost-connection-with-qemu-process.md)
 
 ## HOSTVM VDI
 
