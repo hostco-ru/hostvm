@@ -232,6 +232,7 @@
     * [Изменение сетевых настроек](hostvm-server/rukovodstvo-po-administrirovaniyu/chasto-zadavaemye-voprosy/izmenenie-setevykh-nastroek.md)
     * [Пример конфигурации email уведомлений о событиях](hostvm-server/rukovodstvo-po-administrirovaniyu/chasto-zadavaemye-voprosy/primer-konfiguracii-email-uvedomlenii-o-sobytiyakh.md)
     * [Поддержка стороннего ПО](hostvm-server/rukovodstvo-po-administrirovaniyu/chasto-zadavaemye-voprosy/podderzhka-storonnego-po.md)
+    * [Настройка DEBUG-логирования в HOSTVM Manager](hostvm-server/rukovodstvo-po-administrirovaniyu/chasto-zadavaemye-voprosy/nastroika-debug-logirovaniya-v-hostvm-manager.md)
   * [Решение типовых проблем](hostvm-server/rukovodstvo-po-administrirovaniyu/reshenie-tipovykh-problem/README.md)
     * [Сбой службы rngd.service](hostvm-server/rukovodstvo-po-administrirovaniyu/reshenie-tipovykh-problem/sboi-sluzhby-rngd.service.md)
     * [Заблокирован Storage Domain](hostvm-server/rukovodstvo-po-administrirovaniyu/reshenie-tipovykh-problem/zablokirovan-storage-domain.md)
