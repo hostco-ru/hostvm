@@ -131,6 +131,7 @@
       * [Подключение хранилища Fibre Channel](hostvm-server/rukovodstvo-po-administrirovaniyu/khranilishe-dannykh/podklyuchenie-blochnykh-khranilish-dannykh/podklyuchenie-khranilisha-fibre-channel.md)
       * [Подключение хранилища iSCSI](hostvm-server/rukovodstvo-po-administrirovaniyu/khranilishe-dannykh/podklyuchenie-blochnykh-khranilish-dannykh/podklyuchenie-khranilisha-iscsi.md)
     * [Импорт хранилищ](hostvm-server/rukovodstvo-po-administrirovaniyu/khranilishe-dannykh/import-khranilish.md)
+    * [Активация домена хранения](hostvm-server/rukovodstvo-po-administrirovaniyu/khranilishe-dannykh/aktivaciya-domena-khraneniya.md)
     * [Загрузка образов ISO](hostvm-server/rukovodstvo-po-administrirovaniyu/khranilishe-dannykh/zagruzka-obrazov-iso.md)
     * [Режим обслуживания](hostvm-server/rukovodstvo-po-administrirovaniyu/khranilishe-dannykh/rezhim-obsluzhivaniya.md)
     * [Редактирование и удаление](hostvm-server/rukovodstvo-po-administrirovaniyu/khranilishe-dannykh/redaktirovanie-i-udalenie.md)
