@@ -1,3 +1,9 @@
+---
+description: >-
+  Данное руководство описывает процесс установки драйверов на этапе
+  развертывания гипервизора HOSTVM.
+---
+
 # Предварительная установка драйверов
 
 Для установки драйверов в процессе установки HOSTVM Node выполните следующие действия:
@@ -6,6 +12,6 @@
 2. При появлении меню Install HOSTVM Node подключите образ драйвера.
 3. Нажмите TAB и добавьте в конец строки: `inst.dd`, как на скриншоте ниже:
 
-<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
 4. Продолжите установку, нажав ENTER

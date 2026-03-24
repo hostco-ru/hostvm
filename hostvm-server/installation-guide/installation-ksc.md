@@ -159,6 +159,6 @@ timedatectl set-timezone Asia/Yekaterinburg
 
 В случае возникновения проблем с получением IP у виртуальной машины SVM, попробуйте включить Promiscuous mode на гипервизоре для сети, в которую устанавливается SVM.
 
-{% content-ref url="../rukovodstvo-po-administrirovaniyu/chasto-zadavaemye-voprosy/vklyuchenie-promiscuous-mode-dlya-seti-gipervizora-dlya-vlozhennoi-virtualizacii.md" %}
-[vklyuchenie-promiscuous-mode-dlya-seti-gipervizora-dlya-vlozhennoi-virtualizacii.md](../rukovodstvo-po-administrirovaniyu/chasto-zadavaemye-voprosy/vklyuchenie-promiscuous-mode-dlya-seti-gipervizora-dlya-vlozhennoi-virtualizacii.md)
+{% content-ref url="../rukovodstvo-po-administrirovaniyu/chasto-zadavaemye-voprosy/set/vklyuchenie-promiscuous-mode-dlya-seti-gipervizora-dlya-vlozhennoi-virtualizacii.md" %}
+[vklyuchenie-promiscuous-mode-dlya-seti-gipervizora-dlya-vlozhennoi-virtualizacii.md](../rukovodstvo-po-administrirovaniyu/chasto-zadavaemye-voprosy/set/vklyuchenie-promiscuous-mode-dlya-seti-gipervizora-dlya-vlozhennoi-virtualizacii.md)
 {% endcontent-ref %}

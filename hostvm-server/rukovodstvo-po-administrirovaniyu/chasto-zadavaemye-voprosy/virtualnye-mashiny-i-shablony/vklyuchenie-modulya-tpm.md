@@ -1,8 +1,14 @@
+---
+description: >-
+  Данное руководство описывает действия по активации эмулируемого модуля TPM для
+  виртуальных машин с повышенными требованиями к безопасности.
+---
+
 # Включение модуля TPM
 
 По умолчанию использование модуля TPM отключено.
 
-<figure><img src="../../../.gitbook/assets/TPMd.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/TPMd.png" alt=""><figcaption></figcaption></figure>
 
 Для включения модуля TPM необходимо выполнить следующие действия:
 
@@ -22,4 +28,4 @@
 
 После этих действий параметр TPM Device Enabled станет активным.
 
-<figure><img src="../../../.gitbook/assets/TPM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/TPM.png" alt=""><figcaption></figcaption></figure>
