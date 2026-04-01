@@ -13,8 +13,6 @@
 
 `Клиент Windows` - клиент для устройств с ОС Windows;
 
-`Клиент Windows с поддержкой Loudplay` - клиент для устройств с ОС Windows, с поддержкой ПО Loudplay;
-
 `Клиент Mac OS X` - клиент для устройств c Mac OS;
 
 `Linux-клиент на основе Debian` - клиент для устройств с ОС Linux на основе Debian, а также Ubuntu, Xubuntu и т.д. (требует python версии не ниже 3.6);
