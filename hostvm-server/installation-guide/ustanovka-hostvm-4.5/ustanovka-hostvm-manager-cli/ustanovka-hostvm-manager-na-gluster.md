@@ -133,33 +133,4 @@ gluster_hosted_engine_volume_name: hosted-engine
 /root/script-hosted-engine-deploy | tee -a /root/script-hosted-engine-deploy.log
 ```
 
-## Если что-то пошло не так
-
-1\. В случае, если возникают ошибки, связанные с доступом к локальному репозиторию (local-repo) выполните следующую команду:
-
-```
-systemctl restart systemd-udevd
-```
-
-Либо перезагрузите хост.\
-2\. Проверить корректность данных, которые были введены в IP-wizard. При обнаружении ошибки выполните команду `ansible-playbook /etc/ansible/clean-node.yml` и начните сначала.
-
-3.Если на этапе `/root/script-hosted-engine-deploy | tee -a /root/script-hosted-engine-deploy.log` появилась ошибка, то выполните команду `ansible-playbook /etc/ansible/clean-node.yml` и начните сначала
-
-4.Если на этапе `ansible-playbook /etc/ansible/make-prepare.yml` появилась ошибка, повторите выполнение данной команды
-
-5.Если на этапе `ansible-playbook /etc/ansible/make-gluster-storages.yml` появилась ошибка, повторите выполнение данной команды
-
-6.Если на этапе `ansible-playbook /etc/ansible/make-ovirt.yml` появилась ошибка, повторите выполнение данной команды
-
-7.Если после завершения установки вам не открывается страница в браузере с адресом `https://engine.mydomain.ru`, то
-
-* Проверьте, что ip для HOSTVM Manager, указанный в таблице в начале установки отвечает на команду ping
-* Проверьте, что имя engine.mydomain.ru разрешается вашим dns-сервером.
-
-8. Если на этапе установки engine `/root/script-hosted-engine-deploy | tee -a /root/script-hosted-engine-deploy.log` установка зависает на этапе `Engine VM domain: [rtc.local]rtc.local Enter root password that will be used for the engine appliance: engine`, то подключитесь к консоли сервера не по SSH, а с помощью ipmi(iLO, iDRAC, etc.) и повторно запустите скрипт установки менеджера.
-
-Если устранить проблему не удалось, обратитесь в[ техническую поддержку](https://lk.pvhostvm.ru/) используя[ инструкцию](https://lk.pvhostvm.ru/) К обращению приложите лог вывода вашей консоли, который был настроен в начале установки и файл `/root/script-hosted-engine-deploy.log.`
-
-\
-<br>
+После установки будет доступен портал управления. Если в процессе установки возникли проблемы с доступом к локальному репозиторию, ошибки в процессе установки или портал недоступен, выполните исправление по [инструкции](../../../rukovodstvo-po-administrirovaniyu/reshenie-tipovykh-problem/esli-chto-to-poshlo-ne-tak.md) и повторите установку.

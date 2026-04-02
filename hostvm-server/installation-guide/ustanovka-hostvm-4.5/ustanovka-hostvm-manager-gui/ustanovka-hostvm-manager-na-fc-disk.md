@@ -59,3 +59,5 @@
 Поздравляем! Hosted HOSTVM Manager развернут.
 
 <figure><img src="https://lh6.googleusercontent.com/yWQoFDIq5zGXZRoJUCK5QsG2tmlOeLCb0cIZoFE3Ni59s-giSBY0_6hCbSA1xAexHDkA-rE6XYTPOaLOjqKuPxxuaZ3Mn_yXSi1rR_0mFzTekwaKtSwASoc2c6hjUVJNH2FnoK4tCgSZukURpmhmvas" alt=""><figcaption></figcaption></figure>
+
+После установки будет доступен портал управления. Если в процессе установки возникли проблемы с доступом к локальному репозиторию, ошибки в процессе установки или портал недоступен, выполните исправление по [инструкции](../../../rukovodstvo-po-administrirovaniyu/reshenie-tipovykh-problem/esli-chto-to-poshlo-ne-tak.md) и повторите установку.

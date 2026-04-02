@@ -109,3 +109,5 @@ Storage Connection = test-454:/engine
 <br>
 
 <figure><img src="https://lh4.googleusercontent.com/exhaUZHjVNgjR6wU2BBUg5U6mq6gNpueu8HrxYJW95FmheE7fvuF9olz9k66BtmTMnCgpvIFHTTjyfXk3IAbTTEu15ig5lVOYYh2YGBxhpI1SCqy9Hnpx2wm5JsYQ6v8ZUByuEuDID6dc1EfxAYuLI0" alt=""><figcaption></figcaption></figure>
+
+После установки будет доступен портал управления. Если в процессе установки возникли проблемы с доступом к локальному репозиторию, ошибки в процессе установки или портал недоступен, выполните исправление по [инструкции](../../../rukovodstvo-po-administrirovaniyu/reshenie-tipovykh-problem/esli-pri-ustanovke-na-khranilishe-glusterfs-voznikli-nepoladki.md) и повторите установку.
