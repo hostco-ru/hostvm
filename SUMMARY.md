@@ -219,6 +219,7 @@
       * [Как выбрать новый Master Storage Domain?](hostvm-server/rukovodstvo-po-administrirovaniyu/chasto-zadavaemye-voprosy/upravlenie-klasterami-i-khranilishami/kak-vybrat-novyi-master-storage-domain.md)
       * [Перенос Hosted HOSTVM Manager в другое хранилище](hostvm-server/rukovodstvo-po-administrirovaniyu/chasto-zadavaemye-voprosy/upravlenie-klasterami-i-khranilishami/perenos-hosted-engine-v-drugoe-khranilishe.md)
     * [Виртуальные машины и шаблоны](hostvm-server/rukovodstvo-po-administrirovaniyu/chasto-zadavaemye-voprosy/virtualnye-mashiny-i-shablony/README.md)
+      * [Отключение Hotplug для Windows ВМ](hostvm-server/rukovodstvo-po-administrirovaniyu/chasto-zadavaemye-voprosy/virtualnye-mashiny-i-shablony/otklyuchenie-hotplug-dlya-windows-vm.md)
       * [Миграция виртуальных машин между датацентрами HOSTVM](hostvm-server/rukovodstvo-po-administrirovaniyu/chasto-zadavaemye-voprosy/virtualnye-mashiny-i-shablony/migraciya-virtualnykh-mashin-mezhdu-datacentrami-hostvm.md)
       * [Подключение shared-дисков](hostvm-server/rukovodstvo-po-administrirovaniyu/chasto-zadavaemye-voprosy/virtualnye-mashiny-i-shablony/podklyuchenie-shared-diskov.md)
       * [Включение модуля TPM](hostvm-server/rukovodstvo-po-administrirovaniyu/chasto-zadavaemye-voprosy/virtualnye-mashiny-i-shablony/vklyuchenie-modulya-tpm.md)
