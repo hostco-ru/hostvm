@@ -349,6 +349,7 @@
   * [Очистка кэша](hostvm-vdi/hostvm-vdi-admin-guide/flush-cache.md)
   * [Приложение](hostvm-vdi/hostvm-vdi-admin-guide/appendix/README.md)
     * [Функциональные возможности протоколов подключения](hostvm-vdi/hostvm-vdi-admin-guide/appendix/connection-protocol-feature-support.md)
+    * [Учёт количества лицензий](hostvm-vdi/hostvm-vdi-admin-guide/appendix/licensing.md)
 * [Руководство пользователя](hostvm-vdi/hostvm-vdi-user-manual/README.md)
   * [Лаунчер HOSTVM VDI](hostvm-vdi/hostvm-vdi-user-manual/launcher.md)
 * [Руководство по REST API](hostvm-vdi/rest-api-guide/README.md)
