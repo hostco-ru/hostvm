@@ -279,6 +279,7 @@
     * [SSL сертификаты](hostvm-vdi/hostvm-vdi-installation-guide/high-availability/ssl-certificates.md)
     * [Дополнительная настройка](hostvm-vdi/hostvm-vdi-installation-guide/high-availability/optional-config/README.md)
       * [HTTP режим балансировщика для HTML5 подключений](hostvm-vdi/hostvm-vdi-installation-guide/high-availability/optional-config/lb-http-mode-for-html5-connections.md)
+    * [Настройка nginx для балансировки подключений](hostvm-vdi/hostvm-vdi-installation-guide/high-availability/nginx-lb.md)
   * [Агент HOSTVM VDI](hostvm-vdi/hostvm-vdi-installation-guide/actor/README.md)
     * [Установка на Astra Linux](hostvm-vdi/hostvm-vdi-installation-guide/actor/ustanovka-hostvm-vdi-actor-dlya-astra-linux/README.md)
       * [Оффлайн установка](hostvm-vdi/hostvm-vdi-installation-guide/actor/ustanovka-hostvm-vdi-actor-dlya-astra-linux/offline-install.md)
