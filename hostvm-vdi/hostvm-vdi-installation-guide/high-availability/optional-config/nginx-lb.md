@@ -6,6 +6,7 @@
 
 ## Пример конфигурации <a href="#config-example" id="config-example"></a>
 
+{% code overflow="wrap" %}
 ```
 upstream user_portal {
      #В случае, если пользовательский портал настроен на туннелере, нужно указать порт :1443
@@ -37,4 +38,5 @@ server {
 }
 
 ```
+{% endcode %}
 
