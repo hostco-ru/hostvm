@@ -1,22 +1,3 @@
----
-layout:
-  width: wide
-  title:
-    visible: true
-  description:
-    visible: true
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
-  metadata:
-    visible: true
-  tags:
-    visible: true
----
-
 # Жизненный цикл версий
 
 Этапы жизненного цикла версий HOSTVM VDI:
@@ -29,5 +10,5 @@ layout:
 
 ## Текущий статус <a href="#current-status" id="current-status"></a>
 
-<table><thead><tr><th width="97">Версия</th><th width="155">Статус</th><th width="165">Дата начала этапа активной поддержки (ГГГГ-ММ)</th><th width="172">Дата начала этапа сопровождения (ГГГГ-ММ)</th><th>Дата окончания поддержки (ГГГГ-ММ)</th></tr></thead><tbody><tr><td>3.0</td><td>Окончание поддержки</td><td>2021.10</td><td>2022.10</td><td>2025.10</td></tr><tr><td>3.5</td><td>Сопровождение</td><td>2023.01</td><td>2023.09</td><td>2026.09</td></tr><tr><td>3.6</td><td>Активный</td><td>2023.10</td><td>Не объявлено</td><td>Не объявлено</td></tr><tr><td>4.0</td><td>В разработке</td><td>Не объявлено</td><td>Не объявлено</td><td>Не объявлено</td></tr></tbody></table>
+<table><thead><tr><th width="97">Версия</th><th width="155">Статус</th><th width="176">Дата начала этапа активной поддержки (ГГГГ-ММ)</th><th width="173">Дата начала этапа сопровождения (ГГГГ-ММ)</th><th>Дата окончания поддержки (ГГГГ-ММ)</th></tr></thead><tbody><tr><td>3.0</td><td>Окончание поддержки</td><td>2021.10</td><td>2022.10</td><td>2025.10</td></tr><tr><td>3.5</td><td>Сопровождение</td><td>2023.01</td><td>2023.09</td><td>2026.09</td></tr><tr><td>3.6</td><td>Активный</td><td>2023.10</td><td>Не объявлено</td><td>Не объявлено</td></tr><tr><td>4.0</td><td>В разработке</td><td>Не объявлено</td><td>Не объявлено</td><td>Не объявлено</td></tr></tbody></table>
 
