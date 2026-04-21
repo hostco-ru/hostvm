@@ -290,10 +290,6 @@
   * [Обновление компонентов VDI](hostvm-vdi/hostvm-vdi-installation-guide/update-guide.md)
   * [Обновление конфигурации из двух экземпляров брокера VDI со встроенной БД (с репликацией)](hostvm-vdi/hostvm-vdi-installation-guide/obnovlenie-konfiguracii-iz-dvukh-ekzemplyarov-brokera-vdi-so-vstroennoi-bd-s-replikaciei.md)
   * [Конфигурация подключения Zabbix](hostvm-vdi/hostvm-vdi-installation-guide/zabbix-config.md)
-  * [Изменения и исправления](hostvm-vdi/hostvm-vdi-installation-guide/changelog/README.md)
-    * [3.6](hostvm-vdi/hostvm-vdi-installation-guide/changelog/3.6.md)
-    * [3.5](hostvm-vdi/hostvm-vdi-installation-guide/changelog/3.5.md)
-    * [3.0](hostvm-vdi/hostvm-vdi-installation-guide/changelog/3.0.md)
 * [Руководство администратора](hostvm-vdi/hostvm-vdi-admin-guide/README.md)
   * [Подготовка базового образа для публикации](hostvm-vdi/hostvm-vdi-admin-guide/base-image-preparation/README.md)
     * [Ввод тонких клонов в домен для Astra Linux](hostvm-vdi/hostvm-vdi-admin-guide/base-image-preparation/vvod-tonkikh-klonov-v-domen-dlya-astra-linux.md)
@@ -387,7 +383,10 @@
     * [Подключение USB-накопителей в сеанс RDP](hostvm-vdi/troubleshooting-guide/faq/redirect-drives-in-rdp-session.md)
 * [Замечания к выпускам](hostvm-vdi/release-notes/README.md)
   * [Жизненный цикл версий](hostvm-vdi/release-notes/life-cycle.md)
-  * [История изменений](hostvm-vdi/release-notes/changelog.md)
+  * [История изменений](hostvm-vdi/release-notes/changelog/README.md)
+    * [3.6](hostvm-vdi/release-notes/changelog/3.6.md)
+    * [3.5](hostvm-vdi/release-notes/changelog/3.5.md)
+    * [3.0](hostvm-vdi/release-notes/changelog/3.0.md)
 
 ## HOSTVM XRM
 
