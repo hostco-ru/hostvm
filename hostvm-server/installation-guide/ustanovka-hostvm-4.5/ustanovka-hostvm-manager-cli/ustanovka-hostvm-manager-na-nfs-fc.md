@@ -110,14 +110,14 @@ Please specify the memory size of the VM in MB. The default is the maximum avail
 ```
 Please provide the FQDN you would like to use for the engine.
 Note: This will be the FQDN of the engine VM you are now going to launch, it should not point to the base host or to any other existing machine.
-Engine VM FQDN: engine-454
+Engine VM FQDN: engine-454.pvhostvm.ru
 ```
 
-12\. Укажите домен для управляющей виртуальной машины:
+12\. Подтвердите домен для управляющей виртуальной машины:
 
 ```
 Please provide the domain name you would like to use for the engine appliance.
-Engine VM domain [pvhostvm.ru]: pvhostvm.ru
+Engine VM domain [pvhostvm.ru]:
 ```
 
 \

@@ -15,14 +15,14 @@
 
 <figure><img src="../../.gitbook/assets/image (54).png" alt=""><figcaption></figcaption></figure>
 
-10.1.99.61 - IP-адрес ноды
+10.1.99.61 — IP-адрес ноды
 
-gen9hostvm448 - FQDN ноды
+gen9hostvm448 — short name (hostname) ноды
 
-gen9hostvm448.hostco.ru - FQDN.domain.ru ноды
+gen9hostvm448.hostco.ru — FQDN ноды
 
-10.1.99.62 - IP-адрес Engine
+10.1.99.62 — IP-адрес Engine
 
-gen9-engine - FQDN Engine
+gen9-engine — short name (hostname) Engine
 
-gen9-engine.hostco.ru - FQDN.domain.ru Engine
+gen9-engine.hostco.ru — FQDN Engine
