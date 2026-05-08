@@ -79,8 +79,6 @@
     * [Обновление HOSTVM Node](hostvm-server/installation-guide/obnovlenie-na-versiyu-4.4/obnovlenie-hostvm-node.md)
   * [Действия при установке HOSTVM при отсутствии записей в DNS](hostvm-server/installation-guide/deistviya-pri-ustanovke-hostvm-pri-otsutstvii-zapisei-v-dns.md)
   * [Настройка подключения HOSTVM Manager к домену Active Directory](hostvm-server/installation-guide/nastroika-podklyucheniya-hostvm-manager-k-domenu-active-directory.md)
-  * [Изменения и исправления](hostvm-server/installation-guide/izmeneniya-i-ispravleniya/README.md)
-    * [4.5](hostvm-server/installation-guide/izmeneniya-i-ispravleniya/perechen-izmenenii-versii-4.5.md)
 * [Руководство по администрированию](hostvm-server/rukovodstvo-po-administrirovaniyu/README.md)
   * [Введение в HOSTVM: основные компоненты и архитектура решения](hostvm-server/rukovodstvo-po-administrirovaniyu/vvedenie-v-hostvm-osnovnye-komponenty-i-arkhitektura-resheniya/README.md)
     * [Менеджер виртуализации HOSTVM](hostvm-server/rukovodstvo-po-administrirovaniyu/vvedenie-v-hostvm-osnovnye-komponenty-i-arkhitektura-resheniya/menedzher-virtualizacii-hostvm/README.md)
@@ -250,6 +248,10 @@
     * [Действия при выходе из строя СХД с размещенным HOSTVM Manager](hostvm-server/rukovodstvo-po-administrirovaniyu/reshenie-tipovykh-problem/deistviya-pri-vykhode-iz-stroya-skhd-s-razmeshennym-hostvm-manager.md)
     * [Образы не загружаются в домен](hostvm-server/rukovodstvo-po-administrirovaniyu/reshenie-tipovykh-problem/obrazy-ne-zagruzhayutsya-v-domen.md)
     * [Внезапная перезагрузка ВМ с сообщением "Lost connection with qemu process"](hostvm-server/rukovodstvo-po-administrirovaniyu/reshenie-tipovykh-problem/vnezapnaya-perezagruzka-vm-s-soobsheniem-lost-connection-with-qemu-process.md)
+* [Заметки к выпускам](hostvm-server/zametki-k-vypuskam/README.md)
+  * [Жизненный цикл версий](hostvm-server/zametki-k-vypuskam/zhiznennyi-cikl-versii.md)
+  * [Изменения и исправления](hostvm-server/zametki-k-vypuskam/izmeneniya-i-ispravleniya/README.md)
+    * [4.5](hostvm-server/zametki-k-vypuskam/izmeneniya-i-ispravleniya/perechen-izmenenii-versii-4.5.md)
 
 ## HOSTVM VDI
 
