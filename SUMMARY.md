@@ -170,6 +170,7 @@
       * [vCPU](hostvm-server/rukovodstvo-po-administrirovaniyu/vm/goryachee-podklyuchenie-i-otklyuchenie-resursov/vcpu.md)
       * [Сетевые интерфейсы](hostvm-server/rukovodstvo-po-administrirovaniyu/vm/goryachee-podklyuchenie-i-otklyuchenie-resursov/setevye-interfeisy.md)
       * [Виртуальные диски](hostvm-server/rukovodstvo-po-administrirovaniyu/vm/goryachee-podklyuchenie-i-otklyuchenie-resursov/virtualnye-diski.md)
+    * [Проброс USB-устройства с хоста в виртуальную машину](hostvm-server/rukovodstvo-po-administrirovaniyu/vm/probros-usb-ustroistva-s-khosta-v-virtualnuyu-mashinu.md)
     * [Гостевые агенты HOSTVM, инструменты и драйверы](hostvm-server/rukovodstvo-po-administrirovaniyu/vm/gostevye-agenty-hostvm-instrumenty-i-draivery/README.md)
       * [Установка гостевых агентов и драйверов в Linux](hostvm-server/rukovodstvo-po-administrirovaniyu/vm/gostevye-agenty-hostvm-instrumenty-i-draivery/ustanovka-gostevykh-agentov-i-draiverov-v-linux.md)
       * [Установка гостевых агентов и драйверов в Windows](hostvm-server/rukovodstvo-po-administrirovaniyu/vm/gostevye-agenty-hostvm-instrumenty-i-draivery/ustanovka-gostevykh-agentov-i-draiverov-v-windows.md)
