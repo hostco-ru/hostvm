@@ -223,6 +223,7 @@
       * [Подключение shared-дисков](hostvm-server/rukovodstvo-po-administrirovaniyu/chasto-zadavaemye-voprosy/virtualnye-mashiny-i-shablony/podklyuchenie-shared-diskov.md)
       * [Включение модуля TPM](hostvm-server/rukovodstvo-po-administrirovaniyu/chasto-zadavaemye-voprosy/virtualnye-mashiny-i-shablony/vklyuchenie-modulya-tpm.md)
       * [Как устранить зависшие задания, ВМ, диски и шаблоны?](hostvm-server/rukovodstvo-po-administrirovaniyu/chasto-zadavaemye-voprosy/virtualnye-mashiny-i-shablony/kak-ustranit-zavisshie-zadaniya-vm-diski-i-prochee.md)
+      * [Как включить поддержку вложенной виртуализации?](hostvm-server/rukovodstvo-po-administrirovaniyu/chasto-zadavaemye-voprosy/virtualnye-mashiny-i-shablony/kak-vklyuchit-podderzhku-vlozhennoi-virtualizacii.md)
     * [Сеть](hostvm-server/rukovodstvo-po-administrirovaniyu/chasto-zadavaemye-voprosy/set/README.md)
       * [Включение promiscuous mode для сети гипервизора для вложенной виртуализации](hostvm-server/rukovodstvo-po-administrirovaniyu/chasto-zadavaemye-voprosy/set/vklyuchenie-promiscuous-mode-dlya-seti-gipervizora-dlya-vlozhennoi-virtualizacii.md)
       * [Изменение сетевых настроек хоста виртуализации](hostvm-server/rukovodstvo-po-administrirovaniyu/chasto-zadavaemye-voprosy/set/izmenenie-setevykh-nastroek-khosta-virtualizacii.md)
