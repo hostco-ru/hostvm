@@ -1,3 +1,24 @@
+---
+layout:
+  width: default
+  title:
+    visible: true
+  description:
+    visible: false
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+  metadata:
+    visible: true
+  tags:
+    visible: true
+  actions:
+    visible: true
+---
+
 # Установка и настройка агента RDS
 
 Для управления сеансами пользователей на машинах Windows Server, предоставляющих доступ к удаленным рабочим столам и приложениям, под управлением сервис-провайдера RDS, необходимо установить агент HOSTVM VDI из дистрибутива `RDSActorSetup-3.*.*.exe`.

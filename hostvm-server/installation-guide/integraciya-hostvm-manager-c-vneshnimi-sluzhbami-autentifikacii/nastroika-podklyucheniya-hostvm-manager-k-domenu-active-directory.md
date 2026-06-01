@@ -91,7 +91,7 @@ Are you going to use Single Sign-On for Virtual Machines (Yes, No) [Yes]: Yes
 Please specify profile name that will be visible to users: pvhostvm.ru
 ```
 
-<figure><img src="../../.gitbook/assets/AD_profile.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/AD_profile.png" alt=""><figcaption></figcaption></figure>
 
 9. Протестируйте возможность поиска по LDAP и вход в систему, чтобы убедиться, что домен Active Directory правильно подключен к Менеджеру. Для проверки возможности входа необходимо указать имя учетной записи и пароль. Для проверки возможности поиска по LDAP от имени пользователя необходимо выбрать Principal, при использовании групп выбрать Group. В пункте Resolve ввести Yes для получения информации о группе. Введите Done для завершения настройки. После окончания настройки будут созданы три файла конфигурации.
 

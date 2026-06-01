@@ -1,3 +1,24 @@
+---
+layout:
+  width: default
+  title:
+    visible: true
+  description:
+    visible: false
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+  metadata:
+    visible: true
+  tags:
+    visible: true
+  actions:
+    visible: true
+---
+
 # Настройка брокера VDI для использования выделенного сервера БД
 
 ### Версия 3.6-20250704 и выше <a href="#id-3.6" id="id-3.6"></a>

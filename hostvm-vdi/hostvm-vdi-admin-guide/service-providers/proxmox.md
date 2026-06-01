@@ -1,3 +1,24 @@
+---
+layout:
+  width: default
+  title:
+    visible: true
+  description:
+    visible: false
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+  metadata:
+    visible: true
+  tags:
+    visible: true
+  actions:
+    visible: true
+---
+
 # Провайдер Proxmox
 
 Данный тип сервис-провайдера предоставляет возможность публикации сервисов связанных клонов (Linked Clone) и предоставления рабочих столов пользователям в среде гипервизора ProxmoxVE.

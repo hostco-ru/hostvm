@@ -1,3 +1,24 @@
+---
+layout:
+  width: default
+  title:
+    visible: true
+  description:
+    visible: false
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+  metadata:
+    visible: true
+  tags:
+    visible: true
+  actions:
+    visible: true
+---
+
 # Настройка мультидоменного доступа
 
 HOSTVM VDI позволяет использовать несколько доменных имен для доступа к одному окружению (с помощью TLS SNI).

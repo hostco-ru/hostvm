@@ -1,3 +1,24 @@
+---
+layout:
+  width: default
+  title:
+    visible: true
+  description:
+    visible: false
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+  metadata:
+    visible: true
+  tags:
+    visible: true
+  actions:
+    visible: true
+---
+
 # Провайдер RDS / Linux terminal
 
 Данный тип сервис-провайдера предоставляет возможность публикации сервисов терминальных сессий и виртуальных приложений, с помощью как серверов Microsoft Remote Desktop Services (RDS), так и терминальных серверов на основе Linux.

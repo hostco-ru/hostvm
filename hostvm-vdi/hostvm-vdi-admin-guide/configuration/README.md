@@ -1,3 +1,24 @@
+---
+layout:
+  width: default
+  title:
+    visible: true
+  description:
+    visible: false
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+  metadata:
+    visible: true
+  tags:
+    visible: true
+  actions:
+    visible: true
+---
+
 # Конфигурация
 
 Для доступа к параметрам расширенной настройки брокера HOSTVM VDI в `Панели управления` откройте раздел `Инструменты / Конфигурация`.
