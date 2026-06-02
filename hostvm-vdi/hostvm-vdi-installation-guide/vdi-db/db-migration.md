@@ -16,7 +16,7 @@
 **Все шаги необходимо выполнять от пользователя с правами root.**
 {% endhint %}
 
-Если вы хотите произвести миграцию с MariaDB на PostgreSQL,  для подготовки БД PostgreSQL воспользуйтесь инструкцией [<mark style="color:blue;">Настройка СУБД PostgreSQL</mark>](https://kb.pvhostvm.ru/hostvm-vdi/hostvm-vdi-installation-guide/vdi-db/postgresql)
+Если вы хотите произвести миграцию с MariaDB на PostgreSQL,  для подготовки БД PostgreSQL воспользуйтесь инструкцией [Настройка СУБД PostgreSQL](postgresql.md).
 
 ### Подготовка к миграции БД
 

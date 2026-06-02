@@ -76,5 +76,5 @@ Configuration file '/etc/tomcat9/server.xml'
 
 Для настройки SSL сертификатов портала воспользуйтесь соответствующим разделом руководства по установке брокера HOSTVM VDI:
 
-[Настройка SSL сертификатов](https://kb.pvhostvm.ru/hostvm-vdi/hostvm-vdi-ova-install#ssl-certificates)
+[Настройка SSL сертификатов](../hostvm-vdi-ova-install/#ssl-certificates)
 

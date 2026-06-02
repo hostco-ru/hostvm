@@ -288,7 +288,7 @@ inet 10.1.1.12/24 brd 10.1.1.255 scope global eth0
 
 ### Конфигурация машин HOSTVM VDI Tunneler <a href="#tunneler-config" id="tunneler-config"></a>
 
-Процесс развертывания и настройки машин HOSTVM VDI Tunneler описан в [соответствующей статье](https://kb.pvhostvm.ru/hostvm-vdi/hostvm-vdi-installation-guide/tunneler-appliance-deploy).
+Процесс развертывания и настройки машин HOSTVM VDI Tunneler описан в [соответствующей статье](../tunneler-appliance-deploy.md).
 
 Параметры в мастере установки идентичны стандартному развертыванию, за исключением адреса подключения к брокеру HOSTVM VDI. Здесь необходимо указать виртуальный IP-адрес балансировщика.
 
@@ -296,7 +296,7 @@ inet 10.1.1.12/24 brd 10.1.1.255 scope global eth0
 
 #### Конфигурация туннелируемых подключений (транспортов) для работы через балансировщик
 
-После завершения настройки машин VDI Tunneler необходимо [изменить настройки туннелируемых подключений в панели управления HOSTVM VDI брокера](https://kb.pvhostvm.ru/hostvm-vdi/hostvm-vdi-installation-guide/tunneler-appliance-deploy#nastroika-transporta-v-paneli-upravleniya-hostvm-vdi).
+После завершения настройки машин VDI Tunneler необходимо [изменить настройки туннелируемых подключений в панели управления брокера](../tunneler-appliance-deploy.md#transport-config).
 
 В качестве шлюза вместо адреса конкретного сервера укажите виртуальный IP-адрес балансировщика, а также порт из правила frontend в настройках `haproxy.cfg`: 10443 для html5, 1443 для остальных транспортов).
 

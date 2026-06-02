@@ -42,7 +42,7 @@ sudo sed -i 's/^PassThroughPattern:.*/PassThroughPattern: .*/' /etc/apt-cacher-n
 sudo systemctl restart apt-cacher-ng
 ```
 
-Установка Python и зависимостей Actor: выполните установку по [стандартной инструкции](https://kb.pvhostvm.ru/hostvm-vdi/hostvm-vdi-installation-guide/actor/ustanovka-hostvm-vdi-actor-dlya-astra-linux).
+Установка Python и зависимостей Actor: выполните установку по [стандартной инструкции](./).
 
 **Формирование оффлайн‑репозитория пакетов Astra:**
 

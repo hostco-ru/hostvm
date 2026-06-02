@@ -28,7 +28,7 @@ layout:
 
 Вы можете скачать их из каталога загрузок, доступного в [личном кабинете](https://lk.pvhostvm.ru).
 
-Ознакомьтесь с [системными требованиями](https://kb.pvhostvm.ru/hostvm-vdi/hostvm-vdi-installation-guide/requirements) для виртуальных машин HOSTVM VDI.
+Ознакомьтесь с [системными требованиями](requirements/) для виртуальных машин HOSTVM VDI.
 
 В каталоге загрузок пакеты и образы виртуальных машин расположены в директории `HOSTVM-VDI/`, для загрузки доступны следующие версии:
 
@@ -46,11 +46,12 @@ layout:
 
 Предоставляет функционал портала пользователя и портала администратора системы, обеспечивает жизненный цикл виртуальных рабочих столов и приложений, взаимодействие с гипервизорами и другими сервис-провайдерами.
 
-Для импорта и настройки воспользуйтесь [инструкцией](https://kb.pvhostvm.ru/hostvm-vdi/hostvm-vdi-installation-guide/hostvm-vdi-ova-install).
+Руководство по установке:
 
-Для установки **HOSTVM VDI Брокер** в виде пакета для систем РЕД ОС версии 7.3.3 и выше воспользуйтесь данной [инструкцией](https://kb.pvhostvm.ru/hostvm-vdi/hostvm-vdi-installation-guide/hostvm-vdi-ova-install/paketnaya-ustanovka-brokera-dlya-red-os)
-
-Для установки  **HOSTVM VDI Брокер** в виде пакета для систем ALT Linux версии 10.02 и выше воспользуйтесь данной [инструкцией](https://kb.pvhostvm.ru/hostvm-vdi/hostvm-vdi-installation-guide/hostvm-vdi-ova-install/paketnaya-ustanovka-brokera-dlya-alt-linux)
+* [импорт и настройка готового образа виртуальной машины](hostvm-vdi-ova-install/);
+* [установка в виде пакета для РЕД ОС](hostvm-vdi-ova-install/red-os.md);
+* [установка в виде пакета для ALT Linux](hostvm-vdi-ova-install/alt-linux.md);
+* [установка в виде пакета для Debian](hostvm-vdi-ova-install/debian.md).
 
 #### HOSTVM VDI Клиент <a href="#client" id="client"></a>
 
@@ -66,11 +67,12 @@ layout:
 
 Используйте данный компонент, если вам требуется обеспечить защищенный доступ пользователей к сервисам VDI из WAN, и/или возможность подключения через HTML5.
 
-Для импорта и настройки воспользуйтесь [инструкцией](https://kb.pvhostvm.ru/hostvm-vdi/hostvm-vdi-installation-guide/tunneler-appliance-deploy).
+Руководство по установке:
 
-Для установки **HOSTVM VDI Шлюз** в виде пакета для РЕД ОС версии 7.3.3 и выше воспользуйтесь следующей [инструкцией](https://kb.pvhostvm.ru/hostvm-vdi/hostvm-vdi-installation-guide/tunneler-appliance-deploy/paketnaya-ustanovka-tunnelera-dlya-red-os)
-
-Для установки **HOSTVM VDI Шлюз** в виде пакета для ALT Linux версии 10.02 и выше воспользуйтесь следующей [инструкцией](https://kb.pvhostvm.ru/hostvm-vdi/hostvm-vdi-installation-guide/tunneler-appliance-deploy/paketnaya-ustanovka-tunnelera-dlya-alt-linux)
+* [импорт и настройка готового образа виртуальной машины](tunneler-appliance-deploy.md);
+* [установка в виде пакета для РЕД ОС](tunneler-appliance-deploy/red-os.md);
+* [установка в виде пакета для ALT Linux](tunneler-appliance-deploy/alt-linux.md);
+* [установка в виде пакета для Debian](tunneler-appliance-deploy/debian.md).
 
 #### HOSTVM VDI Сервер БД <a href="#dbserver" id="dbserver"></a>
 
@@ -78,13 +80,13 @@ layout:
 
 Используйте данный компонент, если вам требуется выделенный сервер БД брокера вместо встроенного в составе брокера, например как часть отказоустойчивой конфигурации, в случае отсутствия собственного сервера БД в инфраструктуре.
 
-Для импорта и настройки воспользуйтесь [инструкцией](https://kb.pvhostvm.ru/hostvm-vdi/hostvm-vdi-installation-guide/vdi-db).
+[Руководство по установке](vdi-db/).
 
 #### HOSTVM VDI Балансировщик <a href="#load-balancer" id="load-balancer"></a>
 
 Обеспечивает балансировку подключений к брокерам и шлюзам HOSTVM VDI при развертывании отказоустойчивой конфигурации.
 
-Для импорта и настройки воспользуйтесь [инструкцией](https://kb.pvhostvm.ru/hostvm-vdi/hostvm-vdi-installation-guide/haproxy).
+[Руководство по установке](high-availability/haproxy.md).
 
 #### HOSTVM VDI Агент <a href="#actor" id="actor"></a>
 
@@ -111,9 +113,9 @@ layout:
 
 ### Дальнейшая настройка
 
-Для дальнейшей настройки системы обратитесь к [руководству администратора](https://kb.pvhostvm.ru/hostvm-vdi/hostvm-vdi-admin-guide).
+Для дальнейшей настройки системы обратитесь к [руководству администратора](../hostvm-vdi-admin-guide/).
 
 ### Перечень изменений
 
-С перечнем изменений и исправлений вы можете ознакомиться в [статье](https://kb.pvhostvm.ru/hostvm-vdi/hostvm-vdi-installation-guide/changelog).\
+С перечнем изменений и исправлений вы можете ознакомиться в разделе [История изменений](../release-notes/changelog/).\
 <br>
