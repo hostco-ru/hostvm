@@ -11,7 +11,7 @@
 
 На DNS-сервере должны быть как минимум две записи типа A, содержащие в себе FQDN-имя сервера, а также имя виртуальной машины HOSTVM Manager, которая будет установлена.\
 \
-Если на DNS-сервере отсутствуют записи, то их можно добавить вручную на ноде HOSTVM: [Действия при установке HOSTVM при отсуствии записей в DNS](https://kb.pvhostvm.ru/hostvm/installation-guide/deistviya-pri-ustanovke-hostvm-pri-otsutstvii-zapisei-v-dns)
+Если на DNS-сервере отсутствуют записи, то их можно добавить вручную на ноде HOSTVM: [Действия при установке HOSTVM при отсутствии записей в DNS](../../deistviya-pri-ustanovke-hostvm-pri-otsutstvii-zapisei-v-dns.md)
 
 Перейдите на вкладку Apps->Virtualization->Hosted HOSTVM Manager.
 

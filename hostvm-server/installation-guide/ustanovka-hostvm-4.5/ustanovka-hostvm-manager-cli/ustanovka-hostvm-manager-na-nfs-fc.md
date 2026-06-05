@@ -13,7 +13,7 @@
 <figure><img src="https://lh4.googleusercontent.com/08uXFXMDZkrjbaFWCA2Xj_vlAeKa36WdLKmUvMzZYENG_UldWbw4fhV26xQw8fX11kMMEzk27cPyXyTf-yNPtSesTV3b13FBX02tYr3cvH7V6EvGTMWxPPs9yxHIyhp9N_7yMLWj9ArwET1h3L5M8HI" alt=""><figcaption></figcaption></figure>
 
 На DNS-сервере должны быть как минимум две записи типа A, содержащие в себе FQDN-имя сервера, а также имя виртуальной машины HOSTVM Manager, которая будет установлена.\
-Если на DNS-сервере отсутствуют записи, то их можно добавить вручную на ноде HOSTVM: [**Действия при установке HOSTVM при отсутствии записей в DNS**](https://kb.pvhostvm.ru/hostvm/installation-guide/deistviya-pri-ustanovke-hostvm-pri-otsutstvii-zapisei-v-dns)
+Если на DNS-сервере отсутствуют записи, то их можно добавить вручную на ноде HOSTVM: [**Действия при установке HOSTVM при отсутствии записей в DNS**](../../deistviya-pri-ustanovke-hostvm-pri-otsutstvii-zapisei-v-dns.md)
 
 {% hint style="warning" %}
 **В случае установки на FC**, диск для организации хранилища виртуальных машин должен отвечать следующим требованиям:<br>

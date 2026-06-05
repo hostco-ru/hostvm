@@ -1,6 +1,6 @@
 # Добавление хостов
 
-Для того, чтобы подготовить второй и последующие серверы к работе на них необходимо установить ОС HOSTVM Node. Инструкция по установки приведена на странице [Установка HOSTVM Node на диски СХД](https://kb.pvhostvm.ru/hostvm/installation-guide/installation-hostvm). или странице "[Установка HOSTVM Node на локальные диски](https://hostvm.gitbook.io/hostvm/hostvm/installation-guide/installation-hostvm-on-local-disks)"
+Для того, чтобы подготовить второй и последующие серверы к работе на них необходимо установить HOSTVM Node. Инструкция по установке приведена на странице [Установка HOSTVM Node](../ustanovka-hostvm-4.5/ustanovka-hostvm-node/)
 
 После установки ОС, подключитесь к серверу с помощью [PuTTY](https://www.putty.org) под пользователем root.&#x20;
 

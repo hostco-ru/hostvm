@@ -26,7 +26,7 @@
 * Вариант установки на FC-диск - [https://kb.pvhostvm.ru/hostvm/installation-guide/ustanovka-hostvm-cherez-gui-4.4/ustanovka-hostvm-manager-na-fc-disk](ustanovka-hostvm-4.3-4.4/ustanovka-hostvm-manager-4.4.8-gui/ustanovka-hostvm-manager-na-fc-disk.md)
 * Вариант установки с использованием гиперконвергенции (на базе GlusterFS) - [https://kb.pvhostvm.ru/hostvm/installation-guide/ustanovka-hostvm-cherez-gui-4.4/ustanovka-hostvm-manager-na-gluster](ustanovka-hostvm-4.3-4.4/ustanovka-hostvm-manager-4.4.8-gui/ustanovka-hostvm-manager-na-gluster.md)
 
-3\. Далее необходимо выполнить добавление хостов со стороны HOSTVM Manager по инструкции (см. раздел Добавление хостов): [https://kb.pvhostvm.ru/hostvm/installation-guide/after-install#dobavlenie-khostov](https://kb.pvhostvm.ru/hostvm/installation-guide/after-install#dobavlenie-khostov)
+3\. Далее необходимо выполнить добавление хостов со стороны HOSTVM Manager по инструкции: [Добавление хостов](after-install/dobavlenie-khostov.md)&#x20;
 
 4.При использовании тонких дисков, динамически использующих большое дисковое пространство, рекомендуется настройка системы мониторинга свободного места в доменах хранения. Ситуация, когда хранилище заполнено полностью, является не желательной и может привести к полной потере данных с этого хранилища.&#x20;
 
