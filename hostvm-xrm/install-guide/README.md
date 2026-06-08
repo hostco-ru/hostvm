@@ -12,5 +12,4 @@ XRM позволяет автоматизировать как простые с
 
 [Установка/изменение пароля администратора](set-admin-passwd.md)<br>
 
-<figure><img src="../../.gitbook/assets/xrm_amin.gif" alt=""><figcaption></figcaption></figure>
-
+<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/xrm_amin.gif" alt=""><figcaption></figcaption></figure>
