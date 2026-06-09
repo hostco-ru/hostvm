@@ -6,7 +6,7 @@
 
 ## Основные настройки <a href="#main" id="main"></a>
 
-<figure><img src="../../../.gitbook/assets/RadiusMFA.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/RadiusMFA.png" alt=""><figcaption></figcaption></figure>
 
 **Имя** - наименование создаваемого МФА для отображения в системе.
 
@@ -26,7 +26,7 @@
 
 ## Конфигурация <a href="#config" id="config"></a>
 
-<figure><img src="../../../.gitbook/assets/MFAROTP2.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/MFAROTP2.png" alt=""><figcaption></figcaption></figure>
 
 **Действия при ошибке связи Radius OTP**:
 

@@ -27,7 +27,7 @@ layout:
 
 
 
-<figure><img src="../../.gitbook/assets/tools-1.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/tools-1.png" alt=""><figcaption></figcaption></figure>
 
 ## Журналы <a href="#logs" id="logs"></a>
 
@@ -35,7 +35,7 @@ layout:
 
 Вы можете скачать их по отдельности, нажав на иконку загрузки рядом с нужным файлом, либо архив всех журналов целиком, нажав на кнопку "Скачать все".
 
-<figure><img src="../../.gitbook/assets/tools-2.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/tools-2.png" alt=""><figcaption></figcaption></figure>
 
 ## REST API Обозреватель <a href="#rest-api-explorer" id="rest-api-explorer"></a>
 
@@ -54,13 +54,13 @@ layout:
 
 После выполнения запроса вы увидите код состояния HTTP-ответа и сам ответ сервера.
 
-<figure><img src="../../.gitbook/assets/tools-3.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/tools-3.png" alt=""><figcaption></figcaption></figure>
 
 Шаблоны запросов разделены на тематические блоки. Раскройте нужный блок и выберите запрос из появившегося списка.
 
 При нажатии на знак вопроса появится дополнительная информация с описанием запроса, а также параметров path и тела запроса (при наличии).
 
-<figure><img src="../../.gitbook/assets/tools-4.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/tools-4.png" alt=""><figcaption></figcaption></figure>
 
 Чтобы создать запрос из шаблона:
 
@@ -70,7 +70,7 @@ layout:
 
 Для некоторых запросов, помимо кода состояния HTTP-ответа и полного ответ сервера будет доступно поле "Обзор" с перечнем найденных элементов в сокращенном формате (имя и id). Id элемента можно скопировать, нажав на иконку рядом, и использовать для дальнейших запросов.
 
-<figure><img src="../../.gitbook/assets/tools-5.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/tools-5.png" alt=""><figcaption></figcaption></figure>
 
 ## Управление сервисами <a href="#service-management" id="service-management"></a>
 
@@ -82,9 +82,9 @@ layout:
 
 Вы можете перезапустить виртуальную машину или сбросить сессию пользователя, для этого выберите и откройте нужный пул, отметьте один или несколько (с помощью Shift или Ctrl) элементов из списка и нажмите кнопку "Сбросить":
 
-<figure><img src="../../.gitbook/assets/tools-7.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/tools-7.png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/tools-8.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/tools-8.png" alt=""><figcaption></figcaption></figure>
 
 ### Разрешения <a href="#permissions" id="permissions"></a>
 

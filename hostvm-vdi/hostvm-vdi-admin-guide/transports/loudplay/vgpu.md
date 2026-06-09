@@ -95,7 +95,7 @@ vGPU Software Licensed Product
 
 С машины-Клиента выполните подключение к развернутому сервис-пулу ВМ (при подключении пользователю будет доступно меню Loudplay в верхнем правом углу экрана):
 
-<figure><img src="../../../../.gitbook/assets/loudplay.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/loudplay.png" alt=""><figcaption></figcaption></figure>
 
 ## Примечание
 

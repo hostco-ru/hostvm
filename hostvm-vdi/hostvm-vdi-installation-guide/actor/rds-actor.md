@@ -48,7 +48,7 @@ Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope LocalMachine
 2. нажмите «Установить» («Install»), чтобы продолжить установку;
 3. после завершения установки перейдите к настройке RDS Actor.
 
-<figure><img src="../../../.gitbook/assets/rds-actor-1.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/rds-actor-1.png" alt=""><figcaption></figcaption></figure>
 
 При настройке необходимо зарегистрировать агент в брокере HOSTVM VDI, указав следующие параметры:
 
@@ -62,11 +62,11 @@ Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope LocalMachine
 
 После указания всех параметров нажмиие кнопку «Зарегистрировать агент» («Register actor»):
 
-<figure><img src="../../../.gitbook/assets/rds-actor-3.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/rds-actor-3.png" alt=""><figcaption></figcaption></figure>
 
 Для проверки подключения к серверу HOSTVM VDI, нажмите кнопку «Проверить конфигурацию» («Test configuration»):
 
-<figure><img src="../../../.gitbook/assets/rds-actor-4.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/rds-actor-4.png" alt=""><figcaption></figcaption></figure>
 
 > Для сброса сессии имя пользователя в брокере HOSTVM VDI и имя пользователя на конечной машине должны совпадать.
 

@@ -16,6 +16,6 @@
 2. указать путь к образу
 3. нажать Start
 
-![](<../../.gitbook/assets/rufus (1).png>)
+![](<https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/rufus (1).png>)
 
 После завершения записи USB-диск будет готов к использования в качестве загрузочного устройства.

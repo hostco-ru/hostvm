@@ -50,7 +50,7 @@ layout:
 
 Чтобы проверить правильность подключения к серверу HOSTVM VDI, необходимо нажать кнопку «Проверить конфигурацию» («Test configuration»).
 
-![](<../../../.gitbook/assets/image (23).png>)
+![](<https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/image (23).png>)
 
 На вкладке «Дополнительно» («Advanced») можно указать указать следующие дополнительные параметры:
 
@@ -93,15 +93,15 @@ layout:
 6. Полученный ключ необходимо вставить в мастер настройки Actor;
 7. После ввода всех необходимых данных выполните проверку подключения Actor к серверу HOSTVM VDI посредством нажатия кнопки «Test parameters»;
 
-![п.3 Ввести IP-адрес брокера HOSTVM VDI](<../../../.gitbook/assets/image (25).png>)
+![п.3 Ввести IP-адрес брокера HOSTVM VDI](<https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/image (25).png>)
 
-![п.4 Выбрать тип подключения Actor к брокеру](<../../../.gitbook/assets/image (18) (1).png>)
+![п.4 Выбрать тип подключения Actor к брокеру](<https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/image (18) (1).png>)
 
-![п.5 Получить Master Key](../../../.gitbook/assets/base-img-pub4.png)
+![п.5 Получить Master Key](https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/base-img-pub4.png)
 
-![п.6 Вставить полученный ключ](<../../../.gitbook/assets/image (21).png>)
+![п.6 Вставить полученный ключ](<https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/image (21).png>)
 
-![п.7 Проверка подключения](<../../../.gitbook/assets/image (22).png>)
+![п.7 Проверка подключения](<https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/image (22).png>)
 
 После установки и настройки Actor машина-шаблон (“золотой” образ) должна быть выключена, и будет доступна для использования брокером HOSTVM VDI для развертывания виртуальных рабочих столов на основе технологии клонирования.
 
@@ -164,6 +164,6 @@ layout:
 
 Также после установки актор нужно настроить – указать адрес брокера HOSTVM VDI и Учётную запись администратора.
 
-![](<../../../.gitbook/assets/image (31) (1) (1).png>)
+![](<https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/image (31) (1) (1).png>)
 
 Нажатие Test configuration должно проходить успешно.

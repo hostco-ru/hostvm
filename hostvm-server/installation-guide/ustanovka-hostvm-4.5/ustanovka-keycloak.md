@@ -56,19 +56,19 @@ engine-setup --otopi-environment="OVESETUP_CONFIG/keycloakEnable=bool:True" --of
     <figure><img src="https://lh6.googleusercontent.com/lUVXeAYuAjn3lsqRAbnJsp3RnB_mTyYlDvmFzg_JJd8kimjZ6aVJp8JRT-eLP5faWGitg1xDBovgk6O7bcSs0HbmR7YmzARUdcfRlw-zg7OaV8pkA0Gl0QVaqsKKFmFKyQA47soNFP_jS9Bfv0BEXqY" alt=""><figcaption></figcaption></figure>
 13. Переходим во вкладку Roles и нажимаем Add Role:
 
-    <figure><img src="../../../.gitbook/assets/KC1.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/KC1.png" alt=""><figcaption></figcaption></figure>
 14. Задаем Role Name: grafana-admin, в Description можно написать: Grafana 'grafana-admin' role. Нажимаем Save:
 
-    <figure><img src="../../../.gitbook/assets/KC2.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/KC2.png" alt=""><figcaption></figcaption></figure>
 15. Повторяем шаги 13 и 14. Необходимо добавить роль grafana-editor с описанием Grafana 'grafana-editor' role и роль grafana-viewer с описанием Grafana 'grafana-viewer' role:
 
-    <figure><img src="../../../.gitbook/assets/KC3.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/KC3.png" alt=""><figcaption></figcaption></figure>
 16. Переходим во вкладку Client Scopes и нажимаем Create:<br>
 
-    <figure><img src="../../../.gitbook/assets/image (119).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/image (119).png" alt=""><figcaption></figcaption></figure>
 17. Задаем Name: ovirt-app-admin, остальные параметры оставить по умолчанию. Нажать Save:<br>
 
-    <figure><img src="../../../.gitbook/assets/image (123).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/image (123).png" alt=""><figcaption></figcaption></figure>
 18. Повторяем шаги 16 и 17 для создания Client Scope:
 
     ovirt-app-api
@@ -91,17 +91,17 @@ engine-setup --otopi-environment="OVESETUP_CONFIG/keycloakEnable=bool:True" --of
 
     ovirt-ext=token:password-access
 
-    <figure><img src="../../../.gitbook/assets/KC4.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/KC4.png" alt=""><figcaption></figcaption></figure>
 19. Переходим во вкладку Clients и нажимаем Create:
 
-    <figure><img src="../../../.gitbook/assets/KC5.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/KC5.png" alt=""><figcaption></figcaption></figure>
 
     Задаем Client ID: ovirt-engine-internal, в качестве Root URL указываем https://FQDN управляющей машины. Нажимаем Save:
 
-    <figure><img src="../../../.gitbook/assets/image (124).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/image (124).png" alt=""><figcaption></figcaption></figure>
 20. Общие настройки клиента выглядят следующим образом:<br>
 
-    <figure><img src="../../../.gitbook/assets/image (120).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/image (120).png" alt=""><figcaption></figcaption></figure>
 21. Вносим изменения:
 
     Access type: confidential\
@@ -110,19 +110,19 @@ engine-setup --otopi-environment="OVESETUP_CONFIG/keycloakEnable=bool:True" --of
     Backchannel Logout Session Required: OFF\
     Нажимаем Save.
 
-    <figure><img src="../../../.gitbook/assets/image (121).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/image (121).png" alt=""><figcaption></figcaption></figure>
 22. Переходим во вкладку Credential и сохраняем себе Secret, он понадобится вам при дальнейшей настройке.
 
     Secret: 5fb182da-34f0-411b-9f1b-78a332384219\
     <mark style="color:red;">**Обратите внимание! Ваш Secret будет отличаться от указанного в инструкции!**</mark>
 
-    <figure><img src="../../../.gitbook/assets/image (122).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/image (122).png" alt=""><figcaption></figcaption></figure>
 23. Переходим во вкладку Client Scopes:
 
-    <figure><img src="../../../.gitbook/assets/KC10 (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/KC10 (1).png" alt=""><figcaption></figcaption></figure>
 24. Перевести все доступные Optional Client Scopes из Available Client Scopes в Assigned Optional Client Scopes:
 
-    <figure><img src="../../../.gitbook/assets/KC11.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/KC11.png" alt=""><figcaption></figcaption></figure>
 25. Переходим во вкладку Mappers и нажимаем Create:<br>
 
     <figure><img src="https://lh5.googleusercontent.com/1FlMXbl6Jd85YP08rEnQw9DpBSLnwxK2Mnhjk8kS3LfRjx7pDE8g73IYDCOo0bjjwI09JyCCHreJ4mh92eM5z0Svf0dTwOGDfZcyFXclRVoloAke9ECAb4fFdwWwuqsT5vHH4hqB7sTt_99ZMDSVcaI" alt=""><figcaption></figcaption></figure>

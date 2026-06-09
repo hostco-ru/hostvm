@@ -33,7 +33,7 @@ layout:
 
 Для создания транспорта перейдите в раздел "Connectivity" > "Transports", нажмите "New", в выпадающем списке выберите тип "Direct" и транспорт "RemoteApp".
 
-![](../../../.gitbook/assets/vdi_rds_3.jpg)
+![](https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/vdi_rds_3.jpg)
 
 ### Основные настройки <a href="#main" id="main"></a>
 
@@ -45,7 +45,7 @@ layout:
 
 `Имя приложения (App Name)` – параметр Alias (псевдоним) свойств опубликованного приложения:
 
-![](../../../.gitbook/assets/vdi_rds_4.jpg)
+![](https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/vdi_rds_4.jpg)
 
 ### Linux Client <a href="#linux" id="linux"></a>
 
@@ -65,13 +65,13 @@ layout:
 В версиях брокера до `3.6 номер сборки 20250314`, для корректной работы транспорта при использовании rdp-клиента xfreerdp, в данном поле необходимо указывать параметр Alias (псевдоним) опубликованного приложения в формате: /app:"||алиас приложения".
 {% endhint %}
 
-<figure><img src="../../../.gitbook/assets/image (2) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/image (2) (2).png" alt=""><figcaption></figcaption></figure>
 
 ## **Настройка туннелированного подключения** <a href="#tunneled" id="tunneled"></a>
 
 Для создания транспорта перейдите в раздел "Connectivity" > "Transports", нажмите "New", в выпадающем списке выберите тип "Tunneled" и транспорт "RemoteApp".
 
-![](../../../.gitbook/assets/vdi_rds_6.jpg)
+![](https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/vdi_rds_6.jpg)
 
 ### Туннель <a href="#tunnel" id="tunnel"></a>
 

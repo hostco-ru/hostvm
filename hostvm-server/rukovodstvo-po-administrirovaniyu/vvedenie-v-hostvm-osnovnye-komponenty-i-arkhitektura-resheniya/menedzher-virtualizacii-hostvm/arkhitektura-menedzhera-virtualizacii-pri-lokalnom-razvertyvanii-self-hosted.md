@@ -1,6 +1,6 @@
 # Архитектура менеджера виртуализации при локальном развертывании (self-hosted)
 
-<figure><img src="../../../../.gitbook/assets/Архитектура self-hosted.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/Архитектура self-hosted.png" alt=""><figcaption></figcaption></figure>
 
 Минимальная настройка для локальной установки менеджера виртуализации включает в себя:
 

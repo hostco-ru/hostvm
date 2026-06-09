@@ -8,7 +8,7 @@
 
 Получить можно через портал администрирования, на вкладке Details ISO домена, в поле ID:
 
-<figure><img src="../../../.gitbook/assets/17.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/17.png" alt=""><figcaption></figcaption></figure>
 
 Путь к iso-домену – это его месторасположение в файловой системе, например, /storage из примера по созданию NFS хранилища в п. «Подготовка NFS хранилища».
 

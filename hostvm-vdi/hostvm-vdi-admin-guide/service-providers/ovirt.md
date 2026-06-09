@@ -6,7 +6,7 @@
 
 Для регистрации сервис-провайдера oVirt/RHEV необходимо зайти в раздел «Services», нажать «New» и выбрать тип провайдера «oVirt/RHEV Platform Provider».
 
-![](../../../.gitbook/assets/vdi_ag5.png)
+![](https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/vdi_ag5.png)
 
 При создании провайдера должны быть настроены следующие параметры:
 
@@ -22,7 +22,7 @@
 **Если поставщиком единого входа является Keycloak, то имя пользователя, имеющего доступ с правами администратора на менеджер виртуализации, указывается в формате user@ovirt@domain.**
 {% endhint %}
 
-![](../../../.gitbook/assets/vdi_ag6.png)
+![](https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/vdi_ag6.png)
 
 **Дополнительные:**
 
@@ -31,7 +31,7 @@
 * тайм-аут при установлении соединения с менеджером виртуализации;
 * диапазон MAC-адресов для присвоения виртуальным рабочим столам.
 
-![](../../../.gitbook/assets/vdi_ag7.png)
+![](https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/vdi_ag7.png)
 
 С помощью кнопки «Test» можно проверить, что соединение выполнено успешно.
 
@@ -41,7 +41,7 @@
 
 Чтобы изменить какой-либо параметр в уже существующих сервис-провайдерах, необходимо выбрать его и нажать «Edit».
 
-![](../../../.gitbook/assets/vdi_ag8.png)
+![](https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/vdi_ag8.png)
 
 С помощью кнопки «Enter Maintenance Mode» можно приостановить все операции, запущенные платформой для данного сервис-провайдера.
 
@@ -55,7 +55,7 @@
 
 Для этого следует открыть сервис-провайдер, в котором будет создан тонкий клон, с помощью двойного щелчка, либо выбором пункта “Detail” в контекстном меню провайдера:
 
-![](../../../.gitbook/assets/vdi_ag9.png)
+![](https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/vdi_ag9.png)
 
 Нажать «New оVirt / RHEV Linked Clone» для создания нового базового сервиса. Минимальные параметры, которые необходимо настроить.
 
@@ -67,7 +67,7 @@
 * зарезервированное место (reserved space) – минимальный порог свободного места в хранилище, для возможности разворачивания клонов;
 * оставлять при ошибке (keep on error) - если включено, при ошибке получения состояния машины на этапе подключения пользователя она не будет переведена в статус `Ошибка` и удалена.
 
-![](../../../.gitbook/assets/vdi_ag10.png)
+![](https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/vdi_ag10.png)
 
 **Параметры ВМ:**
 
@@ -79,17 +79,17 @@
 * имена машин (machine names) – префикс имени для всех тонких клонов, которые будут развернуты в этой службе (например, имена машин = win-);
 * длина имени (name length) – длина номера суффикса, прикрепленного к корневому имени (например, Name Length = 3, win-000 ... win-999).
 
-![](../../../.gitbook/assets/vdi_ag11.png)
+![](https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/vdi_ag11.png)
 
 После сохранения этой конфигурации будет готов действующий «oVirt/RHEV Linked Clone» на платформе oVirt/RHEV.
 
 Можно зарегистрировать необходимое количество «oVirt/RHEV Linked Clone» на платформе HOSTVM VDI.
 
-![](../../../.gitbook/assets/vdi_ag12.png)
+![](https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/vdi_ag12.png)
 
 После настройки всех компонентов среды HOSTVM VDI (сервис-провайдеры, аутентификаторы, менеджеры ОС и транспорты подключений) и создания пула сервисов на сервере oVirt/RHEV Manager можно увидеть развернутые виртуальные рабочие столы на базе тонких клонов oVirt/RHEV.
 
-![](../../../.gitbook/assets/vdi_ag13.png)
+![](https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/vdi_ag13.png)
 
 ### Фиксированные машины (Fixed Machines) <a href="#fixed-machines" id="fixed-machines"></a>
 

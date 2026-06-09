@@ -147,7 +147,7 @@ root@hostvm-gw35:~#
 
 При настройке туннелированных подключений (транспортов) в панели управления брокера HOSTVM VDI, в качестве параметра tunnel server на вкладке Tunnel настроек транспорта указывайте адрес настроенной ВМ туннелера в формате `адрес:порт`, где адрес - IP или FQDN туннелера, порт - порт подключения, по умолчанию 443.
 
-![](../../.gitbook/assets/tunneler30-8.png)
+![](https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/tunneler30-8.png)
 
 ### Портал пользователя <a href="#user-portal" id="user-portal"></a>
 
@@ -266,7 +266,7 @@ root@hostvm-gw:~# systemctl restart tomcat9
 
 После настройки параметров сети и перезапуска машины, мастер установки будет доступен через браузер по адресу: `http://<ip_адрес_ВМ_туннелера>:9900`
 
-<figure><img src="../../.gitbook/assets/tunneler30-1.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/tunneler30-1.png" alt=""><figcaption></figcaption></figure>
 
 После открытия веб-страницы конфигуратора выполните следующие действия:
 
@@ -275,28 +275,28 @@ root@hostvm-gw:~# systemctl restart tomcat9
   Если параметры сети не требуют корректировки, выберите в выпадающем списке опцию “Skip network config (leave it as is)”.\
   Если корректировка требуется, оставьте в выпадающем списке опцию "Configure network" и внесите изменения. В случае смены ip адреса установщик автоматически перенаправит пользователя на новый, для продолжения установки.
 
-<figure><img src="../../.gitbook/assets/tunneler30-2.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/tunneler30-2.png" alt=""><figcaption></figcaption></figure>
 
 * Проверьте и подтвердите настройки, дождитесь их применения.
 * Настройте раскладку клавиатуры для ОС, часовой пояс и ntp сервер (необязательно).
 
-<figure><img src="../../.gitbook/assets/tunneler30-3.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/tunneler30-3.png" alt=""><figcaption></figcaption></figure>
 
 * Задайте пароль локального пользователя root для ОС сервера туннелирования.
 
-<figure><img src="../../.gitbook/assets/tunneler30-4.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/tunneler30-4.png" alt=""><figcaption></figcaption></figure>
 
 * Задайте настройки подключения к vdi брокеру, указав его fqdn или ip. Использование подключения "HTTPS (Secure Connection)” возможно в случае наличия действительного сертификата на брокере, иначе используйте подключение “HTTP”.
 
-<figure><img src="../../.gitbook/assets/tunneler30-5.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/tunneler30-5.png" alt=""><figcaption></figcaption></figure>
 
 * Загрузите https сертификаты для сервера туннелирования (необязательно), либо пропустите шаг, нажав next.
 
-<figure><img src="../../.gitbook/assets/tunneler30-6.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/tunneler30-6.png" alt=""><figcaption></figcaption></figure>
 
 * Завершите настройку перезагрузкой сервера, и закройте страницу установщика. После перезагрузки сервер будет готов к работе.
 
-<figure><img src="../../.gitbook/assets/tunneler30-7.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/tunneler30-7.png" alt=""><figcaption></figcaption></figure>
 
 При необходимости запустить конфигуратор заново, авторизуйтесь на сервере под пользователем root и паролем, указанным в шаге 5, затем запустите команду:
 
@@ -310,5 +310,5 @@ uds setup
 
 При настройке туннелированных подключений (транспортов) в панели управления брокера HOSTVM VDI, в качестве параметра tunnel server на вкладке Tunnel настроек транспорта указывайте адрес настроенной ВМ туннелера в формате `адрес:порт`, где адрес - IP или FQDN туннелера, порт - порт подключения, по умолчанию 443.
 
-<figure><img src="../../.gitbook/assets/tunneler30-8.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/tunneler30-8.png" alt=""><figcaption></figcaption></figure>
 

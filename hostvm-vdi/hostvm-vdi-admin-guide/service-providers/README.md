@@ -8,5 +8,5 @@
 
 Поддерживаемые типы сервис-провайдеров:
 
-![](../../../.gitbook/assets/vdi\_ag4.png)
+![](https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/vdi\_ag4.png)
 

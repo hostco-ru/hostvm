@@ -2,7 +2,7 @@
 
 Этот внешний аутентификатор позволяет предоставлять доступ к виртуальным рабочим столам и приложениям пользователям и группам пользователей, принадлежащим к аутентификатору протокола RADIUS.
 
-<figure><img src="../../../.gitbook/assets/1_radius_new_auth.jpg" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/1_radius_new_auth.jpg" alt=""><figcaption></figcaption></figure>
 
 Для работы требуется настройка следующих минимальных параметров «Radius Authenticator»:
 
@@ -24,7 +24,7 @@ _**VDIServer/uds/page/login/label**_
 
 **Secret:** Строка подлинности (валидации) соответствующего RADIUS сервера (определяется на самом RADIUS сервере).
 
-<figure><img src="../../../.gitbook/assets/2_radius_new_auth.jpg" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/2_radius_new_auth.jpg" alt=""><figcaption></figcaption></figure>
 
 * Advanced:
 
@@ -34,7 +34,7 @@ _**VDIServer/uds/page/login/label**_
 
 **Global group:** Позволяет принудительно включить всех пользователей в какую-либо группу. Это позволяет RADIUS серверу (который является «простым» аутентификатором) который не имеет групп, иметь возможность включать ВСЕХ пользователей в группу (даже если он также содержит группы).
 
-<figure><img src="../../../.gitbook/assets/3_radius_new_auth.jpg" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/3_radius_new_auth.jpg" alt=""><figcaption></figcaption></figure>
 
 **Примечание:**
 
@@ -46,7 +46,7 @@ _**VDIServer/uds/page/login/label**_
 
 **Visible:** Если отключен, аутентификатор не будет отображён как доступный на портале HOSTVM VDI.
 
-<figure><img src="../../../.gitbook/assets/4_radius_new_auth.jpg" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/4_radius_new_auth.jpg" alt=""><figcaption></figcaption></figure>
 
 Нажав на кнопку **«Test»**, вы можете проверить успешность соединения.
 

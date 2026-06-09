@@ -8,7 +8,7 @@ description: >-
 
 При использовании Yandex Application Load Balancer (ALB) могут возникать ошибки отрисовки приложений, доставляемых по HTML5 (изображение искажается при перемещении и изменении размеров окна приложения):
 
-<figure><img src="../../../../.gitbook/assets/HTML5_Bug_with_yandex_ab.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/HTML5_Bug_with_yandex_ab.png" alt=""><figcaption></figcaption></figure>
 
 Причина такого поведения связана с отсутствием привязки сессии по IP-адресу: если эта функция не включена, трафик распределяется между целевыми ресурсами при каждом запросе в ALB.
 

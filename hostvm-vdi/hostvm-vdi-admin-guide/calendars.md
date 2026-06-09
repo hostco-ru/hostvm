@@ -12,7 +12,7 @@
 
 **Имя** — наименование создаваемого календаря для отображения в системе.
 
-<figure><img src="../../.gitbook/assets/calendar_new.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/calendar_new.png" alt=""><figcaption></figcaption></figure>
 
 Для сохранения календаря нажмите "Сохранить".
 
@@ -26,7 +26,7 @@
 
 **Имя** — наименование создаваемого правила для отображения в системе.
 
-<figure><img src="../../.gitbook/assets/calendar_rule1.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/calendar_rule1.png" alt=""><figcaption></figcaption></figure>
 
 #### Событие <a href="#event" id="event"></a>
 
@@ -61,7 +61,7 @@
 
 После заполнения параметров график работы правила будет отображаться в нижней части окна.
 
-<figure><img src="../../.gitbook/assets/calendar_rule2.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/calendar_rule2.png" alt=""><figcaption></figcaption></figure>
 
 ### Применение <a href="#usage" id="usage"></a>
 

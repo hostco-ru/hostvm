@@ -8,7 +8,7 @@
 
 Доступные типы менеджеров ОС:
 
-![](../../.gitbook/assets/vdi_ag22.png)
+![](https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/vdi_ag22.png)
 
 ## Linux OS Manager
 
@@ -27,7 +27,7 @@
 
 
 
-![](../../.gitbook/assets/uds-23.png)
+![](https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/uds-23.png)
 
 ## Linux Domain OS Manager
 
@@ -59,7 +59,7 @@
 
 **Максимальное время простоя** — максимальное время неактивности пользователя (в секундах), по достижении которого выполняется автоматический выход из системы. Отрицательное значение или 0 означают отсутствие лимита.
 
-<figure><img src="../../.gitbook/assets/osm-win-dom-main.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/osm-win-dom-main.png" alt=""><figcaption></figcaption></figure>
 
 ### Расширенные параметры <a href="#linux-a-d-advanced" id="linux-a-d-advanced"></a>
 
@@ -77,7 +77,7 @@
 
 **Выход по календарю** — если включено, брокер попытается выполнить выход пользователей из сеанса виртуального рабочего стола по истечении срока действия календаря для текущего доступа.
 
-<figure><img src="../../.gitbook/assets/LinuxADOsManager Advanced settings.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/LinuxADOsManager Advanced settings.png" alt=""><figcaption></figcaption></figure>
 
 ## Windows Basic OS Manager
 
@@ -94,7 +94,7 @@
 
 **Максимальное время простоя (Max. Idle time)** — максимальное время неактивности пользователя, по достижении которого выполняется автоматический выход из системы. Применяется только при выборе опции Logout action: Remove service.
 
-![](../../.gitbook/assets/uds-24.png)
+![](https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/uds-24.png)
 
 ## Windows Domain OS Manager
 
@@ -126,7 +126,7 @@
 
 **Максимальное время простоя** — максимальное время неактивности пользователя (в секундах), по достижении которого выполняется автоматический выход из системы. Отрицательное значение или 0 означают отсутствие лимита.
 
-<figure><img src="../../.gitbook/assets/osm-win-dom-main.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/osm-win-dom-main.png" alt=""><figcaption></figcaption></figure>
 
 ### Расширенные параметры <a href="#win-a-d-advanced" id="win-a-d-advanced"></a>
 
@@ -140,4 +140,4 @@
 
 **Выход по календарю** — если включено, брокер попытается выполнить выход пользователей из сеанса виртуального рабочего стола по истечении срока действия календаря для текущего доступа.
 
-<figure><img src="../../.gitbook/assets/osm-win-dom-advanced.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/osm-win-dom-advanced.png" alt=""><figcaption></figcaption></figure>

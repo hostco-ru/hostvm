@@ -10,7 +10,7 @@ description: >-
 
 Для регистрации сервис-провайдера OpenNebula необходимо зайти в раздел "Сервисы", нажать "Новый" и выбрать тип провайдера OpenNebula
 
-<figure><img src="../../../.gitbook/assets/OpenNebul.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/OpenNebul.png" alt=""><figcaption></figcaption></figure>
 
 При создании сервис-провайдера необходимо настроить следующие параметры:
 
@@ -28,7 +28,7 @@ description: >-
 
 Пароль(passwd) - пароль пользователя
 
-<figure><img src="../../../.gitbook/assets/image (44).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/image (44).png" alt=""><figcaption></figcaption></figure>
 
 **Дополнительные:**
 
@@ -38,7 +38,7 @@ description: >-
 
 Таймаут(Timeout) - Время на повторное подключение к OpenNebula в секундах
 
-<figure><img src="../../../.gitbook/assets/image (45).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/image (45).png" alt=""><figcaption></figcaption></figure>
 
 С помощью кнопки "Проверить" можно проверить, что конфигурация провайдера OpenNebula выполнено успешно.
 
@@ -54,14 +54,14 @@ description: >-
 
 Откройте настройки сервисов провайдера с помощью двойного щелчка или выбрав пункт "Подробно" в контекстном меню провайдера. Для добавления нового сервиса нажмите "Новый" и выберите "Действующие образы OpenNebula":
 
-<figure><img src="../../../.gitbook/assets/image (49).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/image (49).png" alt=""><figcaption></figcaption></figure>
 
 **Основные параметры:**
 
 * Имя - имя этого сервиса
 * Хранилище - хранилище виртуальных машин сервиса
 
-<figure><img src="../../../.gitbook/assets/image (47).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/image (47).png" alt=""><figcaption></figcaption></figure>
 
 **Параметры ВМ:**
 
@@ -69,7 +69,7 @@ description: >-
 * Имена машин - шаблон имени, присваемого виртуальным машинам
 * Длина имени - длина числового суффикса, добавляемого к именам машин
 
-<figure><img src="../../../.gitbook/assets/image (48).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/image (48).png" alt=""><figcaption></figcaption></figure>
 
 Для завершения настройки сервиса нажмите `Сохранить`
 

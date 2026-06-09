@@ -8,7 +8,7 @@
 4. Выберите параметр "Storage Type" -> "Local";
 5. Нажмите OK﻿.
 
-<figure><img src="../../../../.gitbook/assets/Data_center_create.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/Data_center_create.png" alt=""><figcaption></figcaption></figure>
 
 6. Перейдите в раздел "Storage" -> "Domains";﻿
 7. Нажмите «New», чтобы открыть окно диалога создания "Domains";
@@ -17,10 +17,10 @@
 10. Укажите путь к каталогу локального хранилища в текстовом поле;
 11. Нажмите OK﻿.
 
-<figure><img src="../../../../.gitbook/assets/Domain_create.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/Domain_create.png" alt=""><figcaption></figcaption></figure>
 
 12. Убедитесь, что local storage domain отображается со статусом "Active﻿" и типом "Local on Host﻿":
 
-<figure><img src="../../../../.gitbook/assets/Local_sorage_active.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/Local_sorage_active.png" alt=""><figcaption></figcaption></figure>
 
 13\. Локальное хранилище готово.

@@ -31,11 +31,11 @@
 
 Для перехода к порталу администрирования необходимо выбрать **«Dashboard» ("Панель управления")** в меню пользователя.
 
-![](../../.gitbook/assets/vdi_ag2.png)
+![](https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/vdi_ag2.png)
 
 После открытия панели управления необходимо выполнить первоначальную конфигурацию компонентов, составляющих пул сервисов, для развертывания и подключения виртуальных рабочих столов и сервисов, поддерживаемых HOSTVM VDI.
 
-![](../../.gitbook/assets/vdi_ag3.png)
+![](https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/vdi_ag3.png)
 
 Конфигурация каждого пула сервисов составляется из различных элементов:&#x20;
 

@@ -7,7 +7,7 @@
 
 Выберите "Клиент UDS" в верхнем меню портала:
 
-<figure><img src="../../../.gitbook/assets/uds-client-link.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/uds-client-link.png" alt=""><figcaption></figcaption></figure>
 
 Выберите дистрибутив, соответствующий типу и версии операционной системы клиентского устройства, используемого для подключения к сервисам VDI:
 

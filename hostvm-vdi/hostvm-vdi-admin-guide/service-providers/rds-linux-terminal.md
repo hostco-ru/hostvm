@@ -29,7 +29,7 @@ layout:
 
 Для создания сервис-провайдера зайдите в раздел "Сервисы", нажмите "Новый" и выберите тип провайдера "RDS / Linux Terminal":
 
-<figure><img src="../../../.gitbook/assets/rds-lterm-sp1.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/rds-lterm-sp1.png" alt=""><figcaption></figcaption></figure>
 
 ### Параметры <a href="#params" id="params"></a>
 
@@ -37,7 +37,7 @@ layout:
 
 **Список серверов:** список серверов, используемых для терминального доступа или публикации приложений. Задайте IP адреса серверов, разделенные запятыми, и нажмите "Добавить":
 
-<figure><img src="../../../.gitbook/assets/rds-sp-2.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/rds-sp-2.png" alt=""><figcaption></figcaption></figure>
 
 В случае указания нескольких серверов, балансировка подключений пользователей между ними осуществляется брокером HOSTVM VDI.
 
@@ -116,7 +116,7 @@ IP-адрес выбранного сервера фиксируется в «н
 
 **Алиас приложения:** - алиас опубликованного приложения RemoteApp;
 
-<figure><img src="../../../.gitbook/assets/vdi_rds_4.jpg" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/vdi_rds_4.jpg" alt=""><figcaption></figcaption></figure>
 
 **Назначать другой IP при недоступности** - автоматическое переназначение ранее выданного адреса сервера, если при подключении он недоступен.
 

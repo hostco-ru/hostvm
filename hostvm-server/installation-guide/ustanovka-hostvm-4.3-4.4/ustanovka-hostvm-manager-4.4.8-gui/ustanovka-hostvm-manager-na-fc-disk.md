@@ -7,7 +7,7 @@
 Логин HOSTVM Manager по умолчанию: admin\
 Пароль HOSTVM Manager по умолчанию: engine
 
-![](../../../../.gitbook/assets/4.4.8.PNG)
+![](https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/4.4.8.PNG)
 
 Пример адреса: [https://192.168.0.5:9090](https://192.168.0.5:9090)
 
@@ -15,7 +15,7 @@
 
 Напротив Hosted-engine нажмите кнопку _Start._
 
-![](../../../../.gitbook/assets/FC_1.png)
+![](https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/FC_1.png)
 
 {% hint style="warning" %}
 Внимание! FC-диск для организации хранилища виртуальных машин должен отвечать следующим требованиям:
@@ -31,7 +31,7 @@
 
 Заполните форму. Виртуальная машина создается со статическим файлом с использованием файла hosts.
 
-![](../../../../.gitbook/assets/FC_2.png)
+![](https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/FC_2.png)
 
 Значения задаваемых параметров:
 
@@ -60,27 +60,27 @@
 
 Заполните следующую форму. Укажите пароль от веб-интерфейса будущей виртуальной машины. Заполните настройки отправки уведомлений e-mail при необходимости.
 
-![](../../../../.gitbook/assets/FC_3.png)
+![](https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/FC_3.png)
 
 Создайте управляющую виртуальную машину (нажмите _Prepare VM_).
 
-![](../../../../.gitbook/assets/FC_4.png)
+![](https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/FC_4.png)
 
 Подождите довольно продолжительное время, пока виртуальная машина не будет создана и настроена.
 
-![](../../../../.gitbook/assets/FC_5.png)
+![](https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/FC_5.png)
 
 Выберете тип хранилища _Fibre Channel_ и укажите свободный LUN.
 
-![](../../../../.gitbook/assets/FC_6.png)
+![](https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/FC_6.png)
 
 Подождите пока hosted-engine расположится в хранилище.
 
-![](../../../../.gitbook/assets/FC_7.png)
+![](https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/FC_7.png)
 
 Поздравляем! Hosted-engine развернут.
 
-![](../../../../.gitbook/assets/FC_8.png)
+![](https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/FC_8.png)
 
 Логин HOSTVM Manager по умолчанию: admin\
 Пароль HOSTVM Manager по умолчанию: engine

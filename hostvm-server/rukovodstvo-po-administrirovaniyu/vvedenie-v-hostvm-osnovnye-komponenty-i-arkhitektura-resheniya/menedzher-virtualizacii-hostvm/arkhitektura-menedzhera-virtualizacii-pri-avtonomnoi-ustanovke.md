@@ -1,6 +1,6 @@
 # Архитектура менеджера виртуализации при автономной установке
 
-<figure><img src="../../../../.gitbook/assets/Архитектура автономного.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/Архитектура автономного.png" alt=""><figcaption></figcaption></figure>
 
 Минимальная настройка для автономного варианта установки менеджера включает:
 

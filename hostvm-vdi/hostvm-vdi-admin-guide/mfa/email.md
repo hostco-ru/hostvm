@@ -6,7 +6,7 @@
 
 ## Основные настройки <a href="#main" id="main"></a>
 
-<figure><img src="../../../.gitbook/assets/MFA2.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/MFA2.png" alt=""><figcaption></figcaption></figure>
 
 **Имя** - наименование создаваемого МФА для отображения в системе.
 
@@ -16,7 +16,7 @@
 
 ## SMTP сервер <a href="#smtp" id="smtp"></a>
 
-<figure><img src="../../../.gitbook/assets/MFA3.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/MFA3.png" alt=""><figcaption></figcaption></figure>
 
 **SMTP сервер** - IP-адрес или FQDN сервера SMTP. Если используется нестандартный порт, укажите его после двоеточия, например, `smtp.example.ru:587` .
 
@@ -32,7 +32,7 @@
 
 ## Конфигурация <a href="#config" id="config"></a>
 
-<figure><img src="../../../.gitbook/assets/MFA4.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/MFA4.png" alt=""><figcaption></figcaption></figure>
 
 **Тема** - тема письма.
 

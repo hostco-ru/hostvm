@@ -10,7 +10,7 @@ description: >-
 
 1. Выберите нужный домен, нажмите на кнопку с 3 вертикальными точками в правом верхнем углу и выберите "Select as master storage domain"
 
-<figure><img src="../../../../.gitbook/assets/image (5) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/image (5) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 В версиях HOSTVM 4.3.x:
 

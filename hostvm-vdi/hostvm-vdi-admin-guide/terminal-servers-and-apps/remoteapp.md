@@ -4,7 +4,7 @@
 
 Для регистрации сервис-провайдера необходимо зайти в раздел «Services», нажать «New» и выбрать тип провайдера Static IP machines provider.
 
-![](../../../.gitbook/assets/vdi\_rds\_1.jpg)
+![](https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/vdi\_rds\_1.jpg)
 
 Указать произвольное имя и сохранить провайдера.
 
@@ -12,7 +12,7 @@
 
 Для создания сервисов открыть созданный провайдер двойным щелчком. Выбрать New>Static single IP
 
-![](../../../.gitbook/assets/vdi\_rds\_2.jpg)
+![](https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/vdi\_rds\_2.jpg)
 
 Указать имя (произвольное) и IP адрес терминального сервера Windows, на котором опубликованы приложения.
 
@@ -28,7 +28,7 @@
 
 Для создания нового пула перейдите в раздел Pools>Service pools и нажмите «New».
 
-![](../../../.gitbook/assets/vdi\_rds\_5.jpg)
+![](https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/vdi\_rds\_5.jpg)
 
 Основные параметры:
 

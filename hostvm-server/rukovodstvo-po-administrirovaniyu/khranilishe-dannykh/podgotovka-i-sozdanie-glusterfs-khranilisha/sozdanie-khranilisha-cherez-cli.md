@@ -121,13 +121,13 @@ root@glusternode1:~# gluster volume start datastore
 
 Compute > Clusters > выбрать кластер > нажать кнопку Edit > вкладка General > Enable Gluster Service
 
-![](../../../../.gitbook/assets/sds_img01.png)
+![](https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/sds_img01.png)
 
 После применения настроек создать новое хранилище на подготовленном ранее томе:
 
 Compute > Storage > Storage Domains > нажать кнопку New Domain
 
-![](../../../../.gitbook/assets/sds_img02.png)
+![](https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/sds_img02.png)
 
 * В качестве Storage type указать GlusterFS
 * Указать имя хранилища

@@ -43,7 +43,7 @@ layout:
 
 `Cookies consent text` - текст уведомления. Если пусто, будет использован текст по умолчанию.
 
-<figure><img src="../../../.gitbook/assets/config-cookies.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/config-cookies.png" alt=""><figcaption></figcaption></figure>
 
 ## Добавление информационного текста на страницу сервисов <a href="#services-page-content" id="services-page-content"></a>
 
@@ -51,7 +51,7 @@ layout:
 
 В `Панели управления` откройте раздел `Инструменты / Конфигурация`, перейдите на вкладку `Custom`.
 
-<figure><img src="../../../.gitbook/assets/Скриншост страницы Конфигурации UDS.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/Скриншост страницы Конфигурации UDS.png" alt=""><figcaption></figcaption></figure>
 
 В поле **«CSS»** введите следующий код, заменив текст в кавычках на ваш:
 
@@ -77,4 +77,4 @@ layout:
 
 Нажмите кнопку **«Сохранить»**, чтобы применить изменения.
 
-<figure><img src="../../../.gitbook/assets/Скриншост страницы сервиса с сообщенем.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/Скриншост страницы сервиса с сообщенем.png" alt=""><figcaption></figcaption></figure>

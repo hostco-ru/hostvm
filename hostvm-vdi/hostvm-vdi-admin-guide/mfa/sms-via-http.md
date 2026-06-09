@@ -10,7 +10,7 @@ SMS через HTTP - метод двухфакторной аутентифик
 
 ## Основные настройки <a href="#main" id="main"></a>
 
-<figure><img src="../../../.gitbook/assets/SMSMFA2.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/SMSMFA2.png" alt=""><figcaption></figcaption></figure>
 
 **Имя** - наименование создаваемого МФА для отображения в системе.
 
@@ -20,7 +20,7 @@ SMS через HTTP - метод двухфакторной аутентифик
 
 ## HTTP сервер <a href="#http-server" id="http-server"></a>
 
-<figure><img src="../../../.gitbook/assets/SMSMFA3.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/SMSMFA3.png" alt=""><figcaption></figcaption></figure>
 
 **Шаблон URL для отправки SMS** - шаблон URL адреса. Может содержать следующие переменные:
 
@@ -59,7 +59,7 @@ SMS через HTTP - метод двухфакторной аутентифик
 
 ## HTTP аутентификация <a href="#http-auth" id="http-auth"></a>
 
-<figure><img src="../../../.gitbook/assets/SMSMFA4.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/SMSMFA4.png" alt=""><figcaption></figcaption></figure>
 
 **Метод аутентификации SMS** - выбор метода аутентификации, доступны следующие варианты:
 
@@ -73,13 +73,13 @@ SMS через HTTP - метод двухфакторной аутентифик
 
 ## HTTP ответ <a href="#http-reply" id="http-reply"></a>
 
-<figure><img src="../../../.gitbook/assets/SMSMFA5.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/SMSMFA5.png" alt=""><figcaption></figcaption></figure>
 
 **Регулярное выражение для SMS ответа OK** - если пусто, ответ считается OK, когда код состояния равен 200.
 
 ## Конфигурация <a href="#config" id="config"></a>
 
-<figure><img src="../../../.gitbook/assets/SMSMFA6.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/SMSMFA6.png" alt=""><figcaption></figcaption></figure>
 
 **Действия при ошибке ответа SMS** - выбор сценария действий при ошибке ответа SMS. Доступные варианты:
 

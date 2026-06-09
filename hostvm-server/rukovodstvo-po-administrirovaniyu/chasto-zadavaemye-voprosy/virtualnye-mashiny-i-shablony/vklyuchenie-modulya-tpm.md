@@ -8,7 +8,7 @@ description: >-
 
 По умолчанию использование модуля TPM отключено.
 
-<figure><img src="../../../../.gitbook/assets/TPMd.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/TPMd.png" alt=""><figcaption></figcaption></figure>
 
 Для включения модуля TPM необходимо выполнить следующие действия:
 
@@ -28,4 +28,4 @@ description: >-
 
 После этих действий параметр TPM Device Enabled станет активным.
 
-<figure><img src="../../../../.gitbook/assets/TPM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/TPM.png" alt=""><figcaption></figcaption></figure>

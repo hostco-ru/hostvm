@@ -16,7 +16,7 @@
 * Подсеть `xxx.xxx.xxx.xxx/x` (например, `10.10.10.0/24`);
 * Диапазон IP-адресов `xxx.xxx.xxx.xxx-xxx.xxx.xxx.xxx` (например, `10.10.10.0-10.10.10.125`).
 
-<figure><img src="../../.gitbook/assets/net-create.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/net-create.png" alt=""><figcaption></figcaption></figure>
 
 Созданные сети будут доступны в настройках транспортов, позволяя задать их видимость в зависимости от адреса клиента подключения.
 
@@ -26,4 +26,4 @@
 
 В следующем примере настройки транспорт «RDP» будет доступен только пользователям, подключающимся из сети VPN-1, заданной ранее (диапазон `10.10.10.0`— `10.10.10.125`).
 
-<figure><img src="../../.gitbook/assets/net-transport.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/net-transport.png" alt=""><figcaption></figcaption></figure>

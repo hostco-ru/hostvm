@@ -14,13 +14,13 @@
 * сетевой доступ (Network Access) – разрешает или запрещает пользователю доступ к сервису в зависимости от сети, из которой он получает доступ, и сети, указанной в поле «Сети» («Networks»);
 * сети (Networks) – сетевые диапазоны, подсети или IP-адреса, заданные в разделе «Connectivity» -> «Networks». Параметр используется вместе с «Network Access» для разрешения или запрета пользователю доступа к сервису в зависимости от его местоположения в сети;
 
-![](../../../.gitbook/assets/vdi\_ag29.png)
+![](https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/vdi\_ag29.png)
 
 **Дополнительные параметры:**&#x20;
 
 * полноэкранный режим (Fullscreen Mode) – включение/отключение полноэкранного режима для удаленного рабочего стола.
 
-![30](../../../.gitbook/assets/vdi\_ag30.png)
+![30](https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/vdi\_ag30.png)
 
 ## Туннельный транспорт SPICE <a href="#tunneled" id="tunneled"></a>
 

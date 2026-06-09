@@ -4,12 +4,12 @@
 
 1. На вкладке Storage > Disks выберите диски, закрепленный за нужной ВМ. Щелкните Move;
 
-<figure><img src="../../../../.gitbook/assets/30.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/30.png" alt=""><figcaption></figcaption></figure>
 
 2. Откроется окно Move Disk(s). Для каждого диска выберите целевой домен данных в полях Target и Disk proﬁle ﬁelds. Нажмите OK, чтобы переместить диски ВМ в целевой домен данных. Перемещение дисков ВМ может занять некоторое время;
 
-<figure><img src="../../../../.gitbook/assets/31.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/31.png" alt=""><figcaption></figcaption></figure>
 
 3. На вкладке Disks нажмите на соответствующую запись о диске. Отобразятся несколько разделов, содержащие сведения о диске. Далее перейдите на вкладку Storage и убедитесь, что целевой домен данных указан в списке;
 
-<figure><img src="../../../../.gitbook/assets/32.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/32.png" alt=""><figcaption></figcaption></figure>

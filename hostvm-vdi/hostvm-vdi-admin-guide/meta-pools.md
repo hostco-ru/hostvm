@@ -4,13 +4,13 @@
 
 Для создания мета-пула перейдите в раздел **Пулы -> Мета-пулы**
 
-<figure><img src="../../.gitbook/assets/image (66).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/image (66).png" alt=""><figcaption></figcaption></figure>
 
 Для настройки мета-пула необходимо будет указать:
 
 Вкладка **Основной**:
 
-<figure><img src="../../.gitbook/assets/image (64).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/image (64).png" alt=""><figcaption></figcaption></figure>
 
 **Имя** (Name): имя мета-пула (это имя будет показано пользователю для доступа к его сервису: виртуальному рабочему столу или приложению)
 
@@ -26,7 +26,7 @@
 
 Вкладка **Display**:
 
-<figure><img src="../../.gitbook/assets/image (63).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/image (63).png" alt=""><figcaption></figcaption></figure>
 
 **Привязанный образ** (Associated Image): изображение, связанное с мета-пулом.&#x20;
 
@@ -44,13 +44,13 @@
 
 
 
-<figure><img src="../../.gitbook/assets/image (59).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/image (59).png" alt=""><figcaption></figcaption></figure>
 
 Вы можете добавить столько пулов сервисов, сколько вам нужно, объединяя сервисы, размещенные на разных платформах виртуализации (VMware, KVM, Azure и т. д.), серверы приложений и статические устройства.
 
 
 
-<figure><img src="../../.gitbook/assets/image (62).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/image (62).png" alt=""><figcaption></figcaption></figure>
 
 Как и в пуле сервисов, здесь вы также будете иметь следующую информацию и разделы:
 

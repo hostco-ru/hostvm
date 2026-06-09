@@ -4,7 +4,7 @@
 
 Для создания МФА перейдите в раздел "Аутентификация" > "МФА", нажмите "Новый" и выберите тип МФА.
 
-<figure><img src="../../../.gitbook/assets/mfa-menu.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/mfa-menu.png" alt=""><figcaption></figcaption></figure>
 
 Брокер HOSTVM VDI обеспечивает нативную поддержку двухфакторной аутентификации пользователей с помощью следующих методов:
 

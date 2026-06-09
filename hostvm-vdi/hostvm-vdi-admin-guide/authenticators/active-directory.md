@@ -2,7 +2,7 @@
 
 Этот внешний аутентификатор обеспечивает доступ пользователям и группам пользователей, принадлежащим Active Directory, к виртуальным рабочим столам или приложениям.
 
-![](../../../.gitbook/assets/Screenshot_20221123_113351.png)
+![](https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/Screenshot_20221123_113351.png)
 
 ### Версия 3.0 <a href="#id-30" id="id-30"></a>
 
@@ -19,7 +19,7 @@
 * Тайм-аут (Timeout) – тайм-аут подключения к AD, в секундах;
 * База (Base) – база поиска (для пользователей и групп) в AD (например dc=example,dc=com).
 
-![](../../../.gitbook/assets/uds-16.png)
+![](https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/uds-16.png)
 
 Нажав кнопку «Проверить» (Test), можно проверить, правильно ли настроено соединение с AD.
 

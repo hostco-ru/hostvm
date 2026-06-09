@@ -6,7 +6,7 @@
 
 В зависимости от деятельности и платформы можно выбирать внешние аутентификаторы (Active Directory, OpenLDAP и т.д.) или внутренние (внутренняя база данных и аутентификация по IP).
 
-![](../../../.gitbook/assets/Screenshot_20221123_112017.png)
+![](https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/Screenshot_20221123_112017.png)
 
 ### Управление пользователями и группами <a href="#users-and-groups" id="users-and-groups"></a>
 
@@ -14,13 +14,13 @@
 
 Для добавления группы выберите нужный аутентификатор в списке, перейдите на вкладку «Groups» и нажмите «New».
 
-![](../../../.gitbook/assets/vdi_ag17.png)
+![](https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/vdi_ag17.png)
 
 Для поиска укажите имя группы или его часть.
 
 Выберите нужную группу в результатах поиска и нажмите «OK».
 
-![](../../../.gitbook/assets/vdi_ag18.png)
+![](https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/vdi_ag18.png)
 
 Пользователи, состоящие в добавленных в аутентификатор группах, будут автоматически добавлены в систему при первом входе.
 
@@ -30,7 +30,7 @@
 
 Для поиска укажите имя пользователя или его часть. Выберите нужного пользователя в результатах поиска и нажмите «OK».
 
-![](../../../.gitbook/assets/vdi_ag21.png)
+![](https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/vdi_ag21.png)
 
 При необходимости можно назначить пользователю специальные права доступа:
 

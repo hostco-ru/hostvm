@@ -25,7 +25,7 @@ sudo ovirt-aaa-jdbc-tool query --what=group
 
 Для назначения пользователю необходимых ролей воспользуйтесь разделом: [Назначение ролей пользователям](razresheniya-i-roli/naznachenie-rolei-polzovatelyam.md)
 
-<figure><img src="../../../../.gitbook/assets/group_add.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/group_add.png" alt=""><figcaption></figcaption></figure>
 
 ## Добавление пользователя в группу
 

@@ -4,7 +4,7 @@
 
 SAML используется для обмена данными авторизации и аутентификации между доменами безопасности, то есть между провайдером идентификационных данных (создателем требований) и провайдером услуг (потребителем требований).
 
-<figure><img src="../../../.gitbook/assets/1_saml_auth_new.jpg" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/1_saml_auth_new.jpg" alt=""><figcaption></figcaption></figure>
 
 ## Основные настройки <a href="#main" id="main"></a>
 
@@ -18,7 +18,7 @@ _**VDIServer/uds/page/login/label**_
 
 (Например: https://VDIServer/uds/page/login/SAML).
 
-<figure><img src="../../../.gitbook/assets/2_saml_new_auth.jpg" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/2_saml_new_auth.jpg" alt=""><figcaption></figcaption></figure>
 
 ## Сертификаты <a href="#certificates" id="certificates"></a>
 
@@ -26,7 +26,7 @@ _**VDIServer/uds/page/login/label**_
 
 **Certificate (Сертификат) -** открытый ключ, который будет использоваться в SSL сессиях.
 
-<figure><img src="../../../.gitbook/assets/3_saml_new_auth.jpg" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/3_saml_new_auth.jpg" alt=""><figcaption></figcaption></figure>
 
 ## Метаданные <a href="#metadata" id="metadata"></a>
 
@@ -34,7 +34,7 @@ _**VDIServer/uds/page/login/label**_
 
 **Entity ID (Идентификатор объекта) -** данное поле изначально должно быть пустым. URL будет сгенерирован автоматически при сохранении аутентификатора. URL сгенерированный в данном поле обычно используется для регистрации брокера VDI в качестве SP (service provider – поставщика услуг) на сервере SAML.
 
-<figure><img src="../../../.gitbook/assets/4_saml_new_auth.jpg" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/4_saml_new_auth.jpg" alt=""><figcaption></figcaption></figure>
 
 ## Атрибуты <a href="#attributes" id="attributes"></a>
 
@@ -44,13 +44,13 @@ _**VDIServer/uds/page/login/label**_
 
 **Real name attrs (Атрибут настоящего имени) -** атрибут, определяющий информацию об имени пользователя. Он не влияет на портал входа VDI.
 
-<figure><img src="../../../.gitbook/assets/5_saml_new_auth.jpg" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/5_saml_new_auth.jpg" alt=""><figcaption></figcaption></figure>
 
 ## Экран / Дисплей <a href="#display" id="display"></a>
 
 **Visible (Видимость) -** если отключено, аутентификатор не будет отображен как доступный на странице входа в VDI.
 
-<figure><img src="../../../.gitbook/assets/6_saml_new_auth.jpg" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/6_saml_new_auth.jpg" alt=""><figcaption></figcaption></figure>
 
 ## Примеры настройки <a href="#examples" id="examples"></a>
 

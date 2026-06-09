@@ -44,13 +44,13 @@
 
 Переведите триггер Network Time в положение On. Нажмите на значок шестерёнки справа.
 
-<figure><img src="../../../../.gitbook/assets/photo_2026-01-22_11-52-10.jpg" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/photo_2026-01-22_11-52-10.jpg" alt=""><figcaption></figcaption></figure>
 
 Добавьте или оставьте NTP-сервер по умолчанию.\
 Если напротив сервера в столбце Working установлена галочка, это означает, что сервер успешно синхронизировал время.\
 Нажмите OK для подтверждения, затем нажмите Done.
 
-<figure><img src="../../../../.gitbook/assets/photo_2026-01-22_11-43-40.jpg" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/photo_2026-01-22_11-43-40.jpg" alt=""><figcaption></figcaption></figure>
 
 Перейдите в Instalation Destination. Выберите диск на который необходимо выполнить установку. Выберите радиокнопку Custom. Нажмите Done.
 

@@ -6,7 +6,7 @@
 
 
 
-<figure><img src="../../../.gitbook/assets/Screenshot_20221123_113351_2.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/Screenshot_20221123_113351_2.png" alt=""><figcaption></figcaption></figure>
 
 В «Internal Database» должны быть настроены минимальные параметры.
 
@@ -16,7 +16,7 @@
 * приоритет (Priority) – приоритет аутентификатора. Чем ниже значение этого параметра, тем выше аутентификатор будет отображаться в списке аутентификаторов, доступных в окне доступа пользователя. Допускаются отрицательные значения параметра;
 * метка (Label) – позволяет пользователям выполнять вход в систему используя этот аутентификатор, без необходимости выбора из перечня доступных. Доступ к форме входа в таком случае осуществляется по прямой ссылке вида HOSTVM-VDI-Server/uds/page/login/label, где label - значение данного поля. Например, если в поле задано значение int, ссылка будет иметь вид https://HOSTVM-VDI-Server/uds/page/login/int;
 
-<figure><img src="../../../.gitbook/assets/Screenshot_20221123_114028.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/Screenshot_20221123_114028.png" alt=""><figcaption></figcaption></figure>
 
 **Дополнительные параметры:**
 

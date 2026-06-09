@@ -27,13 +27,13 @@ layout:
 
 Для создания данного провайдера на вкладке **«Новый»** выберите пункт **«Провайдер машин со статическим IP»** из выпадающего меню.
 
-<figure><img src="../../../.gitbook/assets/statIP (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/statIP (1).png" alt=""><figcaption></figcaption></figure>
 
 ### **Основные настройки** <a href="#main" id="main"></a>
 
 &#x20;Для настройки данного провайдера необходимым является только поле **Имя.**
 
-<figure><img src="../../../.gitbook/assets/image (10) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/image (10) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Тэги** - поле для создания тэгов;
 
@@ -43,7 +43,7 @@ layout:
 
 ### Расширенные настройки <a href="#advanced" id="advanced"></a>
 
-<figure><img src="../../../.gitbook/assets/image (113).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/image (113).png" alt=""><figcaption></figcaption></figure>
 
 **Расширенная конфигурация** - позволяет включить параметр **wol** ( Wake on Lan ) и применить его к физическим машинам.
 
@@ -51,14 +51,14 @@ layout:
 
 После завершения настройки провайдера откройте его параметры с помощью двойного щелчка, перейдите на вкладку "Сервисы", нажмите "Новый" и выберите тип создаваемого сервиса:
 
-<figure><img src="../../../.gitbook/assets/image (111).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/image (111).png" alt=""><figcaption></figcaption></figure>
 
 * **Статический множественный IP-адрес** - позволяет подключать пользователей к машинам по IP адресам (например к физическим ПК). За каждым пользователем закрепляется один адрес. Вы можете задать несколько адресов в настройках сервиса. По умолчанию, назначение адресов пользователям осуществляется в порядке доступа (первый запросивший доступ пользователь получает первый IP из списка и т.д.);
 * **Статический одиночный IP-адрес** - позволяет подключать пользователей к одному IP-адресу, закреплённому за виртуальной или физической машиной. Если машина поддерживает мультисессионный доступ, каждый пользователь при подключении будет запускать отдельную сессию.
 
 ### Статический множественный IP-адрес <a href="#multiple-ip" id="multiple-ip"></a>
 
-<figure><img src="../../../.gitbook/assets/image (115).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/image (115).png" alt=""><figcaption></figcaption></figure>
 
 #### Основные настройки <a href="#multiple-main" id="multiple-main"></a>
 
@@ -90,7 +90,7 @@ layout:
 
 ### Статический одиночный IP-адрес <a href="#single-ip" id="single-ip"></a>
 
-<figure><img src="../../../.gitbook/assets/image (112).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/image (112).png" alt=""><figcaption></figcaption></figure>
 
 #### Основные настройки <a href="#single-main" id="single-main"></a>
 

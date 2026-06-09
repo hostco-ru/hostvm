@@ -8,7 +8,7 @@
 
 Для создания нового пула сервисов нажмите «New» в разделе «Service Pools».
 
-![31](../../.gitbook/assets/vdi_ag31.png)
+![31](https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/vdi_ag31.png)
 
 ### Основные настройки <a href="#main" id="main"></a>
 
@@ -22,7 +22,7 @@
 
 `Публикация при создании (Publish on creation)` – если опция включена, то после завершения настройки пула сервисов и нажатия кнопки «Save» сразу начнется публикация нового сервиса. Если опция выключена, публикация осуществляется вручную на вкладке «Publications» созданного сервиса.
 
-![](../../.gitbook/assets/vdi_ag32.png)
+![](https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/vdi_ag32.png)
 
 ### Доступность <a href="#availability" id="availability"></a>
 
@@ -40,17 +40,17 @@
 
 Группы пользователей создаются в настройках аутентификатора. Для добавления группы нажмите «New» на вкладке «Groups» созданного пула сервисов.
 
-![](../../.gitbook/assets/vdi_ag34.png)
+![](https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/vdi_ag34.png)
 
 Выберите аутентификатор и группу из списка доступных для выбранного аутентификатора.
 
-![](../../.gitbook/assets/vdi_ag35.png)
+![](https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/vdi_ag35.png)
 
 ## Транспорты <a href="#transports" id="transports"></a>
 
 Для добавления транспорта подключения нажмите «New» на вкладке «Transports» созданного пула сервисов. Выберите из списка ранее созданных транспортов нужный.
 
-![](../../.gitbook/assets/vdi_ag36.png)
+![](https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/vdi_ag36.png)
 
 ## Календари доступа <a href="#access-calendars" id="access-calendars"></a>
 

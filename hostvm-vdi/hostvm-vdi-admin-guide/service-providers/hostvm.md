@@ -6,7 +6,7 @@
 
 Для регистрации сервис-провайдера HOSTVM/РОСА/zVirt/РЕД Виртуализация необходимо зайти в раздел «Services», нажать «New» и выбрать тип провайдера «HOSTVM/ROSA/zVirt/RED Virtualization Platform Provider».
 
-<figure><img src="../../../.gitbook/assets/hostvm-rosa-zvirt-red platform provider.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/hostvm-rosa-zvirt-red platform provider.png" alt=""><figcaption></figcaption></figure>
 
 При создании провайдера должны быть настроены следующие параметры:
 
@@ -21,7 +21,7 @@
 **Если поставщиком единого входа является Keycloak, то имя пользователя, имеющего доступ с правами администратора на менеджер виртуализации, указывается в формате user@ovirt@domain.**
 {% endhint %}
 
-<figure><img src="../../../.gitbook/assets/hostvm-rosa-zvirt-red config main.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/hostvm-rosa-zvirt-red config main.png" alt=""><figcaption></figcaption></figure>
 
 **Дополнительные:**
 
@@ -30,7 +30,7 @@
 * тайм-аут при установлении соединения с менеджером виртуализации;
 * диапазон MAC-адресов для присвоения виртуальным рабочим столам.
 
-![](../../../.gitbook/assets/vdi_ag7.png)
+![](https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/vdi_ag7.png)
 
 С помощью кнопки «Test» можно проверить, что соединение выполнено успешно.
 
@@ -40,7 +40,7 @@
 
 Чтобы изменить какой-либо параметр в уже существующих сервис-провайдерах, необходимо выбрать его и нажать «Edit».
 
-<figure><img src="../../../.gitbook/assets/hostvm-rosa-zvirt-red edit.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/hostvm-rosa-zvirt-red edit.png" alt=""><figcaption></figcaption></figure>
 
 С помощью кнопки «Enter Maintenance Mode» можно приостановить все операции, запущенные платформой для данного сервис-провайдера.
 
@@ -54,7 +54,7 @@
 
 Для этого следует открыть сервис-провайдер, в котором будет создан тонкий клон, с помощью двойного щелчка, либо выбором пункта “Detail” в контекстном меню провайдера:
 
-<figure><img src="../../../.gitbook/assets/hostvm-rosa-zvirt-red detail.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/hostvm-rosa-zvirt-red detail.png" alt=""><figcaption></figcaption></figure>
 
 Нажать «New HOSTVM/ROSA/zVirt/RED Virtualization Linked Clone» для создания нового базового сервиса. Минимальные параметры, которые необходимо настроить.
 
@@ -66,7 +66,7 @@
 * зарезервированное место (reserved space) – минимальный порог свободного места в хранилище, для возможности разворачивания клонов;
 * оставлять при ошибке (keep on error) - если включено, при ошибке получения состояния машины на этапе подключения пользователя она не будет переведена в статус `Ошибка` и удалена.
 
-![](../../../.gitbook/assets/vdi_ag10.png)
+![](https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/vdi_ag10.png)
 
 **Параметры ВМ:**
 
@@ -78,17 +78,17 @@
 * имена машин (machine names) – префикс имени для всех тонких клонов, которые будут развернуты в этой службе (например, имена машин = win-);
 * длина имени (name length) – длина номера суффикса, прикрепленного к корневому имени (например, Name Length = 3, win-000 ... win-999).
 
-![](../../../.gitbook/assets/vdi_ag11.png)
+![](https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/vdi_ag11.png)
 
 После сохранения этой конфигурации будет готов действующий «HOSTVM/ROSA/zVirt/RED Virtualization Linked Clone» на платформе HOSTVM/РОСА/zVirt/РЕД Виртуализация.
 
 Можно зарегистрировать необходимое количество «HOSTVM/ROSA/zVirt/RED Virtualization Linked Clone» на платформе HOSTVM VDI.
 
-![](../../../.gitbook/assets/vdi_ag12.png)
+![](https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/vdi_ag12.png)
 
 После настройки всех компонентов среды HOSTVM VDI (сервис-провайдеры, аутентификаторы, менеджеры ОС и транспорты подключений) и создания пула сервисов на сервере HOSTVM/РОСА/zVirt/РЕД Виртуализация Manager можно увидеть развернутые виртуальные рабочие столы на базе тонких клонов HOSTVM/РОСА/zVirt/РЕД Виртуализация.
 
-![](../../../.gitbook/assets/vdi_ag13.png)
+![](https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/vdi_ag13.png)
 
 ### Фиксированные машины (Fixed Machines) <a href="#fixed-machines" id="fixed-machines"></a>
 

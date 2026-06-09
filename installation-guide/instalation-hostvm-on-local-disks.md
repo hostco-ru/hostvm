@@ -12,15 +12,15 @@
 
 1. Сохраните имя сервера:
 
-![](../.gitbook/assets/screenshot_31.png)
+![](https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/screenshot_31.png)
 
 2. Перейдите на вкладку Журнал, выберите `Весь вывод`, укажите путь до файла логов в следующем виде: `C:\path\to\log\hostname-&H-&Y&M&D-&T.log`. Часть `&H-&Y&M&D-&T` указывает, что файл с логом будет создаваться для каждой сессии и автоматически указывать время и дату ее начала:
 
-![](../.gitbook/assets/screenshot_32.png)
+![](https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/screenshot_32.png)
 
 3. Перейдите на вкладку Сеанс, нажмите кнопку `Сохранить`, нажмите клавишу `Enter` чтобы запустить сессию:
 
-![](../.gitbook/assets/screenshot_33.png)
+![](https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/screenshot_33.png)
 
 ### Проверить, что диск предназначенный для размещения виртуальных машин подключен
 
@@ -329,7 +329,7 @@ localhost                  : ok=9    changed=2    unreachable=0    failed=0    s
 
 Схема установки hostvm и самостоятельного решения проблем представлена на рисунке ниже:
 
-![](../.gitbook/assets/troubleshooting-scheme-on-local-disks.jpg)
+![](https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/troubleshooting-scheme-on-local-disks.jpg)
 
 Если устранить проблему не удалось, обратитесь в [техническую поддержку](https://github.com/hostco-ru/hostvm/tree/1e76c2e8efd1596a96107b99841d3e81adefe102/docs/hostco.ru) используя [инструкцию](https://reestr.hostco.ru/downloads) К обращению приложите лог вывода вашей консоли, который был настроен в начале установки и файл `/root/script-hosted-engine-deploy.log`.
 

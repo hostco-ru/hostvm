@@ -88,13 +88,13 @@ firewall-cmd --reload
 
 Перейдите в `Storage -> Domains -> New Domain`. Выберете `Domain Function`, `Storage Type` как показано на картинке ниже. В поле `Export Part` введите адрес вашей nfs-share в формате `ip-адрес:/путь/до/папки` . Нажмите `OK`.
 
-![](<../../.gitbook/assets/Screenshot\_1 (3).png>)
+![](<https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/Screenshot\_1 (3).png>)
 
-![](<../../.gitbook/assets/Screenshot\_2 (5).png>)
+![](<https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/Screenshot\_2 (5).png>)
 
 Убедитесь, что iso-домен активен
 
-![](../../.gitbook/assets/post-install-iso-stor-3.jpg)
+![](https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/post-install-iso-stor-3.jpg)
 
 ### Загрузка iso-образов
 
@@ -104,11 +104,11 @@ firewall-cmd --reload
 
 Domain-ID из примера ниже - `3ac03f75-bb87-4399-ae7e-2a166bdfffe9` , `/путь к папке iso-домена` в предыдущем шаге обозначили как `/nfs/iso-stor` значит iso-образ загрузим в папку `/nfs/iso-stor/3ac03f75-bb87-4399-ae7e-2a166bdfffe9/images/11111111-1111-1111-1111-111111111111/`
 
-![](../../.gitbook/assets/post-install-iso-upload-1.jpg)
+![](https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/post-install-iso-upload-1.jpg)
 
 Для передачи файла на сервер с рабочего места, где установлена ОС Windows, необходимо использовать утилиту [WinSCP](https://winscp.net), которая доступна [в наборе дистрибутивов для развертывания решения](https://lk.pvhostvm.ru/Download).
 
-![](../../.gitbook/assets/post-install-iso-upload-2.jpg)
+![](https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/post-install-iso-upload-2.jpg)
 
 После загрузки файлов в указанную папку, необходимо изменить владельца файла.
 
@@ -133,7 +133,7 @@ drwxr-xr-x. 3 vdsm kvm       50 Oct 28 19:18 ..
 
 Перейдите в панель управления и убедитесь, то iso-образ доступен
 
-![](../../.gitbook/assets/post-install-iso-upload-3.jpg)
+![](https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/post-install-iso-upload-3.jpg)
 
 ## Добавление хостов
 
@@ -195,25 +195,25 @@ rtt min/avg/max/mdev = 0.200/0.224/0.250/0.025 ms
 
 Откройте панель управления, перейдите в `Compute -> Hosts`, нажмите кнопку `New`
 
-![](<../../.gitbook/assets/Screenshot\_4 (3).png>)
+![](<https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/Screenshot\_4 (3).png>)
 
 В открывшемся окне заполните поля `Name`, `Hostname`(достаточно указать ip-адрес), `Password` от учетной записи root.&#x20;
 
-![](../../.gitbook/assets/post-install-host-2.jpg)
+![](https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/post-install-host-2.jpg)
 
 Чтобы добавить возможность запуска виртуальной машины Hosted engine, при добавлении хоста на вкладке Hosted Engine выберите Deploy из выпадающего списка:
 
-![](../../.gitbook/assets/he-deploy.png)
+![](https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/he-deploy.png)
 
 Для обеспечения высокой доступности рекомендуется иметь хотя бы 2 таких хоста. Обычный хост виртуализации не имеет возможности запускать виртуальную машину Hosted engine.
 
 После завершения установки, оба хоста будут доступны для работы:
 
-![](../../.gitbook/assets/post-install-host-3.jpg)
+![](https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/post-install-host-3.jpg)
 
 Если же на этом этапе возникла ошибка, то необходимо зайти в параметры хоста, нажав на его имя, перейти в вкладку Events и посмотреть, на каком этапе прервалась установка ПО виртуализации на хост.
 
-![](<../../.gitbook/assets/image (30).png>)
+![](<https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/image (30).png>)
 
 Также, более подробно причину ошибки можно рассмотреть в логах хоста по пути /var/log/ovirt-hosted-engine-setup с актуальным временем создания.
 

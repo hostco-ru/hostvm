@@ -12,6 +12,6 @@ description: >-
 2. При появлении меню Install HOSTVM Node подключите образ драйвера.
 3. Нажмите TAB и добавьте в конец строки: `inst.dd`, как на скриншоте ниже:
 
-<figure><img src="../../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
 4. Продолжите установку, нажав ENTER

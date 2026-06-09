@@ -47,11 +47,11 @@ backend tunnel-backend-guacamole
 
 Если в качестве балансировщика используется Yandex Application Load Balancer, необходимо в настройках группы бэкендов указать порт 10443, выбрать протокол HTTPS и включить привязку сессий, например по сессионным cookie. Режим балансировки при этом должен быть выбран MAGLEV\_HASH.&#x20;
 
-<figure><img src="../../../../.gitbook/assets/YALB_backend_SSL_Bridging.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/YALB_backend_SSL_Bridging.png" alt=""><figcaption></figcaption></figure>
 
 Также в конфигурации маршрута роутера необходимо отметить чекбокс WebSocket.
 
-<figure><img src="../../../../.gitbook/assets/YALB_Router_configuration_SSL_Termination.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/YALB_Router_configuration_SSL_Termination.png" alt=""><figcaption></figcaption></figure>
 
 ## SSL Termination
 
@@ -129,9 +129,9 @@ backend tunnel-backend-guacamole
 
 Если в качестве балансировщика используется Yandex Application Load Balancer, необходимо в настройках группы бэкендов указать порт 8080, выбрать протокол HTTP и включить привязку сессий, например по сессионным cookie. Режим балансировки при этом должен быть выбран MAGLEV\_HASH.&#x20;
 
-<figure><img src="../../../../.gitbook/assets/YALB_Backend_configuration_SSL_Termination.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/YALB_Backend_configuration_SSL_Termination.png" alt=""><figcaption></figcaption></figure>
 
 Также в конфигурации маршрута роутера необходимо отметить чекбокс WebSocket.
 
-<figure><img src="../../../../.gitbook/assets/YALB_Router_configuration_SSL_Termination.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/YALB_Router_configuration_SSL_Termination.png" alt=""><figcaption></figcaption></figure>
 

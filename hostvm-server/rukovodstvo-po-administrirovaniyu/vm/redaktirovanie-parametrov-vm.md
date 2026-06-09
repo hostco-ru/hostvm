@@ -2,7 +2,7 @@
 
 Чтобы навсегда изменить настройки ВМ, перейдите на вкладку Virtual Machines портала администрирования, выберите машину для изменения и нажмите кнопку Edit, либо щелкните по ВМ правой кнопкой мыши и выберите в меню пункт Edit. Откроется диалоговое окно Edit Virtual Machine.
 
-<figure><img src="../../../.gitbook/assets/29.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/29.png" alt=""><figcaption></figcaption></figure>
 
 Диалоговое окно Edit Virtual Machine практически идентично диалоговому окну New Virtual Machine, описанному в предыдущих разделах курса. Обратите внимание, что некоторые изменения требуют полного выключения ВМ и перезапуска.
 

@@ -6,20 +6,20 @@ HOSTVM Manager поддерживает перемещение образов В
 2. Отобразится окно Storage Domain maintenance c запросом подтверждения о переводе домена данных в режим обслуживания. Нажмите ОК;
 3. Когда значение поля Domain status in Data Center для исходного центра данных изменится на Maintenance, нажмите Detach, чтобы отсоединить домен данных от исходного центра данных;
 
-<figure><img src="../../../../.gitbook/assets/33.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/33.png" alt=""><figcaption></figcaption></figure>
 
 4. Откроется окно с заголовком Detach Storage. Нажмите OK, чтобы отсоединить домен данных от исходного дата-центра;
 5. После отсоединения исходный дата-центр больше не будет отображен на вкладке Data Center в разделе сведений о конфигурации домена данных. На этой же вкладке нажмите кнопку Attach;
 6. Откроется окно Attach to Data Center. Отметьте нужный дата-центр. Нажмите OK, чтобы присоединить домен данных к целевому дата-центру;
 
-<figure><img src="../../../../.gitbook/assets/34.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/34.png" alt=""><figcaption></figcaption></figure>
 
 7. В разделе сведений о конфигурации домена данных перейдите на вкладку VM Import. Эта вкладка содержит список образов ВМ, хранящихся в домене данных. Выберите ВМ и нажмите Импорт;
 
-<figure><img src="../../../../.gitbook/assets/35.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/35.png" alt=""><figcaption></figcaption></figure>
 
 8. Откроется окно Import Virtual Machine(s). Выберите кластер целевого дата-центра. Нажмите OK, чтобы импортировать ВМ;
 
-<figure><img src="../../../../.gitbook/assets/36.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/36.png" alt=""><figcaption></figcaption></figure>
 
 9. Щелкните Compute навигационной панели слева и перейдите на вкладку Virtual Machines. Убедитесь, что импортированная ВМ отображается в списке, а ее статус Down.

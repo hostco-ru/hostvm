@@ -8,5 +8,5 @@
 Данная  ошибка связана с некорректным расположением .exe файла, для ее исправления укажите правильную рабочую директорию в настройках транспорта Linux Client/Custom parameters:\
 &#x20;`/shell-dir:"C:\Path\To"`
 
-<figure><img src="../../../../.gitbook/assets/image (110).png" alt=""><figcaption><p>Пример использования /shell-dir</p></figcaption></figure>
+<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/image (110).png" alt=""><figcaption><p>Пример использования /shell-dir</p></figcaption></figure>
 
