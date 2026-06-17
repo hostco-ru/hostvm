@@ -31,11 +31,15 @@ description: >-
 
 **Дополнительные:**
 
+<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/image%20(44).png" alt=""><figcaption></figcaption></figure>
+
 Одновременное создание(Creation Concurrency) - максимальное количество одновременно создаваемых виртуальных машин
 
 Одновременное удаление(Removal Concurrency) - максимальное количество одновременно удаляемых виртуальных машин
 
 Таймаут(Timeout) - Время на повторное подключение к OpenNebula в секундах
+
+<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/image%20(45).png" alt=""><figcaption></figcaption></figure>
 
 С помощью кнопки "Проверить" можно проверить, что конфигурация провайдера OpenNebula выполнено успешно.
 
@@ -51,15 +55,23 @@ description: >-
 
 Откройте настройки сервисов провайдера с помощью двойного щелчка или выбрав пункт "Подробно" в контекстном меню провайдера. Для добавления нового сервиса нажмите "Новый" и выберите "Действующие образы OpenNebula":
 
+<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/image%20(49).png" alt=""><figcaption></figcaption></figure>
+
 **Основные параметры:**
 
 * Имя - имя этого сервиса
 * Хранилище - хранилище виртуальных машин сервиса
+
+<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/image%20(47).png" alt=""><figcaption></figcaption></figure>
 
 **Параметры ВМ:**
 
 * Базовый шаблон - шаблон для развертывания виртуальных рабочих столов
 * Имена машин - шаблон имени, присваемого виртуальным машинам
 * Длина имени - длина числового суффикса, добавляемого к именам машин
+
+
+
+<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/image%20(48).png" alt=""><figcaption></figcaption></figure>
 
 Для завершения настройки сервиса нажмите `Сохранить`
