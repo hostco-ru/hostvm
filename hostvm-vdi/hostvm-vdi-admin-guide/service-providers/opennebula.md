@@ -1,7 +1,8 @@
 ---
 description: >-
   В данном разделе описывается способ подключения и настройки сервис-провайдера 
-  OpenNebula
+  OpenNebula. Данный провайдер также позволяет управлять системами виртуализации
+  на ее основе - Горизон-ВС и ПК Брест.
 ---
 
 # Провайдер OpenNebula
@@ -20,15 +21,13 @@ description: >-
 
 Хост(Host) - имя или IP-адрес хоста OpenNebula;
 
-Порт(Port) - порт подключения к  хосту OpenNebula;
+Порт(Port) - порт подключения к хосту OpenNebula;
 
 Использовать SSL - если включен данный параметр, то сервис-провайдер не будет работать без предоставления сервером ssl
 
 Имя пользователя(username) - Имя пользователя, обладающего правами администратора в OpenNebula
 
 Пароль(passwd) - пароль пользователя
-
-<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/image (44).png" alt=""><figcaption></figcaption></figure>
 
 **Дополнительные:**
 
@@ -37,8 +36,6 @@ description: >-
 Одновременное удаление(Removal Concurrency) - максимальное количество одновременно удаляемых виртуальных машин
 
 Таймаут(Timeout) - Время на повторное подключение к OpenNebula в секундах
-
-<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/image (45).png" alt=""><figcaption></figcaption></figure>
 
 С помощью кнопки "Проверить" можно проверить, что конфигурация провайдера OpenNebula выполнено успешно.
 
@@ -54,14 +51,10 @@ description: >-
 
 Откройте настройки сервисов провайдера с помощью двойного щелчка или выбрав пункт "Подробно" в контекстном меню провайдера. Для добавления нового сервиса нажмите "Новый" и выберите "Действующие образы OpenNebula":
 
-<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/image (49).png" alt=""><figcaption></figcaption></figure>
-
 **Основные параметры:**
 
 * Имя - имя этого сервиса
 * Хранилище - хранилище виртуальных машин сервиса
-
-<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/image (47).png" alt=""><figcaption></figcaption></figure>
 
 **Параметры ВМ:**
 
@@ -69,7 +62,4 @@ description: >-
 * Имена машин - шаблон имени, присваемого виртуальным машинам
 * Длина имени - длина числового суффикса, добавляемого к именам машин
 
-<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/image (48).png" alt=""><figcaption></figcaption></figure>
-
 Для завершения настройки сервиса нажмите `Сохранить`
-
