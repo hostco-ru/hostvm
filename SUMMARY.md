@@ -253,6 +253,7 @@
     * [Образы не загружаются в домен](hostvm-server/rukovodstvo-po-administrirovaniyu/reshenie-tipovykh-problem/obrazy-ne-zagruzhayutsya-v-domen.md)
     * [Внезапная перезагрузка ВМ с сообщением "Lost connection with qemu process"](hostvm-server/rukovodstvo-po-administrirovaniyu/reshenie-tipovykh-problem/vnezapnaya-perezagruzka-vm-s-soobsheniem-lost-connection-with-qemu-process.md)
     * [Ошибка при добавлении хоста](hostvm-server/rukovodstvo-po-administrirovaniyu/reshenie-tipovykh-problem/oshibka-pri-dobavlenii-khosta.md)
+    * [Диагностика подключения Active Directory](hostvm-server/rukovodstvo-po-administrirovaniyu/reshenie-tipovykh-problem/diagnostika-podklyucheniya-active-directory.md)
 * [Заметки к выпускам](hostvm-server/zametki-k-vypuskam/README.md)
   * [Жизненный цикл версий](hostvm-server/zametki-k-vypuskam/zhiznennyi-cikl-versii.md)
   * [Изменения и исправления](hostvm-server/zametki-k-vypuskam/izmeneniya-i-ispravleniya/README.md)
