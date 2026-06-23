@@ -56,6 +56,10 @@ Configuration file '/etc/tomcat9/server.xml'
 
 Для активации портала запустите мастер настройки, выполнив команду `hostvm-vdi-gui-setup`
 
+{% hint style="info" %}
+Если при запуске команды `hostvm-vdi-gui-setup` отображается ошибка `command not found`, убедитесь, что вы используете полное окружение администратора, при котором каталог `/usr/sbin` присутствует в переменной `PATH`.
+{% endhint %}
+
 Задайте запрашиваемые мастером параметры конфигурации:
 
 * IP адрес или FQDN брокера HOSTVM VDI
@@ -77,4 +81,3 @@ Configuration file '/etc/tomcat9/server.xml'
 Для настройки SSL сертификатов портала воспользуйтесь соответствующим разделом руководства по установке брокера HOSTVM VDI:
 
 [Настройка SSL сертификатов](../hostvm-vdi-ova-install/#ssl-certificates)
-
