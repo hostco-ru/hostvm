@@ -389,6 +389,7 @@
       * [Настройка Yandex ALB при проблемах отрисовки приложений](hostvm-vdi/troubleshooting-guide/faq/remoteapp/yandex-alb-remoteapp-config.md)
     * [SSL инспекция](hostvm-vdi/troubleshooting-guide/faq/ssl-inspection.md)
     * [Подключение USB-накопителей в сеанс RDP](hostvm-vdi/troubleshooting-guide/faq/redirect-drives-in-rdp-session.md)
+    * [Подключение к локальной RDP сессии](hostvm-vdi/troubleshooting-guide/faq/connect-to-local-rdp-session.md)
 * [Заметки к выпускам](hostvm-vdi/release-notes/README.md)
   * [Жизненный цикл версий](hostvm-vdi/release-notes/life-cycle.md)
   * [История изменений](hostvm-vdi/release-notes/changelog/README.md)
