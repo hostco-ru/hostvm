@@ -41,7 +41,7 @@ layout:
 * `udsactor-unmanaged-3.6.0-1.noarch.rpm`: агент для управления сеансами машин на основе Red Hat, а также РЕД ОС, CentOS, Fedora, Suse и т.д. (требует python версии не ниже 3.6);
 * `udsactor-unmanaged-3.6.0-alt1.noarch.rpm`: агент для управления сеансами машин на основе ALT Linux (требует python версии не ниже 3.6);
 * `udsactor-rds_3.6.0_all.deb`: агент для машин Linux на основе Debian, а также Ubuntu, Xubuntu и т.д. (требует python версии не ниже 3.6), предоставляющих доступ к удаленным рабочим столам и приложениям. Используется только с сервис-провайдером RDS;
-* `udsactor-rds-3.6.0-1.noarch.rpm`: агент для машин Linux на основе Red Hat, а также РЕД ОС,  CentOS, Fedora, Suse и т.д. (требует python версии не ниже 3.6), предоставляющих доступ к удаленным рабочим столам и приложениям. Используется только с сервис-провайдером RDS;
+* `udsactor-rds-3.6.0-1.noarch.rpm`: агент для машин Linux на основе Red Hat, а также РЕД ОС, CentOS, Fedora, Suse и т.д. (требует python версии не ниже 3.6), предоставляющих доступ к удаленным рабочим столам и приложениям. Используется только с сервис-провайдером RDS;
 * `udsactor-rds-3.6.0-alt1.noarch.rpm`: агент для машин Linux на основе ALT Linux (требует python версии не ниже 3.6), предоставляющих доступ к удаленным рабочим столам и приложениям. Используется только с сервис-провайдером RDS;
 * `UDSActorSetup-3.6.0.exe`: агент для базового образа машин Windows;
 * `UDSActorUnmanagedSetup-3.6.0.exe`: агент для управления сеансами машин Windows, подключенных через сервис-провайдер «Static IP Machines Provider»;
@@ -49,6 +49,3 @@ layout:
 * `udsactor-2.2.0_legacy.deb`: legacy версия агента для базового образа машин Linux на основе Debian, а также Ubuntu, Xubuntu и т.д., где невозможно использовать Python версии 3 (требует python версии 2.7);
 * `udsactor-legacy-2.2.1-1.noarch.rpm`: legacy версия агента для базового образа машин Linux на основе Red Hat, а также CentOS, Fedora и т.д., где невозможно использовать Python версии 3 (требует python версии 2.7);
 * `udsactor-opensuse-legacy-2.2.1-1.noarch.rpm`: legacy версия агента для базового образа машин Linux на основе OpenSuse, где невозможно использовать Python версии 3 (требует python версии 2.7);
-
-<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/Download all actors.png" alt=""><figcaption></figcaption></figure>
-

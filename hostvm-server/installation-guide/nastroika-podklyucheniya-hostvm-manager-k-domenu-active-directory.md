@@ -139,5 +139,5 @@ systemctl restart ovirt-engine
 11. Созданный профиль теперь доступен на портале администрирования и на страницах входа. Чтобы предоставить учетным записям пользователей на сервере LDAP соответствующие разрешения, например, для входа в VM Portal, необходимо дополнительно присвоить права пользователю через портал администрирования.
 
 {% hint style="info" %}
-В случае возникновения проблем обратитесь к [Статье по диагностике подключения AD](../../rukovodstvo-po-administrirovaniyu/reshenie-tipovykh-problem/diagnostika-podklyucheniya-active-directory.md)
+В случае возникновения проблем обратитесь к [Статье по диагностике подключения AD](../rukovodstvo-po-administrirovaniyu/reshenie-tipovykh-problem/diagnostika-podklyucheniya-active-directory.md)
 {% endhint %}

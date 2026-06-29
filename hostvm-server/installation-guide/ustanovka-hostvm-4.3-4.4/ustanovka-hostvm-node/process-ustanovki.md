@@ -2,7 +2,7 @@
 
 При загрузке откроется меню выбора действия. За 60 секунд выберите _Install HOSTVM Node 4.4.8_. Если за 60 секунд после загрузки не выбрать данный пункт, то начинается тестирование ресурсов сервера и только после этого начнется установка. Остановить тестирование ресурсов сервера возможно через нажатие клавиши _esc_.
 
-![](<https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/boot menu.png>)
+![](https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/boot%20menu.png)
 
 В случае если загрузка установщика зависнет, то нужно повторно загрузиться с установочного диска и в стартовом меню действий выбрать пункт «Troubleshooting», затем “Install HOSTVM Node 4.4.8 in basic graphics mode” для запуска установки с с использованием псевдографического интерфейса.
 
@@ -12,11 +12,11 @@ _Выбранный язык не влияет на язык внутри сам
 
 Скриншоты инструкции выполнены в интерфейсе с английским языком. Нажмите _Continue_.
 
-![](<https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/welcome (1).png>)
+![](https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/welcome%20\(1\).png)
 
 Далее автоматически открывается меню настроек.
 
-![](<https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/image (43).png>)
+![](https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/image%20\(43\).png)
 
 **ВАЖНО!: пароль root по умолчанию: HostvmNode**
 
@@ -26,11 +26,11 @@ _Выбранный язык не влияет на язык внутри сам
 
 **ВАЖНО!: Для корректной установки, необходимо, чтобы серверу, на этапе установки, был задан корректный IPv4 адрес, который имеет доступ в интернет (для доступа к репозиториям). Также должен быть указан корректный DNS сервер, и необходимо задать корректное имя хоста, отличное от localhost.localdomain, во избежание возможных ошибок во время установки HOSTVM Manager.**
 
-&#x20;Перейдите в _NETWORK & HOST NAME_.
+Перейдите в _NETWORK & HOST NAME_.
 
-![](<https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/network menu.png>)
+![](https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/network%20menu.png)
 
-Выберите интерфейс, нажмите кнопку _Configure..._. В открывшемся окне перейдите на вкладку  General и отметьте пункт "Connect automatically with priority":
+Выберите интерфейс, нажмите кнопку _Configure..._. В открывшемся окне перейдите на вкладку General и отметьте пункт "Connect automatically with priority":
 
 ![](https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/network_general.png)
 
@@ -46,31 +46,31 @@ _Выбранный язык не влияет на язык внутри сам
 
 **Примечание:** Если в списке доступных устройств не отображаются диски - убедитесь, что данные диски не содержат разделов с неподдерживаемыми Centos 8 файловыми системами.
 
-![](<https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/installation destination.png>)
+![](https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/installation%20destination.png)
 
 После выбора места установки автоматически открывается следующее меню.
 
-![](<https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/manual partitioning_0.png>)
+![](https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/manual%20partitioning_0.png)
 
 Если диск уже использовался (имел таблицу разделов), то удалите их, как показано ниже.
 
-![](<https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/manual partitioning_3.png>)
+![](https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/manual%20partitioning_3.png)
 
-![](<https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/manual partitioning_4.png>)
+![](https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/manual%20partitioning_4.png)
 
 Когда на диске не останется существующих разделов Из выпадающего меню выберите _LVM Thin Provisioning._ Нажмите _Click here to create them automatically_.
 
-![](<https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/manual partitioning.png>)
+![](https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/manual%20partitioning.png)
 
 Вы увидите, что на диске появилась предварительная разметка:
 
-![](<https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/manual partitioning_1.png>)
+![](https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/manual%20partitioning_1.png)
 
 Удалите все пункты кроме /boot и /swap, как показано ниже.
 
-![](https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/1-—-копия.png)
+![](https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/1-%E2%80%94-%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F.png)
 
-Для разворачивания виртуальной машины HOSTVM Engine необходим выделенный раздел для домена хранения, размер раздела необходимо задать согласно [системным требованиям](../../requirements.md#sistemnye-trebovaniya-dlya-virtualnoi-mashiny-engine-upravlenie-sistemoi-virtualizacii). \
+Для разворачивания виртуальной машины HOSTVM Engine необходим выделенный раздел для домена хранения, размер раздела необходимо задать согласно [системным требованиям](../../requirements.md#sistemnye-trebovaniya-dlya-virtualnoi-mashiny-engine-upravlenie-sistemoi-virtualizacii).\
 Если необходимо, измените поле _Desired Capacity_ раздела _/_, чтобы изменить размер системного раздела. Не менее 16GB необходимо для раздела /var.
 
 **Примечание:** В случае, если установка производится в системе с включенным режимом UEFI, при разметке необходимо задать дополнительную точку монтирования вида /boot/efi размером в 1 GB.
@@ -79,7 +79,7 @@ _Выбранный язык не влияет на язык внутри сам
 
 **Примечание:** В случае, если далее будет производиться [ustanovka-hostvm-manager-na-gluster.md](../ustanovka-hostvm-manager-4.4.8-gui/ustanovka-hostvm-manager-na-gluster.md "mention"), то создавать раздел _/data_ не нужно.
 
-![](<https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/3_1 (1).png>)
+![](https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/3_1%20\(1\).png)
 
 Нажмите _Done_.
 
@@ -103,11 +103,9 @@ _Выбранный язык не влияет на язык внутри сам
 
 **ВАЖНО!: пароль root по умолчанию: HostvmNode**
 
-<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/image (1) (2) (1).png" alt=""><figcaption></figcaption></figure>
-
 Если на этом этапе возникнет ошибка с postinstall скриптом, то это означает, что:
 
-![](<https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/image (33) (1).png>)
+![](https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/image%20\(33\)%20\(1\).png)
 
 1\) Сервер не имеет доступа в интернет и не смог скачать установочные скрипты из репозитория
 

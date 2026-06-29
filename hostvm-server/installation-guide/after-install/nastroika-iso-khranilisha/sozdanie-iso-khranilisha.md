@@ -4,10 +4,6 @@
 
 Перейдите в `Storage -> Domains -> New Domain`. Выберете `Domain Function`, `Storage Type` как показано на картинке ниже. В поле `Export Part` введите адрес вашей nfs-share в формате `ip-адрес:/путь/до/папки` . Нажмите `OK`.
 
-<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/Screenshot_1 (1).png" alt=""><figcaption></figcaption></figure>
-
 <figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/Screenshot_2.png" alt=""><figcaption></figcaption></figure>
 
 Убедитесь, что ISO-домен активен.
-
-<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/post-install-iso-stor-3 (1).jpg" alt=""><figcaption></figcaption></figure>

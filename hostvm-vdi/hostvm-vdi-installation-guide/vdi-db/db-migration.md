@@ -4,19 +4,19 @@
 
 ### Предварительные требования:
 
-1\)    Сервер с MariaDB
+1\) Сервер с MariaDB
 
-2\)    В MariaDB создана БД - udsdb
+2\) В MariaDB создана БД - udsdb
 
-3\)    Если сервер внешний - на нем открыт доступ к БД по сети
+3\) Если сервер внешний - на нем открыт доступ к БД по сети
 
-4\)    Создан пользователь udsdbadm с паролем
+4\) Создан пользователь udsdbadm с паролем
 
 {% hint style="warning" %}
 **Все шаги необходимо выполнять от пользователя с правами root.**
 {% endhint %}
 
-Если вы хотите произвести миграцию с MariaDB на PostgreSQL,  для подготовки БД PostgreSQL воспользуйтесь инструкцией [Настройка СУБД PostgreSQL](postgresql.md).
+Если вы хотите произвести миграцию с MariaDB на PostgreSQL, для подготовки БД PostgreSQL воспользуйтесь инструкцией [Настройка СУБД PostgreSQL](postgresql.md).
 
 ### Подготовка к миграции БД
 
@@ -98,8 +98,6 @@ DATABASES = {
 ```
 
 Ниже скриншот конфигурации, когда обе БД на одном брокере:
-
-<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/Скриншот конфигурации, когда обе БД на одном брокере (1).png" alt=""><figcaption></figcaption></figure>
 
 Далее перейдите в директорию /var/server командой:
 
@@ -204,8 +202,6 @@ use udsdb;
 
 Выполните полученный ранее код в БД:
 
-<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/Выполните полученный ранее код в БД.png" alt=""><figcaption></figcaption></figure>
-
 Выполните выход из терминального клиента mysql:
 
 ```
@@ -227,8 +223,6 @@ python3 manage.py loaddata dump.json --database=mysql
 Необходимо переключить HOSTVM VDI Broker с БД PostgreSQL на MariaDB.
 
 В файле /var/server/server/settings.py необходимо удалить конфигурацию default в разделе DATABASES и заменить mysql на default, чтобы получилось, как на скриншоте:
-
-<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/Необходимо переключить Django с БД postgreSQL на mariadb.png" alt=""><figcaption></figcaption></figure>
 
 Теперь необходимо перезапустить службы брокера командой:
 

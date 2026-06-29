@@ -2,7 +2,7 @@
 
 Для того, чтобы подготовить второй и последующие серверы к работе на них необходимо установить HOSTVM Node. Инструкция по установке приведена на странице [Установка HOSTVM Node](../ustanovka-hostvm-4.5/ustanovka-hostvm-node/)
 
-После установки ОС, подключитесь к серверу с помощью [PuTTY](https://www.putty.org) под пользователем root.&#x20;
+После установки ОС, подключитесь к серверу с помощью [PuTTY](https://www.putty.org) под пользователем root.
 
 Убедитесь, что сервер "видит" диск, на котором размещены виртуальные машины. Командой `multipath -ll` выведете доступные по FC диски. Из примера ниже видим, что диск с guid `3600508b400099f8e0002e000036a0000`, который использовался для установки первой ноды, подключен.
 
@@ -58,19 +58,13 @@ rtt min/avg/max/mdev = 0.200/0.224/0.250/0.025 ms
 
 Откройте панель управления, перейдите в `Compute -> Hosts`, нажмите кнопку `New`
 
-<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/Screenshot_4 (4).png" alt=""><figcaption></figcaption></figure>
-
-В открывшемся окне заполните поля `Name`, `Hostname`(достаточно указать ip-адрес), `Password` от учетной записи root.&#x20;
-
-<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/post-install-host-2 (1).jpg" alt=""><figcaption></figcaption></figure>
+В открывшемся окне заполните поля `Name`, `Hostname`(достаточно указать ip-адрес), `Password` от учетной записи root.
 
 Чтобы добавить возможность запуска виртуальной машины Hosted engine, при добавлении хоста на вкладке Hosted Engine выберите Deploy из выпадающего списка:
 
-<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/he-deploy (1).png" alt=""><figcaption></figcaption></figure>
-
 Для обеспечения высокой доступности рекомендуется иметь хотя бы 2 таких хоста. Обычный хост виртуализации не имеет возможности запускать виртуальную машину Hosted engine.
 
-Если в кластере, помимо ovirtmgmt, есть ещё обязательные логические сети (Required Network), необходимо присоединить такие логические сети к физическому интерфейсу хоста:&#x20;
+Если в кластере, помимо ovirtmgmt, есть ещё обязательные логические сети (Required Network), необходимо присоединить такие логические сети к физическому интерфейсу хоста:
 
 1. Перейдите в раздел Compute->Hosts;
 2. Нажмите на ссылку в имени хоста, чтобы открыть его свойства;
@@ -78,15 +72,9 @@ rtt min/avg/max/mdev = 0.200/0.224/0.250/0.025 ms
 4. Нажмите кнопку Setup Host Networks;
 5. Присоедините логическую сеть к физическому интерфейсу хоста, перетащив ее в область Assigned Logical Networks рядом с интерфейсом;
 
-<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/image (92).png" alt=""><figcaption></figcaption></figure>
-
 После завершения установки и настройки, оба хоста будут доступны для работы:
 
-<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/post-install-host-3 (1).jpg" alt=""><figcaption></figcaption></figure>
-
 Если же на этом этапе возникла ошибка, то необходимо зайти в параметры хоста, нажав на его имя, перейти в вкладку Events и посмотреть, на каком этапе прервалась установка ПО виртуализации на хост.
-
-<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/image (4) (2).png" alt=""><figcaption></figcaption></figure>
 
 Также, более подробно причину ошибки можно рассмотреть в логах хоста по пути /var/log/ovirt-hosted-engine-setup с актуальным временем создания.
 

@@ -1,8 +1,8 @@
-# Установка HOSTVM XRM
+# Установка HOSTVM XRM Director
 
 ### Импорт виртуальной машины <a href="#import-vm" id="import-vm"></a>
 
-* Скачайте файл `HOSTVM XRM/Beta/<номер версии>/hostvm-xrm<номер версии>.tar.bz2` из каталога загрузок HOSTVM.
+* Скачайте файл `HOSTVM XRM/VDI/Stable/<номер версии>/hostvm-xrm<номер версии>.tar.bz2` из каталога загрузок HOSTVM.
 * Загрузите данный файл на один из хостов виртуализации HOSTVM с помощью scp или других средств.
 * Распакуйте командой: `tar xjvf hostvm-xrm<номер версии>.tar.bz2`
 * Откройте портал администрирования платформы виртуализации HOSTVM, перейдите в раздел **Compute - Virtual Machines.**
@@ -44,20 +44,23 @@ reboot
 
 ### Доступ к веб-интерфейсу управления <a href="#accessing-web-interface" id="accessing-web-interface"></a>
 
-* Откройте веб-интерфейс HOSTVM XRM через браузер по адресу `https://<IP-адрес или имя машины>`, выполните вход в систему с помощью пары логин/пароль:  _xrmadmin/xrmadmin_
-* Выполните настройку системы согласно [Начальной настройке](../admin-guide/xrm-ovirt-module/initial-setup.md) .
+* Откройте веб-интерфейс HOSTVM XRM через браузер по адресу `https://<IP-адрес или имя машины>`, выполните вход в систему с помощью пары логин/пароль:  _admin/admin_
+
+<figure><img src="../../../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
+
+* Выполните настройку системы согласно [Начальной настройке](../admin-guide/nachalnaya-nastroika.md) .
 
 ### Настройка SSL сертификатов <a href="#ssl-certificates" id="ssl-certificates"></a>
 
-По умолчанию брокер HOSTVM XRM поставляется с самоподписанным сертификатом, его использование предполагается для тестовых сред, в остальных случаях рекомендуется установка действительных сертификатов, используемых в конечной инфраструктуре.
+По умолчанию брокер HOSTVM XRM Director поставляется с самоподписанным сертификатом, его использование предполагается для тестовых сред, в остальных случаях рекомендуется установка действительных сертификатов, используемых в конечной инфраструктуре.
 
 Для замены сертификатов воспользуйтесь данной инструкцией.
 
-Скопируйте файлы сертификата  в директорию `/etc/xrm/certs`.
+Скопируйте файлы сертификата  в директорию `/etc/ssl/xrm/`.
 
-Отредактируйте файл с настройками SSL `/etc/xrm/nginx/st2-http.template`, в директивах `ssl_certificate` и `ssl_certificate_key` укажите новые имена файлов сертификата:
+Отредактируйте файл с настройками SSL `/etc/nginx/sites-available/xrm`, в директивах `ssl_certificate` и `ssl_certificate_key` укажите новые имена файлов сертификата:
 
 ```
-ssl_certificate           /etc/ssl/st2/st2.crt;
-ssl_certificate_key       /etc/ssl/st2/st2.key;
+ssl_certificate           /etc/ssl/xrm/CA.pem;
+ssl_certificate_key       /etc/ssl/xrm/CA.key;
 ```

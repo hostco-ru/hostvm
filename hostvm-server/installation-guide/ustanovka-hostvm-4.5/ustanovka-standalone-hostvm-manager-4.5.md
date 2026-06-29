@@ -2,7 +2,7 @@
 
 В режиме Standalone установка HOSTVM Manager производится на отдельно выделенную физическую машину, в то время как в режиме Self-hosted на физической машине (HOSTVM Node) создается виртуальная машина.
 
-#### &#x20;Предварительные шаги
+#### Предварительные шаги
 
 1. Загрузить скрипт engine-setup45.sh из директории HOSTVM/Misc [Личного Кабинета](https://lk.pvhostvm.ru/) и скопировать его на ноду (например, с помощью Winscp)
 2. Выдать права на исполнение:
@@ -26,8 +26,6 @@
 2. Custom – установка с собственными параметрами.
 
 Параметры по умолчанию:
-
-<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/image (67).png" alt=""><figcaption></figcaption></figure>
 
 После выбора параметров нужно будет ввести пароль для доступа к HOSTVM Manager.
 

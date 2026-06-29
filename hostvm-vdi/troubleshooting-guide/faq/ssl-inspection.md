@@ -5,8 +5,5 @@
 На текущий момент протестирована интеграция с fidler в следующей конфигурации:
 
 1. На клиенте в качестве прокси указывается fidler, на котором сконфигурирован Decrypt HTTPS трафика (Tools -> Options -> HTTPS).
-
-<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/image (11) (1).png" alt=""><figcaption></figcaption></figure>
-
 2. Портал пользователя сконфигурирован на HOSTVM VDI Tunneler и выставлен во внешнюю сеть. HOSTVM VDI Broker, база данных и конечный сервис находятся во внутренней сети.
 3. При запросе у пользователя открывается в браузере HTML5 сервис с подменённым сертификатом.

@@ -18,7 +18,7 @@ hosted-engine --set-maintenance --mode=global
 hosted-engine --vm-shutdown
 ```
 
-Запустите ВМ менеджера виртуализации в режиме паузы&#x20;
+Запустите ВМ менеджера виртуализации в режиме паузы
 
 ```
 hosted-engine --vm-start-paused
@@ -43,14 +43,14 @@ You can now connect the hosted-engine VM with VNC at 10.1.140.100:5902
 virsh -c qemu:///system?authfile=/etc/ovirt-hosted-engine/virsh_auth.conf resume HostedEngine
 ```
 
-Быстро вернитесь в интерфейс клиента VNC и выбрав нужное ядро нажать клавишу `'e'`. Вы будете переключены на экран, где необходимо  отредактировать скрипт загрузчика grub.
+Быстро вернитесь в интерфейс клиента VNC и выбрав нужное ядро нажать клавишу `'e'`. Вы будете переключены на экран, где необходимо отредактировать скрипт загрузчика grub.
 
-В строке, начинающейся с `linux` или `linux16`, в зависимости от версии, удалите все значения для console, например:&#x20;
+В строке, начинающейся с `linux` или `linux16`, в зависимости от версии, удалите все значения для console, например:
 
 <pre><code><strong>console=tty0 &#x26; console=ttyS0,115200n8
 </strong></code></pre>
 
-В конце этой же строки добавьте&#x20;
+В конце этой же строки добавьте
 
 ```
 rd.break 
@@ -58,10 +58,6 @@ rd.break
 
 \
 Пример внесения изменений:
-
-<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/image (9) (1) (1).png" alt=""><figcaption><p>Скрипт до изменений</p></figcaption></figure>
-
-<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Скрипт с внесенными изменениями</p></figcaption></figure>
 
 Запустите измененный скрипт загрузчика комбинаций клавиш `Ctrl+X`
 
@@ -71,7 +67,7 @@ rd.break
 switch_root:/#
 ```
 
-Перемонтируйте раздел root командой&#x20;
+Перемонтируйте раздел root командой
 
 ```
 mount -o remount rw /sysroot
@@ -88,13 +84,13 @@ chroot /sysroot
 <pre><code><strong>passwd
 </strong></code></pre>
 
-Передайте сигнал об изменениях для SELinux&#x20;
+Передайте сигнал об изменениях для SELinux
 
 ```
 touch /.autorelabel
 ```
 
-Завершите внесение изменений&#x20;
+Завершите внесение изменений
 
 ```
 exit
@@ -104,7 +100,7 @@ exit
 reboot
 ```
 
-Запустите ВМ менеджера виртуализации&#x20;
+Запустите ВМ менеджера виртуализации
 
 ```
 hosted-engine --vm-start

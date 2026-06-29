@@ -6,8 +6,6 @@ description: >-
 
 # Управление параметрами клиента FreeRDP
 
-
-
 {% hint style="info" %}
 Информация ниже основана на логике работы клиента:\
 Если по пути _**/usr/bin/udsrdp**_ находится исполняемый файл, то этот путь считается более приоритетным по сравнению со стандартным _**/usr/bin/xfreerdp**_. Таким образом, при запросе сервиса параметры от брокера будут переданы именно _**udsrdp**_.
@@ -21,8 +19,6 @@ description: >-
 Для реализации необходимо наличие установленной утилиты zenity в окружении клиента.
 {% endhint %}
 
-
-
 Для этого необходимо разместить файл по пути _**/usr/bin/udsrdp**_ со следующим содержимы&#x43C;_**:**_
 
 <pre><code><strong>#!/bin/bash
@@ -34,8 +30,6 @@ done
 
 /usr/bin/xfreerdp ${catchedArgs} /p:$(zenity --entry --title="Password input" --text="Введите пароль:" --hide-text)
 </code></pre>
-
-<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/image (34) (2).png" alt=""><figcaption></figcaption></figure>
 
 ### Исключение параметров для работы с xfreerdp3
 

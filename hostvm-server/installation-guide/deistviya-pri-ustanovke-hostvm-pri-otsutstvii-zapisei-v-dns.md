@@ -4,7 +4,7 @@
 
 Перейдите на вкладку Terminal
 
-![](<https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/image (38).png>)
+![](https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/image%20\(38\).png)
 
 Откройте файл /etc/hosts:
 
@@ -12,8 +12,6 @@
 
 \
 и добавьте в конец файла записи вида:
-
-<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/image (54).png" alt=""><figcaption></figcaption></figure>
 
 10.1.99.61 — IP-адрес ноды
 
