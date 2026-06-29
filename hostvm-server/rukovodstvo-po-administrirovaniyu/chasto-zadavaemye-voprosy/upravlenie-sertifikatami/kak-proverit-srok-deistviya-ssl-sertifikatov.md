@@ -49,7 +49,7 @@ openssl x509 -noout -enddate -in /etc/pki/libvirt/clientcert.pem
 ```
 
 ```bash
-openssl x509 --noout -enddate -in /etc/pki/vdsm/libvirt-migrate/server-cert.pem
+openssl x509 -noout -enddate -in /etc/pki/vdsm/libvirt-migrate/server-cert.pem
 ```
 
 **Результат:** команды отобразят даты окончания действия сертификатов.
