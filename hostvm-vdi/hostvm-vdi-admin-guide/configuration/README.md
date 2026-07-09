@@ -51,6 +51,8 @@ layout:
 
 В `Панели управления` откройте раздел `Инструменты / Конфигурация`, перейдите на вкладку `Custom`.
 
+<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/Скриншост страницы Конфигурации UDS.png" alt=""><figcaption></figcaption></figure>
+
 В поле **«CSS»** введите следующий код, заменив текст в кавычках на ваш:
 
 ```
@@ -74,3 +76,5 @@ layout:
 * остальные свойства (`display`, `padding`, `background-color` и т.д.) отвечают за внешний вид блока. Вы можете настроить их по своему усмотрению (изменить цвет, отступы, шрифт).
 
 Нажмите кнопку **«Сохранить»**, чтобы применить изменения.
+
+<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/Скриншост страницы сервиса с сообщенем.png" alt=""><figcaption></figcaption></figure>

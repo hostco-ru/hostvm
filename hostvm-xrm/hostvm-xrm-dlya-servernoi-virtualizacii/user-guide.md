@@ -2,6 +2,8 @@
 
 ***
 
+<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/xrm_amin (2).gif" alt=""><figcaption></figcaption></figure>
+
 **X Recovery Manager (XRM)** - это платформа для автоматизации аварийного восстановления виртуализованных сервисов после сбоя, предназначенная для автоматизации следующих операций:
 
 * Создание плана восстановления основной и резервной площадки для аварийного восстановления (failover) и возврата (failback)
@@ -36,6 +38,8 @@ xrmadmin
 **Главная страница X Recovery Manager**
 
 После успешного входа вы будете перенаправлены на главную страницу, где вы увидите информацию о статусе системы, выполненных задачах и других доступных функциях.
+
+<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/Главная страница X Recovery Manager.png" alt=""><figcaption><p>Главная страница X Recovery Manager</p></figcaption></figure>
 
 **Навигация XRM**
 

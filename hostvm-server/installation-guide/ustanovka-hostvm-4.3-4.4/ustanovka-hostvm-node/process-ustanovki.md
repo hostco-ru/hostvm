@@ -103,6 +103,8 @@ _Выбранный язык не влияет на язык внутри сам
 
 **ВАЖНО!: пароль root по умолчанию: HostvmNode**
 
+<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/image (1) (2) (1).png" alt=""><figcaption></figcaption></figure>
+
 Если на этом этапе возникнет ошибка с postinstall скриптом, то это означает, что:
 
 ![](https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/image%20\(33\)%20\(1\).png)

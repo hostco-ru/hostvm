@@ -10,4 +10,9 @@ description: >-
 
 1. Зайдите на административный портал HOSTVM Manager, перейдите во вкладку **Network => Networks**.
 2. Кликните на сеть, для которой хотите изменить параметры, перейдите на вкладку **vNIC Profiles** и нажмите кнопку **Edit**.
+
+<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+
 3. В выпадающем меню **Network Filter** измените значение на _No Network Filter_.
+
+<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>

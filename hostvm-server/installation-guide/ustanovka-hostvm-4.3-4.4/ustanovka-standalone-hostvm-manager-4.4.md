@@ -18,6 +18,8 @@ vi /etc/yum.repos.d/repo.pvhostvm.ru.repo
 
 и добавить строку `module_hotfixes=1` для указанных на скриншоте репозиториев:
 
+<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+
 #### Установка Standalone HOSTVM Manager
 
 Запускаем скрипт:
@@ -34,6 +36,8 @@ vi /etc/yum.repos.d/repo.pvhostvm.ru.repo
 2. Custom – установка с собственными параметрами.
 
 Параметры по умолчанию:
+
+<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/image (67).png" alt=""><figcaption></figcaption></figure>
 
 После выбора параметров нужно будет ввести пароль для доступа к HOSTVM Manager.
 

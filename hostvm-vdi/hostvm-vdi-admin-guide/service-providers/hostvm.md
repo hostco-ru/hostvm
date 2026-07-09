@@ -6,6 +6,8 @@
 
 Для регистрации сервис-провайдера HOSTVM/РОСА/zVirt/РЕД Виртуализация необходимо зайти в раздел «Services», нажать «New» и выбрать тип провайдера «HOSTVM/ROSA/zVirt/RED Virtualization Platform Provider».
 
+<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/hostvm-rosa-zvirt-red platform provider.png" alt=""><figcaption></figcaption></figure>
+
 При создании провайдера должны быть настроены следующие параметры:
 
 **Основные:**
@@ -18,6 +20,8 @@
 {% hint style="warning" %}
 **Если поставщиком единого входа является Keycloak, то имя пользователя, имеющего доступ с правами администратора на менеджер виртуализации, указывается в формате user@ovirt@domain.**
 {% endhint %}
+
+<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/hostvm-rosa-zvirt-red config main.png" alt=""><figcaption></figcaption></figure>
 
 **Дополнительные:**
 
@@ -36,6 +40,8 @@
 
 Чтобы изменить какой-либо параметр в уже существующих сервис-провайдерах, необходимо выбрать его и нажать «Edit».
 
+<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/hostvm-rosa-zvirt-red edit.png" alt=""><figcaption></figcaption></figure>
+
 С помощью кнопки «Enter Maintenance Mode» можно приостановить все операции, запущенные платформой для данного сервис-провайдера.
 
 Рекомендуется поставить провайдер в режим обслуживания в случае потери связи или его остановки для обслуживания.
@@ -47,6 +53,8 @@
 После регистрации провайдера HOSTVM/РОСА/zVirt/РЕД Виртуализация, в котором будут созданы рабочие столы, необходимо создать базовые сервисы для генерации тонких клонов ВМ.
 
 Для этого следует открыть сервис-провайдер, в котором будет создан тонкий клон, с помощью двойного щелчка, либо выбором пункта “Detail” в контекстном меню провайдера:
+
+<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/hostvm-rosa-zvirt-red detail.png" alt=""><figcaption></figcaption></figure>
 
 Нажать «New HOSTVM/ROSA/zVirt/RED Virtualization Linked Clone» для создания нового базового сервиса. Минимальные параметры, которые необходимо настроить.
 

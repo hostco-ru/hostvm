@@ -64,7 +64,11 @@ engine-setup --otopi-environment="OVESETUP_CONFIG/keycloakEnable=bool:True" --of
 
     <figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/KC3.png" alt=""><figcaption></figcaption></figure>
 16. Переходим во вкладку Client Scopes и нажимаем Create:<br>
+
+    <figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/image (119).png" alt=""><figcaption></figcaption></figure>
 17. Задаем Name: ovirt-app-admin, остальные параметры оставить по умолчанию. Нажать Save:<br>
+
+    <figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/image (123).png" alt=""><figcaption></figcaption></figure>
 18. Повторяем шаги 16 и 17 для создания Client Scope:
 
     ovirt-app-api
@@ -93,7 +97,11 @@ engine-setup --otopi-environment="OVESETUP_CONFIG/keycloakEnable=bool:True" --of
     <figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/KC5.png" alt=""><figcaption></figcaption></figure>
 
     Задаем Client ID: ovirt-engine-internal, в качестве Root URL указываем https://FQDN управляющей машины. Нажимаем Save:
+
+    <figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/image (124).png" alt=""><figcaption></figcaption></figure>
 20. Общие настройки клиента выглядят следующим образом:<br>
+
+    <figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/image (120).png" alt=""><figcaption></figcaption></figure>
 21. Вносим изменения:
 
     Access type: confidential\
@@ -101,11 +109,17 @@ engine-setup --otopi-environment="OVESETUP_CONFIG/keycloakEnable=bool:True" --of
     Base URL: https://FQDN\
     Backchannel Logout Session Required: OFF\
     Нажимаем Save.
+
+    <figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/image (121).png" alt=""><figcaption></figcaption></figure>
 22. Переходим во вкладку Credential и сохраняем себе Secret, он понадобится вам при дальнейшей настройке.
 
     Secret: 5fb182da-34f0-411b-9f1b-78a332384219\
     <mark style="color:red;">**Обратите внимание! Ваш Secret будет отличаться от указанного в инструкции!**</mark>
+
+    <figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/image (122).png" alt=""><figcaption></figcaption></figure>
 23. Переходим во вкладку Client Scopes:
+
+    <figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/KC10 (1).png" alt=""><figcaption></figcaption></figure>
 24. Перевести все доступные Optional Client Scopes из Available Client Scopes в Assigned Optional Client Scopes:
 
     <figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/KC11.png" alt=""><figcaption></figcaption></figure>
