@@ -22,6 +22,8 @@ sh /путь/postinstall.sh
 
 Например:<br>
 
+<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/image (53).png" alt=""><figcaption></figcaption></figure>
+
 Применить новую конфигурацию нажав **Register with UDS**.
 
 Выполнить публикацию на брокере.

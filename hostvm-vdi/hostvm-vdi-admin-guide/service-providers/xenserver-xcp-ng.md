@@ -28,6 +28,8 @@ description: >-
 
 **Пароль (Password)** — пароль пользователя.
 
+<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+
 ### Расширенные настройки <a href="#advanced" id="advanced"></a>
 
 **Одновременное создание (Creation concurrency)** — количество одновременных задач создания рабочих столов.
@@ -39,3 +41,5 @@ description: >-
 **Проверить сертификат (Certificate check)** — проверка сертификата хоста виртуализации.
 
 **Резервный хост (Reserve host)** — IP-адрес или FQDN резервного сервера (используется при недоступности основного).
+
+<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>

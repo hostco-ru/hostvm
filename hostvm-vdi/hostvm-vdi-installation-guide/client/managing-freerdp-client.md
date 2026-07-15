@@ -31,6 +31,8 @@ done
 /usr/bin/xfreerdp ${catchedArgs} /p:$(zenity --entry --title="Password input" --text="Введите пароль:" --hide-text)
 </code></pre>
 
+<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/image (34) (2).png" alt=""><figcaption></figcaption></figure>
+
 ### Исключение параметров для работы с xfreerdp3
 
 По умолчанию брокер передает параметры в формате, адаптированном для xfreerdp версии 2. В 3й версии клиента xfreerdp был изменен формат передачи некоторых параметров, что может приводить к ошибкам при запуске сервиса. Рассмотрим перехват параметров старого формата, передача которых вызывает ошибки запуска.\
