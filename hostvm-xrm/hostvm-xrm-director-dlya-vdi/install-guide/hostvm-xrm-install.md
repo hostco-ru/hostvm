@@ -44,9 +44,9 @@ reboot
 
 ### Доступ к веб-интерфейсу управления <a href="#accessing-web-interface" id="accessing-web-interface"></a>
 
-* Откройте веб-интерфейс HOSTVM XRM через браузер по адресу `https://<IP-адрес или имя машины>`, выполните вход в систему с помощью пары логин/пароль:  _admin/admin_
+* Откройте веб-интерфейс HOSTVM XRM через браузер по адресу `https://<IP-адрес или имя машины>`, выполните вход в систему с помощью пары логин/пароль: _admin/admin_
 
-<figure><img src="../../../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (182).png" alt=""><figcaption></figcaption></figure>
 
 * Выполните настройку системы согласно [Начальной настройке](../admin-guide/nachalnaya-nastroika.md) .
 
@@ -56,7 +56,7 @@ reboot
 
 Для замены сертификатов воспользуйтесь данной инструкцией.
 
-Скопируйте файлы сертификата  в директорию `/etc/ssl/xrm/`.
+Скопируйте файлы сертификата в директорию `/etc/ssl/xrm/`.
 
 Отредактируйте файл с настройками SSL `/etc/nginx/sites-available/xrm`, в директивах `ssl_certificate` и `ssl_certificate_key` укажите новые имена файлов сертификата:
 

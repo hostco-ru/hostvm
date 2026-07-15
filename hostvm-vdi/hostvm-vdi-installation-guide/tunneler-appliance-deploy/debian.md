@@ -38,9 +38,9 @@ Configuration file '/etc/tomcat9/server.xml'
 
 Для дальнейшей настройки обратитесь к разделам:
 
-1. [Настройка сертификатов](../tunneler-appliance-deploy.md#ssl-certificates-35)
-2. [Мастер установки HOSTVM VDI Tunneler](../tunneler-appliance-deploy.md#setup-wizard)
-3. [Настройка транспорта в панели управления HOSTVM VDI](../tunneler-appliance-deploy.md#nastroika-transporta-v-paneli-upravleniya-hostvm-vdi)
+1. [Настройка сертификатов](./#ssl-certificates-35)
+2. [Мастер установки HOSTVM VDI Tunneler](./#setup-wizard)
+3. [Настройка транспорта в панели управления HOSTVM VDI](./#nastroika-transporta-v-paneli-upravleniya-hostvm-vdi)
 
 ## Портал пользователя <a href="#user-portal" id="user-portal"></a>
 

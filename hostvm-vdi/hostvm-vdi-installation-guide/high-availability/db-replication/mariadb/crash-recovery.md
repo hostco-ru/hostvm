@@ -14,8 +14,6 @@
 /var/server/server/settings.py 
 ```
 
-<figure><img src="../https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/host (1).png" alt=""><figcaption></figcaption></figure>
-
 Когда IP адрес или имя хоста новой базы данных будут изменены, необходимо перезапустить сервер. Данное действие должно быть выполнено на всех машинах VDI-серверов.
 
 Как только сервер будет перезапущен, доступ к VDI окружению будет восстановлен.

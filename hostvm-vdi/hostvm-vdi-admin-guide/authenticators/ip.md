@@ -2,8 +2,6 @@
 
 IP аутентификатор позволяет предоставлять прямой доступ устройствам к виртуальным рабочим столам и приложениям на основании их IP-адреса, без ввода логина и пароля.
 
-<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/IP authC.png" alt=""><figcaption></figcaption></figure>
-
 ## Основные настройки <a href="#main" id="main"></a>
 
 **Имя** - наименование создаваемого аутентификатора для отображения в системе.
@@ -35,6 +33,3 @@ IP аутентификатор позволяет предоставлять п
 * Одиночный IP-адрес `xxx.xxx.xxx.xxx` (например, `10.10.10.1`);
 * Подсеть `xxx.xxx.xxx.xxx/x` (например, `10.10.10.0/24`);
 * Диапазон IP-адресов `xxx.xxx.xxx.xxx-xxx.xxx.xxx.xxx` (например, `10.10.10.0-10.10.10.125`).
-
-<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/IP authG.png" alt=""><figcaption></figcaption></figure>
-

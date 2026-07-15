@@ -20,11 +20,9 @@ SELECT * FROM ( SELECT FROM_UNIXTIME(t1.stamp) AS Timestamp, t2.name AS ServiceP
 t1.owner_id = t2.id WHERE t1.event_type = 2 ORDER BY t1.stamp ) AS Report WHERE ServicePool = 'Notepad 1' AND ( Timestamp BETWEEN '2025-02-28 00:00:00' AND '2025-03-26 00:00:00' );
 ```
 
-`( Timestamp BETWEEN '2025-02-28 00:00:00' AND '2025-03-26 00:00:00' )` - временной промежуток, указанный в формате 'YYYY-MM-DD hh:mm:ss'.
+`( Timestamp BETWEEN '2025-02-28 00:00:00' AND '2025-03-26 00:00:00' )` - временной промежуток, указанный в формате 'YYYY-MM-DD hh:flag\_mm:ss'.
 
 `ServicePool = 'Notepad 1'` - имя сервис-пула, для которого необходимо получить данные.
-
-<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 2. PostgreSQL
 
@@ -33,8 +31,6 @@ SELECT * FROM ( SELECT TO_TIMESTAMP(t1.stamp) AS Timestamp, t2.name AS ServicePo
 t1.owner_id = t2.id WHERE t1.event_type = 2 ORDER BY t1.stamp ) AS Report WHERE ServicePool = 'Windows10' AND ( Timestamp BETWEEN '2025-02-28 00:00:00' AND '2025-03-26 00:00:00' );
 ```
 
-`( Timestamp BETWEEN '2025-02-28 00:00:00' AND '2025-03-26 00:00:00' )` - временной промежуток, указанный в формате 'YYYY-MM-DD hh:mm:ss'.
+`( Timestamp BETWEEN '2025-02-28 00:00:00' AND '2025-03-26 00:00:00' )` - временной промежуток, указанный в формате 'YYYY-MM-DD hh:flag\_mm:ss'.
 
 `ServicePool = 'Windows10'` - имя сервис-пула, для которого необходимо получить данные.
-
-<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption></figcaption></figure>

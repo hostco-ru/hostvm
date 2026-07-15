@@ -62,11 +62,10 @@ HOSTVM VDI поддерживает конфигурацию входящих в
 
 Разверните два экземпляра виртуальной машины шлюза HOSTVM VDI:
 
-* [Установка HOSTVM VDI Tunneler](../tunneler-appliance-deploy.md)
+* [Установка HOSTVM VDI Tunneler](../tunneler-appliance-deploy/)
 
 Параметры в мастере установки идентичны стандартному развертыванию, за исключением адреса подключения к брокеру HOSTVM VDI. Здесь необходимо указать виртуальный IP-адрес балансировщика.
 
 ## **SSL сертификаты** <a href="#ssl-certificates" id="ssl-certificates"></a>
 
 Выполните [настройку SSL сертификатов для конфигурации высокой доступности](ssl-certificates.md).
-

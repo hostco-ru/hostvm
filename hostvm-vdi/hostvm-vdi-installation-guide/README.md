@@ -69,7 +69,7 @@ layout:
 
 Руководство по установке:
 
-* [импорт и настройка готового образа виртуальной машины](tunneler-appliance-deploy.md);
+* [импорт и настройка готового образа виртуальной машины](tunneler-appliance-deploy/);
 * [установка в виде пакета для РЕД ОС](tunneler-appliance-deploy/red-os.md);
 * [установка в виде пакета для ALT Linux](tunneler-appliance-deploy/alt-linux.md);
 * [установка в виде пакета для Debian](tunneler-appliance-deploy/debian.md).
