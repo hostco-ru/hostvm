@@ -65,7 +65,7 @@ layout:
 В версиях брокера до `3.6 номер сборки 20250314`, для корректной работы транспорта при использовании rdp-клиента xfreerdp, в данном поле необходимо указывать параметр Alias (псевдоним) опубликованного приложения в формате: /app:"||алиас приложения".
 {% endhint %}
 
-<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/image (2) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/remoteapp1.png" alt=""><figcaption></figcaption></figure>
 
 ## **Настройка туннелированного подключения** <a href="#tunneled" id="tunneled"></a>
 

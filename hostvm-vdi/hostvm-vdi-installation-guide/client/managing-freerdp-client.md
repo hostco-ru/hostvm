@@ -19,7 +19,7 @@ description: >-
 Для реализации необходимо наличие установленной утилиты zenity в окружении клиента.
 {% endhint %}
 
-Для этого необходимо разместить файл по пути _**/usr/bin/udsrdp**_ со следующим содержимы&#x43C;_**:**_
+Для этого необходимо разместить файл по пути _**/usr/bin/udsrdp**_ со следующим содержимым:
 
 <pre><code><strong>#!/bin/bash
 </strong>catchedArgs=""
@@ -31,7 +31,7 @@ done
 /usr/bin/xfreerdp ${catchedArgs} /p:$(zenity --entry --title="Password input" --text="Введите пароль:" --hide-text)
 </code></pre>
 
-<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/image (34) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/managing-freerdp-client.png" alt=""><figcaption></figcaption></figure>
 
 ### Исключение параметров для работы с xfreerdp3
 

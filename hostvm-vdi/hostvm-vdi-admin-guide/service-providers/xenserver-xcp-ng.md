@@ -28,7 +28,7 @@ description: >-
 
 **Пароль (Password)** — пароль пользователя.
 
-<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/xenserver1.png" alt=""><figcaption></figcaption></figure>
 
 ### Расширенные настройки <a href="#advanced" id="advanced"></a>
 
@@ -42,4 +42,4 @@ description: >-
 
 **Резервный хост (Reserve host)** — IP-адрес или FQDN резервного сервера (используется при недоступности основного).
 
-<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/xenserver2.png" alt=""><figcaption></figcaption></figure>

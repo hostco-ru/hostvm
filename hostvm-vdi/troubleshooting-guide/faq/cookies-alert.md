@@ -23,7 +23,7 @@ layout:
 
 В случае, когда необходимо скрыть всплывающую панель с уведомлением о использовании cookie
 
-<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/image (42).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/cookies-alert.png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="warning" %}
 Начиная с версии брокера `3.6 номер сборки 20250314` настройка отображения уведомления осуществляется через [соответствующие параметры конфигурации системы](../../hostvm-vdi-admin-guide/configuration/#cookies).

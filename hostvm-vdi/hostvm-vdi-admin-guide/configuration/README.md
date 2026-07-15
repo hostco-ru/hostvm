@@ -51,7 +51,7 @@ layout:
 
 В `Панели управления` откройте раздел `Инструменты / Конфигурация`, перейдите на вкладку `Custom`.
 
-<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/Скриншост страницы Конфигурации UDS.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/broker-config-custom1.png" alt=""><figcaption></figcaption></figure>
 
 В поле **«CSS»** введите следующий код, заменив текст в кавычках на ваш:
 
@@ -77,4 +77,4 @@ layout:
 
 Нажмите кнопку **«Сохранить»**, чтобы применить изменения.
 
-<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/Скриншост страницы сервиса с сообщенем.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/broker-config-custom2.png" alt=""><figcaption></figcaption></figure>

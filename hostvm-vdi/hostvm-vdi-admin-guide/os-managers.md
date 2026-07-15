@@ -75,7 +75,7 @@
 
 **Выход по календарю** — если включено, брокер попытается выполнить выход пользователей из сеанса виртуального рабочего стола по истечении срока действия календаря для текущего доступа.
 
-<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/LinuxADOsManager Advanced settings.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/LinuxADOsManager-Advanced-settings.png" alt=""><figcaption></figcaption></figure>
 
 ## Windows Basic OS Manager
 

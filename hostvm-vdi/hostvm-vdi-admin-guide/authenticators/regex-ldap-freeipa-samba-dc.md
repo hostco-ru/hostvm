@@ -2,9 +2,7 @@
 
 Этот внешний аутентификатор позволяет пользователям и группам пользователей, принадлежащим к большинству LDAP-based аутентификаторов, получать доступ к виртуальным рабочим столам или приложениям.
 
-<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
-
-
+<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/regex-ldap1.png" alt=""><figcaption></figcaption></figure>
 
 На примере FreeIPA,
 
@@ -12,9 +10,7 @@
 
 * Вкладка «Основной»
 
-<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
-
-
+<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/regex-ldap2.png" alt=""><figcaption></figcaption></figure>
 
 Имя (Name) - имя аутентификатора;
 
@@ -30,7 +26,7 @@
 
 * Вкладка «Учетные данные»
 
-<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/image (6) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/regex-ldap3.png" alt=""><figcaption></figcaption></figure>
 
 Пользователь (User) - пользователь с правами на чтение каталога;
 
@@ -38,7 +34,7 @@
 
 * Вкладка «LDAP информация»
 
-<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/image (3) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/regex-ldap4.png" alt=""><figcaption></figcaption></figure>
 
 База (Base) - Каталог поиска, в котором система будет находить группы и пользователей для проверки в системе;
 
@@ -52,12 +48,12 @@
 
 * Вкладка «Расширенный» (Опционально)
 
-<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/image (8) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/regex-ldap5.png" alt=""><figcaption></figcaption></figure>
 
 Альтернативный класс (Alt. class) - Вы можете указать больше типов объектов для поиска пользователей и групп пользователей;
 
 * Вкладка «Экран/Дисплей» (Опционально)
 
-<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/image (1) (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/regex-ldap6.png" alt=""><figcaption></figcaption></figure>
 
 Видимый (Visible) - Если этот параметр отключен, аутентификатор не будет отображаться как доступный на странице портала HOSTVM VDI;

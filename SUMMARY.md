@@ -301,7 +301,7 @@
   * [Конфигурация подключения Zabbix](hostvm-vdi/hostvm-vdi-installation-guide/zabbix-config.md)
 * [Руководство администратора](hostvm-vdi/hostvm-vdi-admin-guide/README.md)
   * [Подготовка базового образа для публикации](hostvm-vdi/hostvm-vdi-admin-guide/base-image-preparation/README.md)
-    * [Ввод тонких клонов в домен для Astra Linux](hostvm-vdi/hostvm-vdi-admin-guide/base-image-preparation/vvod-tonkikh-klonov-v-domen-dlya-astra-linux.md)
+    * [Ввод тонких клонов в домен для Astra Linux](hostvm-vdi/hostvm-vdi-admin-guide/base-image-preparation/astra-linux-clones-join-domain.md)
   * [Настройка сервис-провайдеров](hostvm-vdi/hostvm-vdi-admin-guide/service-providers/README.md)
     * [Провайдер HOSTVM / РОСА/ zVirt / РЕД Виртуализация](hostvm-vdi/hostvm-vdi-admin-guide/service-providers/hostvm.md)
     * [Провайдер OpenGnsys](hostvm-vdi/hostvm-vdi-admin-guide/service-providers/opengnsys.md)

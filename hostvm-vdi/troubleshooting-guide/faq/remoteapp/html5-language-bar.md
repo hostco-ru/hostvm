@@ -4,7 +4,7 @@
 
 В случае, если языковая панель в HTML5 сессии необходима, возможно использование приложения HTML5LanguageBarApp (доступно в личном кабинете).
 
-<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/image (104).png" alt=""><figcaption><p>HTML5LanguageBarApp</p></figcaption></figure>
+<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/html5-language-bar1.png" alt=""><figcaption><p>HTML5LanguageBarApp</p></figcaption></figure>
 
 {% hint style="danger" %}
 Для корректной работы приложения на клиентской машине должен быть выставлен английский язык.
@@ -20,7 +20,7 @@
 2. на терминальный сервер установить MS Widnows Desktop Runtime 7.0.20;
 3. отредактировать файл `/var/server/uds/transports/HTML5RA/html5ra.py` на HOSTVM VDI Broker, добавив в секцию **"Build params dict"** параметр **allowed-languages** и указать необходимые языки:
 
-<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/image (101).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/html5-language-bar2.png" alt=""><figcaption></figcaption></figure>
 
 #### Запуск приложения
 

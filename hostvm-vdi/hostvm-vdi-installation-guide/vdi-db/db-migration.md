@@ -99,7 +99,7 @@ DATABASES = {
 
 Ниже скриншот конфигурации, когда обе БД на одном брокере:
 
-<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/Скриншот конфигурации, когда обе БД на одном брокере (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/db-migration1.png" alt=""><figcaption></figcaption></figure>
 
 Далее перейдите в директорию /var/server командой:
 
@@ -204,7 +204,7 @@ use udsdb;
 
 Выполните полученный ранее код в БД:
 
-<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/Выполните полученный ранее код в БД.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/db-migration2.png" alt=""><figcaption></figcaption></figure>
 
 Выполните выход из терминального клиента mysql:
 
@@ -228,7 +228,7 @@ python3 manage.py loaddata dump.json --database=mysql
 
 В файле /var/server/server/settings.py необходимо удалить конфигурацию default в разделе DATABASES и заменить mysql на default, чтобы получилось, как на скриншоте:
 
-<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/Необходимо переключить Django с БД postgreSQL на mariadb.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/db-migration3.png" alt=""><figcaption></figcaption></figure>
 
 Теперь необходимо перезапустить службы брокера командой:
 

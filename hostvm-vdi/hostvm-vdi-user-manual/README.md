@@ -36,13 +36,13 @@
 
 Для входа в систему выполните следующие шаги: 1. Откройте в браузере адрес VDI-портала; 2. В открывшуюся форму введите логин, пароль и предоставленный аутентификатор.<br>
 
-<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/image (57).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/vdi-user-manual1.png" alt=""><figcaption></figcaption></figure>
 
 **Рис.2 Форма для авторизации**
 
 1.  Выберите нужный сервис и нажмите на иконку для открытия сессии.
 
-    <figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/image (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/vdi-user-manual2.png" alt=""><figcaption></figcaption></figure>
 
 **Рис.3 Перечень сервисов**
 
@@ -75,13 +75,12 @@
 Для использования экранной клавиатуры:\
 1\. Сделайте клик в левом-верхнем углу окна, для отображения меню Windows
 
-<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/image (1) (1) (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/ivdi-user-manual3.png" alt=""><figcaption></figcaption></figure>
 
 2. Выберите Экранную клавиатуру в разделе Специальных возможностей<br>
 
-    <figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/image (1) (1) (3) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/vdi-user-manual4.png" alt=""><figcaption></figcaption></figure>
 
 3. Нажмите сочетание клавиш Alt+Tab на экранной клавиатуре для выбора свернутого приложения
 
-<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/image (34).png" alt=""><figcaption></figcaption></figure>
-
+<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/vdi-user-manual5.png" alt=""><figcaption></figcaption></figure>

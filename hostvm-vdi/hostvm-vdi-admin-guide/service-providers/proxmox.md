@@ -27,7 +27,7 @@ layout:
 
 Для создания сервис-провайдера зайдите в раздел "Сервисы", нажмите "Новый" и выберите тип провайдера "Proxmox".
 
-<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/proxmox (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/proxmox1.png" alt=""><figcaption></figcaption></figure>
 
 ### Основные настройки <a href="#main" id="main"></a>
 
@@ -41,7 +41,7 @@ layout:
 
 **Пароль (Password)** - пароль от учётной записи пользователя.
 
-<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/image (105).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/proxmox2.png" alt=""><figcaption></figcaption></figure>
 
 ### Расширенные настройки <a href="#advanced" id="advanced"></a>
 
@@ -55,7 +55,7 @@ layout:
 
 **Начальный VmId** - идентификатор ВМ, с которого брокер начнёт создавать ВМ в Proxmox (≥ 10000).
 
-<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/image (118).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/proxmox3.png" alt=""><figcaption></figcaption></figure>
 
 ## Создание сервисов <a href="#services" id="services"></a>
 
@@ -63,7 +63,7 @@ layout:
 
 * связанный клон Proxmox (Linked Clone Proxmox) - для публикации виртуальных рабочих столов на основе "золотого" образа.
 
-<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/proxmox4.png" alt=""><figcaption></figcaption></figure>
 
 ### Связанный клон Proxmox <a href="#linked-clone" id="linked-clone"></a>
 
