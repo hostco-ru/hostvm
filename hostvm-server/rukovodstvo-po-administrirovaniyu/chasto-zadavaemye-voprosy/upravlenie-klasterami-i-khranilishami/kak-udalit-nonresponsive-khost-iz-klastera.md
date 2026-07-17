@@ -10,7 +10,4 @@ description: >-
 
 1. Во вкладке **Compute -> Hosts** кликните по NonResponsive-хосту.
 2. В правом верхнем углу откройте меню с тремя точками, выберите **Confirm host has been rebooted**.
-
-<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
-
 3. После этого станет доступно удаление хоста из кластера/датацентра.

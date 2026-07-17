@@ -40,7 +40,7 @@ layout:
 Скачайте из личного кабинета и установите пакет брокера:
 
 ```shell-session
-# yum install ./hostvm-vdi-3.6-3.el8.x86_64.rpm
+# dnf install ./hostvm-vdi-3.6-3.el8.x86_64.rpm
 ```
 
 {% hint style="info" %}
@@ -79,4 +79,3 @@ layout:
 Для настройки SSL сертификатов:
 
 [Настройка SSL сертификатов](./#ssl-certificates)
-

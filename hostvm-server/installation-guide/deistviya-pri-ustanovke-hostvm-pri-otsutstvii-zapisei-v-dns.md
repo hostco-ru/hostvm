@@ -13,8 +13,6 @@
 \
 и добавьте в конец файла записи вида:
 
-<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/image (54).png" alt=""><figcaption></figcaption></figure>
-
 10.1.99.61 — IP-адрес ноды
 
 gen9hostvm448 — short name (hostname) ноды

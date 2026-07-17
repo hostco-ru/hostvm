@@ -58,15 +58,9 @@ rtt min/avg/max/mdev = 0.200/0.224/0.250/0.025 ms
 
 Откройте панель управления, перейдите в `Compute -> Hosts`, нажмите кнопку `New`
 
-<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/Screenshot_4 (4).png" alt=""><figcaption></figcaption></figure>
-
 В открывшемся окне заполните поля `Name`, `Hostname`(достаточно указать ip-адрес), `Password` от учетной записи root.
 
-<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/post-install-host-2 (1).jpg" alt=""><figcaption></figcaption></figure>
-
 Чтобы добавить возможность запуска виртуальной машины Hosted engine, при добавлении хоста на вкладке Hosted Engine выберите Deploy из выпадающего списка:
-
-<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/he-deploy (1).png" alt=""><figcaption></figcaption></figure>
 
 Для обеспечения высокой доступности рекомендуется иметь хотя бы 2 таких хоста. Обычный хост виртуализации не имеет возможности запускать виртуальную машину Hosted engine.
 
@@ -78,15 +72,9 @@ rtt min/avg/max/mdev = 0.200/0.224/0.250/0.025 ms
 4. Нажмите кнопку Setup Host Networks;
 5. Присоедините логическую сеть к физическому интерфейсу хоста, перетащив ее в область Assigned Logical Networks рядом с интерфейсом;
 
-<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/image (92).png" alt=""><figcaption></figcaption></figure>
-
 После завершения установки и настройки, оба хоста будут доступны для работы:
 
-<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/post-install-host-3 (1).jpg" alt=""><figcaption></figcaption></figure>
-
 Если же на этом этапе возникла ошибка, то необходимо зайти в параметры хоста, нажав на его имя, перейти в вкладку Events и посмотреть, на каком этапе прервалась установка ПО виртуализации на хост.
-
-<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/image (4) (2).png" alt=""><figcaption></figcaption></figure>
 
 Также, более подробно причину ошибки можно рассмотреть в логах хоста по пути /var/log/ovirt-hosted-engine-setup с актуальным временем создания.
 

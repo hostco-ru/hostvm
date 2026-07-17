@@ -40,7 +40,7 @@ sudo setenforce 0
 Скачайте из личного кабинета и установите пакет туннелера:
 
 ```shell-session
-# yum install ./hostvm-gw-3.6-3.el7.x86_64.rpm
+# dnf install ./hostvm-gw-3.6-3.el7.x86_64.rpm
 ```
 
 {% hint style="info" %}
@@ -63,6 +63,12 @@ sudo setenforce 0
 
 ```
 /etc/pki/ca-trust/source/anchors/
+```
+
+Чтобы автоматически загрузить SSL-сертификат напрямую с брокера, выполните команду (заменив `<ip_addr>` на IP-адрес вашего брокера):
+
+```
+openssl s_client -connect <ip_addr> -showcerts </dev/null 2>/dev/null | openssl x509 -outform PEM > /etc/pki/ca-trust/source/anchors/hostvm-broker.crt
 ```
 
 Затем выполните команду:
@@ -98,7 +104,7 @@ sudo setenforce 0
 Скачайте из личного кабинета пакет `hostvm-vdi-broker-gui` для РЕД ОС, установите его:
 
 ```shell-session
-# yum install ./hostvm-vdi-broker-gui-3.6-2.el7.x86_64.rpm
+# dnf install ./hostvm-vdi-broker-gui-3.6-2.el7.x86_64.rpm
 ```
 
 Для активации портала запустите мастер настройки, выполнив команду `hostvm-vdi-gui-setup`
