@@ -395,7 +395,7 @@
 * [Заметки к выпускам](hostvm-vdi/release-notes/README.md)
   * [Жизненный цикл версий](hostvm-vdi/release-notes/life-cycle.md)
   * [История изменений](hostvm-vdi/release-notes/changelog/README.md)
-    * [3.6](hostvm-vdi/hostvm-vdi-installation-guide/changelog/3.6.md)
+    * [3.6](hostvm-vdi/release-notes/changelog/3.6.md)
     * [3.5](hostvm-vdi/release-notes/changelog/3.5.md)
     * [3.0](hostvm-vdi/release-notes/changelog/3.0.md)
 
