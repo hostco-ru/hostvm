@@ -89,20 +89,27 @@ root@hostvm-gw:~# update-ca-certificates
 
 Скопируйте файлы сертификата на туннелер HOSTVM VDI в директорию `/etc/certs`.
 
-Отредактируйте конфигурационный файл `/etc/tomcat9/server.xml`, в значения параметров `SSLCertificateFile` и `SSLCertificateKeyFile` запишите путь к открытой части сертификата и приватному ключу соответственно:
+Настройте права доступа и владельца для файлов сертификатов:
+
+```
+root@hostvm-gw:~# chown root:tomcat /etc/certs/*.pem
+root@hostvm-gw:~# chmod 640 /etc/certs/*.pem
+```
+
+Отредактируйте конфигурационный файл `/etc/tomcat9/server.xml`, в значения параметров `сertificateFile` и `сertificateKeyFile` запишите путь к открытой части сертификата и приватному ключу соответственно:
 
 ```xml
 <Connector port="10443" protocol="org.apache.coyote.http11.Http11AprProtocol" SSLEnabled="true"
                    ...
-                   SSLCertificateFile="/etc/certs/server.pem"
-                   SSLCertificateKeyFile="/etc/certs/key.pem"
+                   сertificateFile="/etc/certs/server.pem"
+                   сertificateKeyFile="/etc/certs/key.pem"
                    ... />
 ```
 
 Для применения изменений выполните команду:
 
 ```shell-session
-root@hostvm-gw:~# systemctl restart tomcat9
+root@hostvm-gw:~# systemctl restart tomcat9 vditunnel.service
 ```
 
 ### Мастер установки <a href="#setup-wizard" id="setup-wizard"></a>
@@ -146,6 +153,10 @@ root@hostvm-gw35:~#
 ### Настройка транспорта в панели управления брокера <a href="#transport-config" id="transport-config"></a>
 
 При настройке туннелированных подключений (транспортов) в панели управления брокера HOSTVM VDI, в качестве параметра tunnel server на вкладке Tunnel настроек транспорта указывайте адрес настроенной ВМ туннелера в формате `адрес:порт`, где адрес - IP или FQDN туннелера, порт - порт подключения, по умолчанию 443.
+
+{% hint style="info" %}
+ВАЖНО: Если используется балансировщик, в качестве транспорта указывается порт 1443. Порт туннелера по умолчанию - 443.
+{% endhint %}
 
 ![](https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/tunneler30-8.png)
 
@@ -310,5 +321,8 @@ uds setup
 
 При настройке туннелированных подключений (транспортов) в панели управления брокера HOSTVM VDI, в качестве параметра tunnel server на вкладке Tunnel настроек транспорта указывайте адрес настроенной ВМ туннелера в формате `адрес:порт`, где адрес - IP или FQDN туннелера, порт - порт подключения, по умолчанию 443.
 
-<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/tunneler30-8.png" alt=""><figcaption></figcaption></figure>
+{% hint style="info" %}
+ВАЖНО: Если используется балансировщик, в качестве транспорта указывается порт 1443. Порт туннелера по умолчанию - 443.
+{% endhint %}
 
+<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/tunneler30-8.png" alt=""><figcaption></figcaption></figure>

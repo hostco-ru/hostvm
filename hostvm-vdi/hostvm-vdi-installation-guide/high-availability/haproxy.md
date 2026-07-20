@@ -150,6 +150,17 @@ frontend https-in
         default_backend broker-backend
 ```
 
+Правило внешнего доступа к Порталу пользователя HOSTVM VDI Tunneler в режиме https на порт 8443. В случае использования другого порта правило необходимо изменить:
+
+```
+frontend tunneler-web-in
+        bind *:8443 ssl crt /etc/ssl/private/haproxy.pem
+        mode http
+        option httplog
+        http-request set-header X-Forwarded-Proto https
+        default_backend tunneler-web-backend
+```
+
 Правило внешнего доступа к HOSTVM VDI Tunneler в режиме TCP на порт 1443 (туннельные соединения). В случае использования другого порта правило необходимо изменить (этот порт указывается на вкладке «Tunnel» соответствующего туннельного транспорта в панели администрирования брокера).
 
 ```
@@ -178,6 +189,16 @@ backend broker-backend
         option http-keep-alive
         server broker1 10.1.2.1:80 check
         server broker2 10.1.2.2:80 check
+```
+
+Правило внутреннего доступа к Порталу пользователя HOSTVM VDI Tunneler. Необходимо указать IP-адреса машин HOSTVM VDI Tunneler (порт прослушивания веб-интерфейса шлюза – 443):
+
+```
+backend tunneler-web-backend
+        balance roundrobin
+        option http-keep-alive
+        server tunserv1 10.1.2.3:1443 check
+        server tunserv2 10.1.2.4:1443 check
 ```
 
 Правило внутреннего доступа к HOSTVM VDI Tunneler для туннельных подключений. Необходимо указать IP-адреса машин HOSTVM VDI Tunneler (порт прослушивания туннельного сервера для туннельных соединений – 443).
