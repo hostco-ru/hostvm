@@ -6,9 +6,9 @@ description: >-
 
 # Как устранить зависшие задания, ВМ, диски и шаблоны?
 
-Прежде всего необходимо подключиться к ВМ менеджера виртуализации HOSTVM, например, по _ssh_.
+Подключитесь по ssh к HOSTVM Manager и выполните скрипт очистки задач:
 
-Для устранения зависших _**заданий**_ выполните:
+Для устранения зависших заданий:
 
 ```
 sh /usr/share/ovirt-engine/setup/dbutils/taskcleaner.sh -R -o -A
@@ -26,7 +26,7 @@ sh /usr/share/ovirt-engine/setup/dbutils/unlock_entity.sh -c -t disk -r
 sh /usr/share/ovirt-engine/setup/dbutils/unlock_entity.sh -t all
 ```
 
-Если выполненные шаги не дали результата, перезагрузите сервис управляющей машины:&#x20;
+Если выполненные шаги не дали результата, перезагрузите сервис управляющей машины:
 
 ```
 systemctl restart ovirt-engine
