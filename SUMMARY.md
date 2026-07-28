@@ -377,6 +377,7 @@
   * [Часто задаваемые вопросы](hostvm-vdi/troubleshooting-guide/faq/README.md)
     * [Аутентификация](hostvm-vdi/troubleshooting-guide/faq/authentication.md)
     * [Импорт апплаенса в VMware](hostvm-vdi/troubleshooting-guide/faq/import-vmware.md)
+    * [Переключение брокера HOSTVM на HTTP](hostvm-vdi/troubleshooting-guide/faq/pereklyuchenie-brokera-hostvm-na-http.md)
     * [Ошибки при импорте](hostvm-vdi/troubleshooting-guide/faq/import-errors.md)
     * [Пустой файл при генерации отчёта](hostvm-vdi/troubleshooting-guide/faq/generate-report-empty-file.md)
     * [Сброс пароля администратора](hostvm-vdi/troubleshooting-guide/faq/reset-admin-password.md)
