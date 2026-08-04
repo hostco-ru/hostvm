@@ -401,7 +401,7 @@
     * [3.5](hostvm-vdi/release-notes/changelog/3.5.md)
     * [3.0](hostvm-vdi/release-notes/changelog/3.0.md)
 * [Приложение](hostvm-vdi/appendix/README.md)
-  * [Loudplay-vGPU](hostvm-vdi/appendix/loudplay-vgpu.md)
+  * [Loudplay vGPU](hostvm-vdi/appendix/loudplay-vgpu.md)
 
 ## HOSTVM XRM
 
