@@ -6,5 +6,4 @@ HOSTVM XRM предназначен для обеспечения непреры
 
 HOSTVM XRM позволяет автоматизировать как простые сценарии так и сложные процессы восстановления для комплексной инфраструктуры виртуализации.
 
-<figure><img src="../../.gitbook/assets/xrm_amin.gif" alt=""><figcaption></figcaption></figure>
-
+<figure><img src="../../.gitbook/assets/xrm_admin.gif" alt=""><figcaption></figcaption></figure>
