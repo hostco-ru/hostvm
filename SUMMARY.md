@@ -107,6 +107,7 @@
       * [Создание дата-центра](hostvm-server/rukovodstvo-po-administrirovaniyu/vychislitelnaya-infrastruktura/data-centry/sozdanie-data-centra.md)
       * [Роль SPM](hostvm-server/rukovodstvo-po-administrirovaniyu/vychislitelnaya-infrastruktura/data-centry/rol-spm.md)
     * [Кластеры](hostvm-server/rukovodstvo-po-administrirovaniyu/vychislitelnaya-infrastruktura/klastery/README.md)
+      * [Особенности реализации кластеров в конфигурациях с одним хостом](hostvm-server/rukovodstvo-po-administrirovaniyu/vychislitelnaya-infrastruktura/klastery/osobennosti-realizacii-klasterov-v-konfiguraciyakh-s-odnim-khostom.md)
       * [Руководство по управлению переподпиской vCPU и планированию кластеров](hostvm-server/rukovodstvo-po-administrirovaniyu/vychislitelnaya-infrastruktura/klastery/rukovodstvo-po-upravleniyu-perepodpiskoi-vcpu-i-planirovaniyu-klasterov.md)
       * [Создание кластера](hostvm-server/rukovodstvo-po-administrirovaniyu/vychislitelnaya-infrastruktura/klastery/sozdanie-klastera.md)
       * [Расширенные настройки кластера](hostvm-server/rukovodstvo-po-administrirovaniyu/vychislitelnaya-infrastruktura/klastery/rasshirennye-nastroiki-klastera.md)
