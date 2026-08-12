@@ -395,6 +395,7 @@
     * [SSL инспекция](hostvm-vdi/troubleshooting-guide/faq/ssl-inspection.md)
     * [Подключение USB-накопителей в сеанс RDP](hostvm-vdi/troubleshooting-guide/faq/redirect-drives-in-rdp-session.md)
     * [Подключение к локальной RDP сессии](hostvm-vdi/troubleshooting-guide/faq/connect-to-local-rdp-session.md)
+    * [Проблемы с перенаправлением звука и камеры в сеанс RDP](hostvm-vdi/troubleshooting-guide/faq/rdp-audio-and-camera-redirection.md)
 * [Заметки к выпускам](hostvm-vdi/release-notes/README.md)
   * [Жизненный цикл версий](hostvm-vdi/release-notes/life-cycle.md)
   * [История изменений](hostvm-vdi/release-notes/changelog/README.md)
