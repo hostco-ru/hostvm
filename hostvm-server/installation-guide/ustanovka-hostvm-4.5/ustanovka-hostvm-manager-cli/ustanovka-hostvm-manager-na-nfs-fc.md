@@ -44,7 +44,7 @@
 2\. Запустите установку управляющей машины:
 
 ```
-[root@testname1 ~]# hosted-engine --deploy --4 | tee -a /root/hosted-engine-deploy.log
+hosted-engine --deploy --4 | tee -a /root/hosted-engine-deploy.log
 ```
 
 3\. Выберите Yes, чтобы начать установку:
@@ -68,7 +68,7 @@ Please indicate the gateway IP address [X.X.X.X]:
 Please indicate a nic to set ovirtmgmt bridge on (ens3) [ens3]: ens3
 ```
 
-6\. Укажите тип проверки подключения к сети:  &#x20;
+6\. Укажите тип проверки подключения к сети:
 
 ```
 Please specify which way the network connectivity should be  checked (ping, dns, tcp, none) [dns]: ping
@@ -82,8 +82,8 @@ Please enter the name of the data center where you want to deploy this hosted-en
 Data center [Default]:  
 ```
 
-&#x20;         \
-8\. Укажите название кластера. Название по умолчанию Default.&#x20;
+\
+8\. Укажите название кластера. Название по умолчанию Default.
 
 ```
 Please enter the name of the cluster where you want to deploy this hosted-engine host.
@@ -164,9 +164,9 @@ How should the engine VM network be configured?
 {% hint style="warning" %}
 **Важно**
 
-·        Статичный IP-адрес должен быть в одной подсети с хостом. Например, если IP хоста - 10.1.1.0/24, IP управляющей виртуальной машины должен быть в диапазоне этой подсети (10.1.1.1-254/24).
+· Статичный IP-адрес должен быть в одной подсети с хостом. Например, если IP хоста - 10.1.1.0/24, IP управляющей виртуальной машины должен быть в диапазоне этой подсети (10.1.1.1-254/24).
 
-·         Для IPv6, поддерживается только статическая адресация.
+· Для IPv6, поддерживается только статическая адресация.
 {% endhint %}
 
 ```
@@ -175,7 +175,7 @@ Please provide a comma-separated list (max 3) of IP addresses of domain name ser
 Engine VM DNS (leave it empty to skip) [X.X.X.X]: 
 ```
 
-18\. Укажите, следует ли добавлять записи для управляющей виртуальной машины и базового хоста в файл /etc/hosts виртуальной машины. Вы должны убедиться, что имена хостов разрешимы.&#x20;
+18\. Укажите, следует ли добавлять записи для управляющей виртуальной машины и базового хоста в файл /etc/hosts виртуальной машины. Вы должны убедиться, что имена хостов разрешимы.
 
 ```
 Add lines for the appliance itself and for this host to /etc/hosts on the engine VM?
