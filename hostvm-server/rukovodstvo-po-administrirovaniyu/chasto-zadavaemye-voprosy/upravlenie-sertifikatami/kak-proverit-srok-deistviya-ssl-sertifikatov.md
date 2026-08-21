@@ -52,6 +52,14 @@ openssl x509 -noout -enddate -in /etc/pki/libvirt/clientcert.pem
 openssl x509 -noout -enddate -in /etc/pki/vdsm/libvirt-migrate/server-cert.pem
 ```
 
+```bash
+openssl x509 -noout -enddate -in /etc/pki/vdsm/libvirt-vnc/server-cert.pem
+```
+
+```bash
+openssl x509 -noout -enddate -in /etc/pki/vdsm/libvirt-spice/server-cert.pem
+```
+
 **Результат:** команды отобразят даты окончания действия сертификатов.
 
 ## Проверка сертификатов через скрипт Zabbix
