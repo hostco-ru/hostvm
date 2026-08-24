@@ -217,6 +217,7 @@
     * [Установка и настройка хостов](hostvm-server/rukovodstvo-po-administrirovaniyu/chasto-zadavaemye-voprosy/ustanovka-i-nastroika-khostov/README.md)
       * [Установка образов HOSTVM на удаленный сервер](hostvm-server/rukovodstvo-po-administrirovaniyu/chasto-zadavaemye-voprosy/ustanovka-i-nastroika-khostov/ustanovka-obrazov-hostvm-na-udalennyi-server.md)
       * [Предварительная установка драйверов](hostvm-server/rukovodstvo-po-administrirovaniyu/chasto-zadavaemye-voprosy/ustanovka-i-nastroika-khostov/predvaritelnaya-ustanovka-draiverov.md)
+      * [Очистка метаданных на хостах кластера с ролью Self-Hosted](hostvm-server/rukovodstvo-po-administrirovaniyu/chasto-zadavaemye-voprosy/ustanovka-i-nastroika-khostov/ochistka-metadannykh-na-khostakh-klastera-s-rolyu-self-hosted.md)
     * [Управление кластерами и хранилищами](hostvm-server/rukovodstvo-po-administrirovaniyu/chasto-zadavaemye-voprosy/upravlenie-klasterami-i-khranilishami/README.md)
       * [Как удалить NonResponsive-хост из кластера?](hostvm-server/rukovodstvo-po-administrirovaniyu/chasto-zadavaemye-voprosy/upravlenie-klasterami-i-khranilishami/kak-udalit-nonresponsive-khost-iz-klastera.md)
       * [Как выбрать новый Master Storage Domain?](hostvm-server/rukovodstvo-po-administrirovaniyu/chasto-zadavaemye-voprosy/upravlenie-klasterami-i-khranilishami/kak-vybrat-novyi-master-storage-domain.md)
