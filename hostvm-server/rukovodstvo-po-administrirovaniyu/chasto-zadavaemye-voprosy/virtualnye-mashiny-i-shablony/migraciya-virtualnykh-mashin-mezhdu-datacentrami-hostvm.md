@@ -14,30 +14,46 @@ description: >-
 
 Для создания домена экспорта можно использовать nfs-share, с процедурой ее создания можно ознакомиться в главе [Подготовка NFS share](../../../installation-guide/ustanovka-hostvm-4.3-4.4/pered-ustanovkoi-hostvm-manager/podgotovka-nfs-share.md)
 
+<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/create_nfs_share.png" alt=""><figcaption></figcaption></figure>
+
 2\) Перенос виртуальных машин в домен экспорта из datacenter1:
 
 `Compute -> Virtual Machines -> выбирате ВМ -> ⋮ -> Export to Export Domain`
+
+<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/export_from_export_domain.png" alt=""><figcaption></figcaption></figure>
 
 3\) Отсоединение домена экспорта от датацентра1:
 
 `Data Centers -> выбираете data center -> выбираете Export Domain -> Maintenance -> Detach`
 
+<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/detach_export_domain.png" alt=""><figcaption></figcaption></figure>
+
 Далее `Storage -> domains -> выбираете export domain -> remove`
+
+<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/remove_domain.png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="warning" %}
 **Важно!** Чек-бокс Format Domain отмечать не нужно, иначе все данные будут утеряны.
 {% endhint %}
 
+<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/remove_storage.png" alt=""><figcaption></figcaption></figure>
+
 4\) Подключение &#x434;_&#x43E;мена экспорта к датацентру2:_
 
 `Storage -> Domains -> Import Domain`
 
+<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/import_domain.png" alt=""><figcaption></figcaption></figure>
+
 После добавления домена активируйте его:
 
 `Data Centers -> выбираете datacenter -> domain -> activate`
+
+<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/activate_domain.png" alt=""><figcaption></figcaption></figure>
 
 5\) Импорт виртуальных машин в datacenter2:
 
 `Compute -> Virtual Machines -> ⋮ -> Import -> Load`
 
 В поле Virtual Machines on Source будут отображены доступные ВМ для импорта
+
+<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/available_vms.png" alt=""><figcaption></figcaption></figure>

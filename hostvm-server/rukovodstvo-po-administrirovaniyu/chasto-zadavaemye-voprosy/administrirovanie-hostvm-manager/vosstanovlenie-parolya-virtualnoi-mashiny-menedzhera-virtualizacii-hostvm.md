@@ -59,6 +59,10 @@ rd.break
 \
 Пример внесения изменений:
 
+<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/script_before_changes.png" alt=""><figcaption><p>Скрипт до изменений</p></figcaption></figure>
+
+<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/script_after_changes.png" alt=""><figcaption><p>Скрипт с внесенными изменениями</p></figcaption></figure>
+
 Запустите измененный скрипт загрузчика комбинаций клавиш `Ctrl+X`
 
 Должна произойти загрузка в rescue режиме
