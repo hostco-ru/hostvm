@@ -21,3 +21,5 @@ Export домены могут быть созданы только на осн�
 `HOSTVM Manager GUI - Compute - Virtual machines` - нажать 3 точки в меню - Import - выбрать нужный дата центр, source=export domain - нажать Load - переместить нужную ВМ в Virtual machines to import - Next - выбрать параметры импорта и нажать OK
 
 Доступные для импорта виртуальные машины отражены на вкладе VM Import соответствующего Export домена, откуда также могут быть импортированы:
+
+<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/import_vm_from_export_domain.png" alt=""><figcaption></figcaption></figure>

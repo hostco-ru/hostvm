@@ -27,6 +27,8 @@
 
 Параметры по умолчанию:
 
+<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/standalone_default_params.png" alt=""><figcaption></figcaption></figure>
+
 После выбора параметров нужно будет ввести пароль для доступа к HOSTVM Manager.
 
 Веб-интерфейс будет доступен:
