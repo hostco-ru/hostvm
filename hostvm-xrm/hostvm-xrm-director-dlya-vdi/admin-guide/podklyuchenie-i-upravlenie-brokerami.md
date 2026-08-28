@@ -34,11 +34,25 @@ description: >-
 В нижней части формы доступны кнопки:
 
 * `Добавить` — сохранить конфигурацию брокера;
+* `Тест соединения` — тест  подключения к брокеру;
 * `Отмена` — закрыть форму без сохранения.
 
-<figure><img src="../../../.gitbook/assets/image5.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/XRM-Director_add_broker.png" alt=""><figcaption></figcaption></figure>
 
 В демонстрационном сценарии первым подключается `Broker1`, который используется как основная площадка.
+
+Если при тестировании соединения с брокером возникает ошибка  типа:
+
+```
+Connection test failed: Login failed for user 'vdiadmin' on authenticator 'admin': 
+broker returned status 403 (expected redirect)
+```
+
+Подключитесь к брокеру и отредактируйте файл `/var/server/server/settings.py`. Закомментируйте строку `'django.middleware.csrf.CsrfViewMiddleware',`:
+
+<figure><img src="../../../.gitbook/assets/XRM-Director_add_broker_err_fix.png" alt=""><figcaption></figcaption></figure>
+
+Перезагрузите сервисы брокера: `# systemctl restart vdi vdiweb`
 
 #### 3. Добавление резервного брокера
 
