@@ -139,7 +139,7 @@ host    all             all             10.1.1.0/24           md5
 
 **Версия 3.6-20250704 и выше**
 
-Для настройки подключения к БД используйте [мастер установки HOSTVM VDI](../hostvm-vdi-ova-install/#setup-wizard).
+Для настройки подключения к БД используйте [мастер установки HOSTVM VDI](../broker/virtual-appliance.md#setup-wizard).
 
 **Версия 3.6 до номера сборки 20250704**
 
@@ -210,7 +210,7 @@ hostssl    all             all             10.1.1.0/24           md5
 # systemctl restart postgresql.service
 ```
 
-Отредактируйте файл настроек брокера `/var/server/server/settings.py`, в блок `DATABASES` в секции `OPTIONS` внесите  запись `'sslmode': 'require',`
+Отредактируйте файл настроек брокера `/var/server/server/settings.py`, в блок `DATABASES` в секции `OPTIONS` внесите запись `'sslmode': 'require',`
 
 ```
 DATABASES = {

@@ -190,7 +190,7 @@ root@hostvm-gw36:~# hostvm-vdi-gui-setup
 
 Для настройки SSL сертификатов портала воспользуйтесь соответствующим разделом руководства по установке брокера HOSTVM VDI:
 
-[Настройка SSL сертификатов](hostvm-vdi-ova-install/#ssl-certificates)
+[Настройка SSL сертификатов](broker/virtual-appliance.md#ssl-certificates)
 
 ## Версия 3.0 <a href="#id-3.0" id="id-3.0"></a>
 

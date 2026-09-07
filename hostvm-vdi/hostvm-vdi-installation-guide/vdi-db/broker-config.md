@@ -23,7 +23,7 @@ layout:
 
 ### Версия 3.6-20250704 и выше <a href="#id-3.6" id="id-3.6"></a>
 
-Для настройки подключения к БД используйте [мастер установки HOSTVM VDI](../hostvm-vdi-ova-install/#setup-wizard).
+Для настройки подключения к БД используйте [мастер установки HOSTVM VDI](../broker/virtual-appliance.md#setup-wizard).
 
 ### Версия 3.5 и 3.6 до номера сборки 20250704 <a href="#id-3.5" id="id-3.5"></a>
 

@@ -48,10 +48,10 @@ layout:
 
 Руководство по установке:
 
-* [импорт и настройка готового образа виртуальной машины](hostvm-vdi-ova-install/);
-* [установка в виде пакета для РЕД ОС](hostvm-vdi-ova-install/red-os.md);
-* [установка в виде пакета для ALT Linux](hostvm-vdi-ova-install/alt-linux.md);
-* [установка в виде пакета для Debian](hostvm-vdi-ova-install/debian.md).
+* [импорт и настройка готового образа виртуальной машины](broker/virtual-appliance.md);
+* [установка в виде пакета для РЕД ОС](broker/red-os.md);
+* [установка в виде пакета для ALT Linux](broker/alt-linux.md);
+* [установка в виде пакета для Debian](broker/debian.md).
 
 #### HOSTVM VDI Клиент <a href="#client" id="client"></a>
 
