@@ -55,9 +55,9 @@ layout:
 
 Воспользуйтесь одной из нижеприведенных инструкций в зависимости от используемой операционной системы туннелера:
 
-* **РЕД ОС:** "[Сертификаты](../tunneler-appliance-deploy/red-os.md#certificates)"
-* **ALT Linux:** "[Сертификаты](../tunneler-appliance-deploy/alt-linux.md#certificates)"
-* **Debian / Virtual Appliance (OVA):** "[Сертификаты](../tunneler-appliance-deploy.md#ssl-certificates-35)"
+* **РЕД ОС:** "[Сертификаты](../tunneler/red-os.md#certificates)"
+* **ALT Linux:** "[Сертификаты](../tunneler/alt-linux.md#certificates)"
+* **Debian / Virtual Appliance (OVA):** "[Сертификаты](../tunneler/virtual-appliance.md#ssl-certificates-35)"
 
 ### **Обновление конфигурации туннелера** <a href="#update-config" id="update-config"></a>
 
@@ -65,7 +65,7 @@ layout:
 
 Запустите мастер установки и следуйте его указаниям. Воспользуйтесь одной из нижеприведенных инструкций в зависимости от используемой операционной системы туннелера:
 
-* **РЕД ОС** "[Мастер установки](../tunneler-appliance-deploy/red-os.md#setup-wizard)"
+* **РЕД ОС** "[Мастер установки](../tunneler/red-os.md#setup-wizard)"
 * **ALT Linux:**"[Мастер установки](../broker/alt-linux.md#install)"
 * **Debian / Virtual Appliance (OVA):** "[Мастер установки ](../broker/debian.md#install)"
 
@@ -112,6 +112,6 @@ HTTPSConnectionPool(host='hostvm-proxy.hostvm.test', port=443): Max retries exce
 
 В этом случае убедитесь, что в процессе конфигурации вы корректно ввели FQDN балансировщика и установленный на нем сертификат выпущен именно на это имя. После выполнения проверки, запустите повторно обновление конфигурации туннелера.
 
-После успешной замены сертификатов необходимо использовать имя балансировщика (FQDN) [при настройке туннелируемых подключений (транспортов) для работы через балансировщик](../tunneler-appliance-deploy.md#nastroika-transporta-v-paneli-upravleniya-hostvm-vdi).
+После успешной замены сертификатов необходимо использовать имя балансировщика (FQDN) [при настройке туннелируемых подключений (транспортов) для работы через балансировщик](../tunneler/virtual-appliance.md#transport-config).
 
-Используйте сгенерированный сертификат балансировщика при [настройке сертификатов для HTML5 подключений.](../tunneler-appliance-deploy.md#html5-certificate)
+Используйте сгенерированный сертификат балансировщика при [настройке сертификатов для HTML5 подключений.](../tunneler/virtual-appliance.md#html5-certificate)

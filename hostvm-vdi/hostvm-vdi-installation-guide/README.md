@@ -69,10 +69,10 @@ layout:
 
 Руководство по установке:
 
-* [импорт и настройка готового образа виртуальной машины](tunneler-appliance-deploy.md);
-* [установка в виде пакета для РЕД ОС](tunneler-appliance-deploy/red-os.md);
-* [установка в виде пакета для ALT Linux](tunneler-appliance-deploy/alt-linux.md);
-* [установка в виде пакета для Debian](tunneler-appliance-deploy/debian.md).
+* [импорт и настройка готового образа виртуальной машины](tunneler/virtual-appliance.md);
+* [установка в виде пакета для РЕД ОС](tunneler/red-os.md);
+* [установка в виде пакета для ALT Linux](tunneler/alt-linux.md);
+* [установка в виде пакета для Debian](tunneler/debian.md).
 
 #### HOSTVM VDI Сервер БД <a href="#dbserver" id="dbserver"></a>
 
