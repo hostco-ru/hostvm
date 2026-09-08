@@ -2,7 +2,7 @@
 
 ## Системные требования <a href="#requirements" id="requirements"></a>
 
-* Операционная система Debian 11 (Bullseye)
+* [Требования к версии ОС и конфигурации машины](../requirements/).
 
 ## Подготовка системы <a href="#preparation" id="preparation"></a>
 
@@ -15,7 +15,7 @@
 
 ## Установка и настройка <a href="#install" id="install"></a>
 
-Скачайте из личного кабинета пакет туннелера `hostvm-gw_3.6-<номер сборки>.deb` и установите его:
+Скачайте из личного кабинета пакет туннелера `hostvm-gw_``<версия>-<номер_сборки>.deb` и установите его:
 
 ```shell-session
 # apt install /tmp/hostvm-gw_3.6-20250314.deb
