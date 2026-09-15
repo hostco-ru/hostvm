@@ -17,6 +17,8 @@ layout:
     visible: true
   actions:
     visible: true
+  anchors:
+    visible: true
 ---
 
 # Брокер HOSTVM VDI
@@ -43,7 +45,7 @@ layout:
 
 Выключите ВМ.
 
-Импортируйте новую версию ВМ брокера согласно статье ["Установка HOSTVM VDI Broker"](../hostvm-vdi-installation-guide/broker/virtual-appliance.md), до момента авторизации в веб-интерфейсе управления.
+Импортируйте новую версию ВМ брокера согласно статье ["Установка HOSTVM VDI Broker"](../../hostvm-vdi-installation-guide/broker/virtual-appliance.md), до момента авторизации в веб-интерфейсе управления.
 
 Настройки сети и имя машины задайте от старой версии ВМ брокера, если применимо.
 
@@ -64,7 +66,7 @@ layout:
 
 После успешного запуска служб портал, конфигурация и сервисы пользователей будут доступны через веб-интерфейс брокера.
 
-_Дополнительно_: выполните [настройку SSL сертификатов](../hostvm-vdi-installation-guide/broker/virtual-appliance.md#ssl-certificates) брокера.
+_Дополнительно_: выполните [настройку SSL сертификатов](../../hostvm-vdi-installation-guide/broker/virtual-appliance.md#ssl-certificates) брокера.
 
 ## Обновление виртуальной машины <a href="#broker-update" id="broker-update"></a>
 

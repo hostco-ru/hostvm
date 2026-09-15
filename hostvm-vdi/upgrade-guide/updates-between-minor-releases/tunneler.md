@@ -17,6 +17,8 @@ layout:
     visible: true
   actions:
     visible: true
+  anchors:
+    visible: true
 ---
 
 # Туннелер HOSTVM VDI
@@ -25,7 +27,7 @@ layout:
 
 > Данный способ является универсальным для всех версий HOSTVM VDI Tunneler.
 
-Обновление осуществляется путем разворачивания новой версии виртуальной машины туннелера и подключения к брокеру HOSTVM VDI согласно статье ["Установка HOSTVM VDI Tunneler"](../hostvm-vdi-installation-guide/tunneler/virtual-appliance.md).
+Обновление осуществляется путем разворачивания новой версии виртуальной машины туннелера и подключения к брокеру HOSTVM VDI согласно статье ["Установка HOSTVM VDI Tunneler"](../../hostvm-vdi-installation-guide/tunneler/virtual-appliance.md).
 
 При задании сетевых настроек, идентичных старой версии туннелера, дополнительной конфигурации со стороны брокера не требуется.
 
