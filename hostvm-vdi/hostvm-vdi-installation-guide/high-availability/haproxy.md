@@ -191,7 +191,7 @@ backend broker-backend
         server broker2 10.1.2.2:80 check
 ```
 
-Правило внутреннего доступа к Порталу пользователя HOSTVM VDI Tunneler. Необходимо указать IP-адреса машин HOSTVM VDI Tunneler (порт прослушивания веб-интерфейса шлюза – 443):
+Правило внутреннего доступа к Порталу пользователя HOSTVM VDI Tunneler. Необходимо указать IP-адреса машин HOSTVM VDI Tunneler (порт прослушивания веб-интерфейса шлюза – 1443):
 
 ```
 backend tunneler-web-backend
