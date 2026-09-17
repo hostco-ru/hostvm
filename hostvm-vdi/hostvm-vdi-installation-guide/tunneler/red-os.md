@@ -17,6 +17,8 @@ layout:
     visible: true
   actions:
     visible: true
+  anchors:
+    visible: true
 ---
 
 # Установка на РЕД ОС
@@ -68,10 +70,10 @@ sudo setenforce 0
 /etc/pki/ca-trust/source/anchors/
 ```
 
-Чтобы автоматически загрузить SSL-сертификат напрямую с брокера, выполните команду (заменив `<ip_addr>` на IP-адрес вашего брокера):
+Чтобы автоматически загрузить SSL-сертификат напрямую с брокера, выполните команду (заменив `<ip_addr:port>` на IP-адрес и порт вашего брокера):
 
 ```
-openssl s_client -connect <ip_addr> -showcerts </dev/null 2>/dev/null | openssl x509 -outform PEM > /etc/pki/ca-trust/source/anchors/hostvm-broker.crt
+openssl s_client -connect <ip_addr:port> -showcerts </dev/null 2>/dev/null | openssl x509 -outform PEM > /etc/pki/ca-trust/source/anchors/hostvm-broker.crt
 ```
 
 Затем выполните команду:
