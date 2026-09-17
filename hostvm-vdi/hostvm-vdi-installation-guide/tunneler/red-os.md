@@ -40,6 +40,14 @@ sudo sed -i 's/^SELINUX=.*/SELINUX=disabled/g' /etc/selinux/config
 sudo setenforce 0
 ```
 
+**Дополнительные действия перед установкой версии 4.0:**
+
+* Установите пакет `freerdp2-release`:
+
+```shell-session
+# dnf install freerdp2-release
+```
+
 ## Установка и настройка <a href="#install" id="install"></a>
 
 Скачайте из личного кабинета пакет туннелера `hostvm-gw-<версия>-<номер_сборки>.rpm` и установите его:
