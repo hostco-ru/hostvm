@@ -313,6 +313,7 @@
     * [Обновление конфигурации из двух экземпляров брокера со встроенной БД (с репликацией)](hostvm-vdi/upgrade-guide/updates-between-minor-releases/update-ha-config-internal-db.md)
   * [Обновление с версии 3.6 до 4.0](hostvm-vdi/upgrade-guide/upgrading-from-3.6-to-4.0/README.md)
     * [Сервер БД](hostvm-vdi/upgrade-guide/upgrading-from-3.6-to-4.0/db-server.md)
+    * [Брокер HOSTVM VDI](hostvm-vdi/upgrade-guide/upgrading-from-3.6-to-4.0/broker.md)
 * [Руководство администратора](hostvm-vdi/hostvm-vdi-admin-guide/README.md)
   * [Подготовка базового образа для публикации](hostvm-vdi/hostvm-vdi-admin-guide/base-image-preparation/README.md)
     * [Ввод тонких клонов в домен для Astra Linux](hostvm-vdi/hostvm-vdi-admin-guide/base-image-preparation/astra-linux-clones-join-domain.md)
