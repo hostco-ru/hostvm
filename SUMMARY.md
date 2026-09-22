@@ -329,6 +329,7 @@
     * [Провайдер VMware](hostvm-vdi/hostvm-vdi-admin-guide/service-providers/vmware.md)
     * [Провайдер XenServer/XCP-NG](hostvm-vdi/hostvm-vdi-admin-guide/service-providers/xenserver-xcp-ng.md)
     * [Провайдер oVirt/RHEV](hostvm-vdi/hostvm-vdi-admin-guide/service-providers/ovirt.md)
+    * [Провайдер Горизонт-ВС](hostvm-vdi/hostvm-vdi-admin-guide/service-providers/gorizont-vs.md)
   * [Методы аутентификации](hostvm-vdi/hostvm-vdi-admin-guide/authenticators/README.md)
     * [Внутренняя база данных](hostvm-vdi/hostvm-vdi-admin-guide/authenticators/internal-database.md)
     * [Active Directory](hostvm-vdi/hostvm-vdi-admin-guide/authenticators/active-directory.md)
