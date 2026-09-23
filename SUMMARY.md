@@ -356,6 +356,7 @@
     * [SPICE](hostvm-vdi/hostvm-vdi-admin-guide/transports/spice.md)
     * [X2Go](hostvm-vdi/hostvm-vdi-admin-guide/transports/x2go.md)
   * [Настройка сетей доступа](hostvm-vdi/hostvm-vdi-admin-guide/networks.md)
+  * [Туннели](hostvm-vdi/hostvm-vdi-admin-guide/tunnels.md)
   * [Настройка пула сервисов](hostvm-vdi/hostvm-vdi-admin-guide/service-pools.md)
   * [Терминальные серверы и приложения](hostvm-vdi/hostvm-vdi-admin-guide/terminal-servers-and-apps/README.md)
     * [Настройка подключений по протоколу x2Go](hostvm-vdi/hostvm-vdi-admin-guide/terminal-servers-and-apps/x2go.md)
