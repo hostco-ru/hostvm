@@ -371,6 +371,7 @@
     * [SAML](hostvm-vdi/hostvm-vdi-admin-guide/configuration/saml.md)
   * [Инструменты](hostvm-vdi/hostvm-vdi-admin-guide/tools.md)
   * [Отчёты](hostvm-vdi/hostvm-vdi-admin-guide/reports.md)
+  * [Нотификаторы](hostvm-vdi/hostvm-vdi-admin-guide/notifiers.md)
   * [Очистка кэша](hostvm-vdi/hostvm-vdi-admin-guide/flush-cache.md)
   * [Приложение](hostvm-vdi/hostvm-vdi-admin-guide/appendix/README.md)
     * [Функциональные возможности протоколов подключения](hostvm-vdi/hostvm-vdi-admin-guide/appendix/connection-protocol-feature-support.md)
