@@ -41,7 +41,7 @@ backend tunnel-backend-guacamole
         server tunguac2 10.1.2.4:10443 ssl verify none
 ```
 
-Остальные настройки остаются идентичны статье [Установка и настройка балансировщика HAProxy](../haproxy.md#nastroika-haproxy-3.5)
+Остальные настройки остаются идентичны статье [Установка и настройка балансировщика HAProxy](../haproxy.md#haproxy-config)
 
 ### Конфигурация Yandex Application Load Balancer <a href="#bridging-yalb" id="bridging-yalb"></a>
 
@@ -123,7 +123,7 @@ backend tunnel-backend-guacamole
         server tunguac2 10.1.2.4:8080 check
 ```
 
-Остальные настройки остаются идентичны статье [Установка и настройка балансировщика HAProxy](../haproxy.md#nastroika-haproxy-3.5)
+Остальные настройки остаются идентичны статье [Установка и настройка балансировщика HAProxy](../haproxy.md#haproxy-config)
 
 ### Конфигурация Yandex Application Load Balancer <a href="#termination-yalb" id="termination-yalb"></a>
 
