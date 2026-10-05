@@ -172,8 +172,6 @@ layout:
 
 ### Особенности подготовки ВМ с ОС РЕД ОС 8 в качестве рабочих станций <a href="#red-os-8" id="red-os-8"></a>
 
-
-
 На ВМ необходимо выполнить предварительную настройку сетевого адаптера по официальной инструкции от [РЕД СОФТ](https://redos.red-soft.ru/base/redos-8_0/8_0-administation/8_0-domain-redos/8_0-arm-msad/8_0-pre-join-domain/#sett_nm).
 
 Дополнительно для ввода в домен необходимо отредактировать файл _/etc/krb5.conf_.
@@ -196,4 +194,12 @@ udp_preference_limit = 0
 [domain_realm]
      .hostvm.local = HOSTVM.LOCAL
      hostvm.local = HOSTVM.LOCAL
+```
+
+По умолчанию для входа требуется указывать полное имя пользователя (пример: `user@HOSTVM.LOCAL`). Для возможности входа с коротким именем (пример: `user`) необходимо внести изменения в конфигурацию sssd.
+
+Для этого в файле `/etc/sssd/sssd.conf` для параметра _use\_fully\_qualified\_names_ задайте значение _False_.
+
+```
+use_fully_qualified_names = False
 ```
