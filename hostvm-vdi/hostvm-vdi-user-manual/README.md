@@ -75,7 +75,7 @@
 Для использования экранной клавиатуры:\
 1\. Сделайте клик в левом-верхнем углу окна, для отображения меню Windows
 
-<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/ivdi-user-manual3.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/vdi-user-manual3.png" alt=""><figcaption></figcaption></figure>
 
 2. Выберите Экранную клавиатуру в разделе Специальных возможностей<br>
 

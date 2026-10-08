@@ -68,7 +68,7 @@ _Выбранный язык не влияет на язык внутри сам
 
 Удалите все пункты кроме /boot и /swap, как показано ниже.
 
-![](https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/1-%E2%80%94-%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F.png)
+![](https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/hostvm-part.png)
 
 Для разворачивания виртуальной машины HOSTVM Engine необходим выделенный раздел для домена хранения, размер раздела необходимо задать согласно [системным требованиям](../../requirements.md#sistemnye-trebovaniya-dlya-virtualnoi-mashiny-engine-upravlenie-sistemoi-virtualizacii).\
 Если необходимо, измените поле _Desired Capacity_ раздела _/_, чтобы изменить размер системного раздела. Не менее 16GB необходимо для раздела /var.
