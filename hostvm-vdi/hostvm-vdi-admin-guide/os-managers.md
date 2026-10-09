@@ -27,7 +27,7 @@
 
 ![](https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/uds-23.png)
 
-## Linux Domain OS Manager
+## Linux Domain OS Manager <a href="#linux-domain-os-manager" id="linux-domain-os-manager"></a>
 
 ОС менеджер Linux Domain предназначен для управления виртуальными рабочими столами на базе Linux-систем, являющихся членами домена Active Directory или FreeIPA. Он осуществляет переименование, ввод в домен и контроль сеансов виртуальных рабочих столов.
 

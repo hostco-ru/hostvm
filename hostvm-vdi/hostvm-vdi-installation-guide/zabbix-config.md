@@ -170,11 +170,7 @@ UserParameter=vdi.tunnel_check, /usr/bin/python3 /etc/zabbix/scripts/zbx-hostvm_
 
 X.X.X.X – IP-адрес туннелера
 
-Если для подключения к туннелеру настроен не порт по умолчанию (443), необходимо указать
-\
-адрес в формате: -p YY X.X.X.X, где YY – порт подключения к туннелеру, XXXX – IP-адрес туннелера.
-\
-Например:
+Если для подключения к туннелеру настроен не порт по умолчанию (443), необходимо указать адрес в формате: -p YY X.X.X.X, где YY – порт подключения к туннелеру, XXXX – IP-адрес туннелера. Например:
 
 ```
 UserParameter=vdi.tunnel_check, /usr/bin/python3 /etc/zabbix/scripts/zbx-hostvm_tun_check.py -p 544 10.10.10.10
