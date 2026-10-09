@@ -20,7 +20,7 @@ sudo chmod +x /home/astra/postinstall.sh
 sh /путь/postinstall.sh
 ```
 
-Например:<br>
+Например:
 
 <figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/astra-actor1.png" alt=""><figcaption></figcaption></figure>
 
