@@ -1,86 +1,69 @@
 # Руководство пользователя
 
-## Общие данные
+Для получения доступа к опубликованным сервисам (виртуальным рабочим столам и приложениям) используйте web-портал брокера HOSTVM VDI.
 
-Компонент платформы виртуализации HOSTVM VDI предназначен для виртуализации рабочего стола пользователя.
+## Предварительные условия <a href="#prerequisites" id="prerequisites"></a>
 
-С помощью специализированного ПО на рабочем месте пользователь может удаленно подключиться в систему, получая доступ ко всем программам, приложениям и данным.
+Для подключения к опубликованным сервисам необходимо установить [клиент HOSTVM VDI](../hostvm-vdi-installation-guide/client/README.md) и клиенты для каждого используемого протокола подключения (например RDP, X2GO, SPICE клиент и т.д.), за исключением HTML5 подключений, где требуется только браузер.
 
-## Инструкция по подключению
+### Установка дополнительного ПО <a href="#prerequisites-optional" id="prerequisites-optional"></a>
 
-### Подготовка к работе
+При использовании протокола SPICE вам потребуется установить следующее дополнительное ПО:
 
-Скачайте дистрибутивы и установите следующее ПО:
+* **Virt-Viewer** - дистрибутив размещен в личном кабинете HOSTVM в разделе `Каталог загрузок -> Дистрибутивы -> Tools -> Virt-viewer`;
+* **Usb-Dk** - дистрибутив размещен в личном кабинете HOSTVM в разделе `Каталог загрузок -> Дистрибутивы -> Tools -> Usb-dk`.
 
-**Virt-Viewer**
+## Вход в систему <a href="#getting-access" id="getting-access"></a>
 
-Данный дистрибутив размещен в личном кабинете.\
-\&#xNAN;_Каталог загрузок -> Дистрибутивы -> Tools -> Virt-viewer_
+Откройте в браузере адрес web-портала брокера HOSTVM VDI, на странице входа в систему введите имя пользователя и пароль, а также выберите необходимый аутентификатор из списка, если их несколько.
 
-**Usb-Dk**\
-\
-Данный дистрибутив размещен в личном кабинете.\
-\&#xNAN;_Каталог загрузок -> Дистрибутивы -> Tools -> Usb-dk_
+![Форма для авторизации](https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/vdi-user-manual1.png)
 
-**UDS Client**\
-\
-Данный дистрибутив размещен на портале брокера VDI.\
-\&#xNAN;_Загрузить его можно, перейдя на соответствующую вкладку._\
-<br>
+После успешного входа в систему вы увидите перечень доступных этому пользователю сервисов:
 
-<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/uds-client-link.png" alt=""><figcaption></figcaption></figure>
+![Перечень сервисов](https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/vdi-user-manual2.png)
 
-**Рис.1 Раздел UDS Client**
+Выберите нужный сервис и нажмите на его иконку для подключения.
 
-### Вход в систему
+Если для сервиса настроено несколько способов подключения (например прямое, туннелированное и html5 соединение) - будет доступно соответствущее выпадающее меню с настройками. В этом меню в разделе "Соединения" вы можете выбрать нужный способ подключения.
+При обычном нажатии на иконку сервиса будет использован вариант по умолчанию.
 
-Для входа в систему выполните следующие шаги: 1. Откройте в браузере адрес VDI-портала; 2. В открывшуюся форму введите логин, пароль и предоставленный аутентификатор.<br>
+В зависимости от настроек выбранного способа подключения после открытия сессии может потребоваться еще раз ввести пароль:
 
-<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/vdi-user-manual1.png" alt=""><figcaption></figcaption></figure>
+![Вход в систему](https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/login.jpg)
 
-**Рис.2 Форма для авторизации**
+## Дополнительная настройка <a href="#optional-config" id="optional-config"></a>
 
-1.  Выберите нужный сервис и нажмите на иконку для открытия сессии.
+### Проброс USB для SPICE <a href="#spice-usb" id="spice-usb"></a>
 
-    <figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/vdi-user-manual2.png" alt=""><figcaption></figcaption></figure>
+При использовании протокола SPICE, если требуется подключить в сессию USB-устройство с локальной машины, выполните следующие шаги.
 
-**Рис.3 Перечень сервисов**
+1. В окне с открытой сессией выберите пункт меню: `Файл → USB Device Selection`:
 
-После открытия сессии может потребовать еще раз ввести пароль
+![Окно с открытой сессией](https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/session.jpg)
 
-<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/login.jpg" alt=""><figcaption></figcaption></figure>
+2. Отметьте нужное устройство в появившемся списке:
 
-**Рис.4 Вход в систему**
+![Выбор USB-устройства](https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/vdi-5.png)
 
-Если необходимо подключить в сессию USB-устройство с локальной машины, выполните следующие шаги: 1. В окне с открытой сессией выберите пункт меню: Файл → USB Device Selection;
+3. Закройте список и дождитесь подключения устройства в сессию.
 
-<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/session.jpg" alt=""><figcaption></figcaption></figure>
-
-**Рис.5 Окно с открытой сессией**
-
-1. Отметьте нужное устройство в появившемся списке;
-
-![](https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/vdi-5.png)
-
-**Рис.6 Выбор USB-устройства**
-
-1. Закройте список и дождитесь подключения устройства в сессию.
-
-### Свернутое приложение HTML5 RemoteApp
+### Свернутое приложение HTML5 RemoteApp <a href="#html5-minimized-app" id="html5-minimized-app"></a>
 
 {% hint style="info" %}
 В случае, когда используется HTML5 RemoteApp транспорт возможна ситуация, при которой после сворачивания окна презентованного приложения пользователю останется виден лишь пустой рабочий стол сессии. Для восстановления свернутого приложения в таком случае можно воспользоваться экранной клавиатурой.
 {% endhint %}
 
-Для использования экранной клавиатуры:\
-1\. Сделайте клик в левом-верхнем углу окна, для отображения меню Windows
+Для использования экранной клавиатуры:
 
-<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/vdi-user-manual3.png" alt=""><figcaption></figcaption></figure>
+1. Сделайте клик в левом-верхнем углу окна, для отображения меню Windows:
 
-2. Выберите Экранную клавиатуру в разделе Специальных возможностей<br>
+![](https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/vdi-user-manual3.png)
 
-    <figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/vdi-user-manual4.png" alt=""><figcaption></figcaption></figure>
+2. Выберите Экранную клавиатуру в разделе "Специальных возможностей":
 
-3. Нажмите сочетание клавиш Alt+Tab на экранной клавиатуре для выбора свернутого приложения
+![](https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/vdi-user-manual4.png)
 
-<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/vdi-user-manual5.png" alt=""><figcaption></figcaption></figure>
+3. Нажмите сочетание клавиш Alt+Tab на экранной клавиатуре для выбора свернутого приложения:
+
+![](https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/vdi-user-manual5.png)
