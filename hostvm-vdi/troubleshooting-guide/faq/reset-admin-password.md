@@ -56,4 +56,3 @@ Retype new password:
 ```
 Password updated successfully.
 ```
-

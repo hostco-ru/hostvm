@@ -54,9 +54,9 @@ Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope LocalMachine
 
 * проверка SSL (SSL Validation) – тип проверки безопасности при соединении с брокером HOSTVM VDI;
 * сервер HOSTVM VDI (HOSTVM VDI Server) – имя или IP-адрес брокера HOSTVM VDI;
-* токен сервиса (Service Token) — сервисный токен, который, в зависимости от используемого провайдера, был сгенерирован:\
-  \- на странице [Инструменты / RDS агент](../../hostvm-vdi-admin-guide/tools.md#rds-actor) (для провайдера RDS / Linux Terminal);\
-  \- при [создании сервиса RDS](../../hostvm-vdi-admin-guide/service-providers/rds.md#rds-3.6-changes) в поле `Токен сервиса` (для провайдера RDS);
+* токен сервиса (Service Token) — сервисный токен, который, в зависимости от используемого провайдера, был сгенерирован:
+    - на странице [Инструменты / RDS агент](../../hostvm-vdi-admin-guide/tools.md#rds-actor) (для провайдера RDS / Linux Terminal);
+    - при [создании сервиса RDS](../../hostvm-vdi-admin-guide/service-providers/rds.md#rds-3.6-changes) в поле `Токен сервиса` (для провайдера RDS);
 * ограничение сети (Restrict Net) — сеть для соединения с брокером HOSTVM VDI. Используется в случаях, когда у машины более одной сетевой карты, в противном случае следует оставить поле пустым;
 * Log Level – уровень логирования для отображения в файлах журнала агента. Эти файлы журналов (udsactor.log) расположены в следующих местах: `%temp%` (путь к временным файлам пользователя) и `C:\Windows\Temp` (путь к временным файлам ОС).
 
@@ -69,4 +69,3 @@ Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope LocalMachine
 <figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/rds-actor-4.png" alt=""><figcaption></figcaption></figure>
 
 > Для сброса сессии имя пользователя в брокере HOSTVM VDI и имя пользователя на конечной машине должны совпадать.
-

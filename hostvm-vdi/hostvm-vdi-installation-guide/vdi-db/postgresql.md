@@ -145,8 +145,9 @@ host    all             all             10.1.1.0/24           md5
 
 Отредактируйте файл настроек брокера `/var/server/server/settings.py`, в блок `DATABASES` внесите информацию:
 
-<pre><code><strong>DATABASES = {
-</strong>    'default': {
+```
+DATABASES = {
+    'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'OPTIONS': {
             'isolation_level': 'read committed',
@@ -158,7 +159,7 @@ host    all             all             10.1.1.0/24           md5
         'PORT': '',                          # порт сервера БД, оставьте пустым при использовании порта по умолчанию
     }
 }
-</code></pre>
+```
 
 Перезапустите службы брокера VDI:
 
@@ -168,12 +169,13 @@ host    all             all             10.1.1.0/24           md5
 
 Для инициализации базы данных выполните:
 
-<pre class="language-shell-session"><code class="lang-shell-session"># systemctl stop vdi
-<strong># cd /var/server
-</strong># python3 manage.py migrate
+```shell-session
+# systemctl stop vdi
+# cd /var/server
+# python3 manage.py migrate
 # python3 manage.py createcachetable
 # systemctl start vdi
-</code></pre>
+```
 
 Убедитесь, что портал брокера VDI успешно открывается в браузере.
 

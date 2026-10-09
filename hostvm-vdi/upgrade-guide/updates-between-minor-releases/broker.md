@@ -23,7 +23,7 @@ layout:
 
 # Брокер HOSTVM VDI
 
-Способы установки минорных обновлений на Брокер HOSTVM VDI.\
+Способы установки минорных обновлений на Брокер HOSTVM VDI.  
 При обновлении на новую мажорную версию обратитесь к соответствующему разделу документации, либо в техническую поддержку.
 
 ## Замена виртуальной машины <a href="#broker-replace" id="broker-replace"></a>
@@ -166,4 +166,3 @@ $ sudo yum install ./hostvm-vdi-3.6-4.el7.x86_64.rpm --allowerasing
 ```shell-session
 # systemctl restart vdi.service vdiweb.service
 ```
-

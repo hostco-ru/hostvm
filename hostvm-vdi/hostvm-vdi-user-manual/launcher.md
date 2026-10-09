@@ -63,6 +63,3 @@
 После запроса сервиса будет произведен автоматический возврат на витрину сервисов. В случае, если произойдет какая-либо ошибка, она так же будет отображена в нижней части экрана:
 
 <figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/launcher_service_exception.png" alt=""><figcaption></figcaption></figure>
-
-
-

@@ -34,6 +34,6 @@
 
 ### Аврора <a href="#install-aurora" id="install-aurora"></a>
 
-* Загрузить пакет **ru.basesource.hostvm-\*.rpm** (раздел HOSTVM VDI - Misc - Launcher - aurora) из личного кабинета
-* Инициировать установку пакета любым способом, например, используя менеджер файлов.&#x20;
+* Загрузить пакет `ru.basesource.hostvm-*.rpm` (раздел HOSTVM VDI - Misc - Launcher - aurora) из личного кабинета
+* Инициировать установку пакета любым способом, например, используя менеджер файлов.
 * Запустить установленное приложение HOSTVM VDI Launcher

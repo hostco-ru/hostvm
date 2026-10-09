@@ -127,11 +127,10 @@ backend tunnel-backend-guacamole
 
 ### Конфигурация Yandex Application Load Balancer <a href="#termination-yalb" id="termination-yalb"></a>
 
-Если в качестве балансировщика используется Yandex Application Load Balancer, необходимо в настройках группы бэкендов указать порт 8080, выбрать протокол HTTP и включить привязку сессий, например по сессионным cookie. Режим балансировки при этом должен быть выбран MAGLEV\_HASH.&#x20;
+Если в качестве балансировщика используется Yandex Application Load Balancer, необходимо в настройках группы бэкендов указать порт 8080, выбрать протокол HTTP и включить привязку сессий, например по сессионным cookie. Режим балансировки при этом должен быть выбран MAGLEV\_HASH.
 
 <figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/YALB_Backend_configuration_SSL_Termination.png" alt=""><figcaption></figcaption></figure>
 
 Также в конфигурации маршрута роутера необходимо отметить чекбокс WebSocket.
 
 <figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/YALB_Router_configuration_SSL_Termination.png" alt=""><figcaption></figcaption></figure>
-

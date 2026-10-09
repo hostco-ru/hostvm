@@ -374,8 +374,9 @@ nano /etc/haproxy/haproxy.cfg
 
 2. Добавьте в конец файла базовую конфигурацию postgresql:
 
-<pre><code><strong>### PostgreSQL ###
-</strong>listen postgres_master
+```
+### PostgreSQL ###
+listen postgres_master
     bind haproxy-server.your_domain:5000
     mode tcp
     option tcplog
@@ -398,7 +399,7 @@ listen postgres_replicas
     server postgres-server2 postgres-server2.your_domain:5432 check port 8008
     server postgres-server3 postgres-server3.your_domain:5432 check port 8008
 ### PostgreSQL ###
-</code></pre>
+```
 
 3. Перезагрузите сервис haproxy:
 

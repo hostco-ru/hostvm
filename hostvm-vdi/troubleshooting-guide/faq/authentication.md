@@ -8,8 +8,10 @@
 
 Дополнительные сведения:
 
-1. Настройка Windows Server:\
-   [https://learn.microsoft.com/en-us/troubleshoot/windows-server/windows-security/new-setting-modifies-ntlm-network-authentication](https://learn.microsoft.com/en-us/troubleshoot/windows-server/windows-security/new-setting-modifies-ntlm-network-authentication)
-2. Настройка Samba сервера в роли Active Directory Domain Controller (параметр `old password allowed period`):\
-   [https://www.samba.org/samba/docs/current/man-html/smb.conf.5.html](https://www.samba.org/samba/docs/current/man-html/smb.conf.5.html)
+1. Настройка Windows Server:
 
+    [https://learn.microsoft.com/en-us/troubleshoot/windows-server/windows-security/new-setting-modifies-ntlm-network-authentication](https://learn.microsoft.com/en-us/troubleshoot/windows-server/windows-security/new-setting-modifies-ntlm-network-authentication)
+
+2. Настройка Samba сервера в роли Active Directory Domain Controller (параметр `old password allowed period`):
+
+    [https://www.samba.org/samba/docs/current/man-html/smb.conf.5.html](https://www.samba.org/samba/docs/current/man-html/smb.conf.5.html)

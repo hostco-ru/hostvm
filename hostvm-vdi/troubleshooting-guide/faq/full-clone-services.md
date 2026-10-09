@@ -6,4 +6,3 @@
 
 1. создать полные клоны виртуальных машин средствами системы виртуализации;
 2. предоставить доступ к этим машинам через [сервис-провайдер машин со статическим IP](../../hostvm-vdi-admin-guide/service-providers/static-ip.md), либо через сервис "Фиксированные машины" провайдеров [oVirt/RHEV](../../hostvm-vdi-admin-guide/service-providers/ovirt.md#fixed-machines) и [HOSTVM / РОСА / zVirt / РЕД Виртуализация](../../hostvm-vdi-admin-guide/service-providers/hostvm.md#fixed-machines).
-
