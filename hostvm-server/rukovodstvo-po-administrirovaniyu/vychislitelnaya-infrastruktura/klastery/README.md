@@ -14,4 +14,4 @@
 
 Количество хостов и ВМ отображаются в строке кластера в соответствующих колонках Host Count и VM Count в разделе портала Compute->Clusters.
 
-<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/%D0%9A%D0%BB%D0%B0%D1%81%D1%82%D0%B5%D1%80%D1%8B.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://raw.githubusercontent.com/hostco-ru/hostvm/master/.gitbook/assets/Clusters.png" alt=""><figcaption></figcaption></figure>
