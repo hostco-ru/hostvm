@@ -23,6 +23,12 @@ grep -E '^(daily|weekly|monthly|size|rotate|compress)' /etc/logrotate.conf
 
 Файлы конфигураций для отдельных сервисов размещаются в каталоге `/etc/logrotate.d/`.
 
+Создайте резервную копию текущей конфигурации:
+
+```
+cp /etc/logrotate.d/httpd /etc/logrotate.d/httpd.bak.$(date +%F)
+```
+
 Откройте или создайте файл `/etc/logrotate.d/httpd`:
 
 ```
